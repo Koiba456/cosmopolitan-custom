@@ -1,0 +1,8 @@
+﻿l_english:
+ force_culture_eventcc.1.t:0 "Convert [colonialnation.Owner.GetName]'s culture"
+ force_culture_eventcc.1.d:0 "We have an opportunity to convert the [colonialnation.Culture.GetName] of [colonialnation.Owner.GetName] to [Root.Culture.GetName]."
+ force_culture_eventcc.1.a:0 "Let them stay as they are"
+ force_culture_eventcc.1.b:0 "Convert them to [Root.Culture.GetName]" 
+ force_culture_eventcc.2.t:0 "Converting [colonialprovince.Owner.GetName] to [Root.Culture.GetName]"
+ force_culture_eventcc.2.d:0 "As instructed, we have completed the process of converting the [colonialprovince.Culture.GetName] population of [colonialprovince.GetName] to [Root.Culture.GetName]."
+ force_culture_eventcc.2.a:0 "We are all [Root.Culture.GetName]"

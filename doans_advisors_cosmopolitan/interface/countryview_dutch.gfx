@@ -1,0 +1,50 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_dutch_philosopher_female"
+		texturefile = "gfx//interface//advisors//dutch_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_dutch_theologian_female"
+		texturefile = "gfx//interface//advisors//dutch_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_dutch_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//dutch_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_dutch_trader_female"
+		texturefile = "gfx//interface//advisors//dutch_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_dutch_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

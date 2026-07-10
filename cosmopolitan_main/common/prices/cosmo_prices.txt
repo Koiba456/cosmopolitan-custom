@@ -1,0 +1,20 @@
+# base_price = X			base price in $. (default is 1.0 if not specified
+# goldtype = yes/no			This resource works like 'gold' if yes, using prices from mine-value in province instead of supply/demand and baseprice. Also creates gold-inflation
+
+
+# Base resources
+european_slaves = {
+	base_price = 2
+}
+
+asian_slaves = {
+	base_price = 2
+}
+
+american_native_slaves = {
+	base_price = 2
+}
+
+prostitutes = {
+	base_price = 2
+}	

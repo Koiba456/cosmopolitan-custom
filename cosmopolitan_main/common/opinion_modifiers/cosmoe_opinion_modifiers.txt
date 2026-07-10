@@ -1,0 +1,91 @@
+ ##opinion modifiers
+
+
+
+
+is_cosmo_daimyo_personal_union_I = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_daimyo_personal_union_II = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_daimyo_personal_union_III = {
+	opinion = 50
+	years = -1
+}
+
+is_cosmo_na_personal_union_I = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_na_personal_union_II = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_asian_personal_union_I = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_asian_personal_union_II = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_sa_personal_union_I = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_sa_personal_union_II = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_african_personal_union_I = {
+	opinion = 1
+	years = -1
+}
+
+is_cosmo_african_personal_union_II = {
+	opinion = 1
+	years = -1
+}
+
+cosmo_set_rival = {
+	opinion = 1
+	months = 6
+}
+
+cosmo_give_colony = {
+	opinion = 1
+	months = 6
+}
+
+cosmo_alliance_interference = {
+	opinion = -10
+	months = 4
+}
+
+cosmo_absorb_subject = {
+	opinion = 1
+	months = 4
+}
+
+cosmo_pirates_allowed_opinion = {
+	opinion = -25
+	months = 60
+}
+
+cosmo_gifted_colony = {
+	opinion = 25
+	max = 100
+	max_vassal = 200
+	yearly_decay = 2
+}

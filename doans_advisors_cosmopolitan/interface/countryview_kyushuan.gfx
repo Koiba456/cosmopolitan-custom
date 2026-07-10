@@ -1,0 +1,193 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_kyushuan_artist_female"
+		texturefile = "gfx//interface//advisors//kyushuan_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_philosopher_female"
+		texturefile = "gfx//interface//advisors//kyushuan_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//kyushuan_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_theologian_female"
+		texturefile = "gfx//interface//advisors//kyushuan_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_inquisitor_female"
+		texturefile = "gfx//interface//advisors//kyushuan_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//kyushuan_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_treasurer_female"
+		texturefile = "gfx//interface//advisors//kyushuan_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_statesman_female"
+		texturefile = "gfx//interface//advisors//kyushuan_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//kyushuan_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_diplomat_female"
+		texturefile = "gfx//interface//advisors//kyushuan_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//kyushuan_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_navigator_female"
+		texturefile = "gfx//interface//advisors//kyushuan_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_trader_female"
+		texturefile = "gfx//interface//advisors//kyushuan_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_spymaster_female"
+		texturefile = "gfx//interface//advisors//kyushuan_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_grand_captain_female"
+		texturefile = "gfx//interface//advisors//kyushuan_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_commandant_female"
+		texturefile = "gfx//interface//advisors//kyushuan_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_army_organiser_female"
+		texturefile = "gfx//interface//advisors//kyushuan_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_army_reformer_female"
+		texturefile = "gfx//interface//advisors//kyushuan_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//kyushuan_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//kyushuan_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_kyushuan_quartermaster_female"
+		texturefile = "gfx//interface//advisors//kyushuan_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+}

@@ -1,0 +1,200 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_artist_female"
+		texturefile = "gfx//interface//advisors//northamerica_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_philosopher_female"
+		texturefile = "gfx//interface//advisors//northamerica_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//northamerica_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_theologian_female"
+		texturefile = "gfx//interface//advisors//northamerica_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_inquisitor_female"
+		texturefile = "gfx//interface//advisors//northamerica_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//northamerica_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_treasurer_female"
+		texturefile = "gfx//interface//advisors//northamerica_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_statesman_female"
+		texturefile = "gfx//interface//advisors//northamerica_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//northamerica_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_diplomat_female"
+		texturefile = "gfx//interface//advisors//northamerica_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//northamerica_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_navigator_female"
+		texturefile = "gfx//interface//advisors//northamerica_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_trader_female"
+		texturefile = "gfx//interface//advisors//northamerica_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_spymaster_female"
+		texturefile = "gfx//interface//advisors//northamerica_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_grand_captain_female"
+		texturefile = "gfx//interface//advisors//northamerica_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_commandant_female"
+		texturefile = "gfx//interface//advisors//northamerica_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_army_organiser_female"
+		texturefile = "gfx//interface//advisors//northamerica_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_army_reformer_female"
+		texturefile = "gfx//interface//advisors//northamerica_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//northamerica_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//northamerica_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_quartermaster_female"
+		texturefile = "gfx//interface//advisors//northamerica_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

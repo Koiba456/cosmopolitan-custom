@@ -1,0 +1,200 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_jianghuai_artist_female"
+		texturefile = "gfx//interface//advisors//jianghuai_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_philosopher_female"
+		texturefile = "gfx//interface//advisors//jianghuai_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//asian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_theologian_female"
+		texturefile = "gfx//interface//advisors//asian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_inquisitor_female"
+		texturefile = "gfx//interface//advisors//asian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//asian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_treasurer_female"
+		texturefile = "gfx//interface//advisors//asian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_statesman_female"
+		texturefile = "gfx//interface//advisors//asian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//asian_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_diplomat_female"
+		texturefile = "gfx//interface//advisors//asian_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//jianghuai_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_navigator_female"
+		texturefile = "gfx//interface//advisors//jianghuai_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_trader_female"
+		texturefile = "gfx//interface//advisors//asian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_spymaster_female"
+		texturefile = "gfx//interface//advisors//asian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_grand_captain_female"
+		texturefile = "gfx//interface//advisors//asian_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_commandant_female"
+		texturefile = "gfx//interface//advisors//asian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_army_organiser_female"
+		texturefile = "gfx//interface//advisors//asian_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_army_reformer_female"
+		texturefile = "gfx//interface//advisors//jianghuai_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//asian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//jianghuai_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_quartermaster_female"
+		texturefile = "gfx//interface//advisors//asian_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_jianghuai_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//asian_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

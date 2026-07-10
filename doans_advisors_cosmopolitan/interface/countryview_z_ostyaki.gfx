@@ -1,0 +1,200 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_ostyaki_artist_female"
+		texturefile = "gfx//interface//advisors//asian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_philosopher_female"
+		texturefile = "gfx//interface//advisors//tartar_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//tartar_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_theologian_female"
+		texturefile = "gfx//interface//advisors//tartar_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_inquisitor_female"
+		texturefile = "gfx//interface//advisors//tartar_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//tartar_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_treasurer_female"
+		texturefile = "gfx//interface//advisors//tartar_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_statesman_female"
+		texturefile = "gfx//interface//advisors//tartar_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//tartar_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_diplomat_female"
+		texturefile = "gfx//interface//advisors//tartar_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//tartar_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_navigator_female"
+		texturefile = "gfx//interface//advisors//tartar_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_trader_female"
+		texturefile = "gfx//interface//advisors//tartar_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_spymaster_female"
+		texturefile = "gfx//interface//advisors//tartar_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_grand_captain_female"
+		texturefile = "gfx//interface//advisors//tartar_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_commandant_female"
+		texturefile = "gfx//interface//advisors//tartar_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_army_organiser_female"
+		texturefile = "gfx//interface//advisors//tartar_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_army_reformer_female"
+		texturefile = "gfx//interface//advisors//tartar_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//tartar_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//tartar_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ostyaki_quartermaster_female"
+		texturefile = "gfx//interface//advisors//tartar_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_tartar_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//asian_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

@@ -1,0 +1,25 @@
+spriteTypes = {
+
+
+
+	spriteType = {
+		name = "GFX_anathanism_protestant_aspects_bg"
+		texturefile = "gfx/interface/protestant_aspects_bg.dds"
+	}
+	
+
+	spriteType = {
+		name = "GFX_anathanism_protestant_aspects_icon"
+		texturefile = "gfx/interface/protestant_aspects_icon.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_anathanism_protestant_aspects_icon_slot"
+		texturefile = "gfx/interface/protestant_aspects_icon_slot.dds"
+	}			
+	
+
+}	
+
+
+

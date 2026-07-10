@@ -1,0 +1,255 @@
+########################################
+# Cosmo trade fleet decisions
+#
+# 
+########################################
+
+country_decisions = {
+
+cosmo_trade_fleet = {
+major = yes
+		potential = {	
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}
+		}			
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = COSMO_TRADE_SHIPS_LOADED
+				OR = {
+					has_country_flag = cosmo_gold_laden_ships
+					has_country_flag = cosmo_wine_laden_ships
+					has_country_flag = cosmo_salt_laden_ships
+					has_country_flag = cosmo_sugar_laden_ships
+					has_country_flag = cosmo_gems_laden_ships
+					has_country_flag = cosmo_cocoa_laden_ships
+					has_country_flag = cosmo_cotton_laden_ships
+					has_country_flag = cosmo_tobacco_laden_ships
+					has_country_flag = cosmo_ivory_laden_ships
+					has_country_flag = cosmo_tropical_wood_laden_ships
+
+				}
+				}
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}
+			any_owned_province = {
+		sea_zone = {
+			light_ships_in_province = ROOT
+		}
+			}							
+		}
+				
+		}
+				
+	effect = {
+		country_event = {
+			id = cosmo_dipevents_events.201
+			}
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_open_nagasaki = {
+major = yes
+		potential = {	
+		ai = no	
+		always = no
+		culture_group = japanese_g
+		owns_core_province = 4182 #Nagasaki
+		4182 = {
+			NOT = {
+				province_has_center_of_trade_of_level = 1 			
+				has_province_flag = no_foreign_traders
+			}
+		}
+		any_known_country = {
+				NOT = {
+					culture_group = japanese_g
+				}
+				4182 = {
+					trade_share = {
+						country = PREV
+						share = 1
+					}					
+				}			
+		}					
+		}
+		allow = {
+			NOT = {
+				isolationism = 3
+			}
+							
+		}
+				
+	effect = {
+		country_event = {
+			id = cosmo_history_events.4
+			}
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_deliver_troops = {
+major = yes
+		potential = {	
+			ai = no
+			has_country_flag = cosmo_has_artillery			
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_training_army
+			}
+		}			
+		}
+		allow = {
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_training_army
+			}
+		}			
+		custom_trigger_tooltip = {
+			tooltip = COSMO_DELIVER_ARMY_TRIGGER
+			any_subject_country = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_training_army
+				}
+				capital_scope = {
+					infantry_in_province = ROOT
+					artillery_in_province  = ROOT
+					cavalry_in_province  = ROOT
+					artillery_in_province = 2
+					cavalry_in_province = 2
+					infantry_in_province = 6
+				}							
+			}
+		}					
+		}
+				
+	effect = {
+		country_event = {
+			id = cosmo_dipevents_events.301
+			}
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_deliver_troops_no_art = {
+major = yes
+		potential = {	
+			ai = no
+			NOT = {
+				has_country_flag = cosmo_has_artillery	
+			}				
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_training_army
+			}
+		}			
+		}
+		allow = {
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_training_army
+			}
+		}			
+		custom_trigger_tooltip = {
+			tooltip = COSMO_DELIVER_ARMY_TRIGGER_NOARTY
+			any_subject_country = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_training_army
+				}
+				capital_scope = {
+					infantry_in_province = ROOT
+					#artillery_in_province  = ROOT
+					cavalry_in_province  = ROOT
+					cavalry_in_province = 3
+					infantry_in_province = 7
+				}							
+			}
+		}					
+		}
+				
+	effect = {
+		country_event = {
+			id = cosmo_dipevents_events.301
+			}
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_deliver_ships = {
+major = yes
+		potential = {	
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_building_ships
+			}
+		}			
+		}
+		allow = {
+		any_subject_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_building_ships
+			}
+			any_owned_province = {
+				light_ships_in_province = ROOT
+				heavy_ships_in_province = ROOT
+				heavy_ships_in_province = 3
+				light_ships_in_province = 7				
+			}							
+		}
+				
+		}
+				
+	effect = {
+		country_event = {
+			id = cosmo_dipevents_events.302
+			}
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cancel_request_advisor = {
+		potential = {	
+		has_country_flag = request_advisor_consort			
+		}
+		allow = {
+		ai = no
+		has_country_flag = request_advisor_consort											
+		}
+				
+	effect = {
+		remove_estate_privilege = estate_nobleaffairs_request_advisor
+		clr_country_flag = request_advisor_consort
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+}
+
+				

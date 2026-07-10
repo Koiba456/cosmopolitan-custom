@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_castillian_philosopher_female"
+		texturefile = "gfx//interface//advisors//castillian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+	spriteType = {
+		name = "GFX_advisor_castillian_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//castillian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_castillian_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//castillian_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+
+	
+
+
+}

@@ -1,0 +1,205 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_iberian_theologian_female"
+		texturefile = "gfx//interface//advisors//iberian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_iberian_artist_female"
+		texturefile = "gfx//interface//advisors//iberian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_philosopher_female"
+		texturefile = "gfx//interface//advisors//iberian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//iberian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//iberian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_treasurer_female"
+		texturefile = "gfx//interface//advisors//iberian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_statesman_female"
+		texturefile = "gfx//interface//advisors//iberian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//iberian_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_diplomat_female"
+		texturefile = "gfx//interface//advisors//iberian_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//iberian_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_navigator_female"
+		texturefile = "gfx//interface//advisors//iberian_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_trader_female"
+		texturefile = "gfx//interface//advisors//iberian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_spymaster_female"
+		texturefile = "gfx//interface//advisors//iberian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_grand_captain_female"
+		texturefile = "gfx//interface//advisors//iberian_grand_captain_female.tga" #removed 1 and 6
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_commandant_female"
+		texturefile = "gfx//interface//advisors//portugese_commandant_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_army_organiser_female"
+		texturefile = "gfx//interface//advisors//andalucian_army_organiser_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_army_reformer_female"
+		texturefile = "gfx//interface//advisors//irish_army_reformer_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//french_recruitmaster_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//gaelic_fortification_expert_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_iberian_quartermaster_female"
+		texturefile = "gfx//interface//advisors//caucasian_quartermaster_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	spriteType = {
+		name = "GFX_advisor_iberian_inquisitor_female"
+		texturefile = "gfx//interface//advisors//iberian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_iberian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

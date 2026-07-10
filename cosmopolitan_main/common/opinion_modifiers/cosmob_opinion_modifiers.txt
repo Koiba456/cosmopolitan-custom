@@ -1,0 +1,238 @@
+ ##opinion modifiers
+
+cosmo_entertain_merchant = {
+	opinion = 1
+	months = 6	
+}
+
+cosmo_seduced_monarch = {
+	opinion = 20
+	months = 36	
+}
+
+cosmo_spy_persistant_opinion = {
+	opinion = 10
+	months = 36	
+}
+
+cosmo_dignitary_persistant_opinion = {
+	opinion = 20
+	months = 36	
+}
+
+cosmo_foreigners_in_japan = {
+	opinion = -50
+	months = 120	
+}
+
+cosmo_seduced_adm = {
+	opinion = 10
+	months = 36	
+}
+
+cosmo_seduced_dip = {
+	opinion = 10
+	months = 36	
+}
+
+cosmo_seduced_mil = {
+	opinion = 10
+	months = 36	
+}
+
+cosmo_seduced_cardinal = {
+	opinion = 10
+	months = 36	
+}
+
+cosmo_dignitary_inc_opinion = {
+	opinion = 20
+	yearly_decay = 10
+	max = 100
+	max_vassal = 200
+}
+
+dignitary_increased_opinion = {
+	opinion = 20
+	yearly_decay = 10
+	max = 100
+	max_vassal = 200
+}
+
+cosmo_friend_of_wife = {
+	opinion = 40
+	yearly_decay = 1
+	max = 100
+	max_vassal = 200
+}
+
+cosmo_consort_letters = {
+	opinion = 20
+	yearly_decay = 1
+	max = 100
+	max_vassal = 200
+}
+
+dignitary_entertained = {
+	opinion = 1
+	months = 3	
+}
+
+cosmo_rescued_princess = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+cosmo_send_sacrifice = {
+	opinion = 1
+	months = 3	
+}
+
+cosmo_spy_sent = {
+	opinion = 1
+	months = 3	
+}
+
+cosmo_sacrificed_queen = {
+	opinion = -75
+	yearly_decay = 1
+	years = 75
+}
+
+cosmo_meddling = {
+	opinion = -20
+	months = 3	
+}
+
+
+insulted_daughter = {
+	opinion = -10
+	years = 5
+	yearly_decay = 2	
+}
+
+cosmo_personal_introduction = {
+	opinion = 25
+	years = -1
+}
+
+cosmo_visiting_palace = {
+	opinion = 25
+	years = 5	
+}
+
+cosmo_training_army = {
+	opinion = 1
+	months = 6	
+}
+
+cosmo_building_ships = {
+	opinion = 1
+	months = 6	
+}
+
+cosmo_sending_proposal = {
+	opinion = 1
+	months = 3	
+}
+
+cosmo_trader_wives_offer = {
+	opinion = 10
+	months = 6	
+}
+
+cosmo_trader_wife_active = {
+	opinion = 10
+	months = 6	
+}
+
+cosmo_sending_sacrifice = {
+	opinion = 1
+	months = 3	
+}
+
+cosmo_invited_to_harem = {
+	opinion = 50
+	years = 1
+	yearly_decay = 10	
+}
+
+cosmo_sending_concubines = {
+	opinion = 50
+	years = 1
+	yearly_decay = 10	
+}
+
+cosmo_access_to_harem = {
+	opinion = 50
+	years = 1
+	yearly_decay = 10	
+}
+
+cosmo_recent_harem_visit = {
+	opinion = -10
+	years = 10
+	yearly_decay = 1	
+}
+
+cosmo_slaves_taken = {
+	opinion = -20
+	yearly_decay = 5
+	min = -200	
+}
+
+cosmo_personal_introduction = {
+	opinion = 25
+	years = 5
+	yearly_decay = 5	
+}
+
+cosmo_send_economic_mission = {
+	opinion = 10
+	months = 3
+}
+
+cosmo_send_trade_mission = {
+	opinion = 10
+	months = 56
+}
+
+cosmo_recieved_trade_mission = {
+	opinion = 60
+	years = 5
+	yearly_decay = 2	
+}
+
+cosmo_requesting_advisors = {
+	opinion = 60
+	years = 5
+	yearly_decay = 2	
+}
+
+cosmo_rebel_help = {
+	opinion = 100
+	years = 100
+	yearly_decay = 1	
+}
+
+cosmo_sending_military_aid = {
+	opinion = 1
+	months = 6
+}
+
+cosmo_strengthen_union = {
+	opinion = 1
+	months = 6
+}
+
+cosmo_rebel_target = {
+	opinion = -50
+	years = 5
+	yearly_decay = 2	
+}
+
+cosmo_rebel_subject = {
+	opinion = -20
+	years = 5
+	yearly_decay = 2	
+}

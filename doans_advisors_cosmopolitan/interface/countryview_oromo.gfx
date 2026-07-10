@@ -1,0 +1,50 @@
+spriteTypes = {
+	
+	
+		spriteType = {
+		name = "GFX_advisor_oromo_navigator_female"
+		texturefile = "gfx//interface//advisors//oromo_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_oromo_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//oromo_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_oromo_grand_captain_female"
+		texturefile = "gfx//interface//advisors//oromo_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_oromo_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

@@ -1,0 +1,41 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_tigray_treasurer_female"
+		texturefile = "gfx//interface//advisors//tigray_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_tigray_trader_female"
+		texturefile = "gfx//interface//advisors//tigray_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		
+	spriteType = {
+		name = "GFX_advisor_tigray_quartermaster_female"
+		texturefile = "gfx//interface//advisors//tigray_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_tigray_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

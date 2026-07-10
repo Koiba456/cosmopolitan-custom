@@ -1,0 +1,10710 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = qosmo_palace_events
+
+#loop to begining
+country_event = {
+	id = qosmo_palace_events.101
+	title = qosmo_palace_events.101.t
+	desc = qosmo_palace_events.101.d
+	picture = cosmogfx_PALACE_MENU_1_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+	
+		option = {
+		name = qosmo_palace_events.101.a		
+			country_event = {
+			id = qosmo_palace_events.100
+			}
+		}			
+	}
+
+#visit options
+country_event = {
+	id = qosmo_palace_events.30
+	title = qosmo_palace_events.30.t
+	desc = qosmo_palace_events.30.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_MNG_CONCUBINES_INTRODUCTION_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1C_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1B_eventPicture
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+	
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}		
+			random_list = {
+				33 = { #adm
+						set_ruler_flag = ruler_palace_adm
+				}
+				33 = { #dip
+						set_ruler_flag = ruler_palace_dip
+				}
+				33 = { #mil
+						set_ruler_flag = ruler_palace_mil
+				}																				
+			}		
+		}
+		}
+
+		option = {#enjoy visit
+		name = qosmo_palace_events.30.a
+		trigger = {
+			has_country_flag = ruler_granted_palace_entry
+			NOT = {
+				AND = {
+					has_ruler_flag = has_palace_mil
+					has_ruler_flag = has_palace_dip
+					has_ruler_flag = has_palace_adm
+				}
+			}
+		}			
+		set_ruler_flag = ruler_visit_concubines	
+			country_event = {
+			id = qosmo_palace_events.100
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#free concubines
+		name = qosmo_palace_events.30.b	
+		add_dip_power = -25
+		set_ruler_flag = free_palace_concubines	
+			country_event = {
+			id = qosmo_palace_events.100
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil		
+		}			
+		}
+		option = {#leave palace
+		name = qosmo_palace_events.30.c	
+		set_ruler_flag = cosmo_left_palace
+			country_event = {
+			id = qosmo_palace_events.31
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil		
+		}			
+		}							
+}
+
+#visit options
+country_event = {
+	id = qosmo_palace_events.311
+	title = qosmo_palace_events.311.t
+	desc = qosmo_palace_events.311.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_MNG_CONCUBINES_INTRODUCTION_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1C_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1B_eventPicture
+	}
+
+	hidden = yes
+
+	trigger = {
+		ai = no
+		has_ruler_flag = cosmo_left_palace
+	}
+	
+		mean_time_to_happen = {
+			days = 75
+		}	
+	
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {#enjoy visit
+		name = qosmo_palace_events.311.a
+			country_event = {
+			id = qosmo_palace_events.31
+			}		
+		}							
+}
+
+#escape options
+country_event = {
+	id = qosmo_palace_events.31
+	title = qosmo_palace_events.31.t
+	desc = qosmo_palace_events.31.d
+	picture = cosmogfx_MNG_CONCUBINES_INTRODUCTION_eventPicture
+
+
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+	
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {#xibei free
+		name = qosmo_palace_events.31.a
+		trigger = {
+			has_country_flag = palace_1a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.110
+			}
+		clr_country_flag = palace_1a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Tang free
+		name = qosmo_palace_events.31.b
+		trigger = {
+			has_country_flag = palace_1b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.120
+			}
+		clr_country_flag = palace_1b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Wu free
+		name = qosmo_palace_events.31.c
+		trigger = {
+			has_country_flag = palace_1c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.130
+			}
+		clr_country_flag = palace_1c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+
+		option = {#min free
+		name = qosmo_palace_events.31.7
+		trigger = {
+			has_country_flag = palace_2a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.210
+			}
+		clr_country_flag = palace_2a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Ning free
+		name = qosmo_palace_events.31.8
+		trigger = {
+			has_country_flag = palace_2b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.220
+			}
+		clr_country_flag = palace_2b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Yan free
+		name = qosmo_palace_events.31.9
+		trigger = {
+			has_country_flag = palace_2c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.230
+			}
+		clr_country_flag = palace_2c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+
+		option = {#Tibet free
+		name = qosmo_palace_events.31.10
+		trigger = {
+			has_country_flag = palace_3a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.310
+			}
+		clr_country_flag = palace_3a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Miao free
+		name = qosmo_palace_events.31.11
+		trigger = {
+			has_country_flag = palace_3b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.320
+			}
+		clr_country_flag = palace_3b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Shu free
+		name = qosmo_palace_events.31.12
+		trigger = {
+			has_country_flag = palace_3c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.330
+			}
+		clr_country_flag = palace_3c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+
+		option = {#Qing free
+		name = qosmo_palace_events.31.13
+		trigger = {
+			has_country_flag = palace_4a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.410
+			}
+		clr_country_flag = palace_4a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Mongol free
+		name = qosmo_palace_events.31.14
+		trigger = {
+			has_country_flag = palace_4b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.420
+			}
+		clr_country_flag = palace_4b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Korea free
+		name = qosmo_palace_events.31.15
+		trigger = {
+			has_country_flag = palace_4c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.430
+			}
+		clr_country_flag = palace_4c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+
+		option = {#champa free
+		name = qosmo_palace_events.31.16
+		trigger = {
+			has_country_flag = palace_5a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.510
+			}
+		clr_country_flag = palace_5a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Vietnamese free
+		name = qosmo_palace_events.31.17
+		trigger = {
+			has_country_flag = palace_5b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.520
+			}
+		clr_country_flag = palace_5b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Laotian free
+		name = qosmo_palace_events.31.18
+		trigger = {
+			has_country_flag = palace_5c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.530
+			}
+		clr_country_flag = palace_5c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+
+		option = {#shan free
+		name = qosmo_palace_events.31.19
+		trigger = {
+			has_country_flag = palace_6a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.610
+			}
+		clr_country_flag = palace_6a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Thai free
+		name = qosmo_palace_events.31.20
+		trigger = {
+			has_country_flag = palace_6b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.620
+			}
+		clr_country_flag = palace_6b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Khmer free
+		name = qosmo_palace_events.31.21
+		trigger = {
+			has_country_flag = palace_6c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.630
+			}
+		clr_country_flag = palace_6c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}	
+		option = {#sumatran free
+		name = qosmo_palace_events.31.22
+		trigger = {
+			has_country_flag = palace_7a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.710
+			}
+		clr_country_flag = palace_7a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Malay North free
+		name = qosmo_palace_events.31.23
+		trigger = {
+			has_country_flag = palace_7b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.720
+			}
+		clr_country_flag = palace_7b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Malay South free
+		name = qosmo_palace_events.31.24
+		trigger = {
+			has_country_flag = palace_7c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.730
+			}
+		clr_country_flag = palace_7c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#bornean free
+		name = qosmo_palace_events.31.25
+		trigger = {
+			has_country_flag = palace_8a_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.810
+			}
+		clr_country_flag = palace_8a_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Filipino free
+		name = qosmo_palace_events.31.26
+		trigger = {
+			has_country_flag = palace_8b_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.820
+			}
+		clr_country_flag = palace_8b_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#Javanese free
+		name = qosmo_palace_events.31.27
+		trigger = {
+			has_country_flag = palace_8c_escape
+		}			
+			country_event = {
+			id = cosmo_asiapu_events.830
+			}
+		clr_country_flag = palace_8c_escape
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}			
+		}
+		option = {#leave palace
+		name = qosmo_palace_events.31.28
+		custom_tooltip = cosmo_leave_warning_tt 		
+		clr_ruler_flag = cosmo_left_palace
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil		
+		}			
+		}							
+}
+
+
+# Palace first menu
+country_event = {
+	id = qosmo_palace_events.100
+	title = qosmo_palace_events.100.t
+	desc = qosmo_palace_events.100.d
+	picture = cosmogfx_PALACE_MENU_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.100.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_1a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_1a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.110
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_1a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.100.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_1b_tt 		
+		}		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_1b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.120
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_1b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.100.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_1c_tt 		
+		}		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_1c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.130
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_1c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.100.7
+			country_event = {
+			id = qosmo_palace_events.200
+		}
+		}			
+}	
+
+#Menu 1A
+country_event = {
+	id = qosmo_palace_events.110
+	title = qosmo_palace_events.110.t
+	desc = qosmo_palace_events.110.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_1A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_1A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_1A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.110.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_1b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 1B
+country_event = {
+	id = qosmo_palace_events.120
+	title = qosmo_palace_events.120.t
+	desc = qosmo_palace_events.120.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_1B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_1B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_1B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.120.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_1b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 1c
+country_event = {
+	id = qosmo_palace_events.130
+	title = qosmo_palace_events.130.t
+	desc = qosmo_palace_events.130.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_1C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_1C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_1C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_1C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_1C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.130.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_1c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace Second menu
+country_event = {
+	id = qosmo_palace_events.200
+	title = qosmo_palace_events.200.t
+	desc = qosmo_palace_events.200.d
+	picture = cosmogfx_PALACE_MENU_2_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.200.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_2a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_2a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.210
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_2a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.200.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_2b_tt 		
+		}		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_2b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.220
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_2b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.200.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_2c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_2c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.230
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_2c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.200.7
+			country_event = {
+			id = qosmo_palace_events.300
+		}
+		}			
+}	
+
+#Menu 2A
+country_event = {
+	id = qosmo_palace_events.210
+	title = qosmo_palace_events.210.t
+	desc = qosmo_palace_events.210.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_2A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_2A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_2A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.210.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_2b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceTwoACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceTwoACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceTwoACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 2B
+country_event = {
+	id = qosmo_palace_events.220
+	title = qosmo_palace_events.220.t
+	desc = qosmo_palace_events.220.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_2B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_2B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_2B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.220.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_2b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceTwoBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceTwoBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceTwoBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 2c
+country_event = {
+	id = qosmo_palace_events.230
+	title = qosmo_palace_events.230.t
+	desc = qosmo_palace_events.230.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_2C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_2C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_2C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_2C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceTwoCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_2C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.230.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_2c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceTwoCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceTwoCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceTwoCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace third menu
+country_event = {
+	id = qosmo_palace_events.300
+	title = qosmo_palace_events.300.t
+	desc = qosmo_palace_events.300.d
+	picture = cosmogfx_PALACE_MENU_3_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.300.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_3a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_3a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.310
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_3a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.300.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_3b_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_3b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.320
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_3b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.300.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_3c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_3c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.330
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_3c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.300.7
+			country_event = {
+			id = qosmo_palace_events.400
+		}
+		}			
+}	
+
+#Menu 3A
+country_event = {
+	id = qosmo_palace_events.310
+	title = qosmo_palace_events.310.t
+	desc = qosmo_palace_events.310.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_3A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_3A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_3A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.310.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_3b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceThreeACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceThreeACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceThreeACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 3B
+country_event = {
+	id = qosmo_palace_events.320
+	title = qosmo_palace_events.320.t
+	desc = qosmo_palace_events.320.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_3B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_3B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_3B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.320.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_3b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceThreeBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceThreeBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceThreeBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 3C
+country_event = {
+	id = qosmo_palace_events.330
+	title = qosmo_palace_events.330.t
+	desc = qosmo_palace_events.330.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_3C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_3C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_3C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_3C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceThreeCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_3C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.330.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_3c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceThreeCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceThreeCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceThreeCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace fourth menu
+country_event = {
+	id = qosmo_palace_events.400
+	title = qosmo_palace_events.400.t
+	desc = qosmo_palace_events.400.d
+	picture = cosmogfx_PALACE_MENU_4_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.400.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_4a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_4a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.410
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_4a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.400.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_4b_tt 		
+		}		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_4b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.420
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_4b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.400.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_4c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_4c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.430
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_4c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.400.7
+			country_event = {
+			id = qosmo_palace_events.500
+		}
+		}			
+}	
+
+#Menu 4A
+country_event = {
+	id = qosmo_palace_events.410
+	title = qosmo_palace_events.410.t
+	desc = qosmo_palace_events.410.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_4A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_4A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_4A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.410.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_4b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 4B
+country_event = {
+	id = qosmo_palace_events.420
+	title = qosmo_palace_events.420.t
+	desc = qosmo_palace_events.420.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_4B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_4B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_4B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.420.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_4b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 4c
+country_event = {
+	id = qosmo_palace_events.430
+	title = qosmo_palace_events.430.t
+	desc = qosmo_palace_events.430.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_4C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_4C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_4C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_4C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_4C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.430.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_4c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace fifth menu
+country_event = {
+	id = qosmo_palace_events.500
+	title = qosmo_palace_events.500.t
+	desc = qosmo_palace_events.500.d
+	picture = cosmogfx_PALACE_MENU_5_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.500.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_5a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_5a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.510
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_5a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.500.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_5b_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_5b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.520
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_5b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.500.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_5c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_5c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.530
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_5c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.500.7
+			country_event = {
+			id = qosmo_palace_events.600
+		}
+		}			
+}	
+
+#Menu 5A
+country_event = {
+	id = qosmo_palace_events.510
+	title = qosmo_palace_events.510.t
+	desc = qosmo_palace_events.510.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_5A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_5A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_5A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.510.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_5b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceFiveACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceFiveACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceFiveACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 5B
+country_event = {
+	id = qosmo_palace_events.520
+	title = qosmo_palace_events.520.t
+	desc = qosmo_palace_events.520.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_5B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_5B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_5B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.520.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_5b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceFiveBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceFiveBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceFiveBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 5c
+country_event = {
+	id = qosmo_palace_events.530
+	title = qosmo_palace_events.530.t
+	desc = qosmo_palace_events.530.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_5C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_5C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_5C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_5C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceFiveCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_5C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.530.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_5c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceFiveCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceFiveCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceFiveCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace first menu
+country_event = {
+	id = qosmo_palace_events.600
+	title = qosmo_palace_events.600.t
+	desc = qosmo_palace_events.600.d
+	picture = cosmogfx_PALACE_MENU_6_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.600.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_6a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_6a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.610
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_6a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.600.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_6b_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_6b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.620
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_6b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.600.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_6c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_6c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.630
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_6c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.600.7
+			country_event = {
+			id = qosmo_palace_events.700
+		}
+		}			
+}	
+
+#Menu 6A
+country_event = {
+	id = qosmo_palace_events.610
+	title = qosmo_palace_events.610.t
+	desc = qosmo_palace_events.610.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSixACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_6A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_6A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_6A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.610.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_6b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSixACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSixACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSixACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 6B
+country_event = {
+	id = qosmo_palace_events.620
+	title = qosmo_palace_events.620.t
+	desc = qosmo_palace_events.620.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSixBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_6B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_6B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_6B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.620.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_6b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSixBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSixBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSixBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 6c
+country_event = {
+	id = qosmo_palace_events.630
+	title = qosmo_palace_events.630.t
+	desc = qosmo_palace_events.630.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSixCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_6C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_6C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_6C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_6C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSixCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_6C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.630.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_6c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSixCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSixCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSixCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace first menu
+country_event = {
+	id = qosmo_palace_events.700
+	title = qosmo_palace_events.700.t
+	desc = qosmo_palace_events.700.d
+	picture = cosmogfx_PALACE_MENU_7_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.700.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_7a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_7a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.710
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_7a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.700.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_7b_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_7b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.720
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_7b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.700.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_7c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_7c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.730
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_7c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.700.7
+			country_event = {
+			id = qosmo_palace_events.800
+		}
+		}			
+}	
+
+#Menu 7A
+country_event = {
+	id = qosmo_palace_events.710
+	title = qosmo_palace_events.710.t
+	desc = qosmo_palace_events.710.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_7A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_7A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_7A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.710.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_7b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSevenACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSevenACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSevenACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 7B
+country_event = {
+	id = qosmo_palace_events.720
+	title = qosmo_palace_events.720.t
+	desc = qosmo_palace_events.720.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_7B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_7B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_7B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.720.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_7b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSevenBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSevenBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSevenBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 7c
+country_event = {
+	id = qosmo_palace_events.730
+	title = qosmo_palace_events.730.t
+	desc = qosmo_palace_events.730.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_7C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_7C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_7C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_7C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceSevenCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_7C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.730.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_7c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceSevenCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceSevenCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceSevenCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+# Palace first menu
+country_event = {
+	id = qosmo_palace_events.800
+	title = qosmo_palace_events.800.t
+	desc = qosmo_palace_events.800.d
+	picture = cosmogfx_PALACE_MENU_8_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+		immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}				
+		}
+		}
+
+		option = {
+		name = qosmo_palace_events.800.a
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_8a_tt 		
+		}				
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_8a
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.810
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_8a
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.800.b
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_8b_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_8b
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.820
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_8b
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}
+		option = {
+		name = qosmo_palace_events.800.c
+		if = {
+			limit = {
+					has_ruler_flag = free_palace_concubines
+		}
+			custom_tooltip = palace_union_8c_tt 		
+		}
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = china_concubine_8c
+		}
+		}		
+		}
+			country_event = {
+			id = qosmo_palace_events.830
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = china_concubine_8c
+		}		
+		}
+			custom_tooltip = concubine_gone_tt 		
+			country_event = {
+			id = qosmo_palace_events.101
+			}
+		}
+		}		
+		option = {
+		name = qosmo_palace_events.800.7
+			country_event = {
+			id = qosmo_palace_events.100
+		}
+		}			
+}	
+
+#Menu 8A
+country_event = {
+	id = qosmo_palace_events.810
+	title = qosmo_palace_events.810.t
+	desc = qosmo_palace_events.810.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_8A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_8A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_8A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_7_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8A_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.810.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_8b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneACounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneACounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 8B
+country_event = {
+	id = qosmo_palace_events.820
+	title = qosmo_palace_events.820.t
+	desc = qosmo_palace_events.820.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_8B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_8B_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8B_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_8B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_6_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_2_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_4_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_1_eventPicture #2nd
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneBCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8B_5_eventPicture #2nd
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.820.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_8b_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneBCounter	
+			value = 280
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneBCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}
+
+#Menu 8c
+country_event = {
+	id = qosmo_palace_events.830
+	title = qosmo_palace_events.830.t
+	desc = qosmo_palace_events.830.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PALACE_MENU_8CA_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PALACE_MENU_8C_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8C_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PALACE_MENU_8C_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PALACE_MENU_8C_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_A9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B2_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B4_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceOneCCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_PALACE_MENU_8C_B7_eventPicture
+	}
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}
+			}
+					save_event_target_as = palacecountry
+				capital_scope = {
+					set_province_flag = cosmo_forbidden_palace
+				}		
+		}																
+		}
+	}		
+	
+		option = {
+		name = qosmo_palace_events.830.a	   
+		if = {
+			limit = {
+				has_ruler_flag = ruler_visit_concubines	
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_adm
+							}	
+							}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+								add_scaled_local_adm_power = 1 	
+										
+							}							
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_dip
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_dip_power = 1 	
+								}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+								NOT = {
+									has_ruler_flag = has_palace_mil
+								}	
+								}
+							random_province = {
+							limit = {
+								has_province_flag = cosmo_forbidden_palace
+							}
+									add_scaled_local_mil_power = 1 	
+								}
+							}				
+						}				
+				}				
+			clr_ruler_flag = ruler_visit_concubines	
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = ruler_palace_mil
+		hidden_effect = {
+
+			change_variable = {
+				which = cosmoChineseCounter
+				value = 1
+				}					   
+			}						
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = free_palace_concubines	
+			}
+			custom_tooltip = cosmo_palace_escape_tt
+			set_country_flag = palace_8c_escape
+			clr_ruler_flag = free_palace_concubines							
+		   }
+			country_event = {
+			id = qosmo_palace_events.30
+			days = 2
+			}		   
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceOneCCounter	
+			value = 460
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceOneCCounter
+		value = 0
+			}
+		}
+	}		   		
+	}	
+}

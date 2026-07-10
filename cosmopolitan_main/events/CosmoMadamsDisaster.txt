@@ -1,0 +1,4383 @@
+########################################
+# Cosmo General Events
+#
+# Add in a seperate pop up event announcing Anathanism, make it require either reform desire or age of reformation
+# happens when you fulfill all the requirements to let you know to let them get power
+# 
+########################################
+
+namespace = cosmo_madamsd_events
+
+country_event = {#need localization
+	id = cosmo_madamsd_events.10
+	title = cosmo_madamsd_events.10.t
+	desc = cosmo_madamsd_events.10.d
+	picture = cosmogfx_MAGDELENA_NUDE_eventPicture
+	goto = prostituteprovince
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = no	
+		#or age of reformation/reform desire
+			check_variable = {
+				which = cosmoEuropeCounter
+				value = 3
+			}			
+			any_province = {
+				has_building = brothel_district 
+				country_or_vassal_holds = ROOT
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+				trade_share = {
+					country = ROOT
+					share = 50
+				}					 
+			}
+		
+		}
+
+ 	mean_time_to_happen = {
+ 		days = 1
+ 	}	
+
+		immediate = {
+		hidden_effect = {		
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT
+				has_building = brothel_district
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+				trade_share = {
+					country = ROOT
+					share = 50
+				}					
+									
+			}
+			set_province_flag = cosmo_anathanism_origin_possible
+			save_event_target_as = prostituteprovince
+		}			
+		}
+		}
+	
+	option = {
+		name = cosmo_madamsd_events.10.a
+	}		
+}
+
+#end
+country_event = {
+	id = cosmo_madamsd_events.1
+	title = cosmo_madamsd_events.1.t
+	desc = cosmo_madamsd_events.1.d
+	picture = cosmogfx_MAGDELENA_NUDE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+		immediate = {
+		hidden_effect = {		
+		}
+		}
+	
+	option = {
+		name = cosmo_madamsd_events.1.a
+			clr_country_flag = cosmo_madams_end
+	}		
+}
+
+# sort
+
+country_event = {
+	id = cosmo_madamsd_events.3
+	title = cosmo_madamsd_events.3.t
+	desc = cosmo_madamsd_events.3.d
+	picture = cosmogfx_MAGDELENA_NUDE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+		immediate = {
+		hidden_effect = {		
+		}
+		}
+	
+	option = {
+		name = cosmo_madamsd_events.3.a
+		if = {
+			limit = {
+				has_country_modifier = cosmo_anathanism_active
+			}
+			country_event = {
+			id = cosmo_madamsd_events.30
+		}			
+		}
+		if = {
+			limit = {
+				NOT = {
+				has_country_modifier = cosmo_anathanism_active
+				}					
+			}
+			country_event = {
+			id = cosmo_madamsd_events.4
+		}			
+		}				
+	}		
+}
+
+
+
+# non religious
+country_event = {
+	id = cosmo_madamsd_events.4
+	title = cosmo_madamsd_events.4.t
+	desc = cosmo_madamsd_events.4.d
+	picture = {
+	trigger = {
+		OR = {
+			culture_group = mataco		
+			culture_group = araucanian		
+			culture_group = eskaleut		
+			culture_group = central_algonquian		
+			culture_group = plains_algonquian		
+			culture_group = eastern_algonquian		
+			culture_group = iroquoian		
+			culture_group = siouan		
+			culture_group = caddoan		
+			culture_group = muskogean		
+			culture_group = sonoran		
+			culture_group = apachean		
+			culture_group = na_dene		
+			culture_group = penutian
+			}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_NORTH_AMERICA_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+			culture_group = andean_group		
+			culture_group = aridoamerican		
+			culture_group = otomanguean		
+			culture_group = je_tupi		
+			culture_group = je		
+			culture_group = maranon		
+			culture_group = chibchan		
+			culture_group = carribean
+			culture_group = maya		
+			culture_group = central_american				
+			}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_CENTRAL_AMERICA_1_eventPicture
+	}		
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = altaic		
+				culture_group = evenks		
+				culture_group = kamchatkan_g		
+				culture_group = tartar				
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_STEPPE_1_eventPicture
+	}		
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {
+	check_variable = {
+			which = cosmoPleasureCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_1_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_3_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_4_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}		
+		NOT = {
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_5_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_6_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_7_eventPicture
+	}
+	picture = {
+	trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+				culture_group = caucasian
+			}
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_PORT_OF_PLEASURE_MENU_8_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+			culture_group = maghrebi		
+			culture_group = turko_semitic		
+			culture_group = iranian		
+			}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_MUSLIM_1_eventPicture
+	}	
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic		
+			}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_INDIA_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = malay						
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_EAST_INDIES_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = burman		
+				culture_group = thai_group
+				culture_group = southeastasian_group						
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_EAST_INDIES_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = east_asian		
+				has_country_flag = steppe_china_brothels
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_CHINA_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = korean_g		
+				has_country_flag = steppe_korea_brothels		
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_EAST_INDIES_1_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {
+	check_variable = {
+			which = cosmoPleasureCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_1_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_3_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_4_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+
+		NOT = {
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_5_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_6_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_7_eventPicture
+	}
+	picture = {
+	trigger = {
+			culture_group = japanese_g
+	NOT = {	
+	check_variable = {
+			which = cosmoPleasureCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_DISTRICT_JAPAN_3_eventPicture
+	}
+	picture = {
+	trigger = {
+		OR = {
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande			
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group			
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese			
+		}
+			}	
+	picture = cosmogfx_BROTHEL_DISTRICT_AFRICA_1_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {						
+		random_owned_province = {
+			limit = {
+				has_building = brothel_district
+			}
+			save_event_target_as = brothel_province
+		}					
+		random_owned_province = {
+			limit = {
+				has_building = brothel_district
+				NOT = {
+					development = 25
+				}
+			}
+			save_event_target_as = brothel_province
+		}				
+		random_owned_province = {
+			limit = {
+				has_building = brothel_district
+				is_capital = yes				
+				NOT = {
+					development = 25
+				}
+			}
+			save_event_target_as = brothel_province
+		}
+		random_province = {#add multiple possibilities so it will go to the event province if still possible
+			limit = {
+				country_or_vassal_holds = ROOT
+				has_building = brothel_district
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+				trade_share = {
+					country = ROOT
+					share = 50
+				}					
+									
+			}
+			save_event_target_as = prostituteprovince
+			save_event_target_as = brothel_province
+		}
+		random_province = {#add multiple possibilities so it will go to the event province if still possible
+			limit = {
+				country_or_vassal_holds = ROOT
+				has_building = brothel_district
+				has_province_flag = cosmo_anathanism_origin_possible
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+				trade_share = {
+					country = ROOT
+					share = 50
+				}					
+									
+			}
+			save_event_target_as = prostituteprovince
+			save_event_target_as = brothel_province
+		}						
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.4.a
+		highlight = yes	
+		trigger = {
+			adm_power = 200
+		}
+		add_adm_power = -200 
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = 10
+		}
+		event_target:brothel_province = {
+			if = {
+				limit = {
+					development = 25
+				}
+				add_province_modifier = {
+					name = governmental_reforms
+					duration = 1825
+				}				
+			}
+			if = {
+				limit = {
+					NOT = {
+						development = 25
+					}
+				}
+				add_base_production = 1
+				add_base_tax = 1 				
+			}			
+		}		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}							
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.4.b
+
+		add_ruler_modifier = { 
+			name = prostitutes_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}		
+		}
+		option = {#ignore influence
+		name = cosmo_madamsd_events.4.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -20
+		}		
+		}
+		option = {#stop tax
+		name = cosmo_madamsd_events.4.8		
+		trigger = {
+			has_estate_influence_modifier = {
+				estate = estate_madams
+				modifier = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+			}			
+		}
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = 20
+		}
+		remove_estate_privilege = estate_madams_brothel_tax
+		every_province = {
+			limit = {
+				country_or_vassal_holds = ROOT	
+				has_building = brothel_district
+				NOT = {
+					has_province_modifier = brothel_tax_exempt
+				}				
+			}
+			add_province_modifier = { 
+				name = brothel_tax_exempt
+				duration =  1825
+				}						
+		}		
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_TAX_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}				
+		}		
+		option = {#explore anathanism
+		name = cosmo_madamsd_events.4.7
+		highlight = yes
+		goto = prostituteprovince
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT
+				 	has_building = brothel_district 
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+				trade_share = {
+					country = ROOT
+					share = 50
+				}					 
+			}			
+		}
+		event_target:prostituteprovince = {
+			set_province_flag = cosmo_anathanism_origin
+		}	
+			country_event = {
+			id = cosmo_madamsd_events.5
+		}		
+		}																												
+}
+
+# anathanist event
+country_event = {
+	id = cosmo_madamsd_events.5
+	title = cosmo_madamsd_events.5.t
+	desc = cosmo_madamsd_events.5.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_ANATHANIST_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_ANATHANIST_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_ANATHANIST_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_12_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_13_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_14_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_15_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_16_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_17_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_18_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_19_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_20_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_21_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_22_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_23_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_24_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 481
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_25_eventPicture
+	}
+	goto = prostituteprovince
+
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+				 	has_building = brothel_district 
+					OR = {
+						has_province_modifier = french_prostitutes
+						has_province_modifier = central_european_prostitutes
+						has_province_modifier = iberian_prostitutes
+						has_province_modifier = italian_prostitutes
+						has_province_modifier = turkish_prostitutes
+						has_province_modifier = british_prostitutes
+						has_province_modifier = french_prostitutes
+						has_province_modifier = russian_prostitutes
+					}
+					has_province_flag = cosmo_anathanism_origin 
+				}
+				save_event_target_as = prostituteprovince
+			}				
+				}
+				}	
+
+		option = {#support Anathanists
+		name = cosmo_madamsd_events.5.a
+		trigger = {
+			NOT = {
+				has_country_flag = cosmo_et_running
+			}
+		}
+		add_country_modifier = {
+			name = cosmo_anathanism_active
+			duration = -1
+		}
+		add_country_modifier = {
+			name = cosmo_anathanism_start
+			duration = 365
+		}
+			enable_religion = anathanism_protestant
+			change_religion = anathanism_protestant		
+			event_target:prostituteprovince = {
+				change_religion = anathanism_protestant
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+				custom_tooltip = cosmo_propogate_religion_active_tt
+				set_province_flag = cosmo_converting_repeater
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 15
+					key = IMMENSELY_POPULAR_PORT
+				}
+				add_province_modifier = { 
+					name = cosmo_convert_repeater
+					duration = 5400  
+					hidden = yes
+
+				}
+				add_reform_center = anathanism_protestant					
+			}
+				add_estate_influence_modifier = {
+						estate = estate_madams
+						desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+						influence = -50
+						duration = 1825
+					}					
+				if = {
+					limit = {
+						any_owned_province = {
+							has_cardinal = yes 
+						}
+					}
+					every_owned_province = {
+						limit = {
+							has_cardinal = yes 
+						}
+						spawn_rebels = {
+							type = catholic_rebels
+							size = 2
+							win = yes
+						}				
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_owned_province = {
+								has_cardinal = yes 
+							}
+						}
+
+					}
+					add_estate_loyalty = {
+						estate = estate_church
+						loyalty = -15
+					}
+				}		
+				hidden_effect = {
+				change_variable = {
+				which = cosmoAnathanistCounter
+				value = 20
+				}
+				if = {
+				limit = {
+					check_variable = {
+					which = cosmoAnathanistCounter	
+					value = 480
+					}
+					}
+				set_variable = {
+				which = cosmoAnathanistCounter
+				value = 0
+					}
+				}
+			}									
+		}
+		option = {#Anathanism 
+		name = cosmo_madamsd_events.5.7
+		add_country_modifier = {
+			name = cosmo_anathanism_active
+			duration = -1
+		}
+		add_country_modifier = {
+			name = cosmo_anathanism_start
+			duration = 365
+		}
+
+			event_target:prostituteprovince = {				
+				custom_tooltip = cosmo_propogate_religion_active_tt
+				set_province_flag = cosmo_converting_repeater
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 15
+					key = IMMENSELY_POPULAR_PORT
+				}
+				add_province_modifier = { 
+					name = cosmo_convert_repeater
+					duration = 5400  
+					hidden = yes
+
+				}					
+			}
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}					
+		if = {
+			limit = {
+				any_owned_province = {
+					has_cardinal = yes 
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_cardinal = yes 
+				}
+				spawn_rebels = {
+					type = catholic_rebels
+					size = 2
+					win = yes
+				}				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_owned_province = {
+						has_cardinal = yes 
+					}
+				}
+
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+		}		
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}									
+		}		
+		option = {#fund church
+		name = cosmo_madamsd_events.5.b
+
+		set_country_flag = cosmo_no_anathanists
+		add_ruler_modifier = { 
+			name = prostitutes_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}
+		option = {#no but temporary
+		name = cosmo_madamsd_events.5.c		
+			country_event = {
+			id = cosmo_madamsd_events.4
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}																						
+}
+
+# anathanist event
+country_event = {
+	id = cosmo_madamsd_events.30
+	title = cosmo_madamsd_events.30.t
+	desc = cosmo_madamsd_events.30.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_ANATHANIST_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_ANATHANIST_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_ANATHANIST_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_12_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_13_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_14_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_15_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_16_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_17_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_18_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_19_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_20_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_21_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_22_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_23_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_24_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 481
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_25_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+
+				option = {#support Anathanists
+				name = cosmo_madamsd_events.5.a
+				trigger = {
+					NOT = {
+						has_country_flag = cosmo_et_running
+						religion = anathanism_protestant 
+					}
+				}
+				add_country_modifier = {
+					name = cosmo_anathanism_active
+					duration = -1
+				}
+				add_country_modifier = {
+					name = cosmo_anathanism_start
+					duration = 365
+				}
+					enable_religion = anathanism_protestant
+					change_religion = anathanism_protestant		
+					event_target:prostituteprovince = {
+						change_religion = anathanism_protestant
+						add_permanent_province_modifier = {
+							name = "religious_zeal_at_conv"
+							duration = 9000
+						}
+						custom_tooltip = cosmo_propogate_religion_active_tt
+						set_province_flag = cosmo_converting_repeater
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 15
+							key = IMMENSELY_POPULAR_PORT
+						}
+						add_province_modifier = { 
+							name = cosmo_convert_repeater
+							duration = 5400  
+							hidden = yes
+		
+						}					
+					}
+						add_estate_influence_modifier = {
+								estate = estate_madams
+								desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+								influence = -50
+								duration = 1825
+							}					
+						if = {
+							limit = {
+								any_owned_province = {
+									has_cardinal = yes 
+								}
+							}
+							every_owned_province = {
+								limit = {
+									has_cardinal = yes 
+								}
+								spawn_rebels = {
+									type = catholic_rebels
+									size = 2
+									win = yes
+								}				
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									any_owned_province = {
+										has_cardinal = yes 
+									}
+								}
+		
+							}
+							add_estate_loyalty = {
+								estate = estate_church
+								loyalty = -15
+							}
+						}		
+						hidden_effect = {
+						change_variable = {
+						which = cosmoAnathanistCounter
+						value = 20
+						}
+						if = {
+						limit = {
+							check_variable = {
+							which = cosmoAnathanistCounter	
+							value = 480
+							}
+							}
+						set_variable = {
+						which = cosmoAnathanistCounter
+						value = 0
+							}
+						}
+					}									
+				}				
+		option = {#support Anathanists
+		name = cosmo_madamsd_events.30.a
+
+		add_adm_power = -50 
+		add_church_power = 40
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}									
+		}
+		option = {#fund church
+		name = cosmo_madamsd_events.30.b
+
+		add_years_of_income = -0.35  	
+		add_church_power = 10
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}
+		option = {#ignore influence
+		name = cosmo_madamsd_events.30.c
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -20
+		}			
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}																						
+}
+
+# mistress start
+country_event = {
+	id = cosmo_madamsd_events.101
+	title = cosmo_madamsd_events.101.t
+	desc = cosmo_madamsd_events.101.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoHaremVisit	
+			value = 1
+			}
+		}
+			}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 21
+			}
+			}
+		}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 41
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 61
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 81
+			}
+		}
+	}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 101
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 121
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 141
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+
+	hidden = yes
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				random_province = {
+					limit = {
+						has_province_flag = cosmo_consort_rebellion
+					}
+					save_event_target_as = consort_revolter
+				}
+				}
+				}	
+
+
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.101.8		
+		define_consort = {
+			culture = event_target:consort_revolter
+		}
+		event_target:consort_revolter = {
+			if = {
+				limit = {
+					event_target:consort_revolter = {
+						culture = ROOT 
+					}
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 1.5
+					use_consort_as_leader = yes
+					culture = event_target:consort_revolter
+					religion = event_target:consort_revolter
+				}
+			}
+			if = {
+				limit = {
+					event_target:consort_revolter = {
+						NOT = {
+							culture = ROOT 
+						}
+					}
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 4
+					use_consort_as_leader = yes
+					culture = event_target:consort_revolter
+					religion = event_target:consort_revolter
+				}
+			}
+		}		
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}																										
+}
+
+# mistress start
+country_event = {
+	id = cosmo_madamsd_events.100
+	title = cosmo_madamsd_events.100.t
+	desc = cosmo_madamsd_events.100.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoHaremVisit	
+			value = 1
+			}
+		}
+			}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 21
+			}
+			}
+		}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 41
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 61
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 81
+			}
+		}
+	}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 101
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 121
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 141
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.100.a
+		add_prestige = -20
+		add_adm_power = -100 
+		if = {
+			limit = {
+				NOT = {
+					adm_power = 100
+				}
+			}
+			every_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes	
+				}
+				add_local_autonomy = 20
+			}
+		}
+		add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.100.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.100.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.100.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 	
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}				
+		option = {#ignore influence
+		name = cosmo_madamsd_events.100.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# ooku start
+country_event = {
+	id = cosmo_madamsd_events.200
+	title = cosmo_madamsd_events.200.t
+	desc = cosmo_madamsd_events.200.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoOokuCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_OOKU_GENERAL_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_OOKU_GENERAL_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_OOKU_GENERAL_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_OOKU_GENERAL_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_OOKU_GENERAL_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_OOKU_GENERAL_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_OOKU_GENERAL_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoOokuCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.200.a
+		add_prestige = -20
+		add_adm_power = -100 
+		add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoOokuCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoOokuCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoOokuCounter
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.200.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoOokuCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoOokuCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoOokuCounter
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.200.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoOokuCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoOokuCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoOokuCounter
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.200.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoOokuCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoOokuCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoOokuCounter
+		value = 0
+			}
+		}
+		}					
+		}		
+		option = {#ignore influence
+		name = cosmo_madamsd_events.200.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoOokuCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoOokuCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoOokuCounter
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# palace start
+country_event = {
+	id = cosmo_madamsd_events.300
+	title = cosmo_madamsd_events.300.t
+	desc = cosmo_madamsd_events.300.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_MNG_CONCUBINES_INTRODUCTION_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1C_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoPalaceCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_MNG_CONCUBINES_VISIT_1B_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.300.a
+		add_prestige = -20
+		add_adm_power = -100 
+		add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.300.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.300.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.300.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}					
+		}		
+		option = {#ignore influence
+		name = cosmo_madamsd_events.300.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoPalaceCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoPalaceCounter	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoPalaceCounter
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# harem mena start
+country_event = {
+	id = cosmo_madamsd_events.400
+	title = cosmo_madamsd_events.400.t
+	desc = cosmo_madamsd_events.400.d
+	picture = {
+		trigger = {
+		NOT = {
+		check_variable = {
+				which = cosmoHaremVisit	
+				value = 1
+				}
+			}
+				}	
+		picture = cosmogfx_HAREM_DANCER_eventPicture
+		}
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 21
+				}
+				}
+			}	
+		picture = cosmogfx_HAREM_NUDESMOKING_eventPicture
+		}	
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 41
+				}
+			}
+			}	
+		picture = cosmogfx_HAREM_TWONUDEBED_eventPicture
+		}
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 61
+				}
+			}
+			}	
+		picture = cosmogfx_HAREM_DRESSING_eventPicture
+		}
+		picture = {
+		trigger = {
+			NOT = {
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 81
+				}
+			}
+		}	
+		picture = cosmogfx_HAREM_OUTSIDESMOKING_eventPicture
+		}
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 101
+				}
+		}	
+		}
+		picture = cosmogfx_HAREM_SMOKE_OFFER_eventPicture
+		}
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 121
+				}
+		}	
+		}
+		picture = cosmogfx_HAREM_POOL_BATHE_eventPicture
+		}
+		picture = {
+		trigger = {
+		NOT = {	
+		check_variable = {
+				which = cosmoHaremVisit
+				value = 141
+				}
+		}	
+		}
+		picture = cosmogfx_HAREM_POOL_BATHE_eventPicture
+		}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.400.a
+		add_prestige = -20
+		add_adm_power = -100 
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.400.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.400.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.400.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}		
+		option = {#ignore influence
+		name = cosmo_madamsd_events.400.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# harem india start
+country_event = {
+	id = cosmo_madamsd_events.401
+	title = cosmo_madamsd_events.401.t
+	desc = cosmo_madamsd_events.401.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoHaremVisit	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_HAREM_DANCER_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_HAREM_NUDESMOKING_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_HAREM_TWONUDEBED_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_HAREM_DRESSING_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_HAREM_OUTSIDESMOKING_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_SMOKE_OFFER_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_POOL_BATHE_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_POOL_BATHE_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.401.a
+		add_prestige = -20
+		add_adm_power = -100 
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.401.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.401.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.401.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}		
+		option = {#ignore influence
+		name = cosmo_madamsd_events.401.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# wives start need seperate for each region
+country_event = {
+	id = cosmo_madamsd_events.500
+	title = cosmo_madamsd_events.500.t
+	desc = cosmo_madamsd_events.500.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoHaremVisit	
+			value = 1
+			}
+		}
+			}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 21
+			}
+			}
+		}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 41
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 61
+			}
+		}
+		}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 81
+			}
+		}
+	}	
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 101
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 121
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoHaremVisit
+			value = 141
+			}
+	}	
+	}
+	picture = COURT_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#make concessions
+		name = cosmo_madamsd_events.500.a
+		add_prestige = -20
+		add_adm_power = -100 
+		add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}									
+		}
+		option = {#end influence
+		name = cosmo_madamsd_events.500.b
+		add_ruler_modifier = { 
+			name = mistresses_banned
+			duration = 1825
+		}		
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.500.7
+		trigger = {
+			NOT = {
+				has_country_modifier = cosmo_women_generals
+			}
+		}
+		add_country_modifier = { 
+			name = cosmo_women_generals
+			duration =  -1
+			}		
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}
+		option = {#force consorts as generals
+		name = cosmo_madamsd_events.500.8
+		trigger = {
+			has_country_modifier = cosmo_women_generals
+		}
+		if = {
+			limit = {
+				OR = {
+					any_owned_province = {
+						has_province_modifier = cosmo_favorite_1
+					}
+					any_subject_country = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}			
+					}
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					has_province_modifier = cosmo_favorite_1					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						any_owned_province = {
+							has_province_modifier = cosmo_favorite_1
+						}
+						any_subject_country = {
+							any_owned_province = {
+								has_province_modifier = cosmo_favorite_1
+							}			
+						}
+					}					
+				}				
+			}
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT
+					cosmo_has_concubine_trigger = yes					
+				}
+				custom_tooltip = consort_rebellion_tt
+				add_province_modifier = { 
+					name = cosmo_consort_rebellion
+					duration = 365  
+				}				
+				set_province_flag = cosmo_consort_rebellion 
+			}
+		}		
+		country_event = { 
+			id = cosmo_madamsd_events.101
+			}			
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = COSMO_PROSTITUTES_BANNED
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}					
+		}		
+		option = {#ignore influence
+		name = cosmo_madamsd_events.500.c		
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = -20
+		}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoHaremVisit
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoHaremVisit	
+			value = 140
+			}
+			}
+		set_variable = {
+		which = cosmoHaremVisit
+		value = 0
+			}
+		}
+		}				
+		}																						
+}
+
+# anathanist event
+country_event = {
+	id = cosmo_madamsd_events.999
+	title = cosmo_madamsd_events.999.t
+	desc = cosmo_madamsd_events.999.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_ANATHANIST_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_ANATHANIST_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_ANATHANIST_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_ANATHANIST_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_12_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_13_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_14_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_15_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_16_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_17_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_18_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_19_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_20_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_21_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_22_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_23_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_24_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoAnathanistCounter
+			value = 481
+			}
+	}	
+	}
+	picture = cosmogfx_ANATHANIST_25_eventPicture
+	}
+	
+	is_triggered_only = yes		
+	
+	
+		immediate = {
+			hidden_effect = {
+				}
+				}	
+
+		option = {#support Anathanists
+		name = cosmo_madamsd_events.999.a
+
+		add_adm_power = -50 
+		add_church_power = 40
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -20
+		}
+		
+	}									
+		option = {#fund church
+		name = cosmo_madamsd_events.999.b
+
+		add_years_of_income = -0.15  	
+		add_church_power = 10
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -50
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}
+		option = {#fund church
+		name = cosmo_madamsd_events.999.c
+
+		add_years_of_income = -0.15  	
+		add_church_power = 10
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_ADMINISTRATIVE_CONCESSIONS
+				influence = -100
+				duration = 1825
+			}
+		hidden_effect = {
+		change_variable = {
+		which = cosmoAnathanistCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoAnathanistCounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoAnathanistCounter
+		value = 0
+			}
+		}
+	}					
+		}
+		option = {#PU aragon and naples
+		name = cosmo_madamsd_events.999.7
+			ARA = {
+				create_subject = {
+					subject_type = personal_union
+					subject = NAP
+				}
+			}	
+		}																								
+}

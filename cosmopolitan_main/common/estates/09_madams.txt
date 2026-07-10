@@ -1,0 +1,100 @@
+estate_madams =
+{
+	icon = 14
+
+	# If true, country will get estate
+	trigger = {
+		has_country_flag = madams_estate_active
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		spy_offence = 0.1 
+		advisor_cost = -0.05
+		madams_influence_modifier = -0.2
+	}
+	country_modifier_neutral = {
+		spy_offence = 0.1
+
+	}	
+	country_modifier_angry = {
+		spy_offence = -0.1 
+		advisor_cost = 0.05
+	}
+
+	land_ownership_modifier = {
+		madams_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOT = { has_province_flag = cosmo_gift_to_madams }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_VAL_CELESTIAL_EMPIRE
+		trigger = {
+			has_reform = celestial_empire
+		}		
+		influence = -10
+	}
+
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+		
+
+	color = { 30 40 130 }
+
+	privileges = {
+		estate_madams_hire_madams
+		estate_madams_ruler_visit
+		estate_madams_establish_brothels
+		estate_madams_entertain_dignitary
+		estate_madams_train_spy
+		estate_madams_entertain_troops
+		estate_madams_entertain_sailors
+		estate_madams_entertain_merchants
+		estate_madams_convert_anathanist
+		estate_madams_entertain_church
+		estate_madams_entertain_nobles
+		estate_madams_entertain_burghers
+		estate_madams_entertain_brahmins
+		estate_madams_entertain_maratha
+		estate_madams_entertain_vaisyas
+		estate_madams_entertain_cossacks
+		estate_madams_entertain_nomadic_tribes
+		estate_madams_entertain_dhimmi
+		estate_madams_entertain_jains
+		estate_madams_entertain_rajput
+		estate_madams_encourage_colonists
+		estate_madams_open_pirates
+		estate_madams_closed_pirates
+		estate_madams_tax_free_brothels
+		estate_madams_promote_prostitution
+		estate_madams_relegate_prostitution
+		estate_madams_brothel_tax
+	}
+
+	agendas = {
+		estate_madams_develop_x
+		estate_madams_develop_mil_x
+		estate_madams_develop_dip_x
+	}
+	influence_from_dev_modifier = 1.0
+}

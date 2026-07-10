@@ -1,0 +1,63 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_brothel_district"
+		texturefile = "gfx/interface/buildings/brothel_district.dds"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_expand_brothel_district"
+		texturefile = "gfx/interface/buildings/brothel_districtII.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_port_of_pleasure"
+		texturefile = "gfx/interface/buildings/port_of_pleasure_b.dds"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_port_of_pleasure_II"
+		texturefile = "gfx/interface/buildings/port_of_pleasure_bII.dds"
+		loadType = "INGAME"
+	}
+			spriteType = {
+		name = "GFX_cosmo_slave_market"
+		texturefile = "gfx/interface/buildings/slave_market.dds"
+		loadType = "INGAME"
+	}
+			spriteType = {
+		name = "GFX_cosmo_slave_market_II"
+		texturefile = "gfx/interface/buildings/slave_marketII.dds"
+		loadType = "INGAME"
+	}
+			spriteType = {
+		name = "GFX_send_slaves_building"
+		texturefile = "gfx/interface/buildings/send_slave.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_royal_visit"
+		texturefile = "gfx/interface/buildings/royal_visit.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_entertain"
+		texturefile = "gfx/interface/buildings/entertain.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_remove_prostitute"
+		texturefile = "gfx/interface/buildings/remove_prostitute.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_brothel_policy"
+		texturefile = "gfx/interface/buildings/brothel_policy.dds"
+		loadType = "INGAME"
+	}				
+}

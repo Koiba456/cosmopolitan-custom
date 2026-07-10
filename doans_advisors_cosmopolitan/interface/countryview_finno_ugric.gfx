@@ -1,0 +1,208 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_treasurer_female"
+		texturefile = "gfx//interface//advisors//scandinavian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_trader_female"
+		texturefile = "gfx//interface//advisors//scandinavian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_theologian_female"
+		texturefile = "gfx//interface//advisors//scandinavian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_statesman_female"
+		texturefile = "gfx//interface//advisors//scandinavian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_spymaster_female"
+		texturefile = "gfx//interface//advisors//scandinavian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//scandinavian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_quartermaster_female"
+		texturefile = "gfx//interface//advisors//scandinavian_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_philosopher_female"
+		texturefile = "gfx//interface//advisors//scandinavian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_navigator_female"
+		texturefile = "gfx//interface//advisors//scandinavian_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//scandinavian_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//scandinavian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//scandinavian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_inquisitor_female"
+		texturefile = "gfx//interface//advisors//scandinavian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_grand_captain_female"
+		texturefile = "gfx//interface//advisors//scandinavian_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//scandinavian_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_finno_ugric_diplomat_female"
+		texturefile = "gfx//interface//advisors//scandinavian_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_commandant_female"
+		texturefile = "gfx//interface//advisors//scandinavian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//scandinavian_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_artist_female"
+		texturefile = "gfx//interface//advisors//scandinavian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_army_reformer_female"
+		texturefile = "gfx//interface//advisors//scandinavian_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_army_organiser_female"
+		texturefile = "gfx//interface//advisors//scandinavian_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_finno_ugric_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

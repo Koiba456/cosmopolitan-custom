@@ -1,0 +1,213 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_theologian_female"
+		texturefile = "gfx//interface//advisors//pirate_african_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_pirate_african_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//pirate_african_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_artist_female"
+		texturefile = "gfx//interface//advisors//pirate_african_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_philosopher_female"
+		texturefile = "gfx//interface//advisors//pirate_african_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//pirate_african_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_statesman_female"
+		texturefile = "gfx//interface//advisors//pirate_african_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_diplomat_female"
+		texturefile = "gfx//interface//advisors//pirate_african_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//pirate_african_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_trader_female"
+		texturefile = "gfx//interface//advisors//pirate_african_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_grand_captain_female"
+		texturefile = "gfx//interface//advisors//pirate_african_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_commandant_female"
+		texturefile = "gfx//interface//advisors//pirate_african_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_army_organiser_female"
+		texturefile = "gfx//interface//advisors//pirate_african_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_army_reformer_female"
+		texturefile = "gfx//interface//advisors//pirate_african_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_quartermaster_female"
+		texturefile = "gfx//interface//advisors//pirate_african_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	spriteType = {
+		name = "GFX_advisor_pirate_african_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//pirate_african_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_treasurer_female"
+		texturefile = "gfx//interface//advisors//pirate_african_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_inquisitor_female"
+		texturefile = "gfx//interface//advisors//pirate_african_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_spymaster_female"
+		texturefile = "gfx//interface//advisors//pirate_african_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//pirate_african_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_navigator_female"
+		texturefile = "gfx//interface//advisors//pirate_african_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pirate_african_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//pirate_african_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_pirate_african_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

@@ -1,0 +1,5514 @@
+spriteTypes = {
+	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_own_harem_visit_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Urszula Meyerin START
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}			
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_2_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_2_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_3_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_3_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_OWN_HAREM_VISIT_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/OWN_HAREM_VISIT_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_1_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_2_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_3_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_4_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_5_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_6_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_7_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_8_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_9_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_10_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_11_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_12_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_13_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_14_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_14_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_15_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_16_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_16_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_17_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_17_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_18_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_18_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_19_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_19_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_20_eventPicture"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_20_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_1_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_2_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_3_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_4_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_5_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_6_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_7_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_8_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_9_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_10_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_11_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_12_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_13_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_14_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_14_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_15_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_16_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_16_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_17_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_17_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_18_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_18_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_19_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_19_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_JAPANESE_DEGENERACY_LEVEL_20_eventPicture"
+			texturefile = "gfx/event_pictures/JAPANESE_DEGENERACY_LEVEL_20_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_1A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_1A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_2A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_2A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_3A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_3A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_4A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_4A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_5A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_5A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_6A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_6A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_7A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_7A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_8A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_8A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_9A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_9A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_10A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_10A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_11A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_11A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_12A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_12A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_CONGO_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/CONGO_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_CONGO_MENU_2_eventPicture"
+			texturefile = "gfx/event_pictures/CONGO_MENU_2_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_CUSHITIC_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/CUSHITIC_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_GREAT_LAKES_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/GREAT_LAKES_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_IVORY_COAST_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/IVORY_COAST_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_ZAMBEZI_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/ZAMBEZI_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_14_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_16_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_16_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_17_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_17_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_18_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_18_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_19_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_19_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_20_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_20_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_21_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_21_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_22_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_22_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_23_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_23_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_24_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_24_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_25_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_25_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_SA_COLONY_26_eventPicture"
+			texturefile = "gfx/event_pictures/SA_COLONY_26_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_1_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_2_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_3_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_4_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_5_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_6_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_7_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_8_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_9_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_10_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_11_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_12_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_13_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_14_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_14_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_15_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_16_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_16_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_17_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_17_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_18_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_18_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_19_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_19_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_20_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_20_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_21_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_21_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_22_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_22_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_23_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_23_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_24_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_24_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_25_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_25_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_ASIAN_COLONY_26_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_COLONY_26_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_1A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_1A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_2A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_2A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_3A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_3A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_4A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_4A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_5A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_5A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_6A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_6A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_7A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_7A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_1_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_2_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_3_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_4_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_5_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_6_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_7_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_8_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_9_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_10_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_11_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_12_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_13_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_14_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_SA_UNION_8A_15_eventPicture"
+			texturefile = "gfx/event_pictures/SA_UNION_8A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_COLUMBIA_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/COLUMBIA_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_INCA_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/INCA_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_MAYA_MENU_1_eventPicture"
+			texturefile = "gfx/event_pictures/MAYA_MENU_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_2_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_3_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_3_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_4_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_5_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_6_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_7_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_8_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_9_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_10_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_11_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_12_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_13_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_13_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_14_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_14_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_UNION_18A_15_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_UNION_18A_15_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_AFRICA_PLEASURE_1_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICA_PLEASURE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+}

@@ -1,0 +1,66 @@
+spriteTypes = {
+
+	#cosmopolitan
+	spriteType = {
+		name = "GFX_disaster_estate_madams_disaster"
+		texturefile = "gfx//interface//disasters//estate_madams_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_disaster_estate_forbiddenpalace_disaster"
+		texturefile = "gfx//interface//disasters//estate_forbiddenpalace_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_disaster_estate_harem_disaster"
+		texturefile = "gfx//interface//disasters//estate_harem_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_disaster_estate_nobleaffairs_disaster"
+		texturefile = "gfx//interface//disasters//estate_nobleaffairs_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_disaster_estate_ooku_disaster"
+		texturefile = "gfx//interface//disasters//estate_ooku_disaster.dds"
+		
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_estate_wives_disaster"
+		texturefile = "gfx//interface//disasters//estate_wives_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_decline_of_mali"
+		texturefile = "gfx//interface//disasters//decline_of_mali.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	#spriteType = {
+	#	name = "GFX_disaster_collapse_of_clans"
+	#	texturefile = "gfx//interface//disasters//collapse_of_clans.dds"
+	#	noOfFrames = 3
+	#	loadType = "INGAME"
+	#}
+	#spriteType = {
+	#	name = "GFX_disaster_era_of_princes"
+	#	texturefile = "gfx//interface//disasters//era_of_princes.dds"
+	#	noOfFrames = 3
+	#	loadType = "INGAME"
+	#}
+	
+}

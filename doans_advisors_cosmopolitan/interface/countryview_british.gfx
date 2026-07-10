@@ -1,0 +1,91 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_british_theologian_female"
+		texturefile = "gfx//interface//advisors//british_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_british_philosopher_female"
+		texturefile = "gfx//interface//advisors//philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_british_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_british_artist_female"
+		texturefile = "gfx//interface//advisors//artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_british_statesman_female"
+		texturefile = "gfx//interface//advisors//statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_british_treasurer_female"
+		texturefile = "gfx//interface//advisors//treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_british_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_british_army_reformer_female"
+		texturefile = "gfx//interface//advisors//army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_british_trader_female"
+		texturefile = "gfx//interface//advisors//trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+
+
+
+
+
+}

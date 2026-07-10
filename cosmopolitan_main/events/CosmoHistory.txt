@@ -1,0 +1,431 @@
+########################################
+# Cosmo hgfGeneral Events
+#
+# 
+########################################
+
+namespace = cosmo_history_events
+
+# Historic Prostiution Intro
+country_event = {
+	id = cosmo_history_events.1
+	title = cosmo_history_events.1.t
+	desc = cosmo_history_events.1.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	NOT = {
+		has_global_flag = cosmo_ai_prostitution
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+		}
+	}	
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.1.a
+			112 = {
+		change_trade_goods = prostitutes
+		add_building = brothel_district  
+		add_province_modifier = { 
+			name = venetian_prostitutes
+			duration = -1  
+			desc = venetian_prostitutes_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_venetian_brothels
+			duration = -1  
+			desc = cosmo_venetian_brothels_DESC
+		}		
+				add_trade_modifier = {
+			who = VEN
+			duration = -1
+			power = 20
+			key = VENETIAN_BROTHELS
+		}	
+		}
+			108 = {
+		change_trade_goods = prostitutes 
+		add_province_modifier = { 
+			name = cosmo_venetian_brothels
+			duration = -1  
+			desc = cosmo_venetian_brothels_DESC
+
+		}
+	}		
+	}
+}
+
+# Beginning 1444
+country_event = {
+	id = cosmo_history_events.2
+	title = cosmo_history_events.2.t
+	desc = cosmo_history_events.2.d
+	picture = cosmogfx_BROTHEL_VENICE_eventPictures
+
+	is_triggered_only = yes	
+	
+	trigger = {
+		ai = no	
+		has_global_flag = cosmo_ai_prostitution
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.2.a
+	112 = {#venice
+			change_trade_goods = prostitutes
+			add_building = brothel_district  
+			add_province_modifier = { 
+				name = venetian_prostitutes
+				duration = -1  
+				desc = venetian_prostitutes_DESC
+
+			}
+			add_province_modifier = { 
+				name = cosmo_venetian_brothels
+				duration = -1  
+				desc = cosmo_venetian_brothels_DESC
+			}		
+					add_trade_modifier = {
+				who = VEN
+				duration = -1
+				power = 20
+				key = VENETIAN_BROTHELS
+			}	
+		}
+	112 = {#venice
+			change_trade_goods = prostitutes
+			add_building = brothel_district  
+			add_province_modifier = { 
+				name = venetian_prostitutes
+				duration = -1  
+				desc = venetian_prostitutes_DESC
+
+			}
+			add_province_modifier = { 
+				name = cosmo_venetian_brothels
+				duration = -1  
+				desc = cosmo_venetian_brothels_DESC
+			}		
+					add_trade_modifier = {
+				who = VEN
+				duration = -1
+				power = 20
+				key = VENETIAN_BROTHELS
+			}	
+		}				
+	}
+}
+
+# Venetian brothel tax 1514 to finance arsenal
+country_event = {
+	id = cosmo_history_events.3
+	title = cosmo_history_events.3.t
+	desc = cosmo_history_events.3.d
+	picture = cosmogfx_BROTHEL_VENICE_eventPictures
+		
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+		has_country_flag = cosmo_ai_prostitution
+	NOT = {
+		has_country_flag = venice_has_prostitutes
+		}
+		check_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}
+		any_owned_province = {
+			same_continent = CAPITAL
+			province_has_center_of_trade_of_level = 2
+			trade_goods = prostitutes 			 
+			}
+		VEN = {
+		ai = yes
+		any_owned_province = {
+			same_continent = CAPITAL
+			province_has_center_of_trade_of_level = 1
+			NOT = {
+			trade_goods = prostitutes
+			has_province_flag = cosmo_no_prostitutes 			 
+			}			
+		}		
+		}
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.3.a
+		112 = {
+			add_province_modifier = { 
+				name = cosmo_venetian_brothels
+				duration = -1  
+				desc = cosmo_venetian_brothels_DESC
+			}	
+		}		
+	}
+}
+
+# A Window to Japan as Japan
+country_event = {
+	id = cosmo_history_events.4
+	title = cosmo_history_events.4.t
+	desc = cosmo_history_events.4.d
+	picture = cosmogfx_NAGASAKI_1A_eventPicture
+	goto = historyprovince
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+				NOT = {
+					culture_group = japanese_g
+				}
+				4182 = {
+					trade_share = {
+						country = PREV
+						share = 1
+					}					
+				}
+			}
+			save_event_target_as = foreigntrader		
+		}
+		4182 = {
+			save_event_target_as = historyprovince		
+		}																
+		}
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.4.a
+		4182 = {
+			center_of_trade = 1					
+		}
+		add_isolationism = -1
+		event_target:foreigntrader = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_traders_in_x
+			}			
+		}
+		every_country = {
+			limit = {
+				culture_group = japanese_g
+				isolationism = 3
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_foreigners_in_japan
+			}			
+		}		
+	}
+	option = {			# We will exploit this!
+		name = cosmo_history_events.4.b
+		4182 = {
+			set_province_flag = no_foreign_traders	
+		}
+		event_target:foreigntrader = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_refused_traders_in_x
+			}			
+		}		
+		add_isolationism = 1		
+	}	
+}
+
+# A Window to Japan as Japan
+country_event = {
+	id = cosmo_history_events.41
+	title = cosmo_history_events.41.t
+	desc = cosmo_history_events.41.d
+	picture = cosmogfx_NAGASAKI_1A_eventPicture
+	goto = historyprovince
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+		always = no
+		culture_group = japanese_g
+		owns_core_province = 4182 #Nagasaki
+		4182 = {
+			province_has_center_of_trade_of_level = 2 
+			has_building = brothel_district			
+		}
+		any_known_country = {
+				NOT = {
+					culture_group = japanese_g
+				}
+				4182 = {
+					trade_share = {
+						country = PREV
+						share = 1
+					}					
+				}			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+				NOT = {
+					culture_group = japanese_g
+				}
+				4182 = {
+					trade_share = {
+						country = PREV
+						share = 1
+					}					
+				}
+			}
+			save_event_target_as = foreigntrader		
+		}		
+		4182 = {
+			save_event_target_as = historyprovince		
+		}																
+		}
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.41.a
+		4182 = {
+			add_province_modifier = { 
+				name = cosmo_maruyama_brothels
+				duration = -1  
+				desc = cosmo_maruyama_brothels_DESC
+			}	
+		}
+		add_isolationism = -1
+		every_country = {
+			limit = {
+				culture_group = japanese_g
+				isolationism = 3
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_foreigners_in_japan
+			}			
+		}		
+	}
+	option = {			# We will exploit this!
+		name = cosmo_history_events.41.b
+		4182 = {
+			set_province_flag = no_foreign_traders	
+		}
+		add_isolationism = 1		
+	}	
+}
+
+# A Window to Japan Foreigner owns Nagasaki
+country_event = {
+	id = cosmo_history_events.42
+	title = cosmo_history_events.42.t
+	desc = cosmo_history_events.42.d
+	picture = cosmogfx_NAGASAKI_1A_eventPicture
+	goto = historyprovince
+	
+	trigger = {
+		ai = no	
+		owns_core_province = 4182 #Nagasaki
+		NOT = {
+		culture_group = japanese_g
+		}
+		4182 = {
+			NOT = {
+				OR = {
+					has_province_flag = no_foreign_traders
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+		}
+		any_known_country = {
+			culture_group = japanese_g
+			has_reform = shogunate
+		}
+		is_at_war = no
+		any_owned_province = {
+			NOT = {
+				OR = {
+					province_id = 1818
+					province_id = 1017 
+					province_id = 1021 
+					province_id = 1028 
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	immediate = {
+	hidden_effect = {		
+		4182 = {
+			save_event_target_as = historyprovince		
+		}
+		random_country = {
+			limit = {
+				culture_group = japanese_g
+				has_reform = shogunate				
+			}
+			save_event_target_as = shoguncountry		
+		}																
+		}
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_history_events.42.a
+		4182 = {
+			center_of_trade = 1					
+		}
+		every_country = {
+			limit = {
+				culture_group = japanese_g
+				isolationism = 3
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_foreigners_in_japan
+			}			
+		}		
+	}
+	option = {			# We will exploit this!
+		name = cosmo_history_events.42.b
+		4182 = {
+			set_province_flag = no_foreign_traders	
+		}
+		add_isolationism = 1		
+	}	
+}

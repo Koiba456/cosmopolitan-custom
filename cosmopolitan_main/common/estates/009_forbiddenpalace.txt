@@ -1,0 +1,97 @@
+estate_forbiddenpalace =
+{
+	icon = 16
+
+	# If true, country will get estate
+	trigger = {
+		has_country_flag = forbiddenpalace_estate_active
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		legitimacy = 1
+		republican_tradition = 1
+		meritocracy  = 1
+		devotion = 1
+		horde_unity = 1
+		#yearly_tribal_allegiance  = 1
+	}
+	country_modifier_neutral = {
+		legitimacy = 0.5
+		republican_tradition = 0.5
+		meritocracy  = 0.5
+		devotion = 0.5
+		horde_unity = 0.5
+		#yearly_tribal_allegiance  = 0.5
+	}	
+	country_modifier_angry = {
+		legitimacy = -1
+		republican_tradition = -1
+		meritocracy  = -1
+		devotion = -1
+		horde_unity = -1
+		#yearly_tribal_allegiance  = -1
+	}
+
+	land_ownership_modifier = {
+		forbiddenpalace_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOT = { has_province_flag = cosmo_gift_to_mistress }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_VAL_CELESTIAL_EMPIRE
+		trigger = {
+			has_reform = celestial_empire
+		}		
+		influence = -10
+	}
+
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+		
+
+	color = { 45 25 150 }
+
+	privileges = {
+		estate_forbiddenpalace_ruler_visit
+		estate_forbiddenpalace_procure_affair
+		estate_forbiddenpalace_give_gifts
+		estate_forbiddenpalace_request_advisor
+		estate_forbiddenpalace_accept_culture			
+		estate_forbiddenpalace_favorite_1
+		estate_forbiddenpalace_favorite_2
+		estate_forbiddenpalace_favorite_3	
+		estate_forbiddenpalace_no_favorites
+		estate_forbiddenpalace_agendas
+		estate_forbiddenpalace_cancel_agendas			
+		estate_forbiddenpalace_visit_consort
+		estate_forbiddenpalace_marry_consort
+	}
+
+	agendas = {
+		estate_forbiddenpalace_expand_into_x
+		estate_forbiddenpalace_nowar_expand_into_x
+		estate_forbiddenpalace_develop_x_consort
+	}
+	influence_from_dev_modifier = 1.0
+}

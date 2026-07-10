@@ -1,0 +1,3985 @@
+# INSTRUCTIONS:
+#
+# condition				A diplomatic action can have any number of condition blocks, each with its own
+#						tooltip, potential and allow section
+#
+# 	tooltip					Sets a custom text string similar to the hardcoded limits
+# 							If no tooltip is scripted, the tooltip for the actual trigger will be shown
+#							Note that the custom tooltip is only shown if the allow trigger is NOT met
+#
+# 	potential				Determines if the trigger is applicable or not
+# 	allow					Determines if the action is valid or not
+#
+# effect				A diplomatic action can only have one effect block
+
+# ROOT					actor
+# FROM					target
+
+########################################
+# DIPLOMATIC ACTIONS
+########################################
+# royal_marriage
+# declarewar
+# requestpeace
+# support_independence_action
+# allianceaction
+# embargoaction
+# annexationaction
+# integrationaction
+# vassalaction
+# guaranteeaction
+# warningaction
+# threaten_war
+# milaccess
+# fleet_access
+# offer_fleet_access
+# offermilaccess
+# insultaction
+# giftaction
+# claimaction
+# callaction
+# offerloan
+# warsubsidy
+# sellprov
+# imperial_relations_action
+# religious_unity_action
+# grant_electorate
+# remove_electorate
+# grant_freecity
+# remove_freecity
+# demand_unlawful_territory_action
+# call_crusade_action
+# excommunicate_action
+# enforce_peace
+# improve_relation
+# fabricate_claim
+# justify_trade_conflict
+# transfer_trade_power
+# infiltrate_administration
+# sabotage_reputation
+# support_rebels
+# sow_discontent
+# study_technology
+# agitate_for_liberty
+# form_coalition
+# request_to_join_federation
+# invite_to_federation
+# support_heir
+# break_marriage
+# designate_march
+# ask_for_march
+# sell_ships_action
+# counterespionage
+# abandon_union_action
+
+cosmo_entertain_merchants = {
+    category = economy           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_merchants		
+		 any_province = {
+			country_or_vassal_holds = ROOT
+			has_province_modifier = cosmo_entertaining_merchants
+			trade_share = {
+				country = FROM
+				share = 1
+			}
+		 }			 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}
+		 NOT = {
+			 trade_embargo_by = FROM 
+		 }		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_country_flag = entertaining_merchant_country					
+		FROM = {
+			set_country_flag = entertain_merchant_country
+			add_country_modifier = {
+				name = entertain_merchant_country
+				duration = 3650  
+				desc = entertain_merchant_country_DESC
+				hidden = no	
+			}
+		country_event = {#prostitute menus
+			id = cosmo_brothel_events.614
+			}			
+		}
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_entertain_dignitary = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_dignitary		
+		NOT = {
+			has_ruler_flag = train_spy_prostitutes
+			has_ruler_flag = hire_diplomat_prostitutes
+		}					 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}
+		hidden_trigger = {
+			NOT = {
+				has_ruler_flag = hire_diplomat_prostitutes
+			}
+			NOT = {#make custom trigger
+				FROM = {
+					has_country_flag = cosmo_dig_persistant_affair
+				}
+			}
+		}		
+		FROM = {
+				OR = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_threatened
+					}
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_loyal
+					}							
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}							
+					is_neighbor_of = ROOT
+					alliance_with = ROOT
+					is_subject_of = ROOT
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = improved_relation
+						value = 10
+					}										
+				}
+		 }
+		# FROM = {
+		# 		OR = {
+		# 			has_advisor = yes 
+		# 		AND = {
+		# 			has_heir = yes
+		# 			heir_age = 18
+		# 		}
+		# 		government = tribal
+		# 		government = native						
+		# 		government = republic						
+		# 		}
+		#  }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = hire_diplomat_prostitutes
+		if = {
+			limit = {
+		FROM = {
+			OR = {
+			advisor = trader 	
+			advisor = statesman 	
+			advisor = naval_reformer 	
+			advisor = spymaster 	
+			advisor = colonial_governor 	
+			advisor = diplomat 	
+			advisor = navigator 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_dip_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = philosopher 	
+			advisor = natural_scientist 	
+			advisor = artist 	
+			advisor = treasurer 	
+			advisor = theologian 	
+			advisor = master_of_mint 	
+			advisor = inquisitor 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_adm_advisor
+			}							
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = army_reformer 	
+			advisor = army_organiser 	
+			advisor = commandant 	
+			advisor = quartermaster 	
+			advisor = recruitmaster 	
+			advisor = fortification_expert 	
+			advisor = grand_captain 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_mil_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+				has_ruler_flag = entertain_dignitary_mil_advisor
+			}	
+		FROM = {
+			OR = {
+				has_heir = yes	 	
+				heir_age = 18
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_heir
+			}							
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = dignitary_entertained
+			}			
+		}
+		country_event = {#additional option menus
+			id = cosmo_brotheldignitary_events.2000
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.025 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.05 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_encourage_colonist_diplo = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_encourage_colonists							 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			capital_scope = {
+				custom_tooltip = encourage_colonists_tt 
+				set_province_flag = entertain_here_now	
+				set_province_flag = cosmo_colonist_source					
+			}			
+		}
+		country_event = {
+			id = cosmo_psort_events.12
+			}				
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.025 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.05 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_invite_to_empire = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_dignitary					 
+		is_emperor = yes 	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+
+			}
+		}		
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}
+		FROM = {
+				OR = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_threatened
+					}
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_loyal
+					}							
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}							
+					is_neighbor_of = ROOT
+					alliance_with = ROOT
+					is_subject_of = ROOT
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = improved_relation
+						value = 10
+					}										
+				}
+		 }
+		FROM = {
+				OR = {
+					has_advisor = yes 
+				AND = {
+					has_heir = yes
+					heir_age = 18
+				}		
+				}
+		 }
+		FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}			
+				has_matching_religion = ROOT 
+				is_subject = no	
+			NOT = {
+				total_base_tax = ROOT
+				development_in_provinces = {
+					value = 150
+				}			
+			}				
+				any_neighbor_country = {
+					is_part_of_hre = yes 
+				}
+		 }		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = hire_diplomat_prostitutes
+		if = {
+			limit = {
+		FROM = {
+			OR = {
+			advisor = trader 	
+			advisor = statesman 	
+			advisor = naval_reformer 	
+			advisor = spymaster 	
+			advisor = colonial_governor 	
+			advisor = diplomat 	
+			advisor = navigator 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_dip_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = philosopher 	
+			advisor = natural_scientist 	
+			advisor = artist 	
+			advisor = treasurer 	
+			advisor = theologian 	
+			advisor = master_of_mint 	
+			advisor = inquisitor 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_adm_advisor
+			}							
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = army_reformer 	
+			advisor = army_organiser 	
+			advisor = commandant 	
+			advisor = quartermaster 	
+			advisor = recruitmaster 	
+			advisor = fortification_expert 	
+			advisor = grand_captain 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_mil_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+				has_ruler_flag = entertain_dignitary_mil_advisor
+			}	
+		FROM = {
+			OR = {
+			has_heir = yes	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_heir
+			}							
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = dignitary_entertained
+			}			
+		}
+		set_ruler_flag = entertain_dignitary_invitetoempire
+		country_event = {#additional option menus
+			id = cosmo_brotheldignitary_events.2000
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_request_empire_invite = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_dignitary
+		FROM = {
+		is_emperor = yes 	
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+
+			}
+		}					 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}
+		FROM = {
+				OR = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_threatened
+					}
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_loyal
+					}							
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}							
+					is_neighbor_of = ROOT
+					alliance_with = ROOT
+					is_subject_of = ROOT
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = improved_relation
+						value = 10
+					}										
+				}
+		 }
+		FROM = {
+				OR = {
+					has_advisor = yes 
+				AND = {
+					has_heir = yes
+					heir_age = 18
+				}		
+				}
+		 }
+		FROM = {			
+				has_matching_religion = ROOT 
+			alliance_with = ROOT					
+		 }
+		any_neighbor_country = {
+			is_part_of_hre = yes 
+		}		 		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = hire_diplomat_prostitutes
+		if = {
+			limit = {
+		FROM = {
+			OR = {
+			advisor = trader 	
+			advisor = statesman 	
+			advisor = naval_reformer 	
+			advisor = spymaster 	
+			advisor = colonial_governor 	
+			advisor = diplomat 	
+			advisor = navigator 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_dip_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = philosopher 	
+			advisor = natural_scientist 	
+			advisor = artist 	
+			advisor = treasurer 	
+			advisor = theologian 	
+			advisor = master_of_mint 	
+			advisor = inquisitor 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_adm_advisor
+			}							
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = army_reformer 	
+			advisor = army_organiser 	
+			advisor = commandant 	
+			advisor = quartermaster 	
+			advisor = recruitmaster 	
+			advisor = fortification_expert 	
+			advisor = grand_captain 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_mil_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+				has_ruler_flag = entertain_dignitary_mil_advisor
+			}	
+		FROM = {
+			OR = {
+			has_heir = yes	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_heir
+			}							
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = dignitary_entertained
+			}			
+		}
+		set_ruler_flag = entertain_dignitary_requestinvitetoempire
+		country_event = {#additional option menus
+			id = cosmo_brotheldignitary_events.2000
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_dignitary_trust = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_MILITARY_SUPPORT_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_dignitary
+		FROM = {
+			OR = {
+				alliance_with = ROOT	
+				is_subject_of = ROOT
+			}	
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+
+			}
+		}					 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		NOT = {
+		war_with = FROM
+		}
+		hidden_trigger = {
+			NOT = {
+				has_ruler_flag = hire_diplomat_prostitutes
+			}
+		}
+		FROM = {
+				OR = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_threatened
+					}
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_loyal
+					}							
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}							
+					is_neighbor_of = ROOT
+					alliance_with = ROOT
+					is_subject_of = ROOT
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = improved_relation
+						value = 10
+					}										
+				}
+		 }		 		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = hire_diplomat_prostitutes
+		if = {
+			limit = {
+		FROM = {
+			OR = {
+			advisor = trader 	
+			advisor = statesman 	
+			advisor = naval_reformer 	
+			advisor = spymaster 	
+			advisor = colonial_governor 	
+			advisor = diplomat 	
+			advisor = navigator 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_dip_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = philosopher 	
+			advisor = natural_scientist 	
+			advisor = artist 	
+			advisor = treasurer 	
+			advisor = theologian 	
+			advisor = master_of_mint 	
+			advisor = inquisitor 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_adm_advisor
+			}							
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+			}	
+		FROM = {
+			OR = {
+			advisor = army_reformer 	
+			advisor = army_organiser 	
+			advisor = commandant 	
+			advisor = quartermaster 	
+			advisor = recruitmaster 	
+			advisor = fortification_expert 	
+			advisor = grand_captain 	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_mil_advisor
+			}
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = entertain_dignitary_dip_advisor
+				has_ruler_flag = entertain_dignitary_adm_advisor
+				has_ruler_flag = entertain_dignitary_mil_advisor
+			}	
+		FROM = {
+			OR = {
+			has_heir = yes	 	
+			}
+			}
+			}
+				set_ruler_flag = entertain_dignitary_heir
+			}							
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = dignitary_entertained
+			}			
+		}
+		set_ruler_flag = entertain_dignitary_trust
+		country_event = {#additional option menus
+			id = cosmo_brotheldignitary_events.2000
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}
+
+cosmo_send_spy = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+				NOT = {
+					cosmo_has_prostitute_trigger = yes
+				}
+			}
+		}
+			NOT = {
+			has_ruler_flag = train_spy_prostitutes
+			has_ruler_flag = hire_diplomat_prostitutes
+		}					 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		 NOT = {
+				has_country_modifier = recently_visited_brothel
+		 }
+		 custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}
+			FROM = {
+				custom_trigger_tooltip = {
+					tooltip = spy_network_5_tt	
+				OR = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 5
+					}
+					AND = {
+						is_subject = yes
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}				
+				}					
+				}
+	
+			 }						 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_sent_new
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		country_event = {#prostitute menus
+			id = cosmo_brothelspy_events.2001
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_increase_spy_network = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = spy_network_5_tt	
+			OR = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 5
+				}
+				AND = {
+					is_subject = yes
+					NOT = {
+						is_subject_of = ROOT
+					}
+				}				
+			}					
+			}
+
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_increase_network
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_increase_liberty_desire = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		NOT = {
+			has_country_flag = cosmo_spy_persistant_affair
+		}
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+		}
+		FROM = {
+			is_subject = yes
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}
+		NOT = {
+			has_ruler_flag = train_spy_prostitutes
+			has_ruler_flag = hire_diplomat_prostitutes
+		}								 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+			hidden_trigger = {
+				has_ruler_flag = cosmo_monarch_seduced
+			}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_monarch
+				}				
+		}
+		FROM = {
+			overlord = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+			}
+		}			
+
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_liberty_desire
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_seduce_monarch = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_monarch
+				}				
+			}
+		}
+		NOT = {
+			has_ruler_flag = train_spy_prostitutes
+			has_ruler_flag = hire_diplomat_prostitutes
+		}						 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+		custom_trigger_tooltip = {
+			tooltip = spy_network_50_tt			
+			OR = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+				AND = {
+					is_subject = yes
+				overlord = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}					
+				}
+				}
+			}			
+		}
+		}
+		FROM = {
+				NOT = {
+					has_country_modifier = cosmo_suspected_spy
+				}				
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_seduce_monarch
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_assassinate_monarch = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			has_ruler_flag = cosmo_monarch_seduced
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_monarch
+				}
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+				NOT = {
+					has_ruler_modifier = train_spy_attempt_ruler	
+				}
+				any_ally = {
+					ai = yes
+					NOT = {
+						alliance_with = ROOT
+					}
+					NOT = {
+						is_subject_of = ROOT
+					}					
+				}								
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_ruler_kill
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_sow_mistrust = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			OR = {
+				has_ruler_flag = cosmo_monarch_seduced
+				has_ruler_flag = cosmo_dip_seduced					
+				has_ruler_flag = cosmo_adm_seduced					
+				has_ruler_flag = cosmo_mil_seduced				
+			}
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_monarch
+				}
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}				
+
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_sow_distrust
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_seduce_adm = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_adm
+				}				
+			}			
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}				
+		 }
+		FROM = {
+			OR = {
+			advisor = philosopher 	
+			advisor = natural_scientist 	
+			advisor = artist 	
+			advisor = treasurer 	
+			advisor = theologian 	
+			advisor = master_of_mint 	
+			advisor = inquisitor 	 	
+			}								
+		 }		 
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_PROSTITUTE_TRIGGER
+		FROM = {
+			capital_scope = {
+						cosmo_has_prostitute_trigger = yes
+			}				
+
+		 }
+		}
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}				 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_seduce_adm
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_steal_tech_adm = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}			
+		}
+		cosmo_adm_tech_difference = yes				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}
+		NOT = {
+			has_country_modifier = cosmo_adm_theft
+		}
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_adm
+				}								
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_steal_adm
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_seduce_dip = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_dip
+				}				
+			}						
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}								
+		 }
+		FROM = {
+			OR = {
+			advisor = trader 	
+			advisor = statesman 	
+			advisor = naval_reformer 	
+			advisor = spymaster 	
+			advisor = colonial_governor 	
+			advisor = diplomat 	
+			advisor = navigator 	 	
+			}								
+		 }		 	
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_PROSTITUTE_TRIGGER
+		FROM = {
+			capital_scope = {
+						cosmo_has_prostitute_trigger = yes
+			}				
+
+		 }
+		}		 		 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_seduce_dip
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_steal_tech_dip = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}			
+		}
+		cosmo_dip_tech_difference = yes				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}
+		NOT = {
+			has_country_modifier = cosmo_dip_theft
+		}
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_dip
+				}								
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_steal_dip
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_seduce_mil = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_mil
+				}				
+			}			
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}							
+		 }
+		FROM = {
+			OR = {
+			advisor = army_reformer 	
+			advisor = army_organiser 	
+			advisor = commandant 	
+			advisor = quartermaster 	
+			advisor = recruitmaster 	
+			advisor = fortification_expert 	
+			advisor = grand_captain 	 	
+			}				
+		 }
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_PROSTITUTE_TRIGGER
+		FROM = {
+			capital_scope = {
+						cosmo_has_prostitute_trigger = yes
+			}				
+
+		 }
+		}		 		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_seduce_mil
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_steal_tech_mil = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}			
+		}
+		cosmo_mil_tech_difference = yes				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		NOT = {
+			has_country_modifier = cosmo_mil_theft
+		}
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_mil
+				}								
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_steal_mil
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_seduce_cardinal = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = cosmo_seduced_cardinal
+				}				
+			}
+			any_owned_province = {
+				NOT = {
+					has_province_modifier = train_spy_attempt_cardinal	
+				}				
+				has_cardinal = yes
+			}			
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}				
+		 }
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_PROSTITUTE_TRIGGER
+		FROM = {
+			capital_scope = {
+						cosmo_has_prostitute_trigger = yes
+			}				
+
+		 }
+		}		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_seduce_cardinal
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_infiltrate_defenses = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			any_owned_province = {
+				fort_level = 1
+			}			
+		}				 
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		war_with = FROM
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}				
+		 }
+		FROM = {
+			any_owned_province = {
+				fort_level = 1
+				has_siege = yes 
+				infantry_in_province = ROOT 
+			}			
+		}		 
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_PROSTITUTE_TRIGGER
+		FROM = {
+			capital_scope = {
+						cosmo_has_prostitute_trigger = yes
+			}				
+
+		 }
+		}		 			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_fort_kill
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_kill_cardinal = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_seduced_cardinal
+			}
+			any_owned_province = {
+				has_cardinal = yes
+			}									
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+			any_owned_province = {
+				has_cardinal = yes
+		NOT = {
+			has_province_modifier = train_spy_attempt_cardinal	
+		}
+			}												
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_cardinal_kill
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_influence_cardinal = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_seduced_cardinal
+			}
+			any_owned_province = {
+				has_cardinal = yes
+			}									
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+			NOT = {
+				has_country_modifier = cosmo_cardinal_influenced
+			}			
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+			any_owned_province = {
+				has_cardinal = yes
+			}				
+								
+		 }			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		set_ruler_flag = train_spy_prostitutes
+		set_ruler_flag = train_spy_influence_cardinal
+
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_sent
+			}			
+		}
+		set_country_flag = cosmo_spying_here	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_recall_spy = {
+    category = covert           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_train_spy	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}									
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+			tooltip = COSMO_AWAITING_ORDERS_TRIGGER
+			NOT = {
+				OR = {
+					has_country_flag = cosmo_spying_here
+					has_country_flag = cosmo_spy_event_fire
+					FROM = {
+						has_country_flag = cosmo_spy_persistant_affair				
+			
+					 }
+				}
+			}
+			}		
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}									
+		}			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			capital_scope = {
+				cosmo_remove_prostitute = yes
+			}			
+		}
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_recall_prostitute = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		has_estate_privilege = estate_madams_entertain_dignitary	
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}									
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+			capital_scope = {
+					cosmo_has_prostitute_trigger = yes
+			}									
+		}			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			capital_scope = {
+				cosmo_remove_prostitute = yes
+			}			
+		}
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_advisor_influence = {
+    category = influence           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		FROM = {
+			OR = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_daimyo_personal_union_I
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_daimyo_personal_union_II
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_na_personal_union_I
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_na_personal_union_II
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_asian_personal_union_I
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_asian_personal_union_II
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_sa_personal_union_I
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_sa_personal_union_II
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_african_personal_union_I
+				}
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_cosmo_african_personal_union_II
+				}
+			}								
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		always = yes
+		FROM = {
+													
+		}			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			country_event = {
+				id = cosmo_asortpu_events.104
+			}
+		}
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_purchase_slaves = {
+    category = economy           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		FROM = {
+			any_owned_province = {
+				OR = {
+						has_province_flag = cosmo_barbary_slave_market
+						has_province_flag = cosmo_sulu_slave_market					
+				}
+			}									
+		}
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+			any_owned_province = {
+				OR = {
+						has_province_flag = cosmo_barbary_slave_market
+						has_province_flag = cosmo_sulu_slave_market					
+				}
+
+				custom_trigger_tooltip = {
+					tooltip = COSMO_HAS_CAPTURED_SLAVES
+				OR = {
+					has_province_modifier = cosmo_west_african_slaves_captured
+					has_province_modifier = cosmo_west_african_slave_market_upgrade
+					has_province_modifier = cosmo_thai_slaves_captured
+					has_province_modifier = cosmo_thai_slave_market_upgrade
+					has_province_modifier = cosmo_malay_slaves_captured
+					has_province_modifier = cosmo_malay_slave_market_upgrade
+					has_province_modifier = cosmo_korea_slaves_captured
+					has_province_modifier = cosmo_korea_slave_market_upgrade
+					has_province_modifier = cosmo_china_slaves_captured
+					has_province_modifier = cosmo_china_slave_market_upgrade
+					has_province_modifier = cosmo_japanese_slaves_captured
+					has_province_modifier = cosmo_japan_slave_market_upgrade
+					has_province_modifier = cosmo_central_american_slaves_captured
+					has_province_modifier = cosmo_central_america_slave_market_upgrade
+					has_province_modifier = cosmo_south_american_slaves_captured
+					has_province_modifier = cosmo_south_america_slave_market_upgrade
+					has_province_modifier = cosmo_north_american_slaves_captured
+					has_province_modifier = cosmo_north_america_slave_market_upgrade		
+					has_province_modifier = cosmo_europe_slave_market_upgrade
+					has_province_modifier = cosmo_europe_slaves_captured
+				}
+				}				
+			}									
+		}			 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			random_owned_province = {
+			limit = {
+				OR = {
+						has_province_flag = cosmo_barbary_slave_market
+						has_province_flag = cosmo_sulu_slave_market					
+				}
+
+				custom_trigger_tooltip = {
+					tooltip = COSMO_HAS_CAPTURED_SLAVES
+				OR = {
+					has_province_modifier = cosmo_west_african_slaves_captured
+					has_province_modifier = cosmo_west_african_slave_market_upgrade
+					has_province_modifier = cosmo_thai_slaves_captured
+					has_province_modifier = cosmo_thai_slave_market_upgrade
+					has_province_modifier = cosmo_malay_slaves_captured
+					has_province_modifier = cosmo_malay_slave_market_upgrade
+					has_province_modifier = cosmo_korea_slaves_captured
+					has_province_modifier = cosmo_korea_slave_market_upgrade
+					has_province_modifier = cosmo_china_slaves_captured
+					has_province_modifier = cosmo_china_slave_market_upgrade
+					has_province_modifier = cosmo_japanese_slaves_captured
+					has_province_modifier = cosmo_japan_slave_market_upgrade
+					has_province_modifier = cosmo_central_american_slaves_captured
+					has_province_modifier = cosmo_central_america_slave_market_upgrade
+					has_province_modifier = cosmo_south_american_slaves_captured
+					has_province_modifier = cosmo_south_america_slave_market_upgrade
+					has_province_modifier = cosmo_north_american_slaves_captured
+					has_province_modifier = cosmo_north_america_slave_market_upgrade		
+					has_province_modifier = cosmo_europe_slave_market_upgrade
+					has_province_modifier = cosmo_europe_slaves_captured
+				}
+				}				
+			}
+			set_province_flag = cosmo_buying_slaves_hub
+			custom_tooltip = cosmo_buying_slaves_hub_enabled_tt
+			}									
+		}
+		country_event = {#prostitute menus
+			id = cosmo_barbary_events.1
+			}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_bribe_slaver = {
+    category = alliance           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		# FROM = {
+		# 	OR = {
+		# 		has_idea_group = barbary_pirate_ideas
+		# 		has_idea_group = KNI_ideas
+		# 		has_idea_group = JAJ_ideas
+		# 		has_idea_group = MOR_ideas
+		# 		has_idea_group = TUN_ideas
+		# 		has_idea_group = NRM_ideas
+		# 		has_idea_group = MOR_ideas #need SULU ideas
+		# 		tag = SUL #should be ideas
+		# 	}
+		# 	NOT = {
+		# 		AND = {
+		# 			is_subject_of = ROOT
+		# 			is_subject_of_type = cosmo_slaver_bribe_vassal
+		# 		}
+		# 	}
+		# }		 
+		FROM = {
+			NOT = {
+				AND = {
+					is_subject_of = ROOT
+					#is_subject_of_type = cosmo_slaver_bribe_vassal
+				}
+			}			
+			any_owned_province = {
+				OR = {
+					province_id = 338 
+					province_id = 285 
+					province_id = 651 
+					province_id = 1230 
+				}
+				OR = {
+					religion_group = muslim
+					AND = {
+					culture_group = cushitic
+					 NOT = { religion_group = pagan }
+					}
+				}
+			}
+			NOT = {
+				has_country_modifier = the_abolish_slavery_act
+			}									
+		}
+			NOT = {
+				has_country_modifier = the_abolish_slavery_act
+			}		
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+			capital_scope = {
+				trade_range = ROOT
+			}
+		}					 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			set_country_flag = cosmo_bribing_slaver
+		}
+		add_years_of_income = -0.5 	
+		country_event = { id = cosmo_barbary_events.911 }	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_purchase_concubines = {
+    category = economy           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		FROM = {
+			any_owned_province = {
+				OR = {
+					province_id = 338 
+					province_id = 285 
+					province_id = 651 
+					province_id = 1230 
+				}
+				OR = {
+					religion_group = muslim
+					AND = {
+					culture_group = cushitic
+					 NOT = { religion_group = pagan }
+					}
+				}
+			}
+			NOT = {
+				has_country_modifier = the_abolish_slavery_act
+			}									
+		}
+			NOT = {
+				has_country_modifier = the_abolish_slavery_act
+			}		
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		custom_trigger_tooltip  = {
+		tooltip = COSMO_HAREM_TRIGGER
+		OR = {
+			has_estate = estate_harem
+			has_estate = estate_forbiddenpalace
+			has_estate = estate_ooku			
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = cosmo_slaver_bribe_vassal 
+		}
+		AND = {
+			is_subject_of = ROOT
+			#additional requirement
+		}			
+		}
+		}
+		FROM = {
+			capital_scope = {
+				trade_range = ROOT
+			}
+		}					 		
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 338 
+					}
+				}
+			ROOT = {
+			country_event = {#prostitute menus
+				id = cosmo_royalprocure_events.11
+				}
+			}	
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 285 
+					}
+				}
+			ROOT = {
+			country_event = {#prostitute menus
+				id = cosmo_royalprocure_events.12
+				}
+			}				
+			}			
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 1230 
+					}
+				}
+			ROOT = {
+			country_event = {#prostitute menus
+				id = cosmo_royalprocure_events.13
+				}
+			}				
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 651 
+					}
+				}
+			ROOT = {
+			country_event = {#prostitute menus
+				id = cosmo_royalprocure_events.14
+				}
+			}				
+			}												
+		}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}		
+		
+		# Negative 
+		
+		
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+			   
+   }
+    
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}
+
+cosmo_enslavement_devastation = {
+    category = economy           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_SEND_SPY_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = no	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+     is_visible = {
+		OR = {
+			has_country_flag = cslavery_ideas_active			
+		}
+		OR = {
+		FROM = {
+			NOT = {	
+				religion_group = ROOT	
+			}									
+		}
+		AND = {
+		FROM = {
+				religion_group = ROOT										
+		}			
+			has_country_flag = cxslavery_ideas_active			
+		}
+		}
+
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+		FROM = {
+			war_with = ROOT 
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = COSMO_ALREADY_ENSLAVING
+					has_country_flag = cosmo_devastation_enslavement
+					}
+				}				
+			}									
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			set_country_flag =	cosmo_devastation_enslavement								
+		}		
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+		always = no
+    }
+}

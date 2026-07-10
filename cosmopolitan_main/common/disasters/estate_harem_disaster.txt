@@ -1,0 +1,90 @@
+estate_harem_disaster = {
+	potential = {
+		has_estate = estate_harem
+		estate_influence = {
+			estate = estate_harem
+			influence = 80
+		}
+	}
+
+
+	can_start = {
+		has_any_disaster = no
+		estate_influence = {
+			estate = estate_harem
+			influence = 100
+		}
+		is_at_war = no
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = {
+				estate_influence = {
+					estate = estate_harem
+					influence = 100
+				}		
+			}
+		}
+	}
+	
+	down_progress = {
+		factor = 1
+	}	
+	
+	progress = {
+		modifier = {
+			factor = 10
+			estate_influence = {
+				estate = estate_harem
+				influence = 100
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_harem
+					loyalty = 30
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_harem
+					loyalty = 20
+				}
+			}
+			is_at_war = no
+		}		
+	}
+	
+	can_end = {
+		NOT = {
+			estate_influence = {
+				estate = estate_harem
+				influence = 80
+			}			
+		}
+	}
+	
+	modifier = {	
+		land_morale = -0.1
+		global_manpower_modifier = -0.25
+		land_forcelimit_modifier = -0.25
+		prestige = -1
+		tolerance_own = -2
+	}
+
+	on_start = cosmo_madamsd_events.400
+	on_end = cosmo_madamsd_events.1
+	
+	on_monthly = {
+	}
+}
+

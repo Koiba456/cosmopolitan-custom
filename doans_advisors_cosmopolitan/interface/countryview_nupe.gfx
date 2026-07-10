@@ -1,0 +1,33 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_nupe_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//nupe_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_nupe_army_organiser_female"
+		texturefile = "gfx//interface//advisors//nupe_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_nupe_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

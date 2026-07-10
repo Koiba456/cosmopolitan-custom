@@ -1,0 +1,203 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_artist_female"
+		texturefile = "gfx//interface//advisors//ruthenian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//russian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_inquisitor_female"
+		texturefile = "gfx//interface//advisors//karelian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_quartermaster_female"
+		texturefile = "gfx//interface//advisors//russian_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_philosopher_female"
+		texturefile = "gfx//interface//advisors//russian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//byelorussian_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//ryazanian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_theologian_female"
+		texturefile = "gfx//interface//advisors//ryazanian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_treasurer_female"
+		texturefile = "gfx//interface//advisors//ryazanian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_statesman_female"
+		texturefile = "gfx//interface//advisors//russian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_diplomat_female"
+		texturefile = "gfx//interface//advisors//ryazanian_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//russian_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//novgorodian_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_navigator_female"
+		texturefile = "gfx//interface//advisors//navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_trader_female"
+		texturefile = "gfx//interface//advisors//ryazanian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_spymaster_female"
+		texturefile = "gfx//interface//advisors//ryazanian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_commandant_female"
+		texturefile = "gfx//interface//advisors//ryazanian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_army_reformer_female"
+		texturefile = "gfx//interface//advisors//ruthenian_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_grand_captain_female"
+		texturefile = "gfx//interface//advisors//ruthenian_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_army_organiser_female"
+		texturefile = "gfx//interface//advisors//ryazanian_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryazanian_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//novgorodian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_ryazanian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

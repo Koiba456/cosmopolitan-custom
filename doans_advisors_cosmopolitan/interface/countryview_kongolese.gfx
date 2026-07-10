@@ -1,0 +1,44 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_kongolese_statesman_female"
+		texturefile = "gfx//interface//advisors//kongolese_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_kongolese_quartermaster_female"
+		texturefile = "gfx//interface//advisors//kongolese_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+		
+	spriteType = {
+		name = "GFX_advisor_kongolese_inquisitor_female"
+		texturefile = "gfx//interface//advisors//kongolese_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_kongolese_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

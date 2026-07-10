@@ -1,0 +1,45 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_dyola_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//dyola_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_dyola_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//dyola_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_advisor_dyola_commandant_female"
+		texturefile = "gfx//interface//advisors//dyola_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_dyola_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

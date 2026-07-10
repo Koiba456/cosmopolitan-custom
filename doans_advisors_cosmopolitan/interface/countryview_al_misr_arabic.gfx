@@ -1,0 +1,24 @@
+spriteTypes = {
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_al_misr_arabic_diplomat_female"
+		texturefile = "gfx//interface//advisors//al_misr_arabic_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_northamericagfx_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

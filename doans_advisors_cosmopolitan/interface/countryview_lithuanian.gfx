@@ -1,0 +1,201 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_lithuanian_treasurer_female"
+		texturefile = "gfx//interface//advisors//lithuanian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_lithuanian_trader_female"
+		texturefile = "gfx//interface//advisors//lithuanian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+		spriteType = {
+		name = "GFX_advisor_lithuanian_statesman_female"
+		texturefile = "gfx//interface//advisors//lithuanian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_lithuanian_spymaster_female"
+		texturefile = "gfx//interface//advisors//lithuanian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_lithuanian_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//lithuanian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	spriteType = {
+		name = "GFX_advisor_lithuanian_quartermaster_female"
+		texturefile = "gfx//interface//advisors//lithuanian_quartermaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_lithuanian_philosopher_female"
+		texturefile = "gfx//interface//advisors//lithuanian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_lithuanian_navigator_female"
+		texturefile = "gfx//interface//advisors//lithuanian_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_lithuanian_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//lithuanian_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//lithuanian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//lithuanian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		
+	spriteType = {
+		name = "GFX_advisor_lithuanian_inquisitor_female"
+		texturefile = "gfx//interface//advisors//lithuanian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_lithuanian_grand_captain_female"
+		texturefile = "gfx//interface//advisors//lithuanian_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//lithuanian_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_lithuanian_diplomat_female"
+		texturefile = "gfx//interface//advisors//lithuanian_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_commandant_female"
+		texturefile = "gfx//interface//advisors//lithuanian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//lithuanian_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_artist_female"
+		texturefile = "gfx//interface//advisors//lithuanian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_army_reformer_female"
+		texturefile = "gfx//interface//advisors//lithuanian_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_lithuanian_army_organiser_female"
+		texturefile = "gfx//interface//advisors//lithuanian_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_lithuanian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

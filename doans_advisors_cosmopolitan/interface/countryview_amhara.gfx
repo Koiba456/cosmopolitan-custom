@@ -1,0 +1,54 @@
+spriteTypes = {
+	spriteType = {
+	
+
+		
+	spriteType = {
+		name = "GFX_advisor_amhara_inquisitor_female"
+		texturefile = "gfx//interface//advisors//amhara_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	
+	
+		spriteType = {
+		name = "GFX_advisor_amhara_diplomat_female"
+		texturefile = "gfx//interface//advisors//amhara_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	
+	
+	spriteType = {
+		name = "GFX_advisor_amhara_army_reformer_female"
+		texturefile = "gfx//interface//advisors//amhara_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_amhara_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	
+}

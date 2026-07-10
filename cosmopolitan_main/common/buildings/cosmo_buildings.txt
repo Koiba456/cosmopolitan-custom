@@ -1,0 +1,5214 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# Building AI is now mainly hard-coded. The AI will estimate how much it gains yearly from each building,
+# convert the value to ducats, and take the building with biggest yearly return as a percentage of the build cost.
+# If lower than 1%, the AI will not consider the yearly return worth it.
+# It will also require higher yearly return if the economy in not in prime shape.
+# Forts' value also get converted to a yearly return based on terrain and strategic position, as well as available budget for fort maintenance.
+
+# AI can still be modded though; it will multiply the yearly return with the value of ai_will_do.
+# If you don't want the AI to build a building at all, make ai_will_do become 0.
+# AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
+# It will still check whether it can afford a building before doing so though, but may save up to it.
+
+
+################################################
+# Tier 1, 15th Century Buildings
+################################################
+brothel_district = {
+	cost = 200
+	time = 1
+	onmap = no
+    build_trigger = {
+			OR = {
+				province_has_center_of_trade_of_level = 2	
+				is_capital = yes 
+			}
+			NOT = {
+				FROM = {
+					AND = {
+						religion_group = pagan		
+						NOT = {
+							has_country_flag = pagan_brothels
+						}
+					}
+				}
+			}
+	}			
+	modifier = {
+		province_trade_power_modifier = 0.5
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+		add_development_from_building = {
+			building = brothel_district
+			type = production
+			value = 1
+		}		
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_europe_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+					AND = {
+					OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+		culture_group = maya		
+		culture_group = central_american		
+
+		culture_group = mataco		
+		culture_group = araucanian		
+		culture_group = eskaleut		
+		culture_group = central_algonquian		
+		culture_group = plains_algonquian		
+		culture_group = eastern_algonquian		
+		culture_group = iroquoian		
+		culture_group = siouan		
+		culture_group = caddoan		
+		culture_group = muskogean		
+		culture_group = sonoran		
+		culture_group = apachean		
+		culture_group = na_dene		
+		culture_group = penutian
+
+
+					}
+			owner = {
+		has_country_flag = new_world_europe_brothels
+			}					
+					}						
+					}
+					}
+		add_province_modifier = {
+			name = europe_prostitutes
+			duration = 18250  
+			desc = europe_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture = irish		
+						culture = highland_scottish		
+						culture = scottish								
+					}
+					}
+		add_province_modifier = {
+			name = gaelic_prostitutes
+			duration = 18250  
+			desc = gaelic_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = british										
+					}
+					}
+		add_province_modifier = {
+			name = british_prostitutes
+			duration = 18250  
+			desc = british_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = french										
+					}
+					}
+		add_province_modifier = {
+			name = french_prostitutes
+			duration = 18250  
+			desc = french_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture_group = iberian		
+					}
+					}
+		add_province_modifier = {
+			name = iberian_prostitutes
+			duration = 18250  
+			desc = iberian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = germanic		
+						culture_group = west_slavic	
+						culture_group = baltic		
+					}
+					}
+		add_province_modifier = {
+			name = central_european_prostitutes
+			duration = 18250  
+			desc = central_european_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = carpathian		
+						culture_group = south_slavic	
+						culture_group = byzantine		
+					}
+					}
+		add_province_modifier = {
+			name = balkan_prostitutes
+			duration = 18250  
+			desc = balkan_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = east_slavic										
+					}
+					}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture_group = scandinavian		
+					}
+					}
+		add_province_modifier = {
+			name = scandinavian_prostitutes
+			duration = 18250  
+			desc = scandinavian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = latin		
+					}
+					NOT = {
+						culture = venetian		
+					}					
+					}
+		add_province_modifier = {
+			name = venetian_prostitutes
+			duration = 18250  
+			desc = venetian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = latin		
+					}
+					NOT = {
+						culture = venetian		
+					}					
+					}
+		add_province_modifier = {
+			name = italian_prostitutes
+			duration = 18250  
+			desc = italian_prostitutes_DESC
+
+		}
+				}																																		
+		if = {
+			limit = {
+			OR = {	
+				culture_group = maghrebi
+				culture_group = turko_semitic
+			}
+			NOT = {	
+				culture = turkish
+			}			
+			}
+		add_province_modifier = {
+			name = mena_prostitutes
+			duration = 18250  
+			desc = mena_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture_group = iranian
+			}
+			}
+		add_province_modifier = {
+			name = persian_prostitutes
+			duration = 18250  
+			desc = persian_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture = turkish
+				culture_group = caucasian
+			}
+			}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+		}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+				NOT = {
+			has_country_flag = steppe_muslim_brothels
+			has_country_flag = steppe_europe_brothels
+			has_country_flag = steppe_korea_brothels
+			has_country_flag = steppe_china_brothels
+				}
+			}	
+			}						
+					}
+					}
+			set_country_flag = steppe_choose_prostitutes
+				}						
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_muslim_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_china_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_korea_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+				}								
+		if = {
+			limit = {
+			OR = {	
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic
+			}
+			}
+		add_province_modifier = {
+			name = south_asian_prostitutes
+			duration = 18250  
+			desc = south_asian_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande			
+			}
+			}
+		add_province_modifier = {
+			name = west_african_prostitutes
+			duration = 18250  
+			desc = west_african_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {				
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese
+			}
+			}
+		add_province_modifier = {
+			name = east_african_prostitutes
+			duration = 18250  
+			desc = east_african_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {				
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group			
+			}
+			}
+		add_province_modifier = {
+			name = central_african_prostitutes
+			duration = 18250  
+			desc = central_african_prostitutes_DESC
+
+		}
+		}										
+		if = {
+			limit = {
+			OR = {
+				culture_group = malay
+			}	
+			}
+		add_province_modifier = {
+			name = malay_prostitutes
+			duration = 18250  
+			desc = malay_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {
+				culture_group = burman
+				culture_group = thai_group
+				culture_group = southeastasian_group
+			}	
+			}
+		add_province_modifier = {
+			name = thai_prostitutes
+			duration = 18250  
+			desc = thai_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {
+				culture_group = east_asian
+			}	
+			}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+		}
+				
+		if = {
+			limit = {
+			OR = {
+				culture_group = korean_g
+			}	
+			}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+		}										
+		if = {
+			limit = {
+			OR = {
+				culture_group = japanese_g
+			}	
+			}
+		add_province_modifier = {
+			name = japanese_prostitutes
+			duration = 18250  
+			desc = japanese_prostitutes_DESC
+
+		}
+		}
+		FROM = {
+		custom_tooltip = cosmo_degeneracy_200
+		hidden_effect = {
+			change_variable = {
+				which = cosmoDegeneracyVariable
+				value = 200
+				}			
+		}			
+		}				
+    }	
+}
+cosmo_slave_market = {
+	cost = 100
+	time = 1
+	onmap = no
+    build_trigger = {
+	NOT = {
+		FROM = {
+			has_country_flag = cosmo_slavery_ended
+		}
+	}	
+	NOT = {
+	AND = {
+		same_continent = CAPITAL
+		continent = europe
+		NOT = {
+		has_building = port_of_pleasure
+	FROM = {
+		OR = {
+		religion_group = muslim		
+		culture_group = altaic
+		culture_group = tartar			
+		}
+	}			
+		}
+	}
+	}
+	NOT = {
+	AND = {
+		religion_group = muslim			
+	FROM = {
+		religion_group = muslim			
+	}			
+		}
+	}	
+	NOT = {
+	AND = {
+		region = maghreb_region
+		OR = {
+		has_province_flag = cosmo_barbary_slave_market
+		}
+	}
+	}
+	NOT = {
+		AND = {
+			culture_group = FROM
+			is_in_capital_area = yes
+		}
+	}
+	NOT = {
+	AND = {
+	OR = {
+		superregion = near_east_superregion
+		superregion = persia_superregion 
+		superregion = tartary_superregion
+		superregion = india_superregion 		
+		}
+		NOT = {
+		has_province_flag = cosmo_barbary_slave_market
+		}
+	}
+	}	
+	province_has_center_of_trade_of_level = 1	
+	}			
+	modifier = {
+		local_development_cost = 1.00
+		local_unrest = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    on_built = {
+		add_development_from_building = {
+			building = cosmo_slave_market
+			type = tax
+			value = 1
+		}		
+		FROM = {
+			set_country_flag = cosmo_slaver_country
+		}
+		every_empty_neighbor_province = {
+			change_native_hostileness = 3			
+		}
+		if = {
+			limit = {
+				OR = {
+					has_owner_accepted_culture = yes 
+					has_owner_culture = yes
+				}
+				NOT = {
+					is_overseas = yes
+				}
+			}
+			owner = {
+				every_owned_province = {
+					limit = {
+						culture = ROOT 
+					}
+					add_province_modifier = {
+						name = cosmo_enslaved_culture
+						duration = -1  
+						desc = cosmo_enslaved_culture_DESC						
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_owner_accepted_culture = yes 
+					has_owner_culture = yes
+				}
+			}
+			owner = {
+				every_owned_province = {
+					limit = {
+						culture = ROOT 
+					}
+					add_province_modifier = {
+						name = cosmo_enslaved_culture
+						duration = -1  
+						desc = cosmo_enslaved_culture_DESC						
+					}
+				}
+			}
+		}		
+			if = {
+				limit = {
+					trade_goods = gold						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_gold
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = grain						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_grain
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = wine						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_wine
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = wool						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_wool
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cloth						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cloth
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = fish						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_fish
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = fur						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_fur
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = salt						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_salt
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = naval_supplies						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_naval_supplies
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = copper						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_copper
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = iron						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_iron
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = slaves						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_slaves
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = ivory						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_ivory
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tea						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tea
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = chinaware						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_chinaware
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = spices						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_spices
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = coffee						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_coffee
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cotton						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cotton
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = sugar						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_sugar
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tobacco						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tobacco
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cocoa						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cocoa
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = silk						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_silk
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tropical_wood						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tropical_wood
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = livestock						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_livestock
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = incense						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_incense
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = glass						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_glass
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = gems						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_gems
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = paper						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_paper
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = coal						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_coal
+			duration = -1  
+   			hidden = yes
+		}
+				}
+		if = {
+			limit = {
+				NOT = {
+					has_province_flag = cosmo_had_slave_market
+				}
+			}
+			set_province_flag = cosmo_had_slave_market
+			if = {
+				limit = {
+					OR = {
+						region = niger_region
+						region = guinea_region
+						region = sahel_region
+					}
+				}
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = cosmo_west_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_west_african_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+					OR = {
+						region = horn_of_africa_region
+						region = east_africa_region
+					}
+				}
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = cosmo_east_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_east_african_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+					OR = {
+						region = kongo_region
+						region = central_africa_region
+						region = south_africa_region
+					}
+				}
+			change_trade_goods = slaves
+			add_province_modifier = {
+				name = cosmo_central_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_central_african_slaves_captured_DESC
+
+			}
+			}				
+			if = {
+				limit = {
+					superregion = europe_superregion
+				}
+			change_trade_goods = european_slaves
+			add_province_modifier = {
+				name = cosmo_europe_slaves_captured
+				duration = 2160  
+				desc = cosmo_europe_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+					superregion = eastern_europe_superregion
+				}
+			change_trade_goods = european_slaves
+			add_province_modifier = {
+				name = cosmo_europe_slaves_captured
+				duration = 2160  
+				desc = cosmo_europe_slaves_captured_DESC
+
+			}
+			}		
+			if = {
+				limit = {
+					region = korea_region
+				}
+			change_trade_goods = asian_slaves
+			add_province_modifier = {
+				name = cosmo_korea_slaves_captured
+				duration = 2160  
+				desc = cosmo_korea_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+					region = japan_region
+				}
+			change_trade_goods = asian_slaves
+			add_province_modifier = {
+				name = cosmo_japanese_slaves_captured
+				duration = 2160  
+				desc = cosmo_japanese_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+					superregion = china_superregion
+				}
+			change_trade_goods = asian_slaves
+			add_province_modifier = {
+				name = cosmo_china_slaves_captured
+				duration = 2160  
+				desc = cosmo_china_slaves_captured_DESC
+
+			}
+			}		
+			if = {
+				limit = {
+				OR = {
+					region = burma_region 
+					region = indo_china_region 
+				}
+				}
+			change_trade_goods = asian_slaves
+			add_province_modifier = {
+				name = cosmo_thai_slaves_captured
+				duration = 2160  
+				desc = cosmo_thai_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+				OR = {
+					region = moluccas_region 
+					region = indonesia_region
+					region = oceanea_region 
+					region = malaya_region 
+				}
+				}
+			change_trade_goods = asian_slaves
+			add_province_modifier = {
+				name = cosmo_malay_slaves_captured
+				duration = 2160  
+				desc = cosmo_malay_slaves_captured_DESC
+
+			}
+			}		
+			if = {
+				limit = {
+			culture_group = apachean    #change to american cultures
+			culture_group = otomanguean    #change to american cultures
+			culture_group = maya    #change to american cultures
+			culture_group = central_american     #change to american cultures
+			culture_group = aridoamerican    #change to american cultures
+			culture_group = mataco   #change to american cultures
+			}
+			change_trade_goods = american_native_slaves
+			add_province_modifier = {
+				name = cosmo_central_american_slaves_captured
+				duration = 2160  
+				desc = cosmo_central_american_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+			culture_group = eskaleut    #change to american cultures
+			culture_group = central_algonquian    #change to american cultures
+			culture_group = plains_algonquian    #change to american cultures
+			culture_group = eastern_algonquian    #change to american cultures
+			culture_group = iroquoian    #change to american cultures
+			culture_group = siouan    #change to american cultures
+			culture_group = caddoan     #change to american cultures
+			culture_group = muskogean     #change to american cultures
+			culture_group = sonoran     #change to american cultures
+			culture_group = na_dene     #change to american cultures
+			culture_group = penutian      #change to american cultures
+			}
+			change_trade_goods = american_native_slaves
+			add_province_modifier = {
+				name = cosmo_north_american_slaves_captured
+				duration = 2160  
+				desc = cosmo_north_american_slaves_captured_DESC
+
+			}
+			}
+			if = {
+				limit = {
+			culture_group = andean_group   #change to american cultures
+			culture_group = je_tupi    #change to american cultures
+			culture_group = je    #change to american cultures
+			culture_group = maranon    #change to american cultures
+			culture_group = chibchan    #change to american cultures
+			culture_group = araucanian     #change to american cultures
+			culture_group = carribean      #change to american cultures
+			culture_group = araucanian     #change to american cultures
+			}
+			change_trade_goods = american_native_slaves
+			add_province_modifier = {
+				name = cosmo_south_american_slaves_captured
+				duration = 2160  
+				desc = cosmo_south_american_slaves_captured_DESC
+
+			}
+			}			
+		}						
+    }		
+}
+cosmo_slave_market_II = {
+	cost = 25
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country	
+	onmap = no
+    build_trigger = {
+	NOT = {
+		FROM = {
+			has_country_flag = cosmo_slavery_ended
+		}
+	}		
+			has_building = cosmo_slave_market
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				AND = {
+					NOT = {
+					has_province_flag = cosmo_buying_slaves_hub
+					}
+					OR = {
+						has_province_flag = cosmo_sulu_slave_market
+						has_province_flag = cosmo_barbary_slave_market
+					}
+				}
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slaves_captured		
+		has_province_modifier = cosmo_central_african_slaves_captured		
+		has_province_modifier = cosmo_east_african_slaves_captured		
+		has_province_modifier = cosmo_iberian_slaves_captured		
+		has_province_modifier = cosmo_british_slaves_captured		
+		has_province_modifier = cosmo_scandinavian_slaves_captured		
+		has_province_modifier = cosmo_french_slaves_captured		
+		has_province_modifier = cosmo_central_european_slaves_captured		
+		has_province_modifier = cosmo_italian_slaves_captured		
+		has_province_modifier = cosmo_russian_slaves_captured		
+		has_province_modifier = cosmo_south_asian_slaves_captured		
+		has_province_modifier = cosmo_balkan_slaves_captured		
+		has_province_modifier = cosmo_venetian_slaves_captured		
+				}	
+	}			
+	modifier = {
+		allowed_num_of_buildings = 1 		
+
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+send_slaves_building = {
+	cost = 50
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country	
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+	NOT = {
+		FROM = {
+			has_country_flag = cosmo_slavery_ended
+		}
+	}		
+	NOT = {
+	development = 21
+	}
+  NOT = {
+    AND = {
+      continent = europe
+      NOT = {
+        has_building = port_of_pleasure
+        FROM = {
+          OR = {
+            religion_group = muslim		
+            culture_group = altaic
+            culture_group = tartar			
+         	 }
+       		}			
+      	}
+   	 }
+	}
+	NOT = {
+		AND = {
+			FROM = {
+				any_subject_country = {
+					any_owned_province = {
+						has_building = cosmo_slave_market_II
+						OR = {
+							has_province_flag = cosmo_barbary_slave_market
+							has_province_flag = cosmo_sulu_slave_market
+						}
+						OR = {
+							has_province_modifier = cosmo_europe_slaves_captured		
+						}
+					}
+				}
+			}
+			religion_group = christian
+			NOT = {
+    		    has_building = port_of_pleasure
+			}
+		}
+	}
+        FROM = {
+		OR = {
+			any_owned_province = {
+			has_building = cosmo_slave_market_II
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slaves_captured	
+		has_province_modifier = cosmo_central_african_slaves_captured		
+		has_province_modifier = cosmo_east_african_slaves_captured		
+		has_province_modifier = cosmo_iberian_slaves_captured		
+		has_province_modifier = cosmo_british_slaves_captured		
+		has_province_modifier = cosmo_scandinavian_slaves_captured		
+		has_province_modifier = cosmo_french_slaves_captured		
+		has_province_modifier = cosmo_central_european_slaves_captured		
+		has_province_modifier = cosmo_italian_slaves_captured		
+		has_province_modifier = cosmo_russian_slaves_captured		
+		has_province_modifier = cosmo_south_asian_slaves_captured		
+		has_province_modifier = cosmo_balkan_slaves_captured		
+		has_province_modifier = cosmo_venetian_slaves_captured			
+				}
+			}
+			any_subject_country = {			
+			any_owned_province = {
+			has_building = cosmo_slave_market_II
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade		
+		has_province_modifier = cosmo_europe_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slaves_captured
+		has_province_modifier = cosmo_central_african_slaves_captured		
+		has_province_modifier = cosmo_east_african_slaves_captured		
+		has_province_modifier = cosmo_iberian_slaves_captured		
+		has_province_modifier = cosmo_british_slaves_captured		
+		has_province_modifier = cosmo_scandinavian_slaves_captured		
+		has_province_modifier = cosmo_french_slaves_captured		
+		has_province_modifier = cosmo_central_european_slaves_captured		
+		has_province_modifier = cosmo_italian_slaves_captured		
+		has_province_modifier = cosmo_russian_slaves_captured		
+		has_province_modifier = cosmo_south_asian_slaves_captured		
+		has_province_modifier = cosmo_balkan_slaves_captured		
+		has_province_modifier = cosmo_venetian_slaves_captured		
+				}
+			}
+			}
+			colonial_parent = {			
+			any_owned_province = {
+			has_building = cosmo_slave_market_II
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade		
+		has_province_modifier = cosmo_europe_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slaves_captured
+		has_province_modifier = cosmo_central_african_slaves_captured		
+		has_province_modifier = cosmo_east_african_slaves_captured		
+		has_province_modifier = cosmo_iberian_slaves_captured		
+		has_province_modifier = cosmo_british_slaves_captured		
+		has_province_modifier = cosmo_scandinavian_slaves_captured		
+		has_province_modifier = cosmo_french_slaves_captured		
+		has_province_modifier = cosmo_central_european_slaves_captured		
+		has_province_modifier = cosmo_italian_slaves_captured		
+		has_province_modifier = cosmo_russian_slaves_captured		
+		has_province_modifier = cosmo_south_asian_slaves_captured		
+		has_province_modifier = cosmo_balkan_slaves_captured		
+		has_province_modifier = cosmo_venetian_slaves_captured		
+				}
+			}
+			}
+			overlord = {			
+			any_owned_province = {
+			has_building = cosmo_slave_market_II
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade		
+		has_province_modifier = cosmo_europe_slave_market_upgrade
+		has_province_modifier = cosmo_europe_slaves_captured
+		has_province_modifier = cosmo_central_african_slaves_captured		
+		has_province_modifier = cosmo_east_african_slaves_captured		
+		has_province_modifier = cosmo_iberian_slaves_captured		
+		has_province_modifier = cosmo_british_slaves_captured		
+		has_province_modifier = cosmo_scandinavian_slaves_captured		
+		has_province_modifier = cosmo_french_slaves_captured		
+		has_province_modifier = cosmo_central_european_slaves_captured		
+		has_province_modifier = cosmo_italian_slaves_captured		
+		has_province_modifier = cosmo_russian_slaves_captured		
+		has_province_modifier = cosmo_south_asian_slaves_captured		
+		has_province_modifier = cosmo_balkan_slaves_captured		
+		has_province_modifier = cosmo_venetian_slaves_captured		
+				}
+			}
+			}			
+		}		
+		}
+    }
+	modifier = {
+		allowed_num_of_buildings = 1 		
+
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+		if = {
+			limit = {
+			FROM = {
+				any_subject_country = {
+					any_owned_province = {
+						has_building = cosmo_slave_market_II
+						OR = {
+							has_province_flag = cosmo_barbary_slave_market
+							has_province_flag = cosmo_sulu_slave_market
+						}
+					}
+				}
+			}				
+			}
+			FROM = {
+				add_treasury = -100
+			}
+			random_province = {
+				limit = {
+					has_building = cosmo_slave_market_II
+					has_province_flag = cosmo_buying_slaves_hub
+				}
+				clr_province_flag = cosmo_buying_slaves_hub
+			}
+		}
+	FROM = {	
+		country_event = {
+		id = cosmo_colonial_events.1
+		}
+	}		
+    }		
+}
+port_of_pleasure = {
+	cost = 100
+	time = 1
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+		has_port = yes
+		NOT = {
+			AND = {
+				has_province_flag = no_port_of_pleasure_here
+				NOT = {
+					province_id = 487 #Jamaica
+				}
+			}
+		}
+		OR = {
+			has_province_modifier = port_of_pleasure
+			area = baleares_area
+			area = macaronesia_area
+			area = cap_verde_area
+			area = sao_tome_area
+			area = leeward_islands_area
+			area = hudson_bay_area
+			area = baja_california_area
+			area = california_area
+			area = salish_sea_area
+			area = straits_of_georgia_area
+			area = cuba_area
+			area = indian_ocean_islands_area
+			area = indonesian_islands_area
+			area = greater_antilles_area
+			area = lucayan_area
+			area = hispaniola_area
+			area = lower_louisiana_area 
+			area = mascarenes_area
+			area = mahra_area
+			area = taiwan_area
+			area = kyushu_area
+			area = west_guangdong_area 
+			area = west_micronesia_area
+			area = northern_polynesia_area
+			area = melanesia_area
+			area = eastern_polynesia_area
+			area = windward_islands_area
+			area = dominica_area
+			area = grao_para_area
+			area = western_australia_area
+			area = betsimasaraka_area
+			area = top_end_area
+			area = south_sumatra_area
+			province_id = 4745 #Rugen
+			province_id = 1563 #Pattani
+		}
+	}
+	modifier = {
+		allowed_num_of_buildings = 1 
+		province_trade_power_modifier = 0.5
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+		add_development_from_building = {
+			building = port_of_pleasure
+			type = production
+			value = 1
+		}		
+			if = {
+				limit = {
+					trade_goods = gold						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_gold
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = grain						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_grain
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = wine						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_wine
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = wool						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_wool
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cloth						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cloth
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = fish						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_fish
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = fur						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_fur
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = salt						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_salt
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = naval_supplies						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_naval_supplies
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = copper						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_copper
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = iron						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_iron
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = slaves						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_slaves
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = ivory						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_ivory
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tea						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tea
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = chinaware						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_chinaware
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = spices						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_spices
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = coffee						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_coffee
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cotton						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cotton
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = sugar						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_sugar
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tobacco						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tobacco
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = cocoa						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_cocoa
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = silk						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_silk
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = tropical_wood						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_tropical_wood
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = livestock						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_livestock
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = incense						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_incense
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = glass						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_glass
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = gems						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_gems
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = paper						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_paper
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					trade_goods = coal						
+					}
+		add_province_modifier = {
+			name = cosmo_pgoods_coal
+			duration = -1  
+   			hidden = yes
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_europe_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+					AND = {
+					OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+		culture_group = maya		
+		culture_group = central_american		
+
+		culture_group = mataco		
+		culture_group = araucanian		
+		culture_group = eskaleut		
+		culture_group = central_algonquian		
+		culture_group = plains_algonquian		
+		culture_group = eastern_algonquian		
+		culture_group = iroquoian		
+		culture_group = siouan		
+		culture_group = caddoan		
+		culture_group = muskogean		
+		culture_group = sonoran		
+		culture_group = apachean		
+		culture_group = na_dene		
+		culture_group = penutian
+
+
+					}
+			owner = {
+		has_country_flag = new_world_europe_brothels
+			}					
+					}						
+					}
+					}
+		add_province_modifier = {
+			name = europe_prostitutes
+			duration = 18250  
+			desc = europe_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture = irish		
+						culture = highland_scottish		
+						culture = scottish								
+					}
+					}
+		add_province_modifier = {
+			name = gaelic_prostitutes
+			duration = 18250  
+			desc = gaelic_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = british										
+					}
+					}
+		add_province_modifier = {
+			name = british_prostitutes
+			duration = 18250  
+			desc = british_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = french										
+					}
+					}
+		add_province_modifier = {
+			name = french_prostitutes
+			duration = 18250  
+			desc = french_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture_group = iberian		
+					}
+					}
+		add_province_modifier = {
+			name = iberian_prostitutes
+			duration = 18250  
+			desc = iberian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = germanic		
+						culture_group = west_slavic	
+						culture_group = baltic		
+					}
+					}
+		add_province_modifier = {
+			name = central_european_prostitutes
+			duration = 18250  
+			desc = central_european_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = carpathian		
+						culture_group = south_slavic	
+						culture_group = byzantine		
+					}
+					}
+		add_province_modifier = {
+			name = balkan_prostitutes
+			duration = 18250  
+			desc = balkan_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = east_slavic										
+					}
+					}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+				}				
+			if = {
+				limit = {
+					OR = {
+						culture_group = scandinavian		
+					}
+					}
+		add_province_modifier = {
+			name = scandinavian_prostitutes
+			duration = 18250  
+			desc = scandinavian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = latin		
+					}
+					NOT = {
+						culture = venetian		
+					}					
+					}
+		add_province_modifier = {
+			name = venetian_prostitutes
+			duration = 18250  
+			desc = venetian_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+						culture_group = latin		
+					}
+					NOT = {
+						culture = venetian		
+					}					
+					}
+		add_province_modifier = {
+			name = italian_prostitutes
+			duration = 18250  
+			desc = italian_prostitutes_DESC
+
+		}
+				}																																		
+		if = {
+			limit = {
+			OR = {	
+				culture_group = maghrebi
+				culture_group = turko_semitic
+			}
+			NOT = {	
+				culture = turkish
+			}			
+			}
+		add_province_modifier = {
+			name = mena_prostitutes
+			duration = 18250  
+			desc = mena_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture_group = iranian
+			}
+			}
+		add_province_modifier = {
+			name = persian_prostitutes
+			duration = 18250  
+			desc = persian_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture = turkish
+				culture_group = caucasian
+			}
+			}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+		}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+				NOT = {
+			has_country_flag = steppe_muslim_brothels
+			has_country_flag = steppe_europe_brothels
+			has_country_flag = steppe_korea_brothels
+			has_country_flag = steppe_china_brothels
+				}
+			}	
+			}						
+					}
+					}
+			set_country_flag = steppe_choose_prostitutes
+				}						
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_muslim_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_china_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+				}
+			if = {
+				limit = {
+					OR = {
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_korea_brothels
+			}	
+			}						
+					}
+					}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+				}								
+		if = {
+			limit = {
+			OR = {	
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic
+			}
+			}
+		add_province_modifier = {
+			name = south_asian_prostitutes
+			duration = 18250  
+			desc = south_asian_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {	
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande			
+			}
+			}
+		add_province_modifier = {
+			name = west_african_prostitutes
+			duration = 18250  
+			desc = west_african_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {				
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese
+			}
+			}
+		add_province_modifier = {
+			name = east_african_prostitutes
+			duration = 18250  
+			desc = east_african_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {				
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group			
+			}
+			}
+		add_province_modifier = {
+			name = central_african_prostitutes
+			duration = 18250  
+			desc = central_african_prostitutes_DESC
+
+		}
+		}										
+		if = {
+			limit = {
+			OR = {
+				culture_group = malay
+			}	
+			}
+		add_province_modifier = {
+			name = malay_prostitutes
+			duration = 18250  
+			desc = malay_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {
+				culture_group = burman
+				culture_group = thai_group
+				culture_group = southeastasian_group
+			}	
+			}
+		add_province_modifier = {
+			name = thai_prostitutes
+			duration = 18250  
+			desc = thai_prostitutes_DESC
+
+		}
+		}
+		if = {
+			limit = {
+			OR = {
+				culture_group = east_asian
+			}	
+			}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+		}
+				
+		if = {
+			limit = {
+			OR = {
+				culture_group = korean_g
+			}	
+			}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+		}										
+		if = {
+			limit = {
+			OR = {
+				culture_group = japanese_g
+			}	
+			}
+		add_province_modifier = {
+			name = japanese_prostitutes
+			duration = 18250  
+			desc = japanese_prostitutes_DESC
+
+		}
+		}						
+		custom_tooltip = port_of_pleasure_built_tt 
+	FROM = {	
+		country_event = {
+		id = cosmo_pleasure_events.25
+		}
+	}
+	FROM = {
+	custom_tooltip = cosmo_degeneracy_200
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 200
+			}			
+	}			
+	}	
+	}
+    # Optional. On action that fires when destroyed. (not obsoleted)
+    # THIS = Province, FROM = Destroyer	
+    on_destroyed = {
+		set_province_flag = destroy_port_of_pleasure
+ 	FROM = {	
+		country_event = {
+		id = cosmo_pleasure_events.250
+		}
+	}   
+    }	
+}
+royal_visit = {
+	cost = 0
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country		
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+	OR = {
+		AND = {
+		FROM = {
+			has_country_modifier = cosmo_on_honeymoon			
+		}
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_modifier = honeymoon_visit
+			}
+			NOT = {
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_flag = honeymoon_third_stop
+				has_province_modifier = honeymoon_visit
+			}				
+			}
+			NOT = {
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_flag = honeymoon_chosen_here
+			}				
+			}		
+		has_province_flag = honeymoon_possible_here
+		}
+		AND = {#overlord
+		has_province_flag = honeymoon_possible_here
+		FROM = {
+			overlord = {
+				has_country_modifier = cosmo_on_honeymoon			
+			}
+		}
+		OR = {
+			FROM = {
+				overlord = {
+					any_owned_province = {
+						has_province_modifier = honeymoon_visit						
+					}
+				}
+			}
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_modifier = honeymoon_visit
+			}
+		}
+		OR = {
+			FROM = {
+				overlord = {
+					NOT = {
+					any_owned_province = {
+						has_province_flag = honeymoon_third_stop
+						has_province_modifier = honeymoon_visit
+					}
+					}
+				}
+			}
+			NOT = {
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_flag = honeymoon_third_stop
+				has_province_modifier = honeymoon_visit
+			}				
+			}
+		}
+		OR = {
+			has_province_flag = honeymoon_possible_here
+			FROM = {
+				overlord = {
+					NOT = {
+					any_owned_province = {
+					has_province_flag = honeymoon_chosen_here
+					}
+					}
+				}
+			}
+			NOT = {
+			any_province = {
+				country_or_vassal_holds = FROM 
+				has_province_flag = honeymoon_chosen_here
+			}				
+			}
+		}		
+		}		
+		AND = {
+			FROM = {
+			has_country_flag = ruler_visit_consort			
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_country_flag = ruler_visit_consort			
+				}
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+			has_country_flag = request_advisor_consort			
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_country_flag = request_advisor_consort			
+				}
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_country_flag = accept_culture_consort			
+				}
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes 
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_country_flag = cosmo_privilege_agendas			
+				}
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+					has_country_flag = accept_culture_consort			
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}
+		AND = {
+			FROM = {
+					has_country_flag = cosmo_privilege_agendas			
+			}
+			has_province_modifier = cosmo_has_consort_present
+			#cosmo_has_concubinenm_trigger = yes  
+		}										
+	}	
+    }
+	modifier = {
+		allowed_num_of_buildings = 1 		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+		add_development_from_building = {
+			building = royal_visit
+			type = tax
+			value = 1
+		}		
+	if = {
+		limit = {
+			FROM = {
+				has_country_modifier = cosmo_on_honeymoon
+			}
+		}
+		custom_tooltip = visit_next_honeymoon_tt 
+		set_province_flag = honeymoon_chosen_here
+		remove_building = royal_visit
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = cosmo_privilege_agendas
+			}
+		}
+		remove_building = royal_visit		
+		FROM = {
+			hidden_effect = {
+			remove_estate_privilege = estate_nobleaffairs_agendas
+			remove_estate_privilege = estate_ooku_agendas
+			remove_estate_privilege = estate_wives_agendas
+			remove_estate_privilege = estate_harem_agendas
+			remove_estate_privilege = estate_forbiddenpalace_agendas
+			}
+		}
+	set_province_flag = royal_visit_here	
+			add_scaled_local_adm_power = -2 
+			add_scaled_local_dip_power = -2 
+			add_scaled_local_mil_power = -2 
+	FROM = {	
+		set_ruler_flag = ruler_visit_home_province
+		set_ruler_flag = ruler_visit_concubines
+		country_event = {
+		id = cosmo_csort_events.1
+		}		
+		if = {
+			limit = {
+				has_estate = estate_ooku
+			}
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_forbiddenpalace
+			}
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobleaffairs
+			}
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_wives
+			}
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_harem
+			}
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = 10
+			}						
+		}										
+	}					
+	}		
+	if = {
+		limit = {
+				FROM = {
+				NOT = {
+					has_country_modifier = cosmo_on_honeymoon
+				}
+				NOT = {
+					has_country_flag = request_advisor_consort
+				}				
+				NOT = {
+					has_country_flag = cosmo_privilege_agendas
+				}	
+				}
+		}
+	set_province_flag = royal_visit_here	
+			add_scaled_local_adm_power = -2 
+			add_scaled_local_dip_power = -2 
+			add_scaled_local_mil_power = -2 
+	FROM = {	
+		set_ruler_flag = ruler_visit_home_province
+		set_ruler_flag = ruler_visit_concubines
+		country_event = {
+		id = cosmo_csort_events.1
+		}		
+		if = {
+			limit = {
+				has_estate = estate_ooku
+			}
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_forbiddenpalace
+			}
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobleaffairs
+			}
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_wives
+			}
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = 10
+			}						
+		}
+		if = {
+			limit = {
+				has_estate = estate_harem
+			}
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = 10
+			}						
+		}										
+	}		
+	}	
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = request_advisor_consort
+			}
+		}
+		custom_tooltip = request_advisor_building_tt 
+		set_province_flag = request_advisor_province
+		remove_building = royal_visit
+		FROM = {
+		country_event = {
+		id = cosmo_csort_events.7
+		}
+		}		
+	}
+	if = {
+		limit = {
+			FROM = {
+				has_country_flag = accept_culture_consort
+			}
+		}
+		custom_tooltip = accept_culture_building_tt 
+		remove_building = royal_visit
+		if = {
+			limit = {
+				accepted_culture = FROM 
+			}
+			custom_tooltip = cosmo_already_accepted_tt
+		}
+		if = {
+			limit = {
+				NOT = {
+					accepted_culture = FROM 
+				}
+			}
+		FROM = {
+		add_estate_influence_modifier = {
+			estate = estate_forbiddenpalace
+			desc = EST_VAL_NEW_CONCUBINE_CULTURE
+			influence = 15
+			duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_ooku
+			desc = EST_VAL_NEW_CONCUBINE_CULTURE
+			influence = 15
+			duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_harem
+			desc = EST_VAL_NEW_CONCUBINE_CULTURE
+			influence = 15
+			duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobleaffairs
+			desc = EST_VAL_NEW_CONCUBINE_CULTURE
+			influence = 15
+			duration = 3650
+		}		
+		add_estate_influence_modifier = {
+			estate = estate_wives
+			desc = EST_VAL_NEW_CONCUBINE_CULTURE
+			influence = 15
+			duration = 3650
+		}
+		}	
+		}		
+		FROM = {
+			add_accepted_culture = ROOT
+			hidden_effect = {
+			clr_country_flag = accept_culture_consort	
+			remove_estate_privilege = estate_nobleaffairs_accept_culture
+			remove_estate_privilege = estate_ooku_accept_culture
+			remove_estate_privilege = estate_wives_accept_culture
+			remove_estate_privilege = estate_harem_accept_culture
+			remove_estate_privilege = estate_forbiddenpalace_accept_culture
+			}
+		}		
+	}		
+    }		
+}
+entertain = {
+	cost = 0
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country		
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+	FROM = {
+		NOT = {
+			has_country_modifier = recently_visited_brothel
+		}
+	}	
+	OR = {
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_troops		
+			}
+				NOT = {
+					has_province_modifier = entertain_troops_province
+				}			
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}
+		}
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_encourage_colonists		
+			}
+				OR = {
+					FROM = {
+						cosmo_fakenw_busy_trigger = yes
+					}
+					has_province_modifier = fakenw_prostitute_1a
+					has_province_modifier = fakenw_prostitute_1b
+					has_province_modifier = fakenw_prostitute_1c
+					has_province_modifier = fakenw_prostitute_2a
+					has_province_modifier = fakenw_prostitute_2b
+					has_province_modifier = fakenw_prostitute_2c
+					has_province_modifier = fakenw_prostitute_3a
+					has_province_modifier = fakenw_prostitute_3b
+					has_province_modifier = fakenw_prostitute_3c
+					has_province_modifier = fakenw_prostitute_4a
+					has_province_modifier = fakenw_prostitute_4b
+					has_province_modifier = fakenw_prostitute_4c
+					has_province_modifier = fakenw_prostitute_5a
+					has_province_modifier = fakenw_prostitute_5b
+					has_province_modifier = fakenw_prostitute_5c
+					has_province_modifier = fakenw_prostitute_6a
+					has_province_modifier = fakenw_prostitute_6b
+					has_province_modifier = fakenw_prostitute_6c
+					has_province_modifier = fakenw_prostitute_7a
+					has_province_modifier = fakenw_prostitute_7b
+					has_province_modifier = fakenw_prostitute_7c
+					has_province_modifier = fakenw_prostitute_8a
+					has_province_modifier = fakenw_prostitute_8b
+					has_province_modifier = fakenw_prostitute_8c
+					has_province_modifier = fakenw_prostitute_9a
+					has_province_modifier = fakenw_prostitute_9b
+					has_province_modifier = fakenw_prostitute_9c
+					has_province_modifier = east_indies_prostitute_1a
+					has_province_modifier = east_indies_prostitute_1b
+					has_province_modifier = east_indies_prostitute_1c
+					has_province_modifier = east_indies_prostitute_2a
+					has_province_modifier = east_indies_prostitute_2b
+					has_province_modifier = east_indies_prostitute_2c
+					has_province_modifier = east_indies_prostitute_3a
+					has_province_modifier = east_indies_prostitute_3b
+					has_province_modifier = east_indies_prostitute_3c
+					has_province_modifier = east_indies_prostitute_4a
+					has_province_modifier = east_indies_prostitute_4b
+					has_province_modifier = east_indies_prostitute_4c
+					has_province_modifier = east_indies_prostitute_5a
+					has_province_modifier = east_indies_prostitute_5b
+					has_province_modifier = east_indies_prostitute_5c										
+				}
+		}		
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_merchants		
+			}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+			#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+			province_has_center_of_trade_of_level = 1
+
+		}
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_troops		
+			}
+			#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				NOT = {
+					has_province_modifier = entertain_sailor_province
+				}			
+			has_port = yes
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}
+		}				
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_troops		
+			}
+				NOT = {
+					has_province_modifier = entertain_sailor_province
+				}			
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}			
+		}
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_troops		
+			}
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				NOT = {
+					has_province_modifier = entertain_troops_province
+				}				
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}			
+		}		
+		AND = {
+			FROM = {
+			has_estate_privilege = estate_madams_entertain_merchants		
+			}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				OR = {
+					province_has_center_of_trade_of_level = 1
+				}			
+		}
+		#overlord
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_troops		
+				}
+			}
+				NOT = {
+					has_province_modifier = entertain_troops_province
+				}			
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_merchants		
+				}
+			}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+			#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+			province_has_center_of_trade_of_level = 1
+
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_troops		
+				}				
+			}
+			#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				NOT = {
+					has_province_modifier = entertain_sailor_province
+				}			
+			has_port = yes
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}
+		}				
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_troops		
+				}				
+			}
+				NOT = {
+					has_province_modifier = entertain_sailor_province
+				}			
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}			
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_troops		
+				}				
+			}
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				NOT = {
+					has_province_modifier = entertain_troops_province
+				}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}			
+		}		
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_entertain_merchants		
+				}				
+			}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				OR = {
+					province_has_center_of_trade_of_level = 1
+				}			
+		}
+		AND = {
+			FROM = {
+				overlord = {
+					has_estate_privilege = estate_madams_encourage_colonists		
+				}
+			}
+				OR = {
+					FROM = {
+						overlord = {
+						cosmo_fakenw_busy_trigger = yes
+						}
+					}
+					has_province_modifier = fakenw_prostitute_1a
+					has_province_modifier = fakenw_prostitute_1b
+					has_province_modifier = fakenw_prostitute_1c
+					has_province_modifier = fakenw_prostitute_2a
+					has_province_modifier = fakenw_prostitute_2b
+					has_province_modifier = fakenw_prostitute_2c
+					has_province_modifier = fakenw_prostitute_3a
+					has_province_modifier = fakenw_prostitute_3b
+					has_province_modifier = fakenw_prostitute_3c
+					has_province_modifier = fakenw_prostitute_4a
+					has_province_modifier = fakenw_prostitute_4b
+					has_province_modifier = fakenw_prostitute_4c
+					has_province_modifier = fakenw_prostitute_5a
+					has_province_modifier = fakenw_prostitute_5b
+					has_province_modifier = fakenw_prostitute_5c
+					has_province_modifier = fakenw_prostitute_6a
+					has_province_modifier = fakenw_prostitute_6b
+					has_province_modifier = fakenw_prostitute_6c
+					has_province_modifier = fakenw_prostitute_7a
+					has_province_modifier = fakenw_prostitute_7b
+					has_province_modifier = fakenw_prostitute_7c
+					has_province_modifier = fakenw_prostitute_8a
+					has_province_modifier = fakenw_prostitute_8b
+					has_province_modifier = fakenw_prostitute_8c
+					has_province_modifier = fakenw_prostitute_9a
+					has_province_modifier = fakenw_prostitute_9b
+					has_province_modifier = fakenw_prostitute_9c
+					has_province_modifier = east_indies_prostitute_1a
+					has_province_modifier = east_indies_prostitute_1b
+					has_province_modifier = east_indies_prostitute_1c
+					has_province_modifier = east_indies_prostitute_2a
+					has_province_modifier = east_indies_prostitute_2b
+					has_province_modifier = east_indies_prostitute_2c
+					has_province_modifier = east_indies_prostitute_3a
+					has_province_modifier = east_indies_prostitute_3b
+					has_province_modifier = east_indies_prostitute_3c
+					has_province_modifier = east_indies_prostitute_4a
+					has_province_modifier = east_indies_prostitute_4b
+					has_province_modifier = east_indies_prostitute_4c
+					has_province_modifier = east_indies_prostitute_5a
+					has_province_modifier = east_indies_prostitute_5b
+					has_province_modifier = east_indies_prostitute_5c										
+				}
+		}								
+	}			
+    }
+	modifier = {
+		allowed_num_of_buildings = 1 		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {		
+		if = {#colonist
+			limit = {
+				FROM = {
+					has_estate_privilege = estate_madams_encourage_colonists
+				}
+				OR = {
+					FROM = {
+						cosmo_fakenw_busy_trigger = yes
+					}
+					has_province_modifier = fakenw_prostitute_1a
+					has_province_modifier = fakenw_prostitute_1b
+					has_province_modifier = fakenw_prostitute_1c
+					has_province_modifier = fakenw_prostitute_2a
+					has_province_modifier = fakenw_prostitute_2b
+					has_province_modifier = fakenw_prostitute_2c
+					has_province_modifier = fakenw_prostitute_3a
+					has_province_modifier = fakenw_prostitute_3b
+					has_province_modifier = fakenw_prostitute_3c
+					has_province_modifier = fakenw_prostitute_4a
+					has_province_modifier = fakenw_prostitute_4b
+					has_province_modifier = fakenw_prostitute_4c
+					has_province_modifier = fakenw_prostitute_5a
+					has_province_modifier = fakenw_prostitute_5b
+					has_province_modifier = fakenw_prostitute_5c
+					has_province_modifier = fakenw_prostitute_6a
+					has_province_modifier = fakenw_prostitute_6b
+					has_province_modifier = fakenw_prostitute_6c
+					has_province_modifier = fakenw_prostitute_7a
+					has_province_modifier = fakenw_prostitute_7b
+					has_province_modifier = fakenw_prostitute_7c
+					has_province_modifier = fakenw_prostitute_8a
+					has_province_modifier = fakenw_prostitute_8b
+					has_province_modifier = fakenw_prostitute_8c
+					has_province_modifier = fakenw_prostitute_9a
+					has_province_modifier = fakenw_prostitute_9b
+					has_province_modifier = fakenw_prostitute_9c
+					has_province_modifier = east_indies_prostitute_1a
+					has_province_modifier = east_indies_prostitute_1b
+					has_province_modifier = east_indies_prostitute_1c
+					has_province_modifier = east_indies_prostitute_2a
+					has_province_modifier = east_indies_prostitute_2b
+					has_province_modifier = east_indies_prostitute_2c
+					has_province_modifier = east_indies_prostitute_3a
+					has_province_modifier = east_indies_prostitute_3b
+					has_province_modifier = east_indies_prostitute_3c
+					has_province_modifier = east_indies_prostitute_4a
+					has_province_modifier = east_indies_prostitute_4b
+					has_province_modifier = east_indies_prostitute_4c
+					has_province_modifier = east_indies_prostitute_5a
+					has_province_modifier = east_indies_prostitute_5b
+					has_province_modifier = east_indies_prostitute_5c										
+				}								
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+					FROM = {
+					has_estate_privilege = estate_madams_entertain_troops		
+					}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}
+				}								
+				}				
+			}		
+				custom_tooltip = encourage_colonists_tt 
+				set_province_flag = entertain_here_now	
+				set_province_flag = cosmo_colonist_source	
+		add_development_from_building = {
+			building = entertain
+			type = tax
+			value = 1
+		}				
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.12
+					}				
+				}						
+		}		
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+			NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}				
+			}		
+				custom_tooltip = send_entertain_troops_tt 
+				set_province_flag = entertain_here_now	
+				set_province_flag = entertain_troops_here	
+		add_development_from_building = {
+			building = entertain
+			type = manpower
+			value = 1
+		}				
+				FROM = {
+						country_event = {
+					id = cosmo_brothel_events.401
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}										
+		}
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+							NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}				
+			}			
+			set_province_flag = send_entertain_orders
+		add_development_from_building = {
+			building = entertain
+			type = tax
+			value = 1
+		}			
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.10
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}		
+		if = {#merchant no prostite
+			limit = {
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}				
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				province_has_center_of_trade_of_level = 1
+				NOT = { has_province_modifier = cosmo_entertaining_merchants }
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_merchants	
+					}
+				}
+			}
+				custom_tooltip = send_entertain_merchanats_tt 
+				set_province_flag = entertain_merchants_here
+		add_development_from_building = {
+			building = entertain
+			type = production
+			value = 1
+		}					
+				FROM = {
+					set_country_flag = entertaining_merchant_country
+						country_event = {
+					id = cosmo_brothel_events.601
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}											
+		}
+		if = {#sailor no prostitute
+			limit = {
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						province_has_center_of_trade_of_level = 1
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}				
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}									
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+			}
+				custom_tooltip = send_entertain_sailors_tt 
+				set_province_flag = entertain_here_now	
+				set_province_flag = entertain_sailors_here	
+		add_development_from_building = {
+			building = entertain
+			type = manpower
+			value = 1
+		}				
+				FROM = {
+						country_event = {
+					id = cosmo_brothel_events.501
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}											
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+						province_has_center_of_trade_of_level = 1
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}				
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}									
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+			}
+			set_province_flag = send_entertain_orders
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.10
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt							
+		}						
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}				
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}										
+				}
+			}
+				add_scaled_local_mil_power = 3 
+				custom_tooltip = entertain_troops_tt 
+				set_province_flag = entertain_troops_here
+				set_province_flag = entertain_troops_present
+				set_province_flag = cosmo_prostitute_options
+		add_development_from_building = {
+			building = entertain
+			type = manpower
+			value = 1
+		}				
+				FROM = {
+				set_country_flag = entertain_troops_prostitutes_current
+						country_event = {
+					id = cosmo_psort_events.8
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}					
+		}
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+				}
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}				
+			}			
+			set_province_flag = send_entertain_orders
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.11
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+				}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}				
+			}			
+			set_province_flag = send_entertain_orders
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.11
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+				}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}				
+			}			
+			set_province_flag = send_entertain_orders
+		add_development_from_building = {
+			building = entertain
+			type = tax
+			value = 1
+		}			
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.10
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}		
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+				}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}				
+			}			
+			set_province_flag = send_entertain_orders
+		add_development_from_building = {
+			building = entertain
+			type = production
+			value = 1
+		}			
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.11
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = no
+			NOT = { has_province_modifier = cosmo_has_prostitute_present }
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+				}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+							province_has_center_of_trade_of_level = 1						
+					}				
+			}			
+			set_province_flag = send_entertain_orders
+		add_development_from_building = {
+			building = entertain
+			type = tax
+			value = 1
+		}			
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.10
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt 			
+		}						
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				FROM = {
+					has_estate_privilege = estate_madams_entertain_troops
+				}
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+						province_has_center_of_trade_of_level = 1
+					}
+						AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}									
+				}
+			}
+				add_scaled_local_dip_power = 3 
+				custom_tooltip = entertain_sailors_tt 
+				set_province_flag = entertain_sailors_here
+				set_province_flag = entertain_sailors_present
+				set_province_flag = cosmo_prostitute_options
+		add_development_from_building = {
+			building = entertain
+			type = production
+			value = 1
+		}				
+				FROM = {
+				set_country_flag = entertain_sailors_prostitutes
+				set_country_flag = entertain_sailors_prostitutes_current
+						country_event = {
+					id = cosmo_psort_events.8
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}					
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_merchants
+						}
+						NOT = { has_province_modifier = cosmo_entertaining_merchants }
+						province_has_center_of_trade_of_level = 1
+					}					
+				}				
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}									
+				FROM = {
+					OR = {
+						has_estate_privilege = estate_madams_entertain_troops	
+					}
+				}
+			}
+			set_province_flag = send_entertain_orders
+		add_development_from_building = {
+			building = entertain
+			type = tax
+			value = 1
+		}			
+				FROM = {
+						country_event = {
+					id = cosmo_psort_events.11
+					}				
+				}		
+				custom_tooltip = send_entertain_orders_tt							
+		}				
+		if = {
+			limit = {
+				#cosmo_has_prostitute_trigger = yes
+				has_province_modifier = cosmo_has_prostitute_present
+				NOT = { has_province_modifier = cosmo_entertaining_merchants }
+				province_has_center_of_trade_of_level = 1
+				FROM = {
+					has_estate_privilege = estate_madams_entertain_merchants
+				}
+				NOT = {
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+				OR = {
+					infantry_in_province = 1
+					artillery_in_province = 1
+					cavalry_in_province = 1
+			has_building = barracks
+			has_building = regimental_camp
+			has_building = training_fields
+			has_building = conscription_center
+				}						
+					}
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_encourage_colonists
+						}						
+					}					
+					AND = {
+						FROM = {
+							has_estate_privilege = estate_madams_entertain_troops
+						}
+							has_port = yes 	
+				OR = {
+					light_ships_in_province = 1
+					heavy_ships_in_province = 1
+					transports_in_province = 1
+			has_building = shipyard
+			has_building = dock
+			has_building = grand_shipyard
+			has_building = drydock
+				}												
+					}					
+				}				
+			}
+				set_province_flag = entertain_merchants_here
+				set_province_flag = cosmo_prostitute_options				
+				add_scaled_local_dip_power = 3 
+		add_development_from_building = {
+			building = entertain
+			type = production
+			value = 1
+		}				
+				custom_tooltip = entertain_merchants_tt 
+				FROM = {
+					set_country_flag = entertaining_merchant_country
+						country_event = {
+					id = cosmo_psort_events.8
+					}				
+				}
+				FROM = {
+						if = {
+							limit = {
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 50
+									}	
+								}
+							}
+							add_years_of_income = -0.05
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 50
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 75
+									}	
+								}
+							}
+							add_years_of_income = -0.1
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 75
+								}
+								NOT = {
+									estate_influence = {
+										estate = estate_madams
+										influence = 100
+									}	
+								}
+							}
+							add_years_of_income = -0.15
+						}
+						if = {
+							limit = {
+								estate_influence = {
+									estate = estate_madams
+									influence = 100
+								}
+							}
+							add_years_of_income = -0.2
+						}					
+				#	add_estate_influence_modifier				
+				}					
+		}						
+    }		
+}
+remove_prostitute = {
+	cost = 0
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country		
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+		#cosmo_has_prostitute_trigger = yes			
+		has_province_modifier = cosmo_has_prostitute_present
+    }
+	modifier = {
+		allowed_num_of_buildings = 1 		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+			FROM = {
+				add_adm_power = -50
+			}
+			cosmo_remove_prostitute = yes
+			remove_building = remove_prostitute
+    }		
+}
+brothel_policy = {
+	cost = 0
+	time = 0
+    one_per_country = yes           # Optional, limits construction to one per country		
+	onmap = no
+	    # Optional. Province scope. Limits construction of building if not met.
+    build_trigger = {
+	OR = {
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_tax_free_brothels		
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+			NOT = {
+				has_province_modifier = brothel_tax_exempt
+			}		
+		}
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_convert_anathanist				
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}		
+		}
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_promote_prostitution		
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+			NOT = {
+				trade_goods = prostitutes 
+			}		
+		}		
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_establish_brothels	
+				NOT = {
+					has_country_modifier = recently_visited_brothel
+					has_ruler_flag = train_spy_prostitutes
+					has_ruler_flag = hire_diplomat_prostitutes
+				}	
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+		}		
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_relegate_prostitution		
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+				trade_goods = prostitutes 		
+		}
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_open_pirates		
+		}
+			OR = {
+				has_building = port_of_pleasure
+			}
+			NOT = {
+				has_province_modifier = cosmo_pirates_allowed
+			}		
+		}
+		AND = {
+		FROM = {
+				has_estate_privilege = estate_madams_closed_pirates		
+		}
+			OR = {
+				has_building = port_of_pleasure
+			}
+				has_province_modifier = cosmo_pirates_allowed	
+		}				
+		#overlord		
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_tax_free_brothels		
+			}
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+			NOT = {
+				has_province_modifier = brothel_tax_exempt
+			}		
+		}
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_promote_prostitution		
+			}			
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+			NOT = {
+				trade_goods = prostitutes 
+			}		
+		}
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_establish_brothels		
+			}			
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+		}		
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_relegate_prostitution		
+			}			
+		}
+			OR = {
+				has_building = port_of_pleasure
+				has_building = brothel_district
+			}
+				trade_goods = prostitutes 		
+		}
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_open_pirates		
+			}
+		}
+			OR = {
+				has_building = port_of_pleasure
+			}
+			NOT = {
+				has_province_modifier = cosmo_pirates_allowed
+			}		
+		}
+		AND = {
+		FROM = {
+			overlord = {
+				has_estate_privilege = estate_madams_closed_pirates		
+			}
+		}
+			OR = {
+				has_building = port_of_pleasure
+			}
+				has_province_modifier = cosmo_pirates_allowed		
+		}							
+	}		
+    }
+	modifier = {
+		allowed_num_of_buildings = 1 		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+    # THIS = Province, FROM = Builder (not necessarily owner, can be overlord)	
+    on_built = {
+		add_development_from_building = {
+			building = brothel_policy
+			type = tax
+			value = 1
+		}		
+		if = {
+			limit = {
+				FROM = {
+						has_estate_privilege = estate_madams_promote_prostitution		
+				}
+			}
+			FROM = {
+				remove_estate_privilege= estate_madams_promote_prostitution																																																	
+				add_estate_loyalty = {
+					estate = estate_madams
+					loyalty = 5
+					}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = -5
+					}
+			}
+					if = {
+						limit = {
+							trade_goods = gold						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_gold
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = grain						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_grain
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = wine						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_wine
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = wool						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_wool
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = cloth						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_cloth
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = fish						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_fish
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = fur						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_fur
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = salt						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_salt
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = naval_supplies						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_naval_supplies
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = copper						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_copper
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = iron						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_iron
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = slaves						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_slaves
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = ivory						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_ivory
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = tea						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_tea
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = chinaware						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_chinaware
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = spices						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_spices
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = coffee						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_coffee
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = cotton						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_cotton
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = sugar						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_sugar
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = tobacco						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_tobacco
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = cocoa						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_cocoa
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = silk						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_silk
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = tropical_wood						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_tropical_wood
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = livestock						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_livestock
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = incense						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_incense
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = glass						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_glass
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = gems						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_gems
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = paper						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_paper
+					duration = -1  
+					hidden = yes
+				}
+						}
+					if = {
+						limit = {
+							trade_goods = coal						
+							}
+				add_province_modifier = {
+					name = cosmo_pgoods_coal
+					duration = -1  
+					hidden = yes
+				}
+						}			
+			change_trade_goods = prostitutes 
+			FROM = {
+			custom_tooltip = cosmo_degeneracy_200
+			hidden_effect = {
+				change_variable = {
+					which = cosmoDegeneracyVariable
+					value = 200
+					}			
+			}			
+			}			
+		}
+		if = {
+			limit = {
+				FROM = {
+						has_estate_privilege = estate_madams_tax_free_brothels		
+				}
+			}
+			FROM = {
+				remove_estate_privilege= estate_madams_tax_free_brothels																																																	
+				add_estate_loyalty = {
+					estate = estate_madams
+					loyalty = 15
+					}
+			}
+			add_province_modifier = { 
+				name = brothel_tax_exempt
+				duration =  1825
+				}
+		}
+		if = {
+			limit = {
+				FROM = {
+						has_estate_privilege = estate_madams_establish_brothels		
+				}
+			}
+			set_province_flag = set_brothel_policy
+				tooltip = {
+				custom_tooltip = will_cost_or_cosmo
+			FROM = {
+					if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = -0.05
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = -0.1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = -0.15
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 100
+					}
+				}
+				add_years_of_income = -0.2
+			}				
+			}
+			custom_tooltip = cosmo_or
+			if = {
+				limit = {
+				NOT = {
+					owned_by = FROM
+				}
+				}
+				add_scaled_local_dip_power = -5
+			}
+			if = {
+				limit = {
+					owned_by = FROM
+				}
+				add_scaled_local_adm_power = -5
+			}
+			custom_tooltip = gives_cosmo
+			FROM = {
+				add_estate_influence_modifier = {
+						estate = estate_madams
+						desc = COSMO_BROTHEL_BUILT
+						influence = -10
+						duration = 1095
+					}
+			}					
+				}
+			FROM = {
+				hidden_effect = {
+				remove_estate_privilege= estate_madams_establish_brothels																																																	
+				}
+				country_event = {
+				id = cosmo_psort_events.7
+				}					
+			}
+			remove_building = brothel_policy
+		}
+		if = {
+			limit = {
+				FROM = {
+						has_estate_privilege = estate_madams_convert_anathanist		
+				}
+			}
+			set_province_flag = set_brothel_policy
+			set_province_flag = cosmo_converting_repeater
+				tooltip = {
+				custom_tooltip = will_cost_or_cosmo
+			FROM = {
+					if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = -0.05
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = -0.1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = -0.15
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 100
+					}
+				}
+				add_years_of_income = -0.2
+			}				
+			}
+			custom_tooltip = cosmo_or
+			if = {
+				limit = {
+				NOT = {
+					owned_by = FROM
+				}
+				}
+				add_scaled_local_dip_power = -5
+			}
+			if = {
+				limit = {
+					owned_by = FROM
+				}
+				add_scaled_local_adm_power = -5
+			}
+			custom_tooltip = gives_cosmo
+			FROM = {
+				add_estate_influence_modifier = {
+						estate = estate_madams
+						desc = COSMO_BROTHEL_BUILT
+						influence = -10
+						duration = 1095
+					}
+			}					
+				}
+			FROM = {
+				hidden_effect = {
+				remove_estate_privilege= estate_madams_convert_anathanist																																																	
+				}
+				country_event = {
+				id = cosmo_psort_events.721
+				}					
+			}
+			remove_building = brothel_policy
+		}						
+		if = {
+			limit = {
+				FROM = {
+						has_estate_privilege = estate_madams_relegate_prostitution		
+				}
+			}
+			FROM = {#add influence reduction
+				remove_estate_privilege= estate_madams_relegate_prostitution																																																	
+				add_estate_loyalty = {
+					estate = estate_madams
+					loyalty = -10
+					}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 5
+					}
+				add_estate_influence_modifier = {
+						estate = estate_madams
+						desc = COSMO_MADAMS_RELEGATE
+						influence = -20
+						duration = 1095
+					}										
+			}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_gold						
+						}
+						change_trade_goods = gold
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_grain						
+						}
+						change_trade_goods = grain
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_wine						
+						}
+						change_trade_goods = wine
+					}										
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_wool						
+						}
+						change_trade_goods = wool
+					}			
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_cloth						
+						}
+						change_trade_goods = cloth
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_fish						
+						}
+						change_trade_goods = fish
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_fur						
+						}
+						change_trade_goods = fur
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_salt						
+						}
+						change_trade_goods = salt
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_naval_supplies						
+						}
+						change_trade_goods = naval_supplies
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_copper						
+						}
+						change_trade_goods = copper
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_iron						
+						}
+						change_trade_goods = iron
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_slaves						
+						}
+						change_trade_goods = slaves
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_ivory						
+						}
+						change_trade_goods = ivory
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_tea						
+						}
+						change_trade_goods = tea
+					}					
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_chinaware						
+						}
+						change_trade_goods = chinaware
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_spices						
+						}
+						change_trade_goods = spices
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_coffee						
+						}
+						change_trade_goods = coffee
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_cotton						
+						}
+						change_trade_goods = cotton
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_sugar						
+						}
+						change_trade_goods = sugar
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_tobacco						
+						}
+						change_trade_goods = tobacco
+					}					
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_cocoa						
+						}
+						change_trade_goods = cocoa
+					}	
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_silk						
+						}
+						change_trade_goods = silk
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_tropical_wood						
+						}
+						change_trade_goods = tropical_wood
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_livestock						
+						}
+						change_trade_goods = livestock
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_incense						
+						}
+						change_trade_goods = incense
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_glass						
+						}
+						change_trade_goods = glass
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_gems						
+						}
+						change_trade_goods = gems
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_paper						
+						}
+						change_trade_goods = paper
+					}
+				if = {
+					limit = {
+						has_province_modifier = cosmo_pgoods_coal						
+						}
+						change_trade_goods = coal
+					}			
+		}
+		if = {
+			limit = {
+				OR = {
+					FROM = {
+						has_estate_privilege = estate_madams_open_pirates		
+					}
+					FROM = {
+						overlord = {
+						has_estate_privilege = estate_madams_open_pirates									
+						}
+					}
+				}
+			}
+				add_province_modifier = { 
+					name = cosmo_pirates_allowed
+					desc = cosmo_pirates_allowed_DESC
+					duration = -1  
+				}
+				FROM = {
+					set_country_flag = cosmo_pirates_built
+					remove_estate_privilege= estate_madams_open_pirates																																																	
+				}
+		}
+		if = {
+			limit = {
+				OR = {
+					FROM = {
+						has_estate_privilege = estate_madams_closed_pirates		
+					}
+					FROM = {
+						overlord = {
+						has_estate_privilege = estate_madams_closed_pirates									
+						}
+					}
+				}
+			}
+				remove_province_modifier = cosmo_pirates_allowed
+				FROM = {
+					remove_estate_privilege= estate_madams_closed_pirates																																																	
+				}
+		}				
+			remove_building = brothel_policy
+    }		
+}

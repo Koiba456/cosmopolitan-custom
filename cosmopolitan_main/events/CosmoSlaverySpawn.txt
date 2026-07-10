@@ -1,0 +1,869 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_slaveryspawn_events
+
+
+
+# Europe Remove
+country_event = {
+	id = cosmo_slaveryspawn_events.11
+	title = cosmo_slaveryspawn_events.11.t
+	desc = cosmo_slaveryspawn_events.11.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_1_eventPicture
+
+	hidden = yes #spawnevent
+
+	trigger = {
+		ai = no
+		OR = {
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = niger_region
+					region = guinea_region
+					region = sahel_region
+				}
+				NOT = {
+				has_province_modifier = cosmo_west_african_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = horn_of_africa_region
+					region = east_africa_region					
+				}
+				NOT = {
+				has_province_modifier = cosmo_east_african_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = kongo_region
+					region = central_africa_region
+					region = south_africa_region					
+				}
+				NOT = {
+				has_province_modifier = cosmo_central_african_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+				superregion = europe_superregion					
+				}
+				NOT = {
+				has_province_modifier = cosmo_europe_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					superregion = eastern_europe_superregion					
+				}
+				NOT = {
+				has_province_modifier = cosmo_europe_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = korea_region					
+				}
+				NOT = {
+				has_province_modifier = cosmo_korea_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = japan_region					
+				}
+				NOT = {
+				has_province_modifier = cosmo_japanese_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+				superregion = china_superregion					
+				}
+				NOT = {
+				has_province_modifier = cosmo_china_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = burma_region 
+					region = indo_china_region 					
+				}
+				NOT = {
+				has_province_modifier = cosmo_thai_slaves_captured
+				}
+			}
+			}
+			any_province = {
+			base_production = 3
+			AND = {
+				has_building = cosmo_slave_market
+					OR = {
+					region = moluccas_region 
+					region = indonesia_region
+					region = oceanea_region 
+					region = malaya_region 					
+				}
+				NOT = {
+				has_province_modifier = cosmo_malay_slaves_captured
+				}
+			}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+		
+	
+	option = {#Menu 1
+		name = cosmo_slaveryspawn_events.11.a	
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = niger_region
+					region = guinea_region
+					region = sahel_region
+					}
+					NOT = {
+					has_province_modifier = cosmo_west_african_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_west_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_west_african_slaves_captured_DESC
+
+			}
+		}		
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = horn_of_africa_region
+					region = east_africa_region								
+					}
+					NOT = {
+					has_province_modifier = cosmo_east_african_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_east_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_east_african_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = kongo_region
+					region = central_africa_region
+					region = south_africa_region							
+					}
+					NOT = {
+					has_province_modifier = cosmo_central_african_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_central_african_slaves_captured
+				duration = 2160  
+				desc = cosmo_central_african_slaves_captured_DESC
+
+			}
+		}		
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+				superregion = europe_superregion					
+							
+					}
+					NOT = {
+					has_province_modifier = cosmo_europe_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_europe_slaves_captured
+				duration = 2160  
+				desc = cosmo_europe_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					superregion = eastern_europe_superregion					
+							
+					}
+					NOT = {
+					has_province_modifier = cosmo_europe_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_europe_slaves_captured
+				duration = 2160  
+				desc = cosmo_europe_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = korea_region					
+							
+					}
+					NOT = {
+					has_province_modifier = cosmo_korea_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_korea_slaves_captured
+				duration = 2160  
+				desc = cosmo_korea_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = japan_region					
+							
+					}
+					NOT = {
+					has_province_modifier = cosmo_japanese_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_japanese_slaves_captured
+				duration = 2160  
+				desc = cosmo_japanese_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+				superregion = china_superregion					
+							
+					}
+					NOT = {
+					has_province_modifier = cosmo_china_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_china_slaves_captured
+				duration = 2160  
+				desc = cosmo_china_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = burma_region 
+					region = indo_china_region 								
+					}
+					NOT = {
+					has_province_modifier = cosmo_thai_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_thai_slaves_captured
+				duration = 2160  
+				desc = cosmo_thai_slaves_captured_DESC
+
+			}
+		}
+		random_province = {
+			limit = {
+			base_production = 3
+			OR = {
+				AND = {
+					has_building = cosmo_slave_market
+						OR = {
+					region = moluccas_region 
+					region = indonesia_region
+					region = oceanea_region 
+					region = malaya_region 								
+					}
+					NOT = {
+					has_province_modifier = cosmo_malay_slaves_captured
+					}
+				}
+				}				
+				}
+				
+			add_base_production = -1 
+			add_province_modifier = {
+				name = cosmo_malay_slaves_captured
+				duration = 2160  
+				desc = cosmo_malay_slaves_captured_DESC
+
+			}
+		}																																				   																					
+	}			
+}
+
+# Europe Menu 1
+country_event = {
+	id = cosmo_slaveryspawn_events.101
+	title = cosmo_slaveryspawn_events.101.t
+	desc = cosmo_slaveryspawn_events.101.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_1_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.101.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_1
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.101.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_1
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.101.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_1
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.101.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}
+
+# Europe Menu 2
+country_event = {
+	id = cosmo_slaveryspawn_events.102
+	title = cosmo_slaveryspawn_events.102.t
+	desc = cosmo_slaveryspawn_events.102.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_2_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.102.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_2
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.102.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_2
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.102.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_2
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.102.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}
+
+
+# Europe Menu 3
+country_event = {
+	id = cosmo_slaveryspawn_events.103
+	title = cosmo_slaveryspawn_events.103.t
+	desc = cosmo_slaveryspawn_events.103.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_3_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.103.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_3
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.103.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_3
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.103.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_3
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.103.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}
+
+# Europe Menu 3
+country_event = {
+	id = cosmo_slaveryspawn_events.104
+	title = cosmo_slaveryspawn_events.104.t
+	desc = cosmo_slaveryspawn_events.104.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_4_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.104.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_4
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.104.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_4
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.104.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_4
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.104.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}
+
+# Europe Menu 5
+country_event = {
+	id = cosmo_slaveryspawn_events.105
+	title = cosmo_slaveryspawn_events.105.t
+	desc = cosmo_slaveryspawn_events.105.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_5_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.105.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_5
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.105.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_5
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.105.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_5
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.105.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}
+
+
+# Europe Menu 5
+country_event = {
+	id = cosmo_slaveryspawn_events.106
+	title = cosmo_slaveryspawn_events.106.t
+	desc = cosmo_slaveryspawn_events.106.d
+	picture = cosmogfx_BROTHEL_EUROPE_MENU_6_eventPicture
+
+
+	is_triggered_only = yes
+
+		
+	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.106.a	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_owned
+			}
+		}
+		add_adm_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_6
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.106.b	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_trade
+			}
+		}
+		add_dip_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_6
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}	
+	option = {#Hire
+		name = cosmo_slaveryspawn_events.106.c	
+		trigger = {
+			OR = {
+				has_ruler_flag = cosmo_hire_occupied
+			}
+		}
+		add_mil_power = -25
+		add_country_modifier = { 
+			name = brothel_europe_6
+			duration = 13250  
+		}		
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}
+	option = {#don't Hire
+		name = cosmo_slaveryspawn_events.106.7	
+		country_event = {#next menu
+			id = cosmo_slaveryspawn_events.1
+			}				
+		clr_ruler_flag = cosmo_hired_already
+		clr_ruler_flag = cosmo_hire_owned
+		clr_ruler_flag = cosmo_hire_trade
+		clr_ruler_flag = cosmo_hire_occupied
+	}					
+}

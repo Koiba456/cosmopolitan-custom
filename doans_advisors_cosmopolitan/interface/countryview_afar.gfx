@@ -1,0 +1,47 @@
+spriteTypes = {
+	
+	
+	spriteType = {
+		name = "GFX_advisor_afar_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//afar_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_afar_artist_female"
+		texturefile = "gfx//interface//advisors//afar_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_afar_army_organiser_female"
+		texturefile = "gfx//interface//advisors//afar_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_afar_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

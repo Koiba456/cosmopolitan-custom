@@ -1,0 +1,44 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_somali_statesman_female"
+		texturefile = "gfx//interface//advisors//somali_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+		spriteType = {
+		name = "GFX_advisor_somali_philosopher_female"
+		texturefile = "gfx//interface//advisors//somali_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_somali_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//somali_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_somali_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

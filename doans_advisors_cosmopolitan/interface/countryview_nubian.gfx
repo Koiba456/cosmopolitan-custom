@@ -1,0 +1,41 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_nubian_trader_female"
+		texturefile = "gfx//interface//advisors//nubian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_nubian_theologian_female"
+		texturefile = "gfx//interface//advisors//nubian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_nubian_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//nubian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	
+	spriteType = {
+		name = "GFX_advisor_nubian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

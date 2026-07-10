@@ -1,0 +1,46 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_kanuri_trader_female"
+		texturefile = "gfx//interface//advisors//kanuri_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_kanuri_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//kanuri_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_kanuri_grand_captain_female"
+		texturefile = "gfx//interface//advisors//kanuri_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_kanuri_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

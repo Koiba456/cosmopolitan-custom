@@ -1,0 +1,44 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_sawabuntu_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//sawabuntu_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+	
+		spriteType = {
+		name = "GFX_advisor_sawabuntu_theologian_female"
+		texturefile = "gfx//interface//advisors//sawabuntu_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_sawabuntu_army_organiser_female"
+		texturefile = "gfx//interface//advisors//sawabuntu_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_sawabuntu_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

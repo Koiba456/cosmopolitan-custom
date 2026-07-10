@@ -1,0 +1,42 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_masaba_philosopher_female"
+		texturefile = "gfx//interface//advisors//masaba_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+		spriteType = {
+		name = "GFX_advisor_masaba_diplomat_female"
+		texturefile = "gfx//interface//advisors//masaba_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_masaba_commandant_female"
+		texturefile = "gfx//interface//advisors//masaba_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_masaba_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

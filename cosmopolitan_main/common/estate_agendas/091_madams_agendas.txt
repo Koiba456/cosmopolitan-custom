@@ -1,0 +1,405 @@
+
+#This one or the next one will always be valid
+estate_madams_develop_x = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_puagenda_development		
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		event_target:agendasubject = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						area_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		}		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = event_target:agendasubject }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 15
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}			
+		}
+    }
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_madams_develop_mil_x = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_puagenda_development		
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		event_target:agendasubject = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						area_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		}		
+
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_mil_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_mil_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_mil_var
+				value = trigger_value:base_manpower
+			}
+			change_variable = {
+				which = province_mil_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = event_target:agendasubject }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_manpower = "province_mil_var"
+		}
+    }
+    task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 15
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}			
+		}
+    }
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_madams_develop_dip_x = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_puagenda_development		
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		event_target:agendasubject = {
+		random_list = {
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						area_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			2 = {
+				trigger = {
+					any_owned_province = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+						OR = {
+							AND = {
+								religion = prev
+								OR = {
+									culture = prev
+									has_owner_accepted_culture = yes
+								}
+							}
+						}
+						region_for_scope_province = {
+							is_capital_of = prev
+						}
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+			1 = {
+				random_owned_province = {
+					limit = {
+						is_state_core = prev
+					}
+					save_event_target_as = agenda_province
+				}
+			}
+		}
+		}		
+
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_dip_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_dip_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_dip_var
+				value = trigger_value:base_production
+			}
+			change_variable = {
+				which = province_dip_var
+				value = 2
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = event_target:agendasubject }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_production = "province_dip_var"
+		}
+    }
+    task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 15
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}			
+		}
+    }
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}

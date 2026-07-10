@@ -1,0 +1,382 @@
+# INSTRUCTIONS:
+#
+# condition				A diplomatic action can have any number of condition blocks, each with its own
+#						tooltip, potential and allow section
+#
+# 	tooltip					Sets a custom text string similar to the hardcoded limits
+# 							If no tooltip is scripted, the tooltip for the actual trigger will be shown
+#							Note that the custom tooltip is only shown if the allow trigger is NOT met
+#
+# 	potential				Determines if the trigger is applicable or not
+# 	allow					Determines if the action is valid or not
+#
+# effect				A diplomatic action can only have one effect block
+
+# ROOT					actor
+# FROM					target
+
+########################################
+# DIPLOMATIC ACTIONS
+########################################
+# royal_marriage
+# declarewar
+# requestpeace
+# support_independence_action
+# allianceaction
+# embargoaction
+# annexationaction
+# integrationaction
+# vassalaction
+# guaranteeaction
+# warningaction
+# threaten_war
+# milaccess
+# fleet_access
+# offer_fleet_access
+# offermilaccess
+# insultaction
+# giftaction
+# claimaction
+# callaction
+# offerloan
+# warsubsidy
+# sellprov
+# imperial_relations_action
+# religious_unity_action
+# grant_electorate
+# remove_electorate
+# grant_freecity
+# remove_freecity
+# demand_unlawful_territory_action
+# call_crusade_action
+# excommunicate_action
+# enforce_peace
+# improve_relation
+# fabricate_claim
+# justify_trade_conflict
+# transfer_trade_power
+# infiltrate_administration
+# sabotage_reputation
+# support_rebels
+# sow_discontent
+# study_technology
+# agitate_for_liberty
+# form_coalition
+# request_to_join_federation
+# invite_to_federation
+# support_heir
+# break_marriage
+# designate_march
+# ask_for_march
+# sell_ships_action
+# counterespionage
+# abandon_union_action
+
+cosmo_request_advisors = {
+    category = alliance           # Which diplomatic action list the action will appear in.
+    
+    alert_index = 6             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+    alert_tooltip = COSMO_REQUEST_ADVISORS_ALERT_TT           # The localisation key to display in the alert tooltip. Optional.
+    
+    
+	require_acceptance = yes	# Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+    is_visible = {
+		ai = no
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+			prestige = 10
+			FROM = {
+			OR = {
+				is_subject_of = ROOT
+				alliance_with = ROOT
+				overlord_of = ROOT
+			}
+		}
+        # variable_arithmetic_trigger can be used here to use export_to_variable to extract and compare values such as ruler_age, etc
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_requesting_advisors
+			}
+		}
+		ROOT = {
+			set_country_flag = request_advisor_spawn
+		}	
+    }
+    
+    # Which effects to execute on decline (if declinable). Optional.
+    on_decline = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_alliance
+			}
+		}
+    }
+    
+    # Controls the AI's acceptance of the action, if acceptable. Optional.
+   ai_acceptance = {
+       # Add an AI factor entry
+
+		add_entry = {
+			name = COSMO_HAS_PERSONAL_INTRODUCTION_OPINION
+			limit = {
+				FROM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_personal_introduction
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { 
+			which = ai_value 
+			value = 1 }
+		}
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = {
+			which = ai_value 
+			value = 0.25 
+			}
+		}
+		
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+	
+		add_entry = {
+			name = COSMO_PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 0.25 }
+		}
+		
+		add_entry = {
+			name = COSMO_HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = COSMO_HAS_THREATENED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_threatened }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = COSMO_MILITARY_STRENGTH_ROOT
+			
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+			}
+			multiply_variable = {
+				which = ai_value 
+				value = 0.25 
+				}
+		}
+		
+		add_entry = {
+			name = COSMO_LOYAL_ALLY
+			limit = {
+				FROM = {
+					AND = {
+					alliance_with = ROOT 
+					trust = { who = ROOT value = 80 }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 200
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_LOYAL_SUBJECT
+			limit = {
+				FROM = {
+					AND = {
+					is_subject_of = ROOT 
+					NOT = {
+					liberty_desire = 5 
+					}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_TECH_DIFFERENCE
+			limit = {
+				FROM = {
+				overlord = {
+					tech_difference = 3
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+
+		add_entry = {
+			name = COSMO_INSTITUTION_DIFFERENCE
+			limit = {
+				ROOT = {					
+					institution_difference = {
+						who = FROM
+						value = 2
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}		
+		
+		add_entry = {
+			name = COSMO_TRUST
+			
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+				with = THIS
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}
+				
+		# Negative 
+		
+		add_entry = {
+			name = COSMO_NOT_LOYAL_OR_NEEDED
+			limit = {
+				FROM = {
+				ai = yes
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 150
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = COSMO_HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = COSMO_MILITARY_STRENGTH_FROM
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.50 }
+		}
+		
+		add_entry = {
+			name = BORDER_DISTANCE
+			export_to_variable = {
+				which = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = { which = ai_value value = -0.25 }
+		}
+		
+			   
+   }
+    
+    # Controls the AI's usage of the action
+    ai_will_do = {
+        ai = no
+    }
+}

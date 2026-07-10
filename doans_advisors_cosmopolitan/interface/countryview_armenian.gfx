@@ -1,0 +1,60 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_armenian_treasurer_female"
+		texturefile = "gfx//interface//advisors//armenian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	
+
+
+		spriteType = {
+		name = "GFX_advisor_armenian_philosopher_female"
+		texturefile = "gfx//interface//advisors//armenian_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_armenian_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//armenian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_armenian_artist_female"
+		texturefile = "gfx//interface//advisors//armenian_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+
+
+	spriteType = {
+		name = "GFX_advisor_armenian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

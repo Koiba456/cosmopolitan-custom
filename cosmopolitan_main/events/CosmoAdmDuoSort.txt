@@ -1,0 +1,1829 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_adsort_events
+
+# launch sort
+country_event = {
+	id = cosmo_adsort_events.30
+	title = cosmo_adsort_events.30.t
+	desc = cosmo_adsort_events.30.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	hidden = yes
+
+	trigger = {
+		ai = no
+		has_country_modifier = cosmo_admduo_affair		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	hidden_effect = {
+		remove_country_modifier = cosmo_admduo_affair
+	}
+	}		
+		
+	
+	option = { #Advisors
+		name = cosmo_adsort_events.30.12	
+		trigger_switch = {
+		on_trigger = has_ruler_flag		
+			cosmo_statesman = {
+			country_event = {
+				id = cosmo_adsort_events.8
+				}
+				}
+			cosmo_naval_reformer = {
+			country_event = {
+				id = cosmo_adsort_events.9
+				}
+				}
+			cosmo_trader = {
+			country_event = {
+				id = cosmo_adsort_events.10
+				}
+				}
+			cosmo_spymaster = {
+			country_event = {
+				id = cosmo_adsort_events.11
+				}
+				}
+			cosmo_colonial_governor = {
+			country_event = {
+				id = cosmo_adsort_events.12
+				}
+				}
+			cosmo_diplomat = {
+			country_event = {
+				id = cosmo_adsort_events.13
+				}
+				}
+			cosmo_navigator = {
+			country_event = {
+				id = cosmo_adsort_events.14
+				}
+				}
+			cosmo_army_organiser = {
+			country_event = {
+				id = cosmo_adsort_events.15
+				}
+				}
+			cosmo_commandant = {
+			country_event = {
+				id = cosmo_adsort_events.16
+				}
+				}
+			cosmo_quartermaster = {
+			country_event = {
+				id = cosmo_adsort_events.17
+				}
+				}
+			cosmo_recruitmaster = {
+			country_event = {
+				id = cosmo_adsort_events.18
+				}
+				}
+			cosmo_grand_captain = {
+			country_event = {
+				id = cosmo_adsort_events.19
+				}
+				}
+			cosmo_fortification_expert = {
+			country_event = {
+				id = cosmo_adsort_events.20
+				}
+				}
+			cosmo_army_reformer = {
+			country_event = {
+				id = cosmo_adsort_events.21
+				}
+				}
+			cosmo_consort_trio_adm_mil = {
+			country_event = {
+				id = cosmo_adsort_events.22
+				}
+				}							
+		}
+		clr_ruler_flag = cosmo_consort_trio_adm_mil			
+		clr_ruler_flag = cosmo_army_reformer			
+		clr_ruler_flag = cosmo_artist			
+		clr_ruler_flag = cosmo_philosopher			
+		clr_ruler_flag = cosmo_natural_scientist			
+		clr_ruler_flag = cosmo_treasurer			
+		clr_ruler_flag = cosmo_theologian			
+		clr_ruler_flag = cosmo_master_of_mint			
+		clr_ruler_flag = cosmo_inquisitor			
+		clr_ruler_flag = cosmo_statesman			
+		clr_ruler_flag = cosmo_naval_reformer			
+		clr_ruler_flag = cosmo_trader			
+		clr_ruler_flag = cosmo_spymaster			
+		clr_ruler_flag = cosmo_colonial_governor			
+		clr_ruler_flag = cosmo_diplomat			
+		clr_ruler_flag = cosmo_navigator			
+		clr_ruler_flag = cosmo_army_organiser			
+		clr_ruler_flag = cosmo_commandant			
+		clr_ruler_flag = cosmo_quartermaster			
+		clr_ruler_flag = cosmo_recruitmaster			
+		clr_ruler_flag = cosmo_grand_captain			
+		clr_ruler_flag = cosmo_fortification_expert						
+		remove_country_modifier = having_an_affair
+	}						
+}
+
+# statesman sort
+country_event = {
+	id = cosmo_adsort_events.8
+	title = cosmo_adsort_events.8.t
+	desc = cosmo_adsort_events.8.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #statesman 
+		name = cosmo_adsort_events.8.a	
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = novgorodian 
+					type = artist 
+				}																																																																																						
+				}
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = statesman 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = statesman 
+						}
+				}
+				}				
+			}
+			random_list = {#DUO_NOVGORODIAN_ARTIST_EAST_SLAVIC_STATESMAN
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5001
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5002
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = karelian 
+					type = natural_scientist 
+				}																																																																																						
+				}
+				OR = {
+				employed_advisor = {#unique
+						is_male = no
+						culture = karelian 
+						type = statesman 
+					}
+				}
+				}				
+			}
+			random_list = {#DUO_KARELIAN_NATURAL_SCIENTIST_KARELIAN_STATESMAN
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5011
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5012
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = russian 
+						type = treasurer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = treasurer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = treasurer 
+					}																																																																																						
+				}
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = statesman 
+					}																																																																																					
+				}
+				}				
+			}
+			random_list = {#DUO_EAST_SLAVIC_TREASURER_NOVGORODIAN_STATESMAN
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5021
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5022
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ruthenian 
+					type = treasurer 
+				}																																																																																						
+				}
+				OR = {
+				employed_advisor = {#unique
+						is_male = no
+						culture = ruthenian 
+						type = statesman 
+					}
+				}
+				}				
+			}
+			random_list = {#DUO_RUTHENIAN_TREASURER_RUTHENIAN_STATESMAN
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5031
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5032
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ryazanian 
+					type = treasurer 
+				}																																																																																						
+				}
+				OR = {
+				employed_advisor = {#unique
+						is_male = no
+						culture = karelian 
+						type = statesman 
+					}
+				}
+				}				
+			}
+			random_list = {#DUO_RYAZANIAN_TREASURER_KARELIAN_STATESMAN
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5041
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5042
+					}
+				}	
+			}			
+		}																														
+	}							
+}	
+
+# naval_reformer sort
+country_event = {
+	id = cosmo_adsort_events.9
+	title = cosmo_adsort_events.9.t
+	desc = cosmo_adsort_events.9.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #naval_reformer 
+		name = cosmo_adsort_events.9.a	
+		if = {
+			limit = {
+			AND = {
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = philosopher 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = philosopher 
+						}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = naval_reformer 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = naval_reformer 
+						}																																																																																						
+				}
+				}				
+			}
+			random_list = {#DUO_EAST_SLAVIC_PHILOSOPHER_EAST_SLAVIC_NAVAL_REFORMER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5101
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5102
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = novgorodian 
+					type = master_of_mint 
+				}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = naval_reformer 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = naval_reformer 
+						}																																																																																					
+				}
+				}				
+			}
+			random_list = {#DUO_NOVGORODIAN_MASTER_OF_MINT_EAST_SLAVIC_NAVAL_REFORMER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5121
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5122
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ryazanian 
+					type = treasurer 
+				}																																																																																						
+				}
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = naval_reformer 
+					}																																																																																								
+				}
+				}				
+			}
+			random_list = {#DUO_RYAZANIAN_TREASURER_KARELIAN_NAVAL_REFORMER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5131
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5132
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ruthenian 
+					type = treasurer 
+				}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = naval_reformer 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = naval_reformer 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = naval_reformer 
+						}																																																																																					
+				}
+				}				
+			}
+			random_list = {#DUO_RUTHENIAN_TREASURER_EAST_SLAVIC_NAVAL_REFORMER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5141
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5142
+					}
+				}	
+			}			
+		}																																
+	}							
+}
+
+
+# trader sort
+country_event = {
+	id = cosmo_adsort_events.10
+	title = cosmo_adsort_events.10.t
+	desc = cosmo_adsort_events.10.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #trader 
+		name = cosmo_adsort_events.10.a	
+		if = {
+			limit = {
+			AND = {
+				has_consort_flag = cosmo_europe_marriage_15	
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = trader 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = trader 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = trader 
+						}
+				}
+				}				
+			}
+			random_list = {
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5201
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5202
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+				has_consort_flag = cosmo_europe_marriage_15	
+				OR = {
+				employed_advisor = {#unique
+						is_male = no
+						culture = russian 
+						type = trader 
+					}
+				}
+				}				
+			}
+			random_list = {
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5211
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5212
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+				has_consort_flag = cosmo_europe_marriage_15	
+				OR = {
+				employed_advisor = {#unique
+						is_male = no
+						culture = ruthenian 
+						type = trader 
+					}
+				}
+				}				
+			}
+			random_list = {
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5221
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5222
+					}
+				}	
+			}			
+		}																										
+	}							
+}
+
+# spymaster sort
+country_event = {
+	id = cosmo_adsort_events.11
+	title = cosmo_adsort_events.11.t
+	desc = cosmo_adsort_events.11.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #spymaster 
+		name = cosmo_adsort_events.11.a	
+		if = {
+			limit = {
+			AND = {
+				OR = {
+				employed_advisor = {
+						is_male = no
+						culture = ruthenian 
+						type = treasurer 
+					}																																																																																						
+					}
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = spymaster 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = spymaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = spymaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = spymaster 
+						}																																																																																					
+					}
+				}				
+			}
+			random_list = {#DUO_RUTHENIAN_TREASURER_EAST_SLAVIC_SPYMASTER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5301
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5302
+					}
+				}	
+			}			
+		}																										
+	}							
+}
+
+# colonial_governor sort
+country_event = {
+	id = cosmo_adsort_events.12
+	title = cosmo_adsort_events.12.t
+	desc = cosmo_adsort_events.12.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #colonial_governor 
+		name = cosmo_adsort_events.12.a	
+		if = {
+			limit = {
+			AND = {
+				has_consort_flag = cosmo_europe_marriage_15	
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = colonial_governor 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = colonial_governor 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = colonial_governor 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = colonial_governor 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = colonial_governor 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = colonial_governor 
+						}
+				}
+				}				
+			}
+			random_list = {
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5401
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5402
+					}
+				}	
+			}			
+		}																										
+	}							
+}	
+
+# diplomat sort
+country_event = {
+	id = cosmo_adsort_events.13
+	title = cosmo_adsort_events.13.t
+	desc = cosmo_adsort_events.13.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #diplomat 
+		name = cosmo_adsort_events.13.a	
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = russian 
+					type = artist 
+				}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = diplomat 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = diplomat 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = diplomat 
+						}																																																																																						
+				}
+				}				
+			}
+			random_list = {#DUO_RUSSIAN_ARTIST_EAST_SLAVIC_DIPLOMAT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.6401
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.6402
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = philosopher 
+						}			
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = philosopher 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = philosopher 
+						}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = diplomat 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = diplomat 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = diplomat 
+						}																																																																																						
+				}
+				}				
+			}
+			random_list = {#DUO_EAST_SLAVIC_PHILOSOPHER_EAST_SLAVIC_DIPLOMAT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.6411
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.6412
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = karelian 
+					type = natural_scientist 
+				}																																																																																						
+				}
+			OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = diplomat 
+						}																																																																																					
+				}
+				}				
+			}
+			random_list = {#DUO_KARELIAN_NATURAL_SCIENTIST_RYAZANIAN_DIPLOMAT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.6421
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.6422
+					}
+				}	
+			}			
+		}																										
+	}							
+}
+
+# navigator sort
+country_event = {
+	id = cosmo_adsort_events.14
+	title = cosmo_adsort_events.14.t
+	desc = cosmo_adsort_events.14.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #navigator     
+		name = cosmo_adsort_events.14.a																												
+	}						
+}	
+
+# army_organiser sort
+country_event = {
+	id = cosmo_adsort_events.15
+	title = cosmo_adsort_events.15.t
+	desc = cosmo_adsort_events.15.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #army_organiser 
+		name = cosmo_adsort_events.15.a	
+		if = {
+			limit = {
+			AND = {
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = ruthenian 
+						type = treasurer 
+					}																																																																																						
+				}
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = ruthenian 
+						type = army_organiser 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = army_organiser 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = byelorussian 
+						type = army_organiser 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = army_organiser 
+					}																																																																																					
+				}
+				}				
+			}
+			random_list = {#DUO_RUTHENIAN_TREASURER_EAST_SLAVIC_ARMY_ORGANIZER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5601
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5602
+					}
+				}	
+			}			
+		}																										
+	}							
+}	
+
+# commandant sort
+country_event = {
+	id = cosmo_adsort_events.16
+	title = cosmo_adsort_events.16.t
+	desc = cosmo_adsort_events.16.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #commandant 
+		name = cosmo_adsort_events.16.a	
+		if = {
+			limit = {
+			AND = {
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = russian 
+						type = artist 
+					}																																																																																						
+					}
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = ruthenian 
+						type = commandant 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = russian 
+						type = commandant 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = commandant 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = byelorussian 
+						type = commandant 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = commandant 
+					}																																																																																						
+				}
+				}				
+			}
+			random_list = {#DUO_RUSSIAN_ARTIST_EAST_SLAVIC_COMMANDANT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5701
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5702
+					}
+				}	
+			}			
+		}																										
+	}						
+}	
+
+# quartermaster sort
+country_event = {
+	id = cosmo_adsort_events.17
+	title = cosmo_adsort_events.17.t
+	desc = cosmo_adsort_events.17.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #quartermaster 
+		name = cosmo_adsort_events.17.a																											
+	}						
+}	
+
+# recruitmaster sort
+country_event = {
+	id = cosmo_adsort_events.18
+	title = cosmo_adsort_events.18.t
+	desc = cosmo_adsort_events.18.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #recruitmaster 
+		name = cosmo_adsort_events.18.a	
+		if = {
+			limit = {
+			AND = {
+		OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ruthenian 
+					type = artist 
+				}
+			employed_advisor = {
+					is_male = no
+					culture = ryazanian 
+					type = artist 
+				}
+			employed_advisor = {
+					is_male = no
+					culture = byelorussian 
+					type = artist 
+				}
+			employed_advisor = {
+					is_male = no
+					culture = karelian 
+					type = artist 
+				}																																																																																						
+				}
+		OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = recruitmaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = recruitmaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = recruitmaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = recruitmaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = recruitmaster 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = recruitmaster 
+						}																																																																																						
+			}
+				}				
+			}
+			random_list = {#DUO_EAST_SLAVIC_ARTIST_EAST_SLAVIC_RECRUITMASTER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5901
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5902
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = treasurer 
+						}																																																																																						
+					}
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = ruthenian 
+							type = army_organiser 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = army_organiser 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = army_organiser 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = karelian 
+							type = army_organiser 
+						}																																																																																					
+					}
+				}				
+			}
+			random_list = {#DUO_BYELORUSSIAN_MASTER_OF_MINT_EAST_SLAVIC_RECRUITMASTER
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.5911
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.5912
+					}
+				}	
+			}			
+		}																												
+	}						
+}	
+
+# grand_captain sort
+country_event = {
+	id = cosmo_adsort_events.19
+	title = cosmo_adsort_events.19.t
+	desc = cosmo_adsort_events.19.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #grand_captain 
+		name = cosmo_adsort_events.19.a																															
+	}						
+}	
+
+# fortification_expert sort
+country_event = {
+	id = cosmo_adsort_events.20
+	title = cosmo_adsort_events.20.t
+	desc = cosmo_adsort_events.20.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+
+	option = { #fortification_expert 
+		name = cosmo_adsort_events.20.a	
+		if = {
+			limit = {
+			AND = {
+				OR = {
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = natural_scientist 
+					}																																																																																						
+					}
+				OR = {
+						employed_advisor = {
+								is_male = no
+								culture = karelian 
+								type = fortification_expert 
+							}																																																																																					
+					}
+				}				
+			}
+			random_list = {#DUO_KARELIAN_NATURAL_SCIENTIST_KARELIAN_FORTIFICATION_EXPERT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.6101
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.6102
+					}
+				}	
+			}			
+		}
+		if = {
+			limit = {
+			AND = {
+				OR = {
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = master_of_mint 
+					}																																																																																						
+					}
+				OR = {
+					employed_advisor = {
+							is_male = no
+							culture = russian 
+							type = fortification_expert 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = novgorodian 
+							type = fortification_expert 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = ryazanian 
+							type = fortification_expert 
+						}
+					employed_advisor = {
+							is_male = no
+							culture = byelorussian 
+							type = fortification_expert 
+						}																																																																																					
+					}
+				}				
+			}
+			random_list = {#DUO_NOVGORODIAN_MASTER_OF_MINT_EAST_SLAVIC_FORTIFICATION_EXPERT
+				66 = {
+						country_event = {
+						id = cosmo_admduo_events.6121
+					}
+				}
+				33 = {
+							country_event = {
+						id = cosmo_admduo_events.6122
+					}
+				}	
+			}			
+		}																														
+	}							
+}	
+
+# army_reformer sort
+country_event = {
+	id = cosmo_adsort_events.21
+	title = cosmo_adsort_events.21.t
+	desc = cosmo_adsort_events.21.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #army_reformer         
+		name = cosmo_adsort_events.21.a	
+		if = {
+			limit = {
+			OR = {
+			employed_advisor = {
+					is_male = no
+					culture = ruthenian 
+					type = treasurer 
+				}																																																																																						
+				}
+			OR = {
+				employed_advisor = {
+						is_male = no
+						culture = ruthenian 
+						type = army_reformer 
+					}			
+				employed_advisor = {
+						is_male = no
+						culture = russian 
+						type = army_reformer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = novgorodian 
+						type = army_reformer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = ryazanian 
+						type = army_reformer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = byelorussian 
+						type = army_reformer 
+					}
+				employed_advisor = {
+						is_male = no
+						culture = karelian 
+						type = army_reformer 
+					}																																																																																					
+				}	
+				}
+					random_list = {#DUO_RUTHENIAN_TREASURER_EAST_SLAVIC_GRAND_CAPTAIN
+						66 = {
+								country_event = {
+								id = cosmo_admduo_events.6201
+							}
+						}
+						33 = {
+									country_event = {
+								id = cosmo_admduo_events.6202
+							}
+						}	
+					}
+		}			
+	}						
+}
+
+# army_reformer sort
+country_event = {
+	id = cosmo_adsort_events.22
+	title = cosmo_adsort_events.22.t
+	desc = cosmo_adsort_events.22.d
+	picture = {
+	trigger = {
+	NOT = {
+				culture_group = japanese_g				
+		}
+			}	
+	picture = COURT_eventPicture
+	}	
+	picture = {
+	trigger = {
+				culture_group = japanese_g				
+			}	
+	picture = cosmogfx_OOKU_GENERAL_8_eventPicture
+	}
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+
+
+	immediate = {
+	hidden_effect = {
+
+		}
+		}		
+		
+	
+	option = { #cosmo_consort_trio_adm_mil         
+		name = cosmo_adsort_events.22.a	
+#							
+	}						
+}
+
+

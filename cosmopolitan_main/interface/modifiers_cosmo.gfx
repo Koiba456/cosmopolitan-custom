@@ -1,0 +1,1135 @@
+spriteTypes = {
+	
+
+	spriteType = {
+    name = "brothel_madame_reporting"
+    texturefile = "gfx//interface//ideas_EU4//brothel_madame_reporting.dds"
+    allwaystransparent = yes
+    } 	
+
+	spriteType = {
+    name = "intermary_africa"
+    texturefile = "gfx//interface//ideas_EU4//intermary_africa.dds"
+    allwaystransparent = yes
+    } 
+
+	spriteType = {
+    name = "intermary_asian"
+    texturefile = "gfx//interface//ideas_EU4//intermary_asian.dds"
+    allwaystransparent = yes
+    } 
+
+	spriteType = {
+    name = "port_of_pleasure"
+    texturefile = "gfx//interface//ideas_EU4//port_of_pleasure.dds"
+    allwaystransparent = yes
+    } 
+
+	spriteType = {
+    name = "slave_market"
+    texturefile = "gfx//interface//ideas_EU4//slave_market.dds"
+    allwaystransparent = yes
+    } 
+
+	spriteType = {
+    name = "slave_reserve"
+    texturefile = "gfx//interface//ideas_EU4//slave_reserve.dds"
+    allwaystransparent = yes
+    } 
+
+	spriteType = {
+    name = "slave_trade"
+    texturefile = "gfx//interface//ideas_EU4//slave_trade.dds"
+    allwaystransparent = yes
+    } 	
+	
+	spriteType = {
+    name = "harem_closed"
+    texturefile = "gfx//interface//ideas_EU4//harem_closed.dds"
+    allwaystransparent = yes
+    } 
+	
+	spriteType = {
+    name = "open_harem"
+    texturefile = "gfx//interface//ideas_EU4//open_harem.dds"
+    allwaystransparent = yes
+    }	
+	
+	spriteType = {
+    name = "shunga"
+    texturefile = "gfx//interface//ideas_EU4//shunga4.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "arab_madam"
+    texturefile = "gfx//interface//ideas_EU4//arab_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "balkan_madam"
+    texturefile = "gfx//interface//ideas_EU4//balkan_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "celtics_madame"
+    texturefile = "gfx//interface//ideas_EU4//celtics_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "central_africa_madame"
+    texturefile = "gfx//interface//ideas_EU4//central_africa_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "central_america_madame"
+    texturefile = "gfx//interface//ideas_EU4//central_america_madame.dds"
+    allwaystransparent = yes
+    }            
+
+	spriteType = {
+    name = "central_asian_madame"
+    texturefile = "gfx//interface//ideas_EU4//central_asian_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "central_europe_madam"
+    texturefile = "gfx//interface//ideas_EU4//central_europe_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "china_madame"
+    texturefile = "gfx//interface//ideas_EU4//china_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "china_palace"
+    texturefile = "gfx//interface//ideas_EU4//china_palace.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "dancing_women"
+    texturefile = "gfx//interface//ideas_EU4//dancing_women.dds"
+    allwaystransparent = yes
+    }
+
+
+	spriteType = {
+    name = "east_africa_madam"
+    texturefile = "gfx//interface//ideas_EU4//east_africa_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "east_indian_madame"
+    texturefile = "gfx//interface//ideas_EU4//east_indian_madame.dds"
+    allwaystransparent = yes
+    }    
+
+	spriteType = {
+    name = "england_madame"
+    texturefile = "gfx//interface//ideas_EU4//england_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "french_madam"
+    texturefile = "gfx//interface//ideas_EU4//french_madam.dds"
+    allwaystransparent = yes
+    }
+    
+	spriteType = {
+    name = "indian_madam"
+    texturefile = "gfx//interface//ideas_EU4//indian_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "indochina_madame"
+    texturefile = "gfx//interface//ideas_EU4//indochina_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "italian_madam"
+    texturefile = "gfx//interface//ideas_EU4//italian_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "japanese_madame"
+    texturefile = "gfx//interface//ideas_EU4//japanese_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "korean_madame"
+    texturefile = "gfx//interface//ideas_EU4//korean_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "muslim_palace"
+    texturefile = "gfx//interface//ideas_EU4//muslim_palace.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "north_america_madam"
+    texturefile = "gfx//interface//ideas_EU4//north_america_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "russian_madam"
+    texturefile = "gfx//interface//ideas_EU4//russian_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "south_america_madame"
+    texturefile = "gfx//interface//ideas_EU4//south_america_madame.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "spanish_madam"
+    texturefile = "gfx//interface//ideas_EU4//spanish_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "swedish_madam"
+    texturefile = "gfx//interface//ideas_EU4//swedish_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "turkish_madam"
+    texturefile = "gfx//interface//ideas_EU4//turkish_madam.dds"
+    allwaystransparent = yes
+    }
+
+	spriteType = {
+    name = "venetian_madam"
+    texturefile = "gfx//interface//ideas_EU4//venetian_madam.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "west_africa_madame"
+    texturefile = "gfx//interface//ideas_EU4//west_africa_madame.dds"
+    allwaystransparent = yes
+    } 
+
+ 	spriteType = {
+    name = "onsen"
+    texturefile = "gfx//interface//ideas_EU4//onsen.dds"
+    allwaystransparent = yes
+    }      	
+
+ 	spriteType = {
+    name = "africa_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "africa_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "africa_prostitute_6a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_6b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_6c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_prostitute_7a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_7b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_7c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_prostitute_8a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_8b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_8c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_9a"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_9b"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_prostitute_9c"
+    texturefile = "gfx//interface//ideas_EU4//africa_prostitute_9c.dds"
+    allwaystransparent = yes
+    }                          
+
+ 	spriteType = {
+    name = "japan_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "japan_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "japan_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//japan_prostitute_5c.dds"
+    allwaystransparent = yes
+    }
+
+
+ 	spriteType = {
+    name = "china_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "china_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "china_prostitute_6a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_6b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_6c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_prostitute_7a"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_7b"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_prostitute_7c"
+    texturefile = "gfx//interface//ideas_EU4//china_prostitute_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "east_indies_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "east_indies_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "east_indies_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "east_indies_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//east_indies_prostitute_5c.dds"
+    allwaystransparent = yes
+    }    
+
+
+ 	spriteType = {
+    name = "europe_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "europe_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "europe_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "europe_prostitute_6a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_6b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_6c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "europe_prostitute_7a"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_7b"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "europe_prostitute_7c"
+    texturefile = "gfx//interface//ideas_EU4//europe_prostitute_7c.dds"
+    allwaystransparent = yes
+    }  
+
+
+ 	spriteType = {
+    name = "indochina_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "indochina_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "indochina_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "indochina_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "indochina_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "indochina_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "indochina_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//indochina_prostitute_3c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "india_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "india_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "india_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//india_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "korea_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "korea_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_5a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_5b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_5c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "korea_prostitute_6a"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_6b"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "korea_prostitute_6c"
+    texturefile = "gfx//interface//ideas_EU4//korea_prostitute_6c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_1a"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_1b"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_1c"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_2a"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_2b"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_2c"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "mena_prostitute_3a"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_3b"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_3c"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "mena_prostitute_4a"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_4b"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_prostitute_4c"
+    texturefile = "gfx//interface//ideas_EU4//mena_prostitute_4c.dds"
+    allwaystransparent = yes
+    }
+
+
+
+
+
+}

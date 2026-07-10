@@ -1,0 +1,4100 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_barbary_events
+
+# Purchase slaves 
+country_event = {
+	id = cosmo_barbary_events.1
+	title = cosmo_barbary_events.1.t
+	desc = cosmo_barbary_events.1.d
+	picture = cosmogfx_SLAVE_TRADE_eventPicture
+	goto = exportprovince
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+		random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT 			
+			has_province_flag = cosmo_buying_slaves_hub
+			}
+				save_event_target_as = exportprovince
+			}			
+		}
+		}
+
+
+	option = {			# We will exploit this!
+		name = cosmo_barbary_events.1.a
+		event_target:exportprovince ={#no culture events
+			custom_tooltip = cosmo_buying_slaves_hub_enabled_tt
+		}					
+	}		
+}
+
+# Devastation Enslavement
+country_event = {
+	id = cosmo_barbary_events.210
+	title = cosmo_barbary_events.210.t
+	desc = cosmo_barbary_events.210.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_BARBARY_CAPTURE_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_BARBARY_CAPTURE_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_12_eventPicture
+	}	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no	
+		has_country_flag = cosmo_owns_barbary_slave_market		
+		any_known_country = {
+				any_owned_province = { 
+				superregion = europe_superregion
+				controlled_by = ROOT
+				devastation = 20
+				development = 3
+		NOT = {
+			has_province_modifier = cosmo_slaves_taken
+			any_neighbor_province = { 
+			has_province_modifier = cosmo_slaves_taken			
+			} 
+			}
+			}
+		}
+	}
+	# mean_time_to_happen = {
+	# 	days = 30
+	# }
+
+	immediate = {
+	hidden_effect = {
+			random_province = {
+			limit = {
+	OR = {				
+				superregion = europe_superregion
+		}
+		
+			NOT = {
+			country_or_vassal_holds = ROOT
+			owner = {
+				alliance_with = ROOT
+			}		
+			}			
+			controlled_by = ROOT
+				devastation = 20
+				development = 3
+		NOT = {
+			has_province_modifier = cosmo_slaves_taken
+			any_neighbor_province = { 
+			has_province_modifier = cosmo_slaves_taken			
+			} 
+			}
+			}
+				save_event_target_as = enslavedprovince
+			}
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.210.a 
+		add_treasury = 150		
+		event_target:enslavedprovince = {
+		add_province_modifier = { 
+			name = cosmo_slaves_taken
+			duration =  360 
+			
+
+			}	
+			}
+			random_province = {
+		limit = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		add_base_production = 1 
+		add_province_modifier = { 
+			name = cosmo_european_war_slaves_sold
+			duration =  365 
+			desc = cosmo_european_war_slaves_sold_DESC
+
+			}
+			}			
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}			
+	}
+	option = {
+	name = cosmo_barbary_events.210.7
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}	
+	}	
+}
+
+# Algiers spawn
+country_event = {
+	id = cosmo_barbary_events.211
+	title = cosmo_barbary_events.211.t
+	desc = cosmo_barbary_events.211.d
+	picture = cosmogfx_BARBARY_ENSLAVED_DESERT
+	
+	
+	trigger = {
+		ai = no
+		owns_or_subject_of = 338 
+	NOT = {	
+		has_country_flag = cosmo_owns_barbary_slave_market
+		has_country_flag = cosmo_owns_barbary_slave_market_no
+	}
+		OR = {
+			NOT = {
+				tag = ALG
+			}
+			ALG = {
+				is_subject_of = ROOT
+				 is_subject_of_type = cosmo_slaver_bribe_vassal 
+			}
+		}
+
+		}
+	mean_time_to_happen = {
+		days = 12
+	}
+	
+	option = {
+	name = cosmo_barbary_events.211.a 
+		set_country_flag = cosmo_owns_barbary_slave_market
+		338 = {
+			add_core = ALG
+			cede_province = ALG
+			set_province_flag = cosmo_barbary_slave_market
+			add_building = cosmo_slave_market 
+			change_trade_goods = european_slaves
+		}
+		create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = ALG	}
+	}
+	option = {
+	name = cosmo_barbary_events.211.b 
+		set_country_flag = cosmo_owns_barbary_slave_market_no
+	}
+}
+
+
+# Dip Event for Bribed Slavers
+country_event = {
+	id = cosmo_barbary_events.911
+	title = cosmo_barbary_events.911.t
+	desc = cosmo_barbary_events.911.d
+	picture = {
+	trigger = {	
+	event_target:slavercountry = {
+	OR = {
+		owns = 338 		
+
+	}	
+	}
+			}	
+	picture = cosmogfx_BARBARY_ENSLAVED_DESERT
+	}
+	picture = {
+	trigger = {	
+	event_target:slavercountry = {
+	OR = {
+		owns = 285 		
+
+	}	
+	}
+			}	
+	picture = cosmogfx_KHANATE_MARKET_8_eventPicture
+	}
+	picture = {
+	trigger = {	
+	event_target:slavercountry = {
+	OR = {
+		owns = 1230 		
+
+	}	
+	}
+			}	
+	picture = cosmogfx_SLAVE_TRADE_eventPicture
+	}
+	picture = {
+	trigger = {	
+	event_target:slavercountry = {
+	OR = {
+		owns = 651 		
+
+	}	
+	}
+			}	
+	picture = cosmogfx_SULU_CAPTURE_1_eventPicture
+	}				
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		}
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_country_flag = cosmo_bribing_slaver
+				}
+				save_event_target_as = slavercountry
+				capital_scope = {
+					save_event_target_as = slaverprovince
+				}
+			}
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.911.a 
+		event_target:slavercountry = {
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 651 
+					}
+				}
+				ROOT = {
+				set_country_flag = cosmo_owns_sulu_slave_market
+				create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = event_target:slavercountry	}
+				}
+						add_country_modifier = { 
+							name = cosmo_barbary_pirates
+							duration = 36500  
+						}		
+				651 = {
+					set_province_flag = cosmo_sulu_slave_market
+					add_building = cosmo_slave_market 			
+					change_trade_goods = asian_slaves
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 1230 
+					}
+				}
+				ROOT = {
+				set_country_flag = cosmo_owns_horn_slave_market
+				create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = event_target:slavercountry	}
+				}
+						add_country_modifier = { 
+							name = cosmo_barbary_pirates
+							duration = 36500  
+						}		
+				1230 = {
+					set_province_flag = cosmo_horn_slave_market
+					center_of_trade = 1	
+					add_building = cosmo_slave_market 			
+					change_trade_goods = slaves
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 285 
+					}
+				}
+				ROOT = {
+				set_country_flag = cosmo_owns_khanate_slave_market
+				create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = event_target:slavercountry	}
+				}
+						add_country_modifier = { 
+							name = cosmo_barbary_pirates
+							duration = 36500  
+						}		
+				285 = {
+					set_province_flag = cosmo_khanate_slave_market
+					add_building = cosmo_slave_market 			
+					change_trade_goods = european_slaves
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						province_id = 338 
+					}
+				}
+				ROOT = {
+				set_country_flag = cosmo_owns_barbary_slave_market
+				create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = event_target:slavercountry	}
+				}
+						add_country_modifier = { 
+							name = cosmo_barbary_pirates
+							duration = 36500  
+						}		
+				338 = {
+					set_province_flag = cosmo_barbary_slave_market
+					add_building = cosmo_slave_market 			
+					change_trade_goods = european_slaves
+				}
+			}																					
+		}
+		add_years_of_income = -0.5 		
+	}
+	option = {
+	name = cosmo_barbary_events.911.b 
+	}
+	after = {
+		every_country = {
+			limit = {
+				has_country_flag = cosmo_bribing_slaver
+			}
+			clr_country_flag = cosmo_bribing_slaver
+		}
+	}
+}
+
+
+# Create Khanate Slaver
+country_event = {
+	id = cosmo_barbary_events.311
+	title = cosmo_barbary_events.311.t
+	desc = cosmo_barbary_events.311.d
+	picture = cosmogfx_KHANATE_MARKET_8_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		owns_or_subject_of = 285 
+		285 = {
+			OR = {
+				religion_group = muslim  		
+				owner = {
+				religion_group = muslim  		
+				}
+			}
+		}
+		NOT = {	
+			has_country_flag = cosmo_owns_khanate_slave_market
+			has_country_flag = cosmo_owns_khanate_slave_market_no
+		}	
+		OR = {
+			NOT = {
+				tag = CRI
+			}
+			CRI = {
+				is_subject_of = ROOT
+				is_subject_of_type = cosmo_slaver_bribe_vassal 
+			}
+		}			
+	}
+
+	mean_time_to_happen = {
+		days = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			285 = {
+				save_event_target_as = enslavedprovince
+			}			
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.311.a 
+		set_country_flag = cosmo_owns_khanate_slave_market
+		285 = {
+			add_core = CRI
+			cede_province = CRI
+			set_province_flag = cosmo_khanate_slave_market
+			add_building = cosmo_slave_market 
+			change_trade_goods = european_slaves
+		}
+		create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = CRI	}
+	}
+	option = {
+	name = cosmo_barbary_events.311.b 
+		set_country_flag = cosmo_owns_khanate_slave_market_no
+	}
+}
+
+# Create horn Slaver
+country_event = {
+	id = cosmo_barbary_events.511
+	title = cosmo_barbary_events.511.t
+	desc = cosmo_barbary_events.511.d
+	picture = cosmogfx_SLAVE_TRADE_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		owns_or_subject_of = 1230 
+		NOT = {
+			culture_group = cushitic
+		}
+		NOT = {
+			has_estate = estate_harem
+			has_estate = estate_forbiddenpalace
+			has_estate = estate_ooku
+		}
+		1230 = {
+			OR = {
+				religion_group = muslim  		
+				owner = {
+				religion_group = muslim  		
+				}
+			}
+		}
+		NOT = {	
+			has_country_flag = cosmo_owns_horn_slave_market
+			has_country_flag = cosmo_owns_horn_slave_market_no
+		}	
+		OR = {
+			NOT = {
+				tag = ADA
+			}
+			ADA = {
+				is_subject_of = ROOT
+				is_subject_of_type = cosmo_slaver_bribe_vassal 
+			}
+		}			
+	}
+
+	mean_time_to_happen = {
+		days = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			1230 = {
+				save_event_target_as = enslavedprovince
+			}			
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.511.a 
+		set_country_flag = cosmo_owns_horn_slave_market
+			1230 = {
+				add_core = ADA
+				cede_province = ADA
+				set_province_flag = cosmo_horn_slave_market
+				center_of_trade = 1		
+				add_building = cosmo_slave_market 
+			}
+		create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = ADA	}
+		ADA = {
+			set_country_flag = cslavery_ideas_active
+			swap_free_idea_group = yes 						
+		}
+
+	}
+	option = {
+	name = cosmo_barbary_events.511.b 
+		set_country_flag = cosmo_owns_horn_slave_market_no
+	}
+}
+
+# Create Sulu Slaver
+country_event = {
+	id = cosmo_barbary_events.411
+	title = cosmo_barbary_events.411.t
+	desc = cosmo_barbary_events.411.d
+	picture = cosmogfx_SULU_CAPTURE_1_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		owns_or_subject_of = 651 
+		NOT = {	
+			has_country_flag = cosmo_owns_sulu_slave_market
+			has_country_flag = cosmo_owns_sulu_slave_market_no
+		}	
+		OR = {
+			NOT = {
+				tag = SUL
+			}
+			SUL = {
+				is_subject_of = ROOT
+				is_subject_of_type = cosmo_slaver_bribe_vassal 
+			}
+		}		
+		}
+
+	mean_time_to_happen = {
+		days = 12
+	}
+	
+	option = {
+	name = cosmo_barbary_events.411.a 
+		set_country_flag = cosmo_owns_sulu_slave_market
+				add_country_modifier = { 
+					name = cosmo_barbary_pirates
+					duration = 36500  
+				}		
+		651 = {
+			add_core = SUL
+			cede_province = SUL
+			set_province_flag = cosmo_sulu_slave_market
+			add_building = cosmo_slave_market 			
+			change_trade_goods = asian_slaves
+		}
+		create_subject = { subject_type = cosmo_slaver_bribe_vassal	subject = SUL	}
+	}
+	option = {
+	name = cosmo_barbary_events.411.b 
+		set_country_flag = cosmo_owns_sulu_slave_market_no
+	}
+}
+
+# Sulu expansion
+country_event = {
+	id = cosmo_barbary_events.415
+	title = cosmo_barbary_events.415.t
+	desc = cosmo_barbary_events.415.d
+	picture = cosmogfx_SULU_CAPTURE_1_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_sulu_slave_market		
+	any_subject_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			has_province_flag = cosmo_sulu_slave_market
+			base_production = 15
+		}	
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+	name = cosmo_barbary_events.415.a 
+		random_province = {
+		limit = {
+			country_or_vassal_holds = ROOT 
+			has_province_flag = cosmo_sulu_slave_market
+			}
+		add_base_production = -10
+		}
+		add_treasury = 100
+		set_country_flag = cosmo_harem_trade	
+		hidden_effect = {
+		change_variable = {
+		which = cosmoKhanateCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoKhanateCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoKhanateCounter
+		value = 0
+			}
+		}
+		}		
+		}		
+}
+
+# Devastation Enslavement
+country_event = {
+	id = cosmo_barbary_events.214
+	title = cosmo_barbary_events.214.t
+	desc = cosmo_barbary_events.214.d
+	picture = cosmogfx_BARBARY_THREEWOMENSOLD_MARKET_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_barbary_slave_market
+	NOT = {
+		has_country_flag = cosmo_no_concubine_trade
+		has_country_flag = cosmo_concubine_trade
+		}		
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			base_production = 10
+		}	
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.214.a 
+		random_province = {
+		limit = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		add_base_production = -5
+		}
+		add_treasury = 100
+		set_country_flag = cosmo_concubine_trade		
+		}
+	option = {
+	name = cosmo_barbary_events.214.b 
+		set_country_flag = cosmo_no_concubine_trade		
+		}		
+}
+
+# Devastation Enslavement
+country_event = {
+	id = cosmo_barbary_events.215
+	title = cosmo_barbary_events.215.t
+	desc = cosmo_barbary_events.215.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_BARBARY_CAPTURE_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_BARBARY_CAPTURE_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_12_eventPicture
+	}	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_barbary_slave_market		
+	any_subject_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			base_production = 15
+		}	
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+	name = cosmo_barbary_events.215.a 
+		random_province = {
+		limit = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		add_base_production = -10
+		}
+		add_treasury = 100
+		set_country_flag = cosmo_harem_trade
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}		
+		}		
+}
+
+
+# Devastation Enslavement
+country_event = {
+	id = cosmo_barbary_events.2151
+	title = cosmo_barbary_events.2151.t
+	desc = cosmo_barbary_events.2151.d
+	picture = cosmogfx_SLAVE_TRADE_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			has_building = cosmo_slave_market
+			base_production = 15
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_building = cosmo_slave_market
+					base_production = 15					
+				}
+				save_event_target_as = enslavedprovince
+			}
+		}
+	}
+	
+	option = {
+	name = cosmo_barbary_events.2151.a 
+		event_target:enslavedprovince = {
+		add_base_production = -10
+		}
+		add_treasury = 100
+		set_country_flag = cosmo_harem_trade
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}		
+		}		
+}
+
+# purchase province
+country_event = {
+	id = cosmo_barbary_events.216
+	title = cosmo_barbary_events.216.t
+	desc = cosmo_barbary_events.216.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_BARBARY_CAPTURE_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_BARBARY_CAPTURE_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_BARBARY_CAPTURE_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_BARBARY_CAPTURE_12_eventPicture
+	}	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_barbary_slave_market		
+		any_owned_province = {
+		NOT = {	
+			is_core = ROOT
+			}
+		NOT = {
+		has_province_flag = cosmo_no_sale
+			}
+		AND = {
+			has_port = yes
+			religion_group = muslim  		
+		}			
+		region = maghreb_region
+	}
+	}
+	
+	mean_time_to_happen = {
+		days = 45
+	}
+	
+	immediate = {
+	hidden_effect = {
+			random_owned_province = {
+			limit = {
+		NOT = {	
+			is_core = ROOT
+			}
+		NOT = {
+		has_province_flag = cosmo_no_sale
+			}			
+		AND = {
+			has_port = yes
+			religion_group = muslim  		
+		}			
+		region = maghreb_region
+			}
+				save_event_target_as = enslavedprovince
+			}
+		}
+	}	
+	
+	option = {
+	name = cosmo_barbary_events.216.a 
+		event_target:enslavedprovince = {	
+		cede_province = ALG
+		}
+		if = {
+			limit = {
+				ALG = {
+			NOT = {	
+				total_development = 20
+				}
+				}
+			}
+			add_treasury = 250
+		}
+		if = {
+			limit = {
+				ALG = {
+				total_development = 20				
+				}
+			}
+			add_treasury = 500
+		}
+		set_country_flag = cosmo_harem_trade
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}		
+		}
+
+	option = {
+	name = cosmo_barbary_events.216.b
+		event_target:enslavedprovince = {	
+		set_province_flag = cosmo_no_sale
+		}
+	}	
+}
+
+# purchase province
+country_event = {
+	id = cosmo_barbary_events.217
+	title = cosmo_barbary_events.217.t
+	desc = cosmo_barbary_events.217.d
+	picture = cosmogfx_SULU_CAPTURE_1_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_sulu_slave_market		
+		any_owned_province = {
+		NOT = {	
+			is_core = ROOT
+			}
+		NOT = {
+		has_province_flag = cosmo_no_sale
+			}
+		AND = {
+			is_island = yes 
+			religion_group = muslim  		
+		}			
+		region = malaya_region
+	}
+	}
+	
+	mean_time_to_happen = {
+		days = 45
+	}
+	
+	immediate = {
+	hidden_effect = {
+			random_owned_province = {
+			limit = {
+		NOT = {	
+			is_core = ROOT
+			}
+		NOT = {
+		has_province_flag = cosmo_no_sale
+			}			
+		AND = {
+			is_island = yes 
+			religion_group = muslim  		
+		}			
+		region = malaya_region
+			}
+				save_event_target_as = enslavedprovince
+			}
+		}
+	}	
+	
+	option = {
+	name = cosmo_barbary_events.217.a 
+		event_target:enslavedprovince = {	
+		cede_province = SUL
+		}
+		if = {
+			limit = {
+				SUL = {
+			NOT = {	
+				total_development = 20
+				}
+				}
+			}
+			add_treasury = 250
+		}
+		if = {
+			limit = {
+				SUL = {
+				total_development = 20				
+				}
+			}
+			add_treasury = 500
+		}
+		set_country_flag = cosmo_harem_trade
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBarbaryCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoBarbaryCounter
+		value = 0
+			}
+		}
+		}		
+		}
+
+	option = {
+	name = cosmo_barbary_events.217.b
+		event_target:enslavedprovince = {	
+		set_province_flag = cosmo_no_sale
+		}
+	}	
+}
+
+# remove slaver
+country_event = {
+	id = cosmo_barbary_events.218
+	title = cosmo_barbary_events.218.t
+	desc = cosmo_barbary_events.218.d
+	picture = cosmogfx_SLAVE_TRADE_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		OR = {
+			AND = {
+				has_country_flag = cosmo_owns_sulu_slave_market	
+				NOT = {
+					SUL = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}
+				}	
+			}
+			AND = {
+				has_country_flag = cosmo_owns_khanate_slave_market	
+				NOT = {
+					CRI = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}
+				}	
+			}	
+			AND = {
+				has_country_flag = cosmo_owns_barbary_slave_market	
+				NOT = {
+					ALG = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}
+				}	
+			}								
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 45
+	}
+	
+	immediate = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = cosmo_owns_sulu_slave_market	
+				NOT = {
+					SUL = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}			
+				}
+			}
+			651 = {
+				save_event_target_as = enslavedprovince
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = cosmo_owns_barbary_slave_market	
+				NOT = {
+					ALG = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}			
+				}
+			}
+			338 = {
+				save_event_target_as = enslavedprovince
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = cosmo_owns_khanate_slave_market	
+				NOT = {
+					CRI = {
+						is_subject_of = ROOT
+						is_subject_of_type = cosmo_slaver_bribe_vassal					
+					}			
+				}
+			}
+			285 = {
+				save_event_target_as = enslavedprovince
+			}
+		}		
+		}
+	}	
+	
+
+	option = {
+	name = cosmo_barbary_events.218.b
+	if = {
+		limit = {
+			has_country_flag = cosmo_owns_sulu_slave_market	
+			NOT = {
+				SUL = {
+					is_subject_of = ROOT
+					is_subject_of_type = cosmo_slaver_bribe_vassal					
+				}			
+			}
+		}
+		clr_country_flag = cosmo_owns_sulu_slave_market
+		set_country_flag = cosmo_owns_sulu_slave_market_no
+	}
+	if = {
+		limit = {
+			has_country_flag = cosmo_owns_barbary_slave_market	
+			NOT = {
+				ALG = {
+					is_subject_of = ROOT
+					is_subject_of_type = cosmo_slaver_bribe_vassal					
+				}			
+			}
+		}
+		clr_country_flag = cosmo_owns_barbary_slave_market
+		set_country_flag = cosmo_owns_barbary_slave_market_no
+	}
+	if = {
+		limit = {
+			has_country_flag = cosmo_owns_khanate_slave_market	
+			NOT = {
+				CRI = {
+					is_subject_of = ROOT
+					is_subject_of_type = cosmo_slaver_bribe_vassal					
+				}			
+			}
+		}
+		clr_country_flag = cosmo_owns_khanate_slave_market
+		set_country_flag = cosmo_owns_khanate_slave_market_no
+	}		
+	}	
+}
+
+# khanate expansion
+country_event = {
+	id = cosmo_barbary_events.315
+	title = cosmo_barbary_events.315.t
+	desc = cosmo_barbary_events.315.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_KHANATE_MARKET_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_KHANATE_MARKET_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_12_eventPicture
+	}	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_khanate_slave_market		
+	any_subject_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			has_province_flag = cosmo_khanate_slave_market
+			base_production = 15
+		}	
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+	name = cosmo_barbary_events.315.a 
+		random_province = {
+		limit = {
+			country_or_vassal_holds = ROOT 
+			has_province_flag = cosmo_khanate_slave_market
+			}
+		add_base_production = -10
+		}
+		add_treasury = 100
+		set_country_flag = cosmo_harem_trade	
+		hidden_effect = {
+		change_variable = {
+		which = cosmoKhanateCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoKhanateCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoKhanateCounter
+		value = 0
+			}
+		}
+		}		
+		}		
+}
+
+# Request province Enslavement
+country_event = {
+	id = cosmo_barbary_events.316
+	title = cosmo_barbary_events.316.t
+	desc = cosmo_barbary_events.316.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_KHANATE_MARKET_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_KHANATE_MARKET_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_KHANATE_MARKET_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBarbaryCounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_KHANATE_MARKET_12_eventPicture
+	}	
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_khanate_slave_market		
+		any_owned_province = {
+		NOT = {	
+			is_core = ROOT
+			}
+		OR = {
+		AND = {
+			superregion = eastern_europe_superregion
+			any_neighbor_province = {
+				owned_by = CRI
+			}
+			}
+		AND = {
+			has_port = yes 
+			sea_zone = {
+			area = black_sea_area
+			}
+			}
+		}
+		NOT = {
+		has_province_flag = cosmo_no_sale
+			}		
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+	hidden_effect = {
+			random_owned_province = {
+			limit = {
+		NOT = {	
+			is_core = ROOT
+			}
+		OR = {
+		AND = {
+			superregion = eastern_europe_superregion
+			any_neighbor_province = {
+				owned_by = CRI
+			}
+			}
+		AND = {
+			has_port = yes 
+			sea_zone = {
+			area = black_sea_area
+			}
+			}
+		}
+			}
+				save_event_target_as = enslavedprovince
+			}
+		}
+	}	
+	
+	option = {
+	name = cosmo_barbary_events.316.a 
+		event_target:enslavedprovince = {	
+		cede_province = CRI
+		}
+		if = {
+			limit = {
+				CRI = {
+			NOT = {	
+				total_development = 20
+				}
+				}
+			}
+			add_treasury = 250
+		}
+		if = {
+			limit = {
+				CRI = {
+				total_development = 20				
+				}
+			}
+			add_treasury = 500
+		}		
+		hidden_effect = {
+		change_variable = {
+		which = cosmoKhanateCounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoKhanateCounter	
+			value = 220
+			}
+			}
+		set_variable = {
+		which = cosmoKhanateCounter
+		value = 0
+			}
+		}
+		}		
+		}
+	option = {
+	name = cosmo_barbary_events.316.b
+		event_target:enslavedprovince = {	
+		set_province_flag = cosmo_no_sale
+		}
+	}				
+}
+
+# Colony SA Intermarry
+country_event = {
+	id = cosmo_barbary_events.213
+	title = cosmo_barbary_events.213.t
+	desc = cosmo_barbary_events.213.d
+	picture = cosmogfx_BARBARY_THREEWOMENSOLD_MARKET_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+		option = {
+		name = cosmo_barbary_events.213.a
+		create_subject = {
+			subject_type = tributary_state
+			subject = ALG
+		}
+	}			
+}
+
+
+
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.220
+	title = cosmo_barbary_events.220.t
+	desc = cosmo_barbary_events.220.d
+	picture = cosmogfx_BARBARY_THREEWOMENSOLD_MARKET_eventPicture
+	
+	is_triggered_only = yes
+
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_barbary_slave_market
+		has_country_flag = cosmo_concubine_trade
+		NOT = {
+		TUR = {
+			has_opinion_modifier = {
+			who = ROOT
+			modifier = concubine_sent
+			}			
+			}
+			}		
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_east_african_slaves_captured		
+			}
+			}	
+		}
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+	name = cosmo_barbary_events.220.a
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_east_african_slaves_captured	
+			}
+			}	
+		}	
+	}
+	TUR = {
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_treasury = 50
+		add_dip_power = 25 		
+		}		
+	}
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2200
+	title = cosmo_barbary_events.2200.t
+	desc = cosmo_barbary_events.2200.d
+	picture = cosmogfx_BARBARY_ENSLAVED_FINGERMOUTH_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		TUR = {
+			has_opinion_modifier = {
+			who = ROOT
+			modifier = cosmo_sending_concubines
+			}			
+		}
+	}
+	
+	immediate = {
+	hidden_effect = {
+			TUR = {
+				remove_opinion = {
+					who = ROOT
+					modifier = cosmo_sending_concubines
+				}
+			}
+		}
+	}
+
+	
+	option = {
+	name = cosmo_barbary_events.2200.a
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_east_african_slaves_captured	
+			}
+			}	
+		}	
+	}		 		
+			country_event = {
+		id =
+	cosmo_barbary_events.2201
+		}
+			}
+	option = {
+	name = cosmo_barbary_events.2200.b
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+			OR = {
+		has_province_modifier = cosmo_european_war_slaves_sold
+		has_province_modifier = cosmo_european_ship_slaves_sold	
+			}
+			}	
+		}	
+	}		 		
+			country_event = {
+		id =
+	cosmo_barbary_events.2208
+		}
+			}
+	option = {
+	name = cosmo_barbary_events.2200.c
+	}	
+	}
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2201
+	title = cosmo_barbary_events.2201.t
+	desc = cosmo_barbary_events.2201.d
+	picture = cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2201.a
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_east_african_slaves_captured	
+			}
+			}	
+		}	
+	}		 		
+			country_event = {
+		id =
+	cosmo_barbary_events.2202
+		}
+			}
+	option = {
+	name = cosmo_barbary_events.2201.b
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_east_african_slaves_captured	
+			}
+			}	
+		}	
+	}		 		
+			country_event = {
+		id =
+	cosmo_barbary_events.2205
+		}
+			}			
+	}
+
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2202
+	title = cosmo_barbary_events.2202.t
+	desc = cosmo_barbary_events.2202.d
+	picture = cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+
+	
+	
+	option = {
+	name = cosmo_barbary_events.2202.a
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = west_african_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+			}
+			}	
+		}	
+	}
+	highlight = yes	
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_west_african_slaves_captured 		 
+		}	
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = west_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = west_african_concubines
+			duration = 14600  
+			desc = west_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_years_of_income = 0.1
+		}
+		
+	option = {
+	name = cosmo_barbary_events.2202.b
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 	
+	has_province_modifier = west_african_concubines
+	}
+		}	
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+			}
+			}	
+		}	
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_west_african_slaves_captured 		 
+		}	
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+		has_province_modifier = west_african_concubines
+		 
+	}	
+		add_province_modifier = { 
+			name = west_african_concubines
+			duration = 14600  
+			desc = west_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_treasury = 50
+		}
+
+	option = {
+	name = cosmo_barbary_events.2202.c
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = west_african_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+			}
+			}	
+		}	
+	}
+	highlight = yes			
+			country_event = {
+		id =
+	cosmo_barbary_events.2203
+		}
+		}
+
+	option = {
+	name = cosmo_barbary_events.2202.7
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	has_province_modifier = west_african_concubines
+		}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+			}
+			}	
+		}	
+	}		
+			country_event = {
+		id =
+	cosmo_barbary_events.2204
+		}
+		}
+	option = {
+	name = cosmo_barbary_events.2202.8
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}	
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2203
+	title = cosmo_barbary_events.2203.t
+	desc = cosmo_barbary_events.2203.d
+	picture = cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2203.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_west_african_slaves_captured 		 
+		}	
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = west_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = west_african_concubines
+			duration = 14600  
+			desc = west_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    50 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    25 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}		
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2203.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_west_african_slaves_captured 		 
+		}	
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = west_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = west_african_concubines
+			duration = 14600  
+			desc = west_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    75 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    25 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}		
+		}
+	option = {
+	name = cosmo_barbary_events.2203.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2204
+	title = cosmo_barbary_events.2204.t
+	desc = cosmo_barbary_events.2204.d
+	picture = cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2204.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    33 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}		
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2204.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    33 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}		
+		}
+	option = {
+	name = cosmo_barbary_events.2204.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2205
+	title = cosmo_barbary_events.2205.t
+	desc = cosmo_barbary_events.2205.d
+	picture = cosmogfx_HAREM_SOUTH_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+
+	
+	
+	option = {
+	name = cosmo_barbary_events.2205.a
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = south_african_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_east_african_slaves_captured
+			}
+			}	
+		}	
+	}
+	highlight = yes	
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_east_african_slaves_captured 		 
+		}	
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = south_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = south_african_concubines
+			duration = 14600  
+			desc = south_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_years_of_income = 0.1
+		}
+		
+	option = {
+	name = cosmo_barbary_events.2205.b
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 	
+	has_province_modifier = south_african_concubines
+	}
+		}	
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_east_african_slaves_captured
+			}
+			}	
+		}	
+	}
+					random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_east_african_slaves_captured 		 
+		}
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+		has_province_modifier = south_african_concubines
+		 
+	}	
+		add_province_modifier = { 
+			name = south_african_concubines
+			duration = 14600  
+			desc = south_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_treasury = 50
+		}
+
+	option = {
+	name = cosmo_barbary_events.2205.c
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = south_african_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_east_african_slaves_captured
+			}
+			}	
+		}	
+	}
+	highlight = yes			
+			country_event = {
+		id =
+	cosmo_barbary_events.2206
+		}
+		}
+
+	option = {
+	name = cosmo_barbary_events.2205.7
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	has_province_modifier = south_african_concubines
+		}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_east_african_slaves_captured
+			}
+			}	
+		}	
+	}		
+			country_event = {
+		id =
+	cosmo_barbary_events.2207
+		}
+		}
+	option = {
+	name = cosmo_barbary_events.2205.8
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}	
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2206
+	title = cosmo_barbary_events.2206.t
+	desc = cosmo_barbary_events.2206.d
+	picture = cosmogfx_HAREM_SOUTH_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2206.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_east_african_slaves_captured 		 
+		}	
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = south_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = south_african_concubines
+			duration = 14600  
+			desc = south_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    50 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    25 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}		
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2206.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_east_african_slaves_captured 		 
+		}
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = south_african_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = south_african_concubines
+			duration = 14600  
+			desc = south_african_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    75 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    25 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}		
+		}
+	option = {
+	name = cosmo_barbary_events.2206.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2207
+	title = cosmo_barbary_events.2207.t
+	desc = cosmo_barbary_events.2207.d
+	picture = cosmogfx_HAREM_SOUTH_AFRICA_1A_eventPicture
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2207.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    33 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}		
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2207.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    33 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}		
+		}
+	option = {
+	name = cosmo_barbary_events.2207.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2208
+	title = cosmo_barbary_events.2208.t
+	desc = cosmo_barbary_events.2208.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem	
+			value = 1
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1A_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 21
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1B_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 41
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1C_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 61
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 81
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1I_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1J_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1K_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1L_eventPicture
+	}	
+	
+	is_triggered_only = yes
+
+	
+	
+	option = {
+	name = cosmo_barbary_events.2208.a
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = european_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+	OR = {
+		has_province_modifier = cosmo_european_war_slaves_sold
+		has_province_modifier = cosmo_european_ship_slaves_sold
+		
+			}
+			}	
+		}	
+	}
+	highlight = yes
+			random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+			}
+		remove_province_modifier = cosmo_european_war_slaves_sold 		
+		remove_province_modifier = cosmo_european_ship_slaves_sold 
+		}	
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = european_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = european_concubines
+			duration = 14600  
+			desc = european_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_years_of_income = 0.1
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}
+		}
+	option = {
+	name = cosmo_barbary_events.2208.b
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 	
+	has_province_modifier = european_concubines
+	}
+		}	
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+	OR = {
+		has_province_modifier = cosmo_european_war_slaves_sold
+		has_province_modifier = cosmo_european_ship_slaves_sold
+			}
+			}	
+		}	
+	}
+				random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+			}
+		remove_province_modifier = cosmo_european_war_slaves_sold 		
+		remove_province_modifier = cosmo_european_ship_slaves_sold 
+		}
+	TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+		has_province_modifier = european_concubines
+		 
+	}	
+		add_province_modifier = { 
+			name = european_concubines
+			duration = 14600  
+			desc = european_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_treasury = 50
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}
+	}
+	option = {
+	name = cosmo_barbary_events.2208.c
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = european_concubines
+	}
+	}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+	OR = {
+		has_province_modifier = cosmo_european_war_slaves_sold
+		has_province_modifier = cosmo_european_ship_slaves_sold			}
+			}	
+		}	
+	}
+	highlight = yes			
+			country_event = {
+		id =
+	cosmo_barbary_events.2209
+		}
+		}
+
+	option = {
+	name = cosmo_barbary_events.2208.7
+	trigger = {
+		TUR = {
+		any_owned_province = {
+		 is_capital = yes 
+	has_province_modifier = european_concubines
+		}
+		}
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+		OR = {
+			has_province_flag = cosmo_barbary_slave_market
+			has_province_flag = cosmo_khanate_slave_market
+			}
+	OR = {
+		has_province_modifier = cosmo_european_war_slaves_sold
+		has_province_modifier = cosmo_european_ship_slaves_sold			}
+			}	
+		}	
+	}		
+			country_event = {
+		id =
+	cosmo_barbary_events.2210
+		}
+		}
+	option = {
+	name = cosmo_barbary_events.2208.8
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+}	
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2209
+	title = cosmo_barbary_events.2209.t
+	desc = cosmo_barbary_events.2209.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem	
+			value = 1
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1A_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 21
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1B_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 41
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1C_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 61
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 81
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1I_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1J_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1K_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1L_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2209.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+			random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		remove_province_modifier = cosmo_european_war_slaves_sold 		
+		remove_province_modifier = cosmo_european_ship_slaves_sold 
+		}	
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = european_concubines
+	}
+	}	
+		add_province_modifier = { 
+			name = european_concubines
+			duration = 14600  
+			desc = european_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    50 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    25 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}	
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2209.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+		TUR = {
+		random_owned_province = {
+		limit = {
+		 is_capital = yes 
+	NOT = {	
+	has_province_modifier = european_concubines
+	}
+	}
+	
+		add_province_modifier = { 
+			name = european_concubines
+			duration = 14600  
+			desc = european_concubines_DESC
+
+		}
+	}
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}
+	random_list = {
+    75 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    25 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    25 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}	
+		}
+	option = {
+	name = cosmo_barbary_events.2209.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2210
+	title = cosmo_barbary_events.2210.t
+	desc = cosmo_barbary_events.2210.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem	
+			value = 1
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1A_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 21
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1B_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 41
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1C_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 61
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1D_eventPicture
+	}
+	picture = {
+	trigger = {
+NOT = {
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 81
+			}
+}
+}	
+	picture = cosmogfx_HAREM_EUROPE_1E_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1F_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1G_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1H_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1I_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1J_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1K_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoEuropeHarem
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_HAREM_EUROPE_1L_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+
+	
+	option = {
+	name = cosmo_barbary_events.2210.a
+	trigger = {
+	any_known_country = {
+		 alliance_with = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_known_country = {
+	limit = {
+	 alliance_with = TUR 
+	}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_insult
+		}
+		}
+    }
+    33 = {
+        TUR = {
+		change_dip = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_diplomatic_reputation
+			duration = 730  
+			desc = cosmo_diplomatic_reputation_DESC
+
+		} 
+		}
+    }	
+	}
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}	
+		}	
+
+	option = {
+	name = cosmo_barbary_events.2210.b
+	trigger = {
+	any_province = {
+	 country_or_vassal_holds = ROOT 
+	 is_claim = TUR 
+	}
+	}
+	random_list = {
+    33 = {
+	random_province = {
+	limit = {
+	country_or_vassal_holds = ROOT 
+	is_claim = TUR 
+	}
+    remove_claim = TUR
+		}
+    }
+    33 = {
+        TUR = {
+		change_mil = 1 
+		}
+    }
+    33 = {
+        TUR = {
+		add_country_modifier = { 
+			name = cosmo_battle_tradition
+			duration = 730  
+			desc = cosmo_battle_tradition_DESC
+
+		} 
+		}
+    }	
+	}
+		hidden_effect = {
+			change_variable = {
+				which = cosmoEuropeHarem
+				value = 20
+				}		
+		}	
+		}
+	option = {
+	name = cosmo_barbary_events.2210.c
+			country_event = {
+		id =
+	cosmo_barbary_events.2200
+		}
+		}		
+		
+	}
+
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.2999
+	title = cosmo_barbary_events.2999.t
+	desc = cosmo_barbary_events.2999.d
+	picture = cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		check_variable = {
+			which = cosmoEuropeHarem
+			value = 221
+			}
+
+	}
+	option = {
+	name = cosmo_barbary_events.2999.a
+			set_variable = {
+				which = cosmoEuropeHarem
+				value = 0
+				}		
+		}	
+		}					
+	
+# concubine trade
+country_event = {
+	id = cosmo_barbary_events.221
+	title = cosmo_barbary_events.221.t
+	desc = cosmo_barbary_events.221.d
+	picture = cosmogfx_BARBARY_THREEWOMENSOLD_MARKET_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		has_country_flag = cosmo_owns_barbary_slave_market
+		has_country_flag = cosmo_concubine_trade
+		NOT = {
+		TUR = {
+			has_opinion_modifier = {
+			who = ROOT
+			modifier = concubine_sent
+			}			
+			}
+			}		
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_south_american_slaves_captured		
+			}
+			}	
+		}
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+	name = cosmo_barbary_events.221.a
+	trigger = {
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+	OR = {
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_south_american_slaves_captured
+			}
+			}	
+		}	
+	}
+	TUR = {
+	reverse_add_opinion = {
+		who = ROOT
+		modifier = concubine_sent
+		}
+		}		
+		add_treasury = 50
+		add_dip_power = 25 		
+		}		
+}	
+	
+
+
+country_event = {
+	id = cosmo_barbary_events.998
+	title = cosmo_barbary_events.998.t
+	desc = cosmo_barbary_events.998.d
+	picture = cosmogfx_BROTHEL_NUDE_PROSTITUTES_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	any_known_country = {
+		any_province = {
+			country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+		}	
+		}
+	}
+
+	option = {			# We will exploit this!
+		name = cosmo_barbary_events.998.a
+			random_province = {
+			limit = {
+		country_or_vassal_holds = ROOT 
+			region = maghreb_region
+			has_province_flag = cosmo_barbary_slave_market
+			}
+		add_province_modifier = { 
+			name = cosmo_vietnam_slaves_captured
+			duration = -1  
+			desc = cosmo_vietnam_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_china_slaves_captured
+			duration = -1  
+			desc = cosmo_china_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_korea_slaves_captured
+			duration = -1  
+			desc = cosmo_korea_slaves_captured_DESC
+
+		}		
+		add_province_modifier = { 
+			name = cosmo_malay_slaves_captured
+			duration = -1  
+			desc = cosmo_malay_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_thai_slaves_captured
+			duration = -1  
+			desc = cosmo_thai_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_japanese_slaves_captured
+			duration = -1  
+			desc = cosmo_japanese_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_south_asian_slaves_captured
+			duration = -1  
+			desc = cosmo_south_asian_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_central_american_slaves_captured
+			duration = -1  
+			desc = cosmo_central_american_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_north_american_slaves_captured
+			duration = -1  
+			desc = cosmo_north_american_slaves_captured_DESC
+
+		}	
+		add_province_modifier = { 
+			name = cosmo_south_american_slaves_captured
+			duration = -1  
+			desc = cosmo_south_american_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_east_african_slaves_captured
+			duration = -1  
+			desc = cosmo_south_african_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_west_african_slaves_captured
+			duration = -1  
+			desc = cosmo_west_african_slaves_captured_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_european_ship_slaves_sold
+			duration = -1  
+			desc = cosmo_european_ship_slaves_sold_DESC
+
+		}
+		add_province_modifier = { 
+			name = cosmo_european_war_slaves_sold
+			duration = -1  
+			desc = cosmo_european_war_slaves_sold_DESC
+
+		}		
+	}		
+	}	
+	option = {
+		name = cosmo_barbary_events.998.b
+		}
+}
+

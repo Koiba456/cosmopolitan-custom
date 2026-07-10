@@ -1,0 +1,15 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_swedish_theologian_female"
+		texturefile = "gfx//interface//advisors//swedish_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+}

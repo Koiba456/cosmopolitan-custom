@@ -1,0 +1,262 @@
+########################################
+# Cosmo Honeymoon decisions
+#
+# 
+########################################
+
+country_decisions = {
+
+cosmo_affairs_1 = {
+major = yes
+		potential = {
+		ai = no
+		NOT = {
+			has_country_flag = cosmo_affair_menu
+		}
+		}
+		allow = {
+		ai = no
+		}
+				
+	effect = {
+			country_event = {
+			id = cosmo_affairs_events.10
+		}
+			set_country_flag = cosmo_affair_menu
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+
+cosmo_options = {		
+	major = yes
+
+		potential = {
+		
+		ai = no
+		}
+		
+		allow = {
+		ai = no
+		}
+
+		effect = {	
+			country_event = {
+			id = cosmo_events.20
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+							
+}
+
+
+cosmo_build_onsen = {
+	major = yes
+
+		potential = {
+		ai = no
+		NOT = {
+			has_country_flag = cosmo_onsen_built
+		}
+		OR = {
+				culture_group = japanese_g
+				has_country_flag = brothel_japan_menu_all			
+				capital_scope = {
+					has_province_modifier = japanese_prostitutes
+				}
+		}
+		}
+
+		allow = {
+		ai = no
+		}
+
+		effect = {
+		add_years_of_income = -0.25		
+		set_country_flag = cosmo_onsen_built
+		if = {
+			limit = {
+				NOT = {
+					culture_group = japanese_g
+				}
+			}
+			custom_tooltip = cosmo_foreign_onsen_prostitutes_tt 		
+		}		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+							
+}
+
+cosmo_build_pirateaffair = {
+	major = yes
+
+		potential = {
+		ai = no
+		NOT = {
+			has_country_flag = cosmo_pirates_built
+		}
+		OR = {
+			any_owned_province = {
+				OR = {
+					region = carribeans_region
+					culture_group = malay
+					culture_group = east_asian
+					culture_group = mande
+					culture_group = sahelian
+					culture_group = west_african
+					culture_group = southern_african
+					culture_group = kongo_group
+					culture_group = great_lakes_group
+					culture_group = african
+					culture_group = cushitic					
+				}
+			}
+		}
+		OR = {
+				has_reform = pirate_republic_reform
+				has_reform = cosmo_pirate_kingdom
+		}
+		}
+
+		allow = {
+		ai = no
+		any_owned_province = {
+			has_port = yes
+			has_building = port_of_pleasure
+		}		
+		}
+
+		effect = {	
+		set_country_flag = cosmo_pirates_built		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+							
+}
+
+cosmo_build_africaaffair = {
+	major = yes
+
+		potential = {
+		ai = no
+		NOT = {
+			has_country_flag = cosmo_africaaffair_built
+		}
+		OR = {
+			any_owned_province = {
+				OR = {
+					region = niger_region
+					region = guinea_region
+					region = sahel_region
+					region = horn_of_africa_region
+					region = east_africa_region
+					region = kongo_region
+					region = south_africa_region
+					region = central_africa_region
+					culture_group = mande
+					culture_group = sahelian
+					culture_group = west_african
+					culture_group = southern_african
+					culture_group = kongo_group
+					culture_group = great_lakes_group
+					culture_group = african
+					culture_group = cushitic	
+				}
+				has_port = yes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				OR = {
+					region = niger_region
+					region = guinea_region
+					region = sahel_region
+					region = horn_of_africa_region
+					region = east_africa_region
+					region = kongo_region
+					region = south_africa_region
+					region = central_africa_region
+					culture_group = mande
+					culture_group = sahelian
+					culture_group = west_african
+					culture_group = southern_african
+					culture_group = kongo_group
+					culture_group = great_lakes_group
+					culture_group = african
+					culture_group = cushitic						
+				}
+			}				
+			}			
+		}
+		}
+
+		allow = {
+		ai = no		
+		}
+
+		effect = {	
+		set_country_flag = cosmo_africaaffair_built		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+							
+}
+
+cosmo_build_convent = {
+	major = yes
+
+		potential = {
+		ai = no
+		NOT = {
+			has_country_flag = cosmo_convent_built
+		}
+		OR = {
+				religion_group = christian 
+				religion_group = anathanist 
+		}
+		NOT = {
+			AND = {
+				religion = coptic 
+				NOT = {
+					any_owned_province = {
+						OR = {
+							superregion = europe_superregion
+							superregion = eastern_europe_superregion
+						}
+					}
+				}
+			}
+		}
+		}
+
+		allow = {
+		treasury = 150	
+		ai = no
+		}
+
+		effect = {
+		add_treasury = -150 	
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+				}
+		set_country_flag = cosmo_convent_built		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+							
+}
+
+
+
+}
+
+				

@@ -1,0 +1,40 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_fulani_theologian_female"
+		texturefile = "gfx//interface//advisors//fulani_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_fulani_diplomat_female"
+		texturefile = "gfx//interface//advisors//fulani_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_fulani_commandant_female"
+		texturefile = "gfx//interface//advisors//fulani_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_fulani_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

@@ -1,0 +1,6604 @@
+#Country scopes unless otherwise stated
+
+prostitute_ruler_effect = {
+	trigger_switch = {
+		on_trigger = has_ruler_flag
+		ruler_prostitutes_adm = {
+		if = {
+			limit = {
+			NOT = {
+				has_ruler_flag = has_prostitutes_adm
+			}	
+			}
+			change_adm = 1
+			set_ruler_flag = has_prostitutes_adm
+			}
+			if = {
+				limit = {
+					has_ruler_flag = has_prostitutes_adm
+				}
+				capital_scope = {
+					add_scaled_local_adm_power = 3 	
+				}
+			}				
+		}
+		ruler_prostitutes_dip = {
+			if = {
+				limit = {
+				NOT = {
+					has_ruler_flag = has_prostitutes_dip
+				}	
+				}
+				change_dip = 1
+				set_ruler_flag = has_prostitutes_dip
+				}
+				if = {
+					limit = {
+						has_ruler_flag = has_prostitutes_dip
+					}
+					capital_scope = {
+						add_scaled_local_dip_power = 3 	
+					}
+				}				
+			}
+		ruler_prostitutes_mil = {
+			if = {
+				limit = {
+				NOT = {
+					has_ruler_flag = has_prostitutes_mil
+				}	
+				}
+				change_mil = 1
+				set_ruler_flag = has_prostitutes_mil
+				}
+				if = {
+					limit = {
+						has_ruler_flag = has_prostitutes_mil
+					}
+					capital_scope = {
+						add_scaled_local_mil_power = 3 	
+					}
+				}				
+			}
+		ruler_prostitutes_unique_a = {
+			add_legitimacy = 5
+		}												
+		ruler_prostitutes_unique_b = {
+				capital_scope = {
+					add_scaled_local_adm_power = 3 	
+				}
+		}			
+		ruler_prostitutes_unique_c = {
+			add_splendor = 2  
+		}
+		ruler_prostitutes_monarch_a = {
+			capital_scope = {
+				add_province_modifier = { 
+					name = cosmo_prostitute_build
+					duration = 1825  
+				} 	
+			}
+		}
+		ruler_prostitutes_monarch_b = {
+			capital_scope = {
+				add_province_modifier = { 
+					name = cosmo_prostitute_modernize
+					duration = 1825  
+		
+				} 	
+			}
+		}
+		ruler_prostitutes_monarch_c = {
+			capital_scope = {
+				add_province_modifier = { 
+					name = cosmo_prostitute_research
+					duration = 1825  
+				} 	
+			}
+				capital_scope = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  30
+					}
+			}			
+		}				
+	}
+	clr_ruler_flag = hire_ruler_prostitutes	
+	hidden_effect = {
+	remove_country_modifier = recently_visited_brothel
+	}
+	clr_ruler_flag = ruler_prostitutes_adm	
+	clr_ruler_flag = ruler_prostitutes_dip	
+	clr_ruler_flag = ruler_prostitutes_mil	
+	clr_ruler_flag = ruler_prostitutes_unique_a	
+	clr_ruler_flag = ruler_prostitutes_unique_b	
+	clr_ruler_flag = ruler_prostitutes_unique_c	
+	clr_ruler_flag = ruler_prostitutes_monarch_a	
+	clr_ruler_flag = ruler_prostitutes_monarch_b	
+	clr_ruler_flag = ruler_prostitutes_monarch_c
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}	
+}
+
+prostitute_dignitary_effect = {
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_increase_opinion
+		}
+		event_target:dignitarycountry = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_dignitary_inc_opinion
+			}
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_invitetoempire
+		}
+		event_target:dignitarycountry = {
+			set_in_empire = yes	
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_send_prostitute
+		}
+			event_target:dignitarycountry = {
+				add_opinion = {
+					who = ROOT
+					modifier = cosmo_dignitary_inc_opinion
+				}	
+			}
+			hidden_effect = {
+				capital_scope = {
+					area = {
+						discover_country = event_target:dignitarycountry
+					}
+				}			
+			}					
+			event_target:dignitarycountry = {
+				set_country_flag = cosmo_dig_persistant_affair
+				add_opinion = {
+					who = ROOT
+					modifier = cosmo_dignitary_persistant_opinion
+				}				
+				add_country_modifier = { 
+					name = having_an_dignitary_affair
+					duration = 90  
+					hidden = yes
+
+				}				
+				capital_scope = {
+				add_province_modifier = { 
+					name = cosmo_has_prostitute_present
+					duration =  1095
+					hidden = yes
+					}					
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					}
+			}	
+			}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_curry_favors
+		}
+		event_target:dignitarycountry = {
+			ROOT = {
+			add_favors = {
+				who = PREV
+				amount = 5
+			}
+			}
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_become_subject
+		}
+		event_target:dignitarycountry = {
+			overlord = {
+				if = {
+					limit = {
+						is_emperor_of_china = yes						
+					}
+					add_casus_belli = {
+						target = PREV
+						type = cb_force_tributary
+						months = 120
+					}						
+				}
+				if = {
+					limit = {
+						has_reform = shogunate					
+					}
+					add_casus_belli = {
+						target = PREV
+						type = cb_shogun_annex
+						months = 120
+					}						
+				}
+				if = {
+					limit = {
+						NOT = {
+						OR = {
+						is_emperor_of_china = yes						
+						has_reform = shogunate					
+						}
+						}
+					}
+					add_casus_belli = {
+						target = PREV
+						type = cb_disloyal_vassal
+						months = 120
+					}						
+				}					
+			}
+			grant_independence = yes 		
+		}
+		event_target:dignitarycountry = {
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_sending_proposal
+			}	
+		}
+		set_country_flag = cosmo_receive_proposal
+						
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_exploit
+		}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = cosmo_no_exploit
+			}
+		}
+		event_target:dignitarycountry = {
+			capital_scope = {
+		ROOT = {
+			#custom_tooltip = cosmo_empty_space_tt			
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 1
+						NOT = {
+						base_production = 2	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 2
+			#event_target:dignitarycountry = {
+				#add_adm_power = 2
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 2
+						NOT = {
+						base_production = 3	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 4
+			#event_target:dignitarycountry = {
+				#add_adm_power = 4
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 3
+						NOT = {
+						base_production = 4	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 6
+			#event_target:dignitarycountry = {
+				#add_adm_power = 6
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 4
+						NOT = {
+						base_production = 5	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 8
+			#event_target:dignitarycountry = {
+				#add_adm_power = 8
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 5
+						NOT = {
+						base_production = 6	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 10
+			#event_target:dignitarycountry = {
+				#add_adm_power = 10
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 6
+						NOT = {
+						base_production = 7	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 12
+			#event_target:dignitarycountry = {
+				#add_adm_power = 12
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 7
+						NOT = {
+						base_production = 8	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 14
+			#event_target:dignitarycountry = {
+				#add_adm_power = 14
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 8
+						NOT = {
+						base_production = 9	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 16
+			#event_target:dignitarycountry = {
+				#add_adm_power = 16
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 9
+						NOT = {
+						base_production = 10	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 18
+			#event_target:dignitarycountry = {
+				#add_adm_power = 18
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 10
+						NOT = {
+						base_production = 11	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 20
+			#event_target:dignitarycountry = {
+				#add_adm_power = 20
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 11
+						NOT = {
+						base_production = 12	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 22
+			#event_target:dignitarycountry = {
+				#add_adm_power = 22
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 12
+						NOT = {
+						base_production = 13	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 24
+			#event_target:dignitarycountry = {
+				#add_adm_power = 24
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 13
+						NOT = {
+						base_production = 14	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 26
+			#event_target:dignitarycountry = {
+				#add_adm_power = 26
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 14
+						NOT = {
+						base_production = 15	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 28
+			#event_target:dignitarycountry = {
+				#add_adm_power = 28
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 15
+						NOT = {
+						base_production = 16	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 30
+			#event_target:dignitarycountry = {
+				#add_adm_power = 30
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 16
+						NOT = {
+						base_production = 17	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 32
+			#event_target:dignitarycountry = {
+				#add_adm_power = 32
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 17
+						NOT = {
+						base_production = 18	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 34
+			#event_target:dignitarycountry = {
+				#add_adm_power = 34
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 18
+						NOT = {
+						base_production = 19	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 36
+			#event_target:dignitarycountry = {
+				#add_adm_power = 36
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 19
+						NOT = {
+						base_production = 20	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 38
+			#event_target:dignitarycountry = {
+				#add_adm_power = 38
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 20	
+						NOT = {
+						base_production = 21	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 40
+			#event_target:dignitarycountry = {
+				#add_adm_power = 40
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 21
+						NOT = {
+						base_production = 22	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 42
+			#event_target:dignitarycountry = {
+				#add_adm_power = 42
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 22
+						NOT = {
+						base_production = 23	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 44
+			#event_target:dignitarycountry = {
+				#add_adm_power = 44
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 23
+						NOT = {
+						base_production = 24	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 46
+			#event_target:dignitarycountry = {
+				#add_adm_power = 46
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 24
+						NOT = {
+						base_production = 25	
+						}
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 48
+			#event_target:dignitarycountry = {
+				#add_adm_power = 48
+			#}
+		}
+		if = {
+			limit = {
+				event_target:dignitarycountry = {
+					capital_scope = {
+						base_production = 25
+					}
+				}
+			}
+			custom_tooltip = cosmo_empty_space_tt #custom_tooltip = rootroot_country_tt
+			add_dip_power = 50
+			#event_target:dignitarycountry = {
+				#add_adm_power = 50
+			#}
+		}
+		}		
+			}
+		}
+		# custom_tooltip = cosmo_empty_space_tt
+		# custom_tooltip = cosmo_stolen_by_rival_tt
+		# clear_global_event_target = dignitarycountry 	
+	}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_libertydesire
+		}
+		event_target:dignitarycountry = {
+			add_liberty_desire = 5	
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_tariffs
+		}
+		event_target:dignitarycountry = {
+			add_tariff_value = 0.1	
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_requestinvitetoempire
+		}
+			set_in_empire = yes 								
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_requestmercs
+		}
+		add_country_modifier = { 
+				name = cosmo_dignitary_mercenaries
+				duration = 365  
+	
+			}
+	}
+	if = {
+		limit = {
+			has_ruler_flag = entertain_dignitary_trust
+		}
+		event_target:dignitarycountry = {
+		add_trust = {
+			who = ROOT
+			value = 5
+			mutual = yes
+		}
+		}
+	}										
+	clr_ruler_flag = hire_diplomat_prostitutes
+	hidden_effect = {
+	remove_country_modifier = recently_visited_brothel
+	}	
+	clr_ruler_flag = entertain_dignitary_exploit			
+	clr_ruler_flag = entertain_dignitary_send_prostitute			
+	clr_ruler_flag = entertain_dignitary_dip_advisor			
+	clr_ruler_flag = entertain_dignitary_adm_advisor			
+	clr_ruler_flag = entertain_dignitary_mil_advisor			
+	clr_ruler_flag = entertain_dignitary_heir			
+	clr_ruler_flag = this_country_dignitary			
+	clr_ruler_flag = entertain_dignitary_increase_opinion
+	clr_ruler_flag = entertain_dignitary_curry_favors
+	clr_ruler_flag = entertain_dignitary_invitetoempire
+	clr_ruler_flag = entertain_dignitary_requestinvitetoempire
+	clr_ruler_flag = entertain_dignitary_trust
+	clr_ruler_flag = entertain_dignitary_libertydesire
+	clr_ruler_flag = entertain_dignitary_tariffs
+	clr_ruler_flag = entertain_dignitary_requestmercs
+	event_target:dignitarycountry = {
+	hidden_effect = {
+	remove_opinion = {
+		who = ROOT
+		modifier = dignitary_entertained
+	}
+	}	
+	}
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}	
+}
+
+prostitute_spy_effect = {
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_sent_new
+		}
+		event_target:spycountry = {
+			add_spy_network_from = {
+				who = ROOT
+				value = 5
+			}				
+			capital_scope = {
+			add_province_modifier = { 
+				name = $MODIFIER$
+				duration =  730
+				}					
+		}
+		add_country_modifier = { 
+			name = cosmo_suspected_spy
+			duration =  120
+			}				
+		}
+		event_target:spycountry = {
+			set_country_flag = cosmo_spy_persistant_affair
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_spy_persistant_opinion
+			}				
+			add_country_modifier = { 
+				name = having_an_persistant_spy
+				duration = 90  
+				hidden = yes
+
+			}			
+		}				
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_monarch
+		}
+		custom_tooltip = train_spy_seduced_tt 
+		event_target:spycountry = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = {
+					add_spy_network_from = {
+						who = ROOT
+						value = 30
+					}						
+				}
+			}
+			if = {
+				limit = {
+					is_subject = no
+				}
+				overlord = {
+					add_spy_network_from = {
+						who = ROOT
+						value = 30
+					}						
+				}
+			}												
+			set_ruler_flag = cosmo_monarch_seduced
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_monarch
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_adm
+		}
+		custom_tooltip = train_spy_seduced_tt 
+		event_target:spycountry = {
+			add_spy_network_from = {
+				who = ROOT
+				value = 10
+			}				
+			set_ruler_flag = cosmo_adm_seduced
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_adm
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_steal_adm
+		}
+			add_country_modifier = {
+				name = cosmo_adm_theft
+				duration = 365  
+				}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_dip
+		}
+		custom_tooltip = train_spy_seduced_tt 
+		event_target:spycountry = {
+			add_spy_network_from = {
+				who = ROOT
+				value = 10
+			}				
+			set_ruler_flag = cosmo_dip_seduced
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_dip
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_steal_dip
+		}
+		add_country_modifier = {
+			name = cosmo_dip_theft
+			duration = 365  
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_steal_dip
+		}
+		add_country_modifier = {
+			name = cosmo_dip_theft
+			duration = 365  
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_mil
+		}
+		custom_tooltip = train_spy_seduced_tt 
+		event_target:spycountry = {
+			add_spy_network_from = {
+				who = ROOT
+				value = 10
+			}				
+			set_ruler_flag = cosmo_mil_seduced
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_mil
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_steal_mil
+		}
+		add_country_modifier = {
+			name = cosmo_mil_theft
+			duration = 365  
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_fail
+		}
+		custom_tooltip = train_spy_seduce_fail_tt 
+		event_target:spycountry = {				
+		add_country_modifier = {
+			name = cosmo_suspected_spy
+			duration = 120  
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_seduce_cardinal
+		}
+		custom_tooltip = train_spy_seduced_tt 
+		event_target:spycountry = {
+			add_spy_network_from = {
+				who = ROOT
+				value = 5
+			}				
+			random_owned_province = {
+				limit = {
+					NOT = {
+						has_province_modifier = train_spy_attempt_cardinal	
+					}
+					has_cardinal = yes						
+				}
+				set_province_flag = cosmo_has_seduced_cardinal
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_cardinal
+			}					
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_influence_cardinal
+		}
+		event_target:spycountry = {
+			add_country_modifier = {
+				name = cosmo_cardinal_influenced
+				duration = 1095  
+				}					
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = cosmo_cardinal_tooltip
+					duration = 1095  
+					}
+			}		
+	}	
+	if = {
+		limit = {
+			has_ruler_flag = cosmo_steal_tech_1
+		}
+		add_country_modifier = {
+			name = cosmo_steal_tech_1
+			duration = 5475  
+			}
+			event_target:spycountry = {
+				capital_scope = {
+				# add_province_modifier = { 
+				# 	name = $MODIFIER$
+				# 	duration =  365
+				# 	}
+			}	
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = cosmo_steal_tech_2
+		}
+		add_country_modifier = {
+			name = cosmo_steal_tech_2
+			duration = 5475  
+			}
+			event_target:spycountry = {
+				capital_scope = {
+				# add_province_modifier = { 
+				# 	name = $MODIFIER$
+				# 	duration =  365
+				# 	}
+			}	
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = cosmo_steal_tech_3
+		}
+		add_country_modifier = {
+			name = cosmo_steal_tech_3
+			duration = 5475  
+			}
+			event_target:spycountry = {
+				capital_scope = {
+				# add_province_modifier = { 
+				# 	name = $MODIFIER$
+				# 	duration =  365
+				# 	}
+			}	
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_sow_distrust
+		}
+		event_target:spycountry = {
+			if = {
+				limit = {	
+				any_ally = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					NOT = {
+					trust = { who = PREV value = 50 } 						
+					}
+				}
+				}
+				random_ally = {
+					limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					}
+					break_alliance = PREV
+				}
+			}
+			if = {
+				limit = {
+				OR = {
+					has_ruler_flag = cosmo_dip_seduced					
+					has_ruler_flag = cosmo_adm_seduced					
+					has_ruler_flag = cosmo_mil_seduced					
+				}					
+				any_ally = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					trust = { who = PREV value = 50 } 						
+				}
+				}
+				random_ally = {
+					limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					}
+					add_trust = {
+						who = PREV
+						value = -5
+						mutual = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+				OR = {
+					has_ruler_flag = cosmo_monarch_seduced				
+				}					
+				any_ally = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					trust = { who = PREV value = 50 } 						
+				}
+				}
+				random_ally = {
+					limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}
+					}
+					add_trust = {
+						who = PREV
+						value = -5
+						mutual = yes
+					}
+				}
+			}										
+			hidden_effect = {
+			every_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_meddling
+					}						
+				}
+				remove_opinion = {
+					who = ROOT
+					modifier = cosmo_meddling
+				}					
+			}
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_liberty_desire
+		}
+		event_target:spycountry = {
+			capital_scope = {
+			# add_province_modifier = { 
+			# 	name = $MODIFIER$
+			# 	duration =  365
+			# 	}
+		}	
+		}						
+		event_target:spycountry = {
+			add_liberty_desire = 10	
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_ruler_kill
+		}
+		event_target:spycountry = {
+			clr_ruler_flag = cosmo_monarch_seduced
+			kill_ruler = yes
+			hidden_effect = {
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_monarch
+			}
+			}	
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_ruler_fail
+		}
+		custom_tooltip = train_spy_failed_tt 
+		clr_ruler_flag = cosmo_monarch_seduced
+		hidden_effect = {
+		remove_opinion = {
+			who = ROOT
+			modifier = cosmo_seduced_monarch
+		}
+		}
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}								
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = -5
+			}
+			event_target:spycountry = {
+				add_ruler_modifier = {
+					name = train_spy_attempt_ruler
+					duration = 1825  
+
+				}
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_ruler_kill
+		}
+		event_target:spycountry = {
+			clr_ruler_flag = cosmo_monarch_seduced
+			kill_ruler = yes
+			hidden_effect = {
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_monarch
+			}
+			}	
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_heir_kill
+		}
+		event_target:spycountry = {
+			kill_heir = { allow_new_heir = no }	
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_heir_fail
+		}
+		custom_tooltip = train_spy_failed_tt 
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}				
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = -5
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_adv_fail
+		}
+		custom_tooltip = train_spy_failed_tt 
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}				
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = -5
+			}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_adm_kill
+		}
+		event_target:spycountry = {
+			kill_advisor = philosopher		
+			kill_advisor = natural_scientist		
+			kill_advisor = artist		
+			kill_advisor = treasurer		
+			kill_advisor = theologian		
+			kill_advisor = master_of_mint		
+			kill_advisor = inquisitor
+		}		
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_dip_kill
+		}
+		event_target:spycountry = {
+			kill_advisor = trader		
+			kill_advisor = statesman		
+			kill_advisor = naval_reformer		
+			kill_advisor = spymaster		
+			kill_advisor = colonial_governor		
+			kill_advisor = diplomat		
+			kill_advisor = navigator
+		}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_mil_kill
+		}
+		event_target:spycountry = {
+			kill_advisor = army_reformer		
+			kill_advisor = army_organiser		
+			kill_advisor = commandant		
+			kill_advisor = quartermaster		
+			kill_advisor = recruitmaster		
+			kill_advisor = fortification_expert		
+			kill_advisor = grand_captain
+		}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_cardinal_kill
+		}
+		event_target:spycountry = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = cosmo_has_seduced_cardinal
+					NOT = {
+						has_province_modifier = train_spy_attempt_cardinal	
+					}
+					has_cardinal = yes
+				}
+				remove_cardinal = yes
+				clr_province_flag = cosmo_has_seduced_cardinal	
+			}
+			capital_scope = {
+				cosmo_remove_prostitute = yes
+			}
+			hidden_effect = {
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_cardinal
+			}
+			}				
+		}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_fort_kill
+		}
+		if = {
+			limit = {
+				event_target:spycountry = {
+					any_owned_province = {
+						has_province_flag = spy_attempt_fort				
+							has_province_modifier = cosmo_garrison_inf_2
+						NOT = {
+							has_province_modifier = cosmo_garrison_inf_3
+						}
+					}
+				}
+			}
+		event_target:spycountry = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+			remove_province_modifier = cosmo_garrison_inf_2	
+			add_province_modifier = { 
+				name = cosmo_garrison_inf_3
+				duration =  365
+				}	
+			}
+		}						
+		}
+		if = {
+			limit = {
+				event_target:spycountry = {
+					any_owned_province = {
+						has_province_flag = spy_attempt_fort				
+							has_province_modifier = cosmo_garrison_inf_1
+						NOT = {
+							has_province_modifier = cosmo_garrison_inf_2
+							has_province_modifier = cosmo_garrison_inf_3
+						}
+					}
+				}
+			}
+		event_target:spycountry = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+			remove_province_modifier = cosmo_garrison_inf_1	
+			add_province_modifier = { 
+				name = cosmo_garrison_inf_2
+				duration =  365
+				}	
+			}
+		}						
+		custom_tooltip = spy_fort_continue_tt						
+		}						
+		if = {
+			limit = {
+				event_target:spycountry = {
+					any_owned_province = {
+						has_province_flag = spy_attempt_fort				
+						NOT = {
+							has_province_modifier = cosmo_garrison_inf_1
+							has_province_modifier = cosmo_garrison_inf_2
+							has_province_modifier = cosmo_garrison_inf_3
+						}
+					}
+				}
+			}
+		event_target:spycountry = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+			add_province_modifier = { 
+				name = cosmo_garrison_inf_1
+				duration =  365
+				}	
+			}
+		}
+		custom_tooltip = spy_fort_continue_tt						
+		}
+		every_province = {
+			limit = {
+				has_province_flag = spy_attempt_fort
+			}
+				clr_province_flag = spy_attempt_fort
+		}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_fort_fail
+		}
+			custom_tooltip = train_spy_failed_tt 
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}				
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = -5
+			}			
+			every_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+					clr_province_flag = spy_attempt_fort
+			}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_infiltrate_harem
+		}
+		event_target:spycountry = {
+			capital_scope = {
+			# add_province_modifier = { 
+			# 	name = $MODIFIER$
+			# 	duration =  365
+			# 	}								
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = cosmo_visiting_palace
+			}															
+		}
+			country_event = {
+			id = qosmo_palace_events.30
+				days = 45
+			}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_cardinal_fail
+		}
+		custom_tooltip = train_spy_failed_tt 
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}				
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+		add_estate_loyalty = {
+			estate = estate_madams
+			loyalty = -5
+		}
+		event_target:spycountry = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = cosmo_has_seduced_cardinal
+					has_cardinal = yes
+					NOT = {
+						has_province_modifier = train_spy_attempt_cardinal
+					}
+				}
+				clr_province_flag = cosmo_has_seduced_cardinal	
+				add_province_modifier = {
+					name = train_spy_attempt_cardinal
+					duration = 1825  			
+				}					
+			}
+			hidden_effect = {
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_seduced_cardinal
+			}
+			}				
+		}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_infiltrate_fail
+		}
+		custom_tooltip = train_spy_failed_tt
+		event_target:spycountry = {
+			capital_scope = {
+				remove_province_modifier = $MODIFIER$
+		}	
+		}				 
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  13250
+					hidden = yes
+					}				
+		}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = -5
+			}	
+	}
+	if = {
+		limit = {
+			has_ruler_flag = train_spy_increase_network
+		}		
+		if = {
+			limit = {
+				event_target:spycountry = {
+					is_subject = yes
+				}
+			}
+				event_target:spycountry = {
+				overlord = {
+					add_spy_network_from = {
+						who = ROOT
+						value = 15
+					}						
+				}
+				}				
+		}
+		if = {
+			limit = {
+				event_target:spycountry = {
+					is_subject = no
+				}
+			}
+				event_target:spycountry = {
+					add_spy_network_from = {
+						who = ROOT
+						value = 15
+					}
+				}				
+		}	
+	}
+	clr_ruler_flag = train_spy_prostitutes
+	hidden_effect = {
+	remove_country_modifier = recently_visited_brothel
+	}	
+	clr_ruler_flag = train_spy_prostitutes
+	clr_ruler_flag = train_spy_sent_new
+	clr_ruler_flag = train_spy_seduce_monarch
+	clr_ruler_flag = train_spy_repeater_event
+	clr_ruler_flag = train_spy_seduce_adm
+	clr_ruler_flag = train_spy_steal_adm
+	clr_ruler_flag = train_spy_seduce_dip
+	clr_ruler_flag = train_spy_steal_dip
+	clr_ruler_flag = train_spy_seduce_mil
+	clr_ruler_flag = train_spy_steal_mil
+	clr_ruler_flag = train_spy_seduce_fail
+	clr_ruler_flag = train_spy_seduce_cardinal
+	clr_ruler_flag = train_spy_influence_cardinal
+	clr_ruler_flag = train_spy_increase_network
+	clr_ruler_flag = train_spy_tech_1
+	clr_ruler_flag = train_spy_tech_2
+	clr_ruler_flag = train_spy_tech_3
+	clr_ruler_flag = train_spy_sow_distrust
+	clr_ruler_flag = train_spy_liberty_desire
+	clr_ruler_flag = train_spy_ruler_kill
+	clr_ruler_flag = train_spy_ruler_fail
+	clr_ruler_flag = train_spy_heir_kill
+	clr_ruler_flag = train_spy_heir_fail
+	clr_ruler_flag = train_spy_adm_kill
+	clr_ruler_flag = train_spy_adm_fail
+	clr_ruler_flag = train_spy_dip_kill
+	clr_ruler_flag = train_spy_dip_fail
+	clr_ruler_flag = train_spy_mil_kill
+	clr_ruler_flag = train_spy_mil_fail
+	clr_ruler_flag = train_spy_adv_fail
+	clr_ruler_flag = train_spy_cardinal_kill
+	clr_ruler_flag = train_spy_cardinal_fail
+	clr_ruler_flag = train_spy_leader_kill
+	clr_ruler_flag = train_spy_leader_fail
+	clr_ruler_flag = train_spy_fort_kill
+	clr_ruler_flag = train_spy_fort_fail
+	clr_ruler_flag = train_spy_infiltrate_harem
+	clr_ruler_flag = train_spy_infiltrate_fail
+	hidden_effect = {
+	event_target:spycountry = {
+	remove_opinion = {
+		who = ROOT
+		modifier = cosmo_spy_sent
+	}
+	}
+	}
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}	
+}
+
+prostitute_other_effect = {
+	if = {
+		limit = {
+			has_country_flag = entertain_troops_prostitutes_new
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_here_now
+			}
+			add_scaled_local_mil_power = 3
+				add_province_modifier = { 
+					name = entertain_troops_province
+					duration = 5475  
+				}			
+		}
+		add_country_modifier = { 
+			name = cosmo_army_satisfied
+			duration = 5475  
+		}		
+		event_target:prostituteprovince = {
+			add_province_modifier = { 
+				name = cosmo_has_prostitute_present
+				duration =  5475
+				hidden = yes
+				}			
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  5475
+					}				
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_troops_here
+			}
+			clr_province_flag = entertain_troops_here
+			clr_province_flag = entertain_here_now
+		}
+		}
+	if = {
+		limit = {
+			has_country_flag = entertain_troops_prostitutes_current
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_troops_here
+			}
+				add_province_modifier = { 
+					name = entertain_troops_province
+					duration = 5475  
+				}			
+		}
+		add_country_modifier = { 
+			name = cosmo_army_satisfied
+			duration = 5475  
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_troops_here
+			}
+			clr_province_flag = entertain_troops_here
+			clr_province_flag = entertain_troops_present
+		}
+		}
+	if = {
+		limit = {
+			has_country_flag = entertain_sailors_prostitutes_new
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_sailors_here
+			}
+			add_scaled_local_dip_power = 3
+				add_province_modifier = { 
+					name = entertain_sailor_province
+					duration = 5475  
+				}			
+		}
+		add_country_modifier = { 
+			name = cosmo_navy_satisfied
+			duration = 5475  
+		}		
+		event_target:prostituteprovince = {
+			add_province_modifier = { 
+				name = cosmo_has_prostitute_present
+				duration =  5475
+				hidden = yes
+				}			
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  5475
+					}				
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_sailors_here
+			}
+			clr_province_flag = entertain_sailors_here
+			clr_province_flag = entertain_here_now
+		}
+		}
+	if = {
+		limit = {
+			has_country_flag = entertain_sailors_prostitutes_current
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_sailors_here
+			}
+				add_province_modifier = { 
+					name = entertain_sailor_province
+					duration = 5475  
+				}			
+		}
+		add_country_modifier = { 
+			name = cosmo_navy_satisfied
+			duration = 5475  
+		}
+		every_province = {
+			limit = {
+				has_province_flag = entertain_sailors_here
+			}
+			clr_province_flag = entertain_sailors_here
+			clr_province_flag = entertain_sailors_present
+		}
+		}				
+	if = {
+		limit = {
+			has_country_flag = convert_anathanism_prostitutes
+		}
+			if = {
+				limit = {
+					has_country_flag = convert_anathanism_prostitutes_ducat
+				}
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = -0.05
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = -0.1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = -0.15
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 100
+					}
+				}
+				add_years_of_income = -0.2
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = convert_anathanism_prostitutes_monarch
+				}
+				event_target:prostituteprovince = {
+					if = {
+						limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						}
+						add_scaled_local_dip_power = -5
+					}				
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						add_scaled_local_adm_power = -5						
+					}
+				}				
+			}		
+		if = {
+			limit = {
+				event_target:convertprovince = {
+					NOT = {
+						religion_group = ROOT
+					}
+				}
+			}
+			event_target:convertprovince = {
+				if = {
+					limit = {
+						has_province_modifier = cosmo_religion_convert
+					}
+					ROOT = {
+						add_church_power = 5
+						add_piety = -0.1
+						add_scaled_local_adm_power = -3
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_province_modifier = expelled_minority
+						}
+						is_owned_by_trade_company = no 
+					}
+				extend_province_modifier = { 
+					name = cosmo_religion_convert
+					duration = 730  
+				}				
+				add_province_modifier = { 
+					name = cosmo_religion_convert
+					duration = 730  
+				}					
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_province_modifier = expelled_minority
+						}						
+						is_owned_by_trade_company = yes 
+					}
+				extend_province_modifier = { 
+					name = cosmo_religion_convert_tc
+					duration = 730  
+				}				
+				add_province_modifier = { 
+					name = cosmo_religion_convert_tc
+					duration = 730  
+				}					
+				}
+				if = {
+					limit = {
+							has_province_modifier = expelled_minority
+					}
+				extend_province_modifier = { 
+					name = cosmo_religion_convert_em
+					duration = 730  
+				}				
+				add_province_modifier = { 
+					name = cosmo_religion_convert_em
+					duration = 730  
+				}					
+				}												
+					add_province_modifier = { 
+						name = cosmo_convert_repeater
+						duration = 700  
+						hidden = yes
+
+					}				
+				set_province_flag = cosmo_converting_repeater
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 9
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 9
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 10
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 730  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 730  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 8
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 8
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 9
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 730  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 730  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 730  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 7
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 7
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 8
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 6
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 6
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 7
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 5
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 5
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 6
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 4
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 4
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 5
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 3
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 3
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 4
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 2
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 2
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+								num_of_missionaries = 3
+							}
+						}
+					}
+					ROOT = {
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_5
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_6
+							duration = 300  
+							hidden = yes
+
+						}						
+					}						
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_4
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_5
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_3
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_4
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_2
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_3
+							duration = 300  
+							hidden = yes
+
+						}						
+					}
+					if = {
+						limit = {
+							has_country_modifier = cosmo_add_missionary_1
+						}
+						add_country_modifier = { 
+							name = cosmo_add_missionary_2
+							duration = 300  
+							hidden = yes
+
+						}						
+					}																											
+					}
+				}																																
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}						
+						ROOT = {
+							num_of_missionaries = 1
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 1
+								country_or_vassal_holds = ROOT
+								has_missionary = yes
+							}
+							NOT = {
+							num_of_missionaries = 2
+
+							}
+						}
+					}
+					ROOT = {
+					add_country_modifier = { 
+						name = cosmo_add_missionary_1
+						duration = 300  
+						hidden = yes
+
+					}						
+					}
+				}																										
+				if = {
+					limit = {
+						NOT = {
+							has_missionary = yes 
+						}
+					}
+					send_missionary = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				event_target:convertprovince = {
+						religion_group = ROOT
+				}				
+			}
+			event_target:convertprovince = {
+				if = {
+					limit = {
+						has_trade_modifier = {
+							who = ROOT
+							key = IMMENSELY_POPULAR_PORT
+						}
+						NOT = {
+						trade_share = {
+							country = ROOT
+							share = 50
+						}
+						}						
+					}
+					add_trade_modifier = {
+						who = ROOT
+						duration = 5475
+						power = 15
+						key = COSMO_ANATHANIST_CONVERTING
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+						has_trade_modifier = {
+							who = ROOT
+							key = IMMENSELY_POPULAR_PORT
+						}
+						}
+					}
+					add_province_modifier = { 
+						name = cosmo_convert_repeater
+						duration = 5400  
+						hidden = yes
+
+					}					
+					set_province_flag = cosmo_converting_repeater
+					add_trade_modifier = {
+						who = ROOT
+						duration = 5475
+						power = 15
+						key = IMMENSELY_POPULAR_PORT
+					}
+					custom_tooltip = cosmo_use_propogate_tt
+				}				
+			}
+			event_target:convertprovince = {
+				if = {
+					limit = {
+						NOT = {
+							has_merchant = ROOT 
+						}
+					}
+					custom_tooltip = cosmo_no_merchant_tt
+				}				
+				if = {
+					limit = {
+						has_trade_modifier = {
+							who = ROOT
+							key = IMMENSELY_POPULAR_PORT
+						}
+						trade_share = {
+							country = ROOT
+							share = 50
+						}						
+					}
+					custom_tooltip = cosmo_propogate_religion_active_tt
+				}				
+			}						
+		}
+		event_target:convertprovince = {
+			add_province_modifier = { 
+				name = cosmo_has_prostitute_present
+				duration =  1095
+				hidden = yes
+				}			
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					}				
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = convert_anathanism_prostitutes_ducat					
+					has_country_flag = convert_anathanism_prostitutes_monarch	
+				}
+			}
+			country_event = {
+			id = cosmo_psort_events.73
+			}
+		}		
+		every_province = {
+			limit = {
+				has_province_flag = convert_anathanism_here
+			}
+			clr_province_flag = convert_anathanism_here
+		}
+		clr_country_flag = convert_anathanism_prostitutes_ducat
+		clr_country_flag = convert_anathanism_prostitutes_monarch
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_clergy_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_church
+			desc = EST_ENTERTAIN_CHURCH
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_country_flag = establish_prostitutes_brothel
+		}	
+			event_target:prostituteprovince = {
+				add_province_modifier = { 
+					name = cosmo_has_prostitute_present
+					duration =  13250
+					hidden = yes
+					}				
+					add_province_modifier = { 
+						name = $MODIFIER$
+						duration =  13250
+						hidden = no
+						}				
+			}			
+		if = {
+			limit = {
+				has_country_flag = japanese_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = japanese_prostitutes
+					duration = 18250  
+					desc = japanese_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = west_african_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = west_african_prostitutes
+					duration = 18250  
+					desc = west_african_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = central_african_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = central_african_prostitutes
+					duration = 18250  
+					desc = central_african_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = east_african_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = east_african_prostitutes
+					duration = 18250  
+					desc = east_african_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = chinese_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = chinese_prostitutes
+					duration = 18250  
+					desc = chinese_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = malay_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = malay_prostitutes
+					duration = 18250  
+					desc = malay_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = central_european_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = central_european_prostitutes
+					duration = 18250  
+					desc = central_european_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = french_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = french_prostitutes
+					duration = 18250  
+					desc = french_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = iberian_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = iberian_prostitutes
+					duration = 18250  
+					desc = iberian_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = italian_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = italian_prostitutes
+					duration = 18250  
+					desc = italian_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = british_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = british_prostitutes
+					duration = 18250  
+					desc = british_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = russian_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = russian_prostitutes
+					duration = 18250  
+					desc = russian_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = fake_south_american_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = fake_south_american_prostitutes
+					duration = 18250  
+					desc = fake_south_american_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = fake_central_american_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = fake_central_american_prostitutes
+					duration = 18250  
+					desc = fake_central_american_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = fake_north_american_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = fake_north_american_prostitutes
+					duration = 18250  
+					desc = fake_north_american_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = south_asian_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = south_asian_prostitutes
+					duration = 18250  
+					desc = south_asian_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = thai_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = thai_prostitutes
+					duration = 18250  
+					desc = thai_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = korean_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = korean_prostitutes
+					duration = 18250  
+					desc = korean_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = mena_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = mena_prostitutes
+					duration = 18250  
+					desc = mena_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = persian_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = persian_prostitutes
+					duration = 18250  
+					desc = persian_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = turkish_madams_established
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = {
+					name = turkish_prostitutes
+					duration = 18250  
+					desc = turkish_prostitutes_DESC
+				}
+				add_trade_modifier = {
+					who = ROOT
+					duration = 1825
+					power = 5
+					key = COSMO_MADAM_BONUS
+				}				
+			}			
+		}																																						
+
+		hidden_effect = {
+		add_estate_influence_modifier = {
+				estate = estate_madams
+				desc = COSMO_BROTHEL_BUILT
+				influence = -10
+				duration = 3650
+			}
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = 5
+				}			
+			if = {
+				limit = {
+					has_country_flag = establish_prostitutes_brothel_ducat
+				}
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = -0.05
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = -0.1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_madams
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = -0.15
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_madams
+						influence = 100
+					}
+				}
+				add_years_of_income = -0.2
+			}
+			}
+			if = {
+				limit = {
+					has_country_flag = establish_prostitutes_brothel_monarch
+				}
+				event_target:prostituteprovince = {
+					if = {
+						limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+						}
+						add_scaled_local_dip_power = -5
+					}				
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						add_scaled_local_adm_power = -5						
+					}
+				}				
+			}			
+		}
+		country_event = {
+		id = cosmo_psort_events.71
+		}				 
+		}		
+	if = {
+		limit = {
+			has_ruler_flag = hire_noble_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = EST_ENTERTAIN_NOBLE
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_admadvisor_prostitutes
+		}
+		if = {
+			limit = {
+				advisor = artist
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_prestige = 5
+			add_country_modifier = { 
+				name = cosmo_affair_artist_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_artist_I									
+			remove_country_modifier = cosmo_affair_artist_II							
+		}
+		if = {
+			limit = {
+				advisor = natural_scientist
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_country_modifier = { 
+				name = cosmo_affair_scientist_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_scientist_I									
+			remove_country_modifier = cosmo_affair_scientist_II	
+		}				
+		if = {
+			limit = {
+				advisor = philosopher
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_splendor = 2 
+			add_country_modifier = { 
+				name = cosmo_affair_philosopher_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_philosopher_I									
+			remove_country_modifier = cosmo_affair_philosopher_II	
+		}
+		if = {
+			limit = {
+				advisor = treasurer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			if = {
+				limit = {
+					monthly_income = 100
+				}
+				add_years_of_income = 0.025 
+			}
+			if = {
+				limit = {
+					NOT = {
+						monthly_income = 100
+					}
+				}
+				add_years_of_income = 0.05 
+			}
+			add_country_modifier = { 
+				name = cosmo_consort_treasurer_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_consort_treasurer_affair_I									
+			remove_country_modifier = cosmo_consort_treasurer_affair_II						
+		}
+		if = {
+			limit = {
+				advisor = theologian
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+				}			
+			add_country_modifier = { 
+				name = cosmo_theologian_affair_III
+				duration = 9125  
+				
+	
+			}
+			remove_country_modifier = cosmo_theologian_affair_I									
+			remove_country_modifier = cosmo_theologian_affair_II							
+		}
+		if = {
+			limit = {
+				advisor = master_of_mint
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_inflation = -2			
+			add_country_modifier = { 
+				name = cosmo_master_of_mint_affair_III
+				duration = 5475  
+				desc = cosmo_master_of_mint_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_master_of_mint_affair_II									
+			remove_country_modifier = cosmo_master_of_mint_affair_I						
+		}
+		if = {
+			limit = {
+				advisor = inquisitor
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+				}			
+			add_country_modifier = { 
+				name = cosmo_inquisitor_c_affair_III
+				duration = 9125  
+				
+	
+			}
+			remove_country_modifier = cosmo_inquisitor_c_affair_I									
+			remove_country_modifier = cosmo_inquisitor_c_affair_II							
+		}										 
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_dipadvisor_prostitutes
+		}
+		if = {
+			limit = {
+				advisor = statesman
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			change_government_reform_progress = 25
+			add_country_modifier = { 
+				name = cosmo_statesman_affair_III
+				duration = 5475  
+			}
+			remove_country_modifier = cosmo_statesman_affair_II									
+			remove_country_modifier = cosmo_statesman_affair_I
+		}
+		if = {
+			limit = {
+				advisor = naval_reformer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_navy_tradition = 10			
+			add_country_modifier = { 
+				name = cosmo_naval_reformer_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_naval_reformer_affair_II									
+			remove_country_modifier = cosmo_naval_reformer_affair_I
+		}
+		if = {
+			limit = {
+				advisor = trader
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_mercantilism = 1			
+			add_country_modifier = { 
+				name = cosmo_trader_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_trader_affair_II									
+			remove_country_modifier = cosmo_trader_affair_I
+		}
+		if = {
+			limit = {
+				advisor = spymaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = 5
+				}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 5
+				}
+			add_country_modifier = { 
+				name = cosmo_spymaster_affair_III
+				duration = 5475  
+				desc = cosmo_spymaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_spymaster_affair_II								
+			remove_country_modifier = cosmo_spymaster_affair_I
+		}	
+		if = {
+			limit = {
+				advisor = colonial_governor
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_splendor = 10			
+			add_country_modifier = { 
+				name = cosmo_affair_colonial_governor_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_affair_colonial_governor_I
+			remove_country_modifier = cosmo_affair_colonial_governor_II
+		}
+		if = {
+			limit = {
+				advisor = diplomat
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_prestige = 5
+			add_country_modifier = { 
+				name = cosmo_affair_diplomat_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_affair_diplomat_I
+			remove_country_modifier = cosmo_affair_diplomat_II
+		}
+		if = {
+			limit = {
+				advisor = navigator
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_navy_tradition = 10			
+			add_country_modifier = { 
+				name = cosmo_navigator_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_navigator_affair_I
+			remove_country_modifier = cosmo_navigator_affair_II
+		}												
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_miladvisor_prostitutes
+		}
+		if = {
+			limit = {
+				advisor = army_reformer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_army_reformer_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_army_reformer_affair_I								
+			remove_country_modifier = cosmo_army_reformer_affair_II
+		}
+		if = {
+			limit = {
+				advisor = army_organiser
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_organiser_affair_III
+				duration = 5475  
+				desc = cosmo_organiser_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_organiser_affair_I							
+			remove_country_modifier = cosmo_organiser_affair_II
+		}
+		if = {
+			limit = {
+				advisor = commandant
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_commandant_affair_III
+				duration = 5475  
+				desc = cosmo_commandant_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_commandant_affair_I							
+			remove_country_modifier = cosmo_commandant_affair_II
+		}
+		if = {
+			limit = {
+				advisor = recruitmaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_recruitmaster_affair_III
+				duration = 5475  
+				desc = cosmo_recruitmaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_recruitmaster_affair_I							
+			remove_country_modifier = cosmo_recruitmaster_affair_II
+		}
+		if = {
+			limit = {
+				advisor = quartermaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_quartermaster_affair_III
+				duration = 5475  
+				desc = cosmo_quartermaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_quartermaster_affair_I							
+			remove_country_modifier = cosmo_quartermaster_affair_II
+		}			
+		if = {
+			limit = {
+				advisor = fortification_expert
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_fortification_expert_affair_III
+				duration = 5475  
+				desc = cosmo_fortification_expert_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_fortification_expert_affair_I
+			remove_country_modifier = cosmo_fortification_expert_affair_II
+		}
+		if = {
+			limit = {
+				advisor = grand_captain
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_grand_captain_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_grand_captain_affair_I								
+			remove_country_modifier = cosmo_grand_captain_affair_II
+		}												
+	}
+	if = {
+		limit = {
+			OR = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_admadvisor_prostitutes
+		}
+		event_target:advisorcountry = {
+			add_trust = {
+				who = ROOT
+				value = 2
+				mutual = yes
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -5			
+			}				
+		if = {
+			limit = {
+				advisor = artist
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_prestige = 5
+			add_country_modifier = { 
+				name = cosmo_affair_artist_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_artist_I									
+			remove_country_modifier = cosmo_affair_artist_II							
+		}
+		if = {
+			limit = {
+				advisor = natural_scientist
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_country_modifier = { 
+				name = cosmo_affair_scientist_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_scientist_I									
+			remove_country_modifier = cosmo_affair_scientist_II
+		}				
+		if = {
+			limit = {
+				advisor = philosopher
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_splendor = 2 
+			add_country_modifier = { 
+				name = cosmo_affair_philosopher_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_affair_philosopher_I									
+			remove_country_modifier = cosmo_affair_philosopher_II
+		}
+		if = {
+			limit = {
+				advisor = treasurer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			if = {
+				limit = {
+					monthly_income = 100
+				}
+				add_years_of_income = 0.025 
+			}
+			if = {
+				limit = {
+					NOT = {
+						monthly_income = 100
+					}
+				}
+				add_years_of_income = 0.05 
+			}
+			add_country_modifier = { 
+				name = cosmo_consort_treasurer_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_consort_treasurer_affair_I									
+			remove_country_modifier = cosmo_consort_treasurer_affair_II						
+		}
+		if = {
+			limit = {
+				advisor = theologian
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+				}			
+			add_country_modifier = { 
+				name = cosmo_theologian_affair_III
+				duration = 9125  
+				
+	
+			}
+			remove_country_modifier = cosmo_theologian_affair_I									
+			remove_country_modifier = cosmo_theologian_affair_II							
+		}
+		if = {
+			limit = {
+				advisor = master_of_mint
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_inflation = -2			
+			add_country_modifier = { 
+				name = cosmo_master_of_mint_affair_III
+				duration = 5475  
+				desc = cosmo_master_of_mint_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_master_of_mint_affair_II									
+			remove_country_modifier = cosmo_master_of_mint_affair_I						
+		}
+		if = {
+			limit = {
+				advisor = inquisitor
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+				}			
+			add_country_modifier = { 
+				name = cosmo_inquisitor_c_affair_III
+				duration = 9125  
+				
+	
+			}
+			remove_country_modifier = cosmo_inquisitor_c_affair_I									
+			remove_country_modifier = cosmo_inquisitor_c_affair_II							
+		}
+		}										 
+	}
+	if = {
+		limit = {
+			OR = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_dipadvisor_prostitutes
+		}
+		event_target:advisorcountry = {
+			add_trust = {
+				who = ROOT
+				value = 2
+				mutual = yes
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -5			
+			}				
+		if = {
+			limit = {
+				advisor = statesman
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			change_government_reform_progress = 25
+			add_country_modifier = { 
+				name = cosmo_statesman_affair_III
+				duration = 5475  
+			}
+			remove_country_modifier = cosmo_statesman_affair_II									
+			remove_country_modifier = cosmo_statesman_affair_I
+		}
+		if = {
+			limit = {
+				advisor = naval_reformer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_navy_tradition = 10			
+			add_country_modifier = { 
+				name = cosmo_naval_reformer_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_naval_reformer_affair_II									
+			remove_country_modifier = cosmo_naval_reformer_affair_I
+		}
+		if = {
+			limit = {
+				advisor = trader
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_mercantilism = 1			
+			add_country_modifier = { 
+				name = cosmo_trader_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_trader_affair_II									
+			remove_country_modifier = cosmo_trader_affair_I
+		}
+		if = {
+			limit = {
+				advisor = spymaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_estate_loyalty = {
+				estate = estate_madams
+				loyalty = 5
+				}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 5
+				}
+			add_country_modifier = { 
+				name = cosmo_spymaster_affair_III
+				duration = 5475  
+				desc = cosmo_spymaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_spymaster_affair_II								
+			remove_country_modifier = cosmo_spymaster_affair_I
+		}	
+		if = {
+			limit = {
+				advisor = colonial_governor
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_splendor = 10			
+			add_country_modifier = { 
+				name = cosmo_affair_colonial_governor_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_affair_colonial_governor_I
+			remove_country_modifier = cosmo_affair_colonial_governor_II
+		}
+		if = {
+			limit = {
+				advisor = diplomat
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_prestige = 5
+			add_country_modifier = { 
+				name = cosmo_affair_diplomat_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_affair_diplomat_I
+			remove_country_modifier = cosmo_affair_diplomat_II
+		}
+		if = {
+			limit = {
+				advisor = navigator
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_navy_tradition = 10			
+			add_country_modifier = { 
+				name = cosmo_navigator_affair_III
+				duration = 5475  
+				
+	
+			}
+			remove_country_modifier = cosmo_navigator_affair_I
+			remove_country_modifier = cosmo_navigator_affair_II
+		}
+		}												
+	}
+	if = {
+		limit = {
+			OR = {
+				has_ruler_flag = subjects_advisor_prostitutes
+			}
+			has_ruler_flag = hire_miladvisor_prostitutes
+		}
+		event_target:advisorcountry = {
+			add_trust = {
+				who = ROOT
+				value = 2
+				mutual = yes
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -5			
+			}				
+		if = {
+			limit = {
+				advisor = army_reformer
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_army_reformer_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_army_reformer_affair_I								
+			remove_country_modifier = cosmo_army_reformer_affair_II
+		}
+		if = {
+			limit = {
+				advisor = army_organiser
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_organiser_affair_III
+				duration = 5475  
+				desc = cosmo_organiser_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_organiser_affair_I							
+			remove_country_modifier = cosmo_organiser_affair_II
+		}
+		if = {
+			limit = {
+				advisor = commandant
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_commandant_affair_III
+				duration = 5475  
+				desc = cosmo_commandant_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_commandant_affair_I							
+			remove_country_modifier = cosmo_commandant_affair_II
+		}
+		if = {
+			limit = {
+				advisor = recruitmaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_recruitmaster_affair_III
+				duration = 5475  
+				desc = cosmo_recruitmaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_recruitmaster_affair_I							
+			remove_country_modifier = cosmo_recruitmaster_affair_II
+		}
+		if = {
+			limit = {
+				advisor = quartermaster
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_quartermaster_affair_III
+				duration = 5475  
+				desc = cosmo_quartermaster_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_quartermaster_affair_I							
+			remove_country_modifier = cosmo_quartermaster_affair_II
+		}			
+		if = {
+			limit = {
+				advisor = fortification_expert
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_fortification_expert_affair_III
+				duration = 5475  
+				desc = cosmo_fortification_expert_affair_III_DESC
+	
+			}
+			remove_country_modifier = cosmo_fortification_expert_affair_I
+			remove_country_modifier = cosmo_fortification_expert_affair_II
+		}
+		if = {
+			limit = {
+				advisor = grand_captain
+			}
+			custom_tooltip = cosmo_adopted_reforms_tt
+			add_army_professionalism = 0.05
+			add_country_modifier = { 
+				name = cosmo_grand_captain_affair_III
+				duration = 9125  
+	
+			}
+			remove_country_modifier = cosmo_grand_captain_affair_I								
+			remove_country_modifier = cosmo_grand_captain_affair_II
+		}
+		}												
+	}
+	if = {
+		limit = {
+			has_ruler_flag = hire_burghers_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_burghers
+			desc = EST_ENTERTAIN_BURGHERS
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_brahmins_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_brahmins
+			desc = EST_ENTERTAIN_BRAHMINS
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_maratha_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_maratha
+			desc = EST_ENTERTAIN_MARATHA
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_dhimmi_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_dhimmi
+			desc = EST_ENTERTAIN_DHIMMI
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}		
+	if = {
+		limit = {
+			has_ruler_flag = hire_vaisyas_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_vaisyas
+			desc = EST_ENTERTAIN_VAISYAS
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}		
+	if = {
+		limit = {
+			has_ruler_flag = hire_cossacks_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_cossacks
+			desc = EST_ENTERTAIN_COSSACKS
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_nomadic_tribes_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_nomadic_tribes
+			desc = EST_ENTERTAIN_NOMADIC_TRIBES
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_jains_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_jains
+			desc = EST_ENTERTAIN_JAINS
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_ruler_flag = hire_rajput_prostitutes
+		}
+		custom_tooltip = entertain_estate_loyalty_active_tt 		
+		add_estate_loyalty_modifier = {
+			estate = estate_rajput
+			desc = EST_ENTERTAIN_RAJPUT
+			loyalty = 10
+			duration = 1095
+		}		
+		1988 = {
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					hidden = yes
+					}				
+		} 
+		}
+	if = {
+		limit = {
+			has_country_flag = entertaining_merchant_country
+		}
+		if = {
+			limit = {
+				has_ruler_flag = entertain_promote_trade
+			}
+			random_country = {
+				limit = {
+					has_country_flag = entertain_merchant_country
+				}
+				random_province = {
+					limit = {
+						has_province_flag = entertain_merchants_here
+					}
+					add_trade_modifier = {
+						who = PREV
+						duration = 7300
+						power = 10
+						key = COSMO_LUCRATIVE_CONTRACT
+					}					
+				}
+			}
+		every_province = {
+			limit = {
+					has_province_flag = cosmo_this_trade_node
+			}
+				add_province_modifier = { 
+					name = cosmo_lucrative_trade
+					duration =  365
+					}			
+		}
+		hidden_effect = {
+		every_province = {
+			limit = {
+					has_trade_modifier = {
+						who = ROOT
+						key = COSMO_ENTERTAINING
+					}
+			}
+				remove_trade_modifier = {
+					who = ROOT
+					key = COSMO_ENTERTAINING
+				}			
+		}
+		}						
+		}
+		if = {
+			limit = {
+				has_ruler_flag = entertain_trade_advantage
+			}
+			random_country = {
+				limit = {
+					has_country_flag = entertain_merchant_country
+				}
+				add_country_modifier = {
+					name = cosmo_merchant_target
+					duration = 3650  
+					hidden = yes	
+				}
+				random_province = {
+					limit = {
+						has_province_flag = entertain_merchants_here
+					}
+					add_trade_modifier = {
+						who = PREV
+						duration = 7300
+						power = 5
+						key = COSMO_MERCHANT_ENTERTAINED
+					}
+					if = {
+						limit = {
+							ROOT = {
+								has_country_flag = entertain_merchant_high
+							}
+						}
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 20
+							key = COSMO_MERCHANT_ENTERTAINED
+						}						
+					}
+					if = {
+						limit = {
+							ROOT = {
+								has_country_flag = entertain_merchant_med
+							}
+						}
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 15
+							key = COSMO_MERCHANT_ENTERTAINED
+						}						
+					}
+					if = {
+						limit = {
+							ROOT = {
+								has_country_flag = entertain_merchant_small
+							}
+						}
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 10
+							key = COSMO_MERCHANT_ENTERTAINED
+						}						
+					}
+					if = {
+						limit = {
+							ROOT = {
+								has_country_flag = entertain_merchant_tiny
+							}
+						}
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 5
+							key = COSMO_MERCHANT_ENTERTAINED
+						}						
+					}																									
+				}
+			}
+			hidden_effect = {
+			clr_country_flag = entertain_merchant_tiny
+			clr_country_flag = entertain_merchant_small
+			clr_country_flag = entertain_merchant_med
+			clr_country_flag = entertain_merchant_high
+			every_province = {
+				limit = {
+						has_trade_modifier = {
+							who = ROOT
+							key = COSMO_ENTERTAINING
+						}
+				}
+					remove_trade_modifier = {
+						who = ROOT
+						key = COSMO_ENTERTAINING
+					}			
+			}
+			}			
+		}		
+		custom_tooltip = entertain_merchant_dipaction_active_tt 
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = cosmo_entertaining_merchants_repeating
+				}
+			}
+			set_country_flag = cosmo_entertaining_merchants_repeating
+			country_event = {
+				id = cosmo_psort_events.61
+				days = 90
+				random = 90
+			}			
+		}
+		if = {
+			limit = {
+				has_country_flag = cosmo_entertaining_merchants_repeating
+			}
+			random_province = {
+			limit = {
+				has_province_flag = entertain_merchants_here
+				country_or_vassal_holds = ROOT 	
+			}
+			set_province_flag = cosmo_host_merchant_province
+			}
+			country_event = {
+				id = cosmo_psort_events.61
+				days = 95
+				random = 90
+			}			
+		}				
+		random_province = {
+			limit = {
+				has_province_flag = entertain_merchants_here
+				country_or_vassal_holds = ROOT 	
+			
+			}
+				add_province_modifier = { 
+					name = cosmo_entertaining_merchants
+					duration =  5475
+					}
+				add_province_modifier = { 
+					name = cosmo_has_prostitute_present
+					duration =  1095
+					hidden = yes
+					}									
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1095
+					}				
+		}								
+		every_province = {
+			limit = {
+				has_province_flag = entertain_merchants_here
+			}
+			clr_province_flag = entertain_merchants_here
+		}
+		every_province = {
+			limit = {
+				has_province_flag = cosmo_this_trade_node
+			}
+			clr_province_flag = cosmo_this_trade_node
+		}		
+		every_known_country = {
+			limit = {
+				has_country_flag = entertain_merchant_country
+			}
+			clr_country_flag = entertain_merchant_country
+		}
+		clr_ruler_flag = entertain_trade_advantage
+		clr_ruler_flag = entertain_promote_trade
+		}						
+	if = {
+		limit = {
+			has_ruler_flag = inspire_colonists_prostitutes
+		}
+			event_target:colonyprovince = {
+				if = {
+					limit = {
+						has_province_modifier = cosmo_inspired_colonists
+					}
+					add_colonysize = 100
+				}
+				add_province_modifier = { 
+					name = cosmo_inspired_colonists
+					duration = 1825  
+				}				
+				extend_province_modifier = { 
+					name = cosmo_inspired_colonists
+					duration = 1828  
+				}
+			}
+			if = {
+				limit = {
+					event_target:colonyprovince = {
+						has_province_modifier = cosmo_inspired_colonists
+						NOT = {
+							has_province_modifier = cosmo_no_culture_change
+							culture = event_target:prostituteprovince
+						}
+					}
+				}
+				event_target:colonyprovince = {
+					set_province_flag = colonist_import				
+				}				
+				event_target:prostituteprovince = {
+					set_province_flag = colonist_exporter
+				}				
+				set_country_flag = cosmo_transfer_culture
+			}
+			event_target:prostituteprovince = {
+				add_province_modifier = { 
+					name = cosmo_has_prostitute_present
+					duration =  1825
+					hidden = yes
+					}				
+				add_province_modifier = { 
+					name = $MODIFIER$
+					duration =  1825
+				}
+			}			
+			every_province = {
+				limit = {
+					has_province_flag = cosmo_colonist_source
+				}
+				clr_province_flag = cosmo_colonist_source
+			}
+			every_province = {
+				limit = {
+					has_province_flag = colonist_here
+				}
+				clr_province_flag = colonist_here
+			}									
+		}																		
+			clr_country_flag = entertaining_merchant_country
+		every_province = {
+			limit = {
+				has_province_flag = entertain_here_now
+			}
+			clr_province_flag = entertain_here_now
+		}
+		every_country = {
+			limit = {
+				has_country_flag = influencing_advisor_prostitute
+			}
+			clr_country_flag = influencing_advisor_prostitute
+		}			
+			hidden_effect = {
+			remove_country_modifier = recently_visited_brothel
+			}			
+			clr_ruler_flag = no_entertain_merchant_country	
+			clr_ruler_flag = subjects_advisor_prostitutes
+			clr_country_flag = establish_prostitutes_brothel
+			clr_country_flag = establish_prostitutes_brothel_ducat
+			clr_country_flag = establish_prostitutes_brothel_monarch
+			clr_country_flag = japanese_madams_established
+			clr_country_flag = west_african_madams_established
+			clr_country_flag = central_african_madams_established
+			clr_country_flag = east_african_madams_established
+			clr_country_flag = chinese_madams_established
+			clr_country_flag = malay_madams_established
+			clr_country_flag = central_european_madams_established
+			clr_country_flag = french_madams_established
+			clr_country_flag = iberian_madams_established
+			clr_country_flag = italian_madams_established
+			clr_country_flag = british_madams_established
+			clr_country_flag = russian_madams_established
+			clr_country_flag = fake_south_american_madams_established
+			clr_country_flag = fake_central_american_madams_established
+			clr_country_flag = fake_north_american_madams_established
+			clr_country_flag = south_asian_madams_established
+			clr_country_flag = thai_madams_established
+			clr_country_flag = korean_madams_established
+			clr_country_flag = mena_madams_established
+			clr_country_flag = persian_madams_established
+			clr_country_flag = turkish_madams_established		
+			clr_ruler_flag = hire_admadvisor_prostitutes
+			clr_ruler_flag = hire_dipadvisor_prostitutes
+			clr_ruler_flag = hire_miladvisor_prostitutes			
+			clr_ruler_flag = inspire_colonists_prostitutes	
+			clr_ruler_flag = cosmo_colony_carribeans_region	
+			clr_ruler_flag = cosmo_colony_south_america_superregion	
+			clr_ruler_flag = cosmo_colony_mexico_region	
+			clr_ruler_flag = cosmo_colony_rio_grande_region	
+			clr_ruler_flag = cosmo_colony_hudson_bay_region	
+			clr_ruler_flag = cosmo_colony_mississippi_region	
+			clr_ruler_flag = cosmo_colony_great_plains_region	
+			clr_ruler_flag = cosmo_colony_canada_region	
+			clr_ruler_flag = cosmo_colony_cascadia_region	
+			clr_ruler_flag = cosmo_colony_carribeans_region_menus	
+			clr_ruler_flag = cosmo_colony_south_america_superregion_menus	
+			clr_ruler_flag = cosmo_colony_mexico_region_menus	
+			clr_ruler_flag = cosmo_colony_rio_grande_region_menus	
+			clr_ruler_flag = cosmo_colony_hudson_bay_region_menus	
+			clr_ruler_flag = cosmo_colony_mississippi_region_menus	
+			clr_ruler_flag = cosmo_colony_great_plains_region_menus	
+			clr_ruler_flag = cosmo_colony_canada_region_menus	
+			clr_ruler_flag = cosmo_colony_cascadia_region_menus				
+			clr_ruler_flag = cosmo_colony_east_indies_superregion_menus				
+			clr_ruler_flag = cosmo_colony_oceania_superregion_menus				
+			clr_ruler_flag = cosmo_colony_east_indies_superregion				
+			clr_ruler_flag = cosmo_colony_oceania_superregion
+			clr_country_flag = convert_anathanism_prostitutes	
+			clr_ruler_flag = entertain_company_prostitutes	
+			clr_ruler_flag = hire_noble_prostitutes	
+			clr_ruler_flag = hire_burghers_prostitutes	
+			clr_ruler_flag = hire_clergy_prostitutes
+			clr_ruler_flag = hire_brahmins_prostitutes
+			clr_ruler_flag = hire_maratha_prostitutes
+			clr_ruler_flag = hire_dhimmi_prostitutes
+			clr_ruler_flag = hire_vaisyas_prostitutes
+			clr_ruler_flag = hire_cossacks_prostitutes
+			clr_ruler_flag = hire_nomadic_tribes_prostitutes
+			clr_ruler_flag = hire_jains_prostitutes
+			clr_ruler_flag = hire_rajput_prostitutes
+			clr_ruler_flag = daimyo_introduction_prostitutes				
+			clr_country_flag = entertain_troops_prostitutes				
+			clr_country_flag = entertain_troops_prostitutes_current				
+			clr_country_flag = entertain_troops_prostitutes_new				
+			clr_country_flag = entertain_merchants_prostitutes				
+			clr_country_flag = entertain_sailors_prostitutes
+			clr_country_flag = entertain_sailors_prostitutes_current				
+			clr_country_flag = entertain_sailors_prostitutes_new			
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}							
+}
+
+concubine_visit_effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = cosmo_marry_concubines
+				}
+			}
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					ruler_palace_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_palace_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_palace_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_palace_adm
+							}
+							if = {
+								limit = {
+									capital_scope = {
+										NOT = {
+											base_tax = 25
+										}
+									}
+								}
+								capital_scope = {
+									add_scaled_local_adm_power = 2 			
+								}								
+							}
+							if = {
+								limit = {
+									capital_scope = {
+										OR = {
+											base_tax = 25
+										}
+									}
+								}
+								capital_scope = {
+									ROOT = {
+										add_adm_power = 50
+									}		
+								}								
+							}														
+						}				
+					}
+					ruler_palace_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_palace_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_palace_dip
+								}
+							if = {
+								limit = {
+									capital_scope = {
+										NOT = {
+											base_production = 25
+										}
+									}
+								}
+								capital_scope = {
+									add_scaled_local_dip_power = 2 			
+								}								
+							}
+							if = {
+								limit = {
+									capital_scope = {
+										OR = {
+											base_production = 25
+										}
+									}
+								}
+								capital_scope = {
+									ROOT = {
+										add_dip_power = 50
+									}		
+								}								
+							}
+							}				
+						}
+					ruler_palace_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_palace_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_palace_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_palace_mil
+								}
+							if = {
+								limit = {
+									capital_scope = {
+										NOT = {
+											base_manpower = 25
+										}
+									}
+								}
+								capital_scope = {
+									add_scaled_local_mil_power = 2 			
+								}								
+							}
+							if = {
+								limit = {
+									capital_scope = {
+										OR = {
+											base_manpower = 25
+										}
+									}
+								}
+								capital_scope = {
+									ROOT = {
+										add_mil_power = 50
+									}		
+								}								
+							}								
+							}				
+						}
+					ruler_visit_home_province = {
+						event_target:consortprovince = {
+							add_province_modifier = { 
+								name = polyestate_royal_visit
+								duration = 1825  
+							}				
+						}
+					if = {
+						limit = {
+							has_country_flag = cosmo_privilege_agendas
+						}
+						if = {
+							limit = {
+								has_estate = estate_nobleaffairs 
+							}
+							start_estate_agenda = estate_nobleaffairs			
+						}
+						if = {
+							limit = {
+								has_estate = estate_ooku 
+							}
+							start_estate_agenda = estate_ooku			
+						}
+						if = {
+							limit = {
+								has_estate = estate_wives 
+							}
+							start_estate_agenda = estate_wives			
+						}
+						if = {
+							limit = {
+								has_estate = estate_harem 
+							}
+							start_estate_agenda = estate_harem			
+						}
+						if = {
+							limit = {
+								has_estate = estate_forbiddenpalace 
+							}
+							start_estate_agenda = estate_forbiddenpalace			
+						}
+						if = {
+							limit = {
+								event_target:consortprovince = {
+									NOT = {
+										has_province_modifier = cosmo_favorite_1
+										has_province_modifier = cosmo_favorite_2
+										has_province_modifier = cosmo_favorite_3
+									}													
+								}
+							}
+							add_estate_influence_modifier = {
+								estate = estate_ooku
+								desc = EST_VAL_NEW_AGENDA
+								influence = -15
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_forbiddenpalace
+								desc = EST_VAL_NEW_AGENDA
+								influence = -15
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_harem
+								desc = EST_VAL_NEW_AGENDA
+								influence = -15
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_wives
+								desc = EST_VAL_NEW_AGENDA
+								influence = -15
+								duration = 1825
+							}	
+							add_estate_influence_modifier = {
+								estate = estate_nobleaffairs
+								desc = EST_VAL_NEW_AGENDA
+								influence = -15
+								duration = 1825
+							}												
+						}
+						if = {
+							limit = {
+								event_target:consortprovince = {
+									OR = {
+										has_province_modifier = cosmo_favorite_1
+										has_province_modifier = cosmo_favorite_2
+										has_province_modifier = cosmo_favorite_3
+									}
+								}
+							}
+							add_estate_influence_modifier = {
+								estate = estate_ooku
+								desc = EST_VAL_NEW_AGENDA
+								influence = -30
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_forbiddenpalace
+								desc = EST_VAL_NEW_AGENDA
+								influence = -30
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_harem
+								desc = EST_VAL_NEW_AGENDA
+								influence = -30
+								duration = 1825
+							}
+							add_estate_influence_modifier = {
+								estate = estate_wives
+								desc = EST_VAL_NEW_AGENDA
+								influence = -30
+								duration = 1825
+							}	
+							add_estate_influence_modifier = {
+								estate = estate_nobleaffairs
+								desc = EST_VAL_NEW_AGENDA
+								influence = -30
+								duration = 1825
+							}												
+						}						
+						
+						clear_estate_agenda_cache = ROOT
+						clr_country_flag = estate_nobleaffairs_present_agenda
+						clr_country_flag = estate_ooku_present_agenda
+						clr_country_flag = estate_wives_present_agenda
+						clr_country_flag = estate_harem_present_agenda
+						clr_country_flag = estate_forbiddenpalace_present_agenda											
+					}
+						
+						every_province = {
+							limit = {
+								has_province_flag = royal_visit_here
+							}
+							clr_province_flag = royal_visit_here
+							remove_building = royal_visit
+						}												
+						}																
+				}
+				if = {
+					limit = {
+						has_ruler_flag = set_cosmo_favorite_1
+					}
+						event_target:consortprovince = {
+							custom_tooltip = repeated_consort_events_tt
+							add_province_modifier = { 
+								name = cosmo_favorite_1
+								duration = -1  
+								hidden = yes
+							}
+							add_province_modifier = { 
+								name = cosmo_favorite_repeat
+								duration = 240 
+								hidden = yes
+							}											
+						}
+				}
+				if = {
+					limit = {
+						has_ruler_flag = set_cosmo_favorite_2
+					}
+						event_target:consortprovince = {
+							custom_tooltip = repeated_consort_events_tt
+							add_province_modifier = { 
+								name = cosmo_favorite_2
+								duration = -1  
+								hidden = yes
+							}
+							add_province_modifier = { 
+								name = cosmo_favorite_repeat
+								duration = 240 
+								hidden = yes
+							}											
+						}
+				}
+				if = {
+					limit = {
+						has_ruler_flag = set_cosmo_favorite_3
+					}
+						event_target:consortprovince = {
+							custom_tooltip = repeated_consort_events_tt
+							add_province_modifier = { 
+								name = cosmo_favorite_3
+								duration = -1  
+								hidden = yes
+							}
+							add_province_modifier = { 
+								name = cosmo_favorite_repeat
+								duration = 240 
+								hidden = yes
+							}											
+						}
+				}
+				if = {
+					limit = {
+						has_ruler_flag = set_cosmo_no_favorites
+					}
+						event_target:consortprovince = {
+							hidden_effect = {
+							remove_province_modifier = cosmo_random_concubine_province											
+							}
+						}							
+				}												
+		}
+		if = {
+			limit = {
+				has_ruler_flag = cosmo_marry_concubines
+			}
+			event_target:consortprovince = {
+				set_province_flag = future_consort_here				
+			}
+			clr_ruler_flag = cosmo_marry_concubines	
+			country_event = {
+			id = cosmo_csort_events.5
+			}					
+		}								
+			clr_ruler_flag = ruler_visit_concubines	
+			hidden_effect = {
+			remove_country_modifier = recently_visited_harem
+			}			
+			clr_ruler_flag = ruler_visit_home_province	
+			clr_country_flag = cosmo_privilege_agendas
+			clr_country_flag = accept_culture_consort
+			clr_country_flag = request_advisor_consort
+			clr_ruler_flag = ruler_palace_adm	
+			clr_ruler_flag = ruler_palace_dip	
+			clr_ruler_flag = set_cosmo_favorite_1
+			clr_ruler_flag = set_cosmo_favorite_2
+			clr_ruler_flag = set_cosmo_favorite_3
+			clr_ruler_flag = set_cosmo_no_favorites
+			clr_ruler_flag = ruler_palace_mil
+			clr_ruler_flag = ruler_mandate_concubines				
+			clr_ruler_flag = cosmo_marry_concubines	
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}						
+}
+
+
+trader_wives_effect = {
+				FROM = {
+				trigger_switch = {
+					on_trigger = has_ruler_flag
+					cosmo_build_ties = {
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 1
+										native_size = 1
+									}
+									NOT = {
+										base_production = 2
+										native_size = 10
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 10 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 2
+										native_size = 10
+									}
+									NOT = {
+										base_production = 3
+										native_size = 15
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 20 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 3
+										native_size = 15
+									}
+									NOT = {
+										base_production = 4
+										native_size = 20
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 30 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 4
+										native_size = 20
+									}
+									NOT = {
+										base_production = 5
+										native_size = 25
+									}									
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 40 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}						
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 5
+										native_size = 25
+									}
+									NOT = {
+										base_production = 6
+										native_size = 30
+									}									
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 50 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 6
+										native_size = 30
+									}
+									NOT = {
+										base_production = 7
+										native_size = 35
+									}									
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 60 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 7
+										native_size = 35
+									}
+									NOT = {
+										base_production = 8
+										native_size = 40
+									}									
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 70
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 8
+										native_size = 40
+									}
+									NOT = {
+										base_production = 9
+										native_size = 45
+									}																		
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 80 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = south_america
+									continent = north_america
+									}
+									OR = {
+										base_production = 9
+										native_size = 45
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 100 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}																																																
+					#africa
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 1
+										native_size = 1
+									}
+									NOT = {
+										base_production = 2
+										native_size = 20
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 10 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 2
+										native_size = 20
+									}
+									NOT = {
+										base_production = 3
+										native_size = 30
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 20 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 3
+										native_size = 30
+									}
+									NOT = {
+										base_production = 4
+										native_size = 40
+									}
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 30 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 4
+										native_size = 40
+									}
+									NOT = {
+										base_production = 5
+										native_size = 50
+									}									
+								}
+							}
+							ROOT = { 
+							custom_tooltip = rootroot_country_tt  add_dip_power = 40 }
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 5
+										native_size = 50
+									}
+									NOT = {
+										base_production = 6
+										native_size = 60
+									}									
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 50
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}	
+						}					
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 6
+										native_size = 60
+									}
+									NOT = {
+										base_production = 7
+										native_size = 70
+									}									
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 60
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}	
+						}					
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 7
+										native_size = 70
+									}
+									NOT = {
+										base_production = 8
+										native_size = 80
+									}									
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 70
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}
+						}						
+						}							
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 8
+										native_size = 80
+									}
+									NOT = {
+										base_production = 9
+										native_size = 90
+									}																		
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 80
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}
+							}	
+						}
+						if = {
+							limit = {
+								event_target:traderprovince = {
+								OR = {
+									continent = africa
+									}
+									OR = {
+										base_production = 9
+										native_size = 90
+									}
+								}
+							}
+							ROOT = {
+							custom_tooltip = rootroot_country_tt	
+							add_dip_power = 90
+						event_target:traderprovince = {
+							extend_province_modifier = {
+								name = cosmo_trader_wife
+								duration = 10950 
+							}						
+						}
+							}
+						}																
+					}
+					cosmo_establish_trade = {
+					if = {
+						limit = {
+						any_province = {
+							has_province_flag = traderwife_here
+							culture = FROM
+						OR = {
+							is_empty = yes
+							is_colony = yes
+						}	
+						}	
+						}
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								OR = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							add_base_production = 1
+							add_trade_modifier = {
+								who = ROOT
+								duration = 9125
+								power = 10
+								key = COSMO_TRADER_WIFE
+							}
+						}
+						FROM = {
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								OR = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							add_trade_modifier = {
+								who = PREV
+								duration = 9125
+								power = 5
+								key = COSMO_TRADER_INTRO
+							}
+						}
+						}												
+						}
+					if = {
+						limit = {
+						any_province = {
+									has_province_flag = traderwife_here
+									culture = FROM
+						NOT = {
+							is_empty = yes
+							is_colony = yes
+						}	
+						}	
+						}
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								NOT = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							add_base_production = 1
+							add_trade_modifier = {
+								who = ROOT
+								duration = 9125
+								power = 10
+								key = COSMO_TRADER_WIFE
+							}
+						}
+						FROM = {
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								NOT = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							add_trade_modifier = {
+								who = PREV
+								duration = 9125
+								power = 5
+								key = COSMO_TRADER_INTRO
+							}
+						}
+						}						
+						}										
+					}
+					cosmo_sell_arms = {
+					if = {
+						limit = {
+						any_province = {
+							has_province_flag = traderwife_here
+							culture = FROM
+						OR = {
+							is_empty = yes
+							is_colony = yes
+						}	
+						}	
+						}
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								OR = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							change_native_ferocity = 5 
+						}												
+						}
+					if = {
+						limit = {
+						any_province = {
+									has_province_flag = traderwife_here
+									culture = FROM
+						NOT = {
+							is_empty = yes
+							is_colony = yes
+						}	
+						}	
+						}
+						random_province = {
+							limit = {
+									has_province_flag = traderwife_here
+									culture = FROM
+								NOT = {
+									is_empty = yes
+									is_colony = yes
+								}								
+							}
+							add_base_manpower = 1
+							add_trade_modifier = {
+								who = ROOT
+								duration = 9125
+								power = 5
+								key = COSMO_TRADER_WIFE
+							}
+						}
+						FROM = {
+							add_country_modifier = { 
+									name = cosmo_arms_sold
+									duration = 730  
+						
+								}
+							add_mil_power = 100							
+						}						
+						}
+					custom_tooltip = cosmo_empty_space_tt
+					custom_tooltip = rootroot_country_tt	
+					if = {
+						limit = {
+						event_target:traderprovince = {
+							OR = {
+								AND = {
+									OR = {
+										continent = south_america
+										continent = north_america
+									}
+									OR = {
+									development = 8
+									native_size = 20
+									}
+								}
+								AND = {
+									OR = {
+										continent = africa
+									}
+									OR = {
+									development = 9
+									native_size = 80
+									}
+								}						
+							}
+						}
+						}
+						ROOT = {
+							add_treasury = 150 						
+						}
+					}
+					if = {
+						limit = {
+						event_target:traderprovince = {
+							OR = {
+								AND = {
+									OR = {
+										continent = south_america
+										continent = north_america
+									}
+									OR = {
+									development = 5
+									native_size = 10
+									}
+									NOT = {
+									development = 8
+									native_size = 20
+									}							
+								}
+								AND = {
+									OR = {
+										continent = africa
+									}
+									OR = {
+									development = 5
+									native_size = 40
+									}
+									NOT = {
+									development = 9
+									native_size = 80								
+									}
+								}						
+							}
+						}
+						}
+						ROOT = {
+							add_treasury = 100 						
+						}						
+					}
+					if = {
+						limit = {
+						event_target:traderprovince = {
+							OR = {
+								AND = {
+									OR = {
+										continent = south_america
+										continent = north_america
+									}
+									NOT = {
+									development = 5
+									native_size = 10
+									}							
+								}
+								AND = {
+									OR = {
+										continent = africa
+									}
+									NOT = {
+									development = 5
+									native_size = 40								
+									}
+								}						
+							}
+						}
+						}
+						ROOT = {
+							add_treasury = 50 						
+						}						
+					}																
+					}
+					cosmo_buy_slaves = {
+						if = {
+							limit = {
+						NOT = {		
+						any_province = {
+							country_or_vassal_holds = ROOT
+						OR = {
+							superregion = africa_superregion
+							superregion = southern_africa_superregion
+						}		
+							has_building = cosmo_slave_market
+						NOT = {				
+							has_province_flag = cosmo_barbary_slave_market
+						}			
+						NOT = {	
+							has_province_modifier = cosmo_west_african_slaves_captured	
+							}				
+						}
+							}
+						}
+						random_province = {
+						limit = {
+							country_or_vassal_holds = ROOT 
+							has_building = cosmo_slave_market
+						NOT = {	
+							has_province_modifier = cosmo_west_african_slaves_captured	
+							}				
+						}
+						add_province_modifier = { 
+								name = cosmo_west_african_slaves_captured
+								duration = 5475
+								desc = cosmo_west_african_slaves_captured_DESC
+					
+						}
+							}
+						ROOT = {
+							add_adm_power = -25
+						}	
+						}
+						if = {
+							limit = {
+						any_province = {
+							country_or_vassal_holds = ROOT	
+						OR = {
+							superregion = africa_superregion
+							superregion = southern_africa_superregion
+						}
+							has_building = cosmo_slave_market
+						NOT = {				
+							has_province_flag = cosmo_barbary_slave_market
+						}			
+						NOT = {	
+							has_province_modifier = cosmo_west_african_slaves_captured	
+							}				
+						}
+							}
+						random_province = {
+						limit = {
+							country_or_vassal_holds = ROOT 
+						OR = {
+							superregion = africa_superregion
+							superregion = southern_africa_superregion
+						}
+							has_building = cosmo_slave_market
+						NOT = {	
+							has_province_modifier = cosmo_west_african_slaves_captured	
+							}				
+						}
+						add_province_modifier = { 
+								name = cosmo_west_african_slaves_captured
+								duration = 5475
+								desc = cosmo_west_african_slaves_captured_DESC
+					
+						}
+							}
+						}																															
+				}
+				}
+				}
+
+				every_province = {
+					limit = {
+						has_province_flag = traderwife_here
+						culture = FROM
+					}
+					clr_province_flag = traderwife_here
+				}
+			FROM = {
+				set_country_flag = cosmo_traderwife_repeat
+				clr_ruler_flag = traderwife_possible	
+				clr_ruler_flag = cosmo_build_ties	
+				clr_ruler_flag = cosmo_establish_trade	
+				clr_ruler_flag = cosmo_sell_arms
+				clr_ruler_flag = cosmo_buy_slaves
+			}
+				set_country_flag = cosmo_traderwife_relaunch
+				clr_ruler_flag = traderwife_possible	
+				clr_ruler_flag = cosmo_build_ties	
+				clr_ruler_flag = cosmo_establish_trade	
+				clr_ruler_flag = cosmo_sell_arms
+				clr_ruler_flag = cosmo_buy_slaves	
+				hidden_effect = {
+					country_event = {
+						id = cosmo_africantrader_events.21
+						}					
+				}				
+	custom_tooltip = cosmo_degeneracy_100
+	hidden_effect = {
+		change_variable = {
+			which = cosmoDegeneracyVariable
+			value = 100
+			}			
+	}
+}
+
+clear_madams_effect = {
+	clr_country_flag = entertaining_merchant_country
+	hidden_effect = {
+	remove_country_modifier = recently_visited_brothel
+	}	
+	clr_ruler_flag = no_entertain_merchant_country	
+	clr_ruler_flag = subjects_advisor_prostitutes
+	clr_ruler_flag = hire_admadvisor_prostitutes
+	clr_ruler_flag = hire_dipadvisor_prostitutes
+	clr_ruler_flag = hire_miladvisor_prostitutes
+	clr_country_flag = entertaining_merchant_country	
+	clr_ruler_flag = no_entertain_merchant_country	
+	clr_ruler_flag = inspire_colonists_prostitutes	
+	clr_ruler_flag = cosmo_colony_carribeans_region	
+	clr_ruler_flag = cosmo_colony_south_america_superregion	
+	clr_ruler_flag = cosmo_colony_mexico_region	
+	clr_ruler_flag = cosmo_colony_rio_grande_region	
+	clr_ruler_flag = cosmo_colony_hudson_bay_region	
+	clr_ruler_flag = cosmo_colony_mississippi_region	
+	clr_ruler_flag = cosmo_colony_great_plains_region	
+	clr_ruler_flag = cosmo_colony_canada_region	
+	clr_ruler_flag = cosmo_colony_cascadia_region	
+	clr_country_flag = convert_anathanism_prostitutes	
+	clr_ruler_flag = entertain_company_prostitutes	
+	clr_ruler_flag = hire_noble_prostitutes	
+	clr_ruler_flag = hire_burghers_prostitutes	
+	clr_ruler_flag = hire_clergy_prostitutes
+	clr_ruler_flag = hire_brahmins_prostitutes
+	clr_ruler_flag = hire_maratha_prostitutes
+	clr_ruler_flag = hire_dhimmi_prostitutes
+	clr_ruler_flag = hire_vaisyas_prostitutes
+	clr_ruler_flag = hire_cossacks_prostitutes
+	clr_ruler_flag = hire_nomadic_tribes_prostitutes
+	clr_ruler_flag = hire_jains_prostitutes
+	clr_ruler_flag = hire_rajput_prostitutes	
+	clr_ruler_flag = daimyo_introduction_prostitutes				
+	clr_country_flag = entertain_troops_prostitutes				
+	clr_country_flag = entertain_troops_prostitutes_current				
+	clr_country_flag = entertain_troops_prostitutes_new				
+	clr_country_flag = entertain_merchants_prostitutes				
+	clr_country_flag = entertain_sailors_prostitutes	
+	clr_country_flag = entertain_sailors_prostitutes_current				
+	clr_country_flag = entertain_sailors_prostitutes_new		
+	clr_ruler_flag = hire_ruler_prostitutes	
+	clr_ruler_flag = ruler_prostitutes_adm	
+	clr_ruler_flag = ruler_prostitutes_dip	
+	clr_ruler_flag = ruler_prostitutes_mil	
+	clr_ruler_flag = ruler_prostitutes_unique_a	
+	clr_ruler_flag = ruler_prostitutes_unique_b	
+	clr_ruler_flag = ruler_prostitutes_unique_c	
+	clr_ruler_flag = ruler_prostitutes_monarch_a	
+	clr_ruler_flag = ruler_prostitutes_monarch_b	
+	clr_ruler_flag = ruler_prostitutes_monarch_c
+	clr_country_flag = establish_prostitutes_brothel
+	clr_country_flag = establish_prostitutes_brothel_ducat
+	clr_country_flag = establish_prostitutes_brothel_monarch
+	clr_country_flag = japanese_madams_established
+	clr_country_flag = west_african_madams_established
+	clr_country_flag = central_african_madams_established
+	clr_country_flag = east_african_madams_established
+	clr_country_flag = chinese_madams_established
+	clr_country_flag = malay_madams_established
+	clr_country_flag = central_european_madams_established
+	clr_country_flag = french_madams_established
+	clr_country_flag = iberian_madams_established
+	clr_country_flag = italian_madams_established
+	clr_country_flag = british_madams_established
+	clr_country_flag = russian_madams_established
+	clr_country_flag = fake_south_american_madams_established
+	clr_country_flag = fake_central_american_madams_established
+	clr_country_flag = fake_north_american_madams_established
+	clr_country_flag = south_asian_madams_established
+	clr_country_flag = thai_madams_established
+	clr_country_flag = korean_madams_established
+	clr_country_flag = mena_madams_established
+	clr_country_flag = persian_madams_established
+	clr_country_flag = turkish_madams_established	
+	clr_ruler_flag = hire_diplomat_prostitutes		
+	clr_ruler_flag = entertain_dignitary_send_prostitute			
+	clr_ruler_flag = entertain_dignitary_dip_advisor			
+	clr_ruler_flag = entertain_dignitary_adm_advisor			
+	clr_ruler_flag = entertain_dignitary_mil_advisor			
+	clr_ruler_flag = entertain_dignitary_heir			
+	clr_ruler_flag = this_country_dignitary			
+	clr_ruler_flag = entertain_dignitary_increase_opinion
+	clr_ruler_flag = entertain_dignitary_curry_favors
+	clr_ruler_flag = entertain_dignitary_invitetoempire
+	clr_ruler_flag = entertain_dignitary_requestinvitetoempire
+	clr_ruler_flag = entertain_dignitary_trust
+	clr_ruler_flag = entertain_dignitary_libertydesire
+	clr_ruler_flag = entertain_dignitary_tariffs
+	clr_ruler_flag = entertain_dignitary_requestmercs
+
+			every_province = {
+				limit = {
+					has_province_flag = train_spy_attempt_cardinal
+				}
+					clr_province_flag = train_spy_attempt_cardinal
+			}
+
+			every_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+					clr_province_flag = spy_attempt_fort
+			}
+
+			every_province = {
+				limit = {
+					has_province_flag = spy_attempt_fort
+				}
+					clr_province_flag = spy_attempt_fort
+			}
+
+	clr_ruler_flag = train_spy_prostitutes
+	clr_ruler_flag = train_spy_sent_new
+	clr_ruler_flag = train_spy_seduce_monarch
+	clr_ruler_flag = train_spy_seduce_adm
+	clr_ruler_flag = train_spy_steal_adm
+	clr_ruler_flag = train_spy_seduce_dip
+	clr_ruler_flag = train_spy_steal_dip
+	clr_ruler_flag = train_spy_seduce_mil
+	clr_ruler_flag = train_spy_steal_mil
+	clr_ruler_flag = train_spy_seduce_fail
+	clr_ruler_flag = train_spy_seduce_cardinal
+	clr_ruler_flag = train_spy_influence_cardinal	
+	clr_ruler_flag = train_spy_increase_network
+	clr_ruler_flag = train_spy_tech_1
+	clr_ruler_flag = train_spy_tech_2
+	clr_ruler_flag = train_spy_tech_3
+	clr_ruler_flag = train_spy_sow_distrust
+	clr_ruler_flag = train_spy_liberty_desire
+	clr_ruler_flag = train_spy_ruler_kill
+	clr_ruler_flag = train_spy_ruler_fail
+	clr_ruler_flag = train_spy_heir_kill
+	clr_ruler_flag = train_spy_heir_fail
+	clr_ruler_flag = train_spy_adm_kill
+	clr_ruler_flag = train_spy_adm_fail
+	clr_ruler_flag = train_spy_dip_kill
+	clr_ruler_flag = train_spy_dip_fail
+	clr_ruler_flag = train_spy_mil_kill
+	clr_ruler_flag = train_spy_mil_fail
+	clr_ruler_flag = train_spy_adv_fail
+	clr_ruler_flag = train_spy_cardinal_kill
+	clr_ruler_flag = train_spy_cardinal_fail
+	clr_ruler_flag = train_spy_leader_kill
+	clr_ruler_flag = train_spy_leader_fail
+	clr_ruler_flag = train_spy_fort_kill
+	clr_ruler_flag = train_spy_fort_fail
+	clr_ruler_flag = train_spy_infiltrate_harem
+	clr_ruler_flag = train_spy_infiltrate_fail	
+
+		every_province = {
+			limit = {
+				has_province_flag = entertain_troops_here
+			}
+			clr_province_flag = entertain_troops_here
+		}
+
+			clr_ruler_flag = inspire_colonists_prostitutes	
+			clr_ruler_flag = cosmo_colony_carribeans_region	
+			clr_ruler_flag = cosmo_colony_east_indies_superregion_menus				
+			clr_ruler_flag = cosmo_colony_oceania_superregion_menus	
+			clr_ruler_flag = cosmo_colony_east_indies_superregion				
+			clr_ruler_flag = cosmo_colony_oceania_superregion						
+			clr_ruler_flag = cosmo_colony_south_america_superregion	
+			clr_ruler_flag = cosmo_colony_mexico_region	
+			clr_ruler_flag = cosmo_colony_rio_grande_region	
+			clr_ruler_flag = cosmo_colony_hudson_bay_region	
+			clr_ruler_flag = cosmo_colony_mississippi_region	
+			clr_ruler_flag = cosmo_colony_great_plains_region	
+			clr_ruler_flag = cosmo_colony_canada_region	
+			clr_ruler_flag = cosmo_colony_cascadia_region
+			clr_country_flag = convert_anathanism_prostitutes	
+			clr_ruler_flag = entertain_company_prostitutes	
+			clr_ruler_flag = hire_noble_prostitutes	
+			clr_ruler_flag = hire_burghers_prostitutes	
+			clr_ruler_flag = hire_clergy_prostitutes
+			clr_ruler_flag = hire_brahmins_prostitutes
+			clr_ruler_flag = hire_dhimmi_prostitutes
+			clr_ruler_flag = hire_maratha_prostitutes
+			clr_ruler_flag = hire_vaisyas_prostitutes
+			clr_ruler_flag = hire_cossacks_prostitutes
+			clr_ruler_flag = hire_nomadic_tribes_prostitutes
+			clr_ruler_flag = hire_jains_prostitutes
+			clr_ruler_flag = hire_rajput_prostitutes			
+			clr_ruler_flag = daimyo_introduction_prostitutes				
+			clr_country_flag = entertain_troops_prostitutes				
+			clr_country_flag = entertain_merchants_prostitutes				
+			clr_country_flag = entertain_sailors_prostitutes																	
+			clr_country_flag = entertain_sailors_prostitutes_current				
+			clr_country_flag = entertain_sailors_prostitutes_new			
+}
+
+cosmo_remove_prostitute = {
+				remove_province_modifier = fakenw_prostitute_1a
+				remove_province_modifier = fakenw_prostitute_1b
+				remove_province_modifier = fakenw_prostitute_1c
+				remove_province_modifier = fakenw_prostitute_2a
+				remove_province_modifier = fakenw_prostitute_2b
+				remove_province_modifier = fakenw_prostitute_2c
+				remove_province_modifier = fakenw_prostitute_3a
+				remove_province_modifier = fakenw_prostitute_3b
+				remove_province_modifier = fakenw_prostitute_3c
+				remove_province_modifier = fakenw_prostitute_4a
+				remove_province_modifier = fakenw_prostitute_4b
+				remove_province_modifier = fakenw_prostitute_4c
+				remove_province_modifier = fakenw_prostitute_5a
+				remove_province_modifier = fakenw_prostitute_5b
+				remove_province_modifier = fakenw_prostitute_5c
+				remove_province_modifier = fakenw_prostitute_6a
+				remove_province_modifier = fakenw_prostitute_6b
+				remove_province_modifier = fakenw_prostitute_6c
+				remove_province_modifier = fakenw_prostitute_7a
+				remove_province_modifier = fakenw_prostitute_7b
+				remove_province_modifier = fakenw_prostitute_7c
+				remove_province_modifier = fakenw_prostitute_8a
+				remove_province_modifier = fakenw_prostitute_8b
+				remove_province_modifier = fakenw_prostitute_8c
+				remove_province_modifier = fakenw_prostitute_9a
+				remove_province_modifier = fakenw_prostitute_9b
+				remove_province_modifier = fakenw_prostitute_9c
+
+				#east indies
+				remove_province_modifier = east_indies_prostitute_1a
+				remove_province_modifier = east_indies_prostitute_1b
+				remove_province_modifier = east_indies_prostitute_1c
+				remove_province_modifier = east_indies_prostitute_2a
+				remove_province_modifier = east_indies_prostitute_2b
+				remove_province_modifier = east_indies_prostitute_2c
+				remove_province_modifier = east_indies_prostitute_3a
+				remove_province_modifier = east_indies_prostitute_3b
+				remove_province_modifier = east_indies_prostitute_3c
+				remove_province_modifier = east_indies_prostitute_4a
+				remove_province_modifier = east_indies_prostitute_4b
+				remove_province_modifier = east_indies_prostitute_4c
+				remove_province_modifier = east_indies_prostitute_5a
+				remove_province_modifier = east_indies_prostitute_5b
+				remove_province_modifier = east_indies_prostitute_5c
+
+				#africa
+				remove_province_modifier = africa_prostitute_1a
+				remove_province_modifier = africa_prostitute_1b
+				remove_province_modifier = africa_prostitute_1c
+				remove_province_modifier = africa_prostitute_2a
+				remove_province_modifier = africa_prostitute_2b
+				remove_province_modifier = africa_prostitute_2c
+				remove_province_modifier = africa_prostitute_3a
+				remove_province_modifier = africa_prostitute_3b
+				remove_province_modifier = africa_prostitute_3c
+				remove_province_modifier = africa_prostitute_4a
+				remove_province_modifier = africa_prostitute_4b
+				remove_province_modifier = africa_prostitute_4c
+				remove_province_modifier = africa_prostitute_5a
+				remove_province_modifier = africa_prostitute_5b
+				remove_province_modifier = africa_prostitute_5c
+				remove_province_modifier = africa_prostitute_6a
+				remove_province_modifier = africa_prostitute_6b
+				remove_province_modifier = africa_prostitute_6c
+				remove_province_modifier = africa_prostitute_7a
+				remove_province_modifier = africa_prostitute_7b
+				remove_province_modifier = africa_prostitute_7c
+				remove_province_modifier = africa_prostitute_8a
+				remove_province_modifier = africa_prostitute_8b
+				remove_province_modifier = africa_prostitute_8c
+				remove_province_modifier = africa_prostitute_9a
+				remove_province_modifier = africa_prostitute_9b
+				remove_province_modifier = africa_prostitute_9c
+				
+				#eurow	
+				remove_province_modifier = europe_prostitute_1a
+				remove_province_modifier = europe_prostitute_1b
+				remove_province_modifier = europe_prostitute_1c
+				remove_province_modifier = europe_prostitute_2a
+				remove_province_modifier = europe_prostitute_2b
+				remove_province_modifier = europe_prostitute_2c
+				remove_province_modifier = europe_prostitute_3a
+				remove_province_modifier = europe_prostitute_3b
+				remove_province_modifier = europe_prostitute_3c
+				remove_province_modifier = europe_prostitute_4a
+				remove_province_modifier = europe_prostitute_4b
+				remove_province_modifier = europe_prostitute_4c
+				remove_province_modifier = europe_prostitute_5a
+				remove_province_modifier = europe_prostitute_5b
+				remove_province_modifier = europe_prostitute_5c
+				remove_province_modifier = europe_prostitute_6a
+				remove_province_modifier = europe_prostitute_6b
+				remove_province_modifier = europe_prostitute_6c
+		
+				#indochina
+				remove_province_modifier = indochina_prostitute_1a
+				remove_province_modifier = indochina_prostitute_1b
+				remove_province_modifier = indochina_prostitute_1c
+				remove_province_modifier = indochina_prostitute_2a
+				remove_province_modifier = indochina_prostitute_2b
+				remove_province_modifier = indochina_prostitute_2c
+				remove_province_modifier = indochina_prostitute_3a
+				remove_province_modifier = indochina_prostitute_3b
+				remove_province_modifier = indochina_prostitute_3c
+				remove_province_modifier = indochina_prostitute_4a
+				remove_province_modifier = indochina_prostitute_4b
+				remove_province_modifier = indochina_prostitute_4c
+				remove_province_modifier = indochina_prostitute_5a
+				remove_province_modifier = indochina_prostitute_5b
+				remove_province_modifier = indochina_prostitute_5c
+								
+				#mena
+				remove_province_modifier = mena_prostitute_1a
+				remove_province_modifier = mena_prostitute_1b
+				remove_province_modifier = mena_prostitute_1c
+				remove_province_modifier = mena_prostitute_2a
+				remove_province_modifier = mena_prostitute_2b
+				remove_province_modifier = mena_prostitute_2c
+				remove_province_modifier = mena_prostitute_3a
+				remove_province_modifier = mena_prostitute_3b
+				remove_province_modifier = mena_prostitute_3c
+				remove_province_modifier = mena_prostitute_4a
+				remove_province_modifier = mena_prostitute_4b
+				remove_province_modifier = mena_prostitute_4c
+				remove_province_modifier = mena_prostitute_5a
+				remove_province_modifier = mena_prostitute_5b
+				remove_province_modifier = mena_prostitute_5c
+			
+				#india	
+				remove_province_modifier = india_prostitute_1a
+				remove_province_modifier = india_prostitute_1b
+				remove_province_modifier = india_prostitute_1c
+				remove_province_modifier = india_prostitute_2a
+				remove_province_modifier = india_prostitute_2b
+				remove_province_modifier = india_prostitute_2c
+				remove_province_modifier = india_prostitute_3a
+				remove_province_modifier = india_prostitute_3b
+				remove_province_modifier = india_prostitute_3c
+				remove_province_modifier = india_prostitute_4a
+				remove_province_modifier = india_prostitute_4b
+				remove_province_modifier = india_prostitute_4c
+		
+				#china
+				remove_province_modifier = china_prostitute_1a
+				remove_province_modifier = china_prostitute_1b
+				remove_province_modifier = china_prostitute_1c
+				remove_province_modifier = china_prostitute_2a
+				remove_province_modifier = china_prostitute_2b
+				remove_province_modifier = china_prostitute_2c
+				remove_province_modifier = china_prostitute_3a
+				remove_province_modifier = china_prostitute_3b
+				remove_province_modifier = china_prostitute_3c
+				remove_province_modifier = china_prostitute_4a
+				remove_province_modifier = china_prostitute_4b
+				remove_province_modifier = china_prostitute_4c
+				remove_province_modifier = china_prostitute_5a
+				remove_province_modifier = china_prostitute_5b
+				remove_province_modifier = china_prostitute_5c
+				remove_province_modifier = china_prostitute_6a
+				remove_province_modifier = china_prostitute_6b
+				remove_province_modifier = china_prostitute_6c
+		
+				#japan
+				remove_province_modifier = japan_prostitute_1a
+				remove_province_modifier = japan_prostitute_1b
+				remove_province_modifier = japan_prostitute_1c
+				remove_province_modifier = japan_prostitute_2a
+				remove_province_modifier = japan_prostitute_2b
+				remove_province_modifier = japan_prostitute_2c
+				remove_province_modifier = japan_prostitute_3a
+				remove_province_modifier = japan_prostitute_3b
+				remove_province_modifier = japan_prostitute_3c
+				remove_province_modifier = japan_prostitute_4a
+				remove_province_modifier = japan_prostitute_4b
+				remove_province_modifier = japan_prostitute_4c
+				remove_province_modifier = japan_prostitute_5a
+				remove_province_modifier = japan_prostitute_5b
+				remove_province_modifier = japan_prostitute_5c
+
+				remove_province_modifier = korea_prostitute_1a
+				remove_province_modifier = korea_prostitute_1b
+				remove_province_modifier = korea_prostitute_1c
+				remove_province_modifier = korea_prostitute_2a
+				remove_province_modifier = korea_prostitute_2b
+				remove_province_modifier = korea_prostitute_2c
+				remove_province_modifier = korea_prostitute_3a
+				remove_province_modifier = korea_prostitute_3b
+				remove_province_modifier = korea_prostitute_3c
+				remove_province_modifier = korea_prostitute_4a
+				remove_province_modifier = korea_prostitute_4b
+				remove_province_modifier = korea_prostitute_4c
+				remove_province_modifier = korea_prostitute_5a
+				remove_province_modifier = korea_prostitute_5b
+				remove_province_modifier = korea_prostitute_5c
+				remove_province_modifier = korea_prostitute_6a
+				remove_province_modifier = korea_prostitute_6b
+				remove_province_modifier = korea_prostitute_6c	
+
+}
+
+cosmo_remove_consort = {
+				remove_province_modifier = sa_concubine_1a
+				remove_province_modifier = sa_concubine_1b
+				remove_province_modifier = sa_concubine_1c
+				remove_province_modifier = sa_concubine_2a
+				remove_province_modifier = sa_concubine_2b
+				remove_province_modifier = sa_concubine_2c
+				remove_province_modifier = sa_concubine_3a
+				remove_province_modifier = sa_concubine_3b
+				remove_province_modifier = sa_concubine_3c
+				remove_province_modifier = sa_concubine_4a
+				remove_province_modifier = sa_concubine_4b
+				remove_province_modifier = sa_concubine_4c
+				remove_province_modifier = sa_concubine_5a
+				remove_province_modifier = sa_concubine_5b
+				remove_province_modifier = sa_concubine_5c
+				remove_province_modifier = sa_concubine_6a
+				remove_province_modifier = sa_concubine_6b
+				remove_province_modifier = sa_concubine_6c
+				remove_province_modifier = sa_concubine_7a
+				remove_province_modifier = sa_concubine_7b
+				remove_province_modifier = sa_concubine_7c
+				remove_province_modifier = sa_concubine_8a
+				remove_province_modifier = sa_concubine_8b
+				remove_province_modifier = sa_concubine_8c
+				remove_province_modifier = sa_concubine_9a
+				remove_province_modifier = sa_concubine_9b
+				remove_province_modifier = sa_concubine_9c
+				remove_province_modifier = sa_concubine_10a
+				remove_province_modifier = sa_concubine_10b
+				remove_province_modifier = sa_concubine_10c
+				remove_province_modifier = sa_concubine_11a
+				remove_province_modifier = sa_concubine_11b
+				remove_province_modifier = sa_concubine_11c
+				remove_province_modifier = sa_concubine_12a
+				remove_province_modifier = sa_concubine_12b
+				remove_province_modifier = sa_concubine_12c
+				remove_province_modifier = sa_concubine_13a
+				remove_province_modifier = sa_concubine_13b
+				remove_province_modifier = sa_concubine_13c
+				remove_province_modifier = sa_concubine_14a
+				remove_province_modifier = sa_concubine_14b
+				remove_province_modifier = sa_concubine_14c
+				remove_province_modifier = sa_concubine_15a
+				remove_province_modifier = sa_concubine_15b
+				remove_province_modifier = sa_concubine_15c
+				remove_province_modifier = sa_concubine_16a
+				remove_province_modifier = sa_concubine_16b
+				remove_province_modifier = sa_concubine_16c
+				
+				#NA
+				remove_province_modifier = na_concubine_1a
+				remove_province_modifier = na_concubine_1b
+				remove_province_modifier = na_concubine_1c
+				remove_province_modifier = na_concubine_2a
+				remove_province_modifier = na_concubine_2b
+				remove_province_modifier = na_concubine_2c
+				remove_province_modifier = na_concubine_3a
+				remove_province_modifier = na_concubine_3b
+				remove_province_modifier = na_concubine_3c
+				remove_province_modifier = na_concubine_4a
+				remove_province_modifier = na_concubine_4b
+				remove_province_modifier = na_concubine_4c
+				remove_province_modifier = na_concubine_5a
+				remove_province_modifier = na_concubine_5b
+				remove_province_modifier = na_concubine_5c
+				remove_province_modifier = na_concubine_6a
+				remove_province_modifier = na_concubine_6b
+				remove_province_modifier = na_concubine_6c
+				remove_province_modifier = na_concubine_7a
+				remove_province_modifier = na_concubine_7b
+				remove_province_modifier = na_concubine_7c
+				remove_province_modifier = na_concubine_8a
+				remove_province_modifier = na_concubine_8b
+				remove_province_modifier = na_concubine_8c
+				remove_province_modifier = na_concubine_9a
+				remove_province_modifier = na_concubine_9b
+				remove_province_modifier = na_concubine_9c
+				remove_province_modifier = na_concubine_10a
+				remove_province_modifier = na_concubine_10b
+				remove_province_modifier = na_concubine_10c
+				remove_province_modifier = na_concubine_11a
+				remove_province_modifier = na_concubine_11b
+				remove_province_modifier = na_concubine_11c
+				remove_province_modifier = na_concubine_12a
+				remove_province_modifier = na_concubine_12b
+				remove_province_modifier = na_concubine_12c
+				remove_province_modifier = na_concubine_13a
+				remove_province_modifier = na_concubine_13b
+				remove_province_modifier = na_concubine_13c
+				remove_province_modifier = na_concubine_14a
+				remove_province_modifier = na_concubine_14b
+				remove_province_modifier = na_concubine_14c
+				remove_province_modifier = na_concubine_15a
+				remove_province_modifier = na_concubine_15b
+				remove_province_modifier = na_concubine_15c
+				remove_province_modifier = na_concubine_16a
+				remove_province_modifier = na_concubine_16b
+				remove_province_modifier = na_concubine_16c
+				#africa
+				remove_province_modifier = africa_concubine_1a
+				remove_province_modifier = africa_concubine_1b
+				remove_province_modifier = africa_concubine_1c
+				remove_province_modifier = africa_concubine_2a
+				remove_province_modifier = africa_concubine_2b
+				remove_province_modifier = africa_concubine_2c
+				remove_province_modifier = africa_concubine_3a
+				remove_province_modifier = africa_concubine_3b
+				remove_province_modifier = africa_concubine_3c
+				remove_province_modifier = africa_concubine_4a
+				remove_province_modifier = africa_concubine_4b
+				remove_province_modifier = africa_concubine_4c
+				remove_province_modifier = africa_concubine_5a
+				remove_province_modifier = africa_concubine_5b
+				remove_province_modifier = africa_concubine_5c
+				remove_province_modifier = africa_concubine_6a
+				remove_province_modifier = africa_concubine_6b
+				remove_province_modifier = africa_concubine_6c
+				remove_province_modifier = africa_concubine_7a
+				remove_province_modifier = africa_concubine_7b
+				remove_province_modifier = africa_concubine_7c
+				remove_province_modifier = africa_concubine_8a
+				remove_province_modifier = africa_concubine_8b
+				remove_province_modifier = africa_concubine_8c
+				remove_province_modifier = africa_concubine_9a
+				remove_province_modifier = africa_concubine_9b
+				remove_province_modifier = africa_concubine_9c
+				remove_province_modifier = africa_concubine_10a
+				remove_province_modifier = africa_concubine_10b
+				remove_province_modifier = africa_concubine_10c
+				remove_province_modifier = africa_concubine_11a
+				remove_province_modifier = africa_concubine_11b
+				remove_province_modifier = africa_concubine_11c
+				remove_province_modifier = africa_concubine_12a
+				remove_province_modifier = africa_concubine_12b
+				remove_province_modifier = africa_concubine_12c
+				remove_province_modifier = africa_concubine_13a
+				remove_province_modifier = africa_concubine_13b
+				remove_province_modifier = africa_concubine_13c
+				remove_province_modifier = africa_concubine_14a
+				remove_province_modifier = africa_concubine_14b
+				remove_province_modifier = africa_concubine_14c
+				remove_province_modifier = africa_concubine_15a
+				remove_province_modifier = africa_concubine_15b
+				remove_province_modifier = africa_concubine_15c
+				#eurow	
+				remove_province_modifier = eurow_concubine_1a
+				remove_province_modifier = eurow_concubine_1b
+				remove_province_modifier = eurow_concubine_1c
+				remove_province_modifier = eurow_concubine_2a
+				remove_province_modifier = eurow_concubine_2b
+				remove_province_modifier = eurow_concubine_2c
+				remove_province_modifier = eurow_concubine_3a
+				remove_province_modifier = eurow_concubine_3b
+				remove_province_modifier = eurow_concubine_3c
+				remove_province_modifier = eurow_concubine_4a
+				remove_province_modifier = eurow_concubine_4b
+				remove_province_modifier = eurow_concubine_4c
+				remove_province_modifier = eurow_concubine_5a
+				remove_province_modifier = eurow_concubine_5b
+				remove_province_modifier = eurow_concubine_5c
+				remove_province_modifier = eurow_concubine_6a
+				remove_province_modifier = eurow_concubine_6b
+				remove_province_modifier = eurow_concubine_6c
+				remove_province_modifier = eurow_concubine_7a
+				remove_province_modifier = eurow_concubine_7b
+				remove_province_modifier = eurow_concubine_7c
+				remove_province_modifier = eurow_concubine_8a
+				remove_province_modifier = eurow_concubine_8b
+				remove_province_modifier = eurow_concubine_8c
+				remove_province_modifier = eurow_concubine_9a
+				remove_province_modifier = eurow_concubine_9b
+				remove_province_modifier = eurow_concubine_9c
+				remove_province_modifier = eurow_concubine_10a
+				remove_province_modifier = eurow_concubine_10b
+				remove_province_modifier = eurow_concubine_10c
+				remove_province_modifier = eurow_concubine_11a
+				remove_province_modifier = eurow_concubine_11b
+				remove_province_modifier = eurow_concubine_11c
+				remove_province_modifier = eurow_concubine_12a
+				remove_province_modifier = eurow_concubine_12b
+				remove_province_modifier = eurow_concubine_12c
+				remove_province_modifier = eurow_concubine_13a
+				remove_province_modifier = eurow_concubine_13b
+				remove_province_modifier = eurow_concubine_13c
+				remove_province_modifier = eurow_concubine_14a
+				remove_province_modifier = eurow_concubine_14b
+				remove_province_modifier = eurow_concubine_14c
+				remove_province_modifier = eurow_concubine_15a
+				remove_province_modifier = eurow_concubine_15b
+				remove_province_modifier = eurow_concubine_15c
+				remove_province_modifier = eurow_concubine_16a
+				remove_province_modifier = eurow_concubine_16b
+				remove_province_modifier = eurow_concubine_16c
+				remove_province_modifier = eurow_concubine_17a
+				remove_province_modifier = eurow_concubine_17b
+				remove_province_modifier = eurow_concubine_17c
+				remove_province_modifier = eurow_concubine_18a
+				remove_province_modifier = eurow_concubine_18b
+				remove_province_modifier = eurow_concubine_18c	
+				remove_province_modifier = eurow_concubine_19a
+				remove_province_modifier = eurow_concubine_19b
+				remove_province_modifier = eurow_concubine_19c												
+				remove_province_modifier = pirate_queen_1a
+				remove_province_modifier = pirate_queen_1b
+				remove_province_modifier = pirate_queen_1c
+				remove_province_modifier = pirate_queen_2a
+				remove_province_modifier = pirate_queen_2b
+				remove_province_modifier = pirate_queen_2c
+				remove_province_modifier = pirate_queen_3a
+				remove_province_modifier = pirate_queen_3b
+				remove_province_modifier = pirate_queen_3c	
+				#euroh
+				remove_province_modifier = euro_concubine_1a
+				remove_province_modifier = euro_concubine_1b
+				remove_province_modifier = euro_concubine_1c
+				remove_province_modifier = euro_concubine_2a
+				remove_province_modifier = euro_concubine_2b
+				remove_province_modifier = euro_concubine_2c
+				remove_province_modifier = euro_concubine_3a
+				remove_province_modifier = euro_concubine_3b
+				remove_province_modifier = euro_concubine_3c
+				remove_province_modifier = euro_concubine_4a
+				remove_province_modifier = euro_concubine_4b
+				remove_province_modifier = euro_concubine_4c
+				remove_province_modifier = euro_concubine_5a
+				remove_province_modifier = euro_concubine_5b
+				remove_province_modifier = euro_concubine_5c
+				remove_province_modifier = euro_concubine_6a
+				remove_province_modifier = euro_concubine_6b
+				remove_province_modifier = euro_concubine_6c
+				remove_province_modifier = euro_concubine_7a
+				remove_province_modifier = euro_concubine_7b
+				remove_province_modifier = euro_concubine_7c
+				remove_province_modifier = euro_concubine_8a
+				remove_province_modifier = euro_concubine_8b
+				remove_province_modifier = euro_concubine_8c
+				remove_province_modifier = euro_concubine_9a
+				remove_province_modifier = euro_concubine_9b
+				remove_province_modifier = euro_concubine_9c
+				remove_province_modifier = euro_concubine_10a
+				remove_province_modifier = euro_concubine_10b
+				remove_province_modifier = euro_concubine_10c
+				remove_province_modifier = euro_concubine_11a
+				remove_province_modifier = euro_concubine_11b
+				remove_province_modifier = euro_concubine_11c
+				remove_province_modifier = euro_concubine_12a
+				remove_province_modifier = euro_concubine_12b
+				remove_province_modifier = euro_concubine_12c						
+				#mena
+				remove_province_modifier = mena_concubine_1a
+				remove_province_modifier = mena_concubine_1b
+				remove_province_modifier = mena_concubine_1c
+				remove_province_modifier = mena_concubine_2a
+				remove_province_modifier = mena_concubine_2b
+				remove_province_modifier = mena_concubine_2c
+				remove_province_modifier = mena_concubine_3a
+				remove_province_modifier = mena_concubine_3b
+				remove_province_modifier = mena_concubine_3c
+				remove_province_modifier = mena_concubine_4a
+				remove_province_modifier = mena_concubine_4b
+				remove_province_modifier = mena_concubine_4c
+				remove_province_modifier = mena_concubine_5a
+				remove_province_modifier = mena_concubine_5b
+				remove_province_modifier = mena_concubine_5c
+				remove_province_modifier = mena_concubine_6a
+				remove_province_modifier = mena_concubine_6b
+				remove_province_modifier = mena_concubine_6c
+				remove_province_modifier = mena_concubine_7a
+				remove_province_modifier = mena_concubine_7b
+				remove_province_modifier = mena_concubine_7c
+				remove_province_modifier = mena_concubine_8a
+				remove_province_modifier = mena_concubine_8b
+				remove_province_modifier = mena_concubine_8c
+				remove_province_modifier = mena_concubine_9a
+				remove_province_modifier = mena_concubine_9b
+				remove_province_modifier = mena_concubine_9c
+				remove_province_modifier = mena_concubine_10a
+				remove_province_modifier = mena_concubine_10b
+				remove_province_modifier = mena_concubine_10c
+				remove_province_modifier = mena_concubine_11a
+				remove_province_modifier = mena_concubine_11b
+				remove_province_modifier = mena_concubine_11c
+				remove_province_modifier = mena_concubine_12a
+				remove_province_modifier = mena_concubine_12b
+				remove_province_modifier = mena_concubine_12c
+				#india	
+				remove_province_modifier = india_concubine_1a
+				remove_province_modifier = india_concubine_1b
+				remove_province_modifier = india_concubine_1c
+				remove_province_modifier = india_concubine_2a
+				remove_province_modifier = india_concubine_2b
+				remove_province_modifier = india_concubine_2c
+				remove_province_modifier = india_concubine_3a
+				remove_province_modifier = india_concubine_3b
+				remove_province_modifier = india_concubine_3c
+				remove_province_modifier = india_concubine_4a
+				remove_province_modifier = india_concubine_4b
+				remove_province_modifier = india_concubine_4c
+				remove_province_modifier = india_concubine_5a
+				remove_province_modifier = india_concubine_5b
+				remove_province_modifier = india_concubine_5c
+				remove_province_modifier = india_concubine_6a
+				remove_province_modifier = india_concubine_6b
+				remove_province_modifier = india_concubine_6c
+				remove_province_modifier = india_concubine_7a
+				remove_province_modifier = india_concubine_7b
+				remove_province_modifier = india_concubine_7c
+				remove_province_modifier = india_concubine_8a
+				remove_province_modifier = india_concubine_8b
+				remove_province_modifier = india_concubine_8c
+				remove_province_modifier = india_concubine_9a
+				remove_province_modifier = india_concubine_9b
+				remove_province_modifier = india_concubine_9c
+				remove_province_modifier = india_concubine_10a
+				remove_province_modifier = india_concubine_10b
+				remove_province_modifier = india_concubine_10c
+				remove_province_modifier = india_concubine_11a
+				remove_province_modifier = india_concubine_11b
+				remove_province_modifier = india_concubine_11c
+				remove_province_modifier = india_concubine_12a
+				remove_province_modifier = india_concubine_12b
+				remove_province_modifier = india_concubine_12c
+				#china
+				remove_province_modifier = china_concubine_1a
+				remove_province_modifier = china_concubine_1b
+				remove_province_modifier = china_concubine_1c
+				remove_province_modifier = china_concubine_2a
+				remove_province_modifier = china_concubine_2b
+				remove_province_modifier = china_concubine_2c
+				remove_province_modifier = china_concubine_3a
+				remove_province_modifier = china_concubine_3b
+				remove_province_modifier = china_concubine_3c
+				remove_province_modifier = china_concubine_4a
+				remove_province_modifier = china_concubine_4b
+				remove_province_modifier = china_concubine_4c
+				remove_province_modifier = china_concubine_5a
+				remove_province_modifier = china_concubine_5b
+				remove_province_modifier = china_concubine_5c
+				remove_province_modifier = china_concubine_6a
+				remove_province_modifier = china_concubine_6b
+				remove_province_modifier = china_concubine_6c
+				remove_province_modifier = china_concubine_7a
+				remove_province_modifier = china_concubine_7b
+				remove_province_modifier = china_concubine_7c
+				remove_province_modifier = china_concubine_8a
+				remove_province_modifier = china_concubine_8b
+				remove_province_modifier = china_concubine_8c
+				remove_province_modifier = china_concubine_9a
+				remove_province_modifier = china_concubine_9b
+				remove_province_modifier = china_concubine_9c
+				remove_province_modifier = china_concubine_10a
+				remove_province_modifier = china_concubine_10b
+				remove_province_modifier = china_concubine_10c
+				remove_province_modifier = china_concubine_11a
+				remove_province_modifier = china_concubine_11b
+				remove_province_modifier = china_concubine_11c
+				remove_province_modifier = china_concubine_12a
+				remove_province_modifier = china_concubine_12b
+				remove_province_modifier = china_concubine_12c
+				remove_province_modifier = china_concubine_13a
+				remove_province_modifier = china_concubine_13b
+				remove_province_modifier = china_concubine_13c
+				remove_province_modifier = china_concubine_14a
+				remove_province_modifier = china_concubine_14b
+				remove_province_modifier = china_concubine_14c
+				remove_province_modifier = china_concubine_15a
+				remove_province_modifier = china_concubine_15b
+				remove_province_modifier = china_concubine_15c	
+				remove_province_modifier = china_concubine_16a
+				remove_province_modifier = china_concubine_16b
+				remove_province_modifier = china_concubine_16c
+				remove_province_modifier = china_concubine_17a
+				remove_province_modifier = china_concubine_17b
+				remove_province_modifier = china_concubine_17c
+				remove_province_modifier = china_concubine_18a
+				remove_province_modifier = china_concubine_18b
+				remove_province_modifier = china_concubine_18c
+				remove_province_modifier = china_concubine_19a
+				remove_province_modifier = china_concubine_19b
+				remove_province_modifier = china_concubine_19c	
+				remove_province_modifier = china_concubine_20a
+				remove_province_modifier = china_concubine_20b
+				remove_province_modifier = china_concubine_20c
+				remove_province_modifier = china_concubine_21a
+				remove_province_modifier = china_concubine_21b
+				remove_province_modifier = china_concubine_21c
+				remove_province_modifier = china_concubine_22a
+				remove_province_modifier = china_concubine_22b
+				remove_province_modifier = china_concubine_22c
+				remove_province_modifier = china_concubine_23a
+				remove_province_modifier = china_concubine_23b
+				remove_province_modifier = china_concubine_23c
+				remove_province_modifier = china_concubine_24a
+				remove_province_modifier = china_concubine_24b
+				remove_province_modifier = china_concubine_24c
+				remove_province_modifier = china_concubine_25a
+				remove_province_modifier = china_concubine_25b
+				remove_province_modifier = china_concubine_25c	
+				remove_province_modifier = china_concubine_26a
+				remove_province_modifier = china_concubine_26b
+				remove_province_modifier = china_concubine_26c
+				remove_province_modifier = china_concubine_27a
+				remove_province_modifier = china_concubine_27b
+				remove_province_modifier = china_concubine_27c
+				remove_province_modifier = china_concubine_28a
+				remove_province_modifier = china_concubine_28b
+				remove_province_modifier = china_concubine_28c
+				remove_province_modifier = china_concubine_29a
+				remove_province_modifier = china_concubine_29b
+				remove_province_modifier = china_concubine_29c											
+				#japan
+				remove_province_modifier = japan_concubine_1a
+				remove_province_modifier = japan_concubine_1b
+				remove_province_modifier = japan_concubine_1c
+				remove_province_modifier = japan_concubine_2a
+				remove_province_modifier = japan_concubine_2b
+				remove_province_modifier = japan_concubine_2c
+				remove_province_modifier = japan_concubine_3a
+				remove_province_modifier = japan_concubine_3b
+				remove_province_modifier = japan_concubine_3c
+				remove_province_modifier = japan_concubine_4a
+				remove_province_modifier = japan_concubine_4b
+				remove_province_modifier = japan_concubine_4c
+				remove_province_modifier = japan_concubine_5a
+				remove_province_modifier = japan_concubine_5b
+				remove_province_modifier = japan_concubine_5c
+				remove_province_modifier = japan_concubine_6a
+				remove_province_modifier = japan_concubine_6b
+				remove_province_modifier = japan_concubine_6c
+				remove_province_modifier = japan_concubine_7a
+				remove_province_modifier = japan_concubine_7b
+				remove_province_modifier = japan_concubine_7c
+				remove_province_modifier = japan_concubine_8a
+				remove_province_modifier = japan_concubine_8b
+				remove_province_modifier = japan_concubine_8c
+				remove_province_modifier = japan_concubine_9a
+				remove_province_modifier = japan_concubine_9b
+				remove_province_modifier = japan_concubine_9c
+				remove_province_modifier = japan_concubine_10a
+				remove_province_modifier = japan_concubine_10b
+				remove_province_modifier = japan_concubine_10c
+				remove_province_modifier = japan_concubine_11a
+				remove_province_modifier = japan_concubine_11b
+				remove_province_modifier = japan_concubine_11c
+				remove_province_modifier = japan_concubine_12a
+				remove_province_modifier = japan_concubine_12b
+				remove_province_modifier = japan_concubine_12c	
+				#concubines
+				remove_province_modifier = barbary_concubine_1a
+				remove_province_modifier = barbary_concubine_1b
+				remove_province_modifier = barbary_concubine_1c
+				remove_province_modifier = barbary_concubine_2a
+				remove_province_modifier = barbary_concubine_2b
+				remove_province_modifier = barbary_concubine_2c
+				remove_province_modifier = barbary_concubine_3a
+				remove_province_modifier = barbary_concubine_3b
+				remove_province_modifier = barbary_concubine_3c
+				remove_province_modifier = barbary_concubine_4a
+				remove_province_modifier = barbary_concubine_4b
+				remove_province_modifier = barbary_concubine_4c
+				remove_province_modifier = barbary_concubine_5a
+				remove_province_modifier = barbary_concubine_5b
+				remove_province_modifier = barbary_concubine_5c
+				remove_province_modifier = barbary_concubine_6a
+				remove_province_modifier = barbary_concubine_6b
+				remove_province_modifier = barbary_concubine_6c				
+				remove_province_modifier = bsea_concubine_1a
+				remove_province_modifier = bsea_concubine_1b
+				remove_province_modifier = bsea_concubine_1c
+				remove_province_modifier = bsea_concubine_2a
+				remove_province_modifier = bsea_concubine_2b
+				remove_province_modifier = bsea_concubine_2c
+				remove_province_modifier = bsea_concubine_3a
+				remove_province_modifier = bsea_concubine_3b
+				remove_province_modifier = bsea_concubine_3c
+				remove_province_modifier = bsea_concubine_4a
+				remove_province_modifier = bsea_concubine_4b
+				remove_province_modifier = bsea_concubine_4c
+				remove_province_modifier = horn_concubine_1a
+				remove_province_modifier = horn_concubine_1b
+				remove_province_modifier = horn_concubine_1c
+				remove_province_modifier = horn_concubine_2a
+				remove_province_modifier = horn_concubine_2b
+				remove_province_modifier = horn_concubine_2c
+				remove_province_modifier = horn_concubine_3a
+				remove_province_modifier = horn_concubine_3b
+				remove_province_modifier = horn_concubine_3c
+				remove_province_modifier = horn_concubine_4a
+				remove_province_modifier = horn_concubine_4b
+				remove_province_modifier = horn_concubine_4c			
+				remove_province_modifier = southsea_concubine_1a
+				remove_province_modifier = southsea_concubine_1b
+				remove_province_modifier = southsea_concubine_1c
+				remove_province_modifier = southsea_concubine_2a
+				remove_province_modifier = southsea_concubine_2b
+				remove_province_modifier = southsea_concubine_2c
+				remove_province_modifier = southsea_concubine_3a
+				remove_province_modifier = southsea_concubine_3b
+				remove_province_modifier = southsea_concubine_3c
+				remove_province_modifier = southsea_concubine_4a
+				remove_province_modifier = southsea_concubine_4b
+				remove_province_modifier = southsea_concubine_4c	
+}

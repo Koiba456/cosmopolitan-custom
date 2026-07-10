@@ -1,0 +1,195 @@
+cosmo_organised_through_brothels_aspect = {
+	cost = 100
+	modifier = {
+		development_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+
+cosmo_priests_may_marry_aspect = {
+	cost = 100
+	modifier = {
+		stability_cost_modifier = -0.10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+cosmo_adult_baptism_aspect = {
+	cost = 100
+	modifier = { 
+		global_missionary_strength = 0.01
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+cosmo_holy_sacraments_aspect = {
+	cost = 100
+	modifier = { 
+		discipline = 0.05
+		land_attrition = -0.15
+		loot_amount = -0.5 
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+cosmo_saints_accept_prayers_aspect = {
+	cost = 100
+	modifier = { 
+		land_morale = 0.05
+		naval_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+cosmo_icons_images_aspect = {
+	cost = 100
+	modifier = { 
+		global_unrest = -1 
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}
+
+cosmo_syncretism_aspect = {
+	cost = 100
+	modifier = {
+		legitimacy = 0.25
+		years_of_nationalism = -5
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.1
+		religious_unity = 0.15
+	}
+	ai_will_do = {
+		factor = 6
+		modifier = {
+			factor = 2
+			NOT = { legitimacy_equivalent = 80 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy_equivalent = 60 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy_equivalent = 40 }
+		}
+		modifier = {
+			factor = 0
+			legitimacy_equivalent = 95
+		}
+	}
+}
+
+cosmo_global_family_aspect = {
+	cost = 100
+	modifier = {
+		global_colonial_growth = 15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_colonies = 1
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+	}
+}
+
+cosmo_cosmopolitan_aspect = {
+	cost = 100
+	modifier = {
+		global_institution_spread = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 15
+		}
+		modifier = {
+			factor = 2
+		}
+	}
+}
+
+cosmo_open_minds_aspect = {
+	cost = 100
+	modifier = { 
+		idea_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+cosmo_calmed_seas_aspect = {
+	cost = 100
+	modifier = { 
+		naval_attrition = -0.1
+		sailors_recovery_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+cosmo_open_ears_aspect = {
+	cost = 100
+	modifier = {
+		global_spy_defence = 0.15
+	}
+	ai_will_do = {
+		factor = 15	
+	}
+}

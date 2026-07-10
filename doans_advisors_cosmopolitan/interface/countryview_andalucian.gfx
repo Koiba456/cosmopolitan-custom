@@ -1,0 +1,116 @@
+spriteTypes = {
+
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//andalucian_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//andalucian_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_treasurer_female"
+		texturefile = "gfx//interface//advisors//andalucian_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_statesman_female"
+		texturefile = "gfx//interface//advisors//andalucian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_theologian_female"
+		texturefile = "gfx//interface//advisors//andalucian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		spriteType = {
+		name = "GFX_advisor_andalucian_inquisitor_female"
+		texturefile = "gfx//interface//advisors//andalucian_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_trader_female"
+		texturefile = "gfx//interface//advisors//andalucian_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_spymaster_female"
+		texturefile = "gfx//interface//advisors//andalucian_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_commandant_female"
+		texturefile = "gfx//interface//advisors//andalucian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_andalucian_army_organiser_female"
+		texturefile = "gfx//interface//advisors//andalucian_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_andalucian_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//andalucian_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+}

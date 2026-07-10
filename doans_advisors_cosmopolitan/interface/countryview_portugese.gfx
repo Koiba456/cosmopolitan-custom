@@ -1,0 +1,76 @@
+spriteTypes = {
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_philosopher_female"
+		texturefile = "gfx//interface//advisors//portugese_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+	
+
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_statesman_female"
+		texturefile = "gfx//interface//advisors//portugese_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//portugese_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_diplomat_female"
+		texturefile = "gfx//interface//advisors//portugese_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//portugese_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_navigator_female"
+		texturefile = "gfx//interface//advisors//portugese_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_portugese_commandant_female"
+		texturefile = "gfx//interface//advisors//portugese_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

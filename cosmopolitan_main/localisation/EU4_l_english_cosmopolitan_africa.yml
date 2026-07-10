@@ -1,0 +1,12 @@
+﻿l_english:
+ imported_prostitutes:0 "Overseas Prostitutes"
+ cosmo_global:0 "A Global Dynasty" 
+ cosmo_global_desc:0 "Through marriage we have created a dynasty that spans many nations"
+ african_women:0 "Women from Africa"
+ PRIVATEER_SLAVES:0 "Slaves captured by pirates" 
+ cosmo_africa_train_desc:0 "Runaway servant girls are in need of a proper madam's training to attract better clients."
+ cosmo_africa_train_title:0 "Improve the stock at your africa" 
+ cosmo_africa_train_desc:0 "Runaway servant girls are in need of a proper madam's training to attract better clients."
+ cosmo_africa_events.1.t:0 "Cosmopolitan"
+ cosmo_africa_events.1.d:0 "With [Root.GetAdjective] laying down roots on multiple continents the [Root.Monarch.GetTitle] has called for unity within the empire.  No longer will we see ourselves as [Root.GetAdjective], but as global citizens and together all the peoples under our [Root.GetAdjective] flag will prosper and create a new country."
+ cosmo_africa_events.1.a:0 "We will endeavor to embrace all the world's people."

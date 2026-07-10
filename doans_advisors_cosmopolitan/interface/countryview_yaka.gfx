@@ -1,0 +1,43 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_yaka_theologian_female"
+		texturefile = "gfx//interface//advisors//yaka_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+		spriteType = {
+		name = "GFX_advisor_yaka_navigator_female"
+		texturefile = "gfx//interface//advisors//yaka_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_yaka_commandant_female"
+		texturefile = "gfx//interface//advisors//yaka_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_yaka_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

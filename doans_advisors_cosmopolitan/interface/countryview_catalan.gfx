@@ -1,0 +1,69 @@
+spriteTypes = {
+
+
+
+
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_catalan_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//catalan_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+spriteType = {
+		name = "GFX_advisor_catalan_navigator_female"
+		texturefile = "gfx//interface//advisors//catalan_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+	spriteType = {
+		name = "GFX_advisor_catalan_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//catalan_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_catalan_diplomat_female"
+		texturefile = "gfx//interface//advisors//catalan_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_catalan_philosopher_female"
+		texturefile = "gfx//interface//advisors//catalan_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_catalan_spymaster_female"
+		texturefile = "gfx//interface//advisors//catalan_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+}

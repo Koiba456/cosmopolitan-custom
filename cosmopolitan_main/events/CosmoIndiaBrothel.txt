@@ -1,0 +1,6495 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_indiabrothel_events
+
+
+#First launch
+country_event = {
+	id = cosmo_indiabrothel_events.30
+	title = cosmo_indiabrothel_events.30.t
+	desc = cosmo_indiabrothel_events.30.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.30.a
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6101
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+		}		
+		has_country_flag = brothel_india_menu_2
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6111
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+		}		
+		has_country_flag = brothel_india_menu_3
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6121
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+		}		
+		has_country_flag = brothel_india_menu_4
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6131
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+		}		
+		has_country_flag = brothel_india_menu_5
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}										
+		}	
+}	
+
+#Find more prostitutes
+country_event = {
+	id = cosmo_indiabrothel_events.101
+	title = cosmo_indiabrothel_events.101.t
+	desc = cosmo_indiabrothel_events.101.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+				has_country_flag = brothel_india_menu_1
+				has_country_flag = brothel_india_menu_2
+				has_country_flag = brothel_india_menu_3
+				has_country_flag = brothel_india_menu_4		
+				has_country_flag = brothel_india_menu_5
+				has_country_flag = brothel_india_menu_6
+			}
+			set_country_flag = brothel_india_menu_all
+			}
+			}
+			}	
+	
+	option = {
+		name = cosmo_indiabrothel_events.101.a
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6101
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+		}		
+		has_country_flag = brothel_india_menu_2
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6111
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+		}		
+		has_country_flag = brothel_india_menu_3
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6121
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+		}		
+		has_country_flag = brothel_india_menu_4
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6131
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_1
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+		}		
+		has_country_flag = brothel_india_menu_5
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}										
+		}
+	option = {
+		name = cosmo_indiabrothel_events.101.b
+			country_event = {
+			id = cosmo_brothel_events.101
+			}												
+		}
+	option = {
+		name = cosmo_indiabrothel_events.101.c
+			clear_madams_effect = yes												
+		}					
+}
+
+
+# brothel first menu
+
+country_event = {
+	id = cosmo_indiabrothel_events.6101
+	title = cosmo_indiabrothel_events.6101.t
+	desc = cosmo_indiabrothel_events.6101.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6101.a		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_1a
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6201
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_1a
+		}		
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6101.b
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_1b
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6202
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_1b
+		}		
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6101.c
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_1c
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6203
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_1c
+		}		
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}			
+	option = {
+		name = cosmo_indiabrothel_events.6101.7
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6111
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+		}		
+		has_country_flag = brothel_india_menu_3
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6121
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+		}		
+		has_country_flag = brothel_india_menu_4
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6131
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+		}		
+		has_country_flag = brothel_india_menu_5
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+		}		
+		has_country_flag = brothel_india_menu_6
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6151
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_2
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+			has_country_flag = brothel_india_menu_6
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}			
+}	
+
+
+
+#1a regular
+country_event = {
+	id = cosmo_indiabrothel_events.6201
+	title = cosmo_indiabrothel_events.6201.t
+	desc = cosmo_indiabrothel_events.6201.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_3
+			}			
+		has_ruler_flag = brothel_india_visit_1a_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_4
+			}	
+		has_ruler_flag = brothel_india_visit_1a_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_6_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_6
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_7
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_2_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_7
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_8
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_3_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_1a_8
+		NOT = {
+			has_ruler_flag = brothel_india_visit_1a_9
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1A_5_eventPicture
+	}	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6201.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_1a_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_1a_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_1a_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_1a_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_1a_5
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_6
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_7
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_1a_7
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_1	
+			has_ruler_flag = brothel_india_visit_1a_2		
+			has_ruler_flag = brothel_india_visit_1a_3	
+			has_ruler_flag = brothel_india_visit_1a_4
+			has_ruler_flag = brothel_india_visit_1a_5			
+			has_ruler_flag = brothel_india_visit_1a_6			
+			has_ruler_flag = brothel_india_visit_1a_7			
+			has_ruler_flag = brothel_india_visit_1a_8			
+		}
+		clr_ruler_flag = brothel_india_visit_1a_1
+		clr_ruler_flag = brothel_india_visit_1a_2
+		clr_ruler_flag = brothel_india_visit_1a_3
+		clr_ruler_flag = brothel_india_visit_1a_4
+		clr_ruler_flag = brothel_india_visit_1a_5		
+ 		clr_ruler_flag = brothel_india_visit_1a_6		
+		clr_ruler_flag = brothel_india_visit_1a_7		
+		clr_ruler_flag = brothel_india_visit_1a_8		
+      }	   
+		set_ruler_flag = brothel_india_visit_1a_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_1a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6201.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_1a_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_1a_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_1a_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_5	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_6
+			}
+		}
+		set_ruler_flag = brothel_india_visit_1a_6
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_1a_7	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_1a_8
+			}
+		}
+		set_ruler_flag = brothel_india_visit_1a_8
+       }	   	   
+		clr_ruler_flag = brothel_india_visit_1a_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_1a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_1a }					
+		   }
+
+		
+	}	
+}
+
+
+# option 2
+country_event = {
+	id = cosmo_indiabrothel_events.6202
+	title = cosmo_indiabrothel_events.6202.t
+	desc = cosmo_indiabrothel_events.6202.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1B_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6202.a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_1b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_1b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_1b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_1b }					
+		   }
+		
+	}	
+}
+
+#1c
+country_event = {
+	id = cosmo_indiabrothel_events.6203
+	title = cosmo_indiabrothel_events.6203.t
+	desc = cosmo_indiabrothel_events.6203.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_1C_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6203.a
+  
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_1c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_1c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_1c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_1c }					
+		   }
+		
+	}	
+}
+
+#india brothel 2
+country_event = {
+	id = cosmo_indiabrothel_events.6111
+	title = cosmo_indiabrothel_events.6111.t
+	desc = cosmo_indiabrothel_events.6111.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_2_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6111.a		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_2a
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6211
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_2a
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6111.b
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_2b
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6212
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_2b
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6111.c
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_2c
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6213
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_2c
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}	
+	option = {
+		name = cosmo_indiabrothel_events.6111.7
+		if = {
+			limit = {	
+			OR = {
+				has_country_flag = brothel_india_menu_all
+				has_country_flag = brothel_india_menu_3
+			}					
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6121
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_3
+		}		
+		has_country_flag = brothel_india_menu_4
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6131
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+		}		
+		has_country_flag = brothel_india_menu_5
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+		}		
+		has_country_flag = brothel_india_menu_6
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6151
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_3
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+			has_country_flag = brothel_india_menu_6
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}			
+}
+
+# 1st option
+country_event = {
+	id = cosmo_indiabrothel_events.6211
+	title = cosmo_indiabrothel_events.6211.t
+	desc = cosmo_indiabrothel_events.6211.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_2A_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6211.a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_2a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6211.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_2A_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_2A_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_2A_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_2A_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_2A_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_2A_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_2A_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_2A_5	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_2A_6
+			}
+		}
+		set_ruler_flag = brothel_india_visit_2A_6
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_2A_7	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_2A_8
+			}
+		}
+		set_ruler_flag = brothel_india_visit_2A_8
+       }	   	   
+		clr_ruler_flag = brothel_india_visit_2A_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_2a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_2a }					
+		   }
+		
+	}	
+}
+
+# option 2
+country_event = {
+	id = cosmo_indiabrothel_events.6212
+	title = cosmo_indiabrothel_events.6212.t
+	desc = cosmo_indiabrothel_events.6212.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_2B_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6212.a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_2b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_2b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_2b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_2b }					
+		   }
+		
+	}	
+}
+
+#2c
+country_event = {
+	id = cosmo_indiabrothel_events.6213
+	title = cosmo_indiabrothel_events.6213.t
+	desc = cosmo_indiabrothel_events.6213.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_2C_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6213.a   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_2c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_2c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_2c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_2c }					
+		   }
+		
+	}	
+}
+
+#india brothel 3
+country_event = {
+	id = cosmo_indiabrothel_events.6121
+	title = cosmo_indiabrothel_events.6121.t
+	desc = cosmo_indiabrothel_events.6121.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6121.a		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_3a
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6221
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_3a
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6121.b
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_3b
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6222
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_3b
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6121.c
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_3c
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6223
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_3c
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}	
+	option = {
+		name = cosmo_indiabrothel_events.6121.7
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_4
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6131
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_4
+		}		
+		has_country_flag = brothel_india_menu_5
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+		}		
+		has_country_flag = brothel_india_menu_6
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6151
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_4
+			has_country_flag = brothel_india_menu_5
+			has_country_flag = brothel_india_menu_6
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}			
+}
+
+#3A
+#3A regular
+country_event = {
+	id = cosmo_indiabrothel_events.6221
+	title = cosmo_indiabrothel_events.6221.t
+	desc = cosmo_indiabrothel_events.6221.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3A_1_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6221.a  
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_3a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_3a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_3a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_3a }					
+		   }
+		
+	}	
+}
+
+#3B
+country_event = {
+	id = cosmo_indiabrothel_events.6222
+	title = cosmo_indiabrothel_events.6222.t
+	desc = cosmo_indiabrothel_events.6222.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3B_1_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6222.a  
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_3b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_3b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_3b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_3b }					
+		   }
+		
+	}	
+}
+
+#3C
+country_event = {
+	id = cosmo_indiabrothel_events.6223
+	title = cosmo_indiabrothel_events.6223.t
+	desc = cosmo_indiabrothel_events.6223.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_3c_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_3
+			}			
+		has_ruler_flag = brothel_india_visit_3c_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_4
+			}	
+		has_ruler_flag = brothel_india_visit_3c_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_3c_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_3c_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_3c_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_3C_6_eventPicture
+	}
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6223.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_3c_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_3c_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_3c_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_3c_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_3c_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_3c_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_3c_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_3c_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_3c_5
+       }
+		set_ruler_flag = brothel_india_visit_3c_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_3c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6223.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_3c_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_3c_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_3c_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_3c_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_3c_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_3c_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_3c_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_3c_1	
+			has_ruler_flag = brothel_india_visit_3c_2		
+			has_ruler_flag = brothel_india_visit_3c_3	
+			has_ruler_flag = brothel_india_visit_3c_4
+			has_ruler_flag = brothel_india_visit_3c_5			
+		}
+		clr_ruler_flag = brothel_india_visit_3c_1
+		clr_ruler_flag = brothel_india_visit_3c_2
+		clr_ruler_flag = brothel_india_visit_3c_3
+		clr_ruler_flag = brothel_india_visit_3c_4
+		clr_ruler_flag = brothel_india_visit_3c_5		
+       }	   
+		clr_ruler_flag = brothel_india_visit_3c_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_3c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_3c }					
+		   }
+
+		
+	}	
+}
+
+#india brothel 4
+country_event = {
+	id = cosmo_indiabrothel_events.6131
+	title = cosmo_indiabrothel_events.6131.t
+	desc = cosmo_indiabrothel_events.6131.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6131.a		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_4a
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6231
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_4a
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6131.b
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_4b
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6232
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_4b
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6131.c
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_4c
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6233
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_4c
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6131.7
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_5
+		}
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6141
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_5
+		}		
+		has_country_flag = brothel_india_menu_6
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6151
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_india_menu_all
+			has_country_flag = brothel_india_menu_5
+			has_country_flag = brothel_india_menu_6
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}			
+}
+
+#Option 1
+country_event = {
+	id = cosmo_indiabrothel_events.6231
+	title = cosmo_indiabrothel_events.6231.t
+	desc = cosmo_indiabrothel_events.6231.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4a_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_3
+			}			
+		has_ruler_flag = brothel_india_visit_4a_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_4
+			}	
+		has_ruler_flag = brothel_india_visit_4a_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4a_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4a_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4a_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4A_6_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}								
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6231.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_4a_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_4a_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4a_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4a_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4a_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4a_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4a_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4a_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4a_5
+       }
+		set_ruler_flag = brothel_india_visit_4a_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4a }					
+		   }		    
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6231.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_4a_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4a_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4a_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4a_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4a_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4a_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4a_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4a_1	
+			has_ruler_flag = brothel_india_visit_4a_2		
+			has_ruler_flag = brothel_india_visit_4a_3	
+			has_ruler_flag = brothel_india_visit_4a_4
+			has_ruler_flag = brothel_india_visit_4a_5			
+		}
+		clr_ruler_flag = brothel_india_visit_4a_1
+		clr_ruler_flag = brothel_india_visit_4a_2
+		clr_ruler_flag = brothel_india_visit_4a_3
+		clr_ruler_flag = brothel_india_visit_4a_4
+		clr_ruler_flag = brothel_india_visit_4a_5		
+       }	   
+		clr_ruler_flag = brothel_india_visit_4a_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4a }					
+		   }
+		
+	}	
+}
+
+#Option 2
+#4B regular
+country_event = {
+	id = cosmo_indiabrothel_events.6232
+	title = cosmo_indiabrothel_events.6232.t
+	desc = cosmo_indiabrothel_events.6232.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_3
+			}			
+		has_ruler_flag = brothel_india_visit_4B_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_4
+			}	
+		has_ruler_flag = brothel_india_visit_4B_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_6_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_6
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_7
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_7
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_8
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_3_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4B_8
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4B_9
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4B_4_eventPicture
+	}	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6232.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_4B_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_4B_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4B_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4B_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4B_5
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_6
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_7
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4B_7
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_1	
+			has_ruler_flag = brothel_india_visit_4B_2		
+			has_ruler_flag = brothel_india_visit_4B_3	
+			has_ruler_flag = brothel_india_visit_4B_4
+			has_ruler_flag = brothel_india_visit_4B_5			
+			has_ruler_flag = brothel_india_visit_4B_6			
+			has_ruler_flag = brothel_india_visit_4B_7			
+			has_ruler_flag = brothel_india_visit_4B_8			
+		}
+		clr_ruler_flag = brothel_india_visit_4B_1
+		clr_ruler_flag = brothel_india_visit_4B_2
+		clr_ruler_flag = brothel_india_visit_4B_3
+		clr_ruler_flag = brothel_india_visit_4B_4
+		clr_ruler_flag = brothel_india_visit_4B_5		
+ 		clr_ruler_flag = brothel_india_visit_4B_6		
+		clr_ruler_flag = brothel_india_visit_4B_7		
+		clr_ruler_flag = brothel_india_visit_4B_8		
+      }	   
+		set_ruler_flag = brothel_india_visit_4B_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6232.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_4B_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4B_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4B_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_5	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_6
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4B_6
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4B_7	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4B_8
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4B_8
+       }	   	   
+		clr_ruler_flag = brothel_india_visit_4B_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4b }					
+		   }
+		
+	}	
+}
+
+#Option 3
+#Option 1
+country_event = {
+	id = cosmo_indiabrothel_events.6233
+	title = cosmo_indiabrothel_events.6233.t
+	desc = cosmo_indiabrothel_events.6233.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4c_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_3
+			}			
+		has_ruler_flag = brothel_india_visit_4c_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_4
+			}	
+		has_ruler_flag = brothel_india_visit_4c_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4c_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_4c_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_4c_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_4C_6_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6233.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_4c_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_4c_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4c_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4c_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4c_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4c_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4c_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4c_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_4c_5
+       }
+		set_ruler_flag = brothel_india_visit_4c_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4c }					
+		   }		    
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6233.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_4c_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4c_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4c_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4c_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4c_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_4c_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_4c_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_4c_1	
+			has_ruler_flag = brothel_india_visit_4c_2		
+			has_ruler_flag = brothel_india_visit_4c_3	
+			has_ruler_flag = brothel_india_visit_4c_4
+			has_ruler_flag = brothel_india_visit_4c_5			
+		}
+		clr_ruler_flag = brothel_india_visit_4c_1
+		clr_ruler_flag = brothel_india_visit_4c_2
+		clr_ruler_flag = brothel_india_visit_4c_3
+		clr_ruler_flag = brothel_india_visit_4c_4
+		clr_ruler_flag = brothel_india_visit_4c_5		
+       }	   
+		clr_ruler_flag = brothel_india_visit_4c_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_4c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_4c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_4c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_4c }					
+		   }
+		
+	}	
+}
+
+#china brothel 5
+country_event = {
+	id = cosmo_indiabrothel_events.6141
+	title = cosmo_indiabrothel_events.6141.t
+	desc = cosmo_indiabrothel_events.6141.d
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = cosmo_indiabrothel_events.6141.a		
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_5a
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6241
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_5a
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6141.b
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_5b
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6242
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_5b
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6141.c
+		if = {
+			limit = {
+		NOT = {
+					any_province = {
+			has_province_modifier = india_prostitute_5c
+		}
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6243
+			}
+		}
+		if = {
+			limit = {
+					any_province = {
+			has_province_modifier = india_prostitute_5c
+		}
+		}
+			custom_tooltip = prostitute_gone_tt 		
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}
+	option = {
+		name = cosmo_indiabrothel_events.6141.7
+		if = {
+			limit = {
+		OR = {
+			has_country_flag = brothel_china_menu_all
+			has_country_flag = brothel_china_menu_6
+		}
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.6151
+			}
+		}
+		if = {
+			limit = {
+		NOT = {
+			has_country_flag = brothel_china_menu_all
+			has_country_flag = brothel_china_menu_6
+		}		
+		}
+			country_event = {
+			id = cosmo_indiabrothel_events.101
+			}
+		}		
+		}			
+}	
+
+# 1st option
+country_event = {
+	id = cosmo_indiabrothel_events.6241
+	title = cosmo_indiabrothel_events.6241.t
+	desc = cosmo_indiabrothel_events.6241.d
+	picture = {
+	trigger = {
+	NOT = {
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter	
+			value = 1
+			}
+		}
+			}	
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 21
+			}
+			}
+		}	
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_2_eventPicture
+	}	
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 41
+			}
+		}
+		}	
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_3_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 61
+			}
+		}
+		}	
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 81
+			}
+		}
+	}	
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_5_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 101
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_6_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 121
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_7_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 141
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_8_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 161
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_9_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 181
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_10_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 201
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_11_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 221
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_12_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 241
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_13_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 261
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_14_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 281
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_15_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 301
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_16_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 321
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_17_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 341
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_18_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 361
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_19_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 381
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_20_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 401
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_21_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 421
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_22_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 441
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_23_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 461
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_24_eventPicture
+	}
+	picture = {
+	trigger = {
+	NOT = {	
+	check_variable = {
+			which = cosmoBrothelEIFiveACounter
+			value = 481
+			}
+	}	
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5A_25_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6241.a   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_5a }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_5a }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_5a }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_5a }					
+		   }
+
+		hidden_effect = {
+		change_variable = {
+		which = cosmoBrothelEIFiveACounter
+		value = 20
+		}
+		if = {
+		limit = {
+			check_variable = {
+			which = cosmoBrothelEIFiveACounter	
+			value = 480
+			}
+			}
+		set_variable = {
+		which = cosmoBrothelEIFiveACounter
+		value = 0
+			}
+		}
+	}				
+	}	
+}
+
+#4B regular
+country_event = {
+	id = cosmo_indiabrothel_events.6242
+	title = cosmo_indiabrothel_events.6242.t
+	desc = cosmo_indiabrothel_events.6242.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_3
+			}			
+		has_ruler_flag = brothel_india_visit_5B_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_4
+			}	
+		has_ruler_flag = brothel_india_visit_5B_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_6_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_6
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_7
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_7_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_7
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_8
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_8_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5B_8
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5B_9
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5B_9_eventPicture
+	}	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6242.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_5B_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_5B_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5B_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_5B_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_5B_5
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_6
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_7
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_5B_7
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_1	
+			has_ruler_flag = brothel_india_visit_5B_2		
+			has_ruler_flag = brothel_india_visit_5B_3	
+			has_ruler_flag = brothel_india_visit_5B_4
+			has_ruler_flag = brothel_india_visit_5B_5			
+			has_ruler_flag = brothel_india_visit_5B_6			
+			has_ruler_flag = brothel_india_visit_5B_7			
+			has_ruler_flag = brothel_india_visit_5B_8			
+		}
+		clr_ruler_flag = brothel_india_visit_5B_1
+		clr_ruler_flag = brothel_india_visit_5B_2
+		clr_ruler_flag = brothel_india_visit_5B_3
+		clr_ruler_flag = brothel_india_visit_5B_4
+		clr_ruler_flag = brothel_india_visit_5B_5		
+ 		clr_ruler_flag = brothel_india_visit_5B_6		
+		clr_ruler_flag = brothel_india_visit_5B_7		
+		clr_ruler_flag = brothel_india_visit_5B_8		
+      }	   
+		set_ruler_flag = brothel_india_visit_5B_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_5b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6242.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_5B_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5B_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5B_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_5	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_6
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5B_6
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5B_7	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5B_8
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5B_8
+       }	   	   
+		clr_ruler_flag = brothel_india_visit_5B_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_5b }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_5b }					
+		   }
+		
+	}	
+}
+
+#Option 1
+country_event = {
+	id = cosmo_indiabrothel_events.6243
+	title = cosmo_indiabrothel_events.6243.t
+	desc = cosmo_indiabrothel_events.6243.d
+	picture = {
+	trigger = { 
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_1
+			}
+		}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_1_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5c_1
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_2
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_3
+			}			
+		has_ruler_flag = brothel_india_visit_5c_2
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_3_eventPicture
+	}	
+	picture = {
+	trigger = {
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_4
+			}	
+		has_ruler_flag = brothel_india_visit_5c_3
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_4_eventPicture
+	}	
+		picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5c_4
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_5
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_5_eventPicture
+	}
+	picture = {
+	trigger = {	
+		has_ruler_flag = brothel_india_visit_5c_5
+		NOT = {
+			has_ruler_flag = brothel_india_visit_5c_6
+			}		
+	}
+	picture = cosmogfx_BROTHEL_INDIA_MENU_5C_6_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	
+	}
+
+	immediate = {
+			hidden_effect = {
+		if = {
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_spy_sent
+					}
+				}
+					save_event_target_as = spycountry
+				}
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = dignitary_entertained
+					}
+				}
+					save_event_target_as = dignitarycountry
+				}
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_new	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_here_now
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertain_sailors_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_sailors_here
+					has_province_flag = entertain_sailors_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}			
+		if = {
+			limit = {
+				has_country_flag = entertain_troops_prostitutes_current	
+			}
+				random_province = {
+				limit = {
+					country_or_vassal_holds = ROOT 
+					has_province_flag = entertain_troops_here
+					has_province_flag = entertain_troops_present
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = convert_anathanism_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = convertprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = convert_anathanism_here
+					country_or_vassal_holds = ROOT 
+					has_building = brothel_district
+				}
+					save_event_target_as = convertprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = hire_clergy_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_clergy_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = clergyprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = entertaining_merchant_country
+			}
+				random_province = {
+				limit = {
+					has_province_flag = entertain_merchants_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_country_flag = establish_prostitutes_brothel	
+			}
+				set_country_flag = south_asian_madams_established
+				random_province = {
+				limit = {
+					has_province_flag = establish_brothel_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = prostituteprovince
+				}												
+			}
+		if = {
+			limit = {
+				has_ruler_flag = subjects_advisor_prostitutes	
+			}
+				random_country = {
+				limit = {
+					has_country_flag = influencing_advisor_prostitute 
+				}
+					save_event_target_as = advisorcountry
+				}												
+			}									
+		if = {
+			limit = {
+				has_ruler_flag = hire_noble_prostitutes	
+			}
+				random_province = {
+				limit = {
+					has_province_modifier = entertain_noble_province
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = nobleprovince
+				}												
+			}		
+				}
+				}
+
+	
+	option = {
+		name = cosmo_indiabrothel_events.6243.a
+		trigger = {
+			NOT = {
+		has_ruler_flag = brothel_india_visit_5c_a			
+		 }	
+		}
+		if = {
+		limit = {
+			NOT = {
+			has_ruler_flag = brothel_india_visit_5c_1
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5c_1		
+       }	
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5c_2
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5c_3
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_5c_3
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5c_4
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5c_5
+			}			
+		}
+		set_ruler_flag = brothel_india_visit_5c_5
+       }
+		set_ruler_flag = brothel_india_visit_5c_a	   
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_5c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_5c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_5c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_5c }					
+		   }		    
+		
+	}
+	option = {
+		name = cosmo_indiabrothel_events.6243.b
+		trigger = {
+			has_ruler_flag = brothel_india_visit_5c_a			
+		}
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5c_1	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5c_2
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5c_2
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5c_3	
+						NOT = {
+			has_ruler_flag = brothel_india_visit_5c_4
+			}
+		}
+		set_ruler_flag = brothel_india_visit_5c_4
+       }
+		if = {
+		limit = {
+			has_ruler_flag = brothel_india_visit_5c_1	
+			has_ruler_flag = brothel_india_visit_5c_2		
+			has_ruler_flag = brothel_india_visit_5c_3	
+			has_ruler_flag = brothel_india_visit_5c_4
+			has_ruler_flag = brothel_india_visit_5c_5			
+		}
+		clr_ruler_flag = brothel_india_visit_5c_1
+		clr_ruler_flag = brothel_india_visit_5c_2
+		clr_ruler_flag = brothel_india_visit_5c_3
+		clr_ruler_flag = brothel_india_visit_5c_4
+		clr_ruler_flag = brothel_india_visit_5c_5		
+       }	   
+		clr_ruler_flag = brothel_india_visit_5c_a 
+		if = {
+			limit = {
+				has_ruler_flag = hire_ruler_prostitutes	
+			}
+			prostitute_ruler_effect = { MODIFIER = india_prostitute_5c }
+		   }
+		if = {
+			limit = {
+				has_ruler_flag = hire_diplomat_prostitutes	
+			}
+			prostitute_dignitary_effect = { MODIFIER = india_prostitute_5c }					
+		   }
+		if = {#spy rewards
+			limit = {
+				has_ruler_flag = train_spy_prostitutes	
+			}
+			prostitute_spy_effect = { MODIFIER = india_prostitute_5c }					
+		   }
+		if = {#others
+			limit = {
+			OR = {
+				has_country_flag = convert_anathanism_prostitutes	
+				has_ruler_flag = entertain_company_prostitutes	
+				has_ruler_flag = hire_admadvisor_prostitutes
+				has_ruler_flag = hire_dipadvisor_prostitutes
+				has_ruler_flag = hire_miladvisor_prostitutes
+				has_ruler_flag = hire_noble_prostitutes
+				has_ruler_flag = hire_burghers_prostitutes
+				has_ruler_flag = hire_brahmins_prostitutes
+				has_ruler_flag = hire_maratha_prostitutes
+				has_ruler_flag = hire_vaisyas_prostitutes
+				has_ruler_flag = hire_cossacks_prostitutes
+				has_ruler_flag = hire_nomadic_tribes_prostitutes
+				has_ruler_flag = hire_dhimmi_prostitutes
+				has_ruler_flag = hire_jains_prostitutes
+				has_ruler_flag = hire_rajput_prostitutes
+				has_ruler_flag = hire_clergy_prostitutes	
+				has_ruler_flag = daimyo_introduction_prostitutes	
+				has_country_flag = entertain_troops_prostitutes	
+				has_country_flag = entertain_troops_prostitutes_current	
+				has_country_flag = entertain_troops_prostitutes_new	
+				has_country_flag = entertain_sailors_prostitutes_current	
+				has_country_flag = entertain_sailors_prostitutes_new	
+				has_country_flag = establish_prostitutes_brothel
+				has_country_flag = entertaining_merchant_country
+				has_country_flag = entertain_sailors_prostitutes	
+			}	
+			}
+			prostitute_other_effect = { MODIFIER = india_prostitute_5c }					
+		   }
+		
+	}	
+}

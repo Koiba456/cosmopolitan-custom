@@ -1,0 +1,261 @@
+# INSTRUCTIONS:
+# -------------
+# is_triggered_only - Triggered from within the code or by event effects. DO NOT REMOVE THE STOCK ONES.
+# months - The number of months this CB will be valid. Only works for triggered CBs.
+# prerequisites - A condition that automatically activates a CB. Does not work for triggered CBs.
+# no_opinion_hit - If yes you get no negative opinion from this
+#
+# ROOT = attacker
+# FROM = target
+#
+# NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
+#
+# TRIGGERED - Triggered from within the code or by event effects
+# --------------------------------------------------------------
+
+# Restoration of recently broken PU
+cb_restore_cosmo_african_personal_union_I = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_african_personal_union_I
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_african_personal_union_I
+}
+
+cb_restore_cosmo_african_personal_union_II = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_african_personal_union_II
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_african_personal_union_II
+}
+
+# Restoration of recently broken PU
+cb_restore_cosmo_daimyo_personal_union_I = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_daimyo_personal_union_I
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_daimyo_personal_union_I
+}
+
+cb_restore_cosmo_daimyo_personal_union_II = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_daimyo_personal_union_II
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_daimyo_personal_union_II
+}
+
+cb_restore_cosmo_sa_personal_union_I = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_sa_personal_union_I
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_sa_personal_union_I
+}
+
+cb_restore_cosmo_sa_personal_union_II = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_sa_personal_union_II
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_sa_personal_union_II
+}
+
+cb_restore_cosmo_na_personal_union_I = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_na_personal_union_I
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_na_personal_union_I
+}
+
+cb_restore_cosmo_na_personal_union_II = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_na_personal_union_II
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_na_personal_union_II
+}
+
+cb_restore_cosmo_asian_personal_union_I = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_asian_personal_union_I
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+
+	war_goal = capital_restore_cosmo_asian_personal_union_I
+}
+
+cb_restore_cosmo_asian_personal_union_II = {
+	valid_for_subject = no
+
+	months = 240
+
+	prerequisites = {
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_cosmo_asian_personal_union_II
+			}
+			NOT = {
+				is_subject_of = ROOT 
+			}
+		}
+	}
+	
+
+	war_goal = capital_restore_cosmo_asian_personal_union_II
+}
+
+# War Against the World CB for pirates
+cb_cosmo_war_against_the_world = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		has_reform = cosmo_war_against_the_world_doctrine_reform
+	}
+
+	war_goal = take_capital_pirates
+}
+
+# Daimyo on Japan
+cb_cosmo_daimyo_annex = {
+	valid_for_subject = yes
+	exclusive = yes
+	independence = no
+
+	prerequisites = {
+	OR = {	
+		is_subject_of_type = cosmo_daimyo_personal_union_I
+		is_subject_of_type = cosmo_daimyo_personal_union_II
+		}		
+		OR = {
+			culture_group = japanese_g
+		}
+		FROM = { has_reform = shogunate }
+	}
+
+	war_goal = annex_country_japan
+}
+
+
+
+
+
+

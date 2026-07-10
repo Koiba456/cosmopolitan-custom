@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_bilala_treasurer_female"
+		texturefile = "gfx//interface//advisors//bilala_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_bilala_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//bilala_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_bilala_army_organiser_female"
+		texturefile = "gfx//interface//advisors//bilala_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_bilala_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

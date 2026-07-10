@@ -1,0 +1,18 @@
+ ##opinion modifiers
+
+concubine_sent = {
+	opinion = 1
+	months = 6	
+}
+
+cosmo_influenced_advisor = {
+	opinion = 5
+	max = 100
+	max_vassal = 200
+	yearly_decay = 2
+}
+
+
+
+
+

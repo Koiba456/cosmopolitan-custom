@@ -1,0 +1,7201 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_trade_events
+
+
+# brothel options
+country_event = {
+	id = cosmo_trade_events.60
+	title = cosmo_trade_events.60.t
+	desc = cosmo_trade_events.60.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+		random_subject_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}
+			}
+					save_event_target_as = personalunion	
+		}				
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+				base_production = 3 					
+				}
+			set_province_flag = resource_province_1		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+				}					
+				}
+			set_province_flag = resource_province_2		
+			}	
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+				}					
+				}
+			set_province_flag = resource_province_3		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+				}					
+				}
+			set_province_flag = resource_province_4		
+			}								
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+				}					
+				}
+			set_province_flag = resource_province_5		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+				}					
+				}
+			set_province_flag = resource_province_6		
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+				}					
+				}
+			set_province_flag = resource_province_7		
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+					has_province_flag = resource_province_7	
+				}					
+				}
+			set_province_flag = resource_province_8	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+					has_province_flag = resource_province_7	
+					has_province_flag = resource_province_8	
+				}					
+				}
+			set_province_flag = resource_province_9	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+					has_province_flag = resource_province_7	
+					has_province_flag = resource_province_8	
+					has_province_flag = resource_province_9	
+				}					
+				}
+			set_province_flag = resource_province_10	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+					has_province_flag = resource_province_7	
+					has_province_flag = resource_province_8	
+					has_province_flag = resource_province_9	
+					has_province_flag = resource_province_10
+				}					
+				}
+			set_province_flag = resource_province_11
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_resource_here	
+							base_production = 3
+				NOT = {
+					has_province_flag = resource_province_1	
+					has_province_flag = resource_province_2	
+					has_province_flag = resource_province_3	
+					has_province_flag = resource_province_4	
+					has_province_flag = resource_province_5	
+					has_province_flag = resource_province_6	
+					has_province_flag = resource_province_7	
+					has_province_flag = resource_province_8	
+					has_province_flag = resource_province_9	
+					has_province_flag = resource_province_10
+					has_province_flag = resource_province_11
+				}					
+				}
+			set_province_flag = resource_province_12
+			}				
+			}																																											
+				}				
+				}
+
+	option = {#add opinion modifier to track
+		name = cosmo_trade_events.60.a	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_1	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_1					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}	
+	option = {#reduce gold
+		name = cosmo_trade_events.60.b	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_2	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_2					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.c	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_3	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_3					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.7
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_4	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_4					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.8	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_5	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_5					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.9	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_6	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_6					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.10	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_7	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_7					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.11	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_7	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_7					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.12	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_8	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_8					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.13	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_9	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_9					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.14	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_10	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_10					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.15	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_11	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_11					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.16
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_12	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = resource_province_12					
+			}
+			add_base_production = -2
+			add_province_modifier = { 
+				name = cosmo_resource_depleted
+				duration = 180  	
+			}			
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.60.16
+		event_target:personalunion = {			
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}						
+		}			   																					
+	}			
+}
+
+
+# Trade Gold choose province
+country_event = {
+	id = cosmo_trade_events.602
+	title = cosmo_trade_events.602.t
+	desc = cosmo_trade_events.602.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+				base_production = 3 					
+				}
+			set_province_flag = train_spy_attempt_fort_1		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_2		
+			}	
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_3		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_4		
+			}								
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_5		
+			}
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_6		
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_7		
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+					has_province_flag = train_spy_attempt_7	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_8	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+					has_province_flag = train_spy_attempt_7	
+					has_province_flag = train_spy_attempt_8	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_9	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+					has_province_flag = train_spy_attempt_7	
+					has_province_flag = train_spy_attempt_8	
+					has_province_flag = train_spy_attempt_9	
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_10	
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+					has_province_flag = train_spy_attempt_7	
+					has_province_flag = train_spy_attempt_8	
+					has_province_flag = train_spy_attempt_9	
+					has_province_flag = train_spy_attempt_10
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_11
+			}				
+			}
+			random_subject_country = {
+			random_owned_province = {
+				limit = {
+				has_province_flag = trade_gold_here	
+				trade_goods = gold
+							base_production = 3
+				NOT = {
+					has_province_flag = train_spy_attempt_1	
+					has_province_flag = train_spy_attempt_2	
+					has_province_flag = train_spy_attempt_3	
+					has_province_flag = train_spy_attempt_4	
+					has_province_flag = train_spy_attempt_5	
+					has_province_flag = train_spy_attempt_6	
+					has_province_flag = train_spy_attempt_7	
+					has_province_flag = train_spy_attempt_8	
+					has_province_flag = train_spy_attempt_9	
+					has_province_flag = train_spy_attempt_10
+					has_province_flag = train_spy_attempt_11
+				}					
+				}
+			set_province_flag = train_spy_attempt_fort_12
+			}				
+			}																																											
+				}				
+				}
+
+	option = {#add opinion modifier to track
+		name = cosmo_trade_events.602.a	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_1	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_1					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}	
+	option = {#reduce gold
+		name = cosmo_trade_events.602.b	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_2	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_2					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.c	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_3	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_3					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.7
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_4	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_4					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.8	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_5	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_5					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.9	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_6	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_6					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.10	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_7	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_7					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.11	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_7	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_7					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.12	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_8	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_8					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.13	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_9	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_9					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.14	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_10	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_10					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}
+	option = {#reduce gold
+		name = cosmo_trade_events.602.15	
+		trigger = {
+			any_province = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_11	
+			}
+		}
+		random_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 
+				has_province_flag = train_spy_attempt_11					
+			}
+			add_base_production = -5
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}			   																					
+	}	
+}
+
+# trade gold menu options
+country_event = {
+	id = cosmo_trade_events.601
+	title = cosmo_trade_events.601.t
+	desc = cosmo_trade_events.601.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+
+					
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				random_province = {
+				limit = {
+					has_province_flag = trade_gold_here
+					country_or_vassal_holds = ROOT 
+				}
+					save_event_target_as = merchantprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = trade_gold_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 1					
+				}
+					save_event_target_as = merchantprovince
+				}
+				random_province = {
+				limit = {
+					has_province_flag = trade_gold_here
+					country_or_vassal_holds = ROOT 
+					province_has_center_of_trade_of_level = 2					
+				}
+					save_event_target_as = merchantprovince
+				}								
+			clr_ruler_flag = trade_gold_europe
+			clr_ruler_flag = trade_gold_africa
+			clr_ruler_flag = trade_gold_asia
+			clr_ruler_flag = trade_gold_namerica
+			clr_ruler_flag = trade_gold_samerica
+			clr_ruler_flag = trade_gold_west_europe
+			clr_ruler_flag = trade_gold_north_africa
+			clr_ruler_flag = trade_gold_not_north_africa
+			clr_ruler_flag = trade_gold_france
+			clr_ruler_flag = trade_gold_low_countries
+			clr_ruler_flag = trade_gold_north_german
+			clr_ruler_flag = trade_gold_south_german
+			clr_ruler_flag = trade_gold_britain
+			clr_ruler_flag = trade_gold_italy
+			clr_ruler_flag = trade_gold_iberia
+			clr_ruler_flag = trade_gold_scandinavian
+
+			clr_ruler_flag = trade_gold_east_europe
+			clr_ruler_flag = trade_gold_poland
+			clr_ruler_flag = trade_gold_ruthenia
+			clr_ruler_flag = trade_gold_baltic
+			clr_ruler_flag = trade_gold_russia
+			clr_ruler_flag = trade_gold_carpathia
+			clr_ruler_flag = trade_gold_balkan
+			clr_ruler_flag = trade_gold_crimea
+			clr_ruler_flag = trade_gold_ural
+
+			clr_ruler_flag = trade_gold_maghreb
+			clr_ruler_flag = trade_gold_egypt
+			clr_ruler_flag = trade_gold_north_africa
+
+			clr_ruler_flag = trade_gold_west_asia
+			clr_ruler_flag = trade_gold_anatolia
+			clr_ruler_flag = trade_gold_mashriq
+			clr_ruler_flag = trade_gold_caucasia
+			clr_ruler_flag = trade_gold_arabia
+			clr_ruler_flag = trade_gold_khorasan
+			clr_ruler_flag = trade_gold_persia
+			clr_ruler_flag = trade_gold_bengal
+			clr_ruler_flag = trade_gold_hindusthan
+			clr_ruler_flag = trade_gold_west_india
+			clr_ruler_flag = trade_gold_deccan
+			clr_ruler_flag = trade_gold_coromandel
+			clr_ruler_flag = trade_gold_burma
+			clr_ruler_flag = trade_gold_malaya
+			clr_ruler_flag = trade_gold_moluccas
+			clr_ruler_flag = trade_gold_indonesia
+			clr_ruler_flag = trade_gold_indo_china
+
+			clr_ruler_flag = trade_gold_not_north_africa
+			clr_ruler_flag = trade_gold_niger
+			clr_ruler_flag = trade_gold_guinea
+			clr_ruler_flag = trade_gold_central_africa
+			clr_ruler_flag = trade_gold_sahel
+			clr_ruler_flag = trade_gold_horn_of_africa
+			clr_ruler_flag = trade_gold_east_africa
+			clr_ruler_flag = trade_gold_kongo
+			clr_ruler_flag = trade_gold_south_african
+
+
+			clr_ruler_flag = trade_gold_east_asia
+			clr_ruler_flag = trade_gold_australia
+			clr_ruler_flag = trade_gold_oceanea
+			clr_ruler_flag = trade_gold_central_asia
+			clr_ruler_flag = trade_gold_west_siberia
+			clr_ruler_flag = trade_gold_east_siberia
+			clr_ruler_flag = trade_gold_tibet
+			clr_ruler_flag = trade_gold_manchuria
+			clr_ruler_flag = trade_gold_mongolia
+			clr_ruler_flag = trade_gold_japan
+			clr_ruler_flag = trade_gold_korea
+			clr_ruler_flag = trade_gold_xinan
+			clr_ruler_flag = trade_gold_south_china
+			clr_ruler_flag = trade_gold_north_china
+
+			clr_ruler_flag = trade_gold_south_america
+			clr_ruler_flag = trade_gold_central_america
+			clr_ruler_flag = trade_gold_brazil
+			clr_ruler_flag = trade_gold_mexico
+			clr_ruler_flag = trade_gold_carribeans
+			clr_ruler_flag = trade_gold_upper_peru
+			clr_ruler_flag = trade_gold_la_plata
+			clr_ruler_flag = trade_gold_colombia
+			clr_ruler_flag = trade_gold_peru
+
+			clr_ruler_flag = trade_gold_north_america
+			clr_ruler_flag = trade_gold_hudson_bay
+			clr_ruler_flag = trade_gold_northeast_america
+			clr_ruler_flag = trade_gold_cascadia
+			clr_ruler_flag = trade_gold_california
+			clr_ruler_flag = trade_gold_great_plains
+			clr_ruler_flag = trade_gold_mississippi
+			clr_ruler_flag = trade_gold_southeast_america
+			clr_ruler_flag = trade_gold_great_lakes
+			clr_ruler_flag = trade_gold_canada
+			clr_ruler_flag = trade_gold_rio_grande
+				}
+				}
+
+	option = {#prostitute sort
+		name = cosmo_trade_events.601.a	
+			if = {
+				limit = {
+					OR = {
+						culture_group = germanic		
+						culture_group = scandinavian		
+						culture_group = british		
+						culture_group = gaelic
+						culture_group = latin
+						culture_group = iberian		
+						culture_group = french	
+						culture_group = carpathian		
+						culture_group = south_slavic		
+						culture_group = west_slavic			
+						culture_group = east_slavic		
+						culture_group = baltic		
+						culture_group = byzantine		
+						culture_group = caucasian
+					AND = {
+					OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+		culture_group = maya		
+		culture_group = central_american		
+
+		culture_group = mataco		
+		culture_group = araucanian		
+		culture_group = eskaleut		
+		culture_group = central_algonquian		
+		culture_group = plains_algonquian		
+		culture_group = eastern_algonquian		
+		culture_group = iroquoian		
+		culture_group = siouan		
+		culture_group = caddoan		
+		culture_group = muskogean		
+		culture_group = sonoran		
+		culture_group = apachean		
+		culture_group = na_dene		
+		culture_group = penutian
+
+
+					}
+		has_country_flag = new_world_europe_brothels
+					}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			has_country_flag = steppe_europe_brothels
+			}						
+					}
+					}
+					country_event = {#europe menu
+						id = cosmo_trade_events.602
+						}
+				}
+			if = {
+				limit = {
+					OR = {
+		culture_group = maghrebi		
+		culture_group = turko_semitic
+		AND = {
+			OR = {
+					culture_group = altaic		
+					culture_group = evenks		
+					culture_group = kamchatkan_g		
+					culture_group = tartar				
+			}
+		has_country_flag = steppe_muslim_brothels
+		}		
+		culture_group = iranian		
+					}
+					}
+					country_event = {#Muslim menu
+						id = cosmo_trade_events.603
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic		
+			}
+					}
+					country_event = {#Indian menu
+						id = cosmo_trade_events.604
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = malay			
+			}
+					}
+					country_event = {#East Indian menu
+						id = cosmo_trade_events.605
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = burman			
+				culture_group = thai_group			
+				culture_group = southeastasian_group			
+			}
+					}
+					country_event = {#Indochina menu
+						id = cosmo_trade_events.606
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = east_asian
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			has_country_flag = steppe_china_brothels
+			}							
+			}
+					}
+					country_event = {#China menu
+						id = cosmo_trade_events.607
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = korean_g
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			has_country_flag = steppe_korea_brothels
+			}							
+			}
+					}
+					country_event = {#Korean menu
+						id = cosmo_trade_events.608
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = japanese_g			
+			}
+					}
+					country_event = {#Japanese menu
+						id = cosmo_trade_events.609
+						}
+				}
+				if = {
+				limit = {
+			OR = {
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande			
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group			
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese			
+			}
+					}
+					country_event = {#African menu
+						id = cosmo_trade_events.6010
+						}
+				}																																																		
+	}		
+}	
+
+# trade gold menu europe
+country_event = {
+	id = cosmo_trade_events.61
+	title = cosmo_trade_events.61.t
+	desc = cosmo_trade_events.61.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = europe_superregion
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_west_europe
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = eastern_europe_superregion
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_east_europe
+						}																						
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.61.a	
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = europe_superregion
+				}
+				has_ruler_flag = trade_gold_west_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.610
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = europe_superregion
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_west_europe
+			}
+			has_ruler_flag = trade_gold_east_europe					
+				}
+				country_event = {
+					id = cosmo_trade_events.611
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = eastern_europe_superregion
+				}
+				has_ruler_flag = trade_gold_east_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.611
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = eastern_europe_superregion
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_east_europe
+			}
+			has_ruler_flag = trade_gold_west_europe					
+				}
+				country_event = {
+					id = cosmo_trade_events.610
+					}
+				}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						continent = europe
+					}
+				}
+				has_ruler_flag = trade_gold_east_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.611
+					}
+			}
+				if = {
+					limit = {
+					capital_scope = {
+					NOT = {
+						continent = europe
+					}	
+					}
+				NOT = {
+					has_ruler_flag = trade_gold_east_europe
+				}
+				has_ruler_flag = trade_gold_west_europe					
+					}
+					country_event = {
+						id = cosmo_trade_events.610
+						}
+				}																	
+	}
+		
+}
+
+# trade gold menu west europe
+country_event = {
+	id = cosmo_trade_events.610
+	title = cosmo_trade_events.610.t
+	desc = cosmo_trade_events.610.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = france_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_france
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = iberia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_iberia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = italy_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_italy
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = british_isles_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_britain
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = south_german_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_south_german
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = north_german_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_north_german
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = scandinavia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_scandinavian
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = low_countries_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_low_countries
+					}																																																								
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.610.a	
+		trigger = {
+			has_ruler_flag = trade_gold_france
+		}
+		every_owned_province = {
+			limit = {
+				region = france_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = france_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.b	
+		trigger = {
+			has_ruler_flag = trade_gold_britain
+		}
+		every_owned_province = {
+			limit = {
+				region = british_isles_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = british_isles_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.c	
+		trigger = {
+			has_ruler_flag = trade_gold_iberia
+		}
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.7	
+		trigger = {
+			has_ruler_flag = trade_gold_italy
+		}
+		every_owned_province = {
+			limit = {
+				region = italy_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = italy_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.610.8	
+		trigger = {
+			has_ruler_flag = trade_gold_low_countries
+		}
+		every_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.9	
+		trigger = {
+			has_ruler_flag = trade_gold_south_german
+		}
+		every_owned_province = {
+			limit = {
+				region = south_german_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = south_german_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.610.10	
+		trigger = {
+			has_ruler_flag = trade_gold_north_german
+		}
+		every_owned_province = {
+			limit = {
+				region = north_german_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = north_german_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.11	
+		trigger = {
+			has_ruler_flag = trade_gold_scandinavian
+		}
+		every_owned_province = {
+			limit = {
+				region = scandinavia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = scandinavia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.610.12	
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_asia			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_east_europe
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_east_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.611
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_europe
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_europe
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.63
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_europe
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_asia
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+# trade gold menu east europe
+country_event = {
+	id = cosmo_trade_events.611
+	title = cosmo_trade_events.611.t
+	desc = cosmo_trade_events.611.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = poland_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_poland
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = baltic_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_baltic
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = russia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_russia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = ruthenia_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_ruthenia
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = balkan_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_balkan
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = crimea_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_crimea
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = ural_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_ural
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = carpathia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_carpathia
+					}																																																								
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.611.a	
+		trigger = {
+			has_ruler_flag = trade_gold_poland
+		}
+		every_owned_province = {
+			limit = {
+				region = poland_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = poland_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.b	
+		trigger = {
+			has_ruler_flag = trade_gold_ruthenia
+		}
+		every_owned_province = {
+			limit = {
+				region = ruthenia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = ruthenia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.c	
+		trigger = {
+			has_ruler_flag = trade_gold_baltic
+		}
+		every_owned_province = {
+			limit = {
+				region = baltic_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = baltic_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.7	
+		trigger = {
+			has_ruler_flag = trade_gold_russia
+		}
+		every_owned_province = {
+			limit = {
+				region = russia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = russia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.611.8	
+		trigger = {
+			has_ruler_flag = trade_gold_carpathia
+		}
+		every_owned_province = {
+			limit = {
+				region = carpathia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = carpathia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.9	
+		trigger = {
+			has_ruler_flag = trade_gold_balkan
+		}
+		every_owned_province = {
+			limit = {
+				region = balkan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = balkan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.611.10	
+		trigger = {
+			has_ruler_flag = trade_gold_crimea
+		}
+		every_owned_province = {
+			limit = {
+				region = crimea_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = crimea_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.11	
+		trigger = {
+			has_ruler_flag = trade_gold_ural
+		}
+		every_owned_province = {
+			limit = {
+				region = ural_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = ural_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.611.12	
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_asia			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_west_europe
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_west_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.610
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_europe
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_europe
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.63
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_europe
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_asia
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu africa
+country_event = {
+	id = cosmo_trade_events.62
+	title = cosmo_trade_events.62.t
+	desc = cosmo_trade_events.62.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = maghreb_region
+								region = egypt_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_north_africa
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = niger_region
+									region = guinea_region
+									region = central_africa_region
+									region = sahel_region
+									region = horn_of_africa_region
+									region = east_africa_region
+									region = kongo_region
+									region = south_africa_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_not_north_africa
+						}																						
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.62.a	
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = maghreb_region
+						region = egypt_region
+					}
+				}
+				has_ruler_flag = trade_gold_north_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.620
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = maghreb_region
+						region = egypt_region
+					}
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_north_africa
+			}
+			has_ruler_flag = trade_gold_not_north_africa					
+				}
+				country_event = {
+					id = cosmo_trade_events.621
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = niger_region
+						region = guinea_region
+						region = central_africa_region
+						region = sahel_region
+						region = horn_of_africa_region
+						region = east_africa_region
+						region = kongo_region
+						region = south_africa_region
+					}
+				}
+				has_ruler_flag = trade_gold_not_north_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.621
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = niger_region
+						region = guinea_region
+						region = central_africa_region
+						region = sahel_region
+						region = horn_of_africa_region
+						region = east_africa_region
+						region = kongo_region
+						region = south_africa_region
+					}
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_not_north_africa
+			}
+			has_ruler_flag = trade_gold_north_africa					
+				}
+				country_event = {
+					id = cosmo_trade_events.620
+					}
+				}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						continent = africa
+					}
+				}
+				has_ruler_flag = trade_gold_not_north_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.621
+					}
+			}
+				if = {
+					limit = {
+					capital_scope = {
+					NOT = {
+						continent = africa
+					}	
+					}
+				NOT = {
+					has_ruler_flag = trade_gold_not_north_africa
+				}
+				has_ruler_flag = trade_gold_north_africa					
+					}
+					country_event = {
+						id = cosmo_trade_events.620
+						}
+				}																	
+	}
+		
+}
+
+
+# trade gold menu north africa
+country_event = {
+	id = cosmo_trade_events.620
+	title = cosmo_trade_events.620.t
+	desc = cosmo_trade_events.620.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = maghreb_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_maghreb
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = egypt_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_egypt
+						}																																																								
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.620.a	
+		trigger = {
+			has_ruler_flag = trade_gold_maghreb
+		}
+		every_owned_province = {
+			limit = {
+				region = maghreb_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = maghreb_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.620.b	
+		trigger = {
+			has_ruler_flag = trade_gold_egypt
+		}
+		every_owned_province = {
+			limit = {
+				region = egypt_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = egypt_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.620.c	
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_europe
+			has_ruler_flag = trade_gold_asia			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_not_north_africa
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_not_north_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.621
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_not_north_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_not_north_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				has_ruler_flag = trade_gold_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.63
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_not_north_africa
+					has_ruler_flag = trade_gold_europe
+					has_ruler_flag = trade_gold_asia
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu Not North Africa
+country_event = {
+	id = cosmo_trade_events.621
+	title = cosmo_trade_events.621.t
+	desc = cosmo_trade_events.621.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = niger_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_niger
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = central_africa_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_central_africa
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = sahel_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_sahel
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = guinea_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_guinea
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = east_africa_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_east_africa
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = kongo_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_kongo
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = south_africa_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_south_african
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = horn_of_africa_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_horn_of_africa
+					}																																																								
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.621.a	
+		trigger = {
+			has_ruler_flag = trade_gold_niger
+		}
+		every_owned_province = {
+			limit = {
+				region = niger_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = niger_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.b	
+		trigger = {
+			has_ruler_flag = trade_gold_guinea
+		}
+		every_owned_province = {
+			limit = {
+				region = guinea_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = guinea_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.c	
+		trigger = {
+			has_ruler_flag = trade_gold_central_africa
+		}
+		every_owned_province = {
+			limit = {
+				region = central_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = central_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.7	
+		trigger = {
+			has_ruler_flag = trade_gold_sahel
+		}
+		every_owned_province = {
+			limit = {
+				region = sahel_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = sahel_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.621.8	
+		trigger = {
+			has_ruler_flag = trade_gold_horn_of_africa
+		}
+		every_owned_province = {
+			limit = {
+				region = horn_of_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = horn_of_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.9	
+		trigger = {
+			has_ruler_flag = trade_gold_east_africa
+		}
+		every_owned_province = {
+			limit = {
+				region = east_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = east_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.621.10	
+		trigger = {
+			has_ruler_flag = trade_gold_kongo
+		}
+		every_owned_province = {
+			limit = {
+				region = kongo_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = kongo_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.11	
+		trigger = {
+			has_ruler_flag = trade_gold_south_african
+		}
+		every_owned_province = {
+			limit = {
+				region = south_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = south_africa_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.621.12	
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_europe
+			has_ruler_flag = trade_gold_asia			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_north_africa
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_north_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.620
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				has_ruler_flag = trade_gold_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.63
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_africa
+					has_ruler_flag = trade_gold_europe
+					has_ruler_flag = trade_gold_asia
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu asia
+country_event = {
+	id = cosmo_trade_events.63
+	title = cosmo_trade_events.63.t
+	desc = cosmo_trade_events.63.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = india_superregion
+								superregion = east_indies_superregion
+								superregion = near_east_superregion
+								superregion = persia_superregion
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_west_asia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = china_superregion
+								superregion = tartary_superregion
+								superregion = far_east_superregion
+								superregion = oceania_superregion
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_east_asia
+						}																						
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.63.a	
+		if = {
+			limit = {
+				capital_scope = {
+				OR = {
+				superregion = india_superregion
+				superregion = east_indies_superregion
+				superregion = near_east_superregion
+				superregion = persia_superregion
+			}	
+				}
+				has_ruler_flag = trade_gold_west_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.630
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+				OR = {
+				superregion = india_superregion
+				superregion = east_indies_superregion
+				superregion = near_east_superregion
+				superregion = persia_superregion
+			}
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_west_asia
+			}
+			has_ruler_flag = trade_gold_east_asia					
+				}
+				country_event = {
+					id = cosmo_trade_events.631
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+				OR = {
+				superregion = china_superregion
+				superregion = tartary_superregion
+				superregion = far_east_superregion
+				superregion = oceania_superregion
+				}
+				}
+				has_ruler_flag = trade_gold_east_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.631
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+				OR = {
+				superregion = china_superregion
+				superregion = tartary_superregion
+				superregion = far_east_superregion
+				superregion = oceania_superregion
+				}
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_east_asia
+			}
+			has_ruler_flag = trade_gold_west_asia					
+				}
+				country_event = {
+					id = cosmo_trade_events.630
+					}
+				}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						continent = asia
+					}
+				}
+				has_ruler_flag = trade_gold_east_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.631
+					}
+			}
+				if = {
+					limit = {
+					capital_scope = {
+					NOT = {
+						continent = asia
+					}	
+					}
+				NOT = {
+					has_ruler_flag = trade_gold_east_asia
+				}
+				has_ruler_flag = trade_gold_west_asia					
+					}
+					country_event = {
+						id = cosmo_trade_events.630
+						}
+				}																	
+	}
+		
+}
+
+
+# trade gold menu west europe
+country_event = {
+	id = cosmo_trade_events.630
+	title = cosmo_trade_events.630.t
+	desc = cosmo_trade_events.630.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = anatolia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_anatolia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = caucasia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_caucasia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = arabia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_arabia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = mashriq_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_mashriq
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = persia_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_persia
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = bengal_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_bengal
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = hindusthan_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_hindusthan
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = khorasan_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_khorasan
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = west_india_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_west_india
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = deccan_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_deccan
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = coromandel_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_coromandel
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = burma_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_burma
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = malaya_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_malaya
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = moluccas_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_moluccas
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = indonesia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_indonesia
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = indo_china_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_indo_china
+				}
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.630.a	
+		trigger = {
+			has_ruler_flag = trade_gold_anatolia
+		}
+		every_owned_province = {
+			limit = {
+				region = anatolia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = anatolia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.b	
+		trigger = {
+			has_ruler_flag = trade_gold_mashriq
+		}
+		every_owned_province = {
+			limit = {
+				region = mashriq_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = mashriq_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.c	
+		trigger = {
+			has_ruler_flag = trade_gold_caucasia
+		}
+		every_owned_province = {
+			limit = {
+				region = caucasia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = caucasia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.7	
+		trigger = {
+			has_ruler_flag = trade_gold_arabia
+		}
+		every_owned_province = {
+			limit = {
+				region = arabia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = arabia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.630.8	
+		trigger = {
+			has_ruler_flag = trade_gold_khorasan
+		}
+		every_owned_province = {
+			limit = {
+				region = khorasan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = khorasan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.9	
+		trigger = {
+			has_ruler_flag = trade_gold_persia
+		}
+		every_owned_province = {
+			limit = {
+				region = persia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = persia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.630.10	
+		trigger = {
+			has_ruler_flag = trade_gold_bengal
+		}
+		every_owned_province = {
+			limit = {
+				region = bengal_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = bengal_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.11	
+		trigger = {
+			has_ruler_flag = trade_gold_hindusthan
+		}
+		every_owned_province = {
+			limit = {
+				region = hindusthan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = hindusthan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.12	
+		trigger = {
+			has_ruler_flag = trade_gold_west_india
+		}
+		every_owned_province = {
+			limit = {
+				region = west_india_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = west_india_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.13	
+		trigger = {
+			has_ruler_flag = trade_gold_deccan
+		}
+		every_owned_province = {
+			limit = {
+				region = deccan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = deccan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.14	
+		trigger = {
+			has_ruler_flag = trade_gold_coromandel
+		}
+		every_owned_province = {
+			limit = {
+				region = coromandel_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = coromandel_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.15	
+		trigger = {
+			has_ruler_flag = trade_gold_burma
+		}
+		every_owned_province = {
+			limit = {
+				region = burma_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = burma_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.16	
+		trigger = {
+			has_ruler_flag = trade_gold_malaya
+		}
+		every_owned_province = {
+			limit = {
+				region = malaya_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = malaya_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.17	
+		trigger = {
+			has_ruler_flag = trade_gold_moluccas
+		}
+		every_owned_province = {
+			limit = {
+				region = moluccas_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = moluccas_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.18	
+		trigger = {
+			has_ruler_flag = trade_gold_indonesia
+		}
+		every_owned_province = {
+			limit = {
+				region = indonesia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = indonesia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.19	
+		trigger = {
+			has_ruler_flag = trade_gold_indo_china
+		}
+		every_owned_province = {
+			limit = {
+				region = indo_china_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = indo_china_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.630.20
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_europe			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_east_asia
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_east_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.631
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_asia
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_asia
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_east_asia
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu east europe
+country_event = {
+	id = cosmo_trade_events.631
+	title = cosmo_trade_events.631.t
+	desc = cosmo_trade_events.631.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = north_china_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_north_china
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = xinan_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_xinan
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = korea_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_korea
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = south_china_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_south_china
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = mongolia_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_mongolia
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = manchuria_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_manchuria
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = tibet_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_tibet
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = japan_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_japan
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = east_siberia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_east_siberia
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = west_siberia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_west_siberia
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = central_asia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_central_asia
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = oceanea_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_oceanea
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = australia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_australia
+				}																																																													
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.631.a	
+		trigger = {
+			has_ruler_flag = trade_gold_north_china
+		}
+		every_owned_province = {
+			limit = {
+				region = north_china_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = north_china_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.b	
+		trigger = {
+			has_ruler_flag = trade_gold_south_china
+		}
+		every_owned_province = {
+			limit = {
+				region = south_china_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = south_china_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.c	
+		trigger = {
+			has_ruler_flag = trade_gold_xinan
+		}
+		every_owned_province = {
+			limit = {
+				region = xinan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = xinan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.7	
+		trigger = {
+			has_ruler_flag = trade_gold_korea
+		}
+		every_owned_province = {
+			limit = {
+				region = korea_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = korea_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.631.8	
+		trigger = {
+			has_ruler_flag = trade_gold_japan
+		}
+		every_owned_province = {
+			limit = {
+				region = japan_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = japan_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.9	
+		trigger = {
+			has_ruler_flag = trade_gold_mongolia
+		}
+		every_owned_province = {
+			limit = {
+				region = mongolia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = mongolia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.631.10	
+		trigger = {
+			has_ruler_flag = trade_gold_manchuria
+		}
+		every_owned_province = {
+			limit = {
+				region = manchuria_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = manchuria_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.11	
+		trigger = {
+			has_ruler_flag = trade_gold_tibet
+		}
+		every_owned_province = {
+			limit = {
+				region = tibet_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = tibet_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.12	
+		trigger = {
+			has_ruler_flag = trade_gold_east_siberia
+		}
+		every_owned_province = {
+			limit = {
+				region = east_siberia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = east_siberia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.13	
+		trigger = {
+			has_ruler_flag = trade_gold_west_siberia
+		}
+		every_owned_province = {
+			limit = {
+				region = west_siberia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = west_siberia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.14	
+		trigger = {
+			has_ruler_flag = trade_gold_central_asia
+		}
+		every_owned_province = {
+			limit = {
+				region = central_asia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = central_asia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.15	
+		trigger = {
+			has_ruler_flag = trade_gold_oceanea
+		}
+		every_owned_province = {
+			limit = {
+				region = oceanea_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = oceanea_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.631.16	
+		trigger = {
+			has_ruler_flag = trade_gold_australia
+		}
+		every_owned_province = {
+			limit = {
+				region = australia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = australia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.631.17
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_europe			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_west_asia
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_west_asia
+				}
+				country_event = {
+					id = cosmo_trade_events.630
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_asia
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_asia
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_west_asia
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu asia2
+country_event = {
+	id = cosmo_trade_events.64
+	title = cosmo_trade_events.64.t
+	desc = cosmo_trade_events.64.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = south_america_superregion
+								superregion = central_america_superregion
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_south_america
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								superregion = north_america_superregion
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_north_america
+						}																						
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.64.a	
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+					superregion = south_america_superregion
+					superregion = central_america_superregion
+				}
+				}
+				has_ruler_flag = trade_gold_south_america
+				}
+				country_event = {
+					id = cosmo_trade_events.640
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					OR = {
+					superregion = south_america_superregion
+					superregion = central_america_superregion
+				}
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_south_america
+			}
+			has_ruler_flag = trade_gold_north_america					
+				}
+				country_event = {
+					id = cosmo_trade_events.641
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = north_america_superregion
+				}
+				has_ruler_flag = trade_gold_north_america
+				}
+				country_event = {
+					id = cosmo_trade_events.641
+					}
+			}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = north_america_superregion
+				}
+			NOT = {
+				has_ruler_flag = trade_gold_north_america
+			}
+			has_ruler_flag = trade_gold_south_america					
+				}
+				country_event = {
+					id = cosmo_trade_events.640
+					}
+				}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+					OR = {
+						continent = south_america
+						continent = north_america
+					}	
+					}
+				}
+				has_ruler_flag = trade_gold_north_america
+				}
+				country_event = {
+					id = cosmo_trade_events.641
+					}
+			}
+				if = {
+					limit = {
+					capital_scope = {
+					NOT = {
+					OR = {
+						continent = south_america
+						continent = north_america
+					}
+					}	
+					}
+				NOT = {
+					has_ruler_flag = trade_gold_north_america
+				}
+				has_ruler_flag = trade_gold_south_america					
+					}
+					country_event = {
+						id = cosmo_trade_events.640
+						}
+				}																	
+	}
+		
+}
+
+
+# trade gold menu west europe
+country_event = {
+	id = cosmo_trade_events.640
+	title = cosmo_trade_events.640.t
+	desc = cosmo_trade_events.640.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = central_america_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_central_america
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = mexico_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_mexico
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = carribeans_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_carribeans
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = brazil_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_brazil
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = la_plata_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_la_plata
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = colombia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_colombia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = peru_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_peru
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = upper_peru_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_upper_peru
+					}
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.640.a	
+		trigger = {
+			has_ruler_flag = trade_gold_central_america
+		}
+		every_owned_province = {
+			limit = {
+				region = central_america_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = central_america_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.b	
+		trigger = {
+			has_ruler_flag = trade_gold_brazil
+		}
+		every_owned_province = {
+			limit = {
+				region = brazil_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = brazil_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.c	
+		trigger = {
+			has_ruler_flag = trade_gold_mexico
+		}
+		every_owned_province = {
+			limit = {
+				region = mexico_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = mexico_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.7	
+		trigger = {
+			has_ruler_flag = trade_gold_carribeans
+		}
+		every_owned_province = {
+			limit = {
+				region = carribeans_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = carribeans_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.640.8	
+		trigger = {
+			has_ruler_flag = trade_gold_upper_peru
+		}
+		every_owned_province = {
+			limit = {
+				region = upper_peru_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = upper_peru_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.9	
+		trigger = {
+			has_ruler_flag = trade_gold_la_plata
+		}
+		every_owned_province = {
+			limit = {
+				region = la_plata_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = la_plata_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.640.10	
+		trigger = {
+			has_ruler_flag = trade_gold_colombia
+		}
+		every_owned_province = {
+			limit = {
+				region = colombia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = colombia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.11	
+		trigger = {
+			has_ruler_flag = trade_gold_peru
+		}
+		every_owned_province = {
+			limit = {
+				region = peru_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = peru_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.640.12
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_europe			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_north_america
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_north_america
+				}
+				country_event = {
+					id = cosmo_trade_events.641
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_america
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_america
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_north_america
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_asia					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.63
+				}
+			}																									
+	}		
+}	
+
+
+# trade gold menu east europe
+country_event = {
+	id = cosmo_trade_events.641
+	title = cosmo_trade_events.641.t
+	desc = cosmo_trade_events.641.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		}
+		
+		immediate = {
+			hidden_effect = {
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = hudson_bay_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_hudson_bay
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = cascadia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_cascadia
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = california_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_california
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = northeast_america_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_northeast_america
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+									region = mississippi_region
+									}
+							}
+							}
+							set_ruler_flag = trade_gold_mississippi
+						}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = southeast_america_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_southeast_america
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = great_lakes_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_great_lakes
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = great_plains_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_great_plains
+					}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = canada_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_canada
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = rio_grande_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_rio_grande
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = central_asia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_central_asia
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = oceanea_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_oceanea
+				}
+				if = {
+					limit = {
+						any_province = {
+								country_or_vassal_holds = ROOT 	
+								OR = {
+							trade_goods = gold
+								}
+							base_production = 3 									
+
+								OR = {
+								region = australia_region
+									}
+							}
+							}
+					set_ruler_flag = trade_gold_australia
+				}																																																													
+				}
+				}
+
+	option = {
+		name = cosmo_trade_events.641.a	
+		trigger = {
+			has_ruler_flag = trade_gold_hudson_bay
+		}
+		every_owned_province = {
+			limit = {
+				region = hudson_bay_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = hudson_bay_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.b	
+		trigger = {
+			has_ruler_flag = trade_gold_northeast_america
+		}
+		every_owned_province = {
+			limit = {
+				region = northeast_america_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = northeast_america_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.c	
+		trigger = {
+			has_ruler_flag = trade_gold_cascadia
+		}
+		every_owned_province = {
+			limit = {
+				region = cascadia_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = cascadia_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.7	
+		trigger = {
+			has_ruler_flag = trade_gold_california
+		}
+		every_owned_province = {
+			limit = {
+				region = california_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = california_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.641.8	
+		trigger = {
+			has_ruler_flag = trade_gold_great_plains
+		}
+		every_owned_province = {
+			limit = {
+				region = great_plains_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = great_plains_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.9	
+		trigger = {
+			has_ruler_flag = trade_gold_mississippi
+		}
+		every_owned_province = {
+			limit = {
+				region = mississippi_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = mississippi_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}					
+	option = {
+		name = cosmo_trade_events.641.10	
+		trigger = {
+			has_ruler_flag = trade_gold_southeast_america
+		}
+		every_owned_province = {
+			limit = {
+				region = southeast_america_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = southeast_america_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.11	
+		trigger = {
+			has_ruler_flag = trade_gold_great_lakes
+		}
+		every_owned_province = {
+			limit = {
+				region = great_lakes_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = great_lakes_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.12	
+		trigger = {
+			has_ruler_flag = trade_gold_canada
+		}
+		every_owned_province = {
+			limit = {
+				region = canada_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = canada_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}
+	option = {
+		name = cosmo_trade_events.641.13	
+		trigger = {
+			has_ruler_flag = trade_gold_rio_grande
+		}
+		every_owned_province = {
+			limit = {
+				region = rio_grande_region
+			}
+			set_province_flag = trade_gold_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				region = rio_grande_region
+			}
+			set_province_flag = trade_gold_here
+		}			
+		}
+		country_event = {
+			id = cosmo_trade_events.601
+			}																			
+	}	
+	option = {
+		name = cosmo_trade_events.641.14	
+		trigger = {
+		OR = {
+			has_ruler_flag = trade_gold_africa
+			has_ruler_flag = trade_gold_europe			
+			has_ruler_flag = trade_gold_namerica					
+			has_ruler_flag = trade_gold_samerica	
+			has_ruler_flag = trade_gold_south_america
+		}	
+		}
+		if = {
+			limit = {
+				has_ruler_flag = trade_gold_south_america
+				}
+				country_event = {
+					id = cosmo_trade_events.640
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_south_america
+				}				
+				has_ruler_flag = trade_gold_africa
+				}
+				country_event = {
+					id = cosmo_trade_events.62
+					}
+			}			
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_south_america
+					has_ruler_flag = trade_gold_africa
+				}				
+				has_ruler_flag = trade_gold_europe
+				}
+				country_event = {
+					id = cosmo_trade_events.61
+					}
+			}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_flag = trade_gold_south_america
+					has_ruler_flag = trade_gold_africa
+					has_ruler_flag = trade_gold_europe
+				}				
+				OR = {
+					has_ruler_flag = trade_gold_namerica					
+					has_ruler_flag = trade_gold_samerica					
+					}
+				}
+				country_event = {
+					id = cosmo_trade_events.64
+				}
+			}																									
+	}		
+}	
+
+# gold from province
+country_event = {
+	id = cosmo_trade_events.1
+	title = cosmo_trade_events.1.t
+	desc = cosmo_trade_events.1.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.1.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = gold
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = gold
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.1.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = gold
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = gold
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.1.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = gold
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = gold
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+		custom_tooltip = cosmo_trade_ship_decision_tt 		
+	 	hidden_effect = {
+			set_country_flag = cosmo_gold_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.1.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = gold
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = gold
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.1.8
+		}
+}
+
+# wine from province
+country_event = {
+	id = cosmo_trade_events.10
+	title = cosmo_trade_events.10.t
+	desc = cosmo_trade_events.10.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	hidden_effect = {
+		random_subject_country = {
+			limit = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}
+			}
+					save_event_target_as = personalunion	
+		}																
+					event_target:personalunion	 = {
+						capital_scope = {
+							save_event_target_as = pucapital
+						}
+					}
+		}
+	}	
+
+	option = {
+		name = cosmo_trade_events.10.a 
+		trigger = {			
+			OR = {
+			any_province = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = gold
+				base_production = 3 									
+			} 	 	
+			}
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = gold
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = gold
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}		
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.b 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = wine
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = wine
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = wine
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = wine
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.c 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = fur
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = fur
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = fur
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = fur
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.7 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = salt
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = salt
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = salt
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = salt
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.8 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = ivory
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = ivory
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = ivory
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = ivory
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.9 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = cotton
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = cotton
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = cotton
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = cotton
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.10
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = cocoa
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = cocoa
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = cocoa
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = cocoa
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.11 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = gems
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = gems
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = gems
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = gems
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.12 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = sugar
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = sugar
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = sugar
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = sugar
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.13 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = tropical_wood
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = tropical_wood
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = tropical_wood
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = tropical_wood
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.14 
+		trigger = {
+		event_target:personalunion = {
+		NOT = {
+			any_owned_province = {
+				trade_goods = tobacco
+				base_production = 3 				
+			}
+		}		
+		}
+		OR = {
+		any_province = {
+			country_or_vassal_holds = ROOT 	
+			trade_goods = tobacco
+			base_production = 3 									
+		} 	 	
+		}					
+		}
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = tobacco
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}
+		every_subject_country = {
+		every_owned_province = {
+			limit = {
+				country_or_vassal_holds = ROOT 	
+				trade_goods = tobacco
+				base_production = 3 				
+			}
+			set_province_flag = trade_resource_here
+		}			
+		}				
+			country_event = {
+			id = cosmo_trade_events.60
+			}
+	}
+	option = {
+		name = cosmo_trade_events.10.15 
+		event_target:personalunion = {			
+			remove_opinion = {
+				who = ROOT
+				modifier = cosmo_send_trade_mission
+			}						
+		}
+	}		
+}
+
+# salt from province
+country_event = {
+	id = cosmo_trade_events.20
+	title = cosmo_trade_events.20.t
+	desc = cosmo_trade_events.20.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.20.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = salt
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = salt
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_salt_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.20.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = salt
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = salt
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.20.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = salt
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = salt
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_salt_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.20.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = salt
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = salt
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.20.8
+		}
+}
+
+# sugar from province
+country_event = {
+	id = cosmo_trade_events.30
+	title = cosmo_trade_events.30.t
+	desc = cosmo_trade_events.30.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.30.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = sugar
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = sugar
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_sugar_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.30.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = sugar
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = sugar
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.30.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = sugar
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = sugar
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_sugar_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.30.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = sugar
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = sugar
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.30.8
+		}
+}
+
+# gems from province
+country_event = {
+	id = cosmo_trade_events.40
+	title = cosmo_trade_events.40.t
+	desc = cosmo_trade_events.40.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.40.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = gems
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = gems
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_gems_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.40.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = gems
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = gems
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.40.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = gems
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = gems
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_gems_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.40.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = gems
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = gems
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.40.8
+		}
+}
+
+# cocoa from province
+country_event = {
+	id = cosmo_trade_events.50
+	title = cosmo_trade_events.50.t
+	desc = cosmo_trade_events.50.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.50.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = cocoa
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cocoa
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cocoa_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.50.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = cocoa
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cocoa
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.50.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cocoa
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = cocoa
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cocoa_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.50.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cocoa
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = cocoa
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.50.8
+		}
+}
+
+# tobacco from province
+country_event = {
+	id = cosmo_trade_events.600
+	title = cosmo_trade_events.600.t
+	desc = cosmo_trade_events.600.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.600.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = tobacco
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = tobacco
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_tobacco_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.600.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = tobacco
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = tobacco
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.600.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = tobacco
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = tobacco
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_tobacco_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.600.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = tobacco
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = tobacco
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.600.8
+		}
+}
+
+# cotton from province
+country_event = {
+	id = cosmo_trade_events.70
+	title = cosmo_trade_events.70.t
+	desc = cosmo_trade_events.70.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.70.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = cotton
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cotton
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cotton_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.70.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = cotton
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cotton
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.70.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cotton
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = cotton
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cotton_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.70.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cotton
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = cotton
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.70.8
+		}
+}
+
+# ivory from province
+country_event = {
+	id = cosmo_trade_events.80
+	title = cosmo_trade_events.80.t
+	desc = cosmo_trade_events.80.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.80.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = ivory
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = ivory
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_ivory_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.80.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = ivory
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = ivory
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.80.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = ivory
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = ivory
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_ivory_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.80.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = ivory
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = ivory
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.80.8
+		}
+}
+
+# tropical_wood from province
+country_event = {
+	id = cosmo_trade_events.90
+	title = cosmo_trade_events.90.t
+	desc = cosmo_trade_events.90.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.90.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = tropical_wood
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = tropical_wood
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_tropical_wood_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.90.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = tropical_wood
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = tropical_wood
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.90.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = tropical_wood
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = tropical_wood
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_tropical_wood_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.90.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = tropical_wood
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = tropical_wood
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.90.8
+		}
+}
+
+# cloth from province
+country_event = {
+	id = cosmo_trade_events.100
+	title = cosmo_trade_events.100.t
+	desc = cosmo_trade_events.100.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.100.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = cloth
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cloth
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cloth_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.100.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = cloth
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = cloth
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.100.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cloth
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = cloth
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_cloth_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.100.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = cloth
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = cloth
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.100.8
+		}
+}
+
+# glass from province
+country_event = {
+	id = cosmo_trade_events.110
+	title = cosmo_trade_events.110.t
+	desc = cosmo_trade_events.110.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.110.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = glass
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = glass
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_glass_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.110.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = glass
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = glass
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.110.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = glass
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = glass
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_glass_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.110.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = glass
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = glass
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.110.8
+		}
+}
+
+# paper from province
+country_event = {
+	id = cosmo_trade_events.120
+	title = cosmo_trade_events.120.t
+	desc = cosmo_trade_events.120.d
+	picture = cosmogfx_TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+	
+
+		option = {
+		name = cosmo_trade_events.120.a
+		trigger = {
+			any_owned_province = {
+			trade_goods = paper
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = paper
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_paper_laden_ships			
+		}
+	}
+		option = {
+		name = cosmo_trade_events.120.b
+		trigger = {
+			any_owned_province = {
+			trade_goods = paper
+			base_production = 3	
+			}			
+		}		
+		random_owned_province = {
+		limit = {
+			trade_goods = paper
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.120.c
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = paper
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 
+		random_owned_province = {
+		limit = {
+			trade_goods = paper
+			base_production = 3		
+		}
+		add_base_production = -1
+		}
+		}
+	 	hidden_effect = {
+			set_country_flag = cosmo_paper_laden_ships			
+		}		
+	}
+		option = {
+		name = cosmo_trade_events.120.7
+		trigger = {
+		any_subject_country = {
+			any_owned_province = {
+			trade_goods = paper
+			base_production = 3	
+			}	
+		}			
+		}		
+	 	random_subject_country = { 		
+		random_owned_province = {
+		limit = {
+			trade_goods = paper
+			base_production = 3		
+		}
+		add_province_modifier = { 
+			name = cosmo_resource_autonomy
+			duration = 365  
+			desc = cosmo_resource_autonomy_DESC
+
+			}
+		}
+		}
+	}
+		option = {
+		name = cosmo_trade_events.120.8
+		}
+}

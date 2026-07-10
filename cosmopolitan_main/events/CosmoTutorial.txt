@@ -1,0 +1,760 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_tutorial_events
+
+
+# # Introduction
+# country_event = {
+# 	id = cosmo_tutorial_events.1
+# 	title = cosmo_tutorial_events.1.t
+# 	desc = cosmo_tutorial_events.1.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	trigger = {
+# 		ai = no
+# 	NOT = {	has_global_flag = cosmo_tutorial_launch
+# 			has_global_flag = cosmo_no_tutorials
+# 	}	
+# 	}
+
+# 	mean_time_to_happen = {
+# 		days = 31
+# 	}
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		set_global_flag = cosmo_tutorial_launch
+# 		set_global_flag = cosmo_madam_modifier_fix
+# 			set_ruler_flag = cosmo_degeneracy_set
+# 			set_variable = {
+# 				which = cosmoDegeneracyVariable
+# 				value = 0
+# 			}		
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.1.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.1.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+# # Affairs
+# country_event = {
+# 	id = cosmo_tutorial_events.2
+# 	title = cosmo_tutorial_events.2.t
+# 	desc = cosmo_tutorial_events.2.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		ai = no
+# 		has_country_modifier = having_an_affair
+# 	NOT = {	
+# 			has_global_flag = cosmo_no_tutorials
+# 	}	
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.2.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.2.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+
+
+# # Brothel District
+# country_event = {
+# 	id = cosmo_tutorial_events.3
+# 	title = cosmo_tutorial_events.3.t
+# 	desc = cosmo_tutorial_events.3.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	fire_only_once = yes
+	
+# 	trigger = {
+# 		ai = no
+# 		any_province = {
+# 			country_or_vassal_holds = ROOT
+# 			has_building = brothel_district
+# 		}			
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.3.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.3.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+# # Barbary and Harem
+# country_event = {
+# 	id = cosmo_tutorial_events.4
+# 	title = cosmo_tutorial_events.4.t
+# 	desc = cosmo_tutorial_events.4.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		ai = no
+# 		OR = {
+# 338 = {	
+# 		is_permanent_claim = ROOT 
+# 		}
+# 		}
+	
+# 	NOT = {	
+# 			has_global_flag = cosmo_no_tutorials
+# 	}	
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.4.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.4.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+# # cosmo_tutorial_events.5 personal unions
+# country_event = {
+# 	id = cosmo_tutorial_events.5
+# 	title = cosmo_tutorial_events.5.t
+# 	desc = cosmo_tutorial_events.5.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		ai = no
+# 		OR = {
+# 			has_country_flag = cosmo_seek_pretenders
+# 			any_subject_country = {
+# 				OR = {
+# 					cosmo_daimyo_personal_union_subject_trigger = yes
+# 					cosmo_african_personal_union_subject_trigger = yes
+# 					cosmo_sa_personal_union_subject_trigger = yes
+# 					cosmo_na_personal_union_subject_trigger = yes
+# 					cosmo_asian_personal_union_subject_trigger = yes
+# 				}				
+# 			}
+# 		}
+	
+# 	NOT = {	
+# 			has_global_flag = cosmo_no_tutorials
+# 	}	
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.5.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.5.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+
+# # Degeneracy
+# country_event = {
+# 	id = cosmo_tutorial_events.6
+# 	title = cosmo_tutorial_events.6.t
+# 	desc = cosmo_tutorial_events.6.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		ai = no
+# 	NOT = {	
+# 			has_global_flag = cosmo_no_tutorials
+# 	}		
+# 	check_variable = {
+# 			which = cosmoDegeneracyVariable	
+# 			value = 60
+# 			}		
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.6.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.6.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+# # anathanism
+# country_event = {
+# 	id = cosmo_tutorial_events.7
+# 	title = cosmo_tutorial_events.7.t
+# 	desc = cosmo_tutorial_events.7.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		ai = no
+# 		estate_influence = {
+# 			estate = estate_church
+# 			influence = 80
+# 		}
+# 		check_variable = {
+# 			which = cosmoEuropeCounter
+# 			value = 3
+# 		}			
+# 	}
+	
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}	
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		set_global_flag = cosmo_tutorial_anathanism
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.7.a
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.7.b
+# 		set_global_flag = cosmo_no_tutorials
+# 	}	
+# }
+
+# s.7 
+
+# s.9 Cosmopolitanism
+
+# s.10 
+
+# Introduction
+country_event = {
+	id = cosmo_tutorial_events.101
+	title = cosmo_tutorial_events.101.t
+	desc = cosmo_tutorial_events.101.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+	is_triggered_only = yes
+
+
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_tutorial_launch
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.101.a
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.101.b
+		set_global_flag = cosmo_no_tutorials
+	}	
+}
+
+# Affairs
+country_event = {
+	id = cosmo_tutorial_events.102
+	title = cosmo_tutorial_events.102.t
+	desc = cosmo_tutorial_events.102.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+	is_triggered_only = yes
+		
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_affairs_tutorial
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.102.a
+	}
+	
+	option = {#go back
+		name = cosmo_tutorial_events.102.b
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+
+
+# Brothel District
+country_event = {
+	id = cosmo_tutorial_events.103
+	title = cosmo_tutorial_events.103.t
+	desc = cosmo_tutorial_events.103.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_tutorial_brothel
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.103.a
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.103.b
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Barbary and Harem
+country_event = {
+	id = cosmo_tutorial_events.104
+	title = cosmo_tutorial_events.104.t
+	desc = cosmo_tutorial_events.104.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_tutorial_harem
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.104.a
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.104.b
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Japanese 
+country_event = {
+	id = cosmo_tutorial_events.105
+	title = cosmo_tutorial_events.105.t
+	desc = cosmo_tutorial_events.105.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_tutorial_japan
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.105.a
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.105.b
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Degeneracy
+country_event = {
+	id = cosmo_tutorial_events.106
+	title = cosmo_tutorial_events.106.t
+	desc = cosmo_tutorial_events.106.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+		set_global_flag = cosmo_tutorial_degeneracy
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.106.a
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.106.b
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Ports of Pleasure
+country_event = {
+	id = cosmo_tutorial_events.107
+	title = cosmo_tutorial_events.107.t
+	desc = cosmo_tutorial_events.107.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.107.a
+			country_event = {#tutorial menu
+			id = cosmo_tutorial_events.108
+		}		
+	}
+	option = {
+		name = cosmo_tutorial_events.107.b
+			country_event = {#tutorial menu
+			id = cosmo_tutorial_events.109
+		}		
+	}	
+	option = {
+		name = cosmo_tutorial_events.107.c
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Ports of Pleasure
+country_event = {
+	id = cosmo_tutorial_events.111
+	title = cosmo_tutorial_events.111.t
+	desc = cosmo_tutorial_events.111.d
+	picture = cosmogfx_ANATHANISM_TRIGGER_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.111.a
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+}
+
+# Pirates of the Carribean
+country_event = {
+	id = cosmo_tutorial_events.108
+	title = cosmo_tutorial_events.108.t
+	desc = cosmo_tutorial_events.108.d
+	picture = cosmogfx_PIRATE_PROVINCES_CARIB_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			487 = {
+				save_event_target_as = port_royal_province
+			}
+			482 = {
+				save_event_target_as = new_providence_province
+			}
+			489 = {
+				save_event_target_as = tortuga_province
+			}												
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.108.a
+		goto = port_royal_province
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}		
+	}
+	option = {
+		goto = tortuga_province
+		name = cosmo_tutorial_events.108.c
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}	
+	option = {
+		name = cosmo_tutorial_events.108.b
+		goto = new_providence_province
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}		
+	}	
+	option = {
+		name = cosmo_tutorial_events.108.7
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}		
+}
+
+
+# Pirates Elsewhere in the World
+country_event = {
+	id = cosmo_tutorial_events.109
+	title = cosmo_tutorial_events.109.t
+	desc = cosmo_tutorial_events.109.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no	
+	}
+
+	
+	immediate = {
+		hidden_effect = {
+			622 = {
+				save_event_target_as = palembang_province
+			}
+			1563 = {
+				save_event_target_as = pattani_province
+			}
+			4024 = {
+				save_event_target_as = libertatia_province
+			}
+			4745 = {
+				save_event_target_as = rugen_province
+			}															
+		}
+	}
+	
+	option = {
+		name = cosmo_tutorial_events.109.a
+		goto = palembang_province
+			country_event = {#tutorial menu
+			id = cosmo_tutorial_events.109
+		}		
+	}
+	# option = {
+	# 	name = cosmo_tutorial_events.109.b
+	# 	goto = pattani_province
+	# 		country_event = {#tutorial menu
+	# 		id = cosmo_tutorial_events.109
+	# 	}		
+	# }	
+	option = {
+		goto = libertatia_province
+		name = cosmo_tutorial_events.109.c
+			country_event = {#tutorial menu
+			id = cosmo_tutorial_events.109
+		}
+	}
+	option = {
+		goto = rugen_province
+		name = cosmo_tutorial_events.109.8
+			country_event = {#tutorial menu
+			id = cosmo_tutorial_events.109
+		}
+	}	
+	option = {
+		name = cosmo_tutorial_events.109.7
+			country_event = {#tutorial menu
+			id = cosmo_events.4
+		}
+	}		
+}
+
+
+# # 98 patch wrong subject type fix
+# country_event = {
+# 	id = cosmo_tutorial_events.902
+# 	title = cosmo_tutorial_events.902.t
+# 	desc = cosmo_tutorial_events.902.d
+# 	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+# 	fire_only_once = yes
+	
+# 	trigger = {
+# 		ai = no	
+# 		OR = {
+# 			any_subject_country = {
+# 				region = japan_region
+# 				is_subject_of_type = cosmo_asian_personal_union_I 
+# 			}
+# 			any_subject_country = {
+# 				superregion = africa_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 
+# 			}
+# 			any_subject_country = {
+# 				superregion = south_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 
+# 			}
+# 			any_subject_country = {
+# 				superregion = north_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 
+# 			}									
+# 			any_subject_country = {
+# 				superregion = central_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 
+# 			}
+# 		}
+# 	}
+
+	
+# 	immediate = {
+# 		hidden_effect = {
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = cosmo_tutorial_events.902.a
+# 		every_subject_country = {
+# 			limit = {
+# 				superregion = africa_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 				
+# 			}
+# 			create_subject = {
+# 				subject_type = cosmo_african_personal_union_I
+# 				subject = ROOT
+# 			}
+# 		}
+# 		every_subject_country = {
+# 			limit = {
+# 				region = japan_region
+# 				is_subject_of_type = cosmo_asian_personal_union_I 				
+# 			}
+# 			create_subject = {
+# 				subject_type = cosmo_daimyo_personal_union_I
+# 				subject = ROOT
+# 			}
+# 		}
+# 		every_subject_country = {
+# 			limit = {
+# 				superregion = south_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 				
+# 			}
+# 			create_subject = {
+# 				subject_type = cosmo_sa_personal_union_I
+# 				subject = ROOT
+# 			}
+# 		}
+# 		every_subject_country = {
+# 			limit = {
+# 				superregion = central_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 				
+# 			}
+# 			create_subject = {
+# 				subject_type = cosmo_sa_personal_union_I
+# 				subject = ROOT
+# 			}
+# 		}
+# 		every_subject_country = {
+# 			limit = {
+# 				superregion = north_america_superregion
+# 				is_subject_of_type = cosmo_asian_personal_union_I 				
+# 			}
+# 			create_subject = {
+# 				subject_type = cosmo_na_personal_union_I
+# 				subject = ROOT
+# 			}
+# 		}								
+# 	}	
+# }
+

@@ -1,0 +1,106 @@
+#Define estate loyalty and influence modifiers here
+
+estate_nobleaffairs = {
+	modifier_definition = {
+		type = loyalty
+		key = nobleaffairs_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobleaffairs
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = nobleaffairs_influence_modifier
+		trigger = {
+			has_estate = estate_nobleaffairs
+		}
+	}
+}
+
+estate_ooku = {
+	modifier_definition = {
+		type = loyalty
+		key = ooku_loyalty_modifier
+		trigger = {
+			has_estate = estate_ooku
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = ooku_influence_modifier
+		trigger = {
+			has_estate = estate_ooku
+		}
+	}
+}
+
+estate_wives = {
+	modifier_definition = {
+		type = loyalty
+		key = wives_loyalty_modifier
+		trigger = {
+			has_estate = estate_wives
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = wives_influence_modifier
+		trigger = {
+			has_estate = estate_wives
+		}
+	}
+}
+
+estate_harem = {
+	modifier_definition = {
+		type = loyalty
+		key = harem_loyalty_modifier
+		trigger = {
+			has_estate = estate_harem
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = harem_influence_modifier
+		trigger = {
+			has_estate = estate_harem
+		}
+	}
+}
+
+estate_forbiddenpalace = {
+	modifier_definition = {
+		type = loyalty
+		key = forbiddenpalace_loyalty_modifier
+		trigger = {
+			has_estate = estate_forbiddenpalace
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = forbiddenpalace_influence_modifier
+		trigger = {
+			has_estate = estate_forbiddenpalace
+		}
+	}
+}
+
+
+estate_madams = {
+	modifier_definition = {
+		type = loyalty
+		key = madams_loyalty_modifier
+		trigger = {
+			has_estate = estate_madams
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = madams_influence_modifier
+		trigger = {
+			has_estate = estate_madams
+		}
+	}
+}
+
+#

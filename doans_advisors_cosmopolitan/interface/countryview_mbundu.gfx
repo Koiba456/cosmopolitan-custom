@@ -1,0 +1,48 @@
+spriteTypes = {
+	
+		
+	spriteType = {
+		name = "GFX_advisor_mbundu_inquisitor_female"
+		texturefile = "gfx//interface//advisors//mbundu_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	
+	
+	spriteType = {
+		name = "GFX_advisor_mbundu_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//mbundu_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_mbundu_army_organiser_female"
+		texturefile = "gfx//interface//advisors//mbundu_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_mbundu_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

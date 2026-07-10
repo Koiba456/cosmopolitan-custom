@@ -1,0 +1,44 @@
+spriteTypes = {
+	
+	
+		spriteType = {
+		name = "GFX_advisor_lunda_diplomat_female"
+		texturefile = "gfx//interface//advisors//lunda_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_lunda_commandant_female"
+		texturefile = "gfx//interface//advisors//lunda_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_lunda_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//lunda_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_lunda_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

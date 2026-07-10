@@ -1,0 +1,1490 @@
+
+#This one or the next one will always be valid
+estate_nobleaffairs_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_jwlaunch
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_wants_to_join_war
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_country = {
+			limit = {
+				has_country_flag = cosmo_enemy_country
+			}
+			save_event_target_as = enemycountry			
+		}		
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_target
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		event_target:agendaprovince = {
+			set_province_flag = cosmo_agenda_province_active
+			save_event_target_as = cosmo_agenda_province
+		}
+		event_target:agendasubject = {
+			set_country_flag = cosmo_subject_country_claim_active
+			save_event_target_as = cosmo_agendasubject
+		}		
+	}
+	on_invalid = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_subject_country_claim_active
+			}
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			NOT = {
+			owned_by = event_target:agendasubject
+			}
+			owner = {
+				is_at_war = no
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_nobleaffairs_nowar_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_conquer
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject 
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			save_event_target_as = agendaprovince
+		}				
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+				any_neighbor_province = {
+					owned_by = event_target:agendasubject
+				} 
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		
+	}
+	on_invalid = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			AND = {
+			NOT = {
+			is_claim = event_target:agendasubject
+			}
+			NOT = {
+			owned_by = event_target:agendasubject	
+			}
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+estate_forbiddenpalace_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_jwlaunch
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_wants_to_join_war
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_country = {
+			limit = {
+				has_country_flag = cosmo_enemy_country
+			}
+			save_event_target_as = enemycountry			
+		}		
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_target
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		event_target:agendaprovince = {
+			set_province_flag = cosmo_agenda_province_active
+			save_event_target_as = cosmo_agenda_province
+		}
+		event_target:agendasubject = {
+			set_country_flag = cosmo_subject_country_claim_active
+			save_event_target_as = cosmo_agendasubject
+		}		
+	}
+	on_invalid = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_subject_country_claim_active
+			}
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			NOT = {
+			owned_by = event_target:agendasubject
+			}
+			owner = {
+				is_at_war = no
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_forbiddenpalace_nowar_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_conquer
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject 
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			save_event_target_as = agendaprovince
+		}				
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+				any_neighbor_province = {
+					owned_by = event_target:agendasubject
+				} 
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		
+	}
+	on_invalid = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			AND = {
+			NOT = {
+			is_claim = event_target:agendasubject
+			}
+			NOT = {
+			owned_by = event_target:agendasubject	
+			}
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+estate_harem_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_jwlaunch
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_wants_to_join_war
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_country = {
+			limit = {
+				has_country_flag = cosmo_enemy_country
+			}
+			save_event_target_as = enemycountry			
+		}		
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_target
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		event_target:agendaprovince = {
+			set_province_flag = cosmo_agenda_province_active
+			save_event_target_as = cosmo_agenda_province
+		}
+		event_target:agendasubject = {
+			set_country_flag = cosmo_subject_country_claim_active
+			save_event_target_as = cosmo_agendasubject
+		}		
+	}
+	on_invalid = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_subject_country_claim_active
+			}
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			NOT = {
+			owned_by = event_target:agendasubject
+			}
+			owner = {
+				is_at_war = no
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_harem_nowar_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_conquer
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject 
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			save_event_target_as = agendaprovince
+		}				
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+				any_neighbor_province = {
+					owned_by = event_target:agendasubject
+				} 
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		
+	}
+	on_invalid = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			AND = {
+			NOT = {
+			is_claim = event_target:agendasubject
+			}
+			NOT = {
+			owned_by = event_target:agendasubject	
+			}
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_wives_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_jwlaunch
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_wants_to_join_war
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_country = {
+			limit = {
+				has_country_flag = cosmo_enemy_country
+			}
+			save_event_target_as = enemycountry			
+		}		
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_target
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		event_target:agendaprovince = {
+			set_province_flag = cosmo_agenda_province_active
+			save_event_target_as = cosmo_agenda_province
+		}
+		event_target:agendasubject = {
+			set_country_flag = cosmo_subject_country_claim_active
+			save_event_target_as = cosmo_agendasubject
+		}		
+	}
+	on_invalid = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_subject_country_claim_active
+			}
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			NOT = {
+			owned_by = event_target:agendasubject
+			}
+			owner = {
+				is_at_war = no
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_wives_nowar_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_conquer
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject 
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			save_event_target_as = agendaprovince
+		}				
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+				any_neighbor_province = {
+					owned_by = event_target:agendasubject
+				} 
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		
+	}
+	on_invalid = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			AND = {
+			NOT = {
+			is_claim = event_target:agendasubject
+			}
+			NOT = {
+			owned_by = event_target:agendasubject	
+			}
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_ooku_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_jwlaunch
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_wants_to_join_war
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_country = {
+			limit = {
+				has_country_flag = cosmo_enemy_country
+			}
+			save_event_target_as = enemycountry			
+		}		
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_target
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		event_target:agendaprovince = {
+			set_province_flag = cosmo_agenda_province_active
+			save_event_target_as = cosmo_agenda_province
+		}
+		event_target:agendasubject = {
+			set_country_flag = cosmo_subject_country_claim_active
+			save_event_target_as = cosmo_agendasubject
+		}		
+	}
+	on_invalid = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_subject_country_claim_active
+			}
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			NOT = {
+			owned_by = event_target:agendasubject
+			}
+			owner = {
+				is_at_war = no
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_ooku_nowar_expand_into_x = {
+	can_select = {
+		has_country_flag = cosmo_puagenda_conquer
+	}
+	selection_weight = {
+		factor = 2
+	}
+	pre_effect = {
+		random_subject_country = {
+			limit = {
+				has_country_flag = cosmo_diplomacy_agenda
+			}
+			save_event_target_as = agendasubject			
+		}
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject 
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			save_event_target_as = agendaprovince
+		}				
+		random_province = {
+			limit = {
+				is_claim = event_target:agendasubject
+				NOT = {
+					country_or_vassal_holds = ROOT
+				}
+				any_neighbor_province = {
+					owned_by = event_target:agendasubject
+				} 
+			}
+			save_event_target_as = agendaprovince
+		}
+	}
+	immediate_effect = {
+		
+	}
+	on_invalid = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}		
+	}
+	provinces_to_highlight = {
+		area_for_scope_province = {
+			province_id = event_target:agendaprovince
+		}
+	}
+	task_requirements = {
+		event_target:agendaprovince = {
+			owned_by = event_target:agendasubject
+		}
+	}
+	fail_if = {
+		event_target:agendaprovince = {
+			AND = {
+			NOT = {
+			is_claim = event_target:agendasubject
+			}
+			NOT = {
+			owned_by = event_target:agendasubject	
+			}
+			}
+		}
+	}
+	task_completed_effect = {
+		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = 25
+			}
+			if = {
+				limit = {
+					liberty_desire = 25
+				}
+				add_liberty_desire = -15			
+			}
+		}
+	}
+    failing_effect = {
+ 		event_target:agendasubject = {
+			add_trust = {
+				who = ROOT
+				value = -25
+			}
+		}
+    }
+}
+
+estate_nobleaffairs_develop_x_consort = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_privilege_agendas		
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_province
+			}
+			save_event_target_as = agenda_province			
+		}		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				NOT = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = EST_VAL_NEW_AGENDA
+				influence = -15
+				duration = 1825
+			}			
+		}
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobleaffairs
+				desc = EST_VAL_NEW_AGENDA
+				influence = -30
+				duration = 1825
+			}			
+		}
+	set_country_flag = cosmo_estate_agenda_active		
+
+	}	
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { country_or_subject_holds = ROOT  }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = 20
+			}
+	clr_country_flag = cosmo_estate_agenda_active		
+    }
+    failing_effect = {
+		clr_country_flag = cosmo_estate_agenda_active		
+		clr_country_flag = cosmo_cancel_estate_agenda	
+		add_estate_loyalty = {
+			estate = estate_nobleaffairs
+			loyalty = -20
+			}
+    }
+}
+
+estate_ooku_develop_x_consort = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_privilege_agendas		
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_province
+			}
+			save_event_target_as = agenda_province			
+		}		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				NOT = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = EST_VAL_NEW_AGENDA
+				influence = -15
+				duration = 1825
+			}			
+		}
+	set_country_flag = cosmo_estate_agenda_active		
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_ooku
+				desc = EST_VAL_NEW_AGENDA
+				influence = -30
+				duration = 1825
+			}			
+		}				
+	}	
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { country_or_subject_holds = ROOT  }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = 20
+			}
+	clr_country_flag = cosmo_estate_agenda_active		
+    }
+    failing_effect = {
+		clr_country_flag = cosmo_estate_agenda_active		
+		clr_country_flag = cosmo_cancel_estate_agenda	
+		add_estate_loyalty = {
+			estate = estate_ooku
+			loyalty = -20
+			}
+    }
+}
+
+estate_wives_develop_x_consort = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_privilege_agendas		
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_province
+			}
+			save_event_target_as = agenda_province			
+		}		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				NOT = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = EST_VAL_NEW_AGENDA
+				influence = -15
+				duration = 1825
+			}			
+		}
+	set_country_flag = cosmo_estate_agenda_active		
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_wives
+				desc = EST_VAL_NEW_AGENDA
+				influence = -30
+				duration = 1825
+			}			
+		}				
+	}	
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { country_or_subject_holds = ROOT  }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = 20
+			}
+	clr_country_flag = cosmo_estate_agenda_active		
+    }
+    failing_effect = {
+		clr_country_flag = cosmo_estate_agenda_active		
+		clr_country_flag = cosmo_cancel_estate_agenda	
+		add_estate_loyalty = {
+			estate = estate_wives
+			loyalty = -20
+			}
+    }
+}
+
+estate_harem_develop_x_consort = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_privilege_agendas		
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_province
+			}
+			save_event_target_as = agenda_province			
+		}		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				NOT = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = EST_VAL_NEW_AGENDA
+				influence = -15
+				duration = 1825
+			}			
+		}
+	set_country_flag = cosmo_estate_agenda_active		
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_harem
+				desc = EST_VAL_NEW_AGENDA
+				influence = -30
+				duration = 1825
+			}			
+		}				
+	}	
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { country_or_subject_holds = ROOT  }
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = 20
+			}
+	clr_country_flag = cosmo_estate_agenda_active		
+    }
+    failing_effect = {
+		clr_country_flag = cosmo_estate_agenda_active		
+		clr_country_flag = cosmo_cancel_estate_agenda	
+		add_estate_loyalty = {
+			estate = estate_harem
+			loyalty = -20
+			}
+    }
+}
+
+estate_forbiddenpalace_develop_x_consort = {
+	selection_weight = {
+		factor = 1
+	}
+	can_select = {
+		has_country_flag = cosmo_privilege_agendas		
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				has_province_flag = cosmo_agenda_province
+			}
+			save_event_target_as = agenda_province			
+		}
+		set_country_flag = cosmo_estate_agenda_active		
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					check_variable = {
+						which = province_adm_var
+						value = 1
+					}
+				}
+				set_variable = {
+					which = province_adm_var
+					value = 0
+				}
+			}
+			export_to_variable = {
+				which = province_adm_var
+				value = trigger_value:base_tax
+			}
+			change_variable = {
+				which = province_adm_var
+				value = 2
+			}
+		}
+	}
+	immediate_effect = {
+		if = {
+			limit = {
+				NOT = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = EST_VAL_NEW_AGENDA
+				influence = -15
+				duration = 1825
+			}			
+		}
+	set_country_flag = cosmo_estate_agenda_active		
+		if = {
+			limit = {
+				event_target:agenda_province = {
+					OR = {
+						has_province_modifier = cosmo_favorite_1
+						has_province_modifier = cosmo_favorite_2
+						has_province_modifier = cosmo_favorite_3
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_forbiddenpalace
+				desc = EST_VAL_NEW_AGENDA
+				influence = -30
+				duration = 1825
+			}			
+		}				
+	}	
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		OR = {
+		event_target:agenda_province = {
+			NOT = { country_or_subject_holds = ROOT  }
+		}
+		has_country_flag = cosmo_cancel_estate_agenda
+		}
+	}
+    task_requirements = {
+		event_target:agenda_province = {
+			base_tax = "province_adm_var"
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = 20
+			}
+		clr_country_flag = cosmo_estate_agenda_active	
+    }
+    failing_effect = {
+		clr_country_flag = cosmo_estate_agenda_active		
+		clr_country_flag = cosmo_cancel_estate_agenda	
+		add_estate_loyalty = {
+			estate = estate_forbiddenpalace
+			loyalty = -20
+			}			
+    }
+}
+#

@@ -1,0 +1,42 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_advisor_takama_theologian_female"
+		texturefile = "gfx//interface//advisors//takama_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	
+	spriteType = {
+		name = "GFX_advisor_takama_spymaster_female"
+		texturefile = "gfx//interface//advisors//takama_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_takama_grand_captain_female"
+		texturefile = "gfx//interface//advisors//takama_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_advisor_takama_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

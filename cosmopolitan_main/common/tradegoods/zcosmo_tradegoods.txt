@@ -1,0 +1,62 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new resources, make sure they are uniquely named.
+# Please add price definitions to prices.txt as well.
+
+
+#African Resources
+
+asian_slaves = {
+	color = { 0.75 0.7 0.63 }
+	modifier = {
+		build_cost = -0.1 
+	}
+	province = {
+		local_development_cost = 0.8
+	}
+
+	chance = {
+		factor = 0
+	}
+}
+
+european_slaves = {
+	color = { 0.0 0.0 0.0 }
+	modifier = {
+		build_cost = -0.1 
+	}
+	province = {
+		local_development_cost = 0.8 
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+
+american_native_slaves = {
+	color = { 0.75 0.7 0.63 }
+	modifier = {
+		build_cost = -0.1 
+	}
+	province = {
+		local_development_cost = 0.8 
+	}
+
+	chance = {
+		factor = 0
+	}
+}
+
+prostitutes = {
+	color = { 0.75 0.7 0.63 }
+	modifier = {
+		global_spy_defence = 0.2  
+	}
+	province = {
+		local_development_cost = -0.2 
+	}
+
+	chance = {
+		factor = 0
+	}
+}

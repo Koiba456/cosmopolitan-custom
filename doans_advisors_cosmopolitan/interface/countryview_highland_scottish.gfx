@@ -1,0 +1,78 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_philosopher_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+
+		spriteType = {
+		name = "GFX_advisor_highland_scottish_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_theologian_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_diplomat_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_navigator_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_grand_captain_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_highland_scottish_commandant_female"
+		texturefile = "gfx//interface//advisors//highland_scottish_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+}

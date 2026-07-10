@@ -1,0 +1,110 @@
+spriteTypes = {
+
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_galician_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//galician_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_galician_theologian_female"
+		texturefile = "gfx//interface//advisors//galician_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_galician_treasurer_female"
+		texturefile = "gfx//interface//advisors//galician_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_galician_statesman_female"
+		texturefile = "gfx//interface//advisors//galician_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_galician_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//galician_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_galician_navigator_female"
+		texturefile = "gfx//interface//advisors//galician_navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_galician_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//galician_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_galician_trader_female"
+		texturefile = "gfx//interface//advisors//galician_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_galician_commandant_female"
+		texturefile = "gfx//interface//advisors//portugese_commandant_female.tga" #replacement
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_galician_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//galician_recruitmaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+}

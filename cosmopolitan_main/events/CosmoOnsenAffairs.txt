@@ -1,0 +1,4950 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_onsenaffairs_events
+
+
+
+# Onsen Start
+country_event = {
+	id = cosmo_onsenaffairs_events.10
+	title = cosmo_onsenaffairs_events.10.t
+	desc = cosmo_onsenaffairs_events.10.d
+	picture = cosmogfx_AFFAIR_NOBLEWOMAN_MENU_1_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		ai = no
+	NOT = {
+		capital_scope = {
+			has_province_modifier = cosmo_onsen_province
+		}
+	}	
+		has_ruler_flag = cosmo_onsen_start
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+		immediate = {
+	hidden_effect = {
+			capital_scope = {
+				add_province_modifier = { 
+					name = cosmo_onsen_province
+					duration = 365  
+				} 	
+			}
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = cosmo_onsen_advisor
+				}
+				66 = { #dip
+						set_ruler_flag = cosmo_onsen_general
+	
+				}																								
+			}
+		if = {
+			limit = {
+				has_ruler_flag = cosmo_onsen_general	
+			}
+			random_list = { #marriage
+			2 = { 
+				set_ruler_flag = cosmo_onsen_1
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_2
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_3
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_4
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_5
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_6
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_7
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_8
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_9
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_10
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_11
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_12
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_13
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_14
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_15
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_16
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_17
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_18
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_19
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_20
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_21
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_22
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_23
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_24
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_25
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_26
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_27
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_28
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_29
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_30
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_31
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_32
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_33
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_34
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_35
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_36
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_37
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_38
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_39
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_40
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_41
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_42
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_43
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_44
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_45
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_46
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_47
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_48
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_49
+			}
+			2 = { 
+				set_ruler_flag = cosmo_onsen_50
+			}
+		}			
+			}						
+		if = {
+			limit = {
+				has_ruler_flag = cosmo_onsen_advisor	
+			}
+			random_list = { #marriage
+			5 = { 
+				set_ruler_flag = onsen_togoku_treasurer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_togoku_navigator_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_togoku_natural_scientist_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_togoku_commandant_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_togoku_army_reformer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_togoku_army_organizer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_treasurer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_statesman_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_fortification_expert_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_artist_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_kyushuan_army_reformer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_statesman_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_inquisitor_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_grand_captain_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_commandant_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_colonial_governor_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_artist_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_army_reformer_eventpicture
+			}
+			5 = { 
+				set_ruler_flag = onsen_japanese_artist_eventpicture
+			}
+		}			
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.10.a
+		if = {
+			limit = {
+				has_ruler_flag = cosmo_onsen_advisor	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.30
+				days = 5
+				random = 20					
+			}
+			}		
+		if = {
+			limit = {
+				has_ruler_flag = cosmo_onsen_general	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.20
+				days = 5
+				random = 20					
+			}
+			}
+			clr_ruler_flag = cosmo_onsen_general
+			clr_ruler_flag = cosmo_onsen_advisor
+		}	
+}
+
+# Onsen Gemera;
+country_event = {
+	id = cosmo_onsenaffairs_events.20
+	title = cosmo_onsenaffairs_events.20.t
+	desc = cosmo_onsenaffairs_events.20.d
+	picture = cosmogfx_AFFAIR_NOBLEWOMAN_MENU_1_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.20.a
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = cosmo_onsen_1	
+				has_ruler_flag = cosmo_onsen_2	
+				has_ruler_flag = cosmo_onsen_3	
+				has_ruler_flag = cosmo_onsen_4	
+				has_ruler_flag = cosmo_onsen_5	
+				has_ruler_flag = cosmo_onsen_6	
+				has_ruler_flag = cosmo_onsen_7	
+				has_ruler_flag = cosmo_onsen_8	
+				has_ruler_flag = cosmo_onsen_9	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.200
+			}			
+			}
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = cosmo_onsen_10	
+				has_ruler_flag = cosmo_onsen_11	
+				has_ruler_flag = cosmo_onsen_12	
+				has_ruler_flag = cosmo_onsen_13	
+				has_ruler_flag = cosmo_onsen_14	
+				has_ruler_flag = cosmo_onsen_15	
+				has_ruler_flag = cosmo_onsen_16	
+				has_ruler_flag = cosmo_onsen_17	
+				has_ruler_flag = cosmo_onsen_18	
+				has_ruler_flag = cosmo_onsen_19	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.201
+			}			
+			}
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = cosmo_onsen_20	
+				has_ruler_flag = cosmo_onsen_21	
+				has_ruler_flag = cosmo_onsen_22	
+				has_ruler_flag = cosmo_onsen_23	
+				has_ruler_flag = cosmo_onsen_24	
+				has_ruler_flag = cosmo_onsen_25	
+				has_ruler_flag = cosmo_onsen_26	
+				has_ruler_flag = cosmo_onsen_27	
+				has_ruler_flag = cosmo_onsen_28	
+				has_ruler_flag = cosmo_onsen_29	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.202
+			}			
+			}
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = cosmo_onsen_30	
+				has_ruler_flag = cosmo_onsen_31	
+				has_ruler_flag = cosmo_onsen_32	
+				has_ruler_flag = cosmo_onsen_33	
+				has_ruler_flag = cosmo_onsen_34	
+				has_ruler_flag = cosmo_onsen_35	
+				has_ruler_flag = cosmo_onsen_36	
+				has_ruler_flag = cosmo_onsen_37	
+				has_ruler_flag = cosmo_onsen_38	
+				has_ruler_flag = cosmo_onsen_39	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.203
+			}			
+			}
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = cosmo_onsen_40	
+				has_ruler_flag = cosmo_onsen_41	
+				has_ruler_flag = cosmo_onsen_42	
+				has_ruler_flag = cosmo_onsen_43	
+				has_ruler_flag = cosmo_onsen_44	
+				has_ruler_flag = cosmo_onsen_45	
+				has_ruler_flag = cosmo_onsen_46	
+				has_ruler_flag = cosmo_onsen_47	
+				has_ruler_flag = cosmo_onsen_48	
+				has_ruler_flag = cosmo_onsen_49	
+				has_ruler_flag = cosmo_onsen_50	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.204
+			}			
+			}														
+		}	
+}
+
+# Onsen Gemeral
+country_event = {
+	id = cosmo_onsenaffairs_events.200
+	title = cosmo_onsenaffairs_events.200.t
+	desc = cosmo_onsenaffairs_events.200.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_1	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_2	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_2_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_3	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_3_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_4	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_4_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_5	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_5_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_6	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_6_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_7	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_7_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_8	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_8_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_9	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_9_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.200.a
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_affair_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_affair_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_affair_adm
+							}
+							capital_scope = {
+
+								add_scaled_local_adm_power = 2 	
+										
+							}							
+						}				
+					}
+			onsen_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_affair_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_dip
+								}
+							capital_scope = {
+
+									add_scaled_local_dip_power = 2 	
+								}
+							}				
+						}
+			onsen_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_affair_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_mil
+								}
+							capital_scope = {
+
+									add_scaled_local_mil_power = 2 	
+								}
+							}				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_1	
+		clr_ruler_flag = cosmo_onsen_2	
+		clr_ruler_flag = cosmo_onsen_3	
+		clr_ruler_flag = cosmo_onsen_4	
+		clr_ruler_flag = cosmo_onsen_5	
+		clr_ruler_flag = cosmo_onsen_6	
+		clr_ruler_flag = cosmo_onsen_7	
+		clr_ruler_flag = cosmo_onsen_8	
+		clr_ruler_flag = cosmo_onsen_9
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.200.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_1	
+		clr_ruler_flag = cosmo_onsen_2	
+		clr_ruler_flag = cosmo_onsen_3	
+		clr_ruler_flag = cosmo_onsen_4	
+		clr_ruler_flag = cosmo_onsen_5	
+		clr_ruler_flag = cosmo_onsen_6	
+		clr_ruler_flag = cosmo_onsen_7	
+		clr_ruler_flag = cosmo_onsen_8	
+		clr_ruler_flag = cosmo_onsen_9
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}					
+}
+
+# Onsen Gemeral
+country_event = {
+	id = cosmo_onsenaffairs_events.201
+	title = cosmo_onsenaffairs_events.201.t
+	desc = cosmo_onsenaffairs_events.201.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_10	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_10_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_11	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_11_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_12	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_12_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_13	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_13_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_14	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_14_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_15	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_15_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_16	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_16_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_17	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_17_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_18	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_18_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_19	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_19_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.201.a
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_affair_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_affair_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_affair_adm
+							}
+							capital_scope = {
+
+								add_scaled_local_adm_power = 2 	
+										
+							}							
+						}				
+					}
+			onsen_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_affair_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_dip
+								}
+							capital_scope = {
+
+									add_scaled_local_dip_power = 2 	
+								}
+							}				
+						}
+			onsen_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_affair_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_mil
+								}
+							capital_scope = {
+
+									add_scaled_local_mil_power = 2 	
+								}
+							}				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_10	
+		clr_ruler_flag = cosmo_onsen_11	
+		clr_ruler_flag = cosmo_onsen_12	
+		clr_ruler_flag = cosmo_onsen_13	
+		clr_ruler_flag = cosmo_onsen_14	
+		clr_ruler_flag = cosmo_onsen_15	
+		clr_ruler_flag = cosmo_onsen_16	
+		clr_ruler_flag = cosmo_onsen_17	
+		clr_ruler_flag = cosmo_onsen_18
+		clr_ruler_flag = cosmo_onsen_19
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.201.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_10	
+		clr_ruler_flag = cosmo_onsen_11	
+		clr_ruler_flag = cosmo_onsen_12	
+		clr_ruler_flag = cosmo_onsen_13	
+		clr_ruler_flag = cosmo_onsen_14	
+		clr_ruler_flag = cosmo_onsen_15	
+		clr_ruler_flag = cosmo_onsen_16	
+		clr_ruler_flag = cosmo_onsen_17	
+		clr_ruler_flag = cosmo_onsen_18
+		clr_ruler_flag = cosmo_onsen_19
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}			
+}
+
+# Onsen Gemeral
+country_event = {
+	id = cosmo_onsenaffairs_events.202
+	title = cosmo_onsenaffairs_events.202.t
+	desc = cosmo_onsenaffairs_events.202.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_20	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_20_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_21	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_21_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_22	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_22_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_23	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_23_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_24	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_24_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_25	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_25_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_26	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_26_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_27	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_27_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_28	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_28_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_29	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_29_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.202.a
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_affair_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_affair_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_affair_adm
+							}
+							capital_scope = {
+
+								add_scaled_local_adm_power = 2 	
+										
+							}							
+						}				
+					}
+			onsen_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_affair_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_dip
+								}
+							capital_scope = {
+
+									add_scaled_local_dip_power = 2 	
+								}
+							}				
+						}
+			onsen_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_affair_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_mil
+								}
+							capital_scope = {
+
+									add_scaled_local_mil_power = 2 	
+								}
+							}				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_20	
+		clr_ruler_flag = cosmo_onsen_21	
+		clr_ruler_flag = cosmo_onsen_22	
+		clr_ruler_flag = cosmo_onsen_23	
+		clr_ruler_flag = cosmo_onsen_24	
+		clr_ruler_flag = cosmo_onsen_25	
+		clr_ruler_flag = cosmo_onsen_26	
+		clr_ruler_flag = cosmo_onsen_27	
+		clr_ruler_flag = cosmo_onsen_28
+		clr_ruler_flag = cosmo_onsen_29
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.202.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_20	
+		clr_ruler_flag = cosmo_onsen_21	
+		clr_ruler_flag = cosmo_onsen_22	
+		clr_ruler_flag = cosmo_onsen_23	
+		clr_ruler_flag = cosmo_onsen_24	
+		clr_ruler_flag = cosmo_onsen_25	
+		clr_ruler_flag = cosmo_onsen_26	
+		clr_ruler_flag = cosmo_onsen_27	
+		clr_ruler_flag = cosmo_onsen_28
+		clr_ruler_flag = cosmo_onsen_29
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}			
+}
+
+# Onsen Gemeral
+country_event = {
+	id = cosmo_onsenaffairs_events.203
+	title = cosmo_onsenaffairs_events.203.t
+	desc = cosmo_onsenaffairs_events.203.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_30	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_30_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_31	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_31_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_32	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_32_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_33	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_33_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_34	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_34_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_35	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_35_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_36	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_36_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_37	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_37_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_38	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_38_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_39	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_39_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.203.a
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_affair_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_affair_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_affair_adm
+							}
+							capital_scope = {
+
+								add_scaled_local_adm_power = 2 	
+										
+							}							
+						}				
+					}
+			onsen_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_affair_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_dip
+								}
+							capital_scope = {
+
+									add_scaled_local_dip_power = 2 	
+								}
+							}				
+						}
+			onsen_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_affair_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_mil
+								}
+							capital_scope = {
+
+									add_scaled_local_mil_power = 2 	
+								}
+							}				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_30	
+		clr_ruler_flag = cosmo_onsen_31	
+		clr_ruler_flag = cosmo_onsen_32	
+		clr_ruler_flag = cosmo_onsen_33	
+		clr_ruler_flag = cosmo_onsen_34	
+		clr_ruler_flag = cosmo_onsen_35	
+		clr_ruler_flag = cosmo_onsen_36	
+		clr_ruler_flag = cosmo_onsen_37	
+		clr_ruler_flag = cosmo_onsen_38
+		clr_ruler_flag = cosmo_onsen_39
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}	
+		option = {
+		name = cosmo_onsenaffairs_events.203.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_30	
+		clr_ruler_flag = cosmo_onsen_31	
+		clr_ruler_flag = cosmo_onsen_32	
+		clr_ruler_flag = cosmo_onsen_33	
+		clr_ruler_flag = cosmo_onsen_34	
+		clr_ruler_flag = cosmo_onsen_35	
+		clr_ruler_flag = cosmo_onsen_36	
+		clr_ruler_flag = cosmo_onsen_37	
+		clr_ruler_flag = cosmo_onsen_38
+		clr_ruler_flag = cosmo_onsen_39
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}		
+}
+
+# Onsen Gemeral
+country_event = {
+	id = cosmo_onsenaffairs_events.204
+	title = cosmo_onsenaffairs_events.204.t
+	desc = cosmo_onsenaffairs_events.204.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_40	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_40_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_41	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_41_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_42	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_40_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_43	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_33_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_44	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_34_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_45	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_35_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_46	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_36_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_47	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_37_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_48	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_38_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_49	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_39_eventPicture
+	}		
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_50	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_39_eventPicture
+	}	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}		
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.204.a
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+					if = {
+						limit = {
+						NOT = {
+							has_ruler_flag = has_affair_adm
+						}	
+						}
+						change_adm = 1
+						set_ruler_flag = has_affair_adm
+						}
+						if = {
+							limit = {
+								has_ruler_flag = has_affair_adm
+							}
+							capital_scope = {
+
+								add_scaled_local_adm_power = 2 	
+										
+							}							
+						}				
+					}
+			onsen_dip = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_dip
+							}	
+							}
+							change_dip = 1
+							set_ruler_flag = has_affair_dip
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_dip
+								}
+							capital_scope = {
+
+									add_scaled_local_dip_power = 2 	
+								}
+							}				
+						}
+			onsen_mil = {
+						if = {
+							limit = {
+							NOT = {
+								has_ruler_flag = has_affair_mil
+							}	
+							}
+							change_mil = 1
+							set_ruler_flag = has_affair_mil
+							}
+							if = {
+								limit = {
+									has_ruler_flag = has_affair_mil
+								}
+							capital_scope = {
+
+									add_scaled_local_mil_power = 2 	
+								}
+							}				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_40	
+		clr_ruler_flag = cosmo_onsen_41	
+		clr_ruler_flag = cosmo_onsen_42	
+		clr_ruler_flag = cosmo_onsen_43	
+		clr_ruler_flag = cosmo_onsen_44	
+		clr_ruler_flag = cosmo_onsen_45	
+		clr_ruler_flag = cosmo_onsen_46	
+		clr_ruler_flag = cosmo_onsen_47	
+		clr_ruler_flag = cosmo_onsen_48
+		clr_ruler_flag = cosmo_onsen_49
+		clr_ruler_flag = cosmo_onsen_50
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}	
+		option = {
+		name = cosmo_onsenaffairs_events.204.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = cosmo_onsen_40	
+		clr_ruler_flag = cosmo_onsen_41	
+		clr_ruler_flag = cosmo_onsen_42	
+		clr_ruler_flag = cosmo_onsen_43	
+		clr_ruler_flag = cosmo_onsen_44	
+		clr_ruler_flag = cosmo_onsen_45	
+		clr_ruler_flag = cosmo_onsen_46	
+		clr_ruler_flag = cosmo_onsen_47	
+		clr_ruler_flag = cosmo_onsen_48
+		clr_ruler_flag = cosmo_onsen_49
+		clr_ruler_flag = cosmo_onsen_50
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}		
+}
+
+
+# Onsen Gemera;
+country_event = {
+	id = cosmo_onsenaffairs_events.30
+	title = cosmo_onsenaffairs_events.30.t
+	desc = cosmo_onsenaffairs_events.30.d
+	picture = cosmogfx_AFFAIR_NOBLEWOMAN_MENU_1_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.30.a
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = onsen_togoku_treasurer_eventpicture	
+				has_ruler_flag = onsen_togoku_navigator_eventpicture	
+				has_ruler_flag = onsen_togoku_natural_scientist_eventpicture	
+				has_ruler_flag = onsen_togoku_commandant_eventpicture	
+				has_ruler_flag = onsen_togoku_army_reformer_eventpicture	
+				has_ruler_flag = onsen_togoku_army_organizer_eventpicture	
+				has_ruler_flag = onsen_kyushuan_treasurer_eventpicture	
+				has_ruler_flag = onsen_kyushuan_statesman_eventpicture	
+				has_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.300
+			}			
+			}
+		if = {
+			limit = {
+			OR = {
+				has_ruler_flag = onsen_kyushuan_fortification_expert_eventpicture	
+				has_ruler_flag = onsen_kyushuan_artist_eventpicture	
+				has_ruler_flag = onsen_kyushuan_army_reformer_eventpicture	
+				has_ruler_flag = onsen_japanese_statesman_eventpicture	
+				has_ruler_flag = onsen_japanese_inquisitor_eventpicture	
+				has_ruler_flag = onsen_japanese_grand_captain_eventpicture	
+				has_ruler_flag = onsen_japanese_commandant_eventpicture	
+				has_ruler_flag = onsen_japanese_colonial_governor_eventpicture	
+				has_ruler_flag = onsen_japanese_artist_eventpicture	
+				has_ruler_flag = onsen_japanese_army_reformer_eventpicture	
+			}	
+			}
+			country_event = { 
+			id = cosmo_onsenaffairs_events.301
+			}			
+			}														
+		}	
+}
+
+# Onsen advisors
+country_event = {
+	id = cosmo_onsenaffairs_events.300
+	title = cosmo_onsenaffairs_events.300.t
+	desc = cosmo_onsenaffairs_events.300.d
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_treasurer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_TREASURER_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_navigator_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_NAVIGATOR_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_natural_scientist_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_NATURAL_SCIENTIST_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_commandant_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_COMMANDANT_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_army_reformer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_ARMY_REFORMER_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_army_organizer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_TOGOKU_ARMY_ORGANIZER_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_kyushuan_treasurer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_TREASURER_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_kyushuan_statesman_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_STATESMAN_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_NAVAL_REFORMER_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}
+			random_list = { #advisor
+			15 = { 
+				set_ruler_flag = cosmo_advisor_1
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_2
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_3
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_4
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_5
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_6
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_7
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_8
+			}			
+		}					
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.300.a
+		add_years_of_income = -0.05 
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_treasurer_eventpicture
+			}
+				trigger_switch = {
+				on_trigger = has_ruler_flag
+				cosmo_advisor_1 = {
+					define_advisor = {
+						type = treasurer
+						name = "Ren Arisugawa"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_2 = {
+					define_advisor = {
+						type = treasurer
+						name = "Sen Yamashina"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_3 = {
+					define_advisor = {
+						type = treasurer
+						name = "Yoshiko Kitashirakawa"
+						skill = 2
+						culture = togoku
+						female = yes				
+						discount = yes
+					}
+					}
+				cosmo_advisor_4 = {
+					define_advisor = {
+						type = treasurer
+						name = "Takako Yamato"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_5 = {
+					define_advisor = {
+						type = treasurer
+						name = "Mitsuko Fushimi"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_6 = {
+					define_advisor = {
+						type = treasurer
+						name = "Chiyoko Nashimoto"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_7 = {
+					define_advisor = {
+						type = treasurer
+						name = "Yoshiko Kuni"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}
+				cosmo_advisor_8 = {
+					define_advisor = {
+						type = treasurer
+						name = "Setsuko Yamato"
+						skill = 2
+						culture = togoku
+						female = yes
+						discount = yes
+					}
+					}			
+				}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_navigator_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = navigator
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = navigator
+				name = "Tama Yamashina"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = navigator
+				name = "Kohaku Kitashirakawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = navigator
+				name = "Sakura Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = navigator
+				name = "Yua Fushimi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = navigator
+				name = "Sumiko Nashimoto"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = navigator
+				name = "Sora Kuni"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = navigator
+				name = "Masuyo Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_natural_scientist_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Tama Yamashina"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Kohaku Kitashirakawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Sakura Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Yua Fushimi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Sumiko Nashimoto"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Sora Kuni"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Masuyo Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_commandant_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = commandant
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = commandant
+				name = "Sen Yamashina"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = commandant
+				name = "Yoshiko Kitashirakawa"
+				skill = 2
+				culture = togoku
+				female = yes				
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = commandant
+				name = "Takako Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = commandant
+				name = "Mitsuko Fushimi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = commandant
+				name = "Chiyoko Nashimoto"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = commandant
+				name = "Yoshiko Kuni"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = commandant
+				name = "Setsuko Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_army_reformer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aina Yamashina"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aoi Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Ran Fushimi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_togoku_army_organizer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Tama Yamashina"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Kohaku Kitashirakawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Sakura Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Yua Fushimi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Sumiko Nashimoto"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Sora Kuni"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Masuyo Yamato"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_treasurer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = treasurer
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = treasurer
+				name = "Sen Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = treasurer
+				name = "Yoshiko Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = treasurer
+				name = "Takako Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = treasurer
+				name = "Mitsuko Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = treasurer
+				name = "Chiyoko Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = treasurer
+				name = "Yoshiko Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = treasurer
+				name = "Setsuko Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_statesman_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = statesman
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = statesman
+				name = "Aina Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = statesman
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = statesman
+				name = "Aoi Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = statesman
+				name = "Ran Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = statesman
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = statesman
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = statesman
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Aina Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Aoi Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Ran Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = naval_reformer
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}																
+		clr_ruler_flag = onsen_togoku_treasurer_eventpicture	
+		clr_ruler_flag = onsen_togoku_navigator_eventpicture	
+		clr_ruler_flag = onsen_togoku_natural_scientist_eventpicture	
+		clr_ruler_flag = onsen_togoku_commandant_eventpicture	
+		clr_ruler_flag = onsen_togoku_army_reformer_eventpicture	
+		clr_ruler_flag = onsen_togoku_army_organizer_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_treasurer_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_statesman_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture
+		clr_ruler_flag = cosmo_advisor_1
+		clr_ruler_flag = cosmo_advisor_2
+		clr_ruler_flag = cosmo_advisor_3
+		clr_ruler_flag = cosmo_advisor_4
+		clr_ruler_flag = cosmo_advisor_5
+		clr_ruler_flag = cosmo_advisor_6
+		clr_ruler_flag = cosmo_advisor_7
+		clr_ruler_flag = cosmo_advisor_8
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.300.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = onsen_togoku_treasurer_eventpicture	
+		clr_ruler_flag = onsen_togoku_navigator_eventpicture	
+		clr_ruler_flag = onsen_togoku_natural_scientist_eventpicture	
+		clr_ruler_flag = onsen_togoku_commandant_eventpicture	
+		clr_ruler_flag = onsen_togoku_army_reformer_eventpicture	
+		clr_ruler_flag = onsen_togoku_army_organizer_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_treasurer_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_statesman_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_naval_reformer_eventpicture
+		clr_ruler_flag = cosmo_advisor_1
+		clr_ruler_flag = cosmo_advisor_2
+		clr_ruler_flag = cosmo_advisor_3
+		clr_ruler_flag = cosmo_advisor_4
+		clr_ruler_flag = cosmo_advisor_5
+		clr_ruler_flag = cosmo_advisor_6
+		clr_ruler_flag = cosmo_advisor_7
+		clr_ruler_flag = cosmo_advisor_8
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}					
+}
+
+# Onsen advisors
+country_event = {
+	id = cosmo_onsenaffairs_events.301
+	title = cosmo_onsenaffairs_events.301.t
+	desc = cosmo_onsenaffairs_events.301.d
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_togoku_treasurer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_FORTIFICATION_EXPERT_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_kyushuan_artist_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_ARTIST_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_kyushuan_army_reformer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_KYUSHUAN_ARMY_REFORMER_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_statesman_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_STATESMAN_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_inquisitor_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_INQUISITOR_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_grand_captain_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_GRAND_CAPTAIN_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_commandant_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_COMMANDANT_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_colonial_governor_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_COLONIAL_GOVERNOR_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_artist_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_ARTIST_eventPicture
+	}	
+	picture = {
+	trigger = {
+		has_ruler_flag = onsen_japanese_army_reformer_eventpicture	
+			}	
+	picture = cosmogfx_ONSEN_JAPANESE_ARMY_REFORMER_eventPicture
+	}		
+	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}
+			random_list = { #advisor
+			15 = { 
+				set_ruler_flag = cosmo_advisor_1
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_2
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_3
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_4
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_5
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_6
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_7
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_8
+			}			
+		}					
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.301.a
+		add_years_of_income = -0.05 
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_fortification_expert_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aina Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aoi Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Ran Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_artist_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Tama Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Kohaku Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Sakura Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Yua Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Sumiko Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Sora Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Masuyo Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_kyushuan_army_reformer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aina Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aoi Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Ran Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_statesman_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = statesman
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = statesman
+				name = "Aina Yamashina"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = statesman
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = statesman
+				name = "Aoi Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = statesman
+				name = "Ran Fushimi"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = statesman
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = statesman
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = statesman
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_inquisitor_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Sen Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Yoshiko Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Takako Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Mitsuko Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Chiyoko Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Yoshiko Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = inquisitor
+				name = "Setsuko Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}	
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_grand_captain_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Aina Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Aoi Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Ran Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = grand_captain
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_commandant_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = commandant
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = commandant
+				name = "Sen Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = commandant
+				name = "Yoshiko Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = commandant
+				name = "Takako Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = commandant
+				name = "Mitsuko Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = commandant
+				name = "Chiyoko Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = commandant
+				name = "Yoshiko Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = commandant
+				name = "Setsuko Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_colonial_governor_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Tama Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Kohaku Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Sakura Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Yua Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Sumiko Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Sora Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Masuyo Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_artist_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = artist
+				name = "Ren Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = artist
+				name = "Sen Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = artist
+				name = "Yoshiko Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = artist
+				name = "Takako Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = artist
+				name = "Mitsuko Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = artist
+				name = "Chiyoko Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = artist
+				name = "Yoshiko Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = artist
+				name = "Setsuko Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}
+		if = {
+			limit = {
+			has_ruler_flag = onsen_japanese_army_reformer_eventpicture
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Rina Arisugawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aina Yamashina"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yumi Kitashirakawa"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Aoi Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Ran Fushimi"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Kaori Nashimoto"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Yuzuki Kuni"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = army_reformer
+				name = "Sayuri Yamato"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}		
+		}																		
+		clr_ruler_flag = onsen_kyushuan_fortification_expert_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_artist_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_army_reformer_eventpicture	
+		clr_ruler_flag = onsen_japanese_statesman_eventpicture	
+		clr_ruler_flag = onsen_japanese_inquisitor_eventpicture	
+		clr_ruler_flag = onsen_japanese_grand_captain_eventpicture	
+		clr_ruler_flag = onsen_japanese_commandant_eventpicture	
+		clr_ruler_flag = onsen_japanese_colonial_governor_eventpicture	
+		clr_ruler_flag = onsen_japanese_artist_eventpicture
+		clr_ruler_flag = onsen_japanese_army_reformer_eventpicture
+		clr_ruler_flag = cosmo_advisor_1
+		clr_ruler_flag = cosmo_advisor_2
+		clr_ruler_flag = cosmo_advisor_3
+		clr_ruler_flag = cosmo_advisor_4
+		clr_ruler_flag = cosmo_advisor_5
+		clr_ruler_flag = cosmo_advisor_6
+		clr_ruler_flag = cosmo_advisor_7
+		clr_ruler_flag = cosmo_advisor_8
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.301.b
+		clr_ruler_flag = cosmo_onsen_start
+		trigger_switch = {
+			on_trigger = has_ruler_flag
+			onsen_adm = {
+						change_adm = -1				
+					}
+			onsen_dip = {
+						change_dip = -1
+						}
+			onsen_mil = {
+						change_mil = -1
+				
+						}										
+				}
+		clr_ruler_flag = onsen_kyushuan_fortification_expert_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_artist_eventpicture	
+		clr_ruler_flag = onsen_kyushuan_army_reformer_eventpicture	
+		clr_ruler_flag = onsen_japanese_statesman_eventpicture	
+		clr_ruler_flag = onsen_japanese_inquisitor_eventpicture	
+		clr_ruler_flag = onsen_japanese_grand_captain_eventpicture	
+		clr_ruler_flag = onsen_japanese_commandant_eventpicture	
+		clr_ruler_flag = onsen_japanese_colonial_governor_eventpicture	
+		clr_ruler_flag = onsen_japanese_artist_eventpicture
+		clr_ruler_flag = onsen_japanese_army_reformer_eventpicture
+		clr_ruler_flag = cosmo_advisor_1
+		clr_ruler_flag = cosmo_advisor_2
+		clr_ruler_flag = cosmo_advisor_3
+		clr_ruler_flag = cosmo_advisor_4
+		clr_ruler_flag = cosmo_advisor_5
+		clr_ruler_flag = cosmo_advisor_6
+		clr_ruler_flag = cosmo_advisor_7
+		clr_ruler_flag = cosmo_advisor_8
+		clr_ruler_flag = onsen_adm																
+		clr_ruler_flag = onsen_dip																
+		clr_ruler_flag = onsen_mil																
+	}					
+}
+
+# Onsen advisors
+country_event = {
+	id = cosmo_onsenaffairs_events.401
+	title = cosmo_onsenaffairs_events.401.t
+	desc = cosmo_onsenaffairs_events.401.d
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_diplomat	
+			}	
+	picture = cosmogfx_OOKU_MENU_1C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_army_organizer	
+			}	
+	picture = cosmogfx_OOKU_MENU_3B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_theologian	
+			}	
+	picture = cosmogfx_OOKU_MENU_8B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_statesman	
+			}	
+	picture = cosmogfx_OOKU_MENU_12A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_togoku_statesman	
+			}	
+	picture = cosmogfx_OOKU_MENU_12B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_kyushuan_theologian	
+			}	
+	picture = cosmogfx_OOKU_MENU_12C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_togoku_quartermaster	
+			}	
+	picture = cosmogfx_OOKU_MENU_11C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_fortification_expert	
+			}	
+	picture = cosmogfx_OOKU_MENU_11A_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_kyushuan_navigator	
+			}	
+	picture = cosmogfx_OOKU_MENU_8C_1_eventPicture
+	}	
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_togoku_natural_scientist	
+			}	
+	picture = cosmogfx_OOKU_MENU_7B_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_japanese_master_of_mint	
+			}	
+	picture = cosmogfx_OOKU_MENU_7C_1_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_togoku_diplomat	
+			}	
+	picture = cosmogfx_OOKU_MENU_10C_1_eventPicture
+	}				
+	picture = {
+	trigger = {
+		has_ruler_flag = ooku_togoku_colonial_governor	
+			}	
+	picture = cosmogfx_OOKU_MENU_9C_1_eventPicture
+	}	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+				random_list = {
+				33 = { #adm
+						set_ruler_flag = onsen_adm
+				}
+				33 = { #dip
+						set_ruler_flag = onsen_dip
+	
+				}
+				33 = { #mil
+						set_ruler_flag = onsen_mil
+				}																								
+			}
+			random_list = { #advisor
+			15 = { 
+				set_ruler_flag = cosmo_advisor_1
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_2
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_3
+			}
+			15 = { 
+				set_ruler_flag = cosmo_advisor_4
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_5
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_6
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_7
+			}
+			10 = { 
+				set_ruler_flag = cosmo_advisor_8
+			}			
+		}					
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.401.a
+		clr_ruler_flag = has_ooku_advisor
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_diplomat
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Rina Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aina Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yumi Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aoi Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Ran Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Kaori Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yuzuki Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Sayuri Shimazu"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_diplomat
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Rina Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Aina Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Yumi Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Aoi Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Ran Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Kaori Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Yuzuki Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = army_organiser
+				name = "Sayuri Mori"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_diplomat
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = theologian
+				name = "Rina Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = theologian
+				name = "Aina Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = theologian
+				name = "Yumi Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = theologian
+				name = "Aoi Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = theologian
+				name = "Ran Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = theologian
+				name = "Kaori Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = theologian
+				name = "Yuzuki Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = theologian
+				name = "Sayuri Ogasawara"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_diplomat
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = statesman
+				name = "Rina Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = statesman
+				name = "Aina Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = statesman
+				name = "Yumi Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = statesman
+				name = "Aoi Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = statesman
+				name = "Ran Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = statesman
+				name = "Kaori Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = statesman
+				name = "Yuzuki Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = statesman
+				name = "Sayuri Ashikaga"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_togoku_statesman
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = statesman
+				name = "Rina Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = statesman
+				name = "Aina Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = statesman
+				name = "Yumi Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = statesman
+				name = "Aoi Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = statesman
+				name = "Ran Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = statesman
+				name = "Kaori Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = statesman
+				name = "Yuzuki Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = statesman
+				name = "Sayuri Hosokawa"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_kyushuan_theologian
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = theologian
+				name = "Rina Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = theologian
+				name = "Aina Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = theologian
+				name = "Yumi Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = theologian
+				name = "Aoi Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = theologian
+				name = "Ran Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = theologian
+				name = "Kaori Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = theologian
+				name = "Yuzuki Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = theologian
+				name = "Sayuri Ando"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_togoku_quartermaster
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Rina Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Aina Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Yumi Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Aoi Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Ran Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Kaori Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Yuzuki Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = quartermaster
+				name = "Sayuri Nanbu"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_fortification_expert
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Rina Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aina Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yumi Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Aoi Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Ran Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Kaori Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Yuzuki Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = fortification_expert
+				name = "Sayuri Ando"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_kyushuan_navigator
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = navigator
+				name = "Rina Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = navigator
+				name = "Aina Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = navigator
+				name = "Yumi Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = navigator
+				name = "Aoi Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = navigator
+				name = "Ran Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = navigator
+				name = "Kaori Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = navigator
+				name = "Yuzuki Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = navigator
+				name = "Sayuri Tokugawa"
+				skill = 2
+				culture = kyushuan
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_togoku_natural_scientist
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Rina Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Aina Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Yumi Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Aoi Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Ran Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Kaori Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Yuzuki Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = natural_scientist
+				name = "Sayuri Oda"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_japanese_master_of_mint
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Rina Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Aina Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Yumi Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Aoi Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Ran Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Kaori Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Yuzuki Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = master_of_mint
+				name = "Sayuri Toki"
+				skill = 2
+				culture = japanese
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_togoku_diplomat
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = diplomat
+				name = "Rina Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = diplomat
+				name = "Aina Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = diplomat
+				name = "Yumi Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = diplomat
+				name = "Aoi Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = diplomat
+				name = "Ran Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = diplomat
+				name = "Kaori Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = diplomat
+				name = "Yuzuki Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = diplomat
+				name = "Sayuri Utsunomiya"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}
+		if = {
+			limit = {
+			has_ruler_flag = ooku_togoku_colonial_governor
+			}
+		trigger_switch = {
+		on_trigger = has_ruler_flag
+		cosmo_advisor_4 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Rina Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_3 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Aina Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_2 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Yumi Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_1 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Aoi Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_8 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Ran Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_7 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Kaori Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_6 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Yuzuki Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}
+		cosmo_advisor_5 = {
+			define_advisor = {
+				type = colonial_governor
+				name = "Sayuri Uesugi"
+				skill = 2
+				culture = togoku
+				female = yes
+				discount = yes
+			}
+			}			
+		}			
+		}																								
+													
+		clr_ruler_flag = ooku_japanese_diplomat	
+		clr_ruler_flag = ooku_japanese_army_organizer	
+		clr_ruler_flag = ooku_japanese_theologian	
+		clr_ruler_flag = ooku_japanese_statesman	
+		clr_ruler_flag = ooku_togoku_statesman	
+		clr_ruler_flag = ooku_kyushuan_theologian	
+		clr_ruler_flag = ooku_togoku_quartermaster	
+		clr_ruler_flag = ooku_japanese_fortification_expert	
+		clr_ruler_flag = ooku_kyushuan_navigator
+		clr_ruler_flag = ooku_togoku_natural_scientist
+		clr_ruler_flag = ooku_japanese_master_of_mint																
+		clr_ruler_flag = ooku_togoku_diplomat																
+		clr_ruler_flag = ooku_togoku_colonial_governor																
+		}
+		option = {
+		name = cosmo_onsenaffairs_events.401.b
+		clr_ruler_flag = has_ooku_advisor
+		clr_ruler_flag = ooku_japanese_diplomat	
+		clr_ruler_flag = ooku_japanese_army_organizer	
+		clr_ruler_flag = ooku_japanese_theologian	
+		clr_ruler_flag = ooku_japanese_statesman	
+		clr_ruler_flag = ooku_togoku_statesman	
+		clr_ruler_flag = ooku_kyushuan_theologian	
+		clr_ruler_flag = ooku_togoku_quartermaster	
+		clr_ruler_flag = ooku_japanese_fortification_expert	
+		clr_ruler_flag = ooku_kyushuan_navigator
+		clr_ruler_flag = ooku_togoku_natural_scientist
+		clr_ruler_flag = ooku_japanese_master_of_mint																
+		clr_ruler_flag = ooku_togoku_diplomat																
+		clr_ruler_flag = ooku_togoku_colonial_governor																
+	}					
+}
+#
+
+
+# clear flags
+country_event = {
+	id = cosmo_onsenaffairs_events.999
+	title = cosmo_onsenaffairs_events.999.t
+	desc = cosmo_onsenaffairs_events.999.d
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_40	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_40_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_41	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_41_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_42	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_40_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_43	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_33_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_44	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_34_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_45	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_35_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_46	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_36_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_47	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_37_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_48	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_38_eventPicture
+	}
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_49	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_39_eventPicture
+	}		
+	picture = {
+	trigger = {
+		has_ruler_flag = cosmo_onsen_50	
+			}	
+	picture = cosmogfx_ONSEN_GENERAL_39_eventPicture
+	}	
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	
+		immediate = {
+	hidden_effect = {	
+	
+		}
+		}
+
+	
+		option = {
+		name = cosmo_onsenaffairs_events.999.a
+			cosmo_picture_flags = yes															
+	}		
+}

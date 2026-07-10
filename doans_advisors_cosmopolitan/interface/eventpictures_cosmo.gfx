@@ -1,0 +1,5309 @@
+spriteTypes = {
+	
+		# Anacoana (Cosmo)
+		spriteType = {
+			name = "cosmogfx_ANACOANA_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/ANACOANA_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+	# Thai Queen (Cosmo)
+		spriteType = {
+			name = "cosmogfx_THAIQUEEN_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/THAIQUEEN_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Cosmopolitan event 1
+		spriteType = {
+			name = "cosmogfx_COSMOPOLITAN_eventPicture"
+			texturefile = "gfx/event_pictures/COSMOPOLITAN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Colony in Need of Women
+		spriteType = {
+			name = "cosmogfx_native_junglesex_eventPicture"
+			texturefile = "gfx/event_pictures/NATIVE_JUNGLESEX_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# BARBARY SLAVEMARKET
+		spriteType = {
+			name = "cosmogfx_BARBARY_SLAVEMARKET_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_SLAVEMARKET_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		#  HAREM INTRODUCTION
+		spriteType = {
+			name = "cosmogfx_HAREM_INTRODUCTION_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_INTRODUCTION_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		#  HAREM Dream
+		spriteType = {
+			name = "cosmogfx_HAREM_GIFTNUDE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_GIFTNUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# English 1 nude standing embrace
+		spriteType = {
+			name = "cosmogfx_ENGLISH_BRUN_NUDEEMBRACE1_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLISH_BRUN_NUDEEMBRACE1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Harem Smoking Nude
+		spriteType = {
+			name = "cosmogfx_HAREM_NUDESMOKING_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_NUDESMOKING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Harem Dressing
+		spriteType = {
+			name = "cosmogfx_HAREM_DRESSING_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_DRESSING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Harem Two nude bed
+		spriteType = {
+			name = "cosmogfx_HAREM_TWONUDEBED_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_TWONUDEBED_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Harem 3 outside smoking
+		spriteType = {
+			name = "cosmogfx_HAREM_OUTSIDESMOKING_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_OUTSIDESMOKING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# English bed breasts only
+		spriteType = {
+			name = "cosmogfx_ENGLISH_BRUN_BEDBREASTSONLY"
+			texturefile = "gfx/event_pictures/ENGLISH_BRUN_BEDBREASTSONLY.dds"
+			allwaystransparent = yes
+		}
+
+		# Barbary Enslaved Boat
+		spriteType = {
+			name = "cosmogfx_BARBARY_ENSLAVEDBOAT_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_ENSLAVEDBOAT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# English bed breasts gasp
+		spriteType = {
+			name = "cosmogfx_ENGLISH_BRUN_NUDEBEDGASP"
+			texturefile = "gfx/event_pictures/ENGLISH_BRUN_NUDEBEDGASP.dds"
+			allwaystransparent = yes
+		}
+
+		# Barbary Enslaved Desert
+		spriteType = {
+			name = "cosmogfx_BARBARY_ENSLAVED_DESERT"
+			texturefile = "gfx/event_pictures/BARBARY_ENSLAVED_DESERT.dds"
+			allwaystransparent = yes
+		}
+
+		# Barbary Market with finger in mouth
+		spriteType = {
+			name = "cosmogfx_BARBARY_ENSLAVED_FINGERMOUTH_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_ENSLAVED_FINGERMOUTH_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Enslaved fellatio
+		spriteType = {
+			name = "cosmogfx_BARBARY_ENSLAVED_FELLATIO_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_ENSLAVED_FELLATIO_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Native Nude Terrorized
+		spriteType = {
+			name = "cosmogfx_NATIVE_NUDE_TERRORIZED_eventPicture"
+			texturefile = "gfx/event_pictures/NATIVE_NUDE_TERRORIZED_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Brothel celebration
+		spriteType = {
+			name = "cosmogfx_BROTHEL_CELEBRATE_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_CELEBRATE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Nude Jungle Asian
+		spriteType = {
+			name = "cosmogfx_NATIVE_JUNGLENUDE_ASIA_eventPicture"
+			texturefile = "gfx/event_pictures/NATIVE_JUNGLENUDE_ASIA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# SA nude wives
+		spriteType = {
+			name = "cosmogfx_SA_NUDE_WIVES_eventPicture"
+			texturefile = "gfx/event_pictures/SA_NUDE_WIVES_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# NA nude raid
+		spriteType = {
+			name = "cosmogfx_NA_NUDE_RAID_eventPicture"
+			texturefile = "gfx/event_pictures/NA_NUDE_RAID_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# NA nud eencounter
+		spriteType = {
+			name = "cosmogfx_NA_NUDE_ENCOUNTER_eventPicture"
+			texturefile = "gfx/event_pictures/NA_NUDE_ENCOUNTER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# african nude pros
+		spriteType = {
+			name = "cosmogfx_AFRICAN_NUDE_PROSTITUTE_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICAN_NUDE_PROSTITUTE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Siti Wan Kembang
+		spriteType = {
+			name = "cosmogfx_NA_NUDE_WEDDINGBRAID_eventPicture"
+			texturefile = "gfx/event_pictures/NA_NUDE_WEDDINGBRAID_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Catherine of Aragon 
+		spriteType = {
+			name = "cosmogfx_AFRICAN_NUDE_DANCING_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICAN_NUDE_DANCING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Margaret of Anjou
+		spriteType = {
+			name = "cosmogfx_ASIAN_PREGNANT_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/ASIAN_PREGNANT_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Louise of Mecklenburg-Strelitz (1776 – 1810)
+		spriteType = {
+			name = "cosmogfx_SWE_BEDEMBRACE_eventPicture"
+			texturefile = "gfx/event_pictures/SWE_BEDEMBRACE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Ayse Hafsa Sultan
+		spriteType = {
+			name = "cosmogfx_SWE_BEDGASP_eventPicture"
+			texturefile = "gfx/event_pictures/SWE_BEDGASP_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Roshanara Begum
+		spriteType = {
+			name = "cosmogfx_SWE_NUDEEMBRACE_eventPicture"
+			texturefile = "gfx/event_pictures/SWE_NUDEEMBRACE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Abigail Adams (1744 – 1818)
+		spriteType = {
+			name = "cosmogfx_SPA_BED_LAYEND_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_BED_LAYEND_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Rani Abbakka Chowta
+		spriteType = {
+			name = "cosmogfx_SPA_BED_LAY_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_BED_LAY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sacagawea (1787? – 1812)
+		spriteType = {
+			name = "cosmogfx_SPA_BED_BREASTS_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_BED_BREASTS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Pari Khan Khanum (d. 1578)
+		spriteType = {
+			name = "cosmogfx_SPA_GRASS_LAYEND_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_GRASS_LAYEND_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Meera Bai
+		spriteType = {
+			name = "cosmogfx_SPA_GRASS_LAYMID_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_GRASS_LAYMID_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		#  Amina
+		spriteType = {
+			name = "cosmogfx_SPA_GRASS_LAYSTART_eventPicture"
+			texturefile = "gfx/event_pictures/SPA_GRASS_LAYSTART_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Mandukhai Khatun
+		spriteType = {
+			name = "cosmogfx_THAI_BED_LAY_eventPicture"
+			texturefile = "gfx/event_pictures/THAI_BED_LAY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Ho Xuan Huong
+		spriteType = {
+			name = "cosmogfx_THAI_BED_LAY_START_eventPicture"
+			texturefile = "gfx/event_pictures/THAI_BED_LAY_START_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Inion Dubh
+		spriteType = {
+			name = "cosmogfx_THAI_BREASTSONLY_eventPicture"
+			texturefile = "gfx/event_pictures/THAI_BREASTSONLY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Rani Durgavati
+		spriteType = {
+			name = "cosmogfx_KOR_BED_BENT_eventPicture"
+			texturefile = "gfx/event_pictures/KOR_BED_BENT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Kateri Tekakwitha
+		spriteType = {
+			name = "cosmogfx_KOR_BED_GASP_eventPicture"
+			texturefile = "gfx/event_pictures/KOR_BED_GASP_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Maria Sibylla Merian
+		spriteType = {
+			name = "cosmogfx_KOR_BEDRIDESEOL_eventPicture"
+			texturefile = "gfx/event_pictures/KOR_BEDRIDESEOL_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Kenau Simonsdochter Hasselaer
+		spriteType = {
+			name = "cosmogfx_SCOT_NUDE_BREASTS_eventPicture"
+			texturefile = "gfx/event_pictures/SCOT_NUDE_BREASTS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elena Cornaro Piscopia
+		spriteType = {
+			name = "cosmogfx_SCOT_NUDE_FLOOR_eventPicture"
+			texturefile = "gfx/event_pictures/SCOT_NUDE_FLOOR_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Yekaterina Romanovna Vorontsova-Dashkova
+		spriteType = {
+			name = "cosmogfx_SCOT_NUDE_STAND_eventPicture"
+			texturefile = "gfx/event_pictures/SCOT_NUDE_STAND_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Crous
+		spriteType = {
+			name = "cosmogfx_COLUMBUS_NUDE_INTRO_eventPicture"
+			texturefile = "gfx/event_pictures/COLUMBUS_NUDE_INTRO_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Ohatsu
+		spriteType = {
+			name = "cosmogfx_AFRICAN_NUDE_INSPECT_eventPicture"
+			texturefile = "gfx/event_pictures/AFRICAN_NUDE_INSPECT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Empress Dowager Xiaozhuang (1613 – 1688)
+		spriteType = {
+			name = "cosmogfx_ARAWAK_NUDE_POSE_eventPicture"
+			texturefile = "gfx/event_pictures/ARAWAK_NUDE_POSE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Inés de Suárez
+		spriteType = {
+			name = "cosmogfx_ARAWAK_NUDE_OFFER_eventPicture"
+			texturefile = "gfx/event_pictures/ARAWAK_NUDE_OFFER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Kaihime
+		spriteType = {
+			name = "cosmogfx_ARAWAK_NUDE_PRIEST_eventPicture"
+			texturefile = "gfx/event_pictures/ARAWAK_NUDE_PRIEST_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_SMOKE_OFFER_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_SMOKE_OFFER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_POOL_BATHE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_POOL_BATHE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_DANCING_CIRCLE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_DANCING_CIRCLE_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_INCENSE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_INCENSE_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+	
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_BATHE_SMOKE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_BATHE_SMOKE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Nazo Tokhi
+		spriteType = {
+			name = "cosmogfx_HAREM_SOAK_BATHE_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_SOAK_BATHE_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Qin Liangyu
+		spriteType = {
+			name = "cosmogfx_HAREM_DANCER_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_DANCER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Ilona Zrinyi
+		spriteType = {
+			name = "cosmogfx_WITCH_SUMMON_eventPicture"
+			texturefile = "gfx/event_pictures/WITCH_SUMMON_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Wang Zhenyi
+		spriteType = {
+			name = "cosmogfx_HELL_WITCHES_FALLING_eventPicture"
+			texturefile = "gfx/event_pictures/HELL_WITCHES_FALLING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Suriyothai
+		spriteType = {
+			name = "cosmogfx_HELL_WITCHES_FIRE_eventPicture"
+			texturefile = "gfx/event_pictures/HELL_WITCHES_FIRE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sayyida al Hurra
+		spriteType = {
+			name = "cosmogfx_AFFAIR_LOVER_BASE_eventPicture"
+			texturefile = "gfx/event_pictures/AFFAIR_LOVER_BASE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Olympe de Gouges
+		spriteType = {
+			name = "cosmogfx_AFFAIR_LOVER_BASE_DEATH_eventPicture"
+			texturefile = "gfx/event_pictures/AFFAIR_LOVER_BASE_DEATH_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Izumo no Okuni
+		spriteType = {
+			name = "cosmogfx_BARBARY_THREEWOMENSOLD_MARKET_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_THREEWOMENSOLD_MARKET_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Nora of Kelmendi
+		spriteType = {
+			name = "cosmogfx_DAUGHTER_NUDE_WEDDING_eventPicture"
+			texturefile = "gfx/event_pictures/DAUGHTER_NUDE_WEDDING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Martha Washington
+		spriteType = {
+			name = "cosmogfx_NUDE_SLEEPING_PARTY_eventPicture"
+			texturefile = "gfx/event_pictures/NUDE_SLEEPING_PARTY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elizabeth Wilbraham
+		spriteType = {
+			name = "cosmogfx_MISTRESS_layfinish_eventPicture"
+			texturefile = "gfx/event_pictures/MISTRESS_layfinish_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Anna Bunina
+		spriteType = {
+			name = "cosmogfx_MISTRESS_layfinish2_eventPicture"
+			texturefile = "gfx/event_pictures/MISTRESS_layfinish2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Dorothea of Saxe-Lauenburg
+		spriteType = {
+			name = "cosmogfx_MISTRESS_nudeconfront_eventPicture"
+			texturefile = "gfx/event_pictures/MISTRESS_nudeconfront_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Mary of Hungary
+		spriteType = {
+			name = "cosmogfx_MISTRESS_SLEEPNUDE_eventPicture"
+			texturefile = "gfx/event_pictures/MISTRESS_SLEEPNUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Margaret of Austria, Duchess of Savoy
+		spriteType = {
+			name = "cosmogfx_MISTRESS_standnude_eventPicture"
+			texturefile = "gfx/event_pictures/MISTRESS_standnude_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Isabella Clara Eugenia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_NUDE_PROSTITUTES_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_NUDE_PROSTITUTES_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Madame Tussaud
+		spriteType = {
+			name = "cosmogfx_SWORD_DANCE_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/SWORD_DANCE_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Queen Pokou
+		spriteType = {
+			name = "cosmogfx_KNIGHT_SLAY_BEAST_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/KNIGHT_SLAY_BEAST_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Ratu Hijau
+		spriteType = {
+			name = "cosmogfx_KNIGHT_FREE_LADY_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/KNIGHT_FREE_LADY_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Rani Mangammal
+		spriteType = {
+			name = "cosmogfx_HEIR_NYMPH_POOL_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/HEIR_NYMPH_POOL_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anne Bonny
+		spriteType = {
+			name = "women_history_events.82_wihgfx_FEMALE_GENERAL_eventPicture"
+			texturefile = "gfx/event_pictures/ANNY_BONNY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Kösem Sultana
+		spriteType = {
+			name = "cosmogfx_INDENTURED_SLAVE_TOPLESS_eventPicture"
+			texturefile = "gfx/event_pictures/INDENTURED_SLAVE_TOPLESS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Molla
+		spriteType = {
+			name = "cosmogfx_INDENTURED_SLAVE_PROTEST_eventPicture"
+			texturefile = "gfx/event_pictures/INDENTURED_SLAVE_PROTEST_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_PORT_OF_PLEASURE_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_PORT_OF_PLEASURE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tallapaka Tirumalamma
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_2A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_2A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_CHECK_THREE_eventPictures"
+			texturefile = "gfx/event_pictures/DEGENERACY_CHECK_THREE_eventPictures.dds"
+			allwaystransparent = yes
+		}	
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_NAMIBIA_HIMBA_DANCING_TOPLESS_eventPictures"
+			texturefile = "gfx/event_pictures/NAMIBIA_HIMBA_DANCING_TOPLESS_eventPictures.dds"
+			allwaystransparent = yes
+		}	
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_EXPLORATION_MERMAIDS_NUDE_eventPictures"
+			texturefile = "gfx/event_pictures/EXPLORATION_MERMAIDS_NUDE_eventPictures.dds"
+			allwaystransparent = yes
+		}	
+
+
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_GHANAN_NUDE_BEACH_eventPicture"
+			texturefile = "gfx/event_pictures/GHANAN_NUDE_BEACH_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+				# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_EXPLORATION_PERU_IQUITOS_NUDE"
+			texturefile = "gfx/event_pictures/EXPLORATION_PERU_IQUITOS_NUDE.dds"
+			allwaystransparent = yes
+		}
+		
+				# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_EXPLORATION_TAHITI_NUDE_BEACH"
+			texturefile = "gfx/event_pictures/EXPLORATION_TAHITI_NUDE_BEACH.dds"
+			allwaystransparent = yes
+		}
+		
+				# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_EXPLORATION_ZULU_NUDE"
+			texturefile = "gfx/event_pictures/EXPLORATION_ZULU_NUDE.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_CENTRAL_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_CENTRAL_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_CHINA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_CHINA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_JAPAN_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_JAPAN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_KOREA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_KOREA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_MALAY_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_MALAY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_NORTH_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_NORTH_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_PHILIPPINES_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_PHILIPPINES_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_SOUTH_AFRICA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_SOUTH_AFRICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_SOUTH_ASIA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_SOUTH_ASIA_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_SOUTH_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_SOUTH_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_THAI_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_THAI_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_VIETNAM_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_VIETNAM_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_SLAVE_MARKET_WEST_AFRICA_eventPicture"
+			texturefile = "gfx/event_pictures/SLAVE_MARKET_WEST_AFRICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_CENTRAL_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_CENTRAL_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_CHINA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_CHINA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_JAPAN_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_JAPAN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_KOREA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_KOREA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_MALAY_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_MALAY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_NORTH_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_NORTH_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_PHILIPPINES_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_PHILIPPINES_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_SOUTH_AFRICA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_SOUTH_AFRICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_SOUTH_ASIA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_SOUTH_ASIA_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_SOUTH_AMERICA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_SOUTH_AMERICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_THAI_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_THAI_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_VIETNAM_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_VIETNAM_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENSLAVEMENT_WEST_AFRICA_eventPicture"
+			texturefile = "gfx/event_pictures/ENSLAVEMENT_WEST_AFRICA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_WEST_AFRICA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_WEST_AFRICA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_brothel_visit_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_brothel_visit_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Urszula Meyerin START
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_CHINA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_CHINA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_JAPAN_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_JAPAN_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_KOREA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_KOREA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_MALAY_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_MALAY_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_NORTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_NORTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_WEST_AFRICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_WEST_AFRICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_SOUTH_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_SOUTH_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_THAI_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_THAI_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}			
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_2_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_2_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_3_VIETNAM_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_3_VIETNAM_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Urszula Meyerin
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Elzbieta Helena Sieniawska
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_2A_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_2A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Marie Louise Gonzaga
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_2B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_2B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1C_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1D_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1E_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1F_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1G_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1H_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Khayr al-Nisa Begum
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1I_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Sophia Alekseyevna
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VISIT_CENTRAL_AMERICA_1B_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_VISIT_CENTRAL_AMERICA_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AFRICA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AFRICA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_THAI_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_THAI_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_MALAY_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_MALAY_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_VIETNAM_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_VIETNAM_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_KOREA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_KOREA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CHINA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CHINA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_JAPAN_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_JAPAN_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_ASIA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_ASIA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_CENTRAL_AMERICA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_CENTRAL_AMERICA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_SOUTH_AMERICA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_SOUTH_AMERICA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1A_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1A_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1B_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1C_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1D_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1E_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1E_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_BROTHEL_TRAINING_NORTH_AMERICA_1F_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_TRAINING_NORTH_AMERICA_1F_eventPictures.dds"
+			allwaystransparent = yes
+		}		
+		# Urszula Meyerin START
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1A_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Maria Carolina of Austria
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1C_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Marie Antoinette
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1D_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Anacaona
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1E_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Barbara of Cilli
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1F_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Eleni of Ethiopia
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1G_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1H_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_VISIT_1B_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_VISIT_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_INTRODUCTION_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_INTRODUCTION_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MNG_CONCUBINES_DREAM_eventPicture"
+			texturefile = "gfx/event_pictures/MNG_CONCUBINES_DREAM_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_1B_eventPictures"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_1B_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_1C_eventPictures"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_1C_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_DEGENERACY_LEVEL_1D_eventPictures"
+			texturefile = "gfx/event_pictures/DEGENERACY_LEVEL_1D_eventPictures.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BROTHEL_VENICE_eventPictures"
+			texturefile = "gfx/event_pictures/BROTHEL_VENICE_eventPictures.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HEIR_GALANT_HEIR_eventPicture"
+			texturefile = "gfx/event_pictures/HEIR_GALANT_HEIR_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_SOUTH_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_SOUTH_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_WEST_AFRICA_1A_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_WEST_AFRICA_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1B_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1C_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1D_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1E_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1F_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1F_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1G_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1G_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1H_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1H_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1I_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1I_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1J_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1J_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1K_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1K_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1L_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1L_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_HAREM_EUROPE_1A_eventPicture"
+			texturefile = "gfx/event_pictures/HAREM_EUROPE_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/FRANCE_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/FRANCE_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/FRANCE_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/FRANCE_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/FRANCE_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/SPAIN_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/SPAIN_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/SPAIN_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/SPAIN_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/SPAIN_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/ENGLAND_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/ENGLAND_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/ENGLAND_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/ENGLAND_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMAN_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/GERMAN_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMAN_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/GERMAN_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMAN_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/GERMAN_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMAN_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/GERMAN_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMAN_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/GERMAN_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_2"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_3"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_3.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_4"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_4.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_MARRIAGE_5"
+			texturefile = "gfx/event_pictures/GAELIC_MARRIAGE_5.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/ENGLAND_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_FRANCE_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/FRANCE_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_SPAIN_MARRIAGE_1"
+			texturefile = "gfx/event_pictures/SPAIN_MARRIAGE_2.dds"
+			allwaystransparent = yes
+		}	
+		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_1_1B_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_1_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_1_1C_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_1_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_1_1D_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_1_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_1_1E_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_1_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_1_1A_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_1_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_5_1D_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_5_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_ENGLAND_HONEYMOON_5_1E_eventPicture"
+			texturefile = "gfx/event_pictures/ENGLAND_HONEYMOON_5_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_1_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_1_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_1_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_1_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_1_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_1_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_1_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_1_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_1_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_1_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_5_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_5_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GERMANY_HONEYMOON_5_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GERMANY_HONEYMOON_5_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_1_1B_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_1_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_1_1C_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_1_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_1_1D_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_1_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_1_1E_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_1_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_1_1A_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_1_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_5_1D_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_5_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_EAST_EUROPE_HONEYMOON_5_1E_eventPicture"
+			texturefile = "gfx/event_pictures/EAST_EUROPE_HONEYMOON_5_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_1_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_1_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_1_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_1_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_1_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_1_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_1_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_1_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_1_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_1_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_2_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_2_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_2_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_2_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_2_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_2_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_2_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_2_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_2_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_2_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_3_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_3_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_3_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_3_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_3_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_3_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_3_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_3_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_3_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_3_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_4_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_4_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_4_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_4_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_4_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_4_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_4_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_4_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_4_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_4_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_5_1A_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_5_1A_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_5_1B_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_5_1B_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_5_1C_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_5_1C_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_5_1D_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_5_1D_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_GAELIC_HONEYMOON_5_1E_eventPicture"
+			texturefile = "gfx/event_pictures/GAELIC_HONEYMOON_5_1E_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MONARCH_CHILD_WITH_REGENT_eventPicture"
+			texturefile = "gfx/event_pictures/MONARCH_CHILD_WITH_REGENT_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_DEATH_OF_HEIR_eventPicture"
+			texturefile = "gfx/event_pictures/DEATH_OF_HEIR_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_CONSORT_DOING_BADLY_eventPicture"
+			texturefile = "gfx/event_pictures/CONSORT_DOING_BADLY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_MAGDELENA_NUDE_eventPicture"
+			texturefile = "gfx/event_pictures/MAGDELENA_NUDE_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BORDER_TENSION_eventPicture"
+			texturefile = "gfx/event_pictures/event_pictures_ASIAN/BORDER_TENSION_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_TRADEGOODS_eventPicture"
+			texturefile = "gfx/event_pictures/event_pictures_GE/TRADEGOODS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_RELIGION_GIVING_ALMS_eventPicture"
+			texturefile = "gfx/event_pictures/RELIGION_GIVING_ALMS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_1_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_2_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_3_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_4_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_5_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_6_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_7_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_8_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_9_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_10_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_11_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_BARBARY_CAPTURE_12_eventPicture"
+			texturefile = "gfx/event_pictures/BARBARY_CAPTURE_12_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_1_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_2_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_3_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_4_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_5_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_6_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_7_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_8_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_9_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_10_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_11_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_CAPTURE_12_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_CAPTURE_12_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_1_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_2_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_3_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_4_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_5_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_6_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_7_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_8_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_8_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_9_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_9_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_10_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_10_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_11_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_11_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Tun Fatimah
+		spriteType = {
+			name = "cosmogfx_KHANATE_MARKET_12_eventPicture"
+			texturefile = "gfx/event_pictures/KHANATE_MARKET_12_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		
+}

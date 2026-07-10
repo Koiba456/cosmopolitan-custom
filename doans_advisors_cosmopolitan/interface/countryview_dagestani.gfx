@@ -1,0 +1,105 @@
+spriteTypes = {
+spriteType = {
+		name = "GFX_advisor_dagestani_trader_female"
+		texturefile = "gfx//interface//advisors//dagestani_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	spriteType = {
+		name = "GFX_advisor_dagestani_theologian_female"
+		texturefile = "gfx//interface//advisors//dagestani_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_dagestani_spymaster_female"
+		texturefile = "gfx//interface//advisors//dagestani_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+		
+
+	
+	
+	
+
+	
+
+		
+	spriteType = {
+		name = "GFX_advisor_dagestani_inquisitor_female"
+		texturefile = "gfx//interface//advisors//dagestani_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_dagestani_grand_captain_female"
+		texturefile = "gfx//interface//advisors//dagestani_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_dagestani_fortification_expert_female"
+		texturefile = "gfx//interface//advisors//dagestani_fortification_expert_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_dagestani_diplomat_female"
+		texturefile = "gfx//interface//advisors//dagestani_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_dagestani_commandant_female"
+		texturefile = "gfx//interface//advisors//dagestani_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+
+	
+	
+	
+
+
+	spriteType = {
+		name = "GFX_advisor_dagestani_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

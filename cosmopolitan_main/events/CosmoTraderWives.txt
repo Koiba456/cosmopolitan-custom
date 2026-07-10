@@ -1,0 +1,2627 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_traderwives_events
+
+
+# Economic Aid menu
+country_event = {
+	id = cosmo_traderwives_events.2
+	title = cosmo_traderwives_events.2.t
+	desc = cosmo_traderwives_events.2.d
+	picture = cosmogfx_SACRIFICE_VOLCANO_1_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		ai = no
+	has_country_flag = cosmo_trader_wives_offer
+	OR = {	
+		any_known_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = cosmo_trader_wives_offer
+			}
+			}			
+		}
+	}
+
+		mean_time_to_happen = {
+			days = 1
+		}	
+	
+		immediate = {
+			hidden_effect = {
+				clr_country_flag = cosmo_trader_wives_offer
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_trader_wives_offer
+					}
+				}
+					save_event_target_as = tradecountry
+				}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+						culture_group = mande		
+						culture_group = sahelian		
+						culture_group = west_african		
+						culture_group = southern_african		
+						culture_group = kongo_group		
+						culture_group = great_lakes_group		
+						culture_group = african		
+						culture_group = cushitic		
+						culture_group = sudanese
+			}
+						}
+						}
+						set_ruler_flag = african_trade_mission
+					}					
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+						culture_group = maya		
+						culture_group = central_american		
+						culture_group = mataco		
+						culture_group = araucanian
+			}
+						}
+						}
+						set_ruler_flag = sa_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+						culture_group = eskaleut		
+						culture_group = central_algonquian		
+						culture_group = plains_algonquian		
+						culture_group = eastern_algonquian		
+						culture_group = iroquoian		
+						culture_group = siouan		
+						culture_group = caddoan		
+						culture_group = muskogean
+						culture_group = sonoran		
+						culture_group = apachean		
+						culture_group = na_dene		
+						culture_group = penutian
+			}
+						}
+						}
+						set_ruler_flag = na_trade_mission
+					}																													
+				}
+				}	
+
+		option = {
+		name = cosmo_traderwives_events.2.a
+		trigger_switch = {
+		on_trigger = has_ruler_flag				
+		african_trade_mission = {
+		country_event = {
+			id = cosmo_traderwives_events.11602
+			}
+			}
+		sa_trade_mission = {
+		country_event = {
+			id = cosmo_traderwives_events.11605
+			}
+			}
+		na_trade_mission = {
+		country_event = {
+			id = cosmo_traderwives_events.11606
+			}
+			}												
+		}
+		clr_ruler_flag = african_trade_mission			
+		clr_ruler_flag = sa_trade_mission		
+		clr_ruler_flag = na_trade_mission								
+		}														
+}
+
+
+# Economic Aid menu Africa
+country_event = {
+	id = cosmo_traderwives_events.11602
+	title = cosmo_traderwives_events.11602.t
+	desc = cosmo_traderwives_events.11602.d
+	picture = cosmogfx_SACRIFICE_VOLCANO_1_eventPicture
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+
+
+		immediate = {
+		hidden_effect = {
+				clr_country_flag = cosmo_trader_wives_offer
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_trader_wives_offer
+					}
+				}
+					save_event_target_as = tradecountry
+				}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = beja
+			}
+						}
+						}
+						set_ruler_flag = beja_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = nubian
+			}
+						}
+						}
+						set_ruler_flag = nubian_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = amhara
+			}
+						}
+						}
+						set_ruler_flag = amhara_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = sidamo
+			}
+						}
+						}
+						set_ruler_flag = sidamo_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tigray
+			}
+						}
+						}
+						set_ruler_flag = tigray_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = afar
+			}
+						}
+						}
+						set_ruler_flag = afar_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = somali
+			}
+						}
+						}
+						set_ruler_flag = somali_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = harari
+			}
+						}
+						}
+						set_ruler_flag = harari_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = madagasque
+			}
+						}
+						}
+						set_ruler_flag = madagasque_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = swahili
+			}
+						}
+						}
+						set_ruler_flag = swahili_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = ganda
+			}
+						}
+						}
+						set_ruler_flag = ganda_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = masaba
+			}
+						}
+						}
+						set_ruler_flag = masaba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = rwandan
+			}
+						}
+						}
+						set_ruler_flag = rwandan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = makua
+			}
+						}
+						}
+						set_ruler_flag = makua_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = nyasa
+			}
+						}
+						}
+						set_ruler_flag = nyasa_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = shona
+			}
+						}
+						}
+						set_ruler_flag = shona_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chokwe
+			}
+						}
+						}
+						set_ruler_flag = chokwe_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = luba
+			}
+						}
+						}
+						set_ruler_flag = luba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = lunda
+			}
+						}
+						}
+						set_ruler_flag = lunda_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = kuba
+			}
+						}
+						}
+						set_ruler_flag = kuba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mbangala
+			}
+						}
+						}
+						set_ruler_flag = mbangala_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = yaka
+			}
+						}
+						}
+						set_ruler_flag = yaka_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = kongolese
+			}
+						}
+						}
+						set_ruler_flag = kongolese_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mbundu
+			}
+						}
+						}
+						set_ruler_flag = mbundu_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = normand
+			}
+						}
+						}
+						set_ruler_flag = normand_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = aka
+			}
+						}
+						}
+						set_ruler_flag = aka_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = dagomba
+			}
+						}
+						}
+						set_ruler_flag = dagomba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mossi
+			}
+						}
+						}
+						set_ruler_flag = mossi_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = fon
+			}
+						}
+						}
+						set_ruler_flag = fon_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = nupe
+			}
+						}
+						}
+						set_ruler_flag = nupe_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = yorumba
+			}
+						}
+						}
+						set_ruler_flag = yorumba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = bozo
+			}
+						}
+						}
+						set_ruler_flag = bozo_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = dyola
+			}
+						}
+						}
+						set_ruler_flag = dyola_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mali
+			}
+						}
+						}
+						set_ruler_flag = mali_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = bambara
+			}
+						}
+						}
+						set_ruler_flag = bambara_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = songhai
+			}
+						}
+						}
+						set_ruler_flag = songhai_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = soninke
+			}
+						}
+						}
+						set_ruler_flag = soninke_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = bilala
+			}
+						}
+						}
+						set_ruler_flag = bilala_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = hausa
+			}
+						}
+						}
+						set_ruler_flag = hausa_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = kanuri
+			}
+						}
+						}
+						set_ruler_flag = kanuri_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = fulani
+			}
+						}
+						}
+						set_ruler_flag = fulani_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = senegambian
+			}
+						}
+						}
+						set_ruler_flag = senegambian_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tuareg
+			}
+						}
+						}
+						set_ruler_flag = tuareg_trade_mission
+					}
+			}
+			}	
+
+		option = {
+		name = cosmo_traderwives_events.11602.a
+		trigger_switch = {
+		on_trigger = has_ruler_flag		
+		beja_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.1106
+			}
+			}
+		nubian_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.1206
+			}
+			}
+		amhara_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.2106
+			}
+			}
+		sidamo_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.2206
+			}
+			}
+		tigray_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.2306
+			}
+			}
+		afar_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.3106
+			}
+			}
+		somali_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.3206
+			}
+			}
+		harari_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.3306
+			}
+			}
+		madagasque_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.4106
+			}
+			}
+		swahili_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.4206
+			}
+			}
+		ganda_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.5106
+			}
+			}
+		masaba_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.5206
+			}
+			}
+		rwandan_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.5306
+			}
+			}			
+		makua_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.6106
+			}
+			}
+		nyasa_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.6206
+			}
+			}
+		shona_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.6306
+			}
+			}			
+		chokwe_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.7106
+			}
+			}
+		luba_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.7206
+			}
+			}
+		lunda_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.7306
+			}
+			}
+		kuba_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.8106
+			}
+			}
+		mbangala_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.8206
+			}
+			}
+		yaka_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.8306
+			}
+			}
+		kongolese_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.9106
+			}
+			}
+		mbundu_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.9206
+			}
+			}
+		normand_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.9306
+			}
+			}
+		aka_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.10106
+			}
+			}
+		dagomba_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.10206
+			}
+			}
+		mossi_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.10306
+			}
+			}
+		fon_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.11106
+			}
+			}
+		nupe_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.11206
+			}
+			}
+		yorumba_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.11306
+			}
+			}
+		bozo_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.12106
+			}
+			}
+		dyola_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.12206
+			}
+			}
+		mali_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.12306
+			}
+			}
+		bambara_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.13106
+			}
+			}
+		songhai_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.13206
+			}
+			}
+		soninke_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.13306
+			}
+			}
+		bilala_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.14106
+			}
+			}
+		hausa_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.14206
+			}
+			}
+		kanuri_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.14306
+			}
+			}
+		fulani_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.15106
+			}
+			}
+		senegambian_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.15206
+			}
+			}
+		tuareg_trade_mission = {
+		country_event = {
+			id = kosmo_africanpu_events.15306
+			}
+			}																											
+		}
+		clr_ruler_flag = beja_trade_mission		
+		clr_ruler_flag = nubian_trade_mission		
+		clr_ruler_flag = amhara_trade_mission		
+		clr_ruler_flag = sidamo_trade_mission		
+		clr_ruler_flag = tigray_trade_mission		
+		clr_ruler_flag = afar_trade_mission		
+		clr_ruler_flag = somali_trade_mission		
+		clr_ruler_flag = harari_trade_mission		
+		clr_ruler_flag = madagasque_trade_mission		
+		clr_ruler_flag = swahili_trade_mission		
+		clr_ruler_flag = yamana_trade_mission		
+		clr_ruler_flag = ganda_trade_mission		
+		clr_ruler_flag = masaba_trade_mission		
+		clr_ruler_flag = rwandan_trade_mission		
+		clr_ruler_flag = makua_trade_mission		
+		clr_ruler_flag = nyasa_trade_mission		
+		clr_ruler_flag = shona_trade_mission		
+		clr_ruler_flag = chokwe_trade_mission		
+		clr_ruler_flag = luba_trade_mission		
+		clr_ruler_flag = lunda_trade_mission		
+		clr_ruler_flag = kuba_trade_mission		
+		clr_ruler_flag = mbangala_trade_mission		
+		clr_ruler_flag = yaka_trade_mission		
+		clr_ruler_flag = kongolese_trade_mission		
+		clr_ruler_flag = mbundu_trade_mission		
+		clr_ruler_flag = normand_trade_mission		
+		clr_ruler_flag = aka_trade_mission		
+		clr_ruler_flag = dagomba_trade_mission		
+		clr_ruler_flag = mossi_trade_mission		
+		clr_ruler_flag = fon_trade_mission		
+		clr_ruler_flag = nupe_trade_mission		
+		clr_ruler_flag = yorumba_trade_mission		
+		clr_ruler_flag = bozo_trade_mission		
+		clr_ruler_flag = dyola_trade_mission		
+		clr_ruler_flag = mali_trade_mission		
+		clr_ruler_flag = bambara_trade_mission		
+		clr_ruler_flag = songhai_trade_mission		
+		clr_ruler_flag = soninke_trade_mission		
+		clr_ruler_flag = bilala_trade_mission		
+		clr_ruler_flag = hausa_trade_mission		
+		clr_ruler_flag = kanuri_trade_mission		
+		clr_ruler_flag = fulani_trade_mission		
+		clr_ruler_flag = senegambian_trade_mission		
+		clr_ruler_flag = tuareg_trade_mission					
+		}														
+}
+
+# Economic Aid menu South America
+country_event = {
+	id = cosmo_traderwives_events.11605
+	title = cosmo_traderwives_events.11605.t
+	desc = cosmo_traderwives_events.11605.d
+	picture = cosmogfx_SACRIFICE_VOLCANO_1_eventPicture
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+
+
+		immediate = {
+		hidden_effect = {
+				clr_country_flag = cosmo_trader_wives_offer
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_trader_wives_offer
+					}
+				}
+					save_event_target_as = tradecountry
+				}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chichimecan
+			}
+						}
+						}
+						set_ruler_flag = chichimecan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = guamares
+			}
+						}
+						}
+						set_ruler_flag = guamares_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tepic
+			}
+						}
+						}
+						set_ruler_flag = tepic_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tecos
+			}
+						}
+						}
+						set_ruler_flag = tecos_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = otomi
+			}
+						}
+						}
+						set_ruler_flag = otomi_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = purepecha
+			}
+						}
+						}
+						set_ruler_flag = purepecha_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = wastek
+			}
+						}
+						}
+						set_ruler_flag = wastek_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = aztek
+			}
+						}
+						}
+						set_ruler_flag = aztek_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = totonac
+			}
+						}
+						}
+						set_ruler_flag = totonac_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = matlatzinca
+			}
+						}
+						}
+						set_ruler_flag = matlatzinca_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mixtec
+			}
+						}
+						}
+						set_ruler_flag = mixtec_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tlapanec
+			}
+						}
+						}
+						set_ruler_flag = tlapanec_trade_mission
+					}					
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chontales
+			}
+						}
+						}
+						set_ruler_flag = chontales_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = lacandon
+			}
+						}
+						}
+						set_ruler_flag = lacandon_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = zapotek
+			}
+						}
+						}
+						set_ruler_flag = zapotek_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = putun
+			}
+						}
+						}
+						set_ruler_flag = putun_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = highland_mayan
+			}
+						}
+						}
+						set_ruler_flag = highland_mayan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = yucatec
+			}
+						}
+						}
+						set_ruler_flag = yucatec_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = cara
+			}
+						}
+						}
+						set_ruler_flag = cara_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = miskito
+			}
+						}
+						}
+						set_ruler_flag = miskito_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = muisca
+			}
+						}
+						}
+						set_ruler_flag = muisca_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = carib
+			}
+						}
+						}
+						set_ruler_flag = carib_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = guajiro
+			}
+						}
+						}
+						set_ruler_flag = guajiro_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = arawak
+			}
+						}
+						}
+						set_ruler_flag = arawak_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chachapoyan
+			}
+						}
+						}
+						set_ruler_flag = chachapoyan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chimuan
+			}
+						}
+						}
+						set_ruler_flag = chimuan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = inca
+			}
+						}
+						}
+						set_ruler_flag = inca_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = aimara
+			}
+						}
+						}
+						set_ruler_flag = aimara_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = diaguita
+			}
+						}
+						}
+						set_ruler_flag = diaguita_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mapuche
+			}
+						}
+						}
+						set_ruler_flag = mapuche_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = charruan
+			}
+						}
+						}
+						set_ruler_flag = charruan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = ge
+			}
+						}
+						}
+						set_ruler_flag = ge_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = guarani
+			}
+						}
+						}
+						set_ruler_flag = guarani_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = jivaro
+			}
+						}
+						}
+						set_ruler_flag = jivaro_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = tupinamba
+			}
+						}
+						}
+						set_ruler_flag = tupinamba_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = maipurean
+			}
+						}
+						}
+						set_ruler_flag = maipurean_trade_mission
+					}
+			}
+			}	
+
+		option = {
+		name = cosmo_traderwives_events.11605.a
+		trigger_switch = {
+		on_trigger = has_ruler_flag		
+		chichimecan_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.1106
+			}
+			}
+		guamares_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.1206
+			}
+			}
+		tepic_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.1306
+			}
+			}
+		tecos_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.2106
+			}
+			}
+		otomi_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.2206
+			}
+			}
+		purepecha_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.2306
+			}
+			}
+		wastek_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.3106
+			}
+			}
+		aztek_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.3206
+			}
+			}
+		totonac_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.3306
+			}
+			}
+		matlatzinca_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.4106
+			}
+			}
+		mixtec_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.4206
+			}
+			}
+		tlapanec_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.4306
+			}
+			}			
+		chontales_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.5106
+			}
+			}
+		lacandon_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.5206
+			}
+			}
+		zapotek_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.5306
+			}
+			}			
+		putun_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.6106
+			}
+			}
+		highland_mayan_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.6206
+			}
+			}
+		yucatec_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.6306
+			}
+			}			
+		cara_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.7106
+			}
+			}
+		miskito_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.7206
+			}
+			}
+		muisca_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.7306
+			}
+			}
+		carib_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.8106
+			}
+			}
+		guajiro_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.8206
+			}
+			}
+		arawak_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.8306
+			}
+			}
+		chachapoyan_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.9106
+			}
+			}
+		chimuan_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.9206
+			}
+			}
+		inca_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.9306
+			}
+			}
+		aimara_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.10106
+			}
+			}
+		diaguita_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.10206
+			}
+			}
+		mapuche_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.10306
+			}
+			}
+		charruan_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.11106
+			}
+			}
+		ge_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.11206
+			}
+			}
+		guarani_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.11306
+			}
+			}
+		jivaro_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.12106
+			}
+			}
+		tupinamba_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.12206
+			}
+			}
+		maipurean_trade_mission = {
+		country_event = {
+			id = cosmo_sapu_events.12306
+			}
+			}																											
+		}
+		clr_ruler_flag = chichimecan_trade_mission		
+		clr_ruler_flag = guamares_trade_mission		
+		clr_ruler_flag = tepic_trade_mission		
+		clr_ruler_flag = tecos_trade_mission		
+		clr_ruler_flag = otomi_trade_mission		
+		clr_ruler_flag = purepecha_trade_mission		
+		clr_ruler_flag = wastek_trade_mission		
+		clr_ruler_flag = aztek_trade_mission		
+		clr_ruler_flag = totonac_trade_mission		
+		clr_ruler_flag = matlatzinca_trade_mission		
+		clr_ruler_flag = mixtec_trade_mission		
+		clr_ruler_flag = tlapanec_trade_mission		
+		clr_ruler_flag = chontales_trade_mission		
+		clr_ruler_flag = lacandon_trade_mission		
+		clr_ruler_flag = zapotek_trade_mission		
+		clr_ruler_flag = putun_trade_mission		
+		clr_ruler_flag = highland_mayan_trade_mission		
+		clr_ruler_flag = yucatec_trade_mission		
+		clr_ruler_flag = cara_trade_mission		
+		clr_ruler_flag = miskito_trade_mission		
+		clr_ruler_flag = muisca_trade_mission		
+		clr_ruler_flag = carib_trade_mission		
+		clr_ruler_flag = guajiro_trade_mission		
+		clr_ruler_flag = arawak_trade_mission		
+		clr_ruler_flag = chachapoyan_trade_mission		
+		clr_ruler_flag = chimuan_trade_mission		
+		clr_ruler_flag = inca_trade_mission		
+		clr_ruler_flag = aimara_trade_mission		
+		clr_ruler_flag = diaguita_trade_mission		
+		clr_ruler_flag = mapuche_trade_mission		
+		clr_ruler_flag = charruan_trade_mission		
+		clr_ruler_flag = ge_trade_mission		
+		clr_ruler_flag = guarani_trade_mission		
+		clr_ruler_flag = jivaro_trade_mission		
+		clr_ruler_flag = tupinamba_trade_mission		
+		clr_ruler_flag = maipurean_trade_mission					
+		}														
+}
+
+# Economic Aid menu North America
+country_event = {
+	id = cosmo_traderwives_events.11606
+	title = cosmo_traderwives_events.11606.t
+	desc = cosmo_traderwives_events.11606.d
+	picture = cosmogfx_SACRIFICE_VOLCANO_1_eventPicture
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+
+
+		immediate = {
+		hidden_effect = {
+				clr_country_flag = cosmo_trader_wives_offer
+				random_known_country = {
+				limit = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = cosmo_trader_wives_offer
+					}
+				}
+					save_event_target_as = tradecountry
+				}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = anishinabe
+			}
+						}
+						}
+						set_ruler_flag = anishinabe_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = cree
+			}
+						}
+						}
+						set_ruler_flag = cree_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = huron
+			}
+						}
+						}
+						set_ruler_flag = huron_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = delaware
+			}
+						}
+						}
+						set_ruler_flag = delaware_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = abenaki
+			}
+						}
+						}
+						set_ruler_flag = abenaki_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mikmaq
+			}
+						}
+						}
+						set_ruler_flag = mikmaq_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mahican
+			}
+						}
+						}
+						set_ruler_flag = mahican_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = powhatan
+			}
+						}
+						}
+						set_ruler_flag = powhatan_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = iroquois
+			}
+						}
+						}
+						set_ruler_flag = iroquois_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chiwere
+			}
+						}
+						}
+						set_ruler_flag = chiwere_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = illini
+			}
+						}
+						}
+						set_ruler_flag = illini_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = shawnee
+			}
+						}
+						}
+						set_ruler_flag = shawnee_trade_mission
+					}					
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = pequot
+			}
+						}
+						}
+						set_ruler_flag = pequot_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = cherokee
+			}
+						}
+						}
+						set_ruler_flag = cherokee_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = osage
+			}
+						}
+						}
+						set_ruler_flag = osage_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = choctaw
+			}
+						}
+						}
+						set_ruler_flag = choctaw_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = creek
+			}
+						}
+						}
+						set_ruler_flag = creek_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chickasaw
+			}
+						}
+						}
+						set_ruler_flag = chickasaw_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = wichita
+			}
+						}
+						}
+						set_ruler_flag = wichita_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = caddo
+			}
+						}
+						}
+						set_ruler_flag = caddo_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = pawnee
+			}
+						}
+						}
+						set_ruler_flag = pawnee_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = kiowa
+			}
+						}
+						}
+						set_ruler_flag = kiowa_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = dakota
+			}
+						}
+						}
+						set_ruler_flag = dakota_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = nakota
+			}
+						}
+						}
+						set_ruler_flag = nakota_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = arapaho
+			}
+						}
+						}
+						set_ruler_flag = arapaho_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = cheyenne
+			}
+						}
+						}
+						set_ruler_flag = cheyenne_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = blackfoot
+			}
+						}
+						}
+						set_ruler_flag = blackfoot_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = haida
+			}
+						}
+						}
+						set_ruler_flag = haida_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = salish
+			}
+						}
+						}
+						set_ruler_flag = salish_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = inuit
+			}
+						}
+						}
+						set_ruler_flag = inuit_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = chinook
+			}
+						}
+						}
+						set_ruler_flag = chinook_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = shoshone
+			}
+						}
+						}
+						set_ruler_flag = shoshone_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = yokuts
+			}
+						}
+						}
+						set_ruler_flag = yokuts_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = apache
+			}
+						}
+						}
+						set_ruler_flag = apache_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = pueblo
+			}
+						}
+						}
+						set_ruler_flag = pueblo_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = pima
+			}
+						}
+						}
+						set_ruler_flag = pima_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = mescalero
+			}
+						}
+						}
+						set_ruler_flag = mescalero_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = navajo
+			}
+						}
+						}
+						set_ruler_flag = navajo_trade_mission
+					}
+				if = {
+					limit = {
+						any_subject_country = {
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = cosmo_trader_wives_offer
+							}
+			OR = {
+				primary_culture = lipan
+			}
+						}
+						}
+						set_ruler_flag = lipan_trade_mission
+					}					
+			}
+			}	
+
+		option = {
+		name = cosmo_traderwives_events.11606.a
+		trigger_switch = {
+		on_trigger = has_ruler_flag		
+		anishinabe_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.1106
+			}
+			}
+		cree_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.1206
+			}
+			}
+		huron_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.1306
+			}
+			}
+		delaware_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.2106
+			}
+			}
+		abenaki_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.2206
+			}
+			}
+		mikmaq_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.2306
+			}
+			}
+		mahican_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.3106
+			}
+			}
+		powhatan_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.3206
+			}
+			}
+		iroquois_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.3306
+			}
+			}
+		chiwere_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.4106
+			}
+			}
+		illini_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.4206
+			}
+			}
+		shawnee_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.4306
+			}
+			}			
+		pequot_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.5106
+			}
+			}
+		cherokee_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.5206
+			}
+			}
+		osage_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.5306
+			}
+			}			
+		choctaw_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.6106
+			}
+			}
+		creek_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.6206
+			}
+			}
+		chickasaw_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.6306
+			}
+			}			
+		wichita_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.7106
+			}
+			}
+		caddo_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.7206
+			}
+			}
+		pawnee_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.7306
+			}
+			}
+		kiowa_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.8106
+			}
+			}
+		dakota_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.8206
+			}
+			}
+		nakota_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.8306
+			}
+			}
+		arapaho_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.9106
+			}
+			}
+		cheyenne_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.9206
+			}
+			}
+		blackfoot_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.9306
+			}
+			}
+		haida_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.10106
+			}
+			}
+		salish_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.10206
+			}
+			}
+		inuit_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.10306
+			}
+			}
+		chinook_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.11106
+			}
+			}
+		shoshone_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.11206
+			}
+			}
+		yokuts_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.11306
+			}
+			}
+		apache_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.12106
+			}
+			}
+		pueblo_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.12206
+			}
+			}
+		pima_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.12306
+			}
+			}
+		mescalero_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.13106
+			}
+			}
+		navajo_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.13206
+			}
+			}
+		lipan_trade_mission = {
+		country_event = {
+			id = cosmo_napu_events.13306
+			}
+			}																														
+		}
+		clr_ruler_flag = anishinabe_trade_mission		
+		clr_ruler_flag = cree_trade_mission		
+		clr_ruler_flag = huron_trade_mission		
+		clr_ruler_flag = delaware_trade_mission		
+		clr_ruler_flag = abenaki_trade_mission		
+		clr_ruler_flag = mikmaq_trade_mission		
+		clr_ruler_flag = mahican_trade_mission		
+		clr_ruler_flag = powhatan_trade_mission		
+		clr_ruler_flag = iroquois_trade_mission		
+		clr_ruler_flag = chiwere_trade_mission		
+		clr_ruler_flag = illini_trade_mission		
+		clr_ruler_flag = shawnee_trade_mission		
+		clr_ruler_flag = pequot_trade_mission		
+		clr_ruler_flag = cherokee_trade_mission		
+		clr_ruler_flag = osage_trade_mission		
+		clr_ruler_flag = choctaw_trade_mission		
+		clr_ruler_flag = creek_trade_mission		
+		clr_ruler_flag = chickasaw_trade_mission		
+		clr_ruler_flag = wichita_trade_mission		
+		clr_ruler_flag = caddo_trade_mission		
+		clr_ruler_flag = pawnee_trade_mission		
+		clr_ruler_flag = kiowa_trade_mission		
+		clr_ruler_flag = dakota_trade_mission		
+		clr_ruler_flag = nakota_trade_mission		
+		clr_ruler_flag = arapaho_trade_mission		
+		clr_ruler_flag = cheyenne_trade_mission		
+		clr_ruler_flag = blackfoot_trade_mission		
+		clr_ruler_flag = haida_trade_mission		
+		clr_ruler_flag = salish_trade_mission		
+		clr_ruler_flag = inuit_trade_mission		
+		clr_ruler_flag = chinook_trade_mission		
+		clr_ruler_flag = shoshone_trade_mission		
+		clr_ruler_flag = yokuts_trade_mission		
+		clr_ruler_flag = apache_trade_mission		
+		clr_ruler_flag = pueblo_trade_mission		
+		clr_ruler_flag = pima_trade_mission					
+		clr_ruler_flag = mescalero_trade_mission		
+		clr_ruler_flag = navajo_trade_mission		
+		clr_ruler_flag = lipan_trade_mission	
+		}														
+}
+

@@ -1,0 +1,45 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_nguni_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//nguni_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_nguni_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//nguni_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_advisor_nguni_grand_captain_female"
+		texturefile = "gfx//interface//advisors//nguni_grand_captain_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_nguni_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

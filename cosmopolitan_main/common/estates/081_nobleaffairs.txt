@@ -1,0 +1,86 @@
+estate_nobleaffairs =
+{
+	icon = 19
+
+	# If true, country will get estate
+	trigger = {
+		has_country_flag = nobleaffairs_estate_active
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		
+		advisor_cost = -0.05
+	}
+	country_modifier_neutral = {
+		advisor_cost = -0.01
+
+	}	
+	country_modifier_angry = {
+		advisor_cost = 0.05
+	}
+
+	land_ownership_modifier = {
+		nobleaffairs_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOT = { has_province_flag = cosmo_gift_to_mistress }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_VAL_CELESTIAL_EMPIRE
+		trigger = {
+			has_reform = celestial_empire
+		}		
+		influence = -10
+	}
+
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+		
+
+	color = { 30 40 130 }
+
+	privileges = {
+		estate_nobleaffairs_ruler_visit
+		estate_nobleaffairs_procure_affair
+		estate_nobleaffairs_visit_consort
+		estate_nobleaffairs_request_advisor
+		estate_nobleaffairs_accept_culture
+		estate_nobleaffairs_favorite_1
+		estate_nobleaffairs_favorite_2
+		estate_nobleaffairs_favorite_3
+		estate_nobleaffairs_no_favorites
+		estate_nobleaffairs_agendas
+		estate_nobleaffairs_cancel_agendas
+		estate_nobleaffairs_marry_consort
+		estate_nobleaffairs_remove_consort
+		estate_nobleaffairs_give_gifts
+	}
+
+	agendas = {
+		estate_nobleaffairs_expand_into_x
+		estate_nobleaffairs_nowar_expand_into_x
+		estate_nobleaffairs_develop_x_consort
+
+	}
+	influence_from_dev_modifier = 1.0
+}

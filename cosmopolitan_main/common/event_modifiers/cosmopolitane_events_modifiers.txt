@@ -1,0 +1,3481 @@
+################################################################
+# scriptable and usable for event-system below.
+#########################################################
+
+mistresses_banned = {
+advisor_cost = 0.05 
+}
+
+cosmo_has_consort_present = {
+}
+
+cosmo_has_prostitute_present = {
+}
+
+having_an_persistant_spy = {
+}
+
+having_an_dignitary_affair = {
+}
+
+cosmo_has_foreign_advisor = {
+}
+
+cosmo_consort_rebellion = {
+}
+
+cosmo_anathanism_active = {
+	church_loyalty_modifier = -0.1
+	missionary_maintenance_cost = 0.1 
+	placed_merchant_power = 10
+	tolerance_heathen = 1
+	tolerance_of_heathens_capacity = 1 
+}
+
+cosmo_anathanism_start = {
+	allow_free_estate_privilege_revocation = yes
+}
+
+cosmo_has_spy_here = {
+}
+
+cosmo_favorite_repeat = {
+}
+
+cosmo_no_favorites = {
+}
+
+cosmo_random_concubine_province = {
+}
+
+cosmo_convert_repeater = {
+}
+
+
+cosmo_religion_convert = {
+	local_missionary_strength = 0.25
+	local_missionary_maintenance_cost = -0.5
+}
+
+cosmo_religion_convert_tc = {
+	local_missionary_strength = 2.25
+	local_missionary_maintenance_cost = -0.5
+}
+
+cosmo_religion_convert_em = {
+	local_missionary_strength = 3.25
+	local_missionary_maintenance_cost = -0.5
+}
+
+cosmo_add_missionary_1 = {
+	missionaries = 1 
+}
+
+cosmo_add_missionary_2 = {
+	missionaries = 1 
+}
+
+cosmo_add_missionary_3 = {
+	missionaries = 1 
+}
+
+cosmo_add_missionary_4 = {
+	missionaries = 1 
+}
+
+cosmo_add_missionary_5 = {
+	missionaries = 1 
+}
+
+cosmo_add_missionary_6 = {
+	missionaries = 1 
+}
+
+cosmo_zoroastrian_spread = {
+	missionaries = 3
+	global_missionary_strength = 0.05
+	missionary_maintenance_cost = -1  
+	tolerance_heathen = 5
+	religious_unity = 0.5
+	global_tax_income = 12
+}
+
+cosmo_no_favorites_repeater = {
+}
+
+cosmo_legacy_clear = {
+}
+
+cosmo_favorite_1 = {
+	local_development_cost = -0.15 
+}
+
+cosmo_favorite_2 = {
+	local_development_cost = -0.15 
+}
+
+cosmo_favorite_3 = {
+	local_development_cost = -0.15 
+}
+
+new_world_base_subject = {
+	colonists = 1 
+	global_tax_income = 24
+}
+
+new_world_base_overlord = {
+	global_tax_income = -24
+}
+
+manpower_subject_1 = {
+	liberty_desire = -5
+}
+
+manpower_subject_2 = {
+	liberty_desire = -10
+}
+
+manpower_subject_3 = {
+	liberty_desire = -15
+}
+
+manpower_subject_4 = {
+	liberty_desire = -20
+}
+
+manpower_subject_5 = {
+	liberty_desire = -25
+}
+
+manpower_subject_6 = {
+	liberty_desire = -30
+}
+
+manpower_subject_7 = {
+	liberty_desire = -40
+}
+
+manpower_subject_8 = {
+	liberty_desire = -50
+}
+
+manpower_subject_9 = {
+	liberty_desire = -60
+}
+
+manpower_subject_10 = {
+	liberty_desire = -70
+}
+
+cosmo_join_war_offer = {
+}
+
+cosmo_had_honeymoon = {
+}
+
+pirate_queen_1a = {
+	picture = "pirate_queen_1a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_1a = {
+	picture = "pirate_queen_1a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_1b = {
+	picture = "pirate_queen_1b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_1c = {
+	picture = "pirate_queen_1c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_2a = {
+	picture = "pirate_queen_2a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_2b = {
+	picture = "pirate_queen_2b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_2c = {
+	picture = "pirate_queen_2c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_3a = {
+	picture = "pirate_queen_3a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_3b = {
+	picture = "pirate_queen_3b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_3c = {
+	picture = "pirate_queen_3c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_4a = {
+	picture = "pirate_queen_4a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_4b = {
+	picture = "pirate_queen_4b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_4c = {
+	picture = "pirate_queen_4c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_5a = {
+	picture = "pirate_queen_5a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_5b = {
+	picture = "pirate_queen_5b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_5c = {
+	picture = "pirate_queen_5c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_6a = {
+	picture = "pirate_queen_6a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_6b = {
+	picture = "pirate_queen_6b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_6c = {
+	picture = "pirate_queen_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+pirate_queen_7a = {
+	picture = "pirate_queen_7a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_7b = {
+	picture = "pirate_queen_7b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_7c = {
+	picture = "pirate_queen_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+pirate_queen_8a = {
+	picture = "pirate_queen_8a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_8b = {
+	picture = "pirate_queen_8b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_8c = {
+	picture = "pirate_queen_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+pirate_queen_9a = {
+	picture = "pirate_queen_9a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_9b = {
+	picture = "pirate_queen_9b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_9c = {
+	picture = "pirate_queen_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+pirate_queen_10a = {
+	picture = "pirate_queen_10a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_10b = {
+	picture = "pirate_queen_10b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_10c = {
+	picture = "pirate_queen_10c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_11a = {
+	picture = "pirate_queen_11a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_11b = {
+	picture = "pirate_queen_11b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_11c = {
+	picture = "pirate_queen_11c"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_12a = {
+	picture = "pirate_queen_12a"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_12b = {
+	picture = "pirate_queen_12b"
+	#allowed_num_of_buildings = 1
+}
+
+pirate_queen_12c = {
+	picture = "pirate_queen_12c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_1a = {
+	picture = "na_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_1b = {
+	picture = "na_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_1c = {
+	picture = "na_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_2a = {
+	picture = "na_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_2b = {
+	picture = "na_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_2c = {
+	picture = "na_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_3a = {
+	picture = "na_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_3b = {
+	picture = "na_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_3c = {
+	picture = "na_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_4a = {
+	picture = "na_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_4b = {
+	picture = "na_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_4c = {
+	picture = "na_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_5a = {
+	picture = "na_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_5b = {
+	picture = "na_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_5c = {
+	picture = "na_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_6a = {
+	picture = "na_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_6b = {
+	picture = "na_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_6c = {
+	picture = "na_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_7a = {
+	picture = "na_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_7b = {
+	picture = "na_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_7c = {
+	picture = "na_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_8a = {
+	picture = "na_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_8b = {
+	picture = "na_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_8c = {
+	picture = "na_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_9a = {
+	picture = "na_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_9b = {
+	picture = "na_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_9c = {
+	picture = "na_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_10a = {
+	picture = "na_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_10b = {
+	picture = "na_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_10c = {
+	picture = "na_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_11a = {
+	picture = "na_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_11b = {
+	picture = "na_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_11c = {
+	picture = "na_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_12a = {
+	picture = "na_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_12b = {
+	picture = "na_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_12c = {
+	picture = "na_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_13a = {
+	picture = "na_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_13b = {
+	picture = "na_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_13c = {
+	picture = "na_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+na_concubine_14a = {
+	picture = "na_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_14b = {
+	picture = "na_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_14c = {
+	picture = "na_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_15a = {
+	picture = "na_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_15b = {
+	picture = "na_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_15c = {
+	picture = "na_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_16a = {
+	picture = "na_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_16b = {
+	picture = "na_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+na_concubine_16c = {
+	picture = "na_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_1a = {
+	picture = "eurow_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_1b = {
+	picture = "eurow_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_1c = {
+	picture = "eurow_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_2a = {
+	picture = "eurow_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_2b = {
+	picture = "eurow_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_2c = {
+	picture = "eurow_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_3a = {
+	picture = "eurow_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_3b = {
+	picture = "eurow_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_3c = {
+	picture = "eurow_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_4a = {
+	picture = "eurow_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_4b = {
+	picture = "eurow_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_4c = {
+	picture = "eurow_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_5a = {
+	picture = "eurow_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_5b = {
+	picture = "eurow_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_5c = {
+	picture = "eurow_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_6a = {
+	picture = "eurow_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_6b = {
+	picture = "eurow_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_6c = {
+	picture = "eurow_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_7a = {
+	picture = "eurow_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_7b = {
+	picture = "eurow_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_7c = {
+	picture = "eurow_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_8a = {
+	picture = "eurow_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_8b = {
+	picture = "eurow_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_8c = {
+	picture = "eurow_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_9a = {
+	picture = "eurow_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_9b = {
+	picture = "eurow_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_9c = {
+	picture = "eurow_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_10a = {
+	picture = "eurow_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_10b = {
+	picture = "eurow_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_10c = {
+	picture = "eurow_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_11a = {
+	picture = "eurow_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_11b = {
+	picture = "eurow_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_11c = {
+	picture = "eurow_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_12a = {
+	picture = "eurow_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_12b = {
+	picture = "eurow_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_12c = {
+	picture = "eurow_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_13a = {
+	picture = "eurow_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_13b = {
+	picture = "eurow_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_13c = {
+	picture = "eurow_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+eurow_concubine_14a = {
+	picture = "eurow_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_14b = {
+	picture = "eurow_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_14c = {
+	picture = "eurow_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_15a = {
+	picture = "eurow_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_15b = {
+	picture = "eurow_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_15c = {
+	picture = "eurow_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_16a = {
+	picture = "eurow_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_16b = {
+	picture = "eurow_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_16c = {
+	picture = "eurow_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_17a = {
+	picture = "eurow_concubine_17a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_17b = {
+	picture = "eurow_concubine_17b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_17c = {
+	picture = "eurow_concubine_17c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_18a = {
+	picture = "eurow_concubine_18a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_18b = {
+	picture = "eurow_concubine_18b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_18c = {
+	picture = "eurow_concubine_18c"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_19a = {
+	picture = "eurow_concubine_19a"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_19b = {
+	picture = "eurow_concubine_19b"
+	#allowed_num_of_buildings = 1
+}
+
+eurow_concubine_19c = {
+	picture = "eurow_concubine_19c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_1a = {
+	picture = "sa_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_1b = {
+	picture = "sa_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_1c = {
+	picture = "sa_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_2a = {
+	picture = "sa_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_2b = {
+	picture = "sa_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_2c = {
+	picture = "sa_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_3a = {
+	picture = "sa_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_3b = {
+	picture = "sa_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_3c = {
+	picture = "sa_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_4a = {
+	picture = "sa_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_4b = {
+	picture = "sa_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_4c = {
+	picture = "sa_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_5a = {
+	picture = "sa_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_5b = {
+	picture = "sa_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_5c = {
+	picture = "sa_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_6a = {
+	picture = "sa_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_6b = {
+	picture = "sa_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_6c = {
+	picture = "sa_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_7a = {
+	picture = "sa_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_7b = {
+	picture = "sa_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_7c = {
+	picture = "sa_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_8a = {
+	picture = "sa_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_8b = {
+	picture = "sa_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_8c = {
+	picture = "sa_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_9a = {
+	picture = "sa_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_9b = {
+	picture = "sa_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_9c = {
+	picture = "sa_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_10a = {
+	picture = "sa_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_10b = {
+	picture = "sa_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_10c = {
+	picture = "sa_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_11a = {
+	picture = "sa_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_11b = {
+	picture = "sa_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_11c = {
+	picture = "sa_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_12a = {
+	picture = "sa_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_12b = {
+	picture = "sa_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_12c = {
+	picture = "sa_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_13a = {
+	picture = "sa_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_13b = {
+	picture = "sa_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_13c = {
+	picture = "sa_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+sa_concubine_14a = {
+	picture = "sa_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_14b = {
+	picture = "sa_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_14c = {
+	picture = "sa_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_15a = {
+	picture = "sa_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_15b = {
+	picture = "sa_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_15c = {
+	picture = "sa_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_16a = {
+	picture = "sa_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_16b = {
+	picture = "sa_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+sa_concubine_16c = {
+	picture = "sa_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_1a = {
+	picture = "africa_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_1b = {
+	picture = "africa_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_1c = {
+	picture = "africa_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_2a = {
+	picture = "africa_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_2b = {
+	picture = "africa_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_2c = {
+	picture = "africa_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_3a = {
+	picture = "africa_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_3b = {
+	picture = "africa_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_3c = {
+	picture = "africa_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_4a = {
+	picture = "africa_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_4b = {
+	picture = "africa_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_4c = {
+	picture = "africa_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_5a = {
+	picture = "africa_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_5b = {
+	picture = "africa_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_5c = {
+	picture = "africa_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_6a = {
+	picture = "africa_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_6b = {
+	picture = "africa_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_6c = {
+	picture = "africa_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_7a = {
+	picture = "africa_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_7b = {
+	picture = "africa_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_7c = {
+	picture = "africa_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_8a = {
+	picture = "africa_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_8b = {
+	picture = "africa_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_8c = {
+	picture = "africa_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_9a = {
+	picture = "africa_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_9b = {
+	picture = "africa_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_9c = {
+	picture = "africa_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_10a = {
+	picture = "africa_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_10b = {
+	picture = "africa_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_10c = {
+	picture = "africa_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_11a = {
+	picture = "africa_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_11b = {
+	picture = "africa_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_11c = {
+	picture = "africa_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_12a = {
+	picture = "africa_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_12b = {
+	picture = "africa_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_12c = {
+	picture = "africa_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_13a = {
+	picture = "africa_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_13b = {
+	picture = "africa_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_13c = {
+	picture = "africa_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+africa_concubine_14a = {
+	picture = "africa_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_14b = {
+	picture = "africa_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_14c = {
+	picture = "africa_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_15a = {
+	picture = "africa_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_15b = {
+	picture = "africa_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_15c = {
+	picture = "africa_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_16a = {
+	picture = "africa_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_16b = {
+	picture = "africa_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+africa_concubine_16c = {
+	picture = "africa_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_1a = {
+	picture = "mena_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_1b = {
+	picture = "mena_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_1c = {
+	picture = "mena_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_2a = {
+	picture = "mena_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_2b = {
+	picture = "mena_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_2c = {
+	picture = "mena_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_3a = {
+	picture = "mena_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_3b = {
+	picture = "mena_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_3c = {
+	picture = "mena_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_4a = {
+	picture = "mena_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_4b = {
+	picture = "mena_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_4c = {
+	picture = "mena_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_5a = {
+	picture = "mena_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_5b = {
+	picture = "mena_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_5c = {
+	picture = "mena_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_6a = {
+	picture = "mena_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_6b = {
+	picture = "mena_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_6c = {
+	picture = "mena_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_7a = {
+	picture = "mena_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_7b = {
+	picture = "mena_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_7c = {
+	picture = "mena_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_8a = {
+	picture = "mena_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_8b = {
+	picture = "mena_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_8c = {
+	picture = "mena_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_9a = {
+	picture = "mena_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_9b = {
+	picture = "mena_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_9c = {
+	picture = "mena_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+mena_concubine_10a = {
+	picture = "mena_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_10b = {
+	picture = "mena_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_10c = {
+	picture = "mena_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_11a = {
+	picture = "mena_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_11b = {
+	picture = "mena_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_11c = {
+	picture = "mena_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_12a = {
+	picture = "mena_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_12b = {
+	picture = "mena_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_12c = {
+	picture = "mena_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_13a = {
+	picture = "mena_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_13b = {
+	picture = "mena_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+mena_concubine_13c = {
+	picture = "mena_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_1a = {
+	picture = "japan_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_1b = {
+	picture = "japan_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_1c = {
+	picture = "japan_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_2a = {
+	picture = "japan_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_2b = {
+	picture = "japan_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_2c = {
+	picture = "japan_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_3a = {
+	picture = "japan_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_3b = {
+	picture = "japan_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_3c = {
+	picture = "japan_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_4a = {
+	picture = "japan_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_4b = {
+	picture = "japan_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_4c = {
+	picture = "japan_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_5a = {
+	picture = "japan_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_5b = {
+	picture = "japan_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_5c = {
+	picture = "japan_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_6a = {
+	picture = "japan_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_6b = {
+	picture = "japan_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_6c = {
+	picture = "japan_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_7a = {
+	picture = "japan_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_7b = {
+	picture = "japan_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_7c = {
+	picture = "japan_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_8a = {
+	picture = "japan_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_8b = {
+	picture = "japan_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_8c = {
+	picture = "japan_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_9a = {
+	picture = "japan_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_9b = {
+	picture = "japan_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_9c = {
+	picture = "japan_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+japan_concubine_10a = {
+	picture = "japan_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_10b = {
+	picture = "japan_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_10c = {
+	picture = "japan_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_11a = {
+	picture = "japan_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_11b = {
+	picture = "japan_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_11c = {
+	picture = "japan_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_12a = {
+	picture = "japan_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_12b = {
+	picture = "japan_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+japan_concubine_12c = {
+	picture = "japan_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_1a = {
+	picture = "china_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_1b = {
+	picture = "china_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_1c = {
+	picture = "china_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_2a = {
+	picture = "china_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_2b = {
+	picture = "china_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_2c = {
+	picture = "china_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_3a = {
+	picture = "china_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_3b = {
+	picture = "china_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_3c = {
+	picture = "china_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_4a = {
+	picture = "china_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_4b = {
+	picture = "china_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_4c = {
+	picture = "china_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_5a = {
+	picture = "china_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_5b = {
+	picture = "china_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_5c = {
+	picture = "china_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_6a = {
+	picture = "china_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_6b = {
+	picture = "china_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_6c = {
+	picture = "china_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_7a = {
+	picture = "china_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_7b = {
+	picture = "china_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_7c = {
+	picture = "china_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_8a = {
+	picture = "china_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_8b = {
+	picture = "china_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_8c = {
+	picture = "china_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_9a = {
+	picture = "china_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_9b = {
+	picture = "china_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_9c = {
+	picture = "china_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_10a = {
+	picture = "china_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_10b = {
+	picture = "china_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_10c = {
+	picture = "china_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_11a = {
+	picture = "china_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_11b = {
+	picture = "china_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_11c = {
+	picture = "china_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_12a = {
+	picture = "china_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_12b = {
+	picture = "china_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_12c = {
+	picture = "china_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_13a = {
+	picture = "china_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_13b = {
+	picture = "china_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_13c = {
+	picture = "china_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_14a = {
+	picture = "china_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_14b = {
+	picture = "china_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_14c = {
+	picture = "china_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_15a = {
+	picture = "china_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_15b = {
+	picture = "china_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_15c = {
+	picture = "china_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_16a = {
+	picture = "china_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_16b = {
+	picture = "china_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_16c = {
+	picture = "china_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_17a = {
+	picture = "china_concubine_17a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_17b = {
+	picture = "china_concubine_17b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_17c = {
+	picture = "china_concubine_17c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_18a = {
+	picture = "china_concubine_18a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_18b = {
+	picture = "china_concubine_18b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_18c = {
+	picture = "china_concubine_18c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_19a = {
+	picture = "china_concubine_19a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_19b = {
+	picture = "china_concubine_19b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_19c = {
+	picture = "china_concubine_19c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_20a = {
+	picture = "china_concubine_20a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_20b = {
+	picture = "china_concubine_20b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_20c = {
+	picture = "china_concubine_20c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_21a = {
+	picture = "china_concubine_21a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_21b = {
+	picture = "china_concubine_21b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_21c = {
+	picture = "china_concubine_21c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_22a = {
+	picture = "china_concubine_22a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_22b = {
+	picture = "china_concubine_22b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_22c = {
+	picture = "china_concubine_22c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_23a = {
+	picture = "china_concubine_23a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_23b = {
+	picture = "china_concubine_23b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_23c = {
+	picture = "china_concubine_23c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_24a = {
+	picture = "china_concubine_24a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_24b = {
+	picture = "china_concubine_24b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_24c = {
+	picture = "china_concubine_24c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_25a = {
+	picture = "china_concubine_25a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_25b = {
+	picture = "china_concubine_25b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_25c = {
+	picture = "china_concubine_25c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_26a = {
+	picture = "china_concubine_26a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_26b = {
+	picture = "china_concubine_26b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_26c = {
+	picture = "china_concubine_26c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_27a = {
+	picture = "china_concubine_27a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_27b = {
+	picture = "china_concubine_27b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_27c = {
+	picture = "china_concubine_27c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_28a = {
+	picture = "china_concubine_28a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_28b = {
+	picture = "china_concubine_28b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_28c = {
+	picture = "china_concubine_28c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_29a = {
+	picture = "china_concubine_29a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_29b = {
+	picture = "china_concubine_29b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_29c = {
+	picture = "china_concubine_29c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_30a = {
+	picture = "china_concubine_30a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_30b = {
+	picture = "china_concubine_30b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_30c = {
+	picture = "china_concubine_30c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_31a = {
+	picture = "china_concubine_31a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_31b = {
+	picture = "china_concubine_31b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_31c = {
+	picture = "china_concubine_31c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_32a = {
+	picture = "china_concubine_32a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_32b = {
+	picture = "china_concubine_32b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_32c = {
+	picture = "china_concubine_32c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_33a = {
+	picture = "china_concubine_33a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_33b = {
+	picture = "china_concubine_33b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_33c = {
+	picture = "china_concubine_33c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_34a = {
+	picture = "china_concubine_34a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_34b = {
+	picture = "china_concubine_34b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_34c = {
+	picture = "china_concubine_34c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_35a = {
+	picture = "china_concubine_35a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_35b = {
+	picture = "china_concubine_35b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_35c = {
+	picture = "china_concubine_35c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_36a = {
+	picture = "china_concubine_36a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_36b = {
+	picture = "china_concubine_36b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_36c = {
+	picture = "china_concubine_36c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_37a = {
+	picture = "china_concubine_37a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_37b = {
+	picture = "china_concubine_37b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_37c = {
+	picture = "china_concubine_37c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_38a = {
+	picture = "china_concubine_38a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_38b = {
+	picture = "china_concubine_38b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_38c = {
+	picture = "china_concubine_38c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_39a = {
+	picture = "china_concubine_39a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_39b = {
+	picture = "china_concubine_39b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_39c = {
+	picture = "china_concubine_39c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_40a = {
+	picture = "china_concubine_40a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_40b = {
+	picture = "china_concubine_40b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_40c = {
+	picture = "china_concubine_40c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_41a = {
+	picture = "china_concubine_41a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_41b = {
+	picture = "china_concubine_41b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_41c = {
+	picture = "china_concubine_41c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_42a = {
+	picture = "china_concubine_42a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_42b = {
+	picture = "china_concubine_42b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_42c = {
+	picture = "china_concubine_42c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_43a = {
+	picture = "china_concubine_43a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_43b = {
+	picture = "china_concubine_43b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_43c = {
+	picture = "china_concubine_43c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_44a = {
+	picture = "china_concubine_44a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_44b = {
+	picture = "china_concubine_44b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_44c = {
+	picture = "china_concubine_44c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_45a = {
+	picture = "china_concubine_45a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_45b = {
+	picture = "china_concubine_45b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_45c = {
+	picture = "china_concubine_45c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_46a = {
+	picture = "china_concubine_46a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_46b = {
+	picture = "china_concubine_46b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_46c = {
+	picture = "china_concubine_46c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_47a = {
+	picture = "china_concubine_47a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_47b = {
+	picture = "china_concubine_47b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_47c = {
+	picture = "china_concubine_47c"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_48a = {
+	picture = "china_concubine_48a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_48b = {
+	picture = "china_concubine_48b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_48c = {
+	picture = "china_concubine_48c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_49a = {
+	picture = "china_concubine_49a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_49b = {
+	picture = "china_concubine_49b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_49c = {
+	picture = "china_concubine_49c"
+	#allowed_num_of_buildings = 1
+}
+
+
+china_concubine_50a = {
+	picture = "china_concubine_50a"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_50b = {
+	picture = "china_concubine_50b"
+	#allowed_num_of_buildings = 1
+}
+
+china_concubine_50c = {
+	picture = "china_concubine_50c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_1a = {
+	picture = "euro_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_1b = {
+	picture = "euro_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_1c = {
+	picture = "euro_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_2a = {
+	picture = "euro_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_2b = {
+	picture = "euro_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_2c = {
+	picture = "euro_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_3a = {
+	picture = "euro_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_3b = {
+	picture = "euro_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_3c = {
+	picture = "euro_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_4a = {
+	picture = "euro_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_4b = {
+	picture = "euro_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_4c = {
+	picture = "euro_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_5a = {
+	picture = "euro_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_5b = {
+	picture = "euro_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_5c = {
+	picture = "euro_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_6a = {
+	picture = "euro_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_6b = {
+	picture = "euro_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_6c = {
+	picture = "euro_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_7a = {
+	picture = "euro_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_7b = {
+	picture = "euro_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_7c = {
+	picture = "euro_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_8a = {
+	picture = "euro_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_8b = {
+	picture = "euro_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_8c = {
+	picture = "euro_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_9a = {
+	picture = "euro_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_9b = {
+	picture = "euro_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_9c = {
+	picture = "euro_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+euro_concubine_10a = {
+	picture = "euro_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_10b = {
+	picture = "euro_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_10c = {
+	picture = "euro_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_11a = {
+	picture = "euro_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_11b = {
+	picture = "euro_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_11c = {
+	picture = "euro_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_12a = {
+	picture = "euro_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_12b = {
+	picture = "euro_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+euro_concubine_12c = {
+	picture = "euro_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+
+southsea_concubine_1a = {
+	picture = "southsea_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_1b = {
+	picture = "southsea_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_1c = {
+	picture = "southsea_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_2a = {
+	picture = "southsea_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_2b = {
+	picture = "southsea_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_2c = {
+	picture = "southsea_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_3a = {
+	picture = "southsea_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_3b = {
+	picture = "southsea_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_3c = {
+	picture = "southsea_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+southsea_concubine_4a = {
+	picture = "southsea_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_4b = {
+	picture = "southsea_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_4c = {
+	picture = "southsea_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_5a = {
+	picture = "southsea_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_5b = {
+	picture = "southsea_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_5c = {
+	picture = "southsea_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_6a = {
+	picture = "southsea_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_6b = {
+	picture = "southsea_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_6c = {
+	picture = "southsea_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+southsea_concubine_7a = {
+	picture = "southsea_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_7b = {
+	picture = "southsea_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_7c = {
+	picture = "southsea_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+southsea_concubine_8a = {
+	picture = "southsea_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_8b = {
+	picture = "southsea_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+southsea_concubine_8c = {
+	picture = "southsea_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+horn_concubine_1a = {
+	picture = "horn_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_1b = {
+	picture = "horn_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_1c = {
+	picture = "horn_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_2a = {
+	picture = "horn_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_2b = {
+	picture = "horn_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_2c = {
+	picture = "horn_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_3a = {
+	picture = "horn_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_3b = {
+	picture = "horn_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_3c = {
+	picture = "horn_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+horn_concubine_4a = {
+	picture = "horn_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_4b = {
+	picture = "horn_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_4c = {
+	picture = "horn_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_5a = {
+	picture = "horn_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_5b = {
+	picture = "horn_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_5c = {
+	picture = "horn_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_6a = {
+	picture = "horn_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_6b = {
+	picture = "horn_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_6c = {
+	picture = "horn_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+horn_concubine_7a = {
+	picture = "horn_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_7b = {
+	picture = "horn_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_7c = {
+	picture = "horn_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+horn_concubine_8a = {
+	picture = "horn_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_8b = {
+	picture = "horn_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+horn_concubine_8c = {
+	picture = "horn_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+bsea_concubine_1a = {
+	picture = "bsea_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_1b = {
+	picture = "bsea_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_1c = {
+	picture = "bsea_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_2a = {
+	picture = "bsea_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_2b = {
+	picture = "bsea_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_2c = {
+	picture = "bsea_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_3a = {
+	picture = "bsea_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_3b = {
+	picture = "bsea_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_3c = {
+	picture = "bsea_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+bsea_concubine_4a = {
+	picture = "bsea_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_4b = {
+	picture = "bsea_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_4c = {
+	picture = "bsea_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_5a = {
+	picture = "bsea_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_5b = {
+	picture = "bsea_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_5c = {
+	picture = "bsea_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_6a = {
+	picture = "bsea_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_6b = {
+	picture = "bsea_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_6c = {
+	picture = "bsea_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+bsea_concubine_7a = {
+	picture = "bsea_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_7b = {
+	picture = "bsea_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_7c = {
+	picture = "bsea_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+bsea_concubine_8a = {
+	picture = "bsea_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_8b = {
+	picture = "bsea_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+bsea_concubine_8c = {
+	picture = "bsea_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+barbary_concubine_1a = {
+	picture = "barbary_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_1b = {
+	picture = "barbary_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_1c = {
+	picture = "barbary_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_2a = {
+	picture = "barbary_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_2b = {
+	picture = "barbary_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_2c = {
+	picture = "barbary_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_3a = {
+	picture = "barbary_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_3b = {
+	picture = "barbary_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_3c = {
+	picture = "barbary_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+barbary_concubine_4a = {
+	picture = "barbary_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_4b = {
+	picture = "barbary_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_4c = {
+	picture = "barbary_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_5a = {
+	picture = "barbary_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_5b = {
+	picture = "barbary_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_5c = {
+	picture = "barbary_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_6a = {
+	picture = "barbary_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_6b = {
+	picture = "barbary_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_6c = {
+	picture = "barbary_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+barbary_concubine_7a = {
+	picture = "barbary_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_7b = {
+	picture = "barbary_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_7c = {
+	picture = "barbary_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+barbary_concubine_8a = {
+	picture = "barbary_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_8b = {
+	picture = "barbary_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+barbary_concubine_8c = {
+	picture = "barbary_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_1a = {
+	picture = "india_concubine_1a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_1b = {
+	picture = "india_concubine_1b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_1c = {
+	picture = "india_concubine_1c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_2a = {
+	picture = "india_concubine_2a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_2b = {
+	picture = "india_concubine_2b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_2c = {
+	picture = "india_concubine_2c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_3a = {
+	picture = "india_concubine_3a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_3b = {
+	picture = "india_concubine_3b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_3c = {
+	picture = "india_concubine_3c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_4a = {
+	picture = "india_concubine_4a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_4b = {
+	picture = "india_concubine_4b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_4c = {
+	picture = "india_concubine_4c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_5a = {
+	picture = "india_concubine_5a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_5b = {
+	picture = "india_concubine_5b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_5c = {
+	picture = "india_concubine_5c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_6a = {
+	picture = "india_concubine_6a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_6b = {
+	picture = "india_concubine_6b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_6c = {
+	picture = "india_concubine_6c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_7a = {
+	picture = "india_concubine_7a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_7b = {
+	picture = "india_concubine_7b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_7c = {
+	picture = "india_concubine_7c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_8a = {
+	picture = "india_concubine_8a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_8b = {
+	picture = "india_concubine_8b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_8c = {
+	picture = "india_concubine_8c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_9a = {
+	picture = "india_concubine_9a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_9b = {
+	picture = "india_concubine_9b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_9c = {
+	picture = "india_concubine_9c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_10a = {
+	picture = "india_concubine_10a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_10b = {
+	picture = "india_concubine_10b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_10c = {
+	picture = "india_concubine_10c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_11a = {
+	picture = "india_concubine_11a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_11b = {
+	picture = "india_concubine_11b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_11c = {
+	picture = "india_concubine_11c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_12a = {
+	picture = "india_concubine_12a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_12b = {
+	picture = "india_concubine_12b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_12c = {
+	picture = "india_concubine_12c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_13a = {
+	picture = "india_concubine_13a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_13b = {
+	picture = "india_concubine_13b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_13c = {
+	picture = "india_concubine_13c"
+	#allowed_num_of_buildings = 1
+}
+
+
+india_concubine_14a = {
+	picture = "india_concubine_14a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_14b = {
+	picture = "india_concubine_14b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_14c = {
+	picture = "india_concubine_14c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_15a = {
+	picture = "india_concubine_15a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_15b = {
+	picture = "india_concubine_15b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_15c = {
+	picture = "india_concubine_15c"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_16a = {
+	picture = "india_concubine_16a"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_16b = {
+	picture = "india_concubine_16b"
+	#allowed_num_of_buildings = 1
+}
+
+india_concubine_16c = {
+	picture = "india_concubine_16c"
+	#allowed_num_of_buildings = 1
+}
+
+
+
+
+
+
+
+
+
+

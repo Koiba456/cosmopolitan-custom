@@ -1,0 +1,1375 @@
+########################################
+# Cosmo General Events
+#
+# 
+########################################
+
+namespace = cosmo_madamspawn_events
+
+
+
+# Europe Spawn
+country_event = {
+	id = cosmo_madamspawn_events.11
+	title = cosmo_madamspawn_events.11.t
+	desc = cosmo_madamspawn_events.11.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	hidden = yes #spawnevent
+
+	trigger = {
+		ai = no
+		OR = {
+			any_province = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					AND = {
+					OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+						culture_group = maya		
+						culture_group = central_american		
+
+						culture_group = mataco		
+						culture_group = araucanian		
+						culture_group = eskaleut		
+						culture_group = central_algonquian		
+						culture_group = plains_algonquian		
+						culture_group = eastern_algonquian		
+						culture_group = iroquoian		
+						culture_group = siouan		
+						culture_group = caddoan		
+						culture_group = muskogean		
+						culture_group = sonoran		
+						culture_group = apachean		
+						culture_group = na_dene		
+						culture_group = penutian
+
+
+					}
+				owner = {
+						has_country_flag = new_world_europe_brothels
+				}					
+						}
+			NOT = {
+				has_province_modifier = europe_prostitutes
+			}			
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+							culture_group = altaic		
+							culture_group = evenks		
+							culture_group = kamchatkan_g		
+							culture_group = tartar				
+					}
+				owner = {
+				has_country_flag = steppe_europe_brothels
+				}
+			}
+				NOT = {
+				has_province_modifier = russian_prostitutes
+				}			
+			}			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = british							
+				}
+				NOT = {
+				has_province_modifier = british_prostitutes
+				}
+			}
+			}			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture = irish		
+						culture = highland_scottish		
+						culture = scottish
+				}
+				NOT = {
+				has_province_modifier = gaelic_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = french		
+				}
+				NOT = {
+				has_province_modifier = french_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = iberian		
+				}
+				NOT = {
+				has_province_modifier = iberian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = germanic		
+						culture_group = west_slavic	
+						culture_group = baltic
+				}
+				NOT = {
+				has_province_modifier = central_european_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = carpathian		
+						culture_group = south_slavic	
+						culture_group = byzantine
+				}
+				NOT = {
+				has_province_modifier = balkan_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = east_slavic		
+				}
+				NOT = {
+				has_province_modifier = russian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = scandinavian		
+				}
+				NOT = {
+				has_province_modifier = scandinavian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = latin		
+				}
+					NOT = {
+						culture = venetian		
+					}				
+				NOT = {
+				has_province_modifier = italian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture = venetian		
+				}				
+				NOT = {
+				has_province_modifier = venetian_prostitutes
+				}
+			}
+			}																								
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+		
+	
+	option = {#Menu 1
+		name = cosmo_madamspawn_events.11.a	
+		every_province = {
+			limit = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					AND = {
+					OR = {
+						culture_group = andean_group		
+						culture_group = aridoamerican		
+						culture_group = otomanguean		
+						culture_group = je_tupi		
+						culture_group = je		
+						culture_group = maranon		
+						culture_group = chibchan		
+						culture_group = carribean
+						culture_group = maya		
+						culture_group = central_american		
+
+						culture_group = mataco		
+						culture_group = araucanian		
+						culture_group = eskaleut		
+						culture_group = central_algonquian		
+						culture_group = plains_algonquian		
+						culture_group = eastern_algonquian		
+						culture_group = iroquoian		
+						culture_group = siouan		
+						culture_group = caddoan		
+						culture_group = muskogean		
+						culture_group = sonoran		
+						culture_group = apachean		
+						culture_group = na_dene		
+						culture_group = penutian
+
+
+					}
+				owner = {
+						has_country_flag = new_world_europe_brothels
+				}					
+			}
+			
+			}
+		add_province_modifier = {
+			name = europe_prostitutes
+			duration = 18250  
+			desc = europe_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = europe_prostitutes
+			duration = 18250  
+			desc = europe_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+							culture_group = altaic		
+							culture_group = evenks		
+							culture_group = kamchatkan_g		
+							culture_group = tartar				
+					}
+				owner = {
+				has_country_flag = steppe_europe_brothels
+				}
+			}
+
+			}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}		
+		}		
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture = irish		
+						culture = highland_scottish		
+						culture = scottish							
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = gaelic_prostitutes
+			duration = 18250  
+			desc = gaelic_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = gaelic_prostitutes
+			duration = 18250  
+			desc = gaelic_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture = british		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = british_prostitutes
+			duration = 18250  
+			desc = british_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = british_prostitutes
+			duration = 18250  
+			desc = british_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = french		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = french_prostitutes
+			duration = 18250  
+			desc = french_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = french_prostitutes
+			duration = 18250  
+			desc = french_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = iberian		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = iberian_prostitutes
+			duration = 18250  
+			desc = iberian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = iberian_prostitutes
+			duration = 18250  
+			desc = iberian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = germanic		
+						culture_group = west_slavic	
+						culture_group = baltic
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = central_european_prostitutes
+			duration = 18250  
+			desc = central_european_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = central_european_prostitutes
+			duration = 18250  
+			desc = central_european_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = carpathian		
+						culture_group = south_slavic	
+						culture_group = byzantine
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = balkan_prostitutes
+			duration = 18250  
+			desc = balkan_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = balkan_prostitutes
+			duration = 18250  
+			desc = balkan_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = east_slavic		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = russian_prostitutes
+			duration = 18250  
+			desc = russian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = scandinavian		
+				}
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = scandinavian_prostitutes
+			duration = 18250  
+			desc = scandinavian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = scandinavian_prostitutes
+			duration = 18250  
+			desc = scandinavian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = latin		
+				}
+					NOT = {
+						culture = venetian		
+				}				
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = italian_prostitutes
+			duration = 18250  
+			desc = italian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = italian_prostitutes
+			duration = 18250  
+			desc = italian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture = venetian		
+				}
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = venetian_prostitutes
+			duration = 18250  
+			desc = venetian_prostitutes_DESC
+
+		}
+		}																																		   																					
+	}			
+}
+
+# Asia Spawn
+country_event = {
+	id = cosmo_madamspawn_events.21
+	title = cosmo_madamspawn_events.21.t
+	desc = cosmo_madamspawn_events.21.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	hidden = yes #spawnevent
+
+	trigger = {
+		ai = no
+		OR = {			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = maghrebi
+						culture_group = turko_semitic
+				}
+				NOT = {
+				has_province_modifier = mena_prostitutes
+				}
+			}
+			}			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = iranian
+
+				}
+				NOT = {
+				has_province_modifier = persian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = turkish
+						culture_group = caucasian
+				}
+				NOT = {
+				has_province_modifier = turkish_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_muslim_brothels
+			}	
+			}
+				NOT = {
+				has_province_modifier = turkish_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_china_brothels
+			}	
+			}
+				NOT = {
+				has_province_modifier = chinese_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_korea_brothels
+			}	
+			}
+				NOT = {
+				has_province_modifier = korean_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic		
+				}
+				NOT = {
+				has_province_modifier = south_asian_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande		
+				}
+				NOT = {
+				has_province_modifier = west_african_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese		
+				}				
+				NOT = {
+				has_province_modifier = east_african_prostitutes
+				}
+			}
+			}																					
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+		
+	
+	option = {#Menu 1
+		name = cosmo_madamspawn_events.21.a			
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = iranian
+							
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = persian_prostitutes
+			duration = 18250  
+			desc = persian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = persian_prostitutes
+			duration = 18250  
+			desc = persian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {	
+				culture_group = maghrebi
+				culture_group = turko_semitic
+			}
+			NOT = {	
+				culture = turkish
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = mena_prostitutes
+			duration = 18250  
+			desc = mena_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = mena_prostitutes
+			duration = 18250  
+			desc = mena_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = turkish
+						culture_group = caucasian
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_muslim_brothels
+			}	
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = turkish_prostitutes
+			duration = 18250  
+			desc = turkish_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_china_brothels
+			}	
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			AND = {
+				OR = {
+						culture_group = altaic		
+						culture_group = evenks		
+						culture_group = kamchatkan_g		
+						culture_group = tartar				
+				}
+			owner = {
+			has_country_flag = steppe_korea_brothels
+			}	
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = eastern_aryan		
+				culture_group = hindusthani		
+				culture_group = western_aryan		
+				culture_group = dravidian		
+				culture_group = central_indic		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = south_asian_prostitutes
+			duration = 18250  
+			desc = south_asian_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = south_asian_prostitutes
+			duration = 18250  
+			desc = south_asian_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = west_african			
+				culture_group = sahelian			
+				culture_group = mande		
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = west_african_prostitutes
+			duration = 18250  
+			desc = west_african_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = west_african_prostitutes
+			duration = 18250  
+			desc = west_african_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = african			
+				culture_group = cushitic			
+				culture_group = sudanese		
+				}				
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = east_african_prostitutes
+			duration = 18250  
+			desc = east_african_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = east_african_prostitutes
+			duration = 18250  
+			desc = east_african_prostitutes_DESC
+
+		}		
+		}																																		   																					
+	}			
+}
+
+# Remaining Spawn
+country_event = {
+	id = cosmo_madamspawn_events.31
+	title = cosmo_madamspawn_events.31.t
+	desc = cosmo_madamspawn_events.31.d
+	picture = cosmogfx_COSMOPOLITAN_eventPicture
+
+	hidden = yes #spawnevent
+
+	trigger = {
+		ai = no
+		OR = {			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group
+				}
+				NOT = {
+				has_province_modifier = central_african_prostitutes
+				}
+			}
+			}			
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = malay
+
+				}
+				NOT = {
+				has_province_modifier = malay_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = burman
+				culture_group = southeastasian_group
+				}
+				NOT = {
+				has_province_modifier = thai_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = east_asian
+			}
+				NOT = {
+				has_province_modifier = chinese_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = korean_g
+			}
+				NOT = {
+				has_province_modifier = korean_prostitutes
+				}
+			}
+			}
+			any_province = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = japanese_g
+			}
+				NOT = {
+				has_province_modifier = japanese_prostitutes
+				}
+			}
+			}																					
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}	
+		
+	
+	option = {#Menu 1
+		name = cosmo_madamspawn_events.31.a			
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = southern_african			
+				culture_group = kongo_group			
+				culture_group = great_lakes_group							
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = central_african_prostitutes
+			duration = 18250  
+			desc = central_african_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = central_african_prostitutes
+			duration = 18250  
+			desc = central_african_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+						culture_group = malay
+
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = malay_prostitutes
+			duration = 18250  
+			desc = malay_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = malay_prostitutes
+			duration = 18250  
+			desc = malay_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+					OR = {
+				culture_group = burman
+				culture_group = southeastasian_group
+				}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = thai_prostitutes
+			duration = 18250  
+			desc = thai_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = thai_prostitutes
+			duration = 18250  
+			desc = thai_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = east_asian
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = chinese_prostitutes
+			duration = 18250  
+			desc = chinese_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = korean_g
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = korean_prostitutes
+			duration = 18250  
+			desc = korean_prostitutes_DESC
+
+		}		
+		}
+		every_province = {
+			limit = {
+		OR = {
+			AND = {
+				OR = {
+				has_building = brothel_district
+				has_building = port_of_pleasure
+				}
+			OR = {
+				culture_group = japanese_g
+			}
+
+			}
+			}				
+			}
+		add_province_modifier = {
+			name = japanese_prostitutes
+			duration = 18250  
+			desc = japanese_prostitutes_DESC
+
+		}
+		extend_province_modifier = {
+			name = japanese_prostitutes
+			duration = 18250  
+			desc = japanese_prostitutes_DESC
+
+		}		
+		}																																		   																					
+	}			
+}
+

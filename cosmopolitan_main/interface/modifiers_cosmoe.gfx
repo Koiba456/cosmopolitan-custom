@@ -1,0 +1,2395 @@
+spriteTypes = {
+	
+
+ 	spriteType = {
+    name = "africa_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "africa_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "africa_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "africa_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "africa_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "africa_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "africa_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "africa_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//africa_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 	spriteType = {
+    name = "eurow_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "eurow_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "eurow_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "eurow_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "eurow_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "eurow_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "eurow_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "eurow_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "eurow_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "eurow_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 
+ 	spriteType = {
+    name = "eurow_concubine_16a"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_16a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_16b"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_16b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "eurow_concubine_16c"
+    texturefile = "gfx//interface//ideas_EU4//eurow_concubine_16c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "euro_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "euro_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "euro_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "euro_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "euro_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "euro_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "euro_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "euro_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "euro_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "euro_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 
+ 	spriteType = {
+    name = "euro_concubine_16a"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_16a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_16b"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_16b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "euro_concubine_16c"
+    texturefile = "gfx//interface//ideas_EU4//euro_concubine_16c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "na_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "na_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "na_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "na_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "na_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "na_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "na_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "na_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "na_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "na_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 
+ 	spriteType = {
+    name = "na_concubine_16a"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_16a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_16b"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_16b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "na_concubine_16c"
+    texturefile = "gfx//interface//ideas_EU4//na_concubine_16c.dds"
+    allwaystransparent = yes
+    }      
+
+
+ 	spriteType = {
+    name = "sa_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "sa_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "sa_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "sa_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "sa_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "sa_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "sa_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "sa_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "sa_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "sa_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 
+ 	spriteType = {
+    name = "sa_concubine_16a"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_16a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_16b"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_16b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "sa_concubine_16c"
+    texturefile = "gfx//interface//ideas_EU4//sa_concubine_16c.dds"
+    allwaystransparent = yes
+    }      
+
+
+ 	spriteType = {
+    name = "mena_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "mena_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "mena_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "mena_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "mena_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "mena_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "mena_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "mena_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "mena_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//mena_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+
+
+ 	spriteType = {
+    name = "india_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "india_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "india_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "india_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "india_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "india_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "india_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "india_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "india_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//india_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+
+
+ 	spriteType = {
+    name = "china_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "china_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "china_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "china_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+ 	spriteType = {
+    name = "china_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "china_concubine_13a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_13a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_13b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_13b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_13c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_13c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "china_concubine_14a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_14a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_14b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_14b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_14c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_14c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_15a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_15a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_15b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_15b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_15c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_15c.dds"
+    allwaystransparent = yes
+    } 
+
+ 	spriteType = {
+    name = "china_concubine_16a"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_16a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_16b"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_16b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "china_concubine_16c"
+    texturefile = "gfx//interface//ideas_EU4//china_concubine_16c.dds"
+    allwaystransparent = yes
+    } 
+
+ 	spriteType = {
+    name = "japan_concubine_1a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_1a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_1b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_1b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_1c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_1c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_2a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_2a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_2b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_2b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_2c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_2c.dds"
+    allwaystransparent = yes
+    }
+    
+ 	spriteType = {
+    name = "japan_concubine_3a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_3a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_3b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_3b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_3c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_3c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "japan_concubine_4a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_4a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_4b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_4b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_4c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_4c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_5a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_5a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_5b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_5b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_5c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_5c.dds"
+    allwaystransparent = yes
+    } 
+ 
+ 	spriteType = {
+    name = "japan_concubine_6a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_6a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_6b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_6b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_6c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_6c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "japan_concubine_7a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_7a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_7b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_7b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_7c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_7c.dds"
+    allwaystransparent = yes
+    }  
+
+ 	spriteType = {
+    name = "japan_concubine_8a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_8a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_8b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_8b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_8c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_8c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_9a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_9a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_9b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_9b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_9c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_9c.dds"
+    allwaystransparent = yes
+    } 
+
+
+ 	spriteType = {
+    name = "japan_concubine_10a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_10a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_10b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_10b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_10c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_10c.dds"
+    allwaystransparent = yes
+    }                             
+
+
+ 	spriteType = {
+    name = "japan_concubine_11a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_11a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_11b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_11b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_11c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_11c.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_12a"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_12a.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_12b"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_12b.dds"
+    allwaystransparent = yes
+    }
+
+ 	spriteType = {
+    name = "japan_concubine_12c"
+    texturefile = "gfx//interface//ideas_EU4//japan_concubine_12c.dds"
+    allwaystransparent = yes
+    }
+    
+        
+            
+
+
+
+
+
+
+}

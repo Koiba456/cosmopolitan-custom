@@ -1,0 +1,36 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "privilege_visitaffair"
+		texturefile = "gfx/interface/privileges/privilege_visitaffair.dds"
+	}
+
+		spriteType = {
+		name = "privilege_visitooku"
+		texturefile = "gfx/interface/privileges/privilege_visitooku.dds"
+	}
+
+		spriteType = {
+		name = "privilege_visitpalace"
+		texturefile = "gfx/interface/privileges/privilege_visitpalace.dds"
+	}
+
+		spriteType = {
+		name = "privilege_visitharem"
+		texturefile = "gfx/interface/privileges/privilege_visitharem.dds"
+	}
+
+		spriteType = {
+		name = "privilege_visitwives"
+		texturefile = "gfx/interface/privileges/privilege_visitwives.dds"
+	}	
+
+		spriteType = {
+		name = "privilege_hiremadam"
+		texturefile = "gfx/interface/privileges/privilege_hiremadam.dds"
+	}						
+	
+
+
+	
+	}

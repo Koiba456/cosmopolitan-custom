@@ -1,0 +1,47 @@
+spriteTypes = {
+	
+		spriteType = {
+		name = "GFX_advisor_kuba_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//kuba_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_kuba_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//kuba_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+		
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_kuba_army_organiser_female"
+		texturefile = "gfx//interface//advisors//kuba_army_organiser_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
+		name = "GFX_advisor_kuba_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

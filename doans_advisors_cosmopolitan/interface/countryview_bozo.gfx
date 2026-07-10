@@ -1,0 +1,51 @@
+spriteTypes = {
+
+		
+	spriteType = {
+		name = "GFX_advisor_bozo_inquisitor_female"
+		texturefile = "gfx//interface//advisors//bozo_inquisitor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+
+	
+	
+		spriteType = {
+		name = "GFX_advisor_bozo_diplomat_female"
+		texturefile = "gfx//interface//advisors//bozo_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+	
+	spriteType = {
+		name = "GFX_advisor_bozo_army_reformer_female"
+		texturefile = "gfx//interface//advisors//bozo_army_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_bozo_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

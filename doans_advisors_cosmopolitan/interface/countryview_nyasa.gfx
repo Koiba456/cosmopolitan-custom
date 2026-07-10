@@ -1,0 +1,41 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_advisor_nyasa_spymaster_female"
+		texturefile = "gfx//interface//advisors//nyasa_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_nyasa_recruitmaster_female"
+		texturefile = "gfx//interface//advisors//w.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		
+	
+		spriteType = {
+		name = "GFX_advisor_nyasa_philosopher_female"
+		texturefile = "gfx//interface//advisors//nyasa_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+
+	spriteType = {
+		name = "GFX_advisor_nyasa_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+	

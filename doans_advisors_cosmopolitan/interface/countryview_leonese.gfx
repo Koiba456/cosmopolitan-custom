@@ -1,0 +1,80 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_leonese_artist_female"
+		texturefile = "gfx//interface//advisors//leonese_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//leonese_master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_treasurer_female"
+		texturefile = "gfx//interface//advisors//leonese_treasurer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_diplomat_female"
+		texturefile = "gfx//interface//advisors//leonese_diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_naval_reformer_female"
+		texturefile = "gfx//interface//advisors//leonese_naval_reformer_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_trader_female"
+		texturefile = "gfx//interface//advisors//leonese_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_leonese_spymaster_female"
+		texturefile = "gfx//interface//advisors//leonese_spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+}

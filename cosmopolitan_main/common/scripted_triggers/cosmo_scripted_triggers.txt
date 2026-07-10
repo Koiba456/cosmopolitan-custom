@@ -1,0 +1,3847 @@
+# SOME META SCRIPT EXAMPLES
+# This also works for Scripted effects the same. Provided arguments will be pasted in
+# wherever the key occurs. If it fails to compile you should get a proper error message
+# and the source generated in the error log. There is no added overhead during runtime but
+# if used extensivley it might make loading time longer.
+#
+# my_test_trigger = {
+#	OR = {
+#		has_country_modifier = $ARG1$_modifier
+#		AND = {
+#			has_country_modifier = $ARG2$_modifier
+#			$CONTEXT$ = {
+#				NOT = { has_country_modifier = $ARG1$_modifier }
+#			}
+#		}
+#	}
+# }
+# Usage:
+# my_test_trigger = { ARG1=foo ARG2=bar CONTEXT=FROM }
+
+#GENERAL TRIGGERS
+
+
+cosmo_daimyo_personal_union_subtype_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_daimyo_personal_union_I
+	is_subject_of_type = cosmo_daimyo_personal_union_II
+	is_subject_of_type = cosmo_daimyo_personal_union_T
+	is_subject_of_type = cosmo_daimyo_personal_union_TR
+	is_subject_of_type = cosmo_daimyo_personal_union_M
+	is_subject_of_type = cosmo_daimyo_personal_union_MR
+	is_subject_of_type = cosmo_daimyo_personal_union_MT
+	is_subject_of_type = cosmo_daimyo_personal_union_MTR
+	is_subject_of_type = cosmo_daimyo_personal_union_R
+	is_subject_of_type = cosmo_daimyo_personal_union_J
+	is_subject_of_type = cosmo_daimyo_personal_union_JR
+	is_subject_of_type = cosmo_daimyo_personal_union_JT
+	is_subject_of_type = cosmo_daimyo_personal_union_JTR
+	is_subject_of_type = cosmo_daimyo_personal_union_JMT
+	is_subject_of_type = cosmo_daimyo_personal_union_JMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_JM
+	is_subject_of_type = cosmo_daimyo_personal_union_JMR
+	is_subject_of_type = cosmo_daimyo_personal_union_D
+	is_subject_of_type = cosmo_daimyo_personal_union_DJ
+	is_subject_of_type = cosmo_daimyo_personal_union_DR
+	is_subject_of_type = cosmo_daimyo_personal_union_DT
+	is_subject_of_type = cosmo_daimyo_personal_union_DTR
+	is_subject_of_type = cosmo_daimyo_personal_union_DM
+	is_subject_of_type = cosmo_daimyo_personal_union_DMR
+	is_subject_of_type = cosmo_daimyo_personal_union_DMT
+	is_subject_of_type = cosmo_daimyo_personal_union_DMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_DJR
+	is_subject_of_type = cosmo_daimyo_personal_union_DJT
+	is_subject_of_type = cosmo_daimyo_personal_union_DJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_DJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_DJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_DJM
+	is_subject_of_type = cosmo_daimyo_personal_union_DJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_C
+	is_subject_of_type = cosmo_daimyo_personal_union_CT
+	is_subject_of_type = cosmo_daimyo_personal_union_CTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CR
+	is_subject_of_type = cosmo_daimyo_personal_union_CM
+	is_subject_of_type = cosmo_daimyo_personal_union_CMR
+	is_subject_of_type = cosmo_daimyo_personal_union_CMT
+	is_subject_of_type = cosmo_daimyo_personal_union_CMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CJ
+	is_subject_of_type = cosmo_daimyo_personal_union_CJR
+	is_subject_of_type = cosmo_daimyo_personal_union_CJT
+	is_subject_of_type = cosmo_daimyo_personal_union_CJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_CJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CJM
+	is_subject_of_type = cosmo_daimyo_personal_union_CJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_CD
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJ
+	is_subject_of_type = cosmo_daimyo_personal_union_CDR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDT
+	is_subject_of_type = cosmo_daimyo_personal_union_CDTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDM
+	is_subject_of_type = cosmo_daimyo_personal_union_CDMR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDMT
+	is_subject_of_type = cosmo_daimyo_personal_union_CDMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJT
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJM
+	is_subject_of_type = cosmo_daimyo_personal_union_CDJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_G
+	is_subject_of_type = cosmo_daimyo_personal_union_GT
+	is_subject_of_type = cosmo_daimyo_personal_union_GTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GR
+	is_subject_of_type = cosmo_daimyo_personal_union_GM
+	is_subject_of_type = cosmo_daimyo_personal_union_GMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GJ
+	is_subject_of_type = cosmo_daimyo_personal_union_GJR
+	is_subject_of_type = cosmo_daimyo_personal_union_GJT
+	is_subject_of_type = cosmo_daimyo_personal_union_GJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GJM
+	is_subject_of_type = cosmo_daimyo_personal_union_GJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GD
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJ
+	is_subject_of_type = cosmo_daimyo_personal_union_GDR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDT
+	is_subject_of_type = cosmo_daimyo_personal_union_GDTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDM
+	is_subject_of_type = cosmo_daimyo_personal_union_GDMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GDMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJT
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJM
+	is_subject_of_type = cosmo_daimyo_personal_union_GDJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GC
+	is_subject_of_type = cosmo_daimyo_personal_union_GCT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCM
+	is_subject_of_type = cosmo_daimyo_personal_union_GCMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJ
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJM
+	is_subject_of_type = cosmo_daimyo_personal_union_GCJMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCD
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJ
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDM
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDMR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJMT
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJMTR
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJM
+	is_subject_of_type = cosmo_daimyo_personal_union_GCDJMR
+	}
+}
+
+cosmo_african_personal_union_subtype_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_african_personal_union_I
+	is_subject_of_type = cosmo_african_personal_union_II
+	is_subject_of_type = cosmo_african_personal_union_T
+	is_subject_of_type = cosmo_african_personal_union_TR
+	is_subject_of_type = cosmo_african_personal_union_M
+	is_subject_of_type = cosmo_african_personal_union_MR
+	is_subject_of_type = cosmo_african_personal_union_MT
+	is_subject_of_type = cosmo_african_personal_union_MTR
+	is_subject_of_type = cosmo_african_personal_union_R
+	is_subject_of_type = cosmo_african_personal_union_J
+	is_subject_of_type = cosmo_african_personal_union_JR
+	is_subject_of_type = cosmo_african_personal_union_JT
+	is_subject_of_type = cosmo_african_personal_union_JTR
+	is_subject_of_type = cosmo_african_personal_union_JMT
+	is_subject_of_type = cosmo_african_personal_union_JMTR
+	is_subject_of_type = cosmo_african_personal_union_JM
+	is_subject_of_type = cosmo_african_personal_union_JMR
+	is_subject_of_type = cosmo_african_personal_union_D
+	is_subject_of_type = cosmo_african_personal_union_DJ
+	is_subject_of_type = cosmo_african_personal_union_DR
+	is_subject_of_type = cosmo_african_personal_union_DT
+	is_subject_of_type = cosmo_african_personal_union_DTR
+	is_subject_of_type = cosmo_african_personal_union_DM
+	is_subject_of_type = cosmo_african_personal_union_DMR
+	is_subject_of_type = cosmo_african_personal_union_DMT
+	is_subject_of_type = cosmo_african_personal_union_DMTR
+	is_subject_of_type = cosmo_african_personal_union_DJR
+	is_subject_of_type = cosmo_african_personal_union_DJT
+	is_subject_of_type = cosmo_african_personal_union_DJTR
+	is_subject_of_type = cosmo_african_personal_union_DJMT
+	is_subject_of_type = cosmo_african_personal_union_DJMTR
+	is_subject_of_type = cosmo_african_personal_union_DJM
+	is_subject_of_type = cosmo_african_personal_union_DJMR
+	is_subject_of_type = cosmo_african_personal_union_C
+	is_subject_of_type = cosmo_african_personal_union_CT
+	is_subject_of_type = cosmo_african_personal_union_CTR
+	is_subject_of_type = cosmo_african_personal_union_CR
+	is_subject_of_type = cosmo_african_personal_union_CM
+	is_subject_of_type = cosmo_african_personal_union_CMR
+	is_subject_of_type = cosmo_african_personal_union_CMT
+	is_subject_of_type = cosmo_african_personal_union_CMTR
+	is_subject_of_type = cosmo_african_personal_union_CJ
+	is_subject_of_type = cosmo_african_personal_union_CJR
+	is_subject_of_type = cosmo_african_personal_union_CJT
+	is_subject_of_type = cosmo_african_personal_union_CJTR
+	is_subject_of_type = cosmo_african_personal_union_CJMT
+	is_subject_of_type = cosmo_african_personal_union_CJMTR
+	is_subject_of_type = cosmo_african_personal_union_CJM
+	is_subject_of_type = cosmo_african_personal_union_CJMR
+	is_subject_of_type = cosmo_african_personal_union_CD
+	is_subject_of_type = cosmo_african_personal_union_CDJ
+	is_subject_of_type = cosmo_african_personal_union_CDR
+	is_subject_of_type = cosmo_african_personal_union_CDT
+	is_subject_of_type = cosmo_african_personal_union_CDTR
+	is_subject_of_type = cosmo_african_personal_union_CDM
+	is_subject_of_type = cosmo_african_personal_union_CDMR
+	is_subject_of_type = cosmo_african_personal_union_CDMT
+	is_subject_of_type = cosmo_african_personal_union_CDMTR
+	is_subject_of_type = cosmo_african_personal_union_CDJR
+	is_subject_of_type = cosmo_african_personal_union_CDJT
+	is_subject_of_type = cosmo_african_personal_union_CDJTR
+	is_subject_of_type = cosmo_african_personal_union_CDJMT
+	is_subject_of_type = cosmo_african_personal_union_CDJMTR
+	is_subject_of_type = cosmo_african_personal_union_CDJM
+	is_subject_of_type = cosmo_african_personal_union_CDJMR
+	is_subject_of_type = cosmo_african_personal_union_G
+	is_subject_of_type = cosmo_african_personal_union_GT
+	is_subject_of_type = cosmo_african_personal_union_GTR
+	is_subject_of_type = cosmo_african_personal_union_GR
+	is_subject_of_type = cosmo_african_personal_union_GM
+	is_subject_of_type = cosmo_african_personal_union_GMR
+	is_subject_of_type = cosmo_african_personal_union_GMT
+	is_subject_of_type = cosmo_african_personal_union_GMTR
+	is_subject_of_type = cosmo_african_personal_union_GJ
+	is_subject_of_type = cosmo_african_personal_union_GJR
+	is_subject_of_type = cosmo_african_personal_union_GJT
+	is_subject_of_type = cosmo_african_personal_union_GJTR
+	is_subject_of_type = cosmo_african_personal_union_GJMT
+	is_subject_of_type = cosmo_african_personal_union_GJMTR
+	is_subject_of_type = cosmo_african_personal_union_GJM
+	is_subject_of_type = cosmo_african_personal_union_GJMR
+	is_subject_of_type = cosmo_african_personal_union_GD
+	is_subject_of_type = cosmo_african_personal_union_GDJ
+	is_subject_of_type = cosmo_african_personal_union_GDR
+	is_subject_of_type = cosmo_african_personal_union_GDT
+	is_subject_of_type = cosmo_african_personal_union_GDTR
+	is_subject_of_type = cosmo_african_personal_union_GDM
+	is_subject_of_type = cosmo_african_personal_union_GDMR
+	is_subject_of_type = cosmo_african_personal_union_GDMT
+	is_subject_of_type = cosmo_african_personal_union_GDMTR
+	is_subject_of_type = cosmo_african_personal_union_GDJR
+	is_subject_of_type = cosmo_african_personal_union_GDJT
+	is_subject_of_type = cosmo_african_personal_union_GDJTR
+	is_subject_of_type = cosmo_african_personal_union_GDJMT
+	is_subject_of_type = cosmo_african_personal_union_GDJMTR
+	is_subject_of_type = cosmo_african_personal_union_GDJM
+	is_subject_of_type = cosmo_african_personal_union_GDJMR
+	is_subject_of_type = cosmo_african_personal_union_GC
+	is_subject_of_type = cosmo_african_personal_union_GCT
+	is_subject_of_type = cosmo_african_personal_union_GCTR
+	is_subject_of_type = cosmo_african_personal_union_GCR
+	is_subject_of_type = cosmo_african_personal_union_GCM
+	is_subject_of_type = cosmo_african_personal_union_GCMR
+	is_subject_of_type = cosmo_african_personal_union_GCMT
+	is_subject_of_type = cosmo_african_personal_union_GCMTR
+	is_subject_of_type = cosmo_african_personal_union_GCJ
+	is_subject_of_type = cosmo_african_personal_union_GCJR
+	is_subject_of_type = cosmo_african_personal_union_GCJT
+	is_subject_of_type = cosmo_african_personal_union_GCJTR
+	is_subject_of_type = cosmo_african_personal_union_GCJMT
+	is_subject_of_type = cosmo_african_personal_union_GCJMTR
+	is_subject_of_type = cosmo_african_personal_union_GCJM
+	is_subject_of_type = cosmo_african_personal_union_GCJMR
+	is_subject_of_type = cosmo_african_personal_union_GCD
+	is_subject_of_type = cosmo_african_personal_union_GCDJ
+	is_subject_of_type = cosmo_african_personal_union_GCDR
+	is_subject_of_type = cosmo_african_personal_union_GCDT
+	is_subject_of_type = cosmo_african_personal_union_GCDTR
+	is_subject_of_type = cosmo_african_personal_union_GCDM
+	is_subject_of_type = cosmo_african_personal_union_GCDMR
+	is_subject_of_type = cosmo_african_personal_union_GCDMT
+	is_subject_of_type = cosmo_african_personal_union_GCDMTR
+	is_subject_of_type = cosmo_african_personal_union_GCDJR
+	is_subject_of_type = cosmo_african_personal_union_GCDJT
+	is_subject_of_type = cosmo_african_personal_union_GCDJTR
+	is_subject_of_type = cosmo_african_personal_union_GCDJMT
+	is_subject_of_type = cosmo_african_personal_union_GCDJMTR
+	is_subject_of_type = cosmo_african_personal_union_GCDJM
+	is_subject_of_type = cosmo_african_personal_union_GCDJMR
+	}
+}
+
+cosmo_sa_personal_union_subtype_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_sa_personal_union_I
+	is_subject_of_type = cosmo_sa_personal_union_II
+	is_subject_of_type = cosmo_sa_personal_union_T
+	is_subject_of_type = cosmo_sa_personal_union_TR
+	is_subject_of_type = cosmo_sa_personal_union_M
+	is_subject_of_type = cosmo_sa_personal_union_MR
+	is_subject_of_type = cosmo_sa_personal_union_MT
+	is_subject_of_type = cosmo_sa_personal_union_MTR
+	is_subject_of_type = cosmo_sa_personal_union_R
+	is_subject_of_type = cosmo_sa_personal_union_J
+	is_subject_of_type = cosmo_sa_personal_union_JR
+	is_subject_of_type = cosmo_sa_personal_union_JT
+	is_subject_of_type = cosmo_sa_personal_union_JTR
+	is_subject_of_type = cosmo_sa_personal_union_JMT
+	is_subject_of_type = cosmo_sa_personal_union_JMTR
+	is_subject_of_type = cosmo_sa_personal_union_JM
+	is_subject_of_type = cosmo_sa_personal_union_JMR
+	is_subject_of_type = cosmo_sa_personal_union_D
+	is_subject_of_type = cosmo_sa_personal_union_DJ
+	is_subject_of_type = cosmo_sa_personal_union_DR
+	is_subject_of_type = cosmo_sa_personal_union_DT
+	is_subject_of_type = cosmo_sa_personal_union_DTR
+	is_subject_of_type = cosmo_sa_personal_union_DM
+	is_subject_of_type = cosmo_sa_personal_union_DMR
+	is_subject_of_type = cosmo_sa_personal_union_DMT
+	is_subject_of_type = cosmo_sa_personal_union_DMTR
+	is_subject_of_type = cosmo_sa_personal_union_DJR
+	is_subject_of_type = cosmo_sa_personal_union_DJT
+	is_subject_of_type = cosmo_sa_personal_union_DJTR
+	is_subject_of_type = cosmo_sa_personal_union_DJMT
+	is_subject_of_type = cosmo_sa_personal_union_DJMTR
+	is_subject_of_type = cosmo_sa_personal_union_DJM
+	is_subject_of_type = cosmo_sa_personal_union_DJMR
+	is_subject_of_type = cosmo_sa_personal_union_C
+	is_subject_of_type = cosmo_sa_personal_union_CT
+	is_subject_of_type = cosmo_sa_personal_union_CTR
+	is_subject_of_type = cosmo_sa_personal_union_CR
+	is_subject_of_type = cosmo_sa_personal_union_CM
+	is_subject_of_type = cosmo_sa_personal_union_CMR
+	is_subject_of_type = cosmo_sa_personal_union_CMT
+	is_subject_of_type = cosmo_sa_personal_union_CMTR
+	is_subject_of_type = cosmo_sa_personal_union_CJ
+	is_subject_of_type = cosmo_sa_personal_union_CJR
+	is_subject_of_type = cosmo_sa_personal_union_CJT
+	is_subject_of_type = cosmo_sa_personal_union_CJTR
+	is_subject_of_type = cosmo_sa_personal_union_CJMT
+	is_subject_of_type = cosmo_sa_personal_union_CJMTR
+	is_subject_of_type = cosmo_sa_personal_union_CJM
+	is_subject_of_type = cosmo_sa_personal_union_CJMR
+	is_subject_of_type = cosmo_sa_personal_union_CD
+	is_subject_of_type = cosmo_sa_personal_union_CDJ
+	is_subject_of_type = cosmo_sa_personal_union_CDR
+	is_subject_of_type = cosmo_sa_personal_union_CDT
+	is_subject_of_type = cosmo_sa_personal_union_CDTR
+	is_subject_of_type = cosmo_sa_personal_union_CDM
+	is_subject_of_type = cosmo_sa_personal_union_CDMR
+	is_subject_of_type = cosmo_sa_personal_union_CDMT
+	is_subject_of_type = cosmo_sa_personal_union_CDMTR
+	is_subject_of_type = cosmo_sa_personal_union_CDJR
+	is_subject_of_type = cosmo_sa_personal_union_CDJT
+	is_subject_of_type = cosmo_sa_personal_union_CDJTR
+	is_subject_of_type = cosmo_sa_personal_union_CDJMT
+	is_subject_of_type = cosmo_sa_personal_union_CDJMTR
+	is_subject_of_type = cosmo_sa_personal_union_CDJM
+	is_subject_of_type = cosmo_sa_personal_union_CDJMR
+	is_subject_of_type = cosmo_sa_personal_union_G
+	is_subject_of_type = cosmo_sa_personal_union_GT
+	is_subject_of_type = cosmo_sa_personal_union_GTR
+	is_subject_of_type = cosmo_sa_personal_union_GR
+	is_subject_of_type = cosmo_sa_personal_union_GM
+	is_subject_of_type = cosmo_sa_personal_union_GMR
+	is_subject_of_type = cosmo_sa_personal_union_GMT
+	is_subject_of_type = cosmo_sa_personal_union_GMTR
+	is_subject_of_type = cosmo_sa_personal_union_GJ
+	is_subject_of_type = cosmo_sa_personal_union_GJR
+	is_subject_of_type = cosmo_sa_personal_union_GJT
+	is_subject_of_type = cosmo_sa_personal_union_GJTR
+	is_subject_of_type = cosmo_sa_personal_union_GJMT
+	is_subject_of_type = cosmo_sa_personal_union_GJMTR
+	is_subject_of_type = cosmo_sa_personal_union_GJM
+	is_subject_of_type = cosmo_sa_personal_union_GJMR
+	is_subject_of_type = cosmo_sa_personal_union_GD
+	is_subject_of_type = cosmo_sa_personal_union_GDJ
+	is_subject_of_type = cosmo_sa_personal_union_GDR
+	is_subject_of_type = cosmo_sa_personal_union_GDT
+	is_subject_of_type = cosmo_sa_personal_union_GDTR
+	is_subject_of_type = cosmo_sa_personal_union_GDM
+	is_subject_of_type = cosmo_sa_personal_union_GDMR
+	is_subject_of_type = cosmo_sa_personal_union_GDMT
+	is_subject_of_type = cosmo_sa_personal_union_GDMTR
+	is_subject_of_type = cosmo_sa_personal_union_GDJR
+	is_subject_of_type = cosmo_sa_personal_union_GDJT
+	is_subject_of_type = cosmo_sa_personal_union_GDJTR
+	is_subject_of_type = cosmo_sa_personal_union_GDJMT
+	is_subject_of_type = cosmo_sa_personal_union_GDJMTR
+	is_subject_of_type = cosmo_sa_personal_union_GDJM
+	is_subject_of_type = cosmo_sa_personal_union_GDJMR
+	is_subject_of_type = cosmo_sa_personal_union_GC
+	is_subject_of_type = cosmo_sa_personal_union_GCT
+	is_subject_of_type = cosmo_sa_personal_union_GCTR
+	is_subject_of_type = cosmo_sa_personal_union_GCR
+	is_subject_of_type = cosmo_sa_personal_union_GCM
+	is_subject_of_type = cosmo_sa_personal_union_GCMR
+	is_subject_of_type = cosmo_sa_personal_union_GCMT
+	is_subject_of_type = cosmo_sa_personal_union_GCMTR
+	is_subject_of_type = cosmo_sa_personal_union_GCJ
+	is_subject_of_type = cosmo_sa_personal_union_GCJR
+	is_subject_of_type = cosmo_sa_personal_union_GCJT
+	is_subject_of_type = cosmo_sa_personal_union_GCJTR
+	is_subject_of_type = cosmo_sa_personal_union_GCJMT
+	is_subject_of_type = cosmo_sa_personal_union_GCJMTR
+	is_subject_of_type = cosmo_sa_personal_union_GCJM
+	is_subject_of_type = cosmo_sa_personal_union_GCJMR
+	is_subject_of_type = cosmo_sa_personal_union_GCD
+	is_subject_of_type = cosmo_sa_personal_union_GCDJ
+	is_subject_of_type = cosmo_sa_personal_union_GCDR
+	is_subject_of_type = cosmo_sa_personal_union_GCDT
+	is_subject_of_type = cosmo_sa_personal_union_GCDTR
+	is_subject_of_type = cosmo_sa_personal_union_GCDM
+	is_subject_of_type = cosmo_sa_personal_union_GCDMR
+	is_subject_of_type = cosmo_sa_personal_union_GCDMT
+	is_subject_of_type = cosmo_sa_personal_union_GCDMTR
+	is_subject_of_type = cosmo_sa_personal_union_GCDJR
+	is_subject_of_type = cosmo_sa_personal_union_GCDJT
+	is_subject_of_type = cosmo_sa_personal_union_GCDJTR
+	is_subject_of_type = cosmo_sa_personal_union_GCDJMT
+	is_subject_of_type = cosmo_sa_personal_union_GCDJMTR
+	is_subject_of_type = cosmo_sa_personal_union_GCDJM
+	is_subject_of_type = cosmo_sa_personal_union_GCDJMR
+	}
+}
+
+cosmo_asian_personal_union_subtype_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_asian_personal_union_I
+	is_subject_of_type = cosmo_asian_personal_union_II
+	is_subject_of_type = cosmo_asian_personal_union_T
+	is_subject_of_type = cosmo_asian_personal_union_TR
+	is_subject_of_type = cosmo_asian_personal_union_M
+	is_subject_of_type = cosmo_asian_personal_union_MR
+	is_subject_of_type = cosmo_asian_personal_union_MT
+	is_subject_of_type = cosmo_asian_personal_union_MTR
+	is_subject_of_type = cosmo_asian_personal_union_R
+	is_subject_of_type = cosmo_asian_personal_union_J
+	is_subject_of_type = cosmo_asian_personal_union_JR
+	is_subject_of_type = cosmo_asian_personal_union_JT
+	is_subject_of_type = cosmo_asian_personal_union_JTR
+	is_subject_of_type = cosmo_asian_personal_union_JMT
+	is_subject_of_type = cosmo_asian_personal_union_JMTR
+	is_subject_of_type = cosmo_asian_personal_union_JM
+	is_subject_of_type = cosmo_asian_personal_union_JMR
+	is_subject_of_type = cosmo_asian_personal_union_D
+	is_subject_of_type = cosmo_asian_personal_union_DJ
+	is_subject_of_type = cosmo_asian_personal_union_DR
+	is_subject_of_type = cosmo_asian_personal_union_DT
+	is_subject_of_type = cosmo_asian_personal_union_DTR
+	is_subject_of_type = cosmo_asian_personal_union_DM
+	is_subject_of_type = cosmo_asian_personal_union_DMR
+	is_subject_of_type = cosmo_asian_personal_union_DMT
+	is_subject_of_type = cosmo_asian_personal_union_DMTR
+	is_subject_of_type = cosmo_asian_personal_union_DJR
+	is_subject_of_type = cosmo_asian_personal_union_DJT
+	is_subject_of_type = cosmo_asian_personal_union_DJTR
+	is_subject_of_type = cosmo_asian_personal_union_DJMT
+	is_subject_of_type = cosmo_asian_personal_union_DJMTR
+	is_subject_of_type = cosmo_asian_personal_union_DJM
+	is_subject_of_type = cosmo_asian_personal_union_DJMR
+	is_subject_of_type = cosmo_asian_personal_union_C
+	is_subject_of_type = cosmo_asian_personal_union_CT
+	is_subject_of_type = cosmo_asian_personal_union_CTR
+	is_subject_of_type = cosmo_asian_personal_union_CR
+	is_subject_of_type = cosmo_asian_personal_union_CM
+	is_subject_of_type = cosmo_asian_personal_union_CMR
+	is_subject_of_type = cosmo_asian_personal_union_CMT
+	is_subject_of_type = cosmo_asian_personal_union_CMTR
+	is_subject_of_type = cosmo_asian_personal_union_CJ
+	is_subject_of_type = cosmo_asian_personal_union_CJR
+	is_subject_of_type = cosmo_asian_personal_union_CJT
+	is_subject_of_type = cosmo_asian_personal_union_CJTR
+	is_subject_of_type = cosmo_asian_personal_union_CJMT
+	is_subject_of_type = cosmo_asian_personal_union_CJMTR
+	is_subject_of_type = cosmo_asian_personal_union_CJM
+	is_subject_of_type = cosmo_asian_personal_union_CJMR
+	is_subject_of_type = cosmo_asian_personal_union_CD
+	is_subject_of_type = cosmo_asian_personal_union_CDJ
+	is_subject_of_type = cosmo_asian_personal_union_CDR
+	is_subject_of_type = cosmo_asian_personal_union_CDT
+	is_subject_of_type = cosmo_asian_personal_union_CDTR
+	is_subject_of_type = cosmo_asian_personal_union_CDM
+	is_subject_of_type = cosmo_asian_personal_union_CDMR
+	is_subject_of_type = cosmo_asian_personal_union_CDMT
+	is_subject_of_type = cosmo_asian_personal_union_CDMTR
+	is_subject_of_type = cosmo_asian_personal_union_CDJR
+	is_subject_of_type = cosmo_asian_personal_union_CDJT
+	is_subject_of_type = cosmo_asian_personal_union_CDJTR
+	is_subject_of_type = cosmo_asian_personal_union_CDJMT
+	is_subject_of_type = cosmo_asian_personal_union_CDJMTR
+	is_subject_of_type = cosmo_asian_personal_union_CDJM
+	is_subject_of_type = cosmo_asian_personal_union_CDJMR
+	is_subject_of_type = cosmo_asian_personal_union_G
+	is_subject_of_type = cosmo_asian_personal_union_GT
+	is_subject_of_type = cosmo_asian_personal_union_GTR
+	is_subject_of_type = cosmo_asian_personal_union_GR
+	is_subject_of_type = cosmo_asian_personal_union_GM
+	is_subject_of_type = cosmo_asian_personal_union_GMR
+	is_subject_of_type = cosmo_asian_personal_union_GMT
+	is_subject_of_type = cosmo_asian_personal_union_GMTR
+	is_subject_of_type = cosmo_asian_personal_union_GJ
+	is_subject_of_type = cosmo_asian_personal_union_GJR
+	is_subject_of_type = cosmo_asian_personal_union_GJT
+	is_subject_of_type = cosmo_asian_personal_union_GJTR
+	is_subject_of_type = cosmo_asian_personal_union_GJMT
+	is_subject_of_type = cosmo_asian_personal_union_GJMTR
+	is_subject_of_type = cosmo_asian_personal_union_GJM
+	is_subject_of_type = cosmo_asian_personal_union_GJMR
+	is_subject_of_type = cosmo_asian_personal_union_GD
+	is_subject_of_type = cosmo_asian_personal_union_GDJ
+	is_subject_of_type = cosmo_asian_personal_union_GDR
+	is_subject_of_type = cosmo_asian_personal_union_GDT
+	is_subject_of_type = cosmo_asian_personal_union_GDTR
+	is_subject_of_type = cosmo_asian_personal_union_GDM
+	is_subject_of_type = cosmo_asian_personal_union_GDMR
+	is_subject_of_type = cosmo_asian_personal_union_GDMT
+	is_subject_of_type = cosmo_asian_personal_union_GDMTR
+	is_subject_of_type = cosmo_asian_personal_union_GDJR
+	is_subject_of_type = cosmo_asian_personal_union_GDJT
+	is_subject_of_type = cosmo_asian_personal_union_GDJTR
+	is_subject_of_type = cosmo_asian_personal_union_GDJMT
+	is_subject_of_type = cosmo_asian_personal_union_GDJMTR
+	is_subject_of_type = cosmo_asian_personal_union_GDJM
+	is_subject_of_type = cosmo_asian_personal_union_GDJMR
+	is_subject_of_type = cosmo_asian_personal_union_GC
+	is_subject_of_type = cosmo_asian_personal_union_GCT
+	is_subject_of_type = cosmo_asian_personal_union_GCTR
+	is_subject_of_type = cosmo_asian_personal_union_GCR
+	is_subject_of_type = cosmo_asian_personal_union_GCM
+	is_subject_of_type = cosmo_asian_personal_union_GCMR
+	is_subject_of_type = cosmo_asian_personal_union_GCMT
+	is_subject_of_type = cosmo_asian_personal_union_GCMTR
+	is_subject_of_type = cosmo_asian_personal_union_GCJ
+	is_subject_of_type = cosmo_asian_personal_union_GCJR
+	is_subject_of_type = cosmo_asian_personal_union_GCJT
+	is_subject_of_type = cosmo_asian_personal_union_GCJTR
+	is_subject_of_type = cosmo_asian_personal_union_GCJMT
+	is_subject_of_type = cosmo_asian_personal_union_GCJMTR
+	is_subject_of_type = cosmo_asian_personal_union_GCJM
+	is_subject_of_type = cosmo_asian_personal_union_GCJMR
+	is_subject_of_type = cosmo_asian_personal_union_GCD
+	is_subject_of_type = cosmo_asian_personal_union_GCDJ
+	is_subject_of_type = cosmo_asian_personal_union_GCDR
+	is_subject_of_type = cosmo_asian_personal_union_GCDT
+	is_subject_of_type = cosmo_asian_personal_union_GCDTR
+	is_subject_of_type = cosmo_asian_personal_union_GCDM
+	is_subject_of_type = cosmo_asian_personal_union_GCDMR
+	is_subject_of_type = cosmo_asian_personal_union_GCDMT
+	is_subject_of_type = cosmo_asian_personal_union_GCDMTR
+	is_subject_of_type = cosmo_asian_personal_union_GCDJR
+	is_subject_of_type = cosmo_asian_personal_union_GCDJT
+	is_subject_of_type = cosmo_asian_personal_union_GCDJTR
+	is_subject_of_type = cosmo_asian_personal_union_GCDJMT
+	is_subject_of_type = cosmo_asian_personal_union_GCDJMTR
+	is_subject_of_type = cosmo_asian_personal_union_GCDJM
+	is_subject_of_type = cosmo_asian_personal_union_GCDJMR
+	}
+}
+
+cosmo_na_personal_union_subtype_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_na_personal_union_I
+	is_subject_of_type = cosmo_na_personal_union_II
+	is_subject_of_type = cosmo_na_personal_union_T
+	is_subject_of_type = cosmo_na_personal_union_TR
+	is_subject_of_type = cosmo_na_personal_union_M
+	is_subject_of_type = cosmo_na_personal_union_MR
+	is_subject_of_type = cosmo_na_personal_union_MT
+	is_subject_of_type = cosmo_na_personal_union_MTR
+	is_subject_of_type = cosmo_na_personal_union_R
+	is_subject_of_type = cosmo_na_personal_union_J
+	is_subject_of_type = cosmo_na_personal_union_JR
+	is_subject_of_type = cosmo_na_personal_union_JT
+	is_subject_of_type = cosmo_na_personal_union_JTR
+	is_subject_of_type = cosmo_na_personal_union_JMT
+	is_subject_of_type = cosmo_na_personal_union_JMTR
+	is_subject_of_type = cosmo_na_personal_union_JM
+	is_subject_of_type = cosmo_na_personal_union_JMR
+	is_subject_of_type = cosmo_na_personal_union_D
+	is_subject_of_type = cosmo_na_personal_union_DJ
+	is_subject_of_type = cosmo_na_personal_union_DR
+	is_subject_of_type = cosmo_na_personal_union_DT
+	is_subject_of_type = cosmo_na_personal_union_DTR
+	is_subject_of_type = cosmo_na_personal_union_DM
+	is_subject_of_type = cosmo_na_personal_union_DMR
+	is_subject_of_type = cosmo_na_personal_union_DMT
+	is_subject_of_type = cosmo_na_personal_union_DMTR
+	is_subject_of_type = cosmo_na_personal_union_DJR
+	is_subject_of_type = cosmo_na_personal_union_DJT
+	is_subject_of_type = cosmo_na_personal_union_DJTR
+	is_subject_of_type = cosmo_na_personal_union_DJMT
+	is_subject_of_type = cosmo_na_personal_union_DJMTR
+	is_subject_of_type = cosmo_na_personal_union_DJM
+	is_subject_of_type = cosmo_na_personal_union_DJMR
+	is_subject_of_type = cosmo_na_personal_union_C
+	is_subject_of_type = cosmo_na_personal_union_CT
+	is_subject_of_type = cosmo_na_personal_union_CTR
+	is_subject_of_type = cosmo_na_personal_union_CR
+	is_subject_of_type = cosmo_na_personal_union_CM
+	is_subject_of_type = cosmo_na_personal_union_CMR
+	is_subject_of_type = cosmo_na_personal_union_CMT
+	is_subject_of_type = cosmo_na_personal_union_CMTR
+	is_subject_of_type = cosmo_na_personal_union_CJ
+	is_subject_of_type = cosmo_na_personal_union_CJR
+	is_subject_of_type = cosmo_na_personal_union_CJT
+	is_subject_of_type = cosmo_na_personal_union_CJTR
+	is_subject_of_type = cosmo_na_personal_union_CJMT
+	is_subject_of_type = cosmo_na_personal_union_CJMTR
+	is_subject_of_type = cosmo_na_personal_union_CJM
+	is_subject_of_type = cosmo_na_personal_union_CJMR
+	is_subject_of_type = cosmo_na_personal_union_CD
+	is_subject_of_type = cosmo_na_personal_union_CDJ
+	is_subject_of_type = cosmo_na_personal_union_CDR
+	is_subject_of_type = cosmo_na_personal_union_CDT
+	is_subject_of_type = cosmo_na_personal_union_CDTR
+	is_subject_of_type = cosmo_na_personal_union_CDM
+	is_subject_of_type = cosmo_na_personal_union_CDMR
+	is_subject_of_type = cosmo_na_personal_union_CDMT
+	is_subject_of_type = cosmo_na_personal_union_CDMTR
+	is_subject_of_type = cosmo_na_personal_union_CDJR
+	is_subject_of_type = cosmo_na_personal_union_CDJT
+	is_subject_of_type = cosmo_na_personal_union_CDJTR
+	is_subject_of_type = cosmo_na_personal_union_CDJMT
+	is_subject_of_type = cosmo_na_personal_union_CDJMTR
+	is_subject_of_type = cosmo_na_personal_union_CDJM
+	is_subject_of_type = cosmo_na_personal_union_CDJMR
+	is_subject_of_type = cosmo_na_personal_union_G
+	is_subject_of_type = cosmo_na_personal_union_GT
+	is_subject_of_type = cosmo_na_personal_union_GTR
+	is_subject_of_type = cosmo_na_personal_union_GR
+	is_subject_of_type = cosmo_na_personal_union_GM
+	is_subject_of_type = cosmo_na_personal_union_GMR
+	is_subject_of_type = cosmo_na_personal_union_GMT
+	is_subject_of_type = cosmo_na_personal_union_GMTR
+	is_subject_of_type = cosmo_na_personal_union_GJ
+	is_subject_of_type = cosmo_na_personal_union_GJR
+	is_subject_of_type = cosmo_na_personal_union_GJT
+	is_subject_of_type = cosmo_na_personal_union_GJTR
+	is_subject_of_type = cosmo_na_personal_union_GJMT
+	is_subject_of_type = cosmo_na_personal_union_GJMTR
+	is_subject_of_type = cosmo_na_personal_union_GJM
+	is_subject_of_type = cosmo_na_personal_union_GJMR
+	is_subject_of_type = cosmo_na_personal_union_GD
+	is_subject_of_type = cosmo_na_personal_union_GDJ
+	is_subject_of_type = cosmo_na_personal_union_GDR
+	is_subject_of_type = cosmo_na_personal_union_GDT
+	is_subject_of_type = cosmo_na_personal_union_GDTR
+	is_subject_of_type = cosmo_na_personal_union_GDM
+	is_subject_of_type = cosmo_na_personal_union_GDMR
+	is_subject_of_type = cosmo_na_personal_union_GDMT
+	is_subject_of_type = cosmo_na_personal_union_GDMTR
+	is_subject_of_type = cosmo_na_personal_union_GDJR
+	is_subject_of_type = cosmo_na_personal_union_GDJT
+	is_subject_of_type = cosmo_na_personal_union_GDJTR
+	is_subject_of_type = cosmo_na_personal_union_GDJMT
+	is_subject_of_type = cosmo_na_personal_union_GDJMTR
+	is_subject_of_type = cosmo_na_personal_union_GDJM
+	is_subject_of_type = cosmo_na_personal_union_GDJMR
+	is_subject_of_type = cosmo_na_personal_union_GC
+	is_subject_of_type = cosmo_na_personal_union_GCT
+	is_subject_of_type = cosmo_na_personal_union_GCTR
+	is_subject_of_type = cosmo_na_personal_union_GCR
+	is_subject_of_type = cosmo_na_personal_union_GCM
+	is_subject_of_type = cosmo_na_personal_union_GCMR
+	is_subject_of_type = cosmo_na_personal_union_GCMT
+	is_subject_of_type = cosmo_na_personal_union_GCMTR
+	is_subject_of_type = cosmo_na_personal_union_GCJ
+	is_subject_of_type = cosmo_na_personal_union_GCJR
+	is_subject_of_type = cosmo_na_personal_union_GCJT
+	is_subject_of_type = cosmo_na_personal_union_GCJTR
+	is_subject_of_type = cosmo_na_personal_union_GCJMT
+	is_subject_of_type = cosmo_na_personal_union_GCJMTR
+	is_subject_of_type = cosmo_na_personal_union_GCJM
+	is_subject_of_type = cosmo_na_personal_union_GCJMR
+	is_subject_of_type = cosmo_na_personal_union_GCD
+	is_subject_of_type = cosmo_na_personal_union_GCDJ
+	is_subject_of_type = cosmo_na_personal_union_GCDR
+	is_subject_of_type = cosmo_na_personal_union_GCDT
+	is_subject_of_type = cosmo_na_personal_union_GCDTR
+	is_subject_of_type = cosmo_na_personal_union_GCDM
+	is_subject_of_type = cosmo_na_personal_union_GCDMR
+	is_subject_of_type = cosmo_na_personal_union_GCDMT
+	is_subject_of_type = cosmo_na_personal_union_GCDMTR
+	is_subject_of_type = cosmo_na_personal_union_GCDJR
+	is_subject_of_type = cosmo_na_personal_union_GCDJT
+	is_subject_of_type = cosmo_na_personal_union_GCDJTR
+	is_subject_of_type = cosmo_na_personal_union_GCDJMT
+	is_subject_of_type = cosmo_na_personal_union_GCDJMTR
+	is_subject_of_type = cosmo_na_personal_union_GCDJM
+	is_subject_of_type = cosmo_na_personal_union_GCDJMR
+	}
+}
+
+cosmo_daimyo_personal_union_subject_trigger = {
+	OR = {
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_daimyo_personal_union_I
+		}
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_daimyo_personal_union_II
+		}		
+	}
+	is_subject_of = ROOT
+}
+
+cosmo_african_personal_union_subject_trigger = {
+	OR = {
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_african_personal_union_I
+		}
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_african_personal_union_II
+		}		
+	}
+	is_subject_of = ROOT
+}
+
+cosmo_sa_personal_union_subject_trigger = {
+	OR = {
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_sa_personal_union_I
+		}
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_sa_personal_union_II
+		}		
+	}
+	is_subject_of = ROOT
+}
+
+cosmo_asian_personal_union_subject_trigger = {
+	OR = {
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_asian_personal_union_I
+		}
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_asian_personal_union_II
+		}		
+	}
+	is_subject_of = ROOT
+}
+
+cosmo_na_personal_union_subject_trigger = {
+	OR = {
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_na_personal_union_I
+		}
+		has_opinion_modifier = {
+			who = ROOT
+			modifier = is_cosmo_na_personal_union_II
+		}		
+	}
+	is_subject_of = ROOT
+}
+
+cosmo_slaver_bribery_trigger = {
+	is_subject_of = ROOT
+OR = {	
+	is_subject_of_type = cosmo_slaver_bribe_vassal
+	}
+}
+
+cosmo_sending_slaves_eligible_trigger = {
+	is_in_capital_area = no
+	NOT = {
+	development = 15
+	}
+	NOT = {
+		AND = {
+			continent = europe
+			NOT = {
+		has_building = port_of_pleasure
+			}
+		}
+	}
+}
+
+cosmo_sending_slaves_source_trigger = {
+		OR = {
+			any_owned_province = {
+			has_building = cosmo_slave_market
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade		
+				}
+			}
+			any_subject_country = {			
+			any_owned_province = {
+			has_building = cosmo_slave_market
+				NOT = {
+				has_province_modifier = cosmo_slave_market_closed
+				}			
+				OR = {
+		has_province_modifier = cosmo_west_african_slaves_captured
+		has_province_modifier = cosmo_west_african_slave_market_upgrade
+		has_province_modifier = cosmo_thai_slaves_captured
+		has_province_modifier = cosmo_thai_slave_market_upgrade
+		has_province_modifier = cosmo_malay_slaves_captured
+		has_province_modifier = cosmo_malay_slave_market_upgrade
+		has_province_modifier = cosmo_korea_slaves_captured
+		has_province_modifier = cosmo_korea_slave_market_upgrade
+		has_province_modifier = cosmo_china_slaves_captured
+		has_province_modifier = cosmo_china_slave_market_upgrade
+		has_province_modifier = cosmo_japanese_slaves_captured
+		has_province_modifier = cosmo_japan_slave_market_upgrade
+		has_province_modifier = cosmo_central_american_slaves_captured
+		has_province_modifier = cosmo_central_america_slave_market_upgrade
+		has_province_modifier = cosmo_south_american_slaves_captured
+		has_province_modifier = cosmo_south_america_slave_market_upgrade
+		has_province_modifier = cosmo_north_american_slaves_captured
+		has_province_modifier = cosmo_north_america_slave_market_upgrade		
+				}
+			}
+			}			
+		}
+}
+
+cosmo_port_of_pleasure_building_region_trigger = {
+	is_in_capital_area = no
+	OR = {
+		is_node_in_trade_company_region = yes 
+		area = baleares_area
+		colonial_region = colonial_canada
+		colonial_region = colonial_eastern_america
+		area = macaronesia_area
+		
+		colonial_region = colonial_louisiana
+		colonial_region = colonial_california
+		colonial_region = colonial_mexico
+		colonial_region = colonial_the_carribean
+		colonial_region = colonial_colombia
+		colonial_region = colonial_peru
+		colonial_region = colonial_la_plata
+		colonial_region = colonial_brazil
+		colonial_region = colonial_australia
+		colonial_region = colonial_placeholder_1
+		colonial_region = colonial_placeholder_2
+		colonial_region = colonial_placeholder_3
+		colonial_region = colonial_placeholder_4
+		colonial_region = colonial_placeholder_5
+		colonial_region = colonial_placeholder_6
+		colonial_region = colonial_placeholder_7
+		colonial_region = colonial_placeholder_8
+		colonial_region = colonial_placeholder_9
+		colonial_region = colonial_placeholder_10
+		colonial_region = colonial_placeholder_11
+		colonial_region = colonial_placeholder_12
+		colonial_region = colonial_placeholder_13
+		colonial_region = colonial_placeholder_14
+		colonial_region = colonial_placeholder_15
+		colonial_region = colonial_placeholder_16
+		colonial_region = colonial_placeholder_17
+		colonial_region = colonial_placeholder_18
+		colonial_region = colonial_placeholder_19	
+	}
+}
+
+cosmo_send_slaves_building_region_trigger = {
+	is_in_capital_area = no
+	OR = {
+		is_node_in_trade_company_region = yes 
+		area = baleares_area
+		colonial_region = colonial_canada
+		colonial_region = colonial_eastern_america
+		area = macaronesia_area
+		
+		colonial_region = colonial_louisiana
+		colonial_region = colonial_california
+		colonial_region = colonial_mexico
+		colonial_region = colonial_the_carribean
+		colonial_region = colonial_colombia
+		colonial_region = colonial_peru
+		colonial_region = colonial_la_plata
+		colonial_region = colonial_brazil
+		colonial_region = colonial_australia
+		colonial_region = colonial_placeholder_1
+		colonial_region = colonial_placeholder_2
+		colonial_region = colonial_placeholder_3
+		colonial_region = colonial_placeholder_4
+		colonial_region = colonial_placeholder_5
+		colonial_region = colonial_placeholder_6
+		colonial_region = colonial_placeholder_7
+		colonial_region = colonial_placeholder_8
+		colonial_region = colonial_placeholder_9
+		colonial_region = colonial_placeholder_10
+		colonial_region = colonial_placeholder_11
+		colonial_region = colonial_placeholder_12
+		colonial_region = colonial_placeholder_13
+		colonial_region = colonial_placeholder_14
+		colonial_region = colonial_placeholder_15
+		colonial_region = colonial_placeholder_16
+		colonial_region = colonial_placeholder_17
+		colonial_region = colonial_placeholder_18
+		colonial_region = colonial_placeholder_19	
+	}
+	NOT = {
+		AND = {
+			continent = europe
+			NOT = {
+			has_province_flag = port_of_pleasure
+			}
+		}
+	}
+}
+
+cosmo_consort_has_honeymoon_trigger = {
+	OR = {	#europe
+					has_consort_flag = cosmo_europe_marriage_1
+					has_consort_flag = cosmo_europe_marriage_2
+					has_consort_flag = cosmo_europe_marriage_3
+					has_consort_flag = cosmo_europe_marriage_4
+					has_consort_flag = cosmo_europe_marriage_5
+					has_consort_flag = cosmo_europe_marriage_6
+					has_consort_flag = cosmo_europe_marriage_7
+					has_consort_flag = cosmo_europe_marriage_8
+					has_consort_flag = cosmo_europe_marriage_9
+					has_consort_flag = cosmo_europe_marriage_10
+					has_consort_flag = cosmo_europe_marriage_11
+					has_consort_flag = cosmo_europe_marriage_12
+					has_consort_flag = cosmo_europe_marriage_13
+					has_consort_flag = cosmo_europe_marriage_14
+					has_consort_flag = cosmo_europe_marriage_15
+					has_consort_flag = cosmo_europe_marriage_16
+					has_consort_flag = cosmo_europe_marriage_17
+					has_consort_flag = cosmo_europe_marriage_18
+					has_consort_flag = cosmo_europe_marriage_19
+					has_consort_flag = cosmo_europe_marriage_20	
+
+					has_consort_flag = cosmo_eurowives_1a
+					has_consort_flag = cosmo_eurowives_1b
+					has_consort_flag = cosmo_eurowives_1c
+					has_consort_flag = cosmo_eurowives_2a
+					has_consort_flag = cosmo_eurowives_2b
+					has_consort_flag = cosmo_eurowives_2c
+					has_consort_flag = cosmo_eurowives_3a
+					has_consort_flag = cosmo_eurowives_3b
+					has_consort_flag = cosmo_eurowives_3c
+					has_consort_flag = cosmo_eurowives_4a
+					has_consort_flag = cosmo_eurowives_4b
+					has_consort_flag = cosmo_eurowives_4c
+					has_consort_flag = cosmo_eurowives_5a
+					has_consort_flag = cosmo_eurowives_5b
+					has_consort_flag = cosmo_eurowives_5c
+					has_consort_flag = cosmo_eurowives_6a
+					has_consort_flag = cosmo_eurowives_6b
+					has_consort_flag = cosmo_eurowives_6c
+					has_consort_flag = cosmo_eurowives_7a
+					has_consort_flag = cosmo_eurowives_7b
+					has_consort_flag = cosmo_eurowives_7c
+					has_consort_flag = cosmo_eurowives_8a
+					has_consort_flag = cosmo_eurowives_8b
+					has_consort_flag = cosmo_eurowives_8c																		
+					has_consort_flag = cosmo_eurowives_9a
+					has_consort_flag = cosmo_eurowives_9b
+					has_consort_flag = cosmo_eurowives_9c	
+					has_consort_flag = cosmo_eurowives_10a
+					has_consort_flag = cosmo_eurowives_10b
+					has_consort_flag = cosmo_eurowives_10c	
+					has_consort_flag = cosmo_eurowives_11a
+					has_consort_flag = cosmo_eurowives_11b
+					has_consort_flag = cosmo_eurowives_11c
+					has_consort_flag = cosmo_eurowives_12a
+					has_consort_flag = cosmo_eurowives_12b
+					has_consort_flag = cosmo_eurowives_12c
+					has_consort_flag = cosmo_eurowives_13a
+					has_consort_flag = cosmo_eurowives_13b
+					has_consort_flag = cosmo_eurowives_13c	
+					has_consort_flag = cosmo_eurowives_14a
+					has_consort_flag = cosmo_eurowives_14b
+					has_consort_flag = cosmo_eurowives_14c	
+					has_consort_flag = cosmo_eurowives_15a
+					has_consort_flag = cosmo_eurowives_15b
+					has_consort_flag = cosmo_eurowives_15c
+					has_consort_flag = cosmo_eurowives_16a
+					has_consort_flag = cosmo_eurowives_16b
+					has_consort_flag = cosmo_eurowives_16c
+					has_consort_flag = cosmo_eurowives_17a
+					has_consort_flag = cosmo_eurowives_17b
+					has_consort_flag = cosmo_eurowives_17c
+					has_consort_flag = cosmo_eurowives_18a
+					has_consort_flag = cosmo_eurowives_18b
+					has_consort_flag = cosmo_eurowives_18c	
+					has_consort_flag = cosmo_eurowives_19a
+					has_consort_flag = cosmo_eurowives_19b
+					has_consort_flag = cosmo_eurowives_19c									
+
+					has_consort_flag = cosmo_pirate_1a
+					has_consort_flag = cosmo_pirate_1b
+					has_consort_flag = cosmo_pirate_1c
+					has_consort_flag = cosmo_pirate_2a
+					has_consort_flag = cosmo_pirate_2b
+					has_consort_flag = cosmo_pirate_2c
+					has_consort_flag = cosmo_pirate_3a
+					has_consort_flag = cosmo_pirate_3b
+					has_consort_flag = cosmo_pirate_3c
+
+					has_consort_flag = cosmo_euroharem_1a
+					has_consort_flag = cosmo_euroharem_1b
+					has_consort_flag = cosmo_euroharem_1c
+					has_consort_flag = cosmo_euroharem_2a
+					has_consort_flag = cosmo_euroharem_2b
+					has_consort_flag = cosmo_euroharem_2c
+					has_consort_flag = cosmo_euroharem_3a
+					has_consort_flag = cosmo_euroharem_3b
+					has_consort_flag = cosmo_euroharem_3c
+					has_consort_flag = cosmo_euroharem_4a
+					has_consort_flag = cosmo_euroharem_4b
+					has_consort_flag = cosmo_euroharem_4c
+					has_consort_flag = cosmo_euroharem_5a
+					has_consort_flag = cosmo_euroharem_5b
+					has_consort_flag = cosmo_euroharem_5c
+					has_consort_flag = cosmo_euroharem_6a
+					has_consort_flag = cosmo_euroharem_6b
+					has_consort_flag = cosmo_euroharem_6c
+					has_consort_flag = cosmo_euroharem_7a
+					has_consort_flag = cosmo_euroharem_7b	
+		#africa
+					has_consort_flag = cosmo_africa_marriage_1
+					has_consort_flag = cosmo_africa_marriage_2
+					has_consort_flag = cosmo_africa_marriage_3
+					has_consort_flag = cosmo_africa_marriage_4
+					has_consort_flag = cosmo_africa_marriage_5
+					has_consort_flag = cosmo_africa_marriage_6
+					has_consort_flag = cosmo_africa_marriage_7
+					has_consort_flag = cosmo_africa_marriage_8
+					has_consort_flag = cosmo_africa_marriage_9
+					has_consort_flag = cosmo_africa_marriage_10
+					has_consort_flag = cosmo_africa_marriage_11
+					has_consort_flag = cosmo_africa_marriage_12
+					has_consort_flag = cosmo_africa_marriage_13
+					has_consort_flag = cosmo_africa_marriage_14
+					has_consort_flag = cosmo_africa_marriage_15
+					has_consort_flag = cosmo_africa_marriage_16
+					has_consort_flag = cosmo_africa_marriage_17
+					has_consort_flag = cosmo_africa_marriage_18
+					has_consort_flag = cosmo_africa_marriage_19
+					has_consort_flag = cosmo_africa_marriage_20	
+
+					has_consort_flag = cosmo_africawives_1a
+					has_consort_flag = cosmo_africawives_1b
+					has_consort_flag = cosmo_africawives_1c
+					has_consort_flag = cosmo_africawives_2a
+					has_consort_flag = cosmo_africawives_2b
+					has_consort_flag = cosmo_africawives_2c
+					has_consort_flag = cosmo_africawives_3a
+					has_consort_flag = cosmo_africawives_3b
+					has_consort_flag = cosmo_africawives_3c
+					has_consort_flag = cosmo_africawives_4a
+					has_consort_flag = cosmo_africawives_4b
+					has_consort_flag = cosmo_africawives_4c
+					has_consort_flag = cosmo_africawives_5a
+					has_consort_flag = cosmo_africawives_5b
+					has_consort_flag = cosmo_africawives_5c
+					has_consort_flag = cosmo_africawives_6a
+					has_consort_flag = cosmo_africawives_6b
+					has_consort_flag = cosmo_africawives_6c
+					has_consort_flag = cosmo_africawives_7a
+					has_consort_flag = cosmo_africawives_7b
+					has_consort_flag = cosmo_africawives_7c
+					has_consort_flag = cosmo_africawives_8a
+					has_consort_flag = cosmo_africawives_8b
+					has_consort_flag = cosmo_africawives_8c																		
+					has_consort_flag = cosmo_africawives_9a
+					has_consort_flag = cosmo_africawives_9b
+					has_consort_flag = cosmo_africawives_9c	
+					has_consort_flag = cosmo_africawives_10a
+					has_consort_flag = cosmo_africawives_10b
+					has_consort_flag = cosmo_africawives_10c	
+					has_consort_flag = cosmo_africawives_11a
+					has_consort_flag = cosmo_africawives_11b
+					has_consort_flag = cosmo_africawives_11c
+					has_consort_flag = cosmo_africawives_12a
+					has_consort_flag = cosmo_africawives_12b
+					has_consort_flag = cosmo_africawives_12c
+					has_consort_flag = cosmo_africawives_13a
+					has_consort_flag = cosmo_africawives_13b
+					has_consort_flag = cosmo_africawives_13c	
+					has_consort_flag = cosmo_africawives_14a
+					has_consort_flag = cosmo_africawives_14b
+					has_consort_flag = cosmo_africawives_14c	
+					has_consort_flag = cosmo_africawives_15a
+					has_consort_flag = cosmo_africawives_15b
+					has_consort_flag = cosmo_africawives_15c
+					has_consort_flag = cosmo_africawives_16a
+					has_consort_flag = cosmo_africawives_16b
+					has_consort_flag = cosmo_africawives_16c
+		#NA wives
+					has_consort_flag = cosmo_na_marriage_1
+					has_consort_flag = cosmo_na_marriage_2
+					has_consort_flag = cosmo_na_marriage_3
+					has_consort_flag = cosmo_na_marriage_4
+					has_consort_flag = cosmo_na_marriage_5
+					has_consort_flag = cosmo_na_marriage_6
+					has_consort_flag = cosmo_na_marriage_7
+					has_consort_flag = cosmo_na_marriage_8
+					has_consort_flag = cosmo_na_marriage_9
+					has_consort_flag = cosmo_na_marriage_10
+					has_consort_flag = cosmo_na_marriage_11
+					has_consort_flag = cosmo_na_marriage_12
+					has_consort_flag = cosmo_na_marriage_13
+					has_consort_flag = cosmo_na_marriage_14
+					has_consort_flag = cosmo_na_marriage_15
+					has_consort_flag = cosmo_na_marriage_16
+					has_consort_flag = cosmo_na_marriage_17
+					has_consort_flag = cosmo_na_marriage_18
+					has_consort_flag = cosmo_na_marriage_19
+					has_consort_flag = cosmo_na_marriage_20	
+
+					has_consort_flag = cosmo_nawives_1a
+					has_consort_flag = cosmo_nawives_1b
+					has_consort_flag = cosmo_nawives_1c
+					has_consort_flag = cosmo_nawives_2a
+					has_consort_flag = cosmo_nawives_2b
+					has_consort_flag = cosmo_nawives_2c
+					has_consort_flag = cosmo_nawives_3a
+					has_consort_flag = cosmo_nawives_3b
+					has_consort_flag = cosmo_nawives_3c
+					has_consort_flag = cosmo_nawives_4a
+					has_consort_flag = cosmo_nawives_4b
+					has_consort_flag = cosmo_nawives_4c
+					has_consort_flag = cosmo_nawives_5a
+					has_consort_flag = cosmo_nawives_5b
+					has_consort_flag = cosmo_nawives_5c
+					has_consort_flag = cosmo_nawives_6a
+					has_consort_flag = cosmo_nawives_6b
+					has_consort_flag = cosmo_nawives_6c
+					has_consort_flag = cosmo_nawives_7a
+					has_consort_flag = cosmo_nawives_7b
+					has_consort_flag = cosmo_nawives_7c
+					has_consort_flag = cosmo_nawives_8a
+					has_consort_flag = cosmo_nawives_8b
+					has_consort_flag = cosmo_nawives_8c																		
+					has_consort_flag = cosmo_nawives_9a
+					has_consort_flag = cosmo_nawives_9b
+					has_consort_flag = cosmo_nawives_9c	
+					has_consort_flag = cosmo_nawives_10a
+					has_consort_flag = cosmo_nawives_10b
+					has_consort_flag = cosmo_nawives_10c	
+					has_consort_flag = cosmo_nawives_11a
+					has_consort_flag = cosmo_nawives_11b
+					has_consort_flag = cosmo_nawives_11c
+					has_consort_flag = cosmo_nawives_12a
+					has_consort_flag = cosmo_nawives_12b
+					has_consort_flag = cosmo_nawives_12c
+					has_consort_flag = cosmo_nawives_13a
+					has_consort_flag = cosmo_nawives_13b
+					has_consort_flag = cosmo_nawives_13c	
+					has_consort_flag = cosmo_nawives_14a
+					has_consort_flag = cosmo_nawives_14b
+					has_consort_flag = cosmo_nawives_14c	
+					has_consort_flag = cosmo_nawives_15a
+					has_consort_flag = cosmo_nawives_15b
+					has_consort_flag = cosmo_nawives_15c
+					has_consort_flag = cosmo_nawives_16a
+					has_consort_flag = cosmo_nawives_16b
+					has_consort_flag = cosmo_nawives_16c
+		#SA
+					has_consort_flag = cosmo_sa_marriage_1
+					has_consort_flag = cosmo_sa_marriage_2
+					has_consort_flag = cosmo_sa_marriage_3
+					has_consort_flag = cosmo_sa_marriage_4
+					has_consort_flag = cosmo_sa_marriage_5
+					has_consort_flag = cosmo_sa_marriage_6
+					has_consort_flag = cosmo_sa_marriage_7
+					has_consort_flag = cosmo_sa_marriage_8
+					has_consort_flag = cosmo_sa_marriage_9
+					has_consort_flag = cosmo_sa_marriage_10
+					has_consort_flag = cosmo_sa_marriage_11
+					has_consort_flag = cosmo_sa_marriage_12
+					has_consort_flag = cosmo_sa_marriage_13
+					has_consort_flag = cosmo_sa_marriage_14
+					has_consort_flag = cosmo_sa_marriage_15
+					has_consort_flag = cosmo_sa_marriage_16
+					has_consort_flag = cosmo_sa_marriage_17
+					has_consort_flag = cosmo_sa_marriage_18
+					has_consort_flag = cosmo_sa_marriage_19
+					has_consort_flag = cosmo_sa_marriage_20	
+
+					has_consort_flag = cosmo_sawives_1a
+					has_consort_flag = cosmo_sawives_1b
+					has_consort_flag = cosmo_sawives_1c
+					has_consort_flag = cosmo_sawives_2a
+					has_consort_flag = cosmo_sawives_2b
+					has_consort_flag = cosmo_sawives_2c
+					has_consort_flag = cosmo_sawives_3a
+					has_consort_flag = cosmo_sawives_3b
+					has_consort_flag = cosmo_sawives_3c
+					has_consort_flag = cosmo_sawives_4a
+					has_consort_flag = cosmo_sawives_4b
+					has_consort_flag = cosmo_sawives_4c
+					has_consort_flag = cosmo_sawives_5a
+					has_consort_flag = cosmo_sawives_5b
+					has_consort_flag = cosmo_sawives_5c
+					has_consort_flag = cosmo_sawives_6a
+					has_consort_flag = cosmo_sawives_6b
+					has_consort_flag = cosmo_sawives_6c
+					has_consort_flag = cosmo_sawives_7a
+					has_consort_flag = cosmo_sawives_7b
+					has_consort_flag = cosmo_sawives_7c
+					has_consort_flag = cosmo_sawives_8a
+					has_consort_flag = cosmo_sawives_8b
+					has_consort_flag = cosmo_sawives_8c																		
+					has_consort_flag = cosmo_sawives_9a
+					has_consort_flag = cosmo_sawives_9b
+					has_consort_flag = cosmo_sawives_9c	
+					has_consort_flag = cosmo_sawives_10a
+					has_consort_flag = cosmo_sawives_10b
+					has_consort_flag = cosmo_sawives_10c	
+					has_consort_flag = cosmo_sawives_11a
+					has_consort_flag = cosmo_sawives_11b
+					has_consort_flag = cosmo_sawives_11c
+					has_consort_flag = cosmo_sawives_12a
+					has_consort_flag = cosmo_sawives_12b
+					has_consort_flag = cosmo_sawives_12c
+					has_consort_flag = cosmo_sawives_13a
+					has_consort_flag = cosmo_sawives_13b
+					has_consort_flag = cosmo_sawives_13c	
+					has_consort_flag = cosmo_sawives_14a
+					has_consort_flag = cosmo_sawives_14b
+					has_consort_flag = cosmo_sawives_14c	
+					has_consort_flag = cosmo_sawives_15a
+					has_consort_flag = cosmo_sawives_15b
+					has_consort_flag = cosmo_sawives_15c
+					has_consort_flag = cosmo_sawives_16a
+					has_consort_flag = cosmo_sawives_16b
+					has_consort_flag = cosmo_sawives_16c	
+		#mena
+					has_consort_flag = cosmo_mena_marriage_1
+					has_consort_flag = cosmo_mena_marriage_2
+					has_consort_flag = cosmo_mena_marriage_3
+					has_consort_flag = cosmo_mena_marriage_4
+					has_consort_flag = cosmo_mena_marriage_5
+					has_consort_flag = cosmo_mena_marriage_6
+					has_consort_flag = cosmo_mena_marriage_7
+					has_consort_flag = cosmo_mena_marriage_8
+					has_consort_flag = cosmo_mena_marriage_9
+					has_consort_flag = cosmo_mena_marriage_10
+					has_consort_flag = cosmo_mena_marriage_11
+					has_consort_flag = cosmo_mena_marriage_12
+					has_consort_flag = cosmo_mena_marriage_13
+					has_consort_flag = cosmo_mena_marriage_14
+					has_consort_flag = cosmo_mena_marriage_15
+					has_consort_flag = cosmo_mena_marriage_16
+					has_consort_flag = cosmo_mena_marriage_17
+					has_consort_flag = cosmo_mena_marriage_18
+					has_consort_flag = cosmo_mena_marriage_19
+					has_consort_flag = cosmo_mena_marriage_20	
+
+					has_consort_flag = cosmo_menaharem_1a
+					has_consort_flag = cosmo_menaharem_1b
+					has_consort_flag = cosmo_menaharem_1c
+					has_consort_flag = cosmo_menaharem_2a
+					has_consort_flag = cosmo_menaharem_2b
+					has_consort_flag = cosmo_menaharem_2c
+					has_consort_flag = cosmo_menaharem_3a
+					has_consort_flag = cosmo_menaharem_3b
+					has_consort_flag = cosmo_menaharem_3c
+					has_consort_flag = cosmo_menaharem_4a
+					has_consort_flag = cosmo_menaharem_4b
+					has_consort_flag = cosmo_menaharem_4c
+					has_consort_flag = cosmo_menaharem_5a
+					has_consort_flag = cosmo_menaharem_5b
+					has_consort_flag = cosmo_menaharem_5c
+					has_consort_flag = cosmo_menaharem_6a
+					has_consort_flag = cosmo_menaharem_6b
+					has_consort_flag = cosmo_menaharem_6c
+					has_consort_flag = cosmo_menaharem_7a
+					has_consort_flag = cosmo_menaharem_7b
+					has_consort_flag = cosmo_menaharem_7c
+					has_consort_flag = cosmo_menaharem_8a
+					has_consort_flag = cosmo_menaharem_8b
+					has_consort_flag = cosmo_menaharem_8c																		
+					has_consort_flag = cosmo_menaharem_9a
+					has_consort_flag = cosmo_menaharem_9b
+					has_consort_flag = cosmo_menaharem_9c	
+					has_consort_flag = cosmo_menaharem_10a
+					has_consort_flag = cosmo_menaharem_10b
+					has_consort_flag = cosmo_menaharem_10c	
+					has_consort_flag = cosmo_menaharem_11a
+					has_consort_flag = cosmo_menaharem_11b
+					has_consort_flag = cosmo_menaharem_11c
+					has_consort_flag = cosmo_menaharem_12a
+					has_consort_flag = cosmo_menaharem_12b
+					has_consort_flag = cosmo_menaharem_12c
+					has_consort_flag = cosmo_menaharem_13a
+					has_consort_flag = cosmo_menaharem_13b
+					has_consort_flag = cosmo_menaharem_13c	
+					has_consort_flag = cosmo_menaharem_14a
+					has_consort_flag = cosmo_menaharem_14b
+					has_consort_flag = cosmo_menaharem_14c	
+					has_consort_flag = cosmo_menaharem_15a
+					has_consort_flag = cosmo_menaharem_15b
+					has_consort_flag = cosmo_menaharem_15c
+					has_consort_flag = cosmo_menaharem_16a
+					has_consort_flag = cosmo_menaharem_16b
+					has_consort_flag = cosmo_menaharem_16c
+		#india
+					has_consort_flag = cosmo_india_marriage_1
+					has_consort_flag = cosmo_india_marriage_2
+					has_consort_flag = cosmo_india_marriage_3
+					has_consort_flag = cosmo_india_marriage_4
+					has_consort_flag = cosmo_india_marriage_5
+					has_consort_flag = cosmo_india_marriage_6
+					has_consort_flag = cosmo_india_marriage_7
+					has_consort_flag = cosmo_india_marriage_8
+					has_consort_flag = cosmo_india_marriage_9
+					has_consort_flag = cosmo_india_marriage_10
+					has_consort_flag = cosmo_india_marriage_11
+					has_consort_flag = cosmo_india_marriage_12
+					has_consort_flag = cosmo_india_marriage_13
+					has_consort_flag = cosmo_india_marriage_14
+					has_consort_flag = cosmo_india_marriage_15
+					has_consort_flag = cosmo_india_marriage_16
+					has_consort_flag = cosmo_india_marriage_17
+					has_consort_flag = cosmo_india_marriage_18
+					has_consort_flag = cosmo_india_marriage_19
+					has_consort_flag = cosmo_india_marriage_20	
+
+					has_consort_flag = cosmo_indianharem_1a
+					has_consort_flag = cosmo_indianharem_1b
+					has_consort_flag = cosmo_indianharem_1c
+					has_consort_flag = cosmo_indianharem_2a
+					has_consort_flag = cosmo_indianharem_2b
+					has_consort_flag = cosmo_indianharem_2c
+					has_consort_flag = cosmo_indianharem_3a
+					has_consort_flag = cosmo_indianharem_3b
+					has_consort_flag = cosmo_indianharem_3c
+					has_consort_flag = cosmo_indianharem_4a
+					has_consort_flag = cosmo_indianharem_4b
+					has_consort_flag = cosmo_indianharem_4c
+					has_consort_flag = cosmo_indianharem_5a
+					has_consort_flag = cosmo_indianharem_5b
+					has_consort_flag = cosmo_indianharem_5c
+					has_consort_flag = cosmo_indianharem_6a
+					has_consort_flag = cosmo_indianharem_6b
+					has_consort_flag = cosmo_indianharem_6c
+					has_consort_flag = cosmo_indianharem_7a
+					has_consort_flag = cosmo_indianharem_7b
+					has_consort_flag = cosmo_indianharem_7c
+					has_consort_flag = cosmo_indianharem_8a
+					has_consort_flag = cosmo_indianharem_8b
+					has_consort_flag = cosmo_indianharem_8c																		
+					has_consort_flag = cosmo_indianharem_9a
+					has_consort_flag = cosmo_indianharem_9b
+					has_consort_flag = cosmo_indianharem_9c	
+					has_consort_flag = cosmo_indianharem_10a
+					has_consort_flag = cosmo_indianharem_10b
+					has_consort_flag = cosmo_indianharem_10c	
+					has_consort_flag = cosmo_indianharem_11a
+					has_consort_flag = cosmo_indianharem_11b
+					has_consort_flag = cosmo_indianharem_11c
+					has_consort_flag = cosmo_indianharem_12a
+					has_consort_flag = cosmo_indianharem_12b
+					has_consort_flag = cosmo_indianharem_12c
+					has_consort_flag = cosmo_indianharem_13a
+					has_consort_flag = cosmo_indianharem_13b
+					has_consort_flag = cosmo_indianharem_13c	
+					has_consort_flag = cosmo_indianharem_14a
+					has_consort_flag = cosmo_indianharem_14b
+					has_consort_flag = cosmo_indianharem_14c	
+					has_consort_flag = cosmo_indianharem_15a
+					has_consort_flag = cosmo_indianharem_15b
+					has_consort_flag = cosmo_indianharem_15c
+					has_consort_flag = cosmo_indianharem_16a
+					has_consort_flag = cosmo_indianharem_16b
+					has_consort_flag = cosmo_indianharem_16c
+		#china
+					has_consort_flag = cosmo_china_marriage_1
+					has_consort_flag = cosmo_china_marriage_2
+					has_consort_flag = cosmo_china_marriage_3
+					has_consort_flag = cosmo_china_marriage_4
+					has_consort_flag = cosmo_china_marriage_5
+					has_consort_flag = cosmo_china_marriage_6
+					has_consort_flag = cosmo_china_marriage_7
+					has_consort_flag = cosmo_china_marriage_8
+					has_consort_flag = cosmo_china_marriage_9
+					has_consort_flag = cosmo_china_marriage_10
+					has_consort_flag = cosmo_china_marriage_11
+					has_consort_flag = cosmo_china_marriage_12
+					has_consort_flag = cosmo_china_marriage_13
+					has_consort_flag = cosmo_china_marriage_14
+					has_consort_flag = cosmo_china_marriage_15
+					has_consort_flag = cosmo_china_marriage_16
+					has_consort_flag = cosmo_china_marriage_17
+					has_consort_flag = cosmo_china_marriage_18
+					has_consort_flag = cosmo_china_marriage_19
+					has_consort_flag = cosmo_china_marriage_20	
+
+					has_consort_flag = cosmo_palace_1a
+					has_consort_flag = cosmo_palace_1b
+					has_consort_flag = cosmo_palace_1c
+					has_consort_flag = cosmo_palace_2a
+					has_consort_flag = cosmo_palace_2b
+					has_consort_flag = cosmo_palace_2c
+					has_consort_flag = cosmo_palace_3a
+					has_consort_flag = cosmo_palace_3b
+					has_consort_flag = cosmo_palace_3c
+					has_consort_flag = cosmo_palace_4a
+					has_consort_flag = cosmo_palace_4b
+					has_consort_flag = cosmo_palace_4c
+					has_consort_flag = cosmo_palace_5a
+					has_consort_flag = cosmo_palace_5b
+					has_consort_flag = cosmo_palace_5c
+					has_consort_flag = cosmo_palace_6a
+					has_consort_flag = cosmo_palace_6b
+					has_consort_flag = cosmo_palace_6c
+					has_consort_flag = cosmo_palace_7a
+					has_consort_flag = cosmo_palace_7b
+					has_consort_flag = cosmo_palace_7c
+					has_consort_flag = cosmo_palace_8a
+					has_consort_flag = cosmo_palace_8b
+					has_consort_flag = cosmo_palace_8c																		
+					has_consort_flag = cosmo_palace_9a
+					has_consort_flag = cosmo_palace_9b
+					has_consort_flag = cosmo_palace_9c	
+					has_consort_flag = cosmo_palace_10a
+					has_consort_flag = cosmo_palace_10b
+					has_consort_flag = cosmo_palace_10c	
+					has_consort_flag = cosmo_palace_11a
+					has_consort_flag = cosmo_palace_11b
+					has_consort_flag = cosmo_palace_11c
+					has_consort_flag = cosmo_palace_12a
+					has_consort_flag = cosmo_palace_12b
+					has_consort_flag = cosmo_palace_12c
+					has_consort_flag = cosmo_palace_13a
+					has_consort_flag = cosmo_palace_13b
+					has_consort_flag = cosmo_palace_13c	
+					has_consort_flag = cosmo_palace_14a
+					has_consort_flag = cosmo_palace_14b
+					has_consort_flag = cosmo_palace_14c	
+					has_consort_flag = cosmo_palace_15a
+					has_consort_flag = cosmo_palace_15b
+					has_consort_flag = cosmo_palace_15c
+					has_consort_flag = cosmo_palace_16a
+					has_consort_flag = cosmo_palace_16b
+					has_consort_flag = cosmo_palace_16c	
+					has_consort_flag = cosmo_palace_17a
+					has_consort_flag = cosmo_palace_17b
+					has_consort_flag = cosmo_palace_17c
+					has_consort_flag = cosmo_palace_18a
+					has_consort_flag = cosmo_palace_18b
+					has_consort_flag = cosmo_palace_18c																		
+					has_consort_flag = cosmo_palace_19a
+					has_consort_flag = cosmo_palace_19b
+					has_consort_flag = cosmo_palace_19c			
+					has_consort_flag = cosmo_palace_20a
+					has_consort_flag = cosmo_palace_20b
+					has_consort_flag = cosmo_palace_20c	
+					has_consort_flag = cosmo_palace_21a
+					has_consort_flag = cosmo_palace_21b
+					has_consort_flag = cosmo_palace_21c
+					has_consort_flag = cosmo_palace_22a
+					has_consort_flag = cosmo_palace_22b
+					has_consort_flag = cosmo_palace_22c
+					has_consort_flag = cosmo_palace_23a
+					has_consort_flag = cosmo_palace_23b
+					has_consort_flag = cosmo_palace_23c	
+					has_consort_flag = cosmo_palace_24a
+					has_consort_flag = cosmo_palace_24b
+					has_consort_flag = cosmo_palace_24c	
+					has_consort_flag = cosmo_palace_25a
+					has_consort_flag = cosmo_palace_25b
+					has_consort_flag = cosmo_palace_25c
+					has_consort_flag = cosmo_palace_26a
+					has_consort_flag = cosmo_palace_26b
+					has_consort_flag = cosmo_palace_26c	
+					has_consort_flag = cosmo_palace_27a
+					has_consort_flag = cosmo_palace_27b
+					has_consort_flag = cosmo_palace_27c
+					has_consort_flag = cosmo_palace_28a
+					has_consort_flag = cosmo_palace_28b
+					has_consort_flag = cosmo_palace_28c																		
+					has_consort_flag = cosmo_palace_29a
+					has_consort_flag = cosmo_palace_29b
+					has_consort_flag = cosmo_palace_29c									
+		#japan
+					has_consort_flag = cosmo_japan_marriage_1
+					has_consort_flag = cosmo_japan_marriage_2
+					has_consort_flag = cosmo_japan_marriage_3
+					has_consort_flag = cosmo_japan_marriage_4
+					has_consort_flag = cosmo_japan_marriage_5
+					has_consort_flag = cosmo_japan_marriage_6
+					has_consort_flag = cosmo_japan_marriage_7
+					has_consort_flag = cosmo_japan_marriage_8
+					has_consort_flag = cosmo_japan_marriage_9
+					has_consort_flag = cosmo_japan_marriage_10
+					has_consort_flag = cosmo_japan_marriage_11
+					has_consort_flag = cosmo_japan_marriage_12
+					has_consort_flag = cosmo_japan_marriage_13
+					has_consort_flag = cosmo_japan_marriage_14
+					has_consort_flag = cosmo_japan_marriage_15
+					has_consort_flag = cosmo_japan_marriage_16
+					has_consort_flag = cosmo_japan_marriage_17
+					has_consort_flag = cosmo_japan_marriage_18
+					has_consort_flag = cosmo_japan_marriage_19
+					has_consort_flag = cosmo_japan_marriage_20	
+
+					has_consort_flag = cosmo_ooku_1a
+					has_consort_flag = cosmo_ooku_1b
+					has_consort_flag = cosmo_ooku_1c
+					has_consort_flag = cosmo_ooku_2a
+					has_consort_flag = cosmo_ooku_2b
+					has_consort_flag = cosmo_ooku_2c
+					has_consort_flag = cosmo_ooku_3a
+					has_consort_flag = cosmo_ooku_3b
+					has_consort_flag = cosmo_ooku_3c
+					has_consort_flag = cosmo_ooku_4a
+					has_consort_flag = cosmo_ooku_4b
+					has_consort_flag = cosmo_ooku_4c
+					has_consort_flag = cosmo_ooku_5a
+					has_consort_flag = cosmo_ooku_5b
+					has_consort_flag = cosmo_ooku_5c
+					has_consort_flag = cosmo_ooku_6a
+					has_consort_flag = cosmo_ooku_6b
+					has_consort_flag = cosmo_ooku_6c
+					has_consort_flag = cosmo_ooku_7a
+					has_consort_flag = cosmo_ooku_7b
+					has_consort_flag = cosmo_ooku_7c
+					has_consort_flag = cosmo_ooku_8a
+					has_consort_flag = cosmo_ooku_8b
+					has_consort_flag = cosmo_ooku_8c																		
+					has_consort_flag = cosmo_ooku_9a
+					has_consort_flag = cosmo_ooku_9b
+					has_consort_flag = cosmo_ooku_9c	
+					has_consort_flag = cosmo_ooku_10a
+					has_consort_flag = cosmo_ooku_10b
+					has_consort_flag = cosmo_ooku_10c	
+					has_consort_flag = cosmo_ooku_11a
+					has_consort_flag = cosmo_ooku_11b
+					has_consort_flag = cosmo_ooku_11c
+					has_consort_flag = cosmo_ooku_12a
+					has_consort_flag = cosmo_ooku_12b
+					has_consort_flag = cosmo_ooku_12c
+					has_consort_flag = cosmo_ooku_13a
+					has_consort_flag = cosmo_ooku_13b
+					has_consort_flag = cosmo_ooku_13c	
+					has_consort_flag = cosmo_ooku_14a
+					has_consort_flag = cosmo_ooku_14b
+					has_consort_flag = cosmo_ooku_14c	
+					has_consort_flag = cosmo_ooku_15a
+					has_consort_flag = cosmo_ooku_15b
+					has_consort_flag = cosmo_ooku_15c
+					has_consort_flag = cosmo_ooku_16a
+					has_consort_flag = cosmo_ooku_16b
+					has_consort_flag = cosmo_ooku_16c
+		#indochina
+					has_consort_flag = cosmo_indochina_marriage_1
+					has_consort_flag = cosmo_indochina_marriage_2
+					has_consort_flag = cosmo_indochina_marriage_3
+					has_consort_flag = cosmo_indochina_marriage_4
+					has_consort_flag = cosmo_indochina_marriage_5
+					has_consort_flag = cosmo_indochina_marriage_6
+					has_consort_flag = cosmo_indochina_marriage_7
+					has_consort_flag = cosmo_indochina_marriage_8
+					has_consort_flag = cosmo_indochina_marriage_9
+					has_consort_flag = cosmo_indochina_marriage_10
+					has_consort_flag = cosmo_indochina_marriage_11
+					has_consort_flag = cosmo_indochina_marriage_12
+					has_consort_flag = cosmo_indochina_marriage_13
+					has_consort_flag = cosmo_indochina_marriage_14
+					has_consort_flag = cosmo_indochina_marriage_15
+					has_consort_flag = cosmo_indochina_marriage_16
+					has_consort_flag = cosmo_indochina_marriage_17
+					has_consort_flag = cosmo_indochina_marriage_18
+					has_consort_flag = cosmo_indochina_marriage_19
+					has_consort_flag = cosmo_indochina_marriage_20	
+		#east indies
+					has_consort_flag = cosmo_east_indies_marriage_1
+					has_consort_flag = cosmo_east_indies_marriage_2
+					has_consort_flag = cosmo_east_indies_marriage_3
+					has_consort_flag = cosmo_east_indies_marriage_4
+					has_consort_flag = cosmo_east_indies_marriage_5
+					has_consort_flag = cosmo_east_indies_marriage_6
+					has_consort_flag = cosmo_east_indies_marriage_7
+					has_consort_flag = cosmo_east_indies_marriage_8
+					has_consort_flag = cosmo_east_indies_marriage_9
+					has_consort_flag = cosmo_east_indies_marriage_10
+					has_consort_flag = cosmo_east_indies_marriage_11
+					has_consort_flag = cosmo_east_indies_marriage_12
+					has_consort_flag = cosmo_east_indies_marriage_13
+					has_consort_flag = cosmo_east_indies_marriage_14
+					has_consort_flag = cosmo_east_indies_marriage_15
+					has_consort_flag = cosmo_east_indies_marriage_16
+					has_consort_flag = cosmo_east_indies_marriage_17
+					has_consort_flag = cosmo_east_indies_marriage_18
+					has_consort_flag = cosmo_east_indies_marriage_19
+					has_consort_flag = cosmo_east_indies_marriage_20			
+																												
+	}
+}
+
+cosmo_has_concubine_trigger = {
+			OR = {
+				has_province_modifier = sa_concubine_1a
+				has_province_modifier = sa_concubine_1b
+				has_province_modifier = sa_concubine_1c
+				has_province_modifier = sa_concubine_2a
+				has_province_modifier = sa_concubine_2b
+				has_province_modifier = sa_concubine_2c
+				has_province_modifier = sa_concubine_3a
+				has_province_modifier = sa_concubine_3b
+				has_province_modifier = sa_concubine_3c
+				has_province_modifier = sa_concubine_4a
+				has_province_modifier = sa_concubine_4b
+				has_province_modifier = sa_concubine_4c
+				has_province_modifier = sa_concubine_5a
+				has_province_modifier = sa_concubine_5b
+				has_province_modifier = sa_concubine_5c
+				has_province_modifier = sa_concubine_6a
+				has_province_modifier = sa_concubine_6b
+				has_province_modifier = sa_concubine_6c
+				has_province_modifier = sa_concubine_7a
+				has_province_modifier = sa_concubine_7b
+				has_province_modifier = sa_concubine_7c
+				has_province_modifier = sa_concubine_8a
+				has_province_modifier = sa_concubine_8b
+				has_province_modifier = sa_concubine_8c
+				has_province_modifier = sa_concubine_9a
+				has_province_modifier = sa_concubine_9b
+				has_province_modifier = sa_concubine_9c
+				has_province_modifier = sa_concubine_10a
+				has_province_modifier = sa_concubine_10b
+				has_province_modifier = sa_concubine_10c
+				has_province_modifier = sa_concubine_11a
+				has_province_modifier = sa_concubine_11b
+				has_province_modifier = sa_concubine_11c
+				has_province_modifier = sa_concubine_12a
+				has_province_modifier = sa_concubine_12b
+				has_province_modifier = sa_concubine_12c
+				has_province_modifier = sa_concubine_13a
+				has_province_modifier = sa_concubine_13b
+				has_province_modifier = sa_concubine_13c
+				has_province_modifier = sa_concubine_14a
+				has_province_modifier = sa_concubine_14b
+				has_province_modifier = sa_concubine_14c
+				has_province_modifier = sa_concubine_15a
+				has_province_modifier = sa_concubine_15b
+				has_province_modifier = sa_concubine_15c
+				has_province_modifier = sa_concubine_16a
+				has_province_modifier = sa_concubine_16b
+				has_province_modifier = sa_concubine_16c
+				
+				#NA
+				has_province_modifier = na_concubine_1a
+				has_province_modifier = na_concubine_1b
+				has_province_modifier = na_concubine_1c
+				has_province_modifier = na_concubine_2a
+				has_province_modifier = na_concubine_2b
+				has_province_modifier = na_concubine_2c
+				has_province_modifier = na_concubine_3a
+				has_province_modifier = na_concubine_3b
+				has_province_modifier = na_concubine_3c
+				has_province_modifier = na_concubine_4a
+				has_province_modifier = na_concubine_4b
+				has_province_modifier = na_concubine_4c
+				has_province_modifier = na_concubine_5a
+				has_province_modifier = na_concubine_5b
+				has_province_modifier = na_concubine_5c
+				has_province_modifier = na_concubine_6a
+				has_province_modifier = na_concubine_6b
+				has_province_modifier = na_concubine_6c
+				has_province_modifier = na_concubine_7a
+				has_province_modifier = na_concubine_7b
+				has_province_modifier = na_concubine_7c
+				has_province_modifier = na_concubine_8a
+				has_province_modifier = na_concubine_8b
+				has_province_modifier = na_concubine_8c
+				has_province_modifier = na_concubine_9a
+				has_province_modifier = na_concubine_9b
+				has_province_modifier = na_concubine_9c
+				has_province_modifier = na_concubine_10a
+				has_province_modifier = na_concubine_10b
+				has_province_modifier = na_concubine_10c
+				has_province_modifier = na_concubine_11a
+				has_province_modifier = na_concubine_11b
+				has_province_modifier = na_concubine_11c
+				has_province_modifier = na_concubine_12a
+				has_province_modifier = na_concubine_12b
+				has_province_modifier = na_concubine_12c
+				has_province_modifier = na_concubine_13a
+				has_province_modifier = na_concubine_13b
+				has_province_modifier = na_concubine_13c
+				has_province_modifier = na_concubine_14a
+				has_province_modifier = na_concubine_14b
+				has_province_modifier = na_concubine_14c
+				has_province_modifier = na_concubine_15a
+				has_province_modifier = na_concubine_15b
+				has_province_modifier = na_concubine_15c
+				has_province_modifier = na_concubine_16a
+				has_province_modifier = na_concubine_16b
+				has_province_modifier = na_concubine_16c
+				#africa
+				has_province_modifier = africa_concubine_1a
+				has_province_modifier = africa_concubine_1b
+				has_province_modifier = africa_concubine_1c
+				has_province_modifier = africa_concubine_2a
+				has_province_modifier = africa_concubine_2b
+				has_province_modifier = africa_concubine_2c
+				has_province_modifier = africa_concubine_3a
+				has_province_modifier = africa_concubine_3b
+				has_province_modifier = africa_concubine_3c
+				has_province_modifier = africa_concubine_4a
+				has_province_modifier = africa_concubine_4b
+				has_province_modifier = africa_concubine_4c
+				has_province_modifier = africa_concubine_5a
+				has_province_modifier = africa_concubine_5b
+				has_province_modifier = africa_concubine_5c
+				has_province_modifier = africa_concubine_6a
+				has_province_modifier = africa_concubine_6b
+				has_province_modifier = africa_concubine_6c
+				has_province_modifier = africa_concubine_7a
+				has_province_modifier = africa_concubine_7b
+				has_province_modifier = africa_concubine_7c
+				has_province_modifier = africa_concubine_8a
+				has_province_modifier = africa_concubine_8b
+				has_province_modifier = africa_concubine_8c
+				has_province_modifier = africa_concubine_9a
+				has_province_modifier = africa_concubine_9b
+				has_province_modifier = africa_concubine_9c
+				has_province_modifier = africa_concubine_10a
+				has_province_modifier = africa_concubine_10b
+				has_province_modifier = africa_concubine_10c
+				has_province_modifier = africa_concubine_11a
+				has_province_modifier = africa_concubine_11b
+				has_province_modifier = africa_concubine_11c
+				has_province_modifier = africa_concubine_12a
+				has_province_modifier = africa_concubine_12b
+				has_province_modifier = africa_concubine_12c
+				has_province_modifier = africa_concubine_13a
+				has_province_modifier = africa_concubine_13b
+				has_province_modifier = africa_concubine_13c
+				has_province_modifier = africa_concubine_14a
+				has_province_modifier = africa_concubine_14b
+				has_province_modifier = africa_concubine_14c
+				has_province_modifier = africa_concubine_15a
+				has_province_modifier = africa_concubine_15b
+				has_province_modifier = africa_concubine_15c
+				#eurow	
+				has_province_modifier = eurow_concubine_1a
+				has_province_modifier = eurow_concubine_1b
+				has_province_modifier = eurow_concubine_1c
+				has_province_modifier = eurow_concubine_2a
+				has_province_modifier = eurow_concubine_2b
+				has_province_modifier = eurow_concubine_2c
+				has_province_modifier = eurow_concubine_3a
+				has_province_modifier = eurow_concubine_3b
+				has_province_modifier = eurow_concubine_3c
+				has_province_modifier = eurow_concubine_4a
+				has_province_modifier = eurow_concubine_4b
+				has_province_modifier = eurow_concubine_4c
+				has_province_modifier = eurow_concubine_5a
+				has_province_modifier = eurow_concubine_5b
+				has_province_modifier = eurow_concubine_5c
+				has_province_modifier = eurow_concubine_6a
+				has_province_modifier = eurow_concubine_6b
+				has_province_modifier = eurow_concubine_6c
+				has_province_modifier = eurow_concubine_7a
+				has_province_modifier = eurow_concubine_7b
+				has_province_modifier = eurow_concubine_7c
+				has_province_modifier = eurow_concubine_8a
+				has_province_modifier = eurow_concubine_8b
+				has_province_modifier = eurow_concubine_8c
+				has_province_modifier = eurow_concubine_9a
+				has_province_modifier = eurow_concubine_9b
+				has_province_modifier = eurow_concubine_9c
+				has_province_modifier = eurow_concubine_10a
+				has_province_modifier = eurow_concubine_10b
+				has_province_modifier = eurow_concubine_10c
+				has_province_modifier = eurow_concubine_11a
+				has_province_modifier = eurow_concubine_11b
+				has_province_modifier = eurow_concubine_11c
+				has_province_modifier = eurow_concubine_12a
+				has_province_modifier = eurow_concubine_12b
+				has_province_modifier = eurow_concubine_12c
+				has_province_modifier = eurow_concubine_13a
+				has_province_modifier = eurow_concubine_13b
+				has_province_modifier = eurow_concubine_13c
+				has_province_modifier = eurow_concubine_14a
+				has_province_modifier = eurow_concubine_14b
+				has_province_modifier = eurow_concubine_14c
+				has_province_modifier = eurow_concubine_15a
+				has_province_modifier = eurow_concubine_15b
+				has_province_modifier = eurow_concubine_15c
+				has_province_modifier = eurow_concubine_16a
+				has_province_modifier = eurow_concubine_16b
+				has_province_modifier = eurow_concubine_16c	
+				has_province_modifier = eurow_concubine_17a
+				has_province_modifier = eurow_concubine_17b
+				has_province_modifier = eurow_concubine_17c
+				has_province_modifier = eurow_concubine_18a
+				has_province_modifier = eurow_concubine_18b
+				has_province_modifier = eurow_concubine_18c	
+				has_province_modifier = eurow_concubine_19a
+				has_province_modifier = eurow_concubine_19b
+				has_province_modifier = eurow_concubine_19c	
+				has_province_modifier = pirate_queen_1a
+				has_province_modifier = pirate_queen_1b
+				has_province_modifier = pirate_queen_1c
+				has_province_modifier = pirate_queen_2a
+				has_province_modifier = pirate_queen_2b
+				has_province_modifier = pirate_queen_2c
+				has_province_modifier = pirate_queen_3a
+				has_province_modifier = pirate_queen_3b
+				has_province_modifier = pirate_queen_3c													
+				#euroh
+				has_province_modifier = euro_concubine_1a
+				has_province_modifier = euro_concubine_1b
+				has_province_modifier = euro_concubine_1c
+				has_province_modifier = euro_concubine_2a
+				has_province_modifier = euro_concubine_2b
+				has_province_modifier = euro_concubine_2c
+				has_province_modifier = euro_concubine_3a
+				has_province_modifier = euro_concubine_3b
+				has_province_modifier = euro_concubine_3c
+				has_province_modifier = euro_concubine_4a
+				has_province_modifier = euro_concubine_4b
+				has_province_modifier = euro_concubine_4c
+				has_province_modifier = euro_concubine_5a
+				has_province_modifier = euro_concubine_5b
+				has_province_modifier = euro_concubine_5c
+				has_province_modifier = euro_concubine_6a
+				has_province_modifier = euro_concubine_6b
+				has_province_modifier = euro_concubine_6c
+				has_province_modifier = euro_concubine_7a
+				has_province_modifier = euro_concubine_7b
+				has_province_modifier = euro_concubine_7c
+				has_province_modifier = euro_concubine_8a
+				has_province_modifier = euro_concubine_8b
+				has_province_modifier = euro_concubine_8c
+				has_province_modifier = euro_concubine_9a
+				has_province_modifier = euro_concubine_9b
+				has_province_modifier = euro_concubine_9c
+				has_province_modifier = euro_concubine_10a
+				has_province_modifier = euro_concubine_10b
+				has_province_modifier = euro_concubine_10c
+				has_province_modifier = euro_concubine_11a
+				has_province_modifier = euro_concubine_11b
+				has_province_modifier = euro_concubine_11c
+				has_province_modifier = euro_concubine_12a
+				has_province_modifier = euro_concubine_12b
+				has_province_modifier = euro_concubine_12c						
+				#mena
+				has_province_modifier = mena_concubine_1a
+				has_province_modifier = mena_concubine_1b
+				has_province_modifier = mena_concubine_1c
+				has_province_modifier = mena_concubine_2a
+				has_province_modifier = mena_concubine_2b
+				has_province_modifier = mena_concubine_2c
+				has_province_modifier = mena_concubine_3a
+				has_province_modifier = mena_concubine_3b
+				has_province_modifier = mena_concubine_3c
+				has_province_modifier = mena_concubine_4a
+				has_province_modifier = mena_concubine_4b
+				has_province_modifier = mena_concubine_4c
+				has_province_modifier = mena_concubine_5a
+				has_province_modifier = mena_concubine_5b
+				has_province_modifier = mena_concubine_5c
+				has_province_modifier = mena_concubine_6a
+				has_province_modifier = mena_concubine_6b
+				has_province_modifier = mena_concubine_6c
+				has_province_modifier = mena_concubine_7a
+				has_province_modifier = mena_concubine_7b
+				has_province_modifier = mena_concubine_7c
+				has_province_modifier = mena_concubine_8a
+				has_province_modifier = mena_concubine_8b
+				has_province_modifier = mena_concubine_8c
+				has_province_modifier = mena_concubine_9a
+				has_province_modifier = mena_concubine_9b
+				has_province_modifier = mena_concubine_9c
+				has_province_modifier = mena_concubine_10a
+				has_province_modifier = mena_concubine_10b
+				has_province_modifier = mena_concubine_10c
+				has_province_modifier = mena_concubine_11a
+				has_province_modifier = mena_concubine_11b
+				has_province_modifier = mena_concubine_11c
+				has_province_modifier = mena_concubine_12a
+				has_province_modifier = mena_concubine_12b
+				has_province_modifier = mena_concubine_12c
+				#india	
+				has_province_modifier = india_concubine_1a
+				has_province_modifier = india_concubine_1b
+				has_province_modifier = india_concubine_1c
+				has_province_modifier = india_concubine_2a
+				has_province_modifier = india_concubine_2b
+				has_province_modifier = india_concubine_2c
+				has_province_modifier = india_concubine_3a
+				has_province_modifier = india_concubine_3b
+				has_province_modifier = india_concubine_3c
+				has_province_modifier = india_concubine_4a
+				has_province_modifier = india_concubine_4b
+				has_province_modifier = india_concubine_4c
+				has_province_modifier = india_concubine_5a
+				has_province_modifier = india_concubine_5b
+				has_province_modifier = india_concubine_5c
+				has_province_modifier = india_concubine_6a
+				has_province_modifier = india_concubine_6b
+				has_province_modifier = india_concubine_6c
+				has_province_modifier = india_concubine_7a
+				has_province_modifier = india_concubine_7b
+				has_province_modifier = india_concubine_7c
+				has_province_modifier = india_concubine_8a
+				has_province_modifier = india_concubine_8b
+				has_province_modifier = india_concubine_8c
+				has_province_modifier = india_concubine_9a
+				has_province_modifier = india_concubine_9b
+				has_province_modifier = india_concubine_9c
+				has_province_modifier = india_concubine_10a
+				has_province_modifier = india_concubine_10b
+				has_province_modifier = india_concubine_10c
+				has_province_modifier = india_concubine_11a
+				has_province_modifier = india_concubine_11b
+				has_province_modifier = india_concubine_11c
+				has_province_modifier = india_concubine_12a
+				has_province_modifier = india_concubine_12b
+				has_province_modifier = india_concubine_12c
+				#china
+				has_province_modifier = china_concubine_1a
+				has_province_modifier = china_concubine_1b
+				has_province_modifier = china_concubine_1c
+				has_province_modifier = china_concubine_2a
+				has_province_modifier = china_concubine_2b
+				has_province_modifier = china_concubine_2c
+				has_province_modifier = china_concubine_3a
+				has_province_modifier = china_concubine_3b
+				has_province_modifier = china_concubine_3c
+				has_province_modifier = china_concubine_4a
+				has_province_modifier = china_concubine_4b
+				has_province_modifier = china_concubine_4c
+				has_province_modifier = china_concubine_5a
+				has_province_modifier = china_concubine_5b
+				has_province_modifier = china_concubine_5c
+				has_province_modifier = china_concubine_6a
+				has_province_modifier = china_concubine_6b
+				has_province_modifier = china_concubine_6c
+				has_province_modifier = china_concubine_7a
+				has_province_modifier = china_concubine_7b
+				has_province_modifier = china_concubine_7c
+				has_province_modifier = china_concubine_8a
+				has_province_modifier = china_concubine_8b
+				has_province_modifier = china_concubine_8c
+				has_province_modifier = china_concubine_9a
+				has_province_modifier = china_concubine_9b
+				has_province_modifier = china_concubine_9c
+				has_province_modifier = china_concubine_10a
+				has_province_modifier = china_concubine_10b
+				has_province_modifier = china_concubine_10c
+				has_province_modifier = china_concubine_11a
+				has_province_modifier = china_concubine_11b
+				has_province_modifier = china_concubine_11c
+				has_province_modifier = china_concubine_12a
+				has_province_modifier = china_concubine_12b
+				has_province_modifier = china_concubine_12c
+				has_province_modifier = china_concubine_13a
+				has_province_modifier = china_concubine_13b
+				has_province_modifier = china_concubine_13c
+				has_province_modifier = china_concubine_14a
+				has_province_modifier = china_concubine_14b
+				has_province_modifier = china_concubine_14c
+				has_province_modifier = china_concubine_15a
+				has_province_modifier = china_concubine_15b
+				has_province_modifier = china_concubine_15c				
+				has_province_modifier = china_concubine_16a
+				has_province_modifier = china_concubine_16b
+				has_province_modifier = china_concubine_16c
+				has_province_modifier = china_concubine_17a
+				has_province_modifier = china_concubine_17b
+				has_province_modifier = china_concubine_17c
+				has_province_modifier = china_concubine_18a
+				has_province_modifier = china_concubine_18b
+				has_province_modifier = china_concubine_18c
+				has_province_modifier = china_concubine_19a
+				has_province_modifier = china_concubine_19b
+				has_province_modifier = china_concubine_19c	
+				has_province_modifier = china_concubine_20a
+				has_province_modifier = china_concubine_20b
+				has_province_modifier = china_concubine_20c
+				has_province_modifier = china_concubine_21a
+				has_province_modifier = china_concubine_21b
+				has_province_modifier = china_concubine_21c
+				has_province_modifier = china_concubine_22a
+				has_province_modifier = china_concubine_22b
+				has_province_modifier = china_concubine_22c
+				has_province_modifier = china_concubine_23a
+				has_province_modifier = china_concubine_23b
+				has_province_modifier = china_concubine_23c
+				has_province_modifier = china_concubine_24a
+				has_province_modifier = china_concubine_24b
+				has_province_modifier = china_concubine_24c
+				has_province_modifier = china_concubine_25a
+				has_province_modifier = china_concubine_25b
+				has_province_modifier = china_concubine_25c	
+				has_province_modifier = china_concubine_26a
+				has_province_modifier = china_concubine_26b
+				has_province_modifier = china_concubine_26c
+				has_province_modifier = china_concubine_27a
+				has_province_modifier = china_concubine_27b
+				has_province_modifier = china_concubine_27c
+				has_province_modifier = china_concubine_28a
+				has_province_modifier = china_concubine_28b
+				has_province_modifier = china_concubine_28c
+				has_province_modifier = china_concubine_29a
+				has_province_modifier = china_concubine_29b
+				has_province_modifier = china_concubine_29c
+				#japan
+				has_province_modifier = japan_concubine_1a
+				has_province_modifier = japan_concubine_1b
+				has_province_modifier = japan_concubine_1c
+				has_province_modifier = japan_concubine_2a
+				has_province_modifier = japan_concubine_2b
+				has_province_modifier = japan_concubine_2c
+				has_province_modifier = japan_concubine_3a
+				has_province_modifier = japan_concubine_3b
+				has_province_modifier = japan_concubine_3c
+				has_province_modifier = japan_concubine_4a
+				has_province_modifier = japan_concubine_4b
+				has_province_modifier = japan_concubine_4c
+				has_province_modifier = japan_concubine_5a
+				has_province_modifier = japan_concubine_5b
+				has_province_modifier = japan_concubine_5c
+				has_province_modifier = japan_concubine_6a
+				has_province_modifier = japan_concubine_6b
+				has_province_modifier = japan_concubine_6c
+				has_province_modifier = japan_concubine_7a
+				has_province_modifier = japan_concubine_7b
+				has_province_modifier = japan_concubine_7c
+				has_province_modifier = japan_concubine_8a
+				has_province_modifier = japan_concubine_8b
+				has_province_modifier = japan_concubine_8c
+				has_province_modifier = japan_concubine_9a
+				has_province_modifier = japan_concubine_9b
+				has_province_modifier = japan_concubine_9c
+				has_province_modifier = japan_concubine_10a
+				has_province_modifier = japan_concubine_10b
+				has_province_modifier = japan_concubine_10c
+				has_province_modifier = japan_concubine_11a
+				has_province_modifier = japan_concubine_11b
+				has_province_modifier = japan_concubine_11c
+				has_province_modifier = japan_concubine_12a
+				has_province_modifier = japan_concubine_12b
+				has_province_modifier = japan_concubine_12c	
+				#concubines
+				has_province_modifier = barbary_concubine_1a
+				has_province_modifier = barbary_concubine_1b
+				has_province_modifier = barbary_concubine_1c
+				has_province_modifier = barbary_concubine_2a
+				has_province_modifier = barbary_concubine_2b
+				has_province_modifier = barbary_concubine_2c
+				has_province_modifier = barbary_concubine_3a
+				has_province_modifier = barbary_concubine_3b
+				has_province_modifier = barbary_concubine_3c
+				has_province_modifier = barbary_concubine_4a
+				has_province_modifier = barbary_concubine_4b
+				has_province_modifier = barbary_concubine_4c
+				has_province_modifier = barbary_concubine_5a
+				has_province_modifier = barbary_concubine_5b
+				has_province_modifier = barbary_concubine_5c
+				has_province_modifier = barbary_concubine_6a
+				has_province_modifier = barbary_concubine_6b
+				has_province_modifier = barbary_concubine_6c				
+				has_province_modifier = bsea_concubine_1a
+				has_province_modifier = bsea_concubine_1b
+				has_province_modifier = bsea_concubine_1c
+				has_province_modifier = bsea_concubine_2a
+				has_province_modifier = bsea_concubine_2b
+				has_province_modifier = bsea_concubine_2c
+				has_province_modifier = bsea_concubine_3a
+				has_province_modifier = bsea_concubine_3b
+				has_province_modifier = bsea_concubine_3c
+				has_province_modifier = bsea_concubine_4a
+				has_province_modifier = bsea_concubine_4b
+				has_province_modifier = bsea_concubine_4c
+				has_province_modifier = horn_concubine_1a
+				has_province_modifier = horn_concubine_1b
+				has_province_modifier = horn_concubine_1c
+				has_province_modifier = horn_concubine_2a
+				has_province_modifier = horn_concubine_2b
+				has_province_modifier = horn_concubine_2c
+				has_province_modifier = horn_concubine_3a
+				has_province_modifier = horn_concubine_3b
+				has_province_modifier = horn_concubine_3c
+				has_province_modifier = horn_concubine_4a
+				has_province_modifier = horn_concubine_4b
+				has_province_modifier = horn_concubine_4c			
+				has_province_modifier = southsea_concubine_1a
+				has_province_modifier = southsea_concubine_1b
+				has_province_modifier = southsea_concubine_1c
+				has_province_modifier = southsea_concubine_2a
+				has_province_modifier = southsea_concubine_2b
+				has_province_modifier = southsea_concubine_2c
+				has_province_modifier = southsea_concubine_3a
+				has_province_modifier = southsea_concubine_3b
+				has_province_modifier = southsea_concubine_3c
+				has_province_modifier = southsea_concubine_4a
+				has_province_modifier = southsea_concubine_4b
+				has_province_modifier = southsea_concubine_4c					
+	}
+}
+
+cosmo_has_concubinenm_trigger = {
+			OR = {
+				has_province_modifier = sa_concubine_1a
+				has_province_modifier = sa_concubine_1b
+				has_province_modifier = sa_concubine_1c
+				has_province_modifier = sa_concubine_2a
+				has_province_modifier = sa_concubine_2b
+				has_province_modifier = sa_concubine_2c
+				has_province_modifier = sa_concubine_3a
+				has_province_modifier = sa_concubine_3b
+				has_province_modifier = sa_concubine_3c
+				has_province_modifier = sa_concubine_4a
+				has_province_modifier = sa_concubine_4b
+				has_province_modifier = sa_concubine_4c
+				has_province_modifier = sa_concubine_5a
+				has_province_modifier = sa_concubine_5b
+				has_province_modifier = sa_concubine_5c
+				has_province_modifier = sa_concubine_6a
+				has_province_modifier = sa_concubine_6b
+				has_province_modifier = sa_concubine_6c
+				has_province_modifier = sa_concubine_7a
+				has_province_modifier = sa_concubine_7b
+				has_province_modifier = sa_concubine_7c
+				has_province_modifier = sa_concubine_8a
+				has_province_modifier = sa_concubine_8b
+				has_province_modifier = sa_concubine_8c
+				has_province_modifier = sa_concubine_9a
+				has_province_modifier = sa_concubine_9b
+				has_province_modifier = sa_concubine_9c
+				has_province_modifier = sa_concubine_10a
+				has_province_modifier = sa_concubine_10b
+				has_province_modifier = sa_concubine_10c
+				has_province_modifier = sa_concubine_11a
+				has_province_modifier = sa_concubine_11b
+				has_province_modifier = sa_concubine_11c
+				has_province_modifier = sa_concubine_12a
+				has_province_modifier = sa_concubine_12b
+				has_province_modifier = sa_concubine_12c
+				has_province_modifier = sa_concubine_13a
+				has_province_modifier = sa_concubine_13b
+				has_province_modifier = sa_concubine_13c
+				has_province_modifier = sa_concubine_14a
+				has_province_modifier = sa_concubine_14b
+				has_province_modifier = sa_concubine_14c
+				has_province_modifier = sa_concubine_15a
+				has_province_modifier = sa_concubine_15b
+				has_province_modifier = sa_concubine_15c
+				has_province_modifier = sa_concubine_16a
+				has_province_modifier = sa_concubine_16b
+				has_province_modifier = sa_concubine_16c
+				
+				#NA
+				has_province_modifier = na_concubine_1a
+				has_province_modifier = na_concubine_1b
+				has_province_modifier = na_concubine_1c
+				has_province_modifier = na_concubine_2a
+				has_province_modifier = na_concubine_2b
+				has_province_modifier = na_concubine_2c
+				has_province_modifier = na_concubine_3a
+				has_province_modifier = na_concubine_3b
+				has_province_modifier = na_concubine_3c
+				has_province_modifier = na_concubine_4a
+				has_province_modifier = na_concubine_4b
+				has_province_modifier = na_concubine_4c
+				has_province_modifier = na_concubine_5a
+				has_province_modifier = na_concubine_5b
+				has_province_modifier = na_concubine_5c
+				has_province_modifier = na_concubine_6a
+				has_province_modifier = na_concubine_6b
+				has_province_modifier = na_concubine_6c
+				has_province_modifier = na_concubine_7a
+				has_province_modifier = na_concubine_7b
+				has_province_modifier = na_concubine_7c
+				has_province_modifier = na_concubine_8a
+				has_province_modifier = na_concubine_8b
+				has_province_modifier = na_concubine_8c
+				has_province_modifier = na_concubine_9a
+				has_province_modifier = na_concubine_9b
+				has_province_modifier = na_concubine_9c
+				has_province_modifier = na_concubine_10a
+				has_province_modifier = na_concubine_10b
+				has_province_modifier = na_concubine_10c
+				has_province_modifier = na_concubine_11a
+				has_province_modifier = na_concubine_11b
+				has_province_modifier = na_concubine_11c
+				has_province_modifier = na_concubine_12a
+				has_province_modifier = na_concubine_12b
+				has_province_modifier = na_concubine_12c
+				has_province_modifier = na_concubine_13a
+				has_province_modifier = na_concubine_13b
+				has_province_modifier = na_concubine_13c
+				has_province_modifier = na_concubine_14a
+				has_province_modifier = na_concubine_14b
+				has_province_modifier = na_concubine_14c
+				has_province_modifier = na_concubine_15a
+				has_province_modifier = na_concubine_15b
+				has_province_modifier = na_concubine_15c
+				has_province_modifier = na_concubine_16a
+				has_province_modifier = na_concubine_16b
+				has_province_modifier = na_concubine_16c
+				#africa
+				has_province_modifier = africa_concubine_1a
+				has_province_modifier = africa_concubine_1b
+				has_province_modifier = africa_concubine_1c
+				has_province_modifier = africa_concubine_2a
+				has_province_modifier = africa_concubine_2b
+				has_province_modifier = africa_concubine_2c
+				has_province_modifier = africa_concubine_3a
+				has_province_modifier = africa_concubine_3b
+				has_province_modifier = africa_concubine_3c
+				has_province_modifier = africa_concubine_4a
+				has_province_modifier = africa_concubine_4b
+				has_province_modifier = africa_concubine_4c
+				has_province_modifier = africa_concubine_5a
+				has_province_modifier = africa_concubine_5b
+				has_province_modifier = africa_concubine_5c
+				has_province_modifier = africa_concubine_6a
+				has_province_modifier = africa_concubine_6b
+				has_province_modifier = africa_concubine_6c
+				has_province_modifier = africa_concubine_7a
+				has_province_modifier = africa_concubine_7b
+				has_province_modifier = africa_concubine_7c
+				has_province_modifier = africa_concubine_8a
+				has_province_modifier = africa_concubine_8b
+				has_province_modifier = africa_concubine_8c
+				has_province_modifier = africa_concubine_9a
+				has_province_modifier = africa_concubine_9b
+				has_province_modifier = africa_concubine_9c
+				has_province_modifier = africa_concubine_10a
+				has_province_modifier = africa_concubine_10b
+				has_province_modifier = africa_concubine_10c
+				has_province_modifier = africa_concubine_11a
+				has_province_modifier = africa_concubine_11b
+				has_province_modifier = africa_concubine_11c
+				has_province_modifier = africa_concubine_12a
+				has_province_modifier = africa_concubine_12b
+				has_province_modifier = africa_concubine_12c
+				has_province_modifier = africa_concubine_13a
+				has_province_modifier = africa_concubine_13b
+				has_province_modifier = africa_concubine_13c
+				has_province_modifier = africa_concubine_14a
+				has_province_modifier = africa_concubine_14b
+				has_province_modifier = africa_concubine_14c
+				has_province_modifier = africa_concubine_15a
+				has_province_modifier = africa_concubine_15b
+				has_province_modifier = africa_concubine_15c
+				#eurow	
+				has_province_modifier = eurow_concubine_1a
+				has_province_modifier = eurow_concubine_1b
+				has_province_modifier = eurow_concubine_1c
+				has_province_modifier = eurow_concubine_2a
+				has_province_modifier = eurow_concubine_2b
+				has_province_modifier = eurow_concubine_2c
+				has_province_modifier = eurow_concubine_3a
+				has_province_modifier = eurow_concubine_3b
+				has_province_modifier = eurow_concubine_3c
+				has_province_modifier = eurow_concubine_4a
+				has_province_modifier = eurow_concubine_4b
+				has_province_modifier = eurow_concubine_4c
+				has_province_modifier = eurow_concubine_5a
+				has_province_modifier = eurow_concubine_5b
+				has_province_modifier = eurow_concubine_5c
+				has_province_modifier = eurow_concubine_6a
+				has_province_modifier = eurow_concubine_6b
+				has_province_modifier = eurow_concubine_6c
+				has_province_modifier = eurow_concubine_7a
+				has_province_modifier = eurow_concubine_7b
+				has_province_modifier = eurow_concubine_7c
+				has_province_modifier = eurow_concubine_8a
+				has_province_modifier = eurow_concubine_8b
+				has_province_modifier = eurow_concubine_8c
+				has_province_modifier = eurow_concubine_9a
+				has_province_modifier = eurow_concubine_9b
+				has_province_modifier = eurow_concubine_9c
+				has_province_modifier = eurow_concubine_10a
+				has_province_modifier = eurow_concubine_10b
+				has_province_modifier = eurow_concubine_10c
+				has_province_modifier = eurow_concubine_11a
+				has_province_modifier = eurow_concubine_11b
+				has_province_modifier = eurow_concubine_11c
+				has_province_modifier = eurow_concubine_12a
+				has_province_modifier = eurow_concubine_12b
+				has_province_modifier = eurow_concubine_12c
+				has_province_modifier = eurow_concubine_13a
+				has_province_modifier = eurow_concubine_13b
+				has_province_modifier = eurow_concubine_13c
+				has_province_modifier = eurow_concubine_14a
+				has_province_modifier = eurow_concubine_14b
+				has_province_modifier = eurow_concubine_14c
+				has_province_modifier = eurow_concubine_15a
+				has_province_modifier = eurow_concubine_15b
+				has_province_modifier = eurow_concubine_15c
+				has_province_modifier = eurow_concubine_16a
+				has_province_modifier = eurow_concubine_16b
+				has_province_modifier = eurow_concubine_16c	
+				has_province_modifier = eurow_concubine_17a
+				has_province_modifier = eurow_concubine_17b
+				has_province_modifier = eurow_concubine_17c
+				has_province_modifier = eurow_concubine_18a
+				has_province_modifier = eurow_concubine_18b
+				has_province_modifier = eurow_concubine_18c	
+				has_province_modifier = eurow_concubine_19a
+				has_province_modifier = eurow_concubine_19b
+				has_province_modifier = eurow_concubine_19c	
+				has_province_modifier = pirate_queen_1a
+				has_province_modifier = pirate_queen_1b
+				has_province_modifier = pirate_queen_1c
+				has_province_modifier = pirate_queen_2a
+				has_province_modifier = pirate_queen_2b
+				has_province_modifier = pirate_queen_2c
+				has_province_modifier = pirate_queen_3a
+				has_province_modifier = pirate_queen_3b
+				has_province_modifier = pirate_queen_3c														
+				#euroh
+				has_province_modifier = euro_concubine_1a
+				has_province_modifier = euro_concubine_1b
+				has_province_modifier = euro_concubine_1c
+				has_province_modifier = euro_concubine_2a
+				has_province_modifier = euro_concubine_2b
+				has_province_modifier = euro_concubine_2c
+				has_province_modifier = euro_concubine_3a
+				has_province_modifier = euro_concubine_3b
+				has_province_modifier = euro_concubine_3c
+				has_province_modifier = euro_concubine_4a
+				has_province_modifier = euro_concubine_4b
+				has_province_modifier = euro_concubine_4c
+				has_province_modifier = euro_concubine_5a
+				has_province_modifier = euro_concubine_5b
+				has_province_modifier = euro_concubine_5c
+				has_province_modifier = euro_concubine_6a
+				has_province_modifier = euro_concubine_6b
+				has_province_modifier = euro_concubine_6c
+				has_province_modifier = euro_concubine_7a
+				has_province_modifier = euro_concubine_7b
+				has_province_modifier = euro_concubine_7c
+				has_province_modifier = euro_concubine_8a
+				has_province_modifier = euro_concubine_8b
+				has_province_modifier = euro_concubine_8c
+				has_province_modifier = euro_concubine_9a
+				has_province_modifier = euro_concubine_9b
+				has_province_modifier = euro_concubine_9c
+				has_province_modifier = euro_concubine_10a
+				has_province_modifier = euro_concubine_10b
+				has_province_modifier = euro_concubine_10c
+				has_province_modifier = euro_concubine_11a
+				has_province_modifier = euro_concubine_11b
+				has_province_modifier = euro_concubine_11c
+				has_province_modifier = euro_concubine_12a
+				has_province_modifier = euro_concubine_12b
+				has_province_modifier = euro_concubine_12c						
+				#mena
+				has_province_modifier = mena_concubine_1a
+				has_province_modifier = mena_concubine_1b
+				has_province_modifier = mena_concubine_1c
+				has_province_modifier = mena_concubine_2a
+				has_province_modifier = mena_concubine_2b
+				has_province_modifier = mena_concubine_2c
+				has_province_modifier = mena_concubine_3a
+				has_province_modifier = mena_concubine_3b
+				has_province_modifier = mena_concubine_3c
+				has_province_modifier = mena_concubine_4a
+				has_province_modifier = mena_concubine_4b
+				has_province_modifier = mena_concubine_4c
+				has_province_modifier = mena_concubine_5a
+				has_province_modifier = mena_concubine_5b
+				has_province_modifier = mena_concubine_5c
+				has_province_modifier = mena_concubine_6a
+				has_province_modifier = mena_concubine_6b
+				has_province_modifier = mena_concubine_6c
+				has_province_modifier = mena_concubine_7a
+				has_province_modifier = mena_concubine_7b
+				has_province_modifier = mena_concubine_7c
+				has_province_modifier = mena_concubine_8a
+				has_province_modifier = mena_concubine_8b
+				has_province_modifier = mena_concubine_8c
+				has_province_modifier = mena_concubine_9a
+				has_province_modifier = mena_concubine_9b
+				has_province_modifier = mena_concubine_9c
+				has_province_modifier = mena_concubine_10a
+				has_province_modifier = mena_concubine_10b
+				has_province_modifier = mena_concubine_10c
+				has_province_modifier = mena_concubine_11a
+				has_province_modifier = mena_concubine_11b
+				has_province_modifier = mena_concubine_11c
+				has_province_modifier = mena_concubine_12a
+				has_province_modifier = mena_concubine_12b
+				has_province_modifier = mena_concubine_12c
+				#india	
+				has_province_modifier = india_concubine_1a
+				has_province_modifier = india_concubine_1b
+				has_province_modifier = india_concubine_1c
+				has_province_modifier = india_concubine_2a
+				has_province_modifier = india_concubine_2b
+				has_province_modifier = india_concubine_2c
+				has_province_modifier = india_concubine_3a
+				has_province_modifier = india_concubine_3b
+				has_province_modifier = india_concubine_3c
+				has_province_modifier = india_concubine_4a
+				has_province_modifier = india_concubine_4b
+				has_province_modifier = india_concubine_4c
+				has_province_modifier = india_concubine_5a
+				has_province_modifier = india_concubine_5b
+				has_province_modifier = india_concubine_5c
+				has_province_modifier = india_concubine_6a
+				has_province_modifier = india_concubine_6b
+				has_province_modifier = india_concubine_6c
+				has_province_modifier = india_concubine_7a
+				has_province_modifier = india_concubine_7b
+				has_province_modifier = india_concubine_7c
+				has_province_modifier = india_concubine_8a
+				has_province_modifier = india_concubine_8b
+				has_province_modifier = india_concubine_8c
+				has_province_modifier = india_concubine_9a
+				has_province_modifier = india_concubine_9b
+				has_province_modifier = india_concubine_9c
+				has_province_modifier = india_concubine_10a
+				has_province_modifier = india_concubine_10b
+				has_province_modifier = india_concubine_10c
+				has_province_modifier = india_concubine_11a
+				has_province_modifier = india_concubine_11b
+				has_province_modifier = india_concubine_11c
+				has_province_modifier = india_concubine_12a
+				has_province_modifier = india_concubine_12b
+				has_province_modifier = india_concubine_12c
+				#china
+				has_province_modifier = china_concubine_1a
+				has_province_modifier = china_concubine_1b
+				has_province_modifier = china_concubine_1c
+				has_province_modifier = china_concubine_2a
+				has_province_modifier = china_concubine_2b
+				has_province_modifier = china_concubine_2c
+				has_province_modifier = china_concubine_3a
+				has_province_modifier = china_concubine_3b
+				has_province_modifier = china_concubine_3c
+				has_province_modifier = china_concubine_4a
+				has_province_modifier = china_concubine_4b
+				has_province_modifier = china_concubine_4c
+				has_province_modifier = china_concubine_5a
+				has_province_modifier = china_concubine_5b
+				has_province_modifier = china_concubine_5c
+				has_province_modifier = china_concubine_6a
+				has_province_modifier = china_concubine_6b
+				has_province_modifier = china_concubine_6c
+				has_province_modifier = china_concubine_7a
+				has_province_modifier = china_concubine_7b
+				has_province_modifier = china_concubine_7c
+				has_province_modifier = china_concubine_8a
+				has_province_modifier = china_concubine_8b
+				has_province_modifier = china_concubine_8c
+				has_province_modifier = china_concubine_9a
+				has_province_modifier = china_concubine_9b
+				has_province_modifier = china_concubine_9c
+				has_province_modifier = china_concubine_10a
+				has_province_modifier = china_concubine_10b
+				has_province_modifier = china_concubine_10c
+				has_province_modifier = china_concubine_11a
+				has_province_modifier = china_concubine_11b
+				has_province_modifier = china_concubine_11c
+				has_province_modifier = china_concubine_12a
+				has_province_modifier = china_concubine_12b
+				has_province_modifier = china_concubine_12c
+				has_province_modifier = china_concubine_13a
+				has_province_modifier = china_concubine_13b
+				has_province_modifier = china_concubine_13c
+				has_province_modifier = china_concubine_14a
+				has_province_modifier = china_concubine_14b
+				has_province_modifier = china_concubine_14c
+				has_province_modifier = china_concubine_15a
+				has_province_modifier = china_concubine_15b
+				has_province_modifier = china_concubine_15c		
+				has_province_modifier = china_concubine_16a
+				has_province_modifier = china_concubine_16b
+				has_province_modifier = china_concubine_16c
+				has_province_modifier = china_concubine_17a
+				has_province_modifier = china_concubine_17b
+				has_province_modifier = china_concubine_17c
+				has_province_modifier = china_concubine_18a
+				has_province_modifier = china_concubine_18b
+				has_province_modifier = china_concubine_18c
+				has_province_modifier = china_concubine_19a
+				has_province_modifier = china_concubine_19b
+				has_province_modifier = china_concubine_19c	
+				has_province_modifier = china_concubine_20a
+				has_province_modifier = china_concubine_20b
+				has_province_modifier = china_concubine_20c
+				has_province_modifier = china_concubine_21a
+				has_province_modifier = china_concubine_21b
+				has_province_modifier = china_concubine_21c
+				has_province_modifier = china_concubine_22a
+				has_province_modifier = china_concubine_22b
+				has_province_modifier = china_concubine_22c
+				has_province_modifier = china_concubine_23a
+				has_province_modifier = china_concubine_23b
+				has_province_modifier = china_concubine_23c
+				has_province_modifier = china_concubine_24a
+				has_province_modifier = china_concubine_24b
+				has_province_modifier = china_concubine_24c
+				has_province_modifier = china_concubine_25a
+				has_province_modifier = china_concubine_25b
+				has_province_modifier = china_concubine_25c	
+				has_province_modifier = china_concubine_26a
+				has_province_modifier = china_concubine_26b
+				has_province_modifier = china_concubine_26c
+				has_province_modifier = china_concubine_27a
+				has_province_modifier = china_concubine_27b
+				has_province_modifier = china_concubine_27c
+				has_province_modifier = china_concubine_28a
+				has_province_modifier = china_concubine_28b
+				has_province_modifier = china_concubine_28c
+				has_province_modifier = china_concubine_29a
+				has_province_modifier = china_concubine_29b
+				has_province_modifier = china_concubine_29c							
+				#japan
+				has_province_modifier = japan_concubine_1a
+				has_province_modifier = japan_concubine_1b
+				has_province_modifier = japan_concubine_1c
+				has_province_modifier = japan_concubine_2a
+				has_province_modifier = japan_concubine_2b
+				has_province_modifier = japan_concubine_2c
+				has_province_modifier = japan_concubine_3a
+				has_province_modifier = japan_concubine_3b
+				has_province_modifier = japan_concubine_3c
+				has_province_modifier = japan_concubine_4a
+				has_province_modifier = japan_concubine_4b
+				has_province_modifier = japan_concubine_4c
+				has_province_modifier = japan_concubine_5a
+				has_province_modifier = japan_concubine_5b
+				has_province_modifier = japan_concubine_5c
+				has_province_modifier = japan_concubine_6a
+				has_province_modifier = japan_concubine_6b
+				has_province_modifier = japan_concubine_6c
+				has_province_modifier = japan_concubine_7a
+				has_province_modifier = japan_concubine_7b
+				has_province_modifier = japan_concubine_7c
+				has_province_modifier = japan_concubine_8a
+				has_province_modifier = japan_concubine_8b
+				has_province_modifier = japan_concubine_8c
+				has_province_modifier = japan_concubine_9a
+				has_province_modifier = japan_concubine_9b
+				has_province_modifier = japan_concubine_9c
+				has_province_modifier = japan_concubine_10a
+				has_province_modifier = japan_concubine_10b
+				has_province_modifier = japan_concubine_10c
+				has_province_modifier = japan_concubine_11a
+				has_province_modifier = japan_concubine_11b
+				has_province_modifier = japan_concubine_11c
+				has_province_modifier = japan_concubine_12a
+				has_province_modifier = japan_concubine_12b
+				has_province_modifier = japan_concubine_12c					
+	}
+}
+
+cosmo_has_prostitute_trigger = {
+			OR = {
+				has_province_modifier = fakenw_prostitute_1a
+				has_province_modifier = fakenw_prostitute_1b
+				has_province_modifier = fakenw_prostitute_1c
+				has_province_modifier = fakenw_prostitute_2a
+				has_province_modifier = fakenw_prostitute_2b
+				has_province_modifier = fakenw_prostitute_2c
+				has_province_modifier = fakenw_prostitute_3a
+				has_province_modifier = fakenw_prostitute_3b
+				has_province_modifier = fakenw_prostitute_3c
+				has_province_modifier = fakenw_prostitute_4a
+				has_province_modifier = fakenw_prostitute_4b
+				has_province_modifier = fakenw_prostitute_4c
+				has_province_modifier = fakenw_prostitute_5a
+				has_province_modifier = fakenw_prostitute_5b
+				has_province_modifier = fakenw_prostitute_5c
+				has_province_modifier = fakenw_prostitute_6a
+				has_province_modifier = fakenw_prostitute_6b
+				has_province_modifier = fakenw_prostitute_6c
+				has_province_modifier = fakenw_prostitute_7a
+				has_province_modifier = fakenw_prostitute_7b
+				has_province_modifier = fakenw_prostitute_7c
+				has_province_modifier = fakenw_prostitute_8a
+				has_province_modifier = fakenw_prostitute_8b
+				has_province_modifier = fakenw_prostitute_8c
+				has_province_modifier = fakenw_prostitute_9a
+				has_province_modifier = fakenw_prostitute_9b
+				has_province_modifier = fakenw_prostitute_9c
+
+				#east indies
+				has_province_modifier = east_indies_prostitute_1a
+				has_province_modifier = east_indies_prostitute_1b
+				has_province_modifier = east_indies_prostitute_1c
+				has_province_modifier = east_indies_prostitute_2a
+				has_province_modifier = east_indies_prostitute_2b
+				has_province_modifier = east_indies_prostitute_2c
+				has_province_modifier = east_indies_prostitute_3a
+				has_province_modifier = east_indies_prostitute_3b
+				has_province_modifier = east_indies_prostitute_3c
+				has_province_modifier = east_indies_prostitute_4a
+				has_province_modifier = east_indies_prostitute_4b
+				has_province_modifier = east_indies_prostitute_4c
+				has_province_modifier = east_indies_prostitute_5a
+				has_province_modifier = east_indies_prostitute_5b
+				has_province_modifier = east_indies_prostitute_5c
+
+				#africa
+				has_province_modifier = africa_prostitute_1a
+				has_province_modifier = africa_prostitute_1b
+				has_province_modifier = africa_prostitute_1c
+				has_province_modifier = africa_prostitute_2a
+				has_province_modifier = africa_prostitute_2b
+				has_province_modifier = africa_prostitute_2c
+				has_province_modifier = africa_prostitute_3a
+				has_province_modifier = africa_prostitute_3b
+				has_province_modifier = africa_prostitute_3c
+				has_province_modifier = africa_prostitute_4a
+				has_province_modifier = africa_prostitute_4b
+				has_province_modifier = africa_prostitute_4c
+				has_province_modifier = africa_prostitute_5a
+				has_province_modifier = africa_prostitute_5b
+				has_province_modifier = africa_prostitute_5c
+				has_province_modifier = africa_prostitute_6a
+				has_province_modifier = africa_prostitute_6b
+				has_province_modifier = africa_prostitute_6c
+				has_province_modifier = africa_prostitute_7a
+				has_province_modifier = africa_prostitute_7b
+				has_province_modifier = africa_prostitute_7c
+				has_province_modifier = africa_prostitute_8a
+				has_province_modifier = africa_prostitute_8b
+				has_province_modifier = africa_prostitute_8c
+				has_province_modifier = africa_prostitute_9a
+				has_province_modifier = africa_prostitute_9b
+				has_province_modifier = africa_prostitute_9c
+				
+				#eurow	
+				has_province_modifier = europe_prostitute_1a
+				has_province_modifier = europe_prostitute_1b
+				has_province_modifier = europe_prostitute_1c
+				has_province_modifier = europe_prostitute_2a
+				has_province_modifier = europe_prostitute_2b
+				has_province_modifier = europe_prostitute_2c
+				has_province_modifier = europe_prostitute_3a
+				has_province_modifier = europe_prostitute_3b
+				has_province_modifier = europe_prostitute_3c
+				has_province_modifier = europe_prostitute_4a
+				has_province_modifier = europe_prostitute_4b
+				has_province_modifier = europe_prostitute_4c
+				has_province_modifier = europe_prostitute_5a
+				has_province_modifier = europe_prostitute_5b
+				has_province_modifier = europe_prostitute_5c
+				has_province_modifier = europe_prostitute_6a
+				has_province_modifier = europe_prostitute_6b
+				has_province_modifier = europe_prostitute_6c
+		
+				#indochina
+				has_province_modifier = indochina_prostitute_1a
+				has_province_modifier = indochina_prostitute_1b
+				has_province_modifier = indochina_prostitute_1c
+				has_province_modifier = indochina_prostitute_2a
+				has_province_modifier = indochina_prostitute_2b
+				has_province_modifier = indochina_prostitute_2c
+				has_province_modifier = indochina_prostitute_3a
+				has_province_modifier = indochina_prostitute_3b
+				has_province_modifier = indochina_prostitute_3c
+				has_province_modifier = indochina_prostitute_4a
+				has_province_modifier = indochina_prostitute_4b
+				has_province_modifier = indochina_prostitute_4c
+				has_province_modifier = indochina_prostitute_5a
+				has_province_modifier = indochina_prostitute_5b
+				has_province_modifier = indochina_prostitute_5c
+								
+				#mena
+				has_province_modifier = mena_prostitute_1a
+				has_province_modifier = mena_prostitute_1b
+				has_province_modifier = mena_prostitute_1c
+				has_province_modifier = mena_prostitute_2a
+				has_province_modifier = mena_prostitute_2b
+				has_province_modifier = mena_prostitute_2c
+				has_province_modifier = mena_prostitute_3a
+				has_province_modifier = mena_prostitute_3b
+				has_province_modifier = mena_prostitute_3c
+				has_province_modifier = mena_prostitute_4a
+				has_province_modifier = mena_prostitute_4b
+				has_province_modifier = mena_prostitute_4c
+				has_province_modifier = mena_prostitute_5a
+				has_province_modifier = mena_prostitute_5b
+				has_province_modifier = mena_prostitute_5c
+			
+				#india	
+				has_province_modifier = india_prostitute_1a
+				has_province_modifier = india_prostitute_1b
+				has_province_modifier = india_prostitute_1c
+				has_province_modifier = india_prostitute_2a
+				has_province_modifier = india_prostitute_2b
+				has_province_modifier = india_prostitute_2c
+				has_province_modifier = india_prostitute_3a
+				has_province_modifier = india_prostitute_3b
+				has_province_modifier = india_prostitute_3c
+				has_province_modifier = india_prostitute_4a
+				has_province_modifier = india_prostitute_4b
+				has_province_modifier = india_prostitute_4c
+		
+				#china
+				has_province_modifier = china_prostitute_1a
+				has_province_modifier = china_prostitute_1b
+				has_province_modifier = china_prostitute_1c
+				has_province_modifier = china_prostitute_2a
+				has_province_modifier = china_prostitute_2b
+				has_province_modifier = china_prostitute_2c
+				has_province_modifier = china_prostitute_3a
+				has_province_modifier = china_prostitute_3b
+				has_province_modifier = china_prostitute_3c
+				has_province_modifier = china_prostitute_4a
+				has_province_modifier = china_prostitute_4b
+				has_province_modifier = china_prostitute_4c
+				has_province_modifier = china_prostitute_5a
+				has_province_modifier = china_prostitute_5b
+				has_province_modifier = china_prostitute_5c
+				has_province_modifier = china_prostitute_6a
+				has_province_modifier = china_prostitute_6b
+				has_province_modifier = china_prostitute_6c
+		
+				#japan
+				has_province_modifier = japan_prostitute_1a
+				has_province_modifier = japan_prostitute_1b
+				has_province_modifier = japan_prostitute_1c
+				has_province_modifier = japan_prostitute_2a
+				has_province_modifier = japan_prostitute_2b
+				has_province_modifier = japan_prostitute_2c
+				has_province_modifier = japan_prostitute_3a
+				has_province_modifier = japan_prostitute_3b
+				has_province_modifier = japan_prostitute_3c
+				has_province_modifier = japan_prostitute_4a
+				has_province_modifier = japan_prostitute_4b
+				has_province_modifier = japan_prostitute_4c
+				has_province_modifier = japan_prostitute_5a
+				has_province_modifier = japan_prostitute_5b
+				has_province_modifier = japan_prostitute_5c
+
+				#korea
+				has_province_modifier = korea_prostitute_1a
+				has_province_modifier = korea_prostitute_1b
+				has_province_modifier = korea_prostitute_1c
+				has_province_modifier = korea_prostitute_2a
+				has_province_modifier = korea_prostitute_2b
+				has_province_modifier = korea_prostitute_2c
+				has_province_modifier = korea_prostitute_3a
+				has_province_modifier = korea_prostitute_3b
+				has_province_modifier = korea_prostitute_3c
+				has_province_modifier = korea_prostitute_4a
+				has_province_modifier = korea_prostitute_4b
+				has_province_modifier = korea_prostitute_4c
+				has_province_modifier = korea_prostitute_5a
+				has_province_modifier = korea_prostitute_5b
+				has_province_modifier = korea_prostitute_5c
+				has_province_modifier = korea_prostitute_6a
+				has_province_modifier = korea_prostitute_6b
+				has_province_modifier = korea_prostitute_6c																											
+	}
+}
+
+cosmo_fakenw_busy_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_1
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_1a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_1b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_1c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_2
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_2a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_2b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_2c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_3
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_3a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_3b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_3c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_4
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_4a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_4b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_4c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_5
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_5a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_5b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_5c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_6
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_6a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_6b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_6c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_7
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_7a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_7b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_7c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_8
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_8a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_8b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_8c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_fake_newworld_menu_9
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_9a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_9b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = fakenw_prostitute_9c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_east_indies_menu_1
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_1a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_1b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_1c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_east_indies_menu_2
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_2a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_2b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_2c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_east_indies_menu_3
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_3a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_3b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_3c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_east_indies_menu_4
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_4a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_4b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_4c
+				}					
+				}								
+			}			
+		}
+		AND = {
+			has_country_flag = brothel_east_indies_menu_5
+			OR = {
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_5a
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_5b
+				}					
+				}
+				NOT = {
+					any_province = {
+					has_province_modifier = east_indies_prostitute_5c
+				}					
+				}								
+			}			
+		}																		
+	}
+}
+
+cosmo_has_slave_sent = {
+			OR = {
+				has_province_modifier = cosmo_west_africa_slaves_sent
+				has_province_modifier = cosmo_east_africa_slaves_sent
+				has_province_modifier = cosmo_central_africa_slaves_sent
+				has_province_modifier = cosmo_thai_slaves_sent
+				has_province_modifier = cosmo_malay_slaves_sent
+				has_province_modifier = cosmo_vietnam_slaves_sent
+				has_province_modifier = cosmo_korea_slaves_sent
+				has_province_modifier = cosmo_china_slaves_sent
+				has_province_modifier = cosmo_japan_slaves_sent
+				has_province_modifier = cosmo_south_asian_slaves_sent
+				has_province_modifier = cosmo_turkish_slaves_sent
+				has_province_modifier = cosmo_persian_slaves_sent
+				has_province_modifier = cosmo_mena_slaves_sent
+				has_province_modifier = cosmo_central_america_slaves_sent
+				has_province_modifier = cosmo_south_america_slaves_sent
+				has_province_modifier = cosmo_north_america_slaves_sent
+				has_province_modifier = cosmo_europe_slaves_sent
+				has_province_modifier = cosmo_iberian_slaves_sent
+				has_province_modifier = cosmo_scandinavian_slaves_sent
+				has_province_modifier = cosmo_british_slaves_sent
+				has_province_modifier = cosmo_scandinavian_slaves_sent
+				has_province_modifier = cosmo_gaelic_slaves_sent
+				has_province_modifier = cosmo_american_slaves_sent
+				has_province_modifier = cosmo_french_slaves_sent
+				has_province_modifier = cosmo_central_european_slaves_sent
+				has_province_modifier = cosmo_venetian_slaves_sent
+				has_province_modifier = cosmo_italian_slaves_sent
+				has_province_modifier = cosmo_balkan_slaves_sent
+				has_province_modifier = cosmo_russian_slaves_sent																										
+	}
+}
+
+cosmo_adm_tech_difference = {
+	OR = {
+		AND = {
+			ROOT = {
+			adm_tech = 1
+			NOT = { adm_tech = 2 }	
+			}
+			FROM = {
+			adm_tech = 2	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 2
+			NOT = { adm_tech = 3 }	
+			}
+			FROM = {
+			adm_tech = 3
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 3
+			NOT = { adm_tech = 4 }	
+			}
+			FROM = {
+			adm_tech = 4	
+			}
+		}				
+		AND = {
+			ROOT = {
+			adm_tech = 4
+			NOT = { adm_tech = 5 }	
+			}
+			FROM = {
+			adm_tech = 5	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 6
+			NOT = { adm_tech = 7 }	
+			}
+			FROM = {
+			adm_tech = 7	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 7
+			NOT = { adm_tech = 8 }	
+			}
+			FROM = {
+			adm_tech = 8	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 8
+			NOT = { adm_tech = 9 }	
+			}
+			FROM = {
+			adm_tech = 9	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 9
+			NOT = { adm_tech = 10 }	
+			}
+			FROM = {
+			adm_tech = 10	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 11
+			NOT = { adm_tech = 12 }	
+			}
+			FROM = {
+			adm_tech = 12	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 12
+			NOT = { adm_tech = 13 }	
+			}
+			FROM = {
+			adm_tech = 13
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 13
+			NOT = { adm_tech = 14 }	
+			}
+			FROM = {
+			adm_tech = 14	
+			}
+		}				
+		AND = {
+			ROOT = {
+			adm_tech = 14
+			NOT = { adm_tech = 15 }	
+			}
+			FROM = {
+			adm_tech = 15	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 16
+			NOT = { adm_tech = 17 }	
+			}
+			FROM = {
+			adm_tech = 17	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 17
+			NOT = { adm_tech = 18 }	
+			}
+			FROM = {
+			adm_tech = 18	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 18
+			NOT = { adm_tech = 19 }	
+			}
+			FROM = {
+			adm_tech = 19	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 19
+			NOT = { adm_tech = 20 }	
+			}
+			FROM = {
+			adm_tech = 20	
+			}
+		}								
+		AND = {
+			ROOT = {
+			adm_tech = 20
+			NOT = { adm_tech = 21 }	
+			}
+			FROM = {
+			adm_tech = 21	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 21
+			NOT = { adm_tech = 22 }	
+			}
+			FROM = {
+			adm_tech = 22	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 22
+			NOT = { adm_tech = 23 }	
+			}
+			FROM = {
+			adm_tech = 23
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 23
+			NOT = { adm_tech = 24 }	
+			}
+			FROM = {
+			adm_tech = 24	
+			}
+		}				
+		AND = {
+			ROOT = {
+			adm_tech = 24
+			NOT = { adm_tech = 25 }	
+			}
+			FROM = {
+			adm_tech = 25	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 26
+			NOT = { adm_tech = 27 }	
+			}
+			FROM = {
+			adm_tech = 27	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 27
+			NOT = { adm_tech = 28 }	
+			}
+			FROM = {
+			adm_tech = 28	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 28
+			NOT = { adm_tech = 29 }	
+			}
+			FROM = {
+			adm_tech = 29	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 29
+			NOT = { adm_tech = 30 }	
+			}
+			FROM = {
+			adm_tech = 30	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 30
+			NOT = { adm_tech = 31 }	
+			}
+			FROM = {
+			adm_tech = 31	
+			}
+		}
+		AND = {
+			ROOT = {
+			adm_tech = 31
+			NOT = { adm_tech = 32 }	
+			}
+			FROM = {
+			adm_tech = 32	
+			}
+		}
+	}
+}
+
+cosmo_dip_tech_difference = {
+	OR = {
+		AND = {
+			ROOT = {
+			dip_tech = 1
+			NOT = { dip_tech = 2 }	
+			}
+			FROM = {
+			dip_tech = 2	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 2
+			NOT = { dip_tech = 3 }	
+			}
+			FROM = {
+			dip_tech = 3
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 3
+			NOT = { dip_tech = 4 }	
+			}
+			FROM = {
+			dip_tech = 4	
+			}
+		}				
+		AND = {
+			ROOT = {
+			dip_tech = 4
+			NOT = { dip_tech = 5 }	
+			}
+			FROM = {
+			dip_tech = 5	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 6
+			NOT = { dip_tech = 7 }	
+			}
+			FROM = {
+			dip_tech = 7	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 7
+			NOT = { dip_tech = 8 }	
+			}
+			FROM = {
+			dip_tech = 8	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 8
+			NOT = { dip_tech = 9 }	
+			}
+			FROM = {
+			dip_tech = 9	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 9
+			NOT = { dip_tech = 10 }	
+			}
+			FROM = {
+			dip_tech = 10	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 11
+			NOT = { dip_tech = 12 }	
+			}
+			FROM = {
+			dip_tech = 12	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 12
+			NOT = { dip_tech = 13 }	
+			}
+			FROM = {
+			dip_tech = 13
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 13
+			NOT = { dip_tech = 14 }	
+			}
+			FROM = {
+			dip_tech = 14	
+			}
+		}				
+		AND = {
+			ROOT = {
+			dip_tech = 14
+			NOT = { dip_tech = 15 }	
+			}
+			FROM = {
+			dip_tech = 15	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 16
+			NOT = { dip_tech = 17 }	
+			}
+			FROM = {
+			dip_tech = 17	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 17
+			NOT = { dip_tech = 18 }	
+			}
+			FROM = {
+			dip_tech = 18	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 18
+			NOT = { dip_tech = 19 }	
+			}
+			FROM = {
+			dip_tech = 19	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 19
+			NOT = { dip_tech = 20 }	
+			}
+			FROM = {
+			dip_tech = 20	
+			}
+		}								
+		AND = {
+			ROOT = {
+			dip_tech = 20
+			NOT = { dip_tech = 21 }	
+			}
+			FROM = {
+			dip_tech = 21	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 21
+			NOT = { dip_tech = 22 }	
+			}
+			FROM = {
+			dip_tech = 22	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 22
+			NOT = { dip_tech = 23 }	
+			}
+			FROM = {
+			dip_tech = 23
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 23
+			NOT = { dip_tech = 24 }	
+			}
+			FROM = {
+			dip_tech = 24	
+			}
+		}				
+		AND = {
+			ROOT = {
+			dip_tech = 24
+			NOT = { dip_tech = 25 }	
+			}
+			FROM = {
+			dip_tech = 25	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 26
+			NOT = { dip_tech = 27 }	
+			}
+			FROM = {
+			dip_tech = 27	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 27
+			NOT = { dip_tech = 28 }	
+			}
+			FROM = {
+			dip_tech = 28	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 28
+			NOT = { dip_tech = 29 }	
+			}
+			FROM = {
+			dip_tech = 29	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 29
+			NOT = { dip_tech = 30 }	
+			}
+			FROM = {
+			dip_tech = 30	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 30
+			NOT = { dip_tech = 31 }	
+			}
+			FROM = {
+			dip_tech = 31	
+			}
+		}
+		AND = {
+			ROOT = {
+			dip_tech = 31
+			NOT = { dip_tech = 32 }	
+			}
+			FROM = {
+			dip_tech = 32	
+			}
+		}
+	}
+}
+
+cosmo_mil_tech_difference = {
+	OR = {
+		AND = {
+			ROOT = {
+			mil_tech = 1
+			NOT = { mil_tech = 2 }	
+			}
+			FROM = {
+			mil_tech = 2	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 2
+			NOT = { mil_tech = 3 }	
+			}
+			FROM = {
+			mil_tech = 3
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 3
+			NOT = { mil_tech = 4 }	
+			}
+			FROM = {
+			mil_tech = 4	
+			}
+		}				
+		AND = {
+			ROOT = {
+			mil_tech = 4
+			NOT = { mil_tech = 5 }	
+			}
+			FROM = {
+			mil_tech = 5	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 6
+			NOT = { mil_tech = 7 }	
+			}
+			FROM = {
+			mil_tech = 7	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 7
+			NOT = { mil_tech = 8 }	
+			}
+			FROM = {
+			mil_tech = 8	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 8
+			NOT = { mil_tech = 9 }	
+			}
+			FROM = {
+			mil_tech = 9	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 9
+			NOT = { mil_tech = 10 }	
+			}
+			FROM = {
+			mil_tech = 10	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 11
+			NOT = { mil_tech = 12 }	
+			}
+			FROM = {
+			mil_tech = 12	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 12
+			NOT = { mil_tech = 13 }	
+			}
+			FROM = {
+			mil_tech = 13
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 13
+			NOT = { mil_tech = 14 }	
+			}
+			FROM = {
+			mil_tech = 14	
+			}
+		}				
+		AND = {
+			ROOT = {
+			mil_tech = 14
+			NOT = { mil_tech = 15 }	
+			}
+			FROM = {
+			mil_tech = 15	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 16
+			NOT = { mil_tech = 17 }	
+			}
+			FROM = {
+			mil_tech = 17	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 17
+			NOT = { mil_tech = 18 }	
+			}
+			FROM = {
+			mil_tech = 18	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 18
+			NOT = { mil_tech = 19 }	
+			}
+			FROM = {
+			mil_tech = 19	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 19
+			NOT = { mil_tech = 20 }	
+			}
+			FROM = {
+			mil_tech = 20	
+			}
+		}								
+		AND = {
+			ROOT = {
+			mil_tech = 20
+			NOT = { mil_tech = 21 }	
+			}
+			FROM = {
+			mil_tech = 21	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 21
+			NOT = { mil_tech = 22 }	
+			}
+			FROM = {
+			mil_tech = 22	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 22
+			NOT = { mil_tech = 23 }	
+			}
+			FROM = {
+			mil_tech = 23
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 23
+			NOT = { mil_tech = 24 }	
+			}
+			FROM = {
+			mil_tech = 24	
+			}
+		}				
+		AND = {
+			ROOT = {
+			mil_tech = 24
+			NOT = { mil_tech = 25 }	
+			}
+			FROM = {
+			mil_tech = 25	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 26
+			NOT = { mil_tech = 27 }	
+			}
+			FROM = {
+			mil_tech = 27	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 27
+			NOT = { mil_tech = 28 }	
+			}
+			FROM = {
+			mil_tech = 28	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 28
+			NOT = { mil_tech = 29 }	
+			}
+			FROM = {
+			mil_tech = 29	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 29
+			NOT = { mil_tech = 30 }	
+			}
+			FROM = {
+			mil_tech = 30	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 30
+			NOT = { mil_tech = 31 }	
+			}
+			FROM = {
+			mil_tech = 31	
+			}
+		}
+		AND = {
+			ROOT = {
+			mil_tech = 31
+			NOT = { mil_tech = 32 }	
+			}
+			FROM = {
+			mil_tech = 32	
+			}
+		}
+	}
+}

@@ -1,0 +1,598 @@
+spriteTypes = {
+
+		# Japanese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_MERCHANT_NA_EUROPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/MERCHANT_NA_EUROPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Japanese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_MERCHANT_SA_EUROPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/MERCHANT_SA_EUROPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Japanese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_MERCHANT_AFRICA_EUROPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/MERCHANT_AFRICA_EUROPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Japanese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_JAPANESE_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_JAPANESE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Japanese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_JAPANESE_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_JAPANESE_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Chinese, Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_CHINESE_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_CHINESE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Chinese Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_CHINESE_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_CHINESE_2_eventPicture.dds"
+			allwaystransparent = yes
+		}						
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_EUROPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_EUROPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_EUROPE_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_EUROPE_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_EUROPE_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_EUROPE_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_EUROPE_4_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_EUROPE_4_eventPicture.dds"
+			allwaystransparent = yes
+		}						
+		# African Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_AFRICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_AFRICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# African Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_AFRICA_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_AFRICA_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# African Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_AFRICA_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_AFRICA_3_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# American Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_AMERICAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_AMERICAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ARAB_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_ARAB_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ARAB_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_ARAB_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ARAB_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_ARAB_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ARAB_4_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_ARAB_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_AZTEC_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_AZTEC_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_BRITISH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_BRITISH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_BRITISH_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_BRITISH_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_BURMA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_BURMA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}				
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_CZECH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_CZECH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_KOREAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_KOREAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_LITHUANIA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_LITHUANIA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_MAGHREB_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_MAGHREB_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_MAYAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_MAYAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_MONTENEGRO_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_MONTENEGRO_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_NORTH_AMERICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_NORTH_AMERICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}			
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PAPAL_STATES_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PAPAL_STATES_1_eventPicture.dds"
+			allwaystransparent = yes
+		}						
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_POLISH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_POLISH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ROMANIAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_ROMANIAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_RUSSIAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_RUSSIAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SCOTLAND_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SCOTLAND_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_THAI_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_THAI_1_eventPicture.dds"
+			allwaystransparent = yes
+		}									
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SWEDISH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SWEDISH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_FRENCH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_FRENCH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_FRENCH_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_FRENCH_2_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_IRELAND_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_IRELAND_1_eventPicture.dds"
+			allwaystransparent = yes
+		}					
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_GERMAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_GERMAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_GHANA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_GHANA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_INCAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_INCAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_INDONESIA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_INDONESIA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}									
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_INDIA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_INDIA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_FILIPINO_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_FILIPINO_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_NORTH_AMERICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_NORTH_AMERICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PAPAL_STATES_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PAPAL_STATES_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PERSIAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PERSIAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PERSIAN_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PERSIAN_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PERSIAN_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PERSIAN_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_PERSIAN_4_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_PERSIAN_4_eventPicture.dds"
+			allwaystransparent = yes
+		}															
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# Aztec Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_KONGO_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_KONGO_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_SPAIN_4_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_SPAIN_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_TURKISH_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_TURKISH_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_TURKISH_2_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_TURKISH_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_TURKISH_3_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_TURKISH_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_TURKISH_4_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_TURKISH_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_STEPPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/OFFICIAL_STEPPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_INDIA_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_INDIA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_STEPPE_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_STEPPE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_CHINA_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_CHINA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_EAST_INDIES_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_EAST_INDIES_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_AFRICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_AFRICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_MUSLIM_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_MUSLIM_1_eventPicture.dds"
+			allwaystransparent = yes
+		}									
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_CENTRAL_AMERICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_CENTRAL_AMERICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}			
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_NORTH_AMERICA_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_NORTH_AMERICA_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_1_eventPicture.dds"
+			allwaystransparent = yes
+		}	
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_2_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_2_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_3_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_3_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_4_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_4_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_5_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_5_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_6_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_6_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_BROTHEL_DISTRICT_JAPAN_7_eventPicture"
+			texturefile = "gfx/event_pictures/BROTHEL_DISTRICT_JAPAN_7_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_SULU_CAPTURE_1_eventPicture"
+			texturefile = "gfx/event_pictures/SULU_CAPTURE_1_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ANDALUSIAN_2_eventPicture"
+			texturefile = "gfx/event_pictures/ANDALUSIAN_KING_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_OFFICIAL_ANDALUSIAN_1_eventPicture"
+			texturefile = "gfx/event_pictures/ANDALUSIAN_ADVISOR_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# European Official, Noble or Royal
+		spriteType = {
+			name = "cosmogfx_EUROCOURT_eventPicture"
+			texturefile = "gfx/event_pictures/event_pictures_GE/COURT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+	spriteType = {
+		name = "cosmogfx_INDIACOURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_WON/COURT_eventPicture.dds"
+		allwaystransparent = yes
+	}		
+
+	spriteType = {
+		name = "cosmogfx_EAST_SLAVIC_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_TR/PRINCE_AND_BOYARS_eventPicture.dds"
+		allwaystransparent = yes
+	}	
+
+	spriteType = {
+		name = "cosmogfx_NA_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_PARADISE/COURT_eventPicture.dds"
+		allwaystransparent = yes
+	}	
+
+	spriteType = {
+		name = "cosmogfx_CENTRAL_AFRICA_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_MN/CENTRAL_AFRICAN_COURT_eventPicture.dds"
+		allwaystransparent = yes
+	}		
+
+	spriteType = {
+		name = "cosmogfx_SA_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ED/GIFTS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "cosmogfx_ASIAN_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CS/BUDDHISM_LAMA_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_MUSLIM_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COC/sultan_and_merchant.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_BYZ_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_BYZANTINE/COURT_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_JAPAN_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_MOH/SHOGUNATE_AUTHORITY_INCIDENT_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_AKA_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/OSEI_ASHANTI_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_EAST_ASIAN_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_MOH/GIFTS_TO_EMPEROR_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "cosmogfx_ASIAN_ALT_COURT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/COURT_eventPicture.dds"
+	}
+
+	spriteType = {
+		name = "cosmogfx_OFFICIAL_MAORI_1_eventPicture"
+		texturefile = "gfx/event_pictures/MAORI_CHIEF_WAKA_NENE_eventPicture.dds"
+	}
+
+	spriteType = {
+		name = "cosmogfx_OFFICIAL_MAORI_1_eventPicture"
+		texturefile = "gfx/event_pictures/MAORI_CHIEF_WAKA_NENE_eventPicture.dds"
+	}
+
+	spriteType = {
+		name = "cosmogfx_OFFICIAL_SAMOAN_1_eventPicture"
+		texturefile = "gfx/event_pictures/SAMOAN_CHIEF_eventPicture.dds"
+	}	
+
+	spriteType = {
+		name = "cosmogfx_OFFICIAL_HAWAIIAN_1_eventPicture"
+		texturefile = "gfx/event_pictures/KAMEHAMEHA_AT_KAMAKAHONU_eventPicture.dds"
+	}
+
+}

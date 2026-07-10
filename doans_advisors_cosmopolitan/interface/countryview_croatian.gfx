@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = "GFX_advisor_croatian_statesman_female"
+		texturefile = "gfx//interface//advisors//croatian_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_croatian_commandant_female"
+		texturefile = "gfx//interface//advisors//croatian_commandant_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+spriteType = {
+		name = "GFX_advisor_croatian_theologian_female"
+		texturefile = "gfx//interface//advisors//croatian_theologian_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_croatian_noAdvisorType_female"
+		texturefile = "gfx//interface//advisors//muslim_noAdvisorType.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

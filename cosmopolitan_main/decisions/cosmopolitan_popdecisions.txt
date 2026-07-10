@@ -1,0 +1,705 @@
+########################################
+# Cosmo Honeymoon decisions
+#
+# 
+########################################
+
+country_decisions = {
+
+
+
+cosmo_brothel_train = {
+major = yes
+		potential = {
+		any_owned_province = {
+		has_province_modifier = indentured_servant_runaway_prostitutes
+		}
+		}
+		allow = {		
+		any_owned_province = {
+		has_province_modifier = indentured_servant_runaway_prostitutes
+		}
+		}
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTraining
+			value = 0
+			}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = indentured_servant_runaway_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}			
+			country_event = {
+		id =
+		cosmo_pleasure_events.801
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_west_africa = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = west_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = west_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = west_african_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = west_african_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {	
+			country_event = {
+		id =
+		cosmo_pleasure_events.811
+		}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = west_african_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_central_africa = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = central_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = central_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = central_african_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = central_african_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {	
+			country_event = {
+		id =
+		cosmo_pleasure_events.1011
+		}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = central_african_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_east_africa = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = east_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = east_african_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = east_african_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = east_african_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {	
+			country_event = {
+		id =
+		cosmo_pleasure_events.1021
+		}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = east_african_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_thai = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = thai_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = thai_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = thai_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = thai_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTrainingThai
+			value = 0
+			}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = thai_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}			
+			country_event = {
+		id =
+		cosmo_pleasure_events.831
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_malay = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = malay_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = malay_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = malay_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = malay_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTrainingMalay
+			value = 0
+			}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = malay_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}				
+			country_event = {
+		id =
+		cosmo_pleasure_events.821
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_korea = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = korea_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = korea_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = korea_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = korea_slave_prostitutes
+				}
+				}
+			}
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}				
+		}
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTrainingKorea
+			value = 0
+			}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = korea_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}			
+			country_event = {
+		id =
+		cosmo_pleasure_events.861
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_china = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = china_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = china_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = china_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = china_slave_prostitutes
+				}
+				}
+			}	
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}			
+		}
+
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTrainingChina
+			value = 0
+			}	
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = china_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}			
+			country_event = {
+		id =
+		cosmo_pleasure_events.841
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+cosmo_brothel_train_japan = {
+major = yes
+		potential = {
+		ai = no
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = japan_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}		
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = japan_slave_prostitutes
+		NOT = {
+			OR = {
+			has_province_modifier = cosmo_visiting_adm
+			has_province_modifier = cosmo_visiting_dip
+			has_province_modifier = cosmo_visiting_mil
+			}
+			}				
+					}
+				}
+			}
+		}
+		allow = {
+		OR = {	
+			any_owned_province = {
+			has_province_modifier = japan_slave_prostitutes
+			}
+			any_subject_country = {
+				any_owned_province = {
+				has_province_modifier = japan_slave_prostitutes
+				}
+				}
+			}	
+		OR = {	
+			advisor = natural_scientist 
+			advisor = artist 
+			advisor = philosopher 
+			advisor = inquisitor 
+			advisor = diplomat 
+			advisor = statesman 
+			advisor = spymaster 
+			advisor = colonial_governor 
+			advisor = trader	
+			advisor = army_organiser  
+			advisor = commandant
+			advisor = army_reformer
+			advisor = quartermaster 
+			advisor = grand_captain 					
+			}			
+		}
+				
+	effect = {
+		set_variable = {
+			which = cosmoBrothelTrainingJapan
+			value = 0
+			}
+			random_province = {
+			limit = {
+			country_or_vassal_holds = ROOT  
+
+			
+			has_province_modifier = japan_slave_prostitutes
+			has_province_modifier = cosmo_madam_search			
+			}
+				remove_province_modifier = cosmo_madam_search
+			}			
+			country_event = {
+		id =
+		cosmo_pleasure_events.851
+		}		
+			}
+				ai_will_do = {
+	factor = 0
+	}						
+}
+
+
+}
+
+				

@@ -1,0 +1,97 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_advisor_aragonese_artist_female"
+		texturefile = "gfx//interface//advisors//aragonese_artist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_aragonese_philosopher_female"
+		texturefile = "gfx//interface//advisors//aragonese_philosopher_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_aragonese_diplomat_female"
+		texturefile = "gfx//interface//advisors//diplomat_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_aragonese_master_of_mint_female"
+		texturefile = "gfx//interface//advisors//master_of_mint_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+			spriteType = {
+		name = "GFX_advisor_aragonese_navigator_female"
+		texturefile = "gfx//interface//advisors//navigator_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_aragonese_spymaster_female"
+		texturefile = "gfx//interface//advisors//spymaster_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_aragonese_natural_scientist_female"
+		texturefile = "gfx//interface//advisors//aragonese_natural_scientist_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+
+	
+	spriteType = {
+		name = "GFX_advisor_aragonese_statesman_female"
+		texturefile = "gfx//interface//advisors//aragonese_statesman_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_aragonese_colonial_governor_female"
+		texturefile = "gfx//interface//advisors//aragonese_colonial_governor_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+
+	
+
+	spriteType = {
+		name = "GFX_advisor_aragonese_trader_female"
+		texturefile = "gfx//interface//advisors//aragonese_trader_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+}
