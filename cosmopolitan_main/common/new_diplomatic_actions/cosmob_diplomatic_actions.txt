@@ -176,7 +176,7 @@ cosmo_entertain_merchants = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -206,7 +206,7 @@ cosmo_entertain_merchants = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -219,7 +219,7 @@ cosmo_entertain_merchants = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -232,7 +232,7 @@ cosmo_entertain_merchants = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -468,7 +468,7 @@ cosmo_entertain_dignitary = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -498,7 +498,7 @@ cosmo_entertain_dignitary = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -511,7 +511,7 @@ cosmo_entertain_dignitary = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -524,7 +524,7 @@ cosmo_entertain_dignitary = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -639,7 +639,7 @@ cosmo_encourage_colonist_diplo = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -669,7 +669,7 @@ cosmo_encourage_colonist_diplo = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -682,7 +682,7 @@ cosmo_encourage_colonist_diplo = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -695,7 +695,7 @@ cosmo_encourage_colonist_diplo = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -938,7 +938,7 @@ cosmo_invite_to_empire = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -968,7 +968,7 @@ cosmo_invite_to_empire = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -981,7 +981,7 @@ cosmo_invite_to_empire = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -994,7 +994,7 @@ cosmo_invite_to_empire = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1227,7 +1227,7 @@ cosmo_request_empire_invite = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -1257,7 +1257,7 @@ cosmo_request_empire_invite = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1270,7 +1270,7 @@ cosmo_request_empire_invite = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1283,7 +1283,7 @@ cosmo_request_empire_invite = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1508,7 +1508,7 @@ cosmo_dignitary_trust = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -1538,7 +1538,7 @@ cosmo_dignitary_trust = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1551,7 +1551,7 @@ cosmo_dignitary_trust = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -1564,7 +1564,7 @@ cosmo_dignitary_trust = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3576,7 +3576,7 @@ cosmo_bribe_slaver = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -3606,7 +3606,7 @@ cosmo_bribe_slaver = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3619,7 +3619,7 @@ cosmo_bribe_slaver = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3632,7 +3632,7 @@ cosmo_bribe_slaver = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3830,7 +3830,7 @@ cosmo_purchase_concubines = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -3860,7 +3860,7 @@ cosmo_purchase_concubines = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3873,7 +3873,7 @@ cosmo_purchase_concubines = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -3886,7 +3886,7 @@ cosmo_purchase_concubines = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}

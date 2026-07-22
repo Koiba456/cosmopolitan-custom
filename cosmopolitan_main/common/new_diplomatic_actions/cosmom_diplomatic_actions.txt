@@ -136,7 +136,7 @@ cosmo_request_advisors = {
 					}
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 25
 			}
@@ -183,7 +183,7 @@ cosmo_request_advisors = {
 					ai_attitude = { who = ROOT attitude = attitude_friendly }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -195,7 +195,7 @@ cosmo_request_advisors = {
 					ai_attitude = { who = ROOT attitude = attitude_threatened }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 25
 			}
@@ -223,7 +223,7 @@ cosmo_request_advisors = {
 					}
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 200
 			}
@@ -242,7 +242,7 @@ cosmo_request_advisors = {
 					}
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 100
 			}
@@ -258,7 +258,7 @@ cosmo_request_advisors = {
 					}
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 100
 			}
@@ -275,7 +275,7 @@ cosmo_request_advisors = {
 					}
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 100
 			}
@@ -304,7 +304,7 @@ cosmo_request_advisors = {
 				ai = yes
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 150
 			}
@@ -318,7 +318,7 @@ cosmo_request_advisors = {
 					ai_attitude = { who = ROOT attitude = atittude_rivalry }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -331,7 +331,7 @@ cosmo_request_advisors = {
 					ai_attitude = { who = ROOT attitude = attitude_hostile }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -344,7 +344,7 @@ cosmo_request_advisors = {
 					ai_attitude = { who = ROOT attitude = attitude_outraged }
 				}
 			}
-			export_to_variable = {
+			set_variable = {
 				which = ai_value
 				value = 1000
 			}
