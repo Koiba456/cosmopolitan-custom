@@ -5,14 +5,14 @@ guiTypes = {
 	positionType =
 	{
 		name ="countryestatesview_scaling_large_min_inc"
-		position = { x= 900 y = 150 }
+		position = { x= 900 y = 300 }
 	}
 
 	#x is minimum resolution height for this country view to increase to huge size
 	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
 	positionType = {
 		name ="countryestatesview_scaling_huge_min_inc"
-		position = { x= 1080 y = 314 }
+		position = { x= 1080 y = 500 }
 	}
 
 	### ESTATE
@@ -262,7 +262,7 @@ guiTypes = {
 			position = { x = 0 y = -17 }
 			size = { width = 500 height = 180 }
 			slotsize = { width = 300 height = 130}
-			max_slots_horizontal = 1 #2 for
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
 	}
@@ -384,22 +384,21 @@ guiTypes = {
 		iconType = {
 			name ="dev_share_pie_chart"
 			spriteType = "GFX_ledger_piechart_default"
-			position = { x= 80 y = 55 }
+			position = { x= 50 y = 55 }
 		}
 
 		iconType = {
 			name ="dev_share_pie_chart_overlays"
 			spriteType = "GFX_no_personality_chart_overlay"
-			position = { x= 30 y = 141 }
+			position = { x= 0 y = 141 }
 			scale = 1.7
-
 		}
 		gridBoxType = {
 			name = "estates_dev_share_gridbox"
-			position = { x = 125 y = 140 }
+			position = { x = 86 y = 140 }
 			size = { width = 100 height = 100 }
 			slotsize = { width = 58 height = 30 }
-			max_slots_horizontal = 2
+			max_slots_horizontal = 3
 			format = "UPPER_LEFT"
 		}
 
@@ -522,7 +521,24 @@ guiTypes = {
 			name = "estates_listbox"
 			backGround = ""
 			position = { x = 30 y = 240 }
-			size = { x = 500 y = 300 } #this and smaller size for huge at top gave slider
+
+			if_resolution = {
+				max_height = 867
+				size = { x = 500 y = 300 }
+			}
+
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				size = { x = 500 y = 150 }
+			}
+
+			if_resolution = {
+				min_height = 1048
+				size = { x = 500 y = 150 }
+			}
+
+			
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0

@@ -1,6 +1,6 @@
 estate_wives =
 {
-	icon = 17
+	icon = 19
 
 	# If true, country will get estate
 	trigger = {

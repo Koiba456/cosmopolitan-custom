@@ -1,6 +1,6 @@
 estate_nobleaffairs =
 {
-	icon = 19
+	icon = 21
 
 	# If true, country will get estate
 	trigger = {

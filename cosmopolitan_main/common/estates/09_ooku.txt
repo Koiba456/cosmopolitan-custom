@@ -1,6 +1,6 @@
 estate_ooku =
 {
-	icon = 15
+	icon = 17
 
 	# If true, country will get estate
 	trigger = {

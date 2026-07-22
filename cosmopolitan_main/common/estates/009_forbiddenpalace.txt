@@ -1,6 +1,6 @@
 estate_forbiddenpalace =
 {
-	icon = 16
+	icon = 18
 
 	# If true, country will get estate
 	trigger = {
