@@ -1,4 +1,3 @@
-
 cosmo_government = {
 	icon = "peacock_throne"
 	allow_normal_conversion = yes
