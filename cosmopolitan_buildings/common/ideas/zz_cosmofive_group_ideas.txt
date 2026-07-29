@@ -5,6 +5,7 @@ client_cosmoxall_ideas = {
 		may_explore = yes 
 		can_fabricate_for_vassals = yes
 		may_perform_slave_raid_on_same_religion = yes   
+		land_morale = 0.1
 		core_creation = -0.10
 	}
 	

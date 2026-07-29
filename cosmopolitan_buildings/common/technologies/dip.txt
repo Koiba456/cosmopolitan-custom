@@ -5,6 +5,7 @@ ahead_of_time = {
 	trade_efficiency = 0.2
 	monthly_russian_modernization = 0.05
 	yearly_corruption = -0.05
+	ahead_of_time_benefit_dip = 1
 }
 
 # Pre-era techs
@@ -15,6 +16,7 @@ technology = { #Early Ships
 	naval_morale			=	2.0
 	range					=	60
 	may_fabricate_claims = yes
+
     brothel_district = yes
     port_of_pleasure = yes 
 
@@ -22,6 +24,7 @@ technology = { #Early Ships
 	cosmo_slave_market_II = yes
 	send_slaves_building = yes
 	royal_visit = yes
+	
 	entertain = yes
 	remove_prostitute = yes
 	brothel_policy = yes

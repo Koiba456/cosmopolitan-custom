@@ -2,6 +2,7 @@
 
 client_ideas = {
 	start = {
+		land_morale = 0.1
 		core_creation = -0.10
 	}
 	

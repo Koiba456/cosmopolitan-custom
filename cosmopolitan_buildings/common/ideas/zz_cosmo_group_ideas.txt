@@ -4,6 +4,7 @@ client_cosmo_ideas = {
 	start = {
 		may_explore = yes 
 		can_fabricate_for_vassals = yes
+		land_morale = 0.1
 		core_creation = -0.10
 	}
 	

@@ -62,7 +62,7 @@ guiTypes = {
 		name = "patriarch_state_view"
 		backGround=""
 		position = { x = 0 y = 0 }
-		size = { x = 390 y = 32 }
+		size = { x = 390 y = 50 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2824,8 +2824,15 @@ guiTypes = {
 			smoothListboxType = {
 				name = "stateviews_listbox"
 				backGround = ""
-				position = { x = 12 y = 420 }
-				size = { x = 458 y = 300 }
+				position = { x = 12 y = 414 }
+				if_resolution = {
+					max_height = 899
+					size = { x = 458 y = 155 }
+				}
+				if_resolution = {
+					min_height = 900
+					size = { x = 458 y = 246 }
+				}			
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"
@@ -3760,7 +3767,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
-				position = { x = 304 y = 123 }
+				position = { x = 304 y = 120 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
@@ -4687,28 +4694,28 @@ guiTypes = {
 			{
 				name ="great_project_cancel"
 				quadTextureSprite = "GFX_alerticon_dismiss_always"
-				position = { x = 110 y = 5 }
+				position = { x = 110 y = 11 }
 			}
 
 			iconType =
 			{
 				name ="great_project_progress"
 				spriteType = "GFX_provinceView_progressbar"
-				position = { x = 8 y = 13 }
+				position = { x = 10 y = 19 }
 			}
 
 			iconType =
 			{
 				name ="great_project_progress_frame"
 				spriteType = "GFX_provinceView_morale_frame_long"
-				position = { x = 0 y = 9 }
+				position = { x = 0 y = 15 }
 			}
 		}
 
 		guiButtonType =
 		{
 			name ="build_upgrade_button"
-			position = { x= 193 y = 7 }
+			position = { x= 221 y = 7 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_build"
 			tooltip = ""
 			tooltipText =""
@@ -4721,7 +4728,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="use_money_to_boost_button"
-			position = { x= 193 y = 42 }
+			position = { x= 221 y = 42 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_money"
 			tooltip = ""
 			tooltipText =""
@@ -4734,7 +4741,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="use_manpower_to_boost_button"
-			position = { x= 193 y = 77 }
+			position = { x= 221 y = 77 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_manpower"
 			tooltip = ""
 			tooltipText =""
@@ -6938,6 +6945,11 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
+		guiButtonType = {
+			name = "name_overlay"
+			position = { x = 31 y = 6 }
+			quadTextureSprite = "GFX_state_view_invisible_button_114x20"
+		}
 
 		guiButtonType =
 		{
@@ -7107,7 +7119,7 @@ guiTypes = {
 				name = "edicts_listbox"
 				backGround = ""
 				position = { x = 500 y = 51 }
-				size = { x = 380 y = 400 }
+				size = { x = 380 y = 450 }
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}

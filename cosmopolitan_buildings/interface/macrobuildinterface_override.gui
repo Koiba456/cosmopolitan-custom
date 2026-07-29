@@ -701,9 +701,9 @@ guiTypes = {
 	windowType = {
 		name = "macro_build_interface"
 		backGround=""
-		position = { x=-600 y = 150 }	
+		position = { x=-400 y = 150 }	
 		show_position = { x=0 y = 150 }
-		hide_position = { x=-600 y = 150 }	
+		hide_position = { x=-400 y = 150 }	
 		animation_type = "decelerated"
 		animation_time = 250	
 		size = { x=590 y = 568} # was x=392
@@ -1041,6 +1041,16 @@ guiTypes = {
 #				buttonFont = "vic_18"
 			}
 			
+			guiButtonType = {
+				name = "can_increase_button"
+				position = { x= 312 y = 9 }
+				quadTextureSprite ="GFX_sort_actions_small"
+			}
+			guiButtonType = {
+				name = "can_decrease_button"
+				position = { x= 348 y = 9 }
+				quadTextureSprite ="GFX_sort_actions_small"
+			}
 #			instantTextBoxType={
 #				name = "autonomy_header_unrest"
 #				position = {x = 225 y = 4 }
@@ -1900,7 +1910,7 @@ guiTypes = {
 				position = {x = 268 y = 180 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}	
-				maxWidth = 105	#was changed to 65
+				maxWidth = 105
 				maxHeight = 18
 				text = "ONE_TIME_COST"
 				format = left
@@ -2379,7 +2389,7 @@ guiTypes = {
 		smoothListboxType = 
 		{
 			name ="content_list"
-			position = { x = 5 y = 84 }
+			position = { x = 5 y = 88 }
 			backGround=""
 			size = { x= 566 y = 426 }	#vanilla is x = 400
 			horizontal = 0
@@ -2394,7 +2404,7 @@ guiTypes = {
 			position = {x = 28 y = 526 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 380
+			maxWidth = 400
 			maxHeight = 32
 			text = "Army force limit: xx/xx"
 		}
@@ -2463,13 +2473,13 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "status_button"
-				position = { x= 59 y = 9 } #was changed to 89
+				position = { x= 59 y = 9 }
 				quadTextureSprite ="GFX_sort_states_status"
 			}
 
 			guiButtonType = {
 				name = "provinces_button"
-				position = { x= 95 y = 9 } #was changed to 95
+				position = { x= 95 y = 9 }
 				quadTextureSprite ="GFX_sort_states_provinces"
 			}
 
@@ -2481,19 +2491,19 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "income_button"
-				position = { x= 165 y = 9 }	#was changed to 212
+				position = { x= 165 y = 9 }
 				quadTextureSprite ="GFX_sort_states_income"
 			}
 
 			guiButtonType = {
 				name = "prosperity_button"
-				position = { x= 203 y = 9 }	#was changed to 253
+				position = { x= 203 y = 9 }
 				quadTextureSprite ="GFX_sort_states_prosperity"
 			}
 
 			smoothListboxType = {
 				name ="listbox"
-				position = { x = -35 y = 34 }	#was y = 30
+				position = { x = -35 y = 34 }
 				backGround=""
 				size = { x= 393 y = 415 }
 				horizontal = 0
@@ -3141,7 +3151,7 @@ guiTypes = {
 		name = "states_tab_administration_entry"
 		backGround=""
 		position = { x=0 y =0}	
-		size = { x=345 y = 40}	#was changed to 330 36
+		size = { x=345 y = 40}
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -3159,14 +3169,14 @@ guiTypes = {
 			position = {x = 5 y = 8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 115	#was changed to 156
+			maxWidth = 115
 			maxHeight = 18
 			fixedsize = yes
 		}
 
 		iconType = {
 			name = "is_state_status"
-			position = { x = 100 y = 3 }	#was changed to 130
+			position = { x = 100 y = 3 }
 			spriteType = "GFX_in_state_icon"
 		}
 
@@ -3178,17 +3188,17 @@ guiTypes = {
 				
 		iconType = {
 			name = "is_trade_company_status"
-			position = { x = 100 y = 3 }	#was changed to 130
+			position = { x = 100 y = 3 }
 			spriteType = "GFX_trade_company_icon"
 		}
 
 
 		instantTextBoxType={
 			name = "provinces"
-			position = {x = 137 y = 8 }  #was 170
+			position = {x = 137 y = 8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 30	#was 36
+			maxWidth = 30
 			maxHeight = 18
 			fixedsize = yes
 			format = center
@@ -3196,10 +3206,10 @@ guiTypes = {
 
 		instantTextBoxType={
 			name = "development"
-			position = {x = 169 y = 8 }	#was 212
+			position = {x = 169 y = 8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 30	#was 36
+			maxWidth = 30
 			maxHeight = 18
 			fixedsize = yes
 			format = center
@@ -3207,7 +3217,7 @@ guiTypes = {
 
 		instantTextBoxType={
 			name = "income"
-			position = {x = 200 y = 8 }	#was 249
+			position = {x = 200 y = 8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 44
@@ -3218,10 +3228,10 @@ guiTypes = {
 
 		instantTextBoxType={
 			name = "prosperity"
-			position = {x = 243 y = 8 }	#was 293
+			position = {x = 240 y = 8 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 30	#was 36
+			maxWidth = 33
 			maxHeight = 18
 			fixedsize = yes
 			format = center
@@ -3242,7 +3252,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "abandon_state"
 			quadTextureSprite = "GFX_abandon_state_button"
-			position = { x = 330 y = 1 } #was 0
+			position = { x = 330 y = 1 }
 		}
 
 		guiButtonType = {
@@ -3254,7 +3264,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "core_all"
 			quadTextureSprite = "GFX_core_all_button"
-			position = { x = 360 y = 1 } #was 0
+			position = { x = 360 y = 1 }
 		}
 	}
 

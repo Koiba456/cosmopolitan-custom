@@ -1347,7 +1347,6 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_g_button"
-		#name = "GFX_settlement_growth_button"
 		#texturefile = "gfx/interface/settlement_growth_button.dds"
 		texturefile = "gfx/interface/development_button_tax.dds"
 	}
@@ -1434,5 +1433,9 @@ spriteTypes = {
 		name = "GFX_autonomy_increased"
 		texturefile = "gfx/interface/ideas_EU4/autonomy_increased.dds"
 	}	
-	
+	spriteType = {
+		name = "GFX_state_view_invisible_button_114x20"
+		texturefile = "gfx\interface\state_view_invisible_button_114x20.dds"
+		transparencecheck = no
+	}
 }

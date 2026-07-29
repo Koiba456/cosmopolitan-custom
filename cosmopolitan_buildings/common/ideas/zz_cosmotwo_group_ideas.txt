@@ -3,6 +3,7 @@
 client_cslavery_ideas = {
 	start = {
 		may_perform_slave_raid = yes 
+		land_morale = 0.1 
 		core_creation = -0.10
 	}
 	
